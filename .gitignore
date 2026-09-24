@@ -12,3 +12,21 @@ work_*.txt
 /refinement_analysis*
 /failure_analysis*/
 /model_sweep_results*
+
+# Local evaluation environment
+.venv/
+.docker-cvdp/
+logs/
+datasets/
+
+# 가상환경 및 로컬 설정
+cvdp_env/
+.env
+
+# 벤치마크 실행 결과 폴더들
+work*/
+
+# 파이썬 및 Mac 캐시 파일
+__pycache__/
+*.pyc
+.DS_Store
