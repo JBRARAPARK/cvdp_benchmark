@@ -1,0 +1,741 @@
+Running harness with project name: cvdp_copilot_bit_synchronizer_1_1790258503
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 40 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258504
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     179146.54  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     136813.27  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258504
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     183331.42  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     138631.43  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258504
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     186823.14  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     141457.33  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258504
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     185588.67  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00     141487.02  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258504
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     181359.75  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     128961.03  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258505
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     184265.23  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     137263.79  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258505
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     187916.85  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     143824.43  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258505
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00      92148.75  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.01      70876.33  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258505
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     167857.42  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     121400.88  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258506
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     177550.29  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     135098.02  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258506
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     186005.68  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     140246.46  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258506
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     183580.48  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00     138641.95  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258506
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     178831.32  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     128885.55  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258506
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     182614.19  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     135846.31  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258507
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     188141.63  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     142134.83  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258507
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     188437.47  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00     139719.57  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258507
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     178710.37  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     133253.23  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258507
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     181833.99  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     137055.78  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258507
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     182297.64  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     136877.90  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258508
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     186921.20  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00     138897.01  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258508
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     172684.06  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     119360.90  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258508
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     184476.65  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     138128.57  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258508
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     188819.21  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     143666.79  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258509
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     188932.61  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00     143028.27  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258509
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     183602.80  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     134940.84  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258509
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     182775.66  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     135528.23  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258509
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     177304.02  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     133056.76  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258509
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     180249.43  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00     134576.60  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258510
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     171184.99  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00     123350.37  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258510
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     178514.05  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00     126246.28  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258510
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     174085.67  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     124425.60  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258510
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     171293.19  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00     100596.23  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258511
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     161972.02  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00      98347.91  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258511
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00     123330.34  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.00      81855.12  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258511
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     175523.27  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     109386.19  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258512
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     162464.97  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00      97744.01  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258512
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   315.00ns INFO     test                               Test Completed.
+   315.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   315.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         315.00           0.00     157080.70  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                315.00           0.00      91420.27  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=2
+[DEBUG] Parameters: {'STAGES': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258512
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   345.00ns INFO     test                               Test Completed.
+   345.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         345.00           0.00      75088.73  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                345.00           0.01      58258.91  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=5
+[DEBUG] Parameters: {'STAGES': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258513
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   375.00ns INFO     test                               Test Completed.
+   375.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   375.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         375.00           0.00     166019.00  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                375.00           0.00     115363.36  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=9
+[DEBUG] Parameters: {'STAGES': 9}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258513
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bit_sync.test_bit_sync (1/1)
+   360.00ns INFO     test                               Test Completed.
+   360.00ns INFO     cocotb.regression                  test_bit_sync.test_bit_sync passed
+   360.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_bit_sync.test_bit_sync    PASS         360.00           0.00     124892.43  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                360.00           0.00      87716.36  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with STAGES=8
+[DEBUG] Parameters: {'STAGES': 8}
+.
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-slvbc9on'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-hehbtokz'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 40 passed, 2 warnings in 9.75s ========================
+Cleaning up Docker resources...

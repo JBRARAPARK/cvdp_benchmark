@@ -1,0 +1,19 @@
+Running harness with project name: cvdp_copilot_perf_counters_1_1790258069
+Sending build context to Docker daemon  3.949kB
+Step 1/2 : FROM nvidia/cvdp-sim:v1.0.0
+ ---> 9bbd232afa15
+Step 2/2 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in 7362621cdd55
+ ---> Removed intermediate container 7362621cdd55
+ ---> 0583b0db7236
+Successfully built 0583b0db7236
+Successfully tagged cvdp_copilot_perf_counters_1_1790258069-direct:latest
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner Cleaning up Docker resources...
+Untagged: cvdp_copilot_perf_counters_1_1790258069-direct:latest
+Deleted: sha256:0583b0db723687bdfcad8b4d71716d189631671543fde76e955688343b886d9c

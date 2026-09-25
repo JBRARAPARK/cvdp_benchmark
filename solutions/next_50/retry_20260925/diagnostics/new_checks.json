@@ -1,0 +1,12 @@
+[
+  {
+    "check": "sipo_gaps_crc",
+    "passed": true,
+    "rtl": "solutions/next_50/retry_20260925/rtl/cvdp_copilot_serial_in_parallel_out_0014.sv"
+  },
+  {
+    "check": "ping_empty_bypass",
+    "passed": true,
+    "rtl": "solutions/next_50/retry_20260925/rtl/cvdp_copilot_ping_pong_buffer_0001.sv"
+  }
+]

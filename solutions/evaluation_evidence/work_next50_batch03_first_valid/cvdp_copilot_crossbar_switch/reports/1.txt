@@ -1,0 +1,443 @@
+Running harness with project name: cvdp_copilot_crossbar_switch_1_1790257619
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 3 items
+
+../../src/test_runner.py::test_crossbar_switch[0-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257620
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_crossbar_switch' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_crossbar_switch.test_crossbar_switch (1/1)
+[INFO] Clock started.
+DATA_WIDTH = 21
+NUM_PORTS = 4
+Assigned value 0x385017 to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 1/16 Actual  : out1   = 0x185017, valid_out1   = 1
+[DEBUG] Cycle 1/16 Expected: out1   = 0x185017, valid_out1   = 1
+[PASS] Cycle 1: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7c0bb7 to in1 with dest id = 3
+Assigned value 0x76e17c to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 2/16 Actual  : out3   = 0x1c0bb7, valid_out3   = 1
+[DEBUG] Cycle 2/16 Expected: out3   = 0x1c0bb7, valid_out3   = 1
+[PASS] Cycle 2: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2b74fd to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 3/16 Actual  : out1   = 0xb74fd, valid_out1   = 1
+[DEBUG] Cycle 3/16 Expected: out1   = 0xb74fd, valid_out1   = 1
+[PASS] Cycle 3: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x608d79 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 4/16 Actual  : out3   = 0x8d79, valid_out3   = 1
+[DEBUG] Cycle 4/16 Expected: out3   = 0x8d79, valid_out3   = 1
+[PASS] Cycle 4: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2eb549 to in2 with dest id = 1
+Assigned value 0x4bffa4 to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 5/16 Actual  : out2   = 0xbffa4, valid_out2   = 1
+[DEBUG] Cycle 5/16 Expected: out2   = 0xbffa4, valid_out2   = 1
+[PASS] Cycle 5: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x25ed3 to in3 with dest id = 0
+Assigned value 0xeda50 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 6/16 Actual  : out0   = 0xeda50, valid_out0   = 1
+[DEBUG] Cycle 6/16 Expected: out0   = 0xeda50, valid_out0   = 1
+[PASS] Cycle 6: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1f1384 to in3 with dest id = 0
+Assigned value 0x544dc to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 7/16 Actual  : out0   = 0x544dc, valid_out0   = 1
+[DEBUG] Cycle 7/16 Expected: out0   = 0x544dc, valid_out0   = 1
+[PASS] Cycle 7: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x116c18 to in1 with dest id = 0
+Assigned value 0x2923a6 to in2 with dest id = 1
+[1, 0, 0, 0]
+[DEBUG] Cycle 8/16 Actual  : out0   = 0x116c18, valid_out0   = 1
+[DEBUG] Cycle 8/16 Expected: out0   = 0x116c18, valid_out0   = 1
+[PASS] Cycle 8: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x254fd5 to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 9/16 Actual  : out1   = 0x54fd5, valid_out1   = 1
+[DEBUG] Cycle 9/16 Expected: out1   = 0x54fd5, valid_out1   = 1
+[PASS] Cycle 9: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x60d8ea to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 10/16 Actual  : out3   = 0xd8ea, valid_out3   = 1
+[DEBUG] Cycle 10/16 Expected: out3   = 0xd8ea, valid_out3   = 1
+[PASS] Cycle 10: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5be0b2 to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 11/16 Actual  : out2   = 0x1be0b2, valid_out2   = 1
+[DEBUG] Cycle 11/16 Expected: out2   = 0x1be0b2, valid_out2   = 1
+[PASS] Cycle 11: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x449602 to in3 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 12/16 Actual  : out2   = 0x49602, valid_out2   = 1
+[DEBUG] Cycle 12/16 Expected: out2   = 0x49602, valid_out2   = 1
+[PASS] Cycle 12: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3eefcf to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 13/16 Actual  : out1   = 0x1eefcf, valid_out1   = 1
+[DEBUG] Cycle 13/16 Expected: out1   = 0x1eefcf, valid_out1   = 1
+[PASS] Cycle 13: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x27e26a to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 14/16 Actual  : out1   = 0x7e26a, valid_out1   = 1
+[DEBUG] Cycle 14/16 Expected: out1   = 0x7e26a, valid_out1   = 1
+[PASS] Cycle 14: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1ed101 to in1 with dest id = 0
+Assigned value 0x3e437d to in2 with dest id = 1
+[1, 0, 0, 0]
+[DEBUG] Cycle 15/16 Actual  : out0   = 0x1ed101, valid_out0   = 1
+[DEBUG] Cycle 15/16 Expected: out0   = 0x1ed101, valid_out0   = 1
+[PASS] Cycle 15: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xd2e to in3 with dest id = 0
+Assigned value 0x3edf7e to in2 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 16/16 Actual  : out1   = 0x1edf7e, valid_out1   = 1
+[DEBUG] Cycle 16/16 Expected: out1   = 0x1edf7e, valid_out1   = 1
+[PASS] Cycle 16: Expected result matches actual output, and all other outputs are low.
+
+
+   680.00ns INFO     cocotb.regression                  test_crossbar_switch.test_crossbar_switch passed
+   680.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_crossbar_switch.test_crossbar_switch   PASS         680.00           0.00     316200.30  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             680.00           0.00     206287.19  **
+                                                        ***************************************************************************************************
+[DEBUG] Running simulation with DATA_WIDTH=21
+[DEBUG] Parameters: {'DATA_WIDTH': 21}
+PASSED
+../../src/test_runner.py::test_crossbar_switch[0-29]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257620
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_crossbar_switch' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_crossbar_switch.test_crossbar_switch (1/1)
+[INFO] Clock started.
+DATA_WIDTH = 29
+NUM_PORTS = 4
+Assigned value 0x3850174f to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 1/16 Actual  : out1   = 0x1850174f, valid_out1   = 1
+[DEBUG] Cycle 1/16 Expected: out1   = 0x1850174f, valid_out1   = 1
+[PASS] Cycle 1: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7c0bb75e to in1 with dest id = 3
+Assigned value 0x76e17c01 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 2/16 Actual  : out3   = 0x1c0bb75e, valid_out3   = 1
+[DEBUG] Cycle 2/16 Expected: out3   = 0x1c0bb75e, valid_out3   = 1
+[PASS] Cycle 2: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2b74fd30 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 3/16 Actual  : out1   = 0xb74fd30, valid_out1   = 1
+[DEBUG] Cycle 3/16 Expected: out1   = 0xb74fd30, valid_out1   = 1
+[PASS] Cycle 3: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x608d79bf to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 4/16 Actual  : out3   = 0x8d79bf, valid_out3   = 1
+[DEBUG] Cycle 4/16 Expected: out3   = 0x8d79bf, valid_out3   = 1
+[PASS] Cycle 4: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2eb5499e to in2 with dest id = 1
+Assigned value 0x4bffa481 to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 5/16 Actual  : out2   = 0xbffa481, valid_out2   = 1
+[DEBUG] Cycle 5/16 Expected: out2   = 0xbffa481, valid_out2   = 1
+[PASS] Cycle 5: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x25ed3f9 to in3 with dest id = 0
+Assigned value 0xeda505d to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 6/16 Actual  : out0   = 0xeda505d, valid_out0   = 1
+[DEBUG] Cycle 6/16 Expected: out0   = 0xeda505d, valid_out0   = 1
+[PASS] Cycle 6: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1f13841d to in3 with dest id = 0
+Assigned value 0x544dc2c to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 7/16 Actual  : out0   = 0x544dc2c, valid_out0   = 1
+[DEBUG] Cycle 7/16 Expected: out0   = 0x544dc2c, valid_out0   = 1
+[PASS] Cycle 7: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x116c181f to in1 with dest id = 0
+Assigned value 0x2923a6a3 to in2 with dest id = 1
+[1, 0, 0, 0]
+[DEBUG] Cycle 8/16 Actual  : out0   = 0x116c181f, valid_out0   = 1
+[DEBUG] Cycle 8/16 Expected: out0   = 0x116c181f, valid_out0   = 1
+[PASS] Cycle 8: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x254fd503 to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 9/16 Actual  : out1   = 0x54fd503, valid_out1   = 1
+[DEBUG] Cycle 9/16 Expected: out1   = 0x54fd503, valid_out1   = 1
+[PASS] Cycle 9: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x60d8ea7d to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 10/16 Actual  : out3   = 0xd8ea7d, valid_out3   = 1
+[DEBUG] Cycle 10/16 Expected: out3   = 0xd8ea7d, valid_out3   = 1
+[PASS] Cycle 10: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5be0b24e to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 11/16 Actual  : out2   = 0x1be0b24e, valid_out2   = 1
+[DEBUG] Cycle 11/16 Expected: out2   = 0x1be0b24e, valid_out2   = 1
+[PASS] Cycle 11: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4496020e to in3 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 12/16 Actual  : out2   = 0x496020e, valid_out2   = 1
+[DEBUG] Cycle 12/16 Expected: out2   = 0x496020e, valid_out2   = 1
+[PASS] Cycle 12: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3eefcf70 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 13/16 Actual  : out1   = 0x1eefcf70, valid_out1   = 1
+[DEBUG] Cycle 13/16 Expected: out1   = 0x1eefcf70, valid_out1   = 1
+[PASS] Cycle 13: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x27e26acf to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 14/16 Actual  : out1   = 0x7e26acf, valid_out1   = 1
+[DEBUG] Cycle 14/16 Expected: out1   = 0x7e26acf, valid_out1   = 1
+[PASS] Cycle 14: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1ed101f2 to in1 with dest id = 0
+Assigned value 0x3e437d2e to in2 with dest id = 1
+[1, 0, 0, 0]
+[DEBUG] Cycle 15/16 Actual  : out0   = 0x1ed101f2, valid_out0   = 1
+[DEBUG] Cycle 15/16 Expected: out0   = 0x1ed101f2, valid_out0   = 1
+[PASS] Cycle 15: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xd2e98 to in3 with dest id = 0
+Assigned value 0x3edf7ec6 to in2 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 16/16 Actual  : out1   = 0x1edf7ec6, valid_out1   = 1
+[DEBUG] Cycle 16/16 Expected: out1   = 0x1edf7ec6, valid_out1   = 1
+[PASS] Cycle 16: Expected result matches actual output, and all other outputs are low.
+
+
+   680.00ns INFO     cocotb.regression                  test_crossbar_switch.test_crossbar_switch passed
+   680.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_crossbar_switch.test_crossbar_switch   PASS         680.00           0.00     319816.86  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             680.00           0.00     206660.87  **
+                                                        ***************************************************************************************************
+[DEBUG] Running simulation with DATA_WIDTH=29
+[DEBUG] Parameters: {'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_crossbar_switch[0-30]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257620
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_crossbar_switch' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_crossbar_switch.test_crossbar_switch (1/1)
+[INFO] Clock started.
+DATA_WIDTH = 30
+NUM_PORTS = 4
+Assigned value 0x70a02e9f to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 1/16 Actual  : out1   = 0x30a02e9f, valid_out1   = 1
+[DEBUG] Cycle 1/16 Expected: out1   = 0x30a02e9f, valid_out1   = 1
+[PASS] Cycle 1: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xf8176ebd to in1 with dest id = 3
+Assigned value 0xedc2f803 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 2/16 Actual  : out3   = 0x38176ebd, valid_out3   = 1
+[DEBUG] Cycle 2/16 Expected: out3   = 0x38176ebd, valid_out3   = 1
+[PASS] Cycle 2: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x56e9fa60 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 3/16 Actual  : out1   = 0x16e9fa60, valid_out1   = 1
+[DEBUG] Cycle 3/16 Expected: out1   = 0x16e9fa60, valid_out1   = 1
+[PASS] Cycle 3: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xc11af37f to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 4/16 Actual  : out3   = 0x11af37f, valid_out3   = 1
+[DEBUG] Cycle 4/16 Expected: out3   = 0x11af37f, valid_out3   = 1
+[PASS] Cycle 4: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5d6a933d to in2 with dest id = 1
+Assigned value 0x97ff4903 to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 5/16 Actual  : out2   = 0x17ff4903, valid_out2   = 1
+[DEBUG] Cycle 5/16 Expected: out2   = 0x17ff4903, valid_out2   = 1
+[PASS] Cycle 5: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4bda7f2 to in3 with dest id = 0
+Assigned value 0x1db4a0bb to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 6/16 Actual  : out0   = 0x1db4a0bb, valid_out0   = 1
+[DEBUG] Cycle 6/16 Expected: out0   = 0x1db4a0bb, valid_out0   = 1
+[PASS] Cycle 6: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3e27083a to in3 with dest id = 0
+Assigned value 0xa89b859 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 7/16 Actual  : out0   = 0xa89b859, valid_out0   = 1
+[DEBUG] Cycle 7/16 Expected: out0   = 0xa89b859, valid_out0   = 1
+[PASS] Cycle 7: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x22d8303f to in1 with dest id = 0
+Assigned value 0x52474d46 to in2 with dest id = 1
+[1, 0, 0, 0]
+[DEBUG] Cycle 8/16 Actual  : out0   = 0x22d8303f, valid_out0   = 1
+[DEBUG] Cycle 8/16 Expected: out0   = 0x22d8303f, valid_out0   = 1
+[PASS] Cycle 8: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4a9faa07 to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 9/16 Actual  : out1   = 0xa9faa07, valid_out1   = 1
+[DEBUG] Cycle 9/16 Expected: out1   = 0xa9faa07, valid_out1   = 1
+[PASS] Cycle 9: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xc1b1d4fb to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 10/16 Actual  : out3   = 0x1b1d4fb, valid_out3   = 1
+[DEBUG] Cycle 10/16 Expected: out3   = 0x1b1d4fb, valid_out3   = 1
+[PASS] Cycle 10: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xb7c1649c to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 11/16 Actual  : out2   = 0x37c1649c, valid_out2   = 1
+[DEBUG] Cycle 11/16 Expected: out2   = 0x37c1649c, valid_out2   = 1
+[PASS] Cycle 11: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x892c041d to in3 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 12/16 Actual  : out2   = 0x92c041d, valid_out2   = 1
+[DEBUG] Cycle 12/16 Expected: out2   = 0x92c041d, valid_out2   = 1
+[PASS] Cycle 12: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7ddf9ee0 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 13/16 Actual  : out1   = 0x3ddf9ee0, valid_out1   = 1
+[DEBUG] Cycle 13/16 Expected: out1   = 0x3ddf9ee0, valid_out1   = 1
+[PASS] Cycle 13: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4fc4d59e to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 14/16 Actual  : out1   = 0xfc4d59e, valid_out1   = 1
+[DEBUG] Cycle 14/16 Expected: out1   = 0xfc4d59e, valid_out1   = 1
+[PASS] Cycle 14: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3da203e4 to in1 with dest id = 0
+Assigned value 0x7c86fa5c to in2 with dest id = 1
+[1, 0, 0, 0]
+[DEBUG] Cycle 15/16 Actual  : out0   = 0x3da203e4, valid_out0   = 1
+[DEBUG] Cycle 15/16 Expected: out0   = 0x3da203e4, valid_out0   = 1
+[PASS] Cycle 15: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1a5d30 to in3 with dest id = 0
+Assigned value 0x7dbefd8d to in2 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 16/16 Actual  : out1   = 0x3dbefd8d, valid_out1   = 1
+[DEBUG] Cycle 16/16 Expected: out1   = 0x3dbefd8d, valid_out1   = 1
+[PASS] Cycle 16: Expected result matches actual output, and all other outputs are low.
+
+
+   680.00ns INFO     cocotb.regression                  test_crossbar_switch.test_crossbar_switch passed
+   680.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_crossbar_switch.test_crossbar_switch   PASS         680.00           0.00     302709.27  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             680.00           0.00     195311.01  **
+                                                        ***************************************************************************************************
+[DEBUG] Running simulation with DATA_WIDTH=30
+[DEBUG] Parameters: {'DATA_WIDTH': 30}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-v_n90rie'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-mwp1jrk9'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 3 passed, 2 warnings in 0.69s =========================
+Cleaning up Docker resources...

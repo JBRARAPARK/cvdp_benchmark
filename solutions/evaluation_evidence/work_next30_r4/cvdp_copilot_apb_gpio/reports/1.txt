@@ -1,0 +1,24 @@
+Running harness with project name: cvdp_copilot_apb_gpio_1_1790256156
+Sending build context to Docker daemon  7.094kB
+Step 1/2 : FROM nvidia/cvdp-sim:v1.0.0
+ ---> 9bbd232afa15
+Step 2/2 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in 61c13b46fa94
+ ---> Removed intermediate container 61c13b46fa94
+ ---> f6b20bd32c52
+Successfully built f6b20bd32c52
+Successfully tagged cvdp_copilot_apb_gpio_1_1790256156-direct:latest
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 3 items
+
+../../src/test_runner.py::test_cvdp_copilot_apb_gpio[8] PASSED           [ 33%]
+../../src/test_runner.py::test_cvdp_copilot_apb_gpio[11] PASSED          [ 66%]
+../../src/test_runner.py::test_cvdp_copilot_apb_gpio[30] PASSED          [100%]
+
+============================== 3 passed in 1.68s ===============================
+Cleaning up Docker resources...
+Untagged: cvdp_copilot_apb_gpio_1_1790256156-direct:latest
+Deleted: sha256:f6b20bd32c527e702c866b087e0d9521a322a3e79d3313a5943fedb4c4276d7b

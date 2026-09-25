@@ -1,0 +1,121 @@
+Running harness with project name: cvdp_copilot_cdc_pulse_synchronizer_4_1790255738
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255739
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_100MHz_des_100MHz_same_phase (1/11)
+    60.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+    70.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+    80.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+    80.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_100MHz_des_100MHz_same_phase passed
+    80.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_100MHz_des_50MHz (2/11)
+   161.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   181.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   181.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_100MHz_des_50MHz passed
+   181.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_50MHz_des_100MHz (3/11)
+   322.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   332.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   342.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   342.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_50MHz_des_100MHz passed
+   342.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_100MHz_des_100MHz_and_different_phase (4/11)
+   418.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   428.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   428.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_100MHz_des_100MHz_and_different_phase passed
+   428.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_RTL_Bug_src_100MHz_des_250MHz (5/11)
+   489.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   493.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   497.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   497.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_RTL_Bug_src_100MHz_des_250MHz passed
+   497.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_random_clocks_and_reset (6/11)
+   498.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 1: Selected src_clock frequency: 55.56 MHz
+   498.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 1: Selected des_clock frequency: 200.00 MHz
+   608.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   613.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   633.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 2: Selected src_clock frequency: 90.91 MHz
+   633.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 2: Selected des_clock frequency: 90.91 MHz
+   698.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   703.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   723.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 3: Selected src_clock frequency: 100.00 MHz
+   723.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 3: Selected des_clock frequency: 83.33 MHz
+   783.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   787.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   793.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   813.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 4: Selected src_clock frequency: 100.00 MHz
+   813.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 4: Selected des_clock frequency: 166.67 MHz
+   883.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   888.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   893.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   913.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 5: Selected src_clock frequency: 166.67 MHz
+   913.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 5: Selected des_clock frequency: 76.92 MHz
+   957.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+   963.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+   983.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 6: Selected src_clock frequency: 250.00 MHz
+   983.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 6: Selected des_clock frequency: 71.43 MHz
+  1013.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1017.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  1033.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 7: Selected src_clock frequency: 166.67 MHz
+  1033.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 7: Selected des_clock frequency: 90.91 MHz
+  1063.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1067.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  1088.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 8: Selected src_clock frequency: 76.92 MHz
+  1088.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 8: Selected des_clock frequency: 90.91 MHz
+  1113.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1117.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  1137.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 9: Selected src_clock frequency: 62.50 MHz
+  1137.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 9: Selected des_clock frequency: 55.56 MHz
+  1163.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1165.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  1183.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 10: Selected src_clock frequency: 142.86 MHz
+  1183.00ns INFO     cocotb.cdc_pulse_synchronizer      Iteration 10: Selected des_clock frequency: 66.67 MHz
+  1213.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1215.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  1225.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_random_clocks_and_reset passed
+  1225.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_reset (7/11)
+  1316.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1316.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_reset passed
+  1316.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_90MHz_des_100MHz (8/11)
+  1397.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1407.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  1407.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_90MHz_des_100MHz passed
+  1407.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_111p1MHz_des_83p33MHz (9/11)
+  1480.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  1492.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  1492.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_111p1MHz_des_83p33MHz passed
+  1492.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_1MHz_des_100MHz (10/11)
+  8493.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  8503.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+  8513.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+  8513.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_1MHz_des_100MHz passed
+  8513.00ns INFO     cocotb.regression                  running test_cdc_pulse_synchronizer.test_src_100MHz_des_1MHz (11/11)
+  9514.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 0
+ 10514.00ns INFO     cocotb.cdc_pulse_synchronizer      des_pulse = 1
+ 10514.00ns INFO     cocotb.regression                  test_cdc_pulse_synchronizer.test_src_100MHz_des_1MHz passed
+ 10514.00ns INFO     cocotb.regression                  ************************************************************************************************************************************
+                                                        ** TEST                                                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************************
+                                                        ** test_cdc_pulse_synchronizer.test_src_100MHz_des_100MHz_same_phase            PASS          80.00           0.00     139345.65  **
+                                                        ** test_cdc_pulse_synchronizer.test_src_100MHz_des_50MHz                        PASS         100.00           0.00     244423.31  **
+                                                        ** test_cdc_pulse_synchronizer.test_src_50MHz_des_100MHz                        PASS         160.00           0.00     300666.95  **
+                                                        ** test_cdc_pulse_synchronizer.test_src_100MHz_des_100MHz_and_different_phase   PASS          85.00           0.00     239916.45  **
+                                                        ** test_cdc_pulse_synchronizer.test_RTL_Bug_src_100MHz_des_250MHz               PASS          68.00           0.00     134852.33  **
+                                                        ** test_cdc_pulse_synchronizer.test_random_clocks_and_reset                     PASS         727.00           0.01      78753.56  **
+                                                        ** test_cdc_pulse_synchronizer.test_reset                                       PASS          90.00           0.00     242757.14  **
+                                                        ** test_cdc_pulse_synchronizer.test_src_90MHz_des_100MHz                        PASS          90.00           0.00     221270.43  **
+                                                        ** test_cdc_pulse_synchronizer.test_src_111p1MHz_des_83p33MHz                   PASS          84.00           0.00     218697.42  **
+                                                        ** test_cdc_pulse_synchronizer.test_src_1MHz_des_100MHz                         PASS        7020.00           0.01     698984.29  **
+                                                        ** test_cdc_pulse_synchronizer.test_src_100MHz_des_1MHz                         PASS        2000.00           0.00     665498.45  **
+                                                        ************************************************************************************************************************************
+                                                        ** TESTS=11 PASS=11 FAIL=0 SKIP=0                                                          10514.00           0.03     375412.13  **
+                                                        ************************************************************************************************************************************
+PASSED
+
+============================== 1 passed in 0.27s ===============================
+Cleaning up Docker resources...

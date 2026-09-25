@@ -1,0 +1,534 @@
+Running harness with project name: cvdp_copilot_axi_tap_1_1790258521
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 20 items
+
+../../src/test_runner.py::test_pipeline_mac[0-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258522
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=3649095602
+[DEBUG] actual_read_rdata   =0xbeeffeed,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0xbeeffeed,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     250452.94  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     151265.33  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[0-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258522
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=3649095602
+[DEBUG] actual_master_awaddr=3649095602,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =3649095602,expected_awvalid     =1
+[DEBUG] actual_master_wdata=453221519,actual_master_wvalid=1,actual_master_wstrb=14
+[DEBUG] expected_wdata     =453221519,expected_wvalid     =1,expected_wstrb=     14
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     261531.04  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     153901.76  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[1-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258523
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4018895047
+[DEBUG] actual_read_rdata   =0xbeeffeed,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0xbeeffeed,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     253288.79  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     149546.22  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[1-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258523
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4018895047
+[DEBUG] actual_read_rdata   =0x1eeffeed,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0x1eeffeed,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     257714.53  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     152295.16  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[2-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258523
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4018895047
+[DEBUG] actual_read_rdata   =0xbeeffeed,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0xbeeffeed,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     255069.80  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     154433.01  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[2-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258523
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4018895047
+[DEBUG] actual_read_rdata   =0x1eeffeed,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0x1eeffeed,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     263223.63  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     159138.88  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[3-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258523
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4018895047
+[DEBUG] actual_read_rdata   =0xbeeffeed,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0xbeeffeed,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     246045.33  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     149729.73  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[3-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258524
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4098032101
+[DEBUG] actual_master_awaddr=4098032101,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =4098032101,expected_awvalid     =1
+[DEBUG] actual_master_wdata=525761179,actual_master_wvalid=1,actual_master_wstrb=2
+[DEBUG] expected_wdata     =525761179,expected_wvalid     =1,expected_wstrb=     2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     250452.94  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     153937.07  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[4-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258524
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4098032101
+[DEBUG] actual_master_awaddr=4098032101,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =4098032101,expected_awvalid     =1
+[DEBUG] actual_master_wdata=571665240,actual_master_wvalid=1,actual_master_wstrb=11
+[DEBUG] expected_wdata     =571665240,expected_wvalid     =1,expected_wstrb=     11
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     246814.51  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     152554.82  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[4-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258524
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4098032101
+[DEBUG] actual_master_awaddr=4098032101,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =4098032101,expected_awvalid     =1
+[DEBUG] actual_master_wdata=525761179,actual_master_wvalid=1,actual_master_wstrb=2
+[DEBUG] expected_wdata     =525761179,expected_wvalid     =1,expected_wstrb=     2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     246905.31  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     148438.10  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[5-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258524
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=4098032101
+[DEBUG] actual_master_awaddr=4098032101,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =4098032101,expected_awvalid     =1
+[DEBUG] actual_master_wdata=571665240,actual_master_wvalid=1,actual_master_wstrb=11
+[DEBUG] expected_wdata     =571665240,expected_wvalid     =1,expected_wstrb=     11
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     251579.62  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     149746.43  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[5-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258525
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=277282540
+[DEBUG] actual_read_rdata   =0x1eadbeef,actual_read_rvalid=1,actual_read_rresp=1
+[DEBUG] expected_read_rdata =0x1eadbeef,expected_read_rvalid  =1,expected_read_rresp= 1
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     248735.60  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     145493.47  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[6-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258525
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=277282540
+[DEBUG] actual_master_awaddr=277282540,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =277282540,expected_awvalid     =1
+[DEBUG] actual_master_wdata=10342743399,actual_master_wvalid=1,actual_master_wstrb=3
+[DEBUG] expected_wdata     =10342743399,expected_wvalid     =1,expected_wstrb=     3
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     247634.18  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     151933.13  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[6-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258525
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=277282540
+[DEBUG] actual_read_rdata   =0x1eadbeef,actual_read_rvalid=1,actual_read_rresp=1
+[DEBUG] expected_read_rdata =0x1eadbeef,expected_read_rvalid  =1,expected_read_rresp= 1
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     260566.35  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     152850.16  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[7-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258525
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=277282540
+[DEBUG] actual_master_awaddr=277282540,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =277282540,expected_awvalid     =1
+[DEBUG] actual_master_wdata=10342743399,actual_master_wvalid=1,actual_master_wstrb=3
+[DEBUG] expected_wdata     =10342743399,expected_wvalid     =1,expected_wstrb=     3
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     251344.06  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     151231.24  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[7-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258526
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=1568735868
+[DEBUG] actual_read_rdata   =0x1eadbeef,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0x1eadbeef,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     261990.49  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     154433.01  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[8-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258526
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=1568735868
+[DEBUG] actual_read_rdata   =0xdeadbeef,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0xdeadbeef,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     254007.81  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     147055.69  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[8-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258526
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=1568735868
+[DEBUG] actual_read_rdata   =0x1eadbeef,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0x1eadbeef,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     262348.96  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     152797.96  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[9-34-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258526
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 34
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x3ffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=1568735868
+[DEBUG] actual_read_rdata   =0xdeadbeef,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0xdeadbeef,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     161396.98  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     103771.24  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 34}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[9-29-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258527
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 29
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2704452690
+[DEBUG] actual_read_rdata   =0x1eeffeed,actual_read_rvalid=1,actual_read_rresp=2
+[DEBUG] expected_read_rdata =0x1eeffeed,expected_read_rvalid  =1,expected_read_rresp= 2
+Test completed.
+   320.00ns INFO     cocotb.regression                  test_axi_tap.test_axi_tap passed
+   320.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      PASS         320.00           0.00     261582.01  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                320.00           0.00     156778.10  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 29}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-2dsdeuq3'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-5w2z73zp'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 20 passed, 2 warnings in 4.65s ========================
+Cleaning up Docker resources...

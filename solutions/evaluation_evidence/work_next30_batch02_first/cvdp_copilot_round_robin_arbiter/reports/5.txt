@@ -1,0 +1,681 @@
+Running harness with project name: cvdp_copilot_round_robin_arbiter_5_1790255828
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s round_robin_arbiter -g2012 -Pround_robin_arbiter.N=4 -Pround_robin_arbiter.TIMEOUT=16 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/round_robin_arbiter.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255829
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_round_robin_arbiter.test_no_requests (1/5)
+                                                            Test Case 1: No Requests - Arbiter should remain idle.
+    20.00ns INFO     cocotb.test_no_requests            DUT has been reset for Test Case 1.
+    30.00ns INFO     cocotb.test_no_requests            Cycle 0: Arbiter correctly idle with no requests.
+    40.00ns INFO     cocotb.test_no_requests            Cycle 1: Arbiter correctly idle with no requests.
+    50.00ns INFO     cocotb.test_no_requests            Cycle 2: Arbiter correctly idle with no requests.
+    60.00ns INFO     cocotb.test_no_requests            Cycle 3: Arbiter correctly idle with no requests.
+    70.00ns INFO     cocotb.test_no_requests            Cycle 4: Arbiter correctly idle with no requests.
+    80.00ns INFO     cocotb.test_no_requests            Cycle 5: Arbiter correctly idle with no requests.
+    90.00ns INFO     cocotb.test_no_requests            Cycle 6: Arbiter correctly idle with no requests.
+   100.00ns INFO     cocotb.test_no_requests            Cycle 7: Arbiter correctly idle with no requests.
+   110.00ns INFO     cocotb.test_no_requests            Cycle 8: Arbiter correctly idle with no requests.
+   120.00ns INFO     cocotb.test_no_requests            Cycle 9: Arbiter correctly idle with no requests.
+   130.00ns INFO     cocotb.test_no_requests            Cycle 10: Arbiter correctly idle with no requests.
+   140.00ns INFO     cocotb.test_no_requests            Cycle 11: Arbiter correctly idle with no requests.
+   150.00ns INFO     cocotb.test_no_requests            Cycle 12: Arbiter correctly idle with no requests.
+   160.00ns INFO     cocotb.test_no_requests            Cycle 13: Arbiter correctly idle with no requests.
+   170.00ns INFO     cocotb.test_no_requests            Cycle 14: Arbiter correctly idle with no requests.
+   180.00ns INFO     cocotb.test_no_requests            Cycle 15: Arbiter correctly idle with no requests.
+   190.00ns INFO     cocotb.test_no_requests            Cycle 16: Arbiter correctly idle with no requests.
+   200.00ns INFO     cocotb.test_no_requests            Cycle 17: Arbiter correctly idle with no requests.
+   210.00ns INFO     cocotb.test_no_requests            Cycle 18: Arbiter correctly idle with no requests.
+   220.00ns INFO     cocotb.test_no_requests            Cycle 19: Arbiter correctly idle with no requests.
+   230.00ns INFO     cocotb.test_no_requests            Cycle 20: Arbiter correctly idle with no requests.
+   240.00ns INFO     cocotb.test_no_requests            Cycle 21: Arbiter correctly idle with no requests.
+   250.00ns INFO     cocotb.test_no_requests            Cycle 22: Arbiter correctly idle with no requests.
+   260.00ns INFO     cocotb.test_no_requests            Cycle 23: Arbiter correctly idle with no requests.
+   270.00ns INFO     cocotb.test_no_requests            Cycle 24: Arbiter correctly idle with no requests.
+   280.00ns INFO     cocotb.test_no_requests            Cycle 25: Arbiter correctly idle with no requests.
+   290.00ns INFO     cocotb.test_no_requests            Cycle 26: Arbiter correctly idle with no requests.
+   300.00ns INFO     cocotb.test_no_requests            Cycle 27: Arbiter correctly idle with no requests.
+   310.00ns INFO     cocotb.test_no_requests            Cycle 28: Arbiter correctly idle with no requests.
+   320.00ns INFO     cocotb.test_no_requests            Cycle 29: Arbiter correctly idle with no requests.
+   330.00ns INFO     cocotb.test_no_requests            Cycle 30: Arbiter correctly idle with no requests.
+   340.00ns INFO     cocotb.test_no_requests            Cycle 31: Arbiter correctly idle with no requests.
+   350.00ns INFO     cocotb.test_no_requests            Cycle 32: Arbiter correctly idle with no requests.
+   360.00ns INFO     cocotb.test_no_requests            Cycle 33: Arbiter correctly idle with no requests.
+   370.00ns INFO     cocotb.test_no_requests            Cycle 34: Arbiter correctly idle with no requests.
+   380.00ns INFO     cocotb.test_no_requests            Cycle 35: Arbiter correctly idle with no requests.
+   390.00ns INFO     cocotb.test_no_requests            Cycle 36: Arbiter correctly idle with no requests.
+   400.00ns INFO     cocotb.test_no_requests            Cycle 37: Arbiter correctly idle with no requests.
+   410.00ns INFO     cocotb.test_no_requests            Cycle 38: Arbiter correctly idle with no requests.
+   420.00ns INFO     cocotb.test_no_requests            Cycle 39: Arbiter correctly idle with no requests.
+   430.00ns INFO     cocotb.test_no_requests            Cycle 40: Arbiter correctly idle with no requests.
+   440.00ns INFO     cocotb.test_no_requests            Cycle 41: Arbiter correctly idle with no requests.
+   450.00ns INFO     cocotb.test_no_requests            Cycle 42: Arbiter correctly idle with no requests.
+   460.00ns INFO     cocotb.test_no_requests            Cycle 43: Arbiter correctly idle with no requests.
+   470.00ns INFO     cocotb.test_no_requests            Cycle 44: Arbiter correctly idle with no requests.
+   480.00ns INFO     cocotb.test_no_requests            Cycle 45: Arbiter correctly idle with no requests.
+   490.00ns INFO     cocotb.test_no_requests            Cycle 46: Arbiter correctly idle with no requests.
+   500.00ns INFO     cocotb.test_no_requests            Cycle 47: Arbiter correctly idle with no requests.
+   510.00ns INFO     cocotb.test_no_requests            Cycle 48: Arbiter correctly idle with no requests.
+   520.00ns INFO     cocotb.test_no_requests            Cycle 49: Arbiter correctly idle with no requests.
+   520.00ns INFO     cocotb.test_no_requests            Test Case 1: No Requests completed successfully.
+   520.00ns INFO     cocotb.regression                  test_round_robin_arbiter.test_no_requests passed
+   520.00ns INFO     cocotb.regression                  running test_round_robin_arbiter.test_single_request (2/5)
+                                                            Test Case 2: Single Request - Arbiter should grant to the requesting channel.
+   541.00ns INFO     cocotb.test_single_request         DUT has been reset for Test Case 2.
+   551.00ns INFO     cocotb.test_single_request         Cycle 0: Arbiter correctly granted Channel 2.
+   561.00ns INFO     cocotb.test_single_request         Cycle 1: Arbiter correctly granted Channel 2.
+   571.00ns INFO     cocotb.test_single_request         Cycle 2: Arbiter correctly granted Channel 2.
+   581.00ns INFO     cocotb.test_single_request         Cycle 3: Arbiter correctly granted Channel 2.
+   591.00ns INFO     cocotb.test_single_request         Cycle 4: Arbiter correctly granted Channel 2.
+   601.00ns INFO     cocotb.test_single_request         Cycle 5: Arbiter correctly granted Channel 2.
+   611.00ns INFO     cocotb.test_single_request         Cycle 6: Arbiter correctly granted Channel 2.
+   621.00ns INFO     cocotb.test_single_request         Cycle 7: Arbiter correctly granted Channel 2.
+   631.00ns INFO     cocotb.test_single_request         Cycle 8: Arbiter correctly granted Channel 2.
+   641.00ns INFO     cocotb.test_single_request         Cycle 9: Arbiter correctly granted Channel 2.
+   651.00ns INFO     cocotb.test_single_request         Cycle 10: Arbiter correctly granted Channel 2.
+   661.00ns INFO     cocotb.test_single_request         Cycle 11: Arbiter correctly granted Channel 2.
+   671.00ns INFO     cocotb.test_single_request         Cycle 12: Arbiter correctly granted Channel 2.
+   681.00ns INFO     cocotb.test_single_request         Cycle 13: Arbiter correctly granted Channel 2.
+   691.00ns INFO     cocotb.test_single_request         Cycle 14: Arbiter correctly granted Channel 2.
+   701.00ns INFO     cocotb.test_single_request         Cycle 15: Arbiter correctly granted Channel 2.
+   711.00ns INFO     cocotb.test_single_request         Cycle 16: Arbiter correctly granted Channel 2.
+   721.00ns INFO     cocotb.test_single_request         Cycle 17: Arbiter correctly granted Channel 2.
+   731.00ns INFO     cocotb.test_single_request         Cycle 18: Arbiter correctly granted Channel 2.
+   741.00ns INFO     cocotb.test_single_request         Cycle 19: Arbiter correctly granted Channel 2.
+   751.00ns INFO     cocotb.test_single_request         Cycle 20: Arbiter correctly granted Channel 2.
+   761.00ns INFO     cocotb.test_single_request         Cycle 21: Arbiter correctly granted Channel 2.
+   771.00ns INFO     cocotb.test_single_request         Cycle 22: Arbiter correctly granted Channel 2.
+   781.00ns INFO     cocotb.test_single_request         Cycle 23: Arbiter correctly granted Channel 2.
+   791.00ns INFO     cocotb.test_single_request         Cycle 24: Arbiter correctly granted Channel 2.
+   801.00ns INFO     cocotb.test_single_request         Cycle 25: Arbiter correctly granted Channel 2.
+   811.00ns INFO     cocotb.test_single_request         Cycle 26: Arbiter correctly granted Channel 2.
+   821.00ns INFO     cocotb.test_single_request         Cycle 27: Arbiter correctly granted Channel 2.
+   831.00ns INFO     cocotb.test_single_request         Cycle 28: Arbiter correctly granted Channel 2.
+   841.00ns INFO     cocotb.test_single_request         Cycle 29: Arbiter correctly granted Channel 2.
+   851.00ns INFO     cocotb.test_single_request         Cycle 30: Arbiter correctly granted Channel 2.
+   861.00ns INFO     cocotb.test_single_request         Cycle 31: Arbiter correctly granted Channel 2.
+   871.00ns INFO     cocotb.test_single_request         Cycle 32: Arbiter correctly granted Channel 2.
+   881.00ns INFO     cocotb.test_single_request         Cycle 33: Arbiter correctly granted Channel 2.
+   891.00ns INFO     cocotb.test_single_request         Cycle 34: Arbiter correctly granted Channel 2.
+   901.00ns INFO     cocotb.test_single_request         Cycle 35: Arbiter correctly granted Channel 2.
+   911.00ns INFO     cocotb.test_single_request         Cycle 36: Arbiter correctly granted Channel 2.
+   921.00ns INFO     cocotb.test_single_request         Cycle 37: Arbiter correctly granted Channel 2.
+   931.00ns INFO     cocotb.test_single_request         Cycle 38: Arbiter correctly granted Channel 2.
+   941.00ns INFO     cocotb.test_single_request         Cycle 39: Arbiter correctly granted Channel 2.
+   951.00ns INFO     cocotb.test_single_request         Cycle 40: Arbiter correctly granted Channel 2.
+   961.00ns INFO     cocotb.test_single_request         Cycle 41: Arbiter correctly granted Channel 2.
+   971.00ns INFO     cocotb.test_single_request         Cycle 42: Arbiter correctly granted Channel 2.
+   981.00ns INFO     cocotb.test_single_request         Cycle 43: Arbiter correctly granted Channel 2.
+   991.00ns INFO     cocotb.test_single_request         Cycle 44: Arbiter correctly granted Channel 2.
+  1001.00ns INFO     cocotb.test_single_request         Cycle 45: Arbiter correctly granted Channel 2.
+  1011.00ns INFO     cocotb.test_single_request         Cycle 46: Arbiter correctly granted Channel 2.
+  1021.00ns INFO     cocotb.test_single_request         Cycle 47: Arbiter correctly granted Channel 2.
+  1031.00ns INFO     cocotb.test_single_request         Cycle 48: Arbiter correctly granted Channel 2.
+  1041.00ns INFO     cocotb.test_single_request         Cycle 49: Arbiter correctly granted Channel 2.
+  1041.00ns INFO     cocotb.test_single_request         Test Case 2: Single Request completed successfully.
+  1041.00ns INFO     cocotb.regression                  test_round_robin_arbiter.test_single_request passed
+  1041.00ns INFO     cocotb.regression                  running test_round_robin_arbiter.test_multiple_requests_no_priorities (3/5)
+                                                            Test Case 3: Multiple Requests without Priorities - Round-Robin Grants.
+  1062.00ns INFO     .._multiple_requests_no_priorities DUT has been reset for Test Case 3.
+  1072.00ns INFO     .._multiple_requests_no_priorities Cycle 0: Arbiter correctly granted Channel 3.
+  1082.00ns INFO     .._multiple_requests_no_priorities Cycle 1: Arbiter correctly granted Channel 1.
+  1092.00ns INFO     .._multiple_requests_no_priorities Cycle 2: Arbiter correctly granted Channel 3.
+  1102.00ns INFO     .._multiple_requests_no_priorities Cycle 3: Arbiter correctly granted Channel 1.
+  1112.00ns INFO     .._multiple_requests_no_priorities Cycle 4: Arbiter correctly granted Channel 3.
+  1122.00ns INFO     .._multiple_requests_no_priorities Cycle 5: Arbiter correctly granted Channel 1.
+  1132.00ns INFO     .._multiple_requests_no_priorities Cycle 6: Arbiter correctly granted Channel 3.
+  1142.00ns INFO     .._multiple_requests_no_priorities Cycle 7: Arbiter correctly granted Channel 1.
+  1152.00ns INFO     .._multiple_requests_no_priorities Cycle 8: Arbiter correctly granted Channel 3.
+  1162.00ns INFO     .._multiple_requests_no_priorities Cycle 9: Arbiter correctly granted Channel 1.
+  1172.00ns INFO     .._multiple_requests_no_priorities Cycle 10: Arbiter correctly granted Channel 3.
+  1182.00ns INFO     .._multiple_requests_no_priorities Cycle 11: Arbiter correctly granted Channel 1.
+  1192.00ns INFO     .._multiple_requests_no_priorities Cycle 12: Arbiter correctly granted Channel 3.
+  1202.00ns INFO     .._multiple_requests_no_priorities Cycle 13: Arbiter correctly granted Channel 1.
+  1212.00ns INFO     .._multiple_requests_no_priorities Cycle 14: Arbiter correctly granted Channel 3.
+  1222.00ns INFO     .._multiple_requests_no_priorities Cycle 15: Arbiter correctly granted Channel 1.
+  1232.00ns INFO     .._multiple_requests_no_priorities Cycle 16: Arbiter correctly granted Channel 3.
+  1242.00ns INFO     .._multiple_requests_no_priorities Cycle 17: Arbiter correctly granted Channel 1.
+  1252.00ns INFO     .._multiple_requests_no_priorities Cycle 18: Arbiter correctly granted Channel 3.
+  1262.00ns INFO     .._multiple_requests_no_priorities Cycle 19: Arbiter correctly granted Channel 1.
+  1272.00ns INFO     .._multiple_requests_no_priorities Cycle 20: Arbiter correctly granted Channel 3.
+  1282.00ns INFO     .._multiple_requests_no_priorities Cycle 21: Arbiter correctly granted Channel 1.
+  1292.00ns INFO     .._multiple_requests_no_priorities Cycle 22: Arbiter correctly granted Channel 3.
+  1302.00ns INFO     .._multiple_requests_no_priorities Cycle 23: Arbiter correctly granted Channel 1.
+  1312.00ns INFO     .._multiple_requests_no_priorities Cycle 24: Arbiter correctly granted Channel 3.
+  1322.00ns INFO     .._multiple_requests_no_priorities Cycle 25: Arbiter correctly granted Channel 1.
+  1332.00ns INFO     .._multiple_requests_no_priorities Cycle 26: Arbiter correctly granted Channel 3.
+  1342.00ns INFO     .._multiple_requests_no_priorities Cycle 27: Arbiter correctly granted Channel 1.
+  1352.00ns INFO     .._multiple_requests_no_priorities Cycle 28: Arbiter correctly granted Channel 3.
+  1362.00ns INFO     .._multiple_requests_no_priorities Cycle 29: Arbiter correctly granted Channel 1.
+  1372.00ns INFO     .._multiple_requests_no_priorities Cycle 30: Arbiter correctly granted Channel 3.
+  1382.00ns INFO     .._multiple_requests_no_priorities Cycle 31: Arbiter correctly granted Channel 1.
+  1392.00ns INFO     .._multiple_requests_no_priorities Cycle 32: Arbiter correctly granted Channel 3.
+  1402.00ns INFO     .._multiple_requests_no_priorities Cycle 33: Arbiter correctly granted Channel 1.
+  1412.00ns INFO     .._multiple_requests_no_priorities Cycle 34: Arbiter correctly granted Channel 3.
+  1422.00ns INFO     .._multiple_requests_no_priorities Cycle 35: Arbiter correctly granted Channel 1.
+  1432.00ns INFO     .._multiple_requests_no_priorities Cycle 36: Arbiter correctly granted Channel 3.
+  1442.00ns INFO     .._multiple_requests_no_priorities Cycle 37: Arbiter correctly granted Channel 1.
+  1452.00ns INFO     .._multiple_requests_no_priorities Cycle 38: Arbiter correctly granted Channel 3.
+  1462.00ns INFO     .._multiple_requests_no_priorities Cycle 39: Arbiter correctly granted Channel 1.
+  1472.00ns INFO     .._multiple_requests_no_priorities Cycle 40: Arbiter correctly granted Channel 3.
+  1482.00ns INFO     .._multiple_requests_no_priorities Cycle 41: Arbiter correctly granted Channel 1.
+  1492.00ns INFO     .._multiple_requests_no_priorities Cycle 42: Arbiter correctly granted Channel 3.
+  1502.00ns INFO     .._multiple_requests_no_priorities Cycle 43: Arbiter correctly granted Channel 1.
+  1512.00ns INFO     .._multiple_requests_no_priorities Cycle 44: Arbiter correctly granted Channel 3.
+  1522.00ns INFO     .._multiple_requests_no_priorities Cycle 45: Arbiter correctly granted Channel 1.
+  1532.00ns INFO     .._multiple_requests_no_priorities Cycle 46: Arbiter correctly granted Channel 3.
+  1542.00ns INFO     .._multiple_requests_no_priorities Cycle 47: Arbiter correctly granted Channel 1.
+  1552.00ns INFO     .._multiple_requests_no_priorities Cycle 48: Arbiter correctly granted Channel 3.
+  1562.00ns INFO     .._multiple_requests_no_priorities Cycle 49: Arbiter correctly granted Channel 1.
+  1572.00ns INFO     .._multiple_requests_no_priorities Cycle 50: Arbiter correctly granted Channel 3.
+  1582.00ns INFO     .._multiple_requests_no_priorities Cycle 51: Arbiter correctly granted Channel 1.
+  1592.00ns INFO     .._multiple_requests_no_priorities Cycle 52: Arbiter correctly granted Channel 3.
+  1602.00ns INFO     .._multiple_requests_no_priorities Cycle 53: Arbiter correctly granted Channel 1.
+  1612.00ns INFO     .._multiple_requests_no_priorities Cycle 54: Arbiter correctly granted Channel 3.
+  1622.00ns INFO     .._multiple_requests_no_priorities Cycle 55: Arbiter correctly granted Channel 1.
+  1632.00ns INFO     .._multiple_requests_no_priorities Cycle 56: Arbiter correctly granted Channel 3.
+  1642.00ns INFO     .._multiple_requests_no_priorities Cycle 57: Arbiter correctly granted Channel 1.
+  1652.00ns INFO     .._multiple_requests_no_priorities Cycle 58: Arbiter correctly granted Channel 3.
+  1662.00ns INFO     .._multiple_requests_no_priorities Cycle 59: Arbiter correctly granted Channel 1.
+  1672.00ns INFO     .._multiple_requests_no_priorities Cycle 60: Arbiter correctly granted Channel 3.
+  1682.00ns INFO     .._multiple_requests_no_priorities Cycle 61: Arbiter correctly granted Channel 1.
+  1692.00ns INFO     .._multiple_requests_no_priorities Cycle 62: Arbiter correctly granted Channel 3.
+  1702.00ns INFO     .._multiple_requests_no_priorities Cycle 63: Arbiter correctly granted Channel 1.
+  1712.00ns INFO     .._multiple_requests_no_priorities Cycle 64: Arbiter correctly granted Channel 3.
+  1722.00ns INFO     .._multiple_requests_no_priorities Cycle 65: Arbiter correctly granted Channel 1.
+  1732.00ns INFO     .._multiple_requests_no_priorities Cycle 66: Arbiter correctly granted Channel 3.
+  1742.00ns INFO     .._multiple_requests_no_priorities Cycle 67: Arbiter correctly granted Channel 1.
+  1752.00ns INFO     .._multiple_requests_no_priorities Cycle 68: Arbiter correctly granted Channel 3.
+  1762.00ns INFO     .._multiple_requests_no_priorities Cycle 69: Arbiter correctly granted Channel 1.
+  1772.00ns INFO     .._multiple_requests_no_priorities Cycle 70: Arbiter correctly granted Channel 3.
+  1782.00ns INFO     .._multiple_requests_no_priorities Cycle 71: Arbiter correctly granted Channel 1.
+  1792.00ns INFO     .._multiple_requests_no_priorities Cycle 72: Arbiter correctly granted Channel 3.
+  1802.00ns INFO     .._multiple_requests_no_priorities Cycle 73: Arbiter correctly granted Channel 1.
+  1812.00ns INFO     .._multiple_requests_no_priorities Cycle 74: Arbiter correctly granted Channel 3.
+  1822.00ns INFO     .._multiple_requests_no_priorities Cycle 75: Arbiter correctly granted Channel 1.
+  1832.00ns INFO     .._multiple_requests_no_priorities Cycle 76: Arbiter correctly granted Channel 3.
+  1842.00ns INFO     .._multiple_requests_no_priorities Cycle 77: Arbiter correctly granted Channel 1.
+  1852.00ns INFO     .._multiple_requests_no_priorities Cycle 78: Arbiter correctly granted Channel 3.
+  1862.00ns INFO     .._multiple_requests_no_priorities Cycle 79: Arbiter correctly granted Channel 1.
+  1872.00ns INFO     .._multiple_requests_no_priorities Cycle 80: Arbiter correctly granted Channel 3.
+  1882.00ns INFO     .._multiple_requests_no_priorities Cycle 81: Arbiter correctly granted Channel 1.
+  1892.00ns INFO     .._multiple_requests_no_priorities Cycle 82: Arbiter correctly granted Channel 3.
+  1902.00ns INFO     .._multiple_requests_no_priorities Cycle 83: Arbiter correctly granted Channel 1.
+  1912.00ns INFO     .._multiple_requests_no_priorities Cycle 84: Arbiter correctly granted Channel 3.
+  1922.00ns INFO     .._multiple_requests_no_priorities Cycle 85: Arbiter correctly granted Channel 1.
+  1932.00ns INFO     .._multiple_requests_no_priorities Cycle 86: Arbiter correctly granted Channel 3.
+  1942.00ns INFO     .._multiple_requests_no_priorities Cycle 87: Arbiter correctly granted Channel 1.
+  1952.00ns INFO     .._multiple_requests_no_priorities Cycle 88: Arbiter correctly granted Channel 3.
+  1962.00ns INFO     .._multiple_requests_no_priorities Cycle 89: Arbiter correctly granted Channel 1.
+  1972.00ns INFO     .._multiple_requests_no_priorities Cycle 90: Arbiter correctly granted Channel 3.
+  1982.00ns INFO     .._multiple_requests_no_priorities Cycle 91: Arbiter correctly granted Channel 1.
+  1992.00ns INFO     .._multiple_requests_no_priorities Cycle 92: Arbiter correctly granted Channel 3.
+  2002.00ns INFO     .._multiple_requests_no_priorities Cycle 93: Arbiter correctly granted Channel 1.
+  2012.00ns INFO     .._multiple_requests_no_priorities Cycle 94: Arbiter correctly granted Channel 3.
+  2022.00ns INFO     .._multiple_requests_no_priorities Cycle 95: Arbiter correctly granted Channel 1.
+  2032.00ns INFO     .._multiple_requests_no_priorities Cycle 96: Arbiter correctly granted Channel 3.
+  2042.00ns INFO     .._multiple_requests_no_priorities Cycle 97: Arbiter correctly granted Channel 1.
+  2052.00ns INFO     .._multiple_requests_no_priorities Cycle 98: Arbiter correctly granted Channel 3.
+  2062.00ns INFO     .._multiple_requests_no_priorities Cycle 99: Arbiter correctly granted Channel 1.
+  2062.00ns INFO     .._multiple_requests_no_priorities Test Case 3: Multiple Requests without Priorities completed successfully.
+  2062.00ns INFO     cocotb.regression                  test_round_robin_arbiter.test_multiple_requests_no_priorities passed
+  2062.00ns INFO     cocotb.regression                  running test_round_robin_arbiter.test_high_priority_requests (4/5)
+                                                            Test Case 4: High-Priority Requests - Arbiter grants high-priority channels first.
+  2083.00ns INFO     cocotb.test_high_priority_requests DUT has been reset for Test Case 4.
+  2093.00ns INFO     cocotb.test_high_priority_requests Cycle 0: Arbiter correctly granted High-Priority Channel 2.
+  2103.00ns INFO     cocotb.test_high_priority_requests Cycle 1: Arbiter correctly granted High-Priority Channel 0.
+  2113.00ns INFO     cocotb.test_high_priority_requests Cycle 2: Arbiter correctly granted High-Priority Channel 2.
+  2123.00ns INFO     cocotb.test_high_priority_requests Cycle 3: Arbiter correctly granted High-Priority Channel 0.
+  2133.00ns INFO     cocotb.test_high_priority_requests Cycle 4: Arbiter correctly granted High-Priority Channel 2.
+  2143.00ns INFO     cocotb.test_high_priority_requests Cycle 5: Arbiter correctly granted High-Priority Channel 0.
+  2153.00ns INFO     cocotb.test_high_priority_requests Cycle 6: Arbiter correctly granted High-Priority Channel 2.
+  2163.00ns INFO     cocotb.test_high_priority_requests Cycle 7: Arbiter correctly granted High-Priority Channel 0.
+  2173.00ns INFO     cocotb.test_high_priority_requests Cycle 8: Arbiter correctly granted High-Priority Channel 2.
+  2183.00ns INFO     cocotb.test_high_priority_requests Cycle 9: Arbiter correctly granted High-Priority Channel 0.
+  2193.00ns INFO     cocotb.test_high_priority_requests Cycle 10: Arbiter correctly granted High-Priority Channel 2.
+  2203.00ns INFO     cocotb.test_high_priority_requests Cycle 11: Arbiter correctly granted High-Priority Channel 0.
+  2213.00ns INFO     cocotb.test_high_priority_requests Cycle 12: Arbiter correctly granted High-Priority Channel 2.
+  2223.00ns INFO     cocotb.test_high_priority_requests Cycle 13: Arbiter correctly granted High-Priority Channel 0.
+  2233.00ns INFO     cocotb.test_high_priority_requests Cycle 14: Arbiter correctly granted High-Priority Channel 2.
+  2243.00ns INFO     cocotb.test_high_priority_requests Cycle 15: Arbiter correctly granted Low-Priority Channel 3.
+  2253.00ns INFO     cocotb.test_high_priority_requests Cycle 16: Arbiter correctly granted Low-Priority Channel 1.
+  2263.00ns INFO     cocotb.test_high_priority_requests Cycle 17: Arbiter correctly granted High-Priority Channel 2.
+  2273.00ns INFO     cocotb.test_high_priority_requests Cycle 18: Arbiter correctly granted High-Priority Channel 0.
+  2283.00ns INFO     cocotb.test_high_priority_requests Cycle 19: Arbiter correctly granted High-Priority Channel 2.
+  2293.00ns INFO     cocotb.test_high_priority_requests Cycle 20: Arbiter correctly granted High-Priority Channel 0.
+  2303.00ns INFO     cocotb.test_high_priority_requests Cycle 21: Arbiter correctly granted High-Priority Channel 2.
+  2313.00ns INFO     cocotb.test_high_priority_requests Cycle 22: Arbiter correctly granted High-Priority Channel 0.
+  2323.00ns INFO     cocotb.test_high_priority_requests Cycle 23: Arbiter correctly granted High-Priority Channel 2.
+  2333.00ns INFO     cocotb.test_high_priority_requests Cycle 24: Arbiter correctly granted High-Priority Channel 0.
+  2343.00ns INFO     cocotb.test_high_priority_requests Cycle 25: Arbiter correctly granted High-Priority Channel 2.
+  2353.00ns INFO     cocotb.test_high_priority_requests Cycle 26: Arbiter correctly granted High-Priority Channel 0.
+  2363.00ns INFO     cocotb.test_high_priority_requests Cycle 27: Arbiter correctly granted High-Priority Channel 2.
+  2373.00ns INFO     cocotb.test_high_priority_requests Cycle 28: Arbiter correctly granted High-Priority Channel 0.
+  2383.00ns INFO     cocotb.test_high_priority_requests Cycle 29: Arbiter correctly granted High-Priority Channel 2.
+  2393.00ns INFO     cocotb.test_high_priority_requests Cycle 30: Arbiter correctly granted High-Priority Channel 0.
+  2403.00ns INFO     cocotb.test_high_priority_requests Cycle 31: Arbiter correctly granted High-Priority Channel 2.
+  2413.00ns INFO     cocotb.test_high_priority_requests Cycle 32: Arbiter correctly granted Low-Priority Channel 3.
+  2423.00ns INFO     cocotb.test_high_priority_requests Cycle 33: Arbiter correctly granted Low-Priority Channel 1.
+  2433.00ns INFO     cocotb.test_high_priority_requests Cycle 34: Arbiter correctly granted High-Priority Channel 2.
+  2443.00ns INFO     cocotb.test_high_priority_requests Cycle 35: Arbiter correctly granted High-Priority Channel 0.
+  2453.00ns INFO     cocotb.test_high_priority_requests Cycle 36: Arbiter correctly granted High-Priority Channel 2.
+  2463.00ns INFO     cocotb.test_high_priority_requests Cycle 37: Arbiter correctly granted High-Priority Channel 0.
+  2473.00ns INFO     cocotb.test_high_priority_requests Cycle 38: Arbiter correctly granted High-Priority Channel 2.
+  2483.00ns INFO     cocotb.test_high_priority_requests Cycle 39: Arbiter correctly granted High-Priority Channel 0.
+  2493.00ns INFO     cocotb.test_high_priority_requests Cycle 40: Arbiter correctly granted High-Priority Channel 2.
+  2503.00ns INFO     cocotb.test_high_priority_requests Cycle 41: Arbiter correctly granted High-Priority Channel 0.
+  2513.00ns INFO     cocotb.test_high_priority_requests Cycle 42: Arbiter correctly granted High-Priority Channel 2.
+  2523.00ns INFO     cocotb.test_high_priority_requests Cycle 43: Arbiter correctly granted High-Priority Channel 0.
+  2533.00ns INFO     cocotb.test_high_priority_requests Cycle 44: Arbiter correctly granted High-Priority Channel 2.
+  2543.00ns INFO     cocotb.test_high_priority_requests Cycle 45: Arbiter correctly granted High-Priority Channel 0.
+  2553.00ns INFO     cocotb.test_high_priority_requests Cycle 46: Arbiter correctly granted High-Priority Channel 2.
+  2563.00ns INFO     cocotb.test_high_priority_requests Cycle 47: Arbiter correctly granted High-Priority Channel 0.
+  2573.00ns INFO     cocotb.test_high_priority_requests Cycle 48: Arbiter correctly granted High-Priority Channel 2.
+  2583.00ns INFO     cocotb.test_high_priority_requests Cycle 49: Arbiter correctly granted Low-Priority Channel 3.
+  2593.00ns INFO     cocotb.test_high_priority_requests Cycle 50: Arbiter correctly granted Low-Priority Channel 1.
+  2603.00ns INFO     cocotb.test_high_priority_requests Cycle 51: Arbiter correctly granted High-Priority Channel 2.
+  2613.00ns INFO     cocotb.test_high_priority_requests Cycle 52: Arbiter correctly granted High-Priority Channel 0.
+  2623.00ns INFO     cocotb.test_high_priority_requests Cycle 53: Arbiter correctly granted High-Priority Channel 2.
+  2633.00ns INFO     cocotb.test_high_priority_requests Cycle 54: Arbiter correctly granted High-Priority Channel 0.
+  2643.00ns INFO     cocotb.test_high_priority_requests Cycle 55: Arbiter correctly granted High-Priority Channel 2.
+  2653.00ns INFO     cocotb.test_high_priority_requests Cycle 56: Arbiter correctly granted High-Priority Channel 0.
+  2663.00ns INFO     cocotb.test_high_priority_requests Cycle 57: Arbiter correctly granted High-Priority Channel 2.
+  2673.00ns INFO     cocotb.test_high_priority_requests Cycle 58: Arbiter correctly granted High-Priority Channel 0.
+  2683.00ns INFO     cocotb.test_high_priority_requests Cycle 59: Arbiter correctly granted High-Priority Channel 2.
+  2693.00ns INFO     cocotb.test_high_priority_requests Cycle 60: Arbiter correctly granted High-Priority Channel 0.
+  2703.00ns INFO     cocotb.test_high_priority_requests Cycle 61: Arbiter correctly granted High-Priority Channel 2.
+  2713.00ns INFO     cocotb.test_high_priority_requests Cycle 62: Arbiter correctly granted High-Priority Channel 0.
+  2723.00ns INFO     cocotb.test_high_priority_requests Cycle 63: Arbiter correctly granted High-Priority Channel 2.
+  2733.00ns INFO     cocotb.test_high_priority_requests Cycle 64: Arbiter correctly granted High-Priority Channel 0.
+  2743.00ns INFO     cocotb.test_high_priority_requests Cycle 65: Arbiter correctly granted High-Priority Channel 2.
+  2753.00ns INFO     cocotb.test_high_priority_requests Cycle 66: Arbiter correctly granted Low-Priority Channel 3.
+  2763.00ns INFO     cocotb.test_high_priority_requests Cycle 67: Arbiter correctly granted Low-Priority Channel 1.
+  2773.00ns INFO     cocotb.test_high_priority_requests Cycle 68: Arbiter correctly granted High-Priority Channel 2.
+  2783.00ns INFO     cocotb.test_high_priority_requests Cycle 69: Arbiter correctly granted High-Priority Channel 0.
+  2793.00ns INFO     cocotb.test_high_priority_requests Cycle 70: Arbiter correctly granted High-Priority Channel 2.
+  2803.00ns INFO     cocotb.test_high_priority_requests Cycle 71: Arbiter correctly granted High-Priority Channel 0.
+  2813.00ns INFO     cocotb.test_high_priority_requests Cycle 72: Arbiter correctly granted High-Priority Channel 2.
+  2823.00ns INFO     cocotb.test_high_priority_requests Cycle 73: Arbiter correctly granted High-Priority Channel 0.
+  2833.00ns INFO     cocotb.test_high_priority_requests Cycle 74: Arbiter correctly granted High-Priority Channel 2.
+  2843.00ns INFO     cocotb.test_high_priority_requests Cycle 75: Arbiter correctly granted High-Priority Channel 0.
+  2853.00ns INFO     cocotb.test_high_priority_requests Cycle 76: Arbiter correctly granted High-Priority Channel 2.
+  2863.00ns INFO     cocotb.test_high_priority_requests Cycle 77: Arbiter correctly granted High-Priority Channel 0.
+  2873.00ns INFO     cocotb.test_high_priority_requests Cycle 78: Arbiter correctly granted High-Priority Channel 2.
+  2883.00ns INFO     cocotb.test_high_priority_requests Cycle 79: Arbiter correctly granted High-Priority Channel 0.
+  2893.00ns INFO     cocotb.test_high_priority_requests Cycle 80: Arbiter correctly granted High-Priority Channel 2.
+  2903.00ns INFO     cocotb.test_high_priority_requests Cycle 81: Arbiter correctly granted High-Priority Channel 0.
+  2913.00ns INFO     cocotb.test_high_priority_requests Cycle 82: Arbiter correctly granted High-Priority Channel 2.
+  2923.00ns INFO     cocotb.test_high_priority_requests Cycle 83: Arbiter correctly granted Low-Priority Channel 3.
+  2933.00ns INFO     cocotb.test_high_priority_requests Cycle 84: Arbiter correctly granted Low-Priority Channel 1.
+  2943.00ns INFO     cocotb.test_high_priority_requests Cycle 85: Arbiter correctly granted High-Priority Channel 2.
+  2953.00ns INFO     cocotb.test_high_priority_requests Cycle 86: Arbiter correctly granted High-Priority Channel 0.
+  2963.00ns INFO     cocotb.test_high_priority_requests Cycle 87: Arbiter correctly granted High-Priority Channel 2.
+  2973.00ns INFO     cocotb.test_high_priority_requests Cycle 88: Arbiter correctly granted High-Priority Channel 0.
+  2983.00ns INFO     cocotb.test_high_priority_requests Cycle 89: Arbiter correctly granted High-Priority Channel 2.
+  2993.00ns INFO     cocotb.test_high_priority_requests Cycle 90: Arbiter correctly granted High-Priority Channel 0.
+  3003.00ns INFO     cocotb.test_high_priority_requests Cycle 91: Arbiter correctly granted High-Priority Channel 2.
+  3013.00ns INFO     cocotb.test_high_priority_requests Cycle 92: Arbiter correctly granted High-Priority Channel 0.
+  3023.00ns INFO     cocotb.test_high_priority_requests Cycle 93: Arbiter correctly granted High-Priority Channel 2.
+  3033.00ns INFO     cocotb.test_high_priority_requests Cycle 94: Arbiter correctly granted High-Priority Channel 0.
+  3043.00ns INFO     cocotb.test_high_priority_requests Cycle 95: Arbiter correctly granted High-Priority Channel 2.
+  3053.00ns INFO     cocotb.test_high_priority_requests Cycle 96: Arbiter correctly granted High-Priority Channel 0.
+  3063.00ns INFO     cocotb.test_high_priority_requests Cycle 97: Arbiter correctly granted High-Priority Channel 2.
+  3073.00ns INFO     cocotb.test_high_priority_requests Cycle 98: Arbiter correctly granted High-Priority Channel 0.
+  3083.00ns INFO     cocotb.test_high_priority_requests Cycle 99: Arbiter correctly granted High-Priority Channel 2.
+  3083.00ns INFO     cocotb.test_high_priority_requests Test Case 4: High-Priority Requests completed successfully.
+  3083.00ns INFO     cocotb.regression                  test_round_robin_arbiter.test_high_priority_requests passed
+  3083.00ns INFO     cocotb.regression                  running test_round_robin_arbiter.test_all_channels_requesting_mixed_priorities (5/5)
+                                                            Test Case 6: All Channels Requesting with Mixed Priorities - Complex Granting Logic.
+  3104.00ns INFO     ..nels_requesting_mixed_priorities DUT has been reset for Test Case 6.
+  3104.00ns INFO     ..nels_requesting_mixed_priorities Applying Priority Pattern 1: priority_level=[1, 0, 1, 0]
+  3114.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 0: Arbiter correctly granted High-Priority Channel 2.
+  3124.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 1: Arbiter correctly granted High-Priority Channel 0.
+  3134.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 2: Arbiter correctly granted High-Priority Channel 2.
+  3144.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 3: Arbiter correctly granted High-Priority Channel 0.
+  3154.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 4: Arbiter correctly granted High-Priority Channel 2.
+  3164.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 5: Arbiter correctly granted High-Priority Channel 0.
+  3174.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 6: Arbiter correctly granted High-Priority Channel 2.
+  3184.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 7: Arbiter correctly granted High-Priority Channel 0.
+  3194.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 8: Arbiter correctly granted High-Priority Channel 2.
+  3204.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 9: Arbiter correctly granted High-Priority Channel 0.
+  3214.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 10: Arbiter correctly granted High-Priority Channel 2.
+  3224.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 11: Arbiter correctly granted High-Priority Channel 0.
+  3234.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 12: Arbiter correctly granted High-Priority Channel 2.
+  3244.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 13: Arbiter correctly granted High-Priority Channel 0.
+  3254.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 14: Arbiter correctly granted High-Priority Channel 2.
+  3264.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 15: Arbiter correctly granted Low-Priority Channel 3.
+  3274.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 16: Arbiter correctly granted Low-Priority Channel 1.
+  3284.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 17: Arbiter correctly granted High-Priority Channel 2.
+  3294.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 18: Arbiter correctly granted High-Priority Channel 0.
+  3304.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 19: Arbiter correctly granted High-Priority Channel 2.
+  3314.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 20: Arbiter correctly granted High-Priority Channel 0.
+  3324.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 21: Arbiter correctly granted High-Priority Channel 2.
+  3334.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 22: Arbiter correctly granted High-Priority Channel 0.
+  3344.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 23: Arbiter correctly granted High-Priority Channel 2.
+  3354.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 24: Arbiter correctly granted High-Priority Channel 0.
+  3364.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 25: Arbiter correctly granted High-Priority Channel 2.
+  3374.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 26: Arbiter correctly granted High-Priority Channel 0.
+  3384.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 27: Arbiter correctly granted High-Priority Channel 2.
+  3394.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 28: Arbiter correctly granted High-Priority Channel 0.
+  3404.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 29: Arbiter correctly granted High-Priority Channel 2.
+  3414.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 30: Arbiter correctly granted High-Priority Channel 0.
+  3424.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 31: Arbiter correctly granted High-Priority Channel 2.
+  3434.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 32: Arbiter correctly granted Low-Priority Channel 3.
+  3444.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 33: Arbiter correctly granted Low-Priority Channel 1.
+  3454.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 34: Arbiter correctly granted High-Priority Channel 2.
+  3464.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 35: Arbiter correctly granted High-Priority Channel 0.
+  3474.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 36: Arbiter correctly granted High-Priority Channel 2.
+  3484.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 37: Arbiter correctly granted High-Priority Channel 0.
+  3494.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 38: Arbiter correctly granted High-Priority Channel 2.
+  3504.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 39: Arbiter correctly granted High-Priority Channel 0.
+  3514.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 40: Arbiter correctly granted High-Priority Channel 2.
+  3524.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 41: Arbiter correctly granted High-Priority Channel 0.
+  3534.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 42: Arbiter correctly granted High-Priority Channel 2.
+  3544.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 43: Arbiter correctly granted High-Priority Channel 0.
+  3554.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 44: Arbiter correctly granted High-Priority Channel 2.
+  3564.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 45: Arbiter correctly granted High-Priority Channel 0.
+  3574.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 46: Arbiter correctly granted High-Priority Channel 2.
+  3584.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 47: Arbiter correctly granted High-Priority Channel 0.
+  3594.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 48: Arbiter correctly granted High-Priority Channel 2.
+  3604.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1, Cycle 49: Arbiter correctly granted Low-Priority Channel 3.
+  3604.00ns INFO     ..nels_requesting_mixed_priorities Pattern 1: Completed all 50 cycles.
+  3604.00ns INFO     ..nels_requesting_mixed_priorities Applying Priority Pattern 2: priority_level=[0, 1, 0, 1]
+  3614.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 0: Arbiter correctly granted High-Priority Channel 1.
+  3624.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 1: Arbiter correctly granted High-Priority Channel 3.
+  3634.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 2: Arbiter correctly granted High-Priority Channel 1.
+  3644.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 3: Arbiter correctly granted High-Priority Channel 3.
+  3654.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 4: Arbiter correctly granted High-Priority Channel 1.
+  3664.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 5: Arbiter correctly granted High-Priority Channel 3.
+  3674.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 6: Arbiter correctly granted High-Priority Channel 1.
+  3684.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 7: Arbiter correctly granted High-Priority Channel 3.
+  3694.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 8: Arbiter correctly granted High-Priority Channel 1.
+  3704.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 9: Arbiter correctly granted High-Priority Channel 3.
+  3714.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 10: Arbiter correctly granted High-Priority Channel 1.
+  3724.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 11: Arbiter correctly granted High-Priority Channel 3.
+  3734.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 12: Arbiter correctly granted High-Priority Channel 1.
+  3744.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 13: Arbiter correctly granted High-Priority Channel 3.
+  3754.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 14: Arbiter correctly granted Low-Priority Channel 0.
+  3764.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 15: Arbiter correctly granted Low-Priority Channel 2.
+  3774.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 16: Arbiter correctly granted High-Priority Channel 3.
+  3784.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 17: Arbiter correctly granted High-Priority Channel 1.
+  3794.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 18: Arbiter correctly granted High-Priority Channel 3.
+  3804.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 19: Arbiter correctly granted High-Priority Channel 1.
+  3814.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 20: Arbiter correctly granted High-Priority Channel 3.
+  3824.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 21: Arbiter correctly granted High-Priority Channel 1.
+  3834.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 22: Arbiter correctly granted High-Priority Channel 3.
+  3844.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 23: Arbiter correctly granted High-Priority Channel 1.
+  3854.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 24: Arbiter correctly granted High-Priority Channel 3.
+  3864.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 25: Arbiter correctly granted High-Priority Channel 1.
+  3874.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 26: Arbiter correctly granted High-Priority Channel 3.
+  3884.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 27: Arbiter correctly granted High-Priority Channel 1.
+  3894.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 28: Arbiter correctly granted High-Priority Channel 3.
+  3904.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 29: Arbiter correctly granted High-Priority Channel 1.
+  3914.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 30: Arbiter correctly granted High-Priority Channel 3.
+  3924.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 31: Arbiter correctly granted Low-Priority Channel 0.
+  3934.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 32: Arbiter correctly granted Low-Priority Channel 2.
+  3944.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 33: Arbiter correctly granted High-Priority Channel 3.
+  3954.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 34: Arbiter correctly granted High-Priority Channel 1.
+  3964.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 35: Arbiter correctly granted High-Priority Channel 3.
+  3974.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 36: Arbiter correctly granted High-Priority Channel 1.
+  3984.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 37: Arbiter correctly granted High-Priority Channel 3.
+  3994.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 38: Arbiter correctly granted High-Priority Channel 1.
+  4004.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 39: Arbiter correctly granted High-Priority Channel 3.
+  4014.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 40: Arbiter correctly granted High-Priority Channel 1.
+  4024.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 41: Arbiter correctly granted High-Priority Channel 3.
+  4034.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 42: Arbiter correctly granted High-Priority Channel 1.
+  4044.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 43: Arbiter correctly granted High-Priority Channel 3.
+  4054.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 44: Arbiter correctly granted High-Priority Channel 1.
+  4064.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 45: Arbiter correctly granted High-Priority Channel 3.
+  4074.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 46: Arbiter correctly granted High-Priority Channel 1.
+  4084.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 47: Arbiter correctly granted High-Priority Channel 3.
+  4094.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 48: Arbiter correctly granted Low-Priority Channel 0.
+  4104.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2, Cycle 49: Arbiter correctly granted Low-Priority Channel 2.
+  4104.00ns INFO     ..nels_requesting_mixed_priorities Pattern 2: Completed all 50 cycles.
+  4104.00ns INFO     ..nels_requesting_mixed_priorities Applying Priority Pattern 3: priority_level=[1, 1, 0, 0]
+  4114.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 0: Arbiter correctly granted High-Priority Channel 0.
+  4124.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 1: Arbiter correctly granted High-Priority Channel 1.
+  4134.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 2: Arbiter correctly granted High-Priority Channel 0.
+  4144.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 3: Arbiter correctly granted High-Priority Channel 1.
+  4154.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 4: Arbiter correctly granted High-Priority Channel 0.
+  4164.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 5: Arbiter correctly granted High-Priority Channel 1.
+  4174.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 6: Arbiter correctly granted High-Priority Channel 0.
+  4184.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 7: Arbiter correctly granted High-Priority Channel 1.
+  4194.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 8: Arbiter correctly granted High-Priority Channel 0.
+  4204.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 9: Arbiter correctly granted High-Priority Channel 1.
+  4214.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 10: Arbiter correctly granted High-Priority Channel 0.
+  4224.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 11: Arbiter correctly granted High-Priority Channel 1.
+  4234.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 12: Arbiter correctly granted High-Priority Channel 0.
+  4244.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 13: Arbiter correctly granted High-Priority Channel 1.
+  4254.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 14: Arbiter correctly granted Low-Priority Channel 3.
+  4264.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 15: Arbiter correctly granted High-Priority Channel 0.
+  4274.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 16: Arbiter correctly granted Low-Priority Channel 2.
+  4284.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 17: Arbiter correctly granted High-Priority Channel 0.
+  4294.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 18: Arbiter correctly granted High-Priority Channel 1.
+  4304.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 19: Arbiter correctly granted High-Priority Channel 0.
+  4314.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 20: Arbiter correctly granted High-Priority Channel 1.
+  4324.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 21: Arbiter correctly granted High-Priority Channel 0.
+  4334.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 22: Arbiter correctly granted High-Priority Channel 1.
+  4344.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 23: Arbiter correctly granted High-Priority Channel 0.
+  4354.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 24: Arbiter correctly granted High-Priority Channel 1.
+  4364.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 25: Arbiter correctly granted High-Priority Channel 0.
+  4374.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 26: Arbiter correctly granted High-Priority Channel 1.
+  4384.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 27: Arbiter correctly granted High-Priority Channel 0.
+  4394.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 28: Arbiter correctly granted High-Priority Channel 1.
+  4404.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 29: Arbiter correctly granted High-Priority Channel 0.
+  4414.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 30: Arbiter correctly granted High-Priority Channel 1.
+  4424.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 31: Arbiter correctly granted Low-Priority Channel 3.
+  4434.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 32: Arbiter correctly granted High-Priority Channel 0.
+  4444.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 33: Arbiter correctly granted Low-Priority Channel 2.
+  4454.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 34: Arbiter correctly granted High-Priority Channel 0.
+  4464.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 35: Arbiter correctly granted High-Priority Channel 1.
+  4474.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 36: Arbiter correctly granted High-Priority Channel 0.
+  4484.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 37: Arbiter correctly granted High-Priority Channel 1.
+  4494.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 38: Arbiter correctly granted High-Priority Channel 0.
+  4504.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 39: Arbiter correctly granted High-Priority Channel 1.
+  4514.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 40: Arbiter correctly granted High-Priority Channel 0.
+  4524.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 41: Arbiter correctly granted High-Priority Channel 1.
+  4534.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 42: Arbiter correctly granted High-Priority Channel 0.
+  4544.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 43: Arbiter correctly granted High-Priority Channel 1.
+  4554.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 44: Arbiter correctly granted High-Priority Channel 0.
+  4564.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 45: Arbiter correctly granted High-Priority Channel 1.
+  4574.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 46: Arbiter correctly granted High-Priority Channel 0.
+  4584.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 47: Arbiter correctly granted High-Priority Channel 1.
+  4594.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 48: Arbiter correctly granted Low-Priority Channel 3.
+  4604.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3, Cycle 49: Arbiter correctly granted High-Priority Channel 0.
+  4604.00ns INFO     ..nels_requesting_mixed_priorities Pattern 3: Completed all 50 cycles.
+  4604.00ns INFO     ..nels_requesting_mixed_priorities Applying Priority Pattern 4: priority_level=[0, 0, 1, 1]
+  4614.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 0: Arbiter correctly granted High-Priority Channel 2.
+  4624.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 1: Arbiter correctly granted High-Priority Channel 3.
+  4634.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 2: Arbiter correctly granted High-Priority Channel 2.
+  4644.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 3: Arbiter correctly granted High-Priority Channel 3.
+  4654.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 4: Arbiter correctly granted High-Priority Channel 2.
+  4664.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 5: Arbiter correctly granted High-Priority Channel 3.
+  4674.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 6: Arbiter correctly granted High-Priority Channel 2.
+  4684.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 7: Arbiter correctly granted High-Priority Channel 3.
+  4694.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 8: Arbiter correctly granted High-Priority Channel 2.
+  4704.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 9: Arbiter correctly granted High-Priority Channel 3.
+  4714.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 10: Arbiter correctly granted High-Priority Channel 2.
+  4724.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 11: Arbiter correctly granted High-Priority Channel 3.
+  4734.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 12: Arbiter correctly granted High-Priority Channel 2.
+  4744.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 13: Arbiter correctly granted High-Priority Channel 3.
+  4754.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 14: Arbiter correctly granted Low-Priority Channel 1.
+  4764.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 15: Arbiter correctly granted High-Priority Channel 2.
+  4774.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 16: Arbiter correctly granted Low-Priority Channel 0.
+  4784.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 17: Arbiter correctly granted High-Priority Channel 2.
+  4794.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 18: Arbiter correctly granted High-Priority Channel 3.
+  4804.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 19: Arbiter correctly granted High-Priority Channel 2.
+  4814.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 20: Arbiter correctly granted High-Priority Channel 3.
+  4824.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 21: Arbiter correctly granted High-Priority Channel 2.
+  4834.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 22: Arbiter correctly granted High-Priority Channel 3.
+  4844.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 23: Arbiter correctly granted High-Priority Channel 2.
+  4854.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 24: Arbiter correctly granted High-Priority Channel 3.
+  4864.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 25: Arbiter correctly granted High-Priority Channel 2.
+  4874.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 26: Arbiter correctly granted High-Priority Channel 3.
+  4884.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 27: Arbiter correctly granted High-Priority Channel 2.
+  4894.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 28: Arbiter correctly granted High-Priority Channel 3.
+  4904.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 29: Arbiter correctly granted High-Priority Channel 2.
+  4914.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 30: Arbiter correctly granted High-Priority Channel 3.
+  4924.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 31: Arbiter correctly granted Low-Priority Channel 1.
+  4934.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 32: Arbiter correctly granted High-Priority Channel 2.
+  4944.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 33: Arbiter correctly granted Low-Priority Channel 0.
+  4954.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 34: Arbiter correctly granted High-Priority Channel 2.
+  4964.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 35: Arbiter correctly granted High-Priority Channel 3.
+  4974.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 36: Arbiter correctly granted High-Priority Channel 2.
+  4984.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 37: Arbiter correctly granted High-Priority Channel 3.
+  4994.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 38: Arbiter correctly granted High-Priority Channel 2.
+  5004.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 39: Arbiter correctly granted High-Priority Channel 3.
+  5014.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 40: Arbiter correctly granted High-Priority Channel 2.
+  5024.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 41: Arbiter correctly granted High-Priority Channel 3.
+  5034.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 42: Arbiter correctly granted High-Priority Channel 2.
+  5044.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 43: Arbiter correctly granted High-Priority Channel 3.
+  5054.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 44: Arbiter correctly granted High-Priority Channel 2.
+  5064.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 45: Arbiter correctly granted High-Priority Channel 3.
+  5074.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 46: Arbiter correctly granted High-Priority Channel 2.
+  5084.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 47: Arbiter correctly granted High-Priority Channel 3.
+  5094.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 48: Arbiter correctly granted Low-Priority Channel 1.
+  5104.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4, Cycle 49: Arbiter correctly granted High-Priority Channel 2.
+  5104.00ns INFO     ..nels_requesting_mixed_priorities Pattern 4: Completed all 50 cycles.
+  5104.00ns INFO     ..nels_requesting_mixed_priorities Applying Priority Pattern 5: priority_level=[1, 0, 0, 1]
+  5114.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 0: Arbiter correctly granted High-Priority Channel 0.
+  5124.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 1: Arbiter correctly granted High-Priority Channel 3.
+  5134.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 2: Arbiter correctly granted High-Priority Channel 0.
+  5144.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 3: Arbiter correctly granted High-Priority Channel 3.
+  5154.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 4: Arbiter correctly granted High-Priority Channel 0.
+  5164.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 5: Arbiter correctly granted High-Priority Channel 3.
+  5174.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 6: Arbiter correctly granted High-Priority Channel 0.
+  5184.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 7: Arbiter correctly granted High-Priority Channel 3.
+  5194.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 8: Arbiter correctly granted High-Priority Channel 0.
+  5204.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 9: Arbiter correctly granted High-Priority Channel 3.
+  5214.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 10: Arbiter correctly granted High-Priority Channel 0.
+  5224.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 11: Arbiter correctly granted High-Priority Channel 3.
+  5234.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 12: Arbiter correctly granted High-Priority Channel 0.
+  5244.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 13: Arbiter correctly granted High-Priority Channel 3.
+  5254.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 14: Arbiter correctly granted High-Priority Channel 0.
+  5264.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 15: Arbiter correctly granted Low-Priority Channel 1.
+  5274.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 16: Arbiter correctly granted Low-Priority Channel 2.
+  5284.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 17: Arbiter correctly granted High-Priority Channel 3.
+  5294.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 18: Arbiter correctly granted High-Priority Channel 0.
+  5304.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 19: Arbiter correctly granted High-Priority Channel 3.
+  5314.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 20: Arbiter correctly granted High-Priority Channel 0.
+  5324.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 21: Arbiter correctly granted High-Priority Channel 3.
+  5334.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 22: Arbiter correctly granted High-Priority Channel 0.
+  5344.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 23: Arbiter correctly granted High-Priority Channel 3.
+  5354.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 24: Arbiter correctly granted High-Priority Channel 0.
+  5364.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 25: Arbiter correctly granted High-Priority Channel 3.
+  5374.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 26: Arbiter correctly granted High-Priority Channel 0.
+  5384.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 27: Arbiter correctly granted High-Priority Channel 3.
+  5394.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 28: Arbiter correctly granted High-Priority Channel 0.
+  5404.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 29: Arbiter correctly granted High-Priority Channel 3.
+  5414.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 30: Arbiter correctly granted High-Priority Channel 0.
+  5424.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 31: Arbiter correctly granted High-Priority Channel 3.
+  5434.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 32: Arbiter correctly granted Low-Priority Channel 1.
+  5444.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 33: Arbiter correctly granted Low-Priority Channel 2.
+  5454.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 34: Arbiter correctly granted High-Priority Channel 3.
+  5464.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 35: Arbiter correctly granted High-Priority Channel 0.
+  5474.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 36: Arbiter correctly granted High-Priority Channel 3.
+  5484.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 37: Arbiter correctly granted High-Priority Channel 0.
+  5494.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 38: Arbiter correctly granted High-Priority Channel 3.
+  5504.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 39: Arbiter correctly granted High-Priority Channel 0.
+  5514.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 40: Arbiter correctly granted High-Priority Channel 3.
+  5524.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 41: Arbiter correctly granted High-Priority Channel 0.
+  5534.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 42: Arbiter correctly granted High-Priority Channel 3.
+  5544.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 43: Arbiter correctly granted High-Priority Channel 0.
+  5554.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 44: Arbiter correctly granted High-Priority Channel 3.
+  5564.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 45: Arbiter correctly granted High-Priority Channel 0.
+  5574.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 46: Arbiter correctly granted High-Priority Channel 3.
+  5584.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 47: Arbiter correctly granted High-Priority Channel 0.
+  5594.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 48: Arbiter correctly granted High-Priority Channel 3.
+  5604.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5, Cycle 49: Arbiter correctly granted Low-Priority Channel 1.
+  5604.00ns INFO     ..nels_requesting_mixed_priorities Pattern 5: Completed all 50 cycles.
+  5604.00ns INFO     ..nels_requesting_mixed_priorities Applying Priority Pattern 6: priority_level=[0, 1, 1, 0]
+  5614.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 0: Arbiter correctly granted High-Priority Channel 2.
+  5624.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 1: Arbiter correctly granted High-Priority Channel 1.
+  5634.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 2: Arbiter correctly granted High-Priority Channel 2.
+  5644.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 3: Arbiter correctly granted High-Priority Channel 1.
+  5654.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 4: Arbiter correctly granted High-Priority Channel 2.
+  5664.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 5: Arbiter correctly granted High-Priority Channel 1.
+  5674.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 6: Arbiter correctly granted High-Priority Channel 2.
+  5684.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 7: Arbiter correctly granted High-Priority Channel 1.
+  5694.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 8: Arbiter correctly granted High-Priority Channel 2.
+  5704.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 9: Arbiter correctly granted High-Priority Channel 1.
+  5714.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 10: Arbiter correctly granted High-Priority Channel 2.
+  5724.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 11: Arbiter correctly granted High-Priority Channel 1.
+  5734.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 12: Arbiter correctly granted High-Priority Channel 2.
+  5744.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 13: Arbiter correctly granted High-Priority Channel 1.
+  5754.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 14: Arbiter correctly granted Low-Priority Channel 0.
+  5764.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 15: Arbiter correctly granted Low-Priority Channel 3.
+  5774.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 16: Arbiter correctly granted High-Priority Channel 1.
+  5784.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 17: Arbiter correctly granted High-Priority Channel 2.
+  5794.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 18: Arbiter correctly granted High-Priority Channel 1.
+  5804.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 19: Arbiter correctly granted High-Priority Channel 2.
+  5814.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 20: Arbiter correctly granted High-Priority Channel 1.
+  5824.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 21: Arbiter correctly granted High-Priority Channel 2.
+  5834.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 22: Arbiter correctly granted High-Priority Channel 1.
+  5844.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 23: Arbiter correctly granted High-Priority Channel 2.
+  5854.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 24: Arbiter correctly granted High-Priority Channel 1.
+  5864.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 25: Arbiter correctly granted High-Priority Channel 2.
+  5874.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 26: Arbiter correctly granted High-Priority Channel 1.
+  5884.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 27: Arbiter correctly granted High-Priority Channel 2.
+  5894.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 28: Arbiter correctly granted High-Priority Channel 1.
+  5904.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 29: Arbiter correctly granted High-Priority Channel 2.
+  5914.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 30: Arbiter correctly granted High-Priority Channel 1.
+  5924.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 31: Arbiter correctly granted Low-Priority Channel 0.
+  5934.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 32: Arbiter correctly granted Low-Priority Channel 3.
+  5944.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 33: Arbiter correctly granted High-Priority Channel 1.
+  5954.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 34: Arbiter correctly granted High-Priority Channel 2.
+  5964.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 35: Arbiter correctly granted High-Priority Channel 1.
+  5974.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 36: Arbiter correctly granted High-Priority Channel 2.
+  5984.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 37: Arbiter correctly granted High-Priority Channel 1.
+  5994.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 38: Arbiter correctly granted High-Priority Channel 2.
+  6004.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 39: Arbiter correctly granted High-Priority Channel 1.
+  6014.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 40: Arbiter correctly granted High-Priority Channel 2.
+  6024.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 41: Arbiter correctly granted High-Priority Channel 1.
+  6034.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 42: Arbiter correctly granted High-Priority Channel 2.
+  6044.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 43: Arbiter correctly granted High-Priority Channel 1.
+  6054.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 44: Arbiter correctly granted High-Priority Channel 2.
+  6064.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 45: Arbiter correctly granted High-Priority Channel 1.
+  6074.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 46: Arbiter correctly granted High-Priority Channel 2.
+  6084.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 47: Arbiter correctly granted High-Priority Channel 1.
+  6094.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 48: Arbiter correctly granted Low-Priority Channel 0.
+  6104.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6, Cycle 49: Arbiter correctly granted Low-Priority Channel 3.
+  6104.00ns INFO     ..nels_requesting_mixed_priorities Pattern 6: Completed all 50 cycles.
+  6104.00ns INFO     ..nels_requesting_mixed_priorities Test Case 6: All Channels Requesting with Mixed Priorities completed successfully.
+  6104.00ns INFO     cocotb.regression                  test_round_robin_arbiter.test_all_channels_requesting_mixed_priorities passed
+  6104.00ns INFO     cocotb.regression                  ********************************************************************************************************************************
+                                                        ** TEST                                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************************************
+                                                        ** test_round_robin_arbiter.test_no_requests                                PASS         520.00           0.01      75907.08  **
+                                                        ** test_round_robin_arbiter.test_single_request                             PASS         520.00           0.01     101951.02  **
+                                                        ** test_round_robin_arbiter.test_multiple_requests_no_priorities            PASS        1020.00           0.01      97622.08  **
+                                                        ** test_round_robin_arbiter.test_high_priority_requests                     PASS        1020.00           0.01      84505.79  **
+                                                        ** test_round_robin_arbiter.test_all_channels_requesting_mixed_priorities   PASS        3020.00           0.04      85350.03  **
+                                                        ********************************************************************************************************************************
+                                                        ** TESTS=5 PASS=5 FAIL=0 SKIP=0                                                         6104.00           0.08      81275.26  **
+                                                        ********************************************************************************************************************************
+FST info: dumpfile /code/rundir/sim_build/round_robin_arbiter.fst opened for output.
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_runner.result.xml
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-o67fyb2_'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-pl4f_k2k'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 1 passed, 2 warnings in 0.52s =========================
+Cleaning up Docker resources...

@@ -1,0 +1,534 @@
+Running harness with project name: cvdp_copilot_write_buffer_merge_1_1790258530
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 15 items
+
+../../src/test_runner.py::test_random_write_buffer_merge[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258531
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 18
+INPUT_ADDR_WIDTH: 7
+BUFFER_DEPTH: 8
+NUM_OUTPUTS: 10
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+   408.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   408.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         408.00           0.01      30623.58  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     408.00           0.01      27601.67  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258531
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 9
+INPUT_ADDR_WIDTH: 5
+BUFFER_DEPTH: 4
+NUM_OUTPUTS: 10
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+   246.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   246.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         246.00           0.01      48587.25  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     246.00           0.01      39634.26  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258531
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 8
+INPUT_ADDR_WIDTH: 19
+BUFFER_DEPTH: 16
+NUM_OUTPUTS: 10
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+   746.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   746.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         746.00           0.02      30250.11  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     746.00           0.03      28659.17  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258531
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 15
+INPUT_ADDR_WIDTH: 14
+BUFFER_DEPTH: 16
+NUM_OUTPUTS: 10
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+   746.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   746.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         746.00           0.03      22986.88  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     746.00           0.03      22096.80  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258532
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 14
+INPUT_ADDR_WIDTH: 17
+BUFFER_DEPTH: 4
+NUM_OUTPUTS: 15
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+Output 14 Matched
+Output 15 Matched
+   190.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   190.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         190.00           0.00      42303.74  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     190.00           0.01      33479.72  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258532
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 2
+INPUT_ADDR_WIDTH: 29
+BUFFER_DEPTH: 16
+NUM_OUTPUTS: 15
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+Output 14 Matched
+Output 15 Matched
+   550.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   550.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         550.00           0.01      40129.20  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     550.00           0.01      36773.37  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258532
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 28
+INPUT_ADDR_WIDTH: 16
+BUFFER_DEPTH: 16
+NUM_OUTPUTS: 15
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+Output 14 Matched
+Output 15 Matched
+   550.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   550.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         550.00           0.03      15931.73  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     550.00           0.04      15327.00  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258532
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 28
+INPUT_ADDR_WIDTH: 10
+BUFFER_DEPTH: 8
+NUM_OUTPUTS: 15
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+Output 14 Matched
+Output 15 Matched
+   310.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   310.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         310.00           0.01      25716.15  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     310.00           0.01      23261.25  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258533
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 31
+INPUT_ADDR_WIDTH: 15
+BUFFER_DEPTH: 4
+NUM_OUTPUTS: 13
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+   174.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   174.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         174.00           0.01      34227.98  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     174.00           0.01      27240.82  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_write_buffer_merge[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258533
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 24
+INPUT_ADDR_WIDTH: 9
+BUFFER_DEPTH: 8
+NUM_OUTPUTS: 13
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+   278.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+   278.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS         278.00           0.01      28420.02  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     278.00           0.01      25332.77  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_passthrough_write_buffer_merge[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258533
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 5
+INPUT_ADDR_WIDTH: 22
+BUFFER_DEPTH: 1
+NUM_OUTPUTS: 13
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+    94.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+    94.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS          94.00           0.00      57725.41  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                      94.00           0.00      33689.19  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_passthrough_write_buffer_merge[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258533
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 1
+INPUT_ADDR_WIDTH: 13
+BUFFER_DEPTH: 1
+NUM_OUTPUTS: 13
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+Output 10 Matched
+Output 11 Matched
+Output 12 Matched
+Output 13 Matched
+    94.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+    94.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS          94.00           0.00      60442.22  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                      94.00           0.00      34709.44  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_passthrough_write_buffer_merge[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258534
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 4
+INPUT_ADDR_WIDTH: 15
+BUFFER_DEPTH: 1
+NUM_OUTPUTS: 9
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+    86.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+    86.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS          86.00           0.00      61502.16  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                      86.00           0.00      34180.82  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_passthrough_write_buffer_merge[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258534
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 21
+INPUT_ADDR_WIDTH: 13
+BUFFER_DEPTH: 1
+NUM_OUTPUTS: 9
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+    86.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+    86.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS          86.00           0.00      59759.80  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                      86.00           0.00      33171.80  **
+                                                        ***********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_passthrough_write_buffer_merge[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258534
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_write_buffer_merge.verify_write_buffer_merge (1/1)
+                                                            Verify the write buffer merge functionality.
+INPUT_DATA_WIDTH: 32
+INPUT_ADDR_WIDTH: 4
+BUFFER_DEPTH: 1
+NUM_OUTPUTS: 9
+All inputs have been generated!
+All outputs have been received!
+Output 1 Matched
+Output 2 Matched
+Output 3 Matched
+Output 4 Matched
+Output 5 Matched
+Output 6 Matched
+Output 7 Matched
+Output 8 Matched
+Output 9 Matched
+    86.00ns INFO     cocotb.regression                  test_write_buffer_merge.verify_write_buffer_merge passed
+    86.00ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test_write_buffer_merge.verify_write_buffer_merge   PASS          86.00           0.00      58414.60  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                      86.00           0.00      32324.59  **
+                                                        ***********************************************************************************************************
+PASSED
+
+============================== 15 passed in 3.67s ==============================
+Cleaning up Docker resources...

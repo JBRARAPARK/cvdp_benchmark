@@ -1,0 +1,1428 @@
+Running harness with project name: cvdp_copilot_line_buffer_3_1790258612
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 64 items
+
+../../src/test_runner.py::test_data[255-3-4-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258613
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.10      96621.15  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      95515.55  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-4-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258613
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      94436.22  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      93412.90  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-4-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258613
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      91397.88  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      90500.20  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-4-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258614
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      90507.35  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      89610.71  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-4-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258614
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      90862.45  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      89796.29  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-4-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258614
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      90211.98  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      89349.38  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-4-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258615
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      90618.76  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      89612.03  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-4-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258615
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      89009.54  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      88087.44  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258616
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.13      75049.00  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      74408.59  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258616
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.13      77060.68  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.13      76448.43  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258616
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      74405.72  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      73802.51  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258617
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      73366.07  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      72646.12  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258617
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.13      75958.59  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.13      75297.14  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258617
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      70604.12  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      70021.54  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258618
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      73266.31  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      72663.55  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-3-7-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258618
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      70889.17  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      70282.32  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258619
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      66552.43  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      66027.45  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258619
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      66385.93  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      65886.39  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258619
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      68243.97  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      67717.26  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258620
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.16      65138.15  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.16      64653.69  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258620
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      67163.29  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      66669.41  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258621
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      66210.45  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      65738.89  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258621
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      68013.67  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      67514.35  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-4-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258621
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      66851.03  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      66368.79  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258622
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.21      49101.74  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.21      48856.39  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258622
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.21      47524.78  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.21      47259.68  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258623
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.21      48558.64  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.21      48271.64  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258623
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      46017.53  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      45779.95  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258624
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.21      48108.11  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.21      47854.84  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258624
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      45331.90  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      45108.15  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258625
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      46672.11  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      46393.92  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[255-7-7-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258625
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      45954.89  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      45703.47  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 255, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      92671.24  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      91745.32  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      94413.30  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      93493.43  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      93113.22  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.11      92087.62  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258627
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.12      86390.64  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.12      85202.80  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258627
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.11      88687.86  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.12      87639.22  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258627
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.12      86745.15  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.12      85642.47  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258628
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.12      87454.14  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.12      86343.32  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-4-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258628
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.12      81768.19  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.12      80938.97  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258629
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      73168.46  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      72431.82  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258629
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      73971.55  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      73346.27  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258629
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.13      76696.21  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.13      76024.64  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258630
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.13      77501.09  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.13      76841.86  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258630
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      69485.13  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      68936.48  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258631
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      70925.81  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      70380.42  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258631
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.16      61715.32  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.17      61231.60  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-3-7-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258631
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.14      70852.93  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.14      70248.78  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 3, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258632
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      67664.75  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      67119.59  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258632
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      66830.91  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      66215.41  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258633
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      67509.51  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      66912.64  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258633
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.16      65084.56  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.16      64642.25  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258633
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      65568.22  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.16      65064.99  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258634
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.16      62342.29  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.16      61861.45  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258634
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.15      66055.32  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.15      65559.51  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-4-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258635
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.16      64233.93  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.16      63818.24  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 4, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-8-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258635
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.21      47965.81  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.21      47714.03  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-8-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258636
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      46799.34  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      46543.38  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-8-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258636
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      46129.96  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      45886.16  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-8-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258636
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      45171.96  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.23      44903.38  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 8, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 3, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-9-10_0-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258637
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      46345.50  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      46120.68  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-9-10_0-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258637
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      45320.27  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      45068.31  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-9-10_1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258638
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      46813.08  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      46556.30  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 8, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+../../src/test_runner.py::test_data[136-7-7-9-10_1-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258638
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_line_buffer.test_line_buffer (1/1)
+                                                            Test the Line Buffer module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create ctrl_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create window_assignment via any registered implementation
+ 10110.00ns INFO     cocotb.regression                  test_line_buffer.test_line_buffer passed
+ 10110.00ns INFO     cocotb.regression                  *******************************************************************************************
+                                                        ** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************
+                                                        ** test_line_buffer.test_line_buffer   PASS       10110.00           0.22      46324.48  **
+                                                        *******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   10110.00           0.22      46016.73  **
+                                                        *******************************************************************************************
+[DEBUG] Parameters: {'NBW_DATA': 16, 'NS_ROW': 10, 'NS_COLUMN': 9, 'NS_R_OUT': 7, 'NS_C_OUT': 7, 'CONSTANT': 136, 'NBW_ROW': 4, 'NBW_COL': 4, 'NBW_MODE': 3}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-czzc7jrd'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-679pipoj'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 64 passed, 2 warnings in 26.34s ========================
+Cleaning up Docker resources...

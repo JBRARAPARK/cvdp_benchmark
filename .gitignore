@@ -30,3 +30,23 @@ work*/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Authored RTL solutions, selected problems and reproducible evaluation records.
+# These override generic cvdp_*, JSON and log exclusions above, only here.
+!/solutions/**/
+!/solutions/**/*.sv
+!/solutions/**/*.v
+!/solutions/**/*.py
+!/solutions/**/*.sh
+!/solutions/**/*.patch
+!/solutions/**/*.md
+!/solutions/**/*.txt
+!/solutions/**/*.json
+!/solutions/**/*.jsonl
+!/solutions/**/*.log
+!/selections/**/
+!/selections/**/*.md
+!/selections/**/*.json
+!/selections/**/*.jsonl
+!/model_responses/example_responses.jsonl
+!/model_responses/lfsr_8bit.v

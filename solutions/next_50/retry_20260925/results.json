@@ -1,0 +1,113 @@
+{
+  "previous_baseline_pass": 43,
+  "new_unqualified_pass_claim": 0,
+  "compatibility_pass": 4,
+  "remaining_retry_fail": 3,
+  "records": [
+    {
+      "id": "cvdp_copilot_serial_in_parallel_out_0014",
+      "official_harness_pass": false,
+      "configuration": "revised_original_behavior",
+      "rtl_sha256": "41fc802e5c68f69396b8fc09365161b077c3f306b84cb95d82edda9b832dfb28",
+      "tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_retry_20260925/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+          "error_msg": null,
+          "execution": 5.936022996902466,
+          "pid": 48791
+        }
+      ]
+    },
+    {
+      "id": "cvdp_copilot_ping_pong_buffer_0001",
+      "official_harness_pass": false,
+      "configuration": "revised_original_behavior",
+      "rtl_sha256": "37376f3218f535cfc5131d6af344f4f407f5bdf906a09b6e8cd491cb77ca6a34",
+      "tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_retry_20260925/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.1935138702392578,
+          "pid": 48823
+        }
+      ]
+    },
+    {
+      "id": "cvdp_copilot_wb2ahb_0001",
+      "official_harness_pass": true,
+      "configuration": "compatibility",
+      "rtl_sha256": "0afdfbe9ca03ee9668ddf269bb54ea580d6b5dc87adfc03e0e6ac2f101ffb139",
+      "tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_retry_20260925/cvdp_copilot_wb2ahb/reports/1.txt",
+          "error_msg": null,
+          "execution": 0.964637041091919,
+          "pid": 48834
+        }
+      ]
+    },
+    {
+      "id": "cvdp_copilot_microcode_sequencer_0001",
+      "official_harness_pass": true,
+      "configuration": "compatibility",
+      "rtl_sha256": "08ce71489d9a1f493be43231ccdb92b8e8dcb068f99e6e971485e67e226bf7ac",
+      "tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_retry_20260925/cvdp_copilot_microcode_sequencer/reports/1.txt",
+          "error_msg": null,
+          "execution": 0.9785630702972412,
+          "pid": 48845
+        }
+      ]
+    },
+    {
+      "id": "cvdp_copilot_configurable_digital_low_pass_filter_0004",
+      "official_harness_pass": true,
+      "configuration": "compatibility",
+      "rtl_sha256": "473f44675842d510fc6eccf848534a456551cf76e2b7dc5360ac3027426464e1",
+      "tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_retry_20260925/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+          "error_msg": null,
+          "execution": 8.415354013442993,
+          "pid": 48858
+        }
+      ]
+    },
+    {
+      "id": "cvdp_copilot_neuromorphic_array_0001",
+      "official_harness_pass": true,
+      "configuration": "compatibility",
+      "rtl_sha256": "35f6651ec1d1135a7615254c2963c5cc5538b07b884a5c7d0d999c34e5f45391",
+      "tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_retry_20260925/cvdp_copilot_neuromorphic_array/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.0136468410491943,
+          "pid": 48874
+        }
+      ]
+    },
+    {
+      "id": "cvdp_copilot_clock_jitter_detection_module_0003",
+      "official_harness_pass": false,
+      "configuration": "compatibility",
+      "rtl_sha256": "9c6f0e0c1caf3240e292479aeefad5469354f351c0e0932cadfb09e4c392a9f3",
+      "tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_retry_20260925/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+          "error_msg": null,
+          "execution": 2.246598958969116,
+          "pid": 48885
+        }
+      ]
+    }
+  ]
+}

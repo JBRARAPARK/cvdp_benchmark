@@ -1,0 +1,1151 @@
+Running harness with project name: cvdp_copilot_restoring_division_1_1790255909
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_areg_param[3-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255910
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 3
+[INFO] Total cycles = 23, Reset will be applied at cycle 11
+Performing write operation: dividend = 5, divisor = 3
+Read operation: quotient = 1, remainder = 2
+Check Passed: quotient = 1, remainder = 2
+Performing write operation: dividend = 7, divisor = 3
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 6, divisor = 2
+Read operation: quotient = 3, remainder = 0
+Check Passed: quotient = 3, remainder = 0
+Performing write operation: dividend = 7, divisor = 1
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 5, divisor = 3
+Read operation: quotient = 1, remainder = 2
+Check Passed: quotient = 1, remainder = 2
+Performing write operation: dividend = 7, divisor = 3
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 4, divisor = 3
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 3, divisor = 2
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 4, divisor = 2
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 5, divisor = 1
+Read operation: quotient = 5, remainder = 0
+Check Passed: quotient = 5, remainder = 0
+Performing write operation: dividend = 6, divisor = 3
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 4, divisor = 1
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+Performing write operation: dividend = 3, divisor = 2
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 7, divisor = 1
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 4, divisor = 1
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+  1690.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  1690.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        1690.00           0.00     397865.61  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  1690.00           0.01     335894.13  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[3-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255910
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 3
+[INFO] Total cycles = 23, Reset will be applied at cycle 11
+Performing write operation: dividend = 5, divisor = 3
+Read operation: quotient = 1, remainder = 2
+Check Passed: quotient = 1, remainder = 2
+Performing write operation: dividend = 7, divisor = 3
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 6, divisor = 2
+Read operation: quotient = 3, remainder = 0
+Check Passed: quotient = 3, remainder = 0
+Performing write operation: dividend = 7, divisor = 1
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 5, divisor = 3
+Read operation: quotient = 1, remainder = 2
+Check Passed: quotient = 1, remainder = 2
+Performing write operation: dividend = 7, divisor = 3
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 4, divisor = 3
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 3, divisor = 2
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 4, divisor = 2
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 5, divisor = 1
+Read operation: quotient = 5, remainder = 0
+Check Passed: quotient = 5, remainder = 0
+Performing write operation: dividend = 6, divisor = 3
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 4, divisor = 1
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+Performing write operation: dividend = 3, divisor = 2
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 7, divisor = 1
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 4, divisor = 1
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+  1690.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  1690.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        1690.00           0.00     404241.45  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  1690.00           0.01     305783.78  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[4-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255911
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 4
+[INFO] Total cycles = 38, Reset will be applied at cycle 19
+Performing write operation: dividend = 12, divisor = 1
+Read operation: quotient = 12, remainder = 0
+Check Passed: quotient = 12, remainder = 0
+Performing write operation: dividend = 8, divisor = 1
+Read operation: quotient = 8, remainder = 0
+Check Passed: quotient = 8, remainder = 0
+Performing write operation: dividend = 13, divisor = 1
+Read operation: quotient = 13, remainder = 0
+Check Passed: quotient = 13, remainder = 0
+Performing write operation: dividend = 8, divisor = 2
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+Performing write operation: dividend = 15, divisor = 1
+Read operation: quotient = 15, remainder = 0
+Check Passed: quotient = 15, remainder = 0
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 9, divisor = 3
+Read operation: quotient = 3, remainder = 0
+Check Passed: quotient = 3, remainder = 0
+Performing write operation: dividend = 11, divisor = 4
+Read operation: quotient = 2, remainder = 3
+Check Passed: quotient = 2, remainder = 3
+Performing write operation: dividend = 12, divisor = 2
+Read operation: quotient = 6, remainder = 0
+Check Passed: quotient = 6, remainder = 0
+Performing write operation: dividend = 13, divisor = 2
+Read operation: quotient = 6, remainder = 1
+Check Passed: quotient = 6, remainder = 1
+Performing write operation: dividend = 13, divisor = 2
+Read operation: quotient = 6, remainder = 1
+Check Passed: quotient = 6, remainder = 1
+Performing write operation: dividend = 9, divisor = 4
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 7, divisor = 1
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 13, divisor = 1
+Read operation: quotient = 13, remainder = 0
+Check Passed: quotient = 13, remainder = 0
+Performing write operation: dividend = 9, divisor = 1
+Read operation: quotient = 9, remainder = 0
+Check Passed: quotient = 9, remainder = 0
+Performing write operation: dividend = 5, divisor = 4
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 12, divisor = 2
+Read operation: quotient = 6, remainder = 0
+Check Passed: quotient = 6, remainder = 0
+Performing write operation: dividend = 15, divisor = 1
+Read operation: quotient = 15, remainder = 0
+Check Passed: quotient = 15, remainder = 0
+Performing write operation: dividend = 7, divisor = 4
+Read operation: quotient = 1, remainder = 3
+Check Passed: quotient = 1, remainder = 3
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 4, divisor = 2
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 13, divisor = 2
+Read operation: quotient = 6, remainder = 1
+Check Passed: quotient = 6, remainder = 1
+Performing write operation: dividend = 4, divisor = 2
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 13, divisor = 4
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 10, divisor = 4
+Read operation: quotient = 2, remainder = 2
+Check Passed: quotient = 2, remainder = 2
+Performing write operation: dividend = 11, divisor = 3
+Read operation: quotient = 3, remainder = 2
+Check Passed: quotient = 3, remainder = 2
+Performing write operation: dividend = 13, divisor = 4
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 14, divisor = 4
+Read operation: quotient = 3, remainder = 2
+Check Passed: quotient = 3, remainder = 2
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 10, divisor = 4
+Read operation: quotient = 2, remainder = 2
+Check Passed: quotient = 2, remainder = 2
+Performing write operation: dividend = 4, divisor = 4
+Read operation: quotient = 1, remainder = 0
+Check Passed: quotient = 1, remainder = 0
+Performing write operation: dividend = 14, divisor = 1
+Read operation: quotient = 14, remainder = 0
+Check Passed: quotient = 14, remainder = 0
+Performing write operation: dividend = 10, divisor = 4
+Read operation: quotient = 2, remainder = 2
+Check Passed: quotient = 2, remainder = 2
+Performing write operation: dividend = 5, divisor = 4
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 9, divisor = 1
+Read operation: quotient = 9, remainder = 0
+Check Passed: quotient = 9, remainder = 0
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 14, divisor = 1
+Read operation: quotient = 14, remainder = 0
+Check Passed: quotient = 14, remainder = 0
+Performing write operation: dividend = 4, divisor = 1
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+Performing write operation: dividend = 10, divisor = 3
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+  2740.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  2740.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        2740.00           0.01     415893.78  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  2740.00           0.01     368440.40  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[4-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255911
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 4
+[INFO] Total cycles = 38, Reset will be applied at cycle 19
+Performing write operation: dividend = 12, divisor = 1
+Read operation: quotient = 12, remainder = 0
+Check Passed: quotient = 12, remainder = 0
+Performing write operation: dividend = 8, divisor = 1
+Read operation: quotient = 8, remainder = 0
+Check Passed: quotient = 8, remainder = 0
+Performing write operation: dividend = 13, divisor = 1
+Read operation: quotient = 13, remainder = 0
+Check Passed: quotient = 13, remainder = 0
+Performing write operation: dividend = 8, divisor = 2
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+Performing write operation: dividend = 15, divisor = 1
+Read operation: quotient = 15, remainder = 0
+Check Passed: quotient = 15, remainder = 0
+Performing write operation: dividend = 7, divisor = 2
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 9, divisor = 3
+Read operation: quotient = 3, remainder = 0
+Check Passed: quotient = 3, remainder = 0
+Performing write operation: dividend = 11, divisor = 4
+Read operation: quotient = 2, remainder = 3
+Check Passed: quotient = 2, remainder = 3
+Performing write operation: dividend = 12, divisor = 2
+Read operation: quotient = 6, remainder = 0
+Check Passed: quotient = 6, remainder = 0
+Performing write operation: dividend = 13, divisor = 2
+Read operation: quotient = 6, remainder = 1
+Check Passed: quotient = 6, remainder = 1
+Performing write operation: dividend = 13, divisor = 2
+Read operation: quotient = 6, remainder = 1
+Check Passed: quotient = 6, remainder = 1
+Performing write operation: dividend = 9, divisor = 4
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 7, divisor = 1
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 13, divisor = 1
+Read operation: quotient = 13, remainder = 0
+Check Passed: quotient = 13, remainder = 0
+Performing write operation: dividend = 9, divisor = 1
+Read operation: quotient = 9, remainder = 0
+Check Passed: quotient = 9, remainder = 0
+Performing write operation: dividend = 5, divisor = 4
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 12, divisor = 2
+Read operation: quotient = 6, remainder = 0
+Check Passed: quotient = 6, remainder = 0
+Performing write operation: dividend = 15, divisor = 1
+Read operation: quotient = 15, remainder = 0
+Check Passed: quotient = 15, remainder = 0
+Performing write operation: dividend = 7, divisor = 4
+Read operation: quotient = 1, remainder = 3
+Check Passed: quotient = 1, remainder = 3
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 4, divisor = 2
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 13, divisor = 2
+Read operation: quotient = 6, remainder = 1
+Check Passed: quotient = 6, remainder = 1
+Performing write operation: dividend = 4, divisor = 2
+Read operation: quotient = 2, remainder = 0
+Check Passed: quotient = 2, remainder = 0
+Performing write operation: dividend = 13, divisor = 4
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 10, divisor = 4
+Read operation: quotient = 2, remainder = 2
+Check Passed: quotient = 2, remainder = 2
+Performing write operation: dividend = 11, divisor = 3
+Read operation: quotient = 3, remainder = 2
+Check Passed: quotient = 3, remainder = 2
+Performing write operation: dividend = 13, divisor = 4
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 14, divisor = 4
+Read operation: quotient = 3, remainder = 2
+Check Passed: quotient = 3, remainder = 2
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 10, divisor = 4
+Read operation: quotient = 2, remainder = 2
+Check Passed: quotient = 2, remainder = 2
+Performing write operation: dividend = 4, divisor = 4
+Read operation: quotient = 1, remainder = 0
+Check Passed: quotient = 1, remainder = 0
+Performing write operation: dividend = 14, divisor = 1
+Read operation: quotient = 14, remainder = 0
+Check Passed: quotient = 14, remainder = 0
+Performing write operation: dividend = 10, divisor = 4
+Read operation: quotient = 2, remainder = 2
+Check Passed: quotient = 2, remainder = 2
+Performing write operation: dividend = 5, divisor = 4
+Read operation: quotient = 1, remainder = 1
+Check Passed: quotient = 1, remainder = 1
+Performing write operation: dividend = 9, divisor = 1
+Read operation: quotient = 9, remainder = 0
+Check Passed: quotient = 9, remainder = 0
+Performing write operation: dividend = 5, divisor = 2
+Read operation: quotient = 2, remainder = 1
+Check Passed: quotient = 2, remainder = 1
+Performing write operation: dividend = 14, divisor = 1
+Read operation: quotient = 14, remainder = 0
+Check Passed: quotient = 14, remainder = 0
+Performing write operation: dividend = 4, divisor = 1
+Read operation: quotient = 4, remainder = 0
+Check Passed: quotient = 4, remainder = 0
+Performing write operation: dividend = 10, divisor = 3
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+  2740.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  2740.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        2740.00           0.01     402690.81  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  2740.00           0.01     359879.53  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[6-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255911
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 6
+[INFO] Total cycles = 38, Reset will be applied at cycle 19
+Performing write operation: dividend = 38, divisor = 6
+Read operation: quotient = 6, remainder = 2
+Check Passed: quotient = 6, remainder = 2
+Performing write operation: dividend = 13, divisor = 3
+Read operation: quotient = 4, remainder = 1
+Check Passed: quotient = 4, remainder = 1
+Performing write operation: dividend = 48, divisor = 1
+Read operation: quotient = 48, remainder = 0
+Check Passed: quotient = 48, remainder = 0
+Performing write operation: dividend = 43, divisor = 1
+Read operation: quotient = 43, remainder = 0
+Check Passed: quotient = 43, remainder = 0
+Performing write operation: dividend = 63, divisor = 3
+Read operation: quotient = 21, remainder = 0
+Check Passed: quotient = 21, remainder = 0
+Performing write operation: dividend = 47, divisor = 6
+Read operation: quotient = 7, remainder = 5
+Check Passed: quotient = 7, remainder = 5
+Performing write operation: dividend = 16, divisor = 6
+Read operation: quotient = 2, remainder = 4
+Check Passed: quotient = 2, remainder = 4
+Performing write operation: dividend = 9, divisor = 2
+Read operation: quotient = 4, remainder = 1
+Check Passed: quotient = 4, remainder = 1
+Performing write operation: dividend = 21, divisor = 3
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 45, divisor = 5
+Read operation: quotient = 9, remainder = 0
+Check Passed: quotient = 9, remainder = 0
+Performing write operation: dividend = 61, divisor = 3
+Read operation: quotient = 20, remainder = 1
+Check Passed: quotient = 20, remainder = 1
+Performing write operation: dividend = 37, divisor = 4
+Read operation: quotient = 9, remainder = 1
+Check Passed: quotient = 9, remainder = 1
+Performing write operation: dividend = 40, divisor = 2
+Read operation: quotient = 20, remainder = 0
+Check Passed: quotient = 20, remainder = 0
+Performing write operation: dividend = 45, divisor = 2
+Read operation: quotient = 22, remainder = 1
+Check Passed: quotient = 22, remainder = 1
+Performing write operation: dividend = 42, divisor = 6
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 18, divisor = 3
+Read operation: quotient = 6, remainder = 0
+Check Passed: quotient = 6, remainder = 0
+Performing write operation: dividend = 32, divisor = 2
+Read operation: quotient = 16, remainder = 0
+Check Passed: quotient = 16, remainder = 0
+Performing write operation: dividend = 60, divisor = 5
+Read operation: quotient = 12, remainder = 0
+Check Passed: quotient = 12, remainder = 0
+Performing write operation: dividend = 54, divisor = 1
+Read operation: quotient = 54, remainder = 0
+Check Passed: quotient = 54, remainder = 0
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 42, divisor = 1
+Read operation: quotient = 42, remainder = 0
+Check Passed: quotient = 42, remainder = 0
+Performing write operation: dividend = 59, divisor = 3
+Read operation: quotient = 19, remainder = 2
+Check Passed: quotient = 19, remainder = 2
+Performing write operation: dividend = 52, divisor = 1
+Read operation: quotient = 52, remainder = 0
+Check Passed: quotient = 52, remainder = 0
+Performing write operation: dividend = 13, divisor = 4
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 41, divisor = 2
+Read operation: quotient = 20, remainder = 1
+Check Passed: quotient = 20, remainder = 1
+Performing write operation: dividend = 52, divisor = 1
+Read operation: quotient = 52, remainder = 0
+Check Passed: quotient = 52, remainder = 0
+Performing write operation: dividend = 19, divisor = 6
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 37, divisor = 1
+Read operation: quotient = 37, remainder = 0
+Check Passed: quotient = 37, remainder = 0
+Performing write operation: dividend = 50, divisor = 5
+Read operation: quotient = 10, remainder = 0
+Check Passed: quotient = 10, remainder = 0
+Performing write operation: dividend = 18, divisor = 5
+Read operation: quotient = 3, remainder = 3
+Check Passed: quotient = 3, remainder = 3
+Performing write operation: dividend = 55, divisor = 2
+Read operation: quotient = 27, remainder = 1
+Check Passed: quotient = 27, remainder = 1
+Performing write operation: dividend = 8, divisor = 6
+Read operation: quotient = 1, remainder = 2
+Check Passed: quotient = 1, remainder = 2
+Performing write operation: dividend = 54, divisor = 5
+Read operation: quotient = 10, remainder = 4
+Check Passed: quotient = 10, remainder = 4
+Performing write operation: dividend = 19, divisor = 5
+Read operation: quotient = 3, remainder = 4
+Check Passed: quotient = 3, remainder = 4
+Performing write operation: dividend = 34, divisor = 4
+Read operation: quotient = 8, remainder = 2
+Check Passed: quotient = 8, remainder = 2
+Performing write operation: dividend = 52, divisor = 6
+Read operation: quotient = 8, remainder = 4
+Check Passed: quotient = 8, remainder = 4
+Performing write operation: dividend = 34, divisor = 4
+Read operation: quotient = 8, remainder = 2
+Check Passed: quotient = 8, remainder = 2
+Performing write operation: dividend = 29, divisor = 5
+Read operation: quotient = 5, remainder = 4
+Check Passed: quotient = 5, remainder = 4
+Performing write operation: dividend = 30, divisor = 6
+Read operation: quotient = 5, remainder = 0
+Check Passed: quotient = 5, remainder = 0
+  3880.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  3880.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        3880.00           0.01     439633.13  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  3880.00           0.01     401606.52  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[6-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255911
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 6
+[INFO] Total cycles = 38, Reset will be applied at cycle 19
+Performing write operation: dividend = 38, divisor = 6
+Read operation: quotient = 6, remainder = 2
+Check Passed: quotient = 6, remainder = 2
+Performing write operation: dividend = 13, divisor = 3
+Read operation: quotient = 4, remainder = 1
+Check Passed: quotient = 4, remainder = 1
+Performing write operation: dividend = 48, divisor = 1
+Read operation: quotient = 48, remainder = 0
+Check Passed: quotient = 48, remainder = 0
+Performing write operation: dividend = 43, divisor = 1
+Read operation: quotient = 43, remainder = 0
+Check Passed: quotient = 43, remainder = 0
+Performing write operation: dividend = 63, divisor = 3
+Read operation: quotient = 21, remainder = 0
+Check Passed: quotient = 21, remainder = 0
+Performing write operation: dividend = 47, divisor = 6
+Read operation: quotient = 7, remainder = 5
+Check Passed: quotient = 7, remainder = 5
+Performing write operation: dividend = 16, divisor = 6
+Read operation: quotient = 2, remainder = 4
+Check Passed: quotient = 2, remainder = 4
+Performing write operation: dividend = 9, divisor = 2
+Read operation: quotient = 4, remainder = 1
+Check Passed: quotient = 4, remainder = 1
+Performing write operation: dividend = 21, divisor = 3
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 45, divisor = 5
+Read operation: quotient = 9, remainder = 0
+Check Passed: quotient = 9, remainder = 0
+Performing write operation: dividend = 61, divisor = 3
+Read operation: quotient = 20, remainder = 1
+Check Passed: quotient = 20, remainder = 1
+Performing write operation: dividend = 37, divisor = 4
+Read operation: quotient = 9, remainder = 1
+Check Passed: quotient = 9, remainder = 1
+Performing write operation: dividend = 40, divisor = 2
+Read operation: quotient = 20, remainder = 0
+Check Passed: quotient = 20, remainder = 0
+Performing write operation: dividend = 45, divisor = 2
+Read operation: quotient = 22, remainder = 1
+Check Passed: quotient = 22, remainder = 1
+Performing write operation: dividend = 42, divisor = 6
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 18, divisor = 3
+Read operation: quotient = 6, remainder = 0
+Check Passed: quotient = 6, remainder = 0
+Performing write operation: dividend = 32, divisor = 2
+Read operation: quotient = 16, remainder = 0
+Check Passed: quotient = 16, remainder = 0
+Performing write operation: dividend = 60, divisor = 5
+Read operation: quotient = 12, remainder = 0
+Check Passed: quotient = 12, remainder = 0
+Performing write operation: dividend = 54, divisor = 1
+Read operation: quotient = 54, remainder = 0
+Check Passed: quotient = 54, remainder = 0
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 42, divisor = 1
+Read operation: quotient = 42, remainder = 0
+Check Passed: quotient = 42, remainder = 0
+Performing write operation: dividend = 59, divisor = 3
+Read operation: quotient = 19, remainder = 2
+Check Passed: quotient = 19, remainder = 2
+Performing write operation: dividend = 52, divisor = 1
+Read operation: quotient = 52, remainder = 0
+Check Passed: quotient = 52, remainder = 0
+Performing write operation: dividend = 13, divisor = 4
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 41, divisor = 2
+Read operation: quotient = 20, remainder = 1
+Check Passed: quotient = 20, remainder = 1
+Performing write operation: dividend = 52, divisor = 1
+Read operation: quotient = 52, remainder = 0
+Check Passed: quotient = 52, remainder = 0
+Performing write operation: dividend = 19, divisor = 6
+Read operation: quotient = 3, remainder = 1
+Check Passed: quotient = 3, remainder = 1
+Performing write operation: dividend = 37, divisor = 1
+Read operation: quotient = 37, remainder = 0
+Check Passed: quotient = 37, remainder = 0
+Performing write operation: dividend = 50, divisor = 5
+Read operation: quotient = 10, remainder = 0
+Check Passed: quotient = 10, remainder = 0
+Performing write operation: dividend = 18, divisor = 5
+Read operation: quotient = 3, remainder = 3
+Check Passed: quotient = 3, remainder = 3
+Performing write operation: dividend = 55, divisor = 2
+Read operation: quotient = 27, remainder = 1
+Check Passed: quotient = 27, remainder = 1
+Performing write operation: dividend = 8, divisor = 6
+Read operation: quotient = 1, remainder = 2
+Check Passed: quotient = 1, remainder = 2
+Performing write operation: dividend = 54, divisor = 5
+Read operation: quotient = 10, remainder = 4
+Check Passed: quotient = 10, remainder = 4
+Performing write operation: dividend = 19, divisor = 5
+Read operation: quotient = 3, remainder = 4
+Check Passed: quotient = 3, remainder = 4
+Performing write operation: dividend = 34, divisor = 4
+Read operation: quotient = 8, remainder = 2
+Check Passed: quotient = 8, remainder = 2
+Performing write operation: dividend = 52, divisor = 6
+Read operation: quotient = 8, remainder = 4
+Check Passed: quotient = 8, remainder = 4
+Performing write operation: dividend = 34, divisor = 4
+Read operation: quotient = 8, remainder = 2
+Check Passed: quotient = 8, remainder = 2
+Performing write operation: dividend = 29, divisor = 5
+Read operation: quotient = 5, remainder = 4
+Check Passed: quotient = 5, remainder = 4
+Performing write operation: dividend = 30, divisor = 6
+Read operation: quotient = 5, remainder = 0
+Check Passed: quotient = 5, remainder = 0
+  3880.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  3880.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        3880.00           0.01     413085.07  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  3880.00           0.01     366694.45  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[9-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255911
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 9
+[INFO] Total cycles = 38, Reset will be applied at cycle 19
+Performing write operation: dividend = 267, divisor = 2
+Read operation: quotient = 133, remainder = 1
+Check Passed: quotient = 133, remainder = 1
+Performing write operation: dividend = 142, divisor = 2
+Read operation: quotient = 71, remainder = 0
+Check Passed: quotient = 71, remainder = 0
+Performing write operation: dividend = 311, divisor = 2
+Read operation: quotient = 155, remainder = 1
+Check Passed: quotient = 155, remainder = 1
+Performing write operation: dividend = 469, divisor = 5
+Read operation: quotient = 93, remainder = 4
+Check Passed: quotient = 93, remainder = 4
+Performing write operation: dividend = 340, divisor = 3
+Read operation: quotient = 113, remainder = 1
+Check Passed: quotient = 113, remainder = 1
+Performing write operation: dividend = 367, divisor = 1
+Read operation: quotient = 367, remainder = 0
+Check Passed: quotient = 367, remainder = 0
+Performing write operation: dividend = 133, divisor = 4
+Read operation: quotient = 33, remainder = 1
+Check Passed: quotient = 33, remainder = 1
+Performing write operation: dividend = 170, divisor = 9
+Read operation: quotient = 18, remainder = 8
+Check Passed: quotient = 18, remainder = 8
+Performing write operation: dividend = 454, divisor = 6
+Read operation: quotient = 75, remainder = 4
+Check Passed: quotient = 75, remainder = 4
+Performing write operation: dividend = 262, divisor = 8
+Read operation: quotient = 32, remainder = 6
+Check Passed: quotient = 32, remainder = 6
+Performing write operation: dividend = 282, divisor = 4
+Read operation: quotient = 70, remainder = 2
+Check Passed: quotient = 70, remainder = 2
+Performing write operation: dividend = 328, divisor = 3
+Read operation: quotient = 109, remainder = 1
+Check Passed: quotient = 109, remainder = 1
+Performing write operation: dividend = 302, divisor = 4
+Read operation: quotient = 75, remainder = 2
+Check Passed: quotient = 75, remainder = 2
+Performing write operation: dividend = 430, divisor = 6
+Read operation: quotient = 71, remainder = 4
+Check Passed: quotient = 71, remainder = 4
+Performing write operation: dividend = 220, divisor = 4
+Read operation: quotient = 55, remainder = 0
+Check Passed: quotient = 55, remainder = 0
+Performing write operation: dividend = 447, divisor = 9
+Read operation: quotient = 49, remainder = 6
+Check Passed: quotient = 49, remainder = 6
+Performing write operation: dividend = 400, divisor = 2
+Read operation: quotient = 200, remainder = 0
+Check Passed: quotient = 200, remainder = 0
+Performing write operation: dividend = 300, divisor = 1
+Read operation: quotient = 300, remainder = 0
+Check Passed: quotient = 300, remainder = 0
+Performing write operation: dividend = 434, divisor = 6
+Read operation: quotient = 72, remainder = 2
+Check Passed: quotient = 72, remainder = 2
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 382, divisor = 1
+Read operation: quotient = 382, remainder = 0
+Check Passed: quotient = 382, remainder = 0
+Performing write operation: dividend = 68, divisor = 7
+Read operation: quotient = 9, remainder = 5
+Check Passed: quotient = 9, remainder = 5
+Performing write operation: dividend = 289, divisor = 4
+Read operation: quotient = 72, remainder = 1
+Check Passed: quotient = 72, remainder = 1
+Performing write operation: dividend = 383, divisor = 2
+Read operation: quotient = 191, remainder = 1
+Check Passed: quotient = 191, remainder = 1
+Performing write operation: dividend = 118, divisor = 8
+Read operation: quotient = 14, remainder = 6
+Check Passed: quotient = 14, remainder = 6
+Performing write operation: dividend = 39, divisor = 9
+Read operation: quotient = 4, remainder = 3
+Check Passed: quotient = 4, remainder = 3
+Performing write operation: dividend = 106, divisor = 4
+Read operation: quotient = 26, remainder = 2
+Check Passed: quotient = 26, remainder = 2
+Performing write operation: dividend = 31, divisor = 4
+Read operation: quotient = 7, remainder = 3
+Check Passed: quotient = 7, remainder = 3
+Performing write operation: dividend = 315, divisor = 8
+Read operation: quotient = 39, remainder = 3
+Check Passed: quotient = 39, remainder = 3
+Performing write operation: dividend = 216, divisor = 8
+Read operation: quotient = 27, remainder = 0
+Check Passed: quotient = 27, remainder = 0
+Performing write operation: dividend = 251, divisor = 6
+Read operation: quotient = 41, remainder = 5
+Check Passed: quotient = 41, remainder = 5
+Performing write operation: dividend = 309, divisor = 7
+Read operation: quotient = 44, remainder = 1
+Check Passed: quotient = 44, remainder = 1
+Performing write operation: dividend = 339, divisor = 7
+Read operation: quotient = 48, remainder = 3
+Check Passed: quotient = 48, remainder = 3
+Performing write operation: dividend = 499, divisor = 2
+Read operation: quotient = 249, remainder = 1
+Check Passed: quotient = 249, remainder = 1
+Performing write operation: dividend = 107, divisor = 7
+Read operation: quotient = 15, remainder = 2
+Check Passed: quotient = 15, remainder = 2
+Performing write operation: dividend = 500, divisor = 8
+Read operation: quotient = 62, remainder = 4
+Check Passed: quotient = 62, remainder = 4
+Performing write operation: dividend = 475, divisor = 1
+Read operation: quotient = 475, remainder = 0
+Check Passed: quotient = 475, remainder = 0
+Performing write operation: dividend = 420, divisor = 8
+Read operation: quotient = 52, remainder = 4
+Check Passed: quotient = 52, remainder = 4
+Performing write operation: dividend = 345, divisor = 1
+Read operation: quotient = 345, remainder = 0
+Check Passed: quotient = 345, remainder = 0
+  5020.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  5020.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        5020.00           0.01     453155.26  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  5020.00           0.01     421301.92  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[9-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255912
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 9
+[INFO] Total cycles = 27, Reset will be applied at cycle 13
+Performing write operation: dividend = 213, divisor = 2
+Read operation: quotient = 106, remainder = 1
+Check Passed: quotient = 106, remainder = 1
+Performing write operation: dividend = 295, divisor = 3
+Read operation: quotient = 98, remainder = 1
+Check Passed: quotient = 98, remainder = 1
+Performing write operation: dividend = 366, divisor = 7
+Read operation: quotient = 52, remainder = 2
+Check Passed: quotient = 52, remainder = 2
+Performing write operation: dividend = 302, divisor = 3
+Read operation: quotient = 100, remainder = 2
+Check Passed: quotient = 100, remainder = 2
+Performing write operation: dividend = 489, divisor = 1
+Read operation: quotient = 489, remainder = 0
+Check Passed: quotient = 489, remainder = 0
+Performing write operation: dividend = 120, divisor = 7
+Read operation: quotient = 17, remainder = 1
+Check Passed: quotient = 17, remainder = 1
+Performing write operation: dividend = 343, divisor = 2
+Read operation: quotient = 171, remainder = 1
+Check Passed: quotient = 171, remainder = 1
+Performing write operation: dividend = 124, divisor = 9
+Read operation: quotient = 13, remainder = 7
+Check Passed: quotient = 13, remainder = 7
+Performing write operation: dividend = 438, divisor = 8
+Read operation: quotient = 54, remainder = 6
+Check Passed: quotient = 54, remainder = 6
+Performing write operation: dividend = 367, divisor = 8
+Read operation: quotient = 45, remainder = 7
+Check Passed: quotient = 45, remainder = 7
+Performing write operation: dividend = 405, divisor = 3
+Read operation: quotient = 135, remainder = 0
+Check Passed: quotient = 135, remainder = 0
+Performing write operation: dividend = 490, divisor = 6
+Read operation: quotient = 81, remainder = 4
+Check Passed: quotient = 81, remainder = 4
+Performing write operation: dividend = 253, divisor = 2
+Read operation: quotient = 126, remainder = 1
+Check Passed: quotient = 126, remainder = 1
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 42, divisor = 6
+Read operation: quotient = 7, remainder = 0
+Check Passed: quotient = 7, remainder = 0
+Performing write operation: dividend = 140, divisor = 2
+Read operation: quotient = 70, remainder = 0
+Check Passed: quotient = 70, remainder = 0
+Performing write operation: dividend = 226, divisor = 3
+Read operation: quotient = 75, remainder = 1
+Check Passed: quotient = 75, remainder = 1
+Performing write operation: dividend = 306, divisor = 9
+Read operation: quotient = 34, remainder = 0
+Check Passed: quotient = 34, remainder = 0
+Performing write operation: dividend = 283, divisor = 2
+Read operation: quotient = 141, remainder = 1
+Check Passed: quotient = 141, remainder = 1
+Performing write operation: dividend = 46, divisor = 2
+Read operation: quotient = 23, remainder = 0
+Check Passed: quotient = 23, remainder = 0
+Performing write operation: dividend = 266, divisor = 2
+Read operation: quotient = 133, remainder = 0
+Check Passed: quotient = 133, remainder = 0
+Performing write operation: dividend = 242, divisor = 6
+Read operation: quotient = 40, remainder = 2
+Check Passed: quotient = 40, remainder = 2
+Performing write operation: dividend = 112, divisor = 4
+Read operation: quotient = 28, remainder = 0
+Check Passed: quotient = 28, remainder = 0
+Performing write operation: dividend = 303, divisor = 7
+Read operation: quotient = 43, remainder = 2
+Check Passed: quotient = 43, remainder = 2
+Performing write operation: dividend = 257, divisor = 3
+Read operation: quotient = 85, remainder = 2
+Check Passed: quotient = 85, remainder = 2
+Performing write operation: dividend = 360, divisor = 7
+Read operation: quotient = 51, remainder = 3
+Check Passed: quotient = 51, remainder = 3
+Performing write operation: dividend = 175, divisor = 4
+Read operation: quotient = 43, remainder = 3
+Check Passed: quotient = 43, remainder = 3
+Performing write operation: dividend = 326, divisor = 2
+Read operation: quotient = 163, remainder = 0
+Check Passed: quotient = 163, remainder = 0
+  3590.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  3590.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        3590.00           0.01     445489.69  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  3590.00           0.01     349023.03  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[15-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255912
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 15
+[INFO] Total cycles = 27, Reset will be applied at cycle 13
+Performing write operation: dividend = 13102, divisor = 2
+Read operation: quotient = 6551, remainder = 0
+Check Passed: quotient = 6551, remainder = 0
+Performing write operation: dividend = 18350, divisor = 3
+Read operation: quotient = 6116, remainder = 2
+Check Passed: quotient = 6116, remainder = 2
+Performing write operation: dividend = 22877, divisor = 15
+Read operation: quotient = 1525, remainder = 2
+Check Passed: quotient = 1525, remainder = 2
+Performing write operation: dividend = 14305, divisor = 10
+Read operation: quotient = 1430, remainder = 5
+Check Passed: quotient = 1430, remainder = 5
+Performing write operation: dividend = 6120, divisor = 1
+Read operation: quotient = 6120, remainder = 0
+Check Passed: quotient = 6120, remainder = 0
+Performing write operation: dividend = 7144, divisor = 12
+Read operation: quotient = 595, remainder = 4
+Check Passed: quotient = 595, remainder = 4
+Performing write operation: dividend = 21227, divisor = 11
+Read operation: quotient = 1929, remainder = 8
+Check Passed: quotient = 1929, remainder = 8
+Performing write operation: dividend = 13869, divisor = 11
+Read operation: quotient = 1260, remainder = 9
+Check Passed: quotient = 1260, remainder = 9
+Performing write operation: dividend = 26389, divisor = 11
+Read operation: quotient = 2399, remainder = 0
+Check Passed: quotient = 2399, remainder = 0
+Performing write operation: dividend = 21943, divisor = 2
+Read operation: quotient = 10971, remainder = 1
+Check Passed: quotient = 10971, remainder = 1
+Performing write operation: dividend = 7436, divisor = 9
+Read operation: quotient = 826, remainder = 2
+Check Passed: quotient = 826, remainder = 2
+Performing write operation: dividend = 27518, divisor = 10
+Read operation: quotient = 2751, remainder = 8
+Check Passed: quotient = 2751, remainder = 8
+Performing write operation: dividend = 27001, divisor = 13
+Read operation: quotient = 2077, remainder = 0
+Check Passed: quotient = 2077, remainder = 0
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 15958, divisor = 12
+Read operation: quotient = 1329, remainder = 10
+Check Passed: quotient = 1329, remainder = 10
+Performing write operation: dividend = 26163, divisor = 8
+Read operation: quotient = 3270, remainder = 3
+Check Passed: quotient = 3270, remainder = 3
+Performing write operation: dividend = 25365, divisor = 11
+Read operation: quotient = 2305, remainder = 10
+Check Passed: quotient = 2305, remainder = 10
+Performing write operation: dividend = 4319, divisor = 10
+Read operation: quotient = 431, remainder = 9
+Check Passed: quotient = 431, remainder = 9
+Performing write operation: dividend = 24645, divisor = 6
+Read operation: quotient = 4107, remainder = 3
+Check Passed: quotient = 4107, remainder = 3
+Performing write operation: dividend = 15667, divisor = 2
+Read operation: quotient = 7833, remainder = 1
+Check Passed: quotient = 7833, remainder = 1
+Performing write operation: dividend = 2152, divisor = 6
+Read operation: quotient = 358, remainder = 4
+Check Passed: quotient = 358, remainder = 4
+Performing write operation: dividend = 8432, divisor = 2
+Read operation: quotient = 4216, remainder = 0
+Check Passed: quotient = 4216, remainder = 0
+Performing write operation: dividend = 13956, divisor = 3
+Read operation: quotient = 4652, remainder = 0
+Check Passed: quotient = 4652, remainder = 0
+Performing write operation: dividend = 19062, divisor = 9
+Read operation: quotient = 2118, remainder = 0
+Check Passed: quotient = 2118, remainder = 0
+Performing write operation: dividend = 17571, divisor = 2
+Read operation: quotient = 8785, remainder = 1
+Check Passed: quotient = 8785, remainder = 1
+Performing write operation: dividend = 2435, divisor = 12
+Read operation: quotient = 202, remainder = 11
+Check Passed: quotient = 202, remainder = 11
+Performing write operation: dividend = 2118, divisor = 9
+Read operation: quotient = 235, remainder = 3
+Check Passed: quotient = 235, remainder = 3
+Performing write operation: dividend = 3486, divisor = 8
+Read operation: quotient = 435, remainder = 6
+Check Passed: quotient = 435, remainder = 6
+  5210.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  5210.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        5210.00           0.01     469588.99  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  5210.00           0.01     436714.57  **
+                                                        *********************************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[15-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255912
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_restoring_division.test_restoring_division (1/1)
+data_wd = 15
+[INFO] Total cycles = 27, Reset will be applied at cycle 13
+Performing write operation: dividend = 13102, divisor = 2
+Read operation: quotient = 6551, remainder = 0
+Check Passed: quotient = 6551, remainder = 0
+Performing write operation: dividend = 18350, divisor = 3
+Read operation: quotient = 6116, remainder = 2
+Check Passed: quotient = 6116, remainder = 2
+Performing write operation: dividend = 22877, divisor = 15
+Read operation: quotient = 1525, remainder = 2
+Check Passed: quotient = 1525, remainder = 2
+Performing write operation: dividend = 14305, divisor = 10
+Read operation: quotient = 1430, remainder = 5
+Check Passed: quotient = 1430, remainder = 5
+Performing write operation: dividend = 6120, divisor = 1
+Read operation: quotient = 6120, remainder = 0
+Check Passed: quotient = 6120, remainder = 0
+Performing write operation: dividend = 7144, divisor = 12
+Read operation: quotient = 595, remainder = 4
+Check Passed: quotient = 595, remainder = 4
+Performing write operation: dividend = 21227, divisor = 11
+Read operation: quotient = 1929, remainder = 8
+Check Passed: quotient = 1929, remainder = 8
+Performing write operation: dividend = 13869, divisor = 11
+Read operation: quotient = 1260, remainder = 9
+Check Passed: quotient = 1260, remainder = 9
+Performing write operation: dividend = 26389, divisor = 11
+Read operation: quotient = 2399, remainder = 0
+Check Passed: quotient = 2399, remainder = 0
+Performing write operation: dividend = 21943, divisor = 2
+Read operation: quotient = 10971, remainder = 1
+Check Passed: quotient = 10971, remainder = 1
+Performing write operation: dividend = 7436, divisor = 9
+Read operation: quotient = 826, remainder = 2
+Check Passed: quotient = 826, remainder = 2
+Performing write operation: dividend = 27518, divisor = 10
+Read operation: quotient = 2751, remainder = 8
+Check Passed: quotient = 2751, remainder = 8
+Performing write operation: dividend = 27001, divisor = 13
+Read operation: quotient = 2077, remainder = 0
+Check Passed: quotient = 2077, remainder = 0
+[INFO] Reset applied to the DUT
+Performing write operation: dividend = 15958, divisor = 12
+Read operation: quotient = 1329, remainder = 10
+Check Passed: quotient = 1329, remainder = 10
+Performing write operation: dividend = 26163, divisor = 8
+Read operation: quotient = 3270, remainder = 3
+Check Passed: quotient = 3270, remainder = 3
+Performing write operation: dividend = 25365, divisor = 11
+Read operation: quotient = 2305, remainder = 10
+Check Passed: quotient = 2305, remainder = 10
+Performing write operation: dividend = 4319, divisor = 10
+Read operation: quotient = 431, remainder = 9
+Check Passed: quotient = 431, remainder = 9
+Performing write operation: dividend = 24645, divisor = 6
+Read operation: quotient = 4107, remainder = 3
+Check Passed: quotient = 4107, remainder = 3
+Performing write operation: dividend = 15667, divisor = 2
+Read operation: quotient = 7833, remainder = 1
+Check Passed: quotient = 7833, remainder = 1
+Performing write operation: dividend = 2152, divisor = 6
+Read operation: quotient = 358, remainder = 4
+Check Passed: quotient = 358, remainder = 4
+Performing write operation: dividend = 8432, divisor = 2
+Read operation: quotient = 4216, remainder = 0
+Check Passed: quotient = 4216, remainder = 0
+Performing write operation: dividend = 13956, divisor = 3
+Read operation: quotient = 4652, remainder = 0
+Check Passed: quotient = 4652, remainder = 0
+Performing write operation: dividend = 19062, divisor = 9
+Read operation: quotient = 2118, remainder = 0
+Check Passed: quotient = 2118, remainder = 0
+Performing write operation: dividend = 17571, divisor = 2
+Read operation: quotient = 8785, remainder = 1
+Check Passed: quotient = 8785, remainder = 1
+Performing write operation: dividend = 2435, divisor = 12
+Read operation: quotient = 202, remainder = 11
+Check Passed: quotient = 202, remainder = 11
+Performing write operation: dividend = 2118, divisor = 9
+Read operation: quotient = 235, remainder = 3
+Check Passed: quotient = 235, remainder = 3
+Performing write operation: dividend = 3486, divisor = 8
+Read operation: quotient = 435, remainder = 6
+Check Passed: quotient = 435, remainder = 6
+  5210.00ns INFO     cocotb.regression                  test_restoring_division.test_restoring_division passed
+  5210.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_restoring_division.test_restoring_division   PASS        5210.00           0.01     470124.43  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  5210.00           0.01     436540.09  **
+                                                        *********************************************************************************************************
+PASSED
+
+============================== 10 passed in 2.28s ==============================
+Cleaning up Docker resources...

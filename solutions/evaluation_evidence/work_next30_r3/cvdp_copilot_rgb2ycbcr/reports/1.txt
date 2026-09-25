@@ -1,0 +1,387 @@
+Running harness with project name: cvdp_copilot_rgb2ycbcr_1_1790256123
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test_runner Running simulation with IMG_WIDTH=4, IMG_HEIGHT=3
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=4 +IMG_HEIGHT=3 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256125
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 56684) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: C293, Expected: C293, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 1100001010010011
+Pixel 1 (value 34611) sent successfully
+Received Pixel 1: CB4A, Expected: CB4A, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 2; Read pointer: 2; fifo data: XXXXXXXXXXXXXXXX
+Pixel 2 (value 36715) sent successfully
+Received Pixel 2: CA2B, Expected: CA2B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 3; Read pointer: 3; fifo data: XXXXXXXXXXXXXXXX
+Pixel 3 (value 18219) sent successfully
+Received Pixel 3: B2A7, Expected: B2A7, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 4; Read pointer: 4; fifo data: XXXXXXXXXXXXXXXX
+Pixel 4 (value 21757) sent successfully
+Received Pixel 4: 9D8A, Expected: 9D8A, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 5; Read pointer: 5; fifo data: XXXXXXXXXXXXXXXX
+Pixel 5 (value 29906) sent successfully
+Received Pixel 5: 9C0D, Expected: 9C0D, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 6; Read pointer: 6; fifo data: XXXXXXXXXXXXXXXX
+Pixel 6 (value 31787) sent successfully
+Received Pixel 6: 8B6F, Expected: 8B6F, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 7; Read pointer: 7; fifo data: XXXXXXXXXXXXXXXX
+Pixel 7 (value 52303) sent successfully
+Received Pixel 7: AB74, Expected: AB74, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 8; Read pointer: 8; fifo data: XXXXXXXXXXXXXXXX
+Pixel 8 (value 17489) sent successfully
+Received Pixel 8: 846B, Expected: 846B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 9; Read pointer: 9; fifo data: XXXXXXXXXXXXXXXX
+Pixel 9 (value 59501) sent successfully
+Received Pixel 9: 6C5C, Expected: 6C5C, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 10; Read pointer: 10; fifo data: XXXXXXXXXXXXXXXX
+Pixel 10 (value 30792) sent successfully
+Received Pixel 10: 4456, Expected: 4456, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 11; Read pointer: 11; fifo data: XXXXXXXXXXXXXXXX
+Pixel 11 (value 21913) sent successfully
+Received Pixel 11: A4E9, Expected: A4E9, Valid Bit: 1
+diff : 0
+   330.00ns INFO     cocotb.axis_rgb2ycbcr              Test completed successfully.
+   330.00ns INFO     cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr passed
+   330.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   PASS         330.00           0.00      80444.05  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             330.00           0.00      67689.77  **
+                                                        ***************************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_runner.result.xml
+PASSED
+../../src/test_runner.py::test_axis_rgb2ycbcr[2-4] Test Runner: IMG_WIDTH=2, IMG_HEIGHT=4
+Running simulation with IMG_WIDTH=2, IMG_HEIGHT=4
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=2 +IMG_HEIGHT=4 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256125
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 56684) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: C293, Expected: C293, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 1100001010010011
+Pixel 1 (value 34611) sent successfully
+Received Pixel 1: CB4A, Expected: CB4A, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 2; Read pointer: 2; fifo data: XXXXXXXXXXXXXXXX
+Pixel 2 (value 36715) sent successfully
+Received Pixel 2: CA2B, Expected: CA2B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 3; Read pointer: 3; fifo data: XXXXXXXXXXXXXXXX
+Pixel 3 (value 18219) sent successfully
+Received Pixel 3: B2A7, Expected: B2A7, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 4; Read pointer: 4; fifo data: XXXXXXXXXXXXXXXX
+Pixel 4 (value 21757) sent successfully
+Received Pixel 4: 9D8A, Expected: 9D8A, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 5; Read pointer: 5; fifo data: XXXXXXXXXXXXXXXX
+Pixel 5 (value 29906) sent successfully
+Received Pixel 5: 9C0D, Expected: 9C0D, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 6; Read pointer: 6; fifo data: XXXXXXXXXXXXXXXX
+Pixel 6 (value 31787) sent successfully
+Received Pixel 6: 8B6F, Expected: 8B6F, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 7; Read pointer: 7; fifo data: XXXXXXXXXXXXXXXX
+Pixel 7 (value 52303) sent successfully
+Received Pixel 7: AB74, Expected: AB74, Valid Bit: 1
+diff : 0
+   250.00ns INFO     cocotb.axis_rgb2ycbcr              Test completed successfully.
+   250.00ns INFO     cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr passed
+   250.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   PASS         250.00           0.00      70336.46  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             250.00           0.00      56851.88  **
+                                                        ***************************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_axis_rgb2ycbcr[2-4].result.xml
+PASSED
+../../src/test_runner.py::test_axis_rgb2ycbcr[5-3] Test Runner: IMG_WIDTH=5, IMG_HEIGHT=3
+Running simulation with IMG_WIDTH=5, IMG_HEIGHT=3
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=5 +IMG_HEIGHT=3 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256125
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 56684) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: C293, Expected: C293, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 1100001010010011
+Pixel 1 (value 34611) sent successfully
+Received Pixel 1: CB4A, Expected: CB4A, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 2; Read pointer: 2; fifo data: XXXXXXXXXXXXXXXX
+Pixel 2 (value 36715) sent successfully
+Received Pixel 2: CA2B, Expected: CA2B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 3; Read pointer: 3; fifo data: XXXXXXXXXXXXXXXX
+Pixel 3 (value 18219) sent successfully
+Received Pixel 3: B2A7, Expected: B2A7, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 4; Read pointer: 4; fifo data: XXXXXXXXXXXXXXXX
+Pixel 4 (value 21757) sent successfully
+Received Pixel 4: 9D8A, Expected: 9D8A, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 5; Read pointer: 5; fifo data: XXXXXXXXXXXXXXXX
+Pixel 5 (value 29906) sent successfully
+Received Pixel 5: 9C0D, Expected: 9C0D, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 6; Read pointer: 6; fifo data: XXXXXXXXXXXXXXXX
+Pixel 6 (value 31787) sent successfully
+Received Pixel 6: 8B6F, Expected: 8B6F, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 7; Read pointer: 7; fifo data: XXXXXXXXXXXXXXXX
+Pixel 7 (value 52303) sent successfully
+Received Pixel 7: AB74, Expected: AB74, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 8; Read pointer: 8; fifo data: XXXXXXXXXXXXXXXX
+Pixel 8 (value 17489) sent successfully
+Received Pixel 8: 846B, Expected: 846B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 9; Read pointer: 9; fifo data: XXXXXXXXXXXXXXXX
+Pixel 9 (value 59501) sent successfully
+Received Pixel 9: 6C5C, Expected: 6C5C, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 10; Read pointer: 10; fifo data: XXXXXXXXXXXXXXXX
+Pixel 10 (value 30792) sent successfully
+Received Pixel 10: 4456, Expected: 4456, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 11; Read pointer: 11; fifo data: XXXXXXXXXXXXXXXX
+Pixel 11 (value 21913) sent successfully
+Received Pixel 11: A4E9, Expected: A4E9, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 12; Read pointer: 12; fifo data: XXXXXXXXXXXXXXXX
+Pixel 12 (value 57307) sent successfully
+Received Pixel 12: FBAE, Expected: EBAE, Valid Bit: 1
+diff : 4096
+packet discarded as difference is in power of 2
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 13; Read pointer: 13; fifo data: XXXXXXXXXXXXXXXX
+Pixel 13 (value 34078) sent successfully
+Received Pixel 13: AD6D, Expected: AD6D, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 14; Read pointer: 14; fifo data: XXXXXXXXXXXXXXXX
+Pixel 14 (value 53958) sent successfully
+Received Pixel 14: 82B7, Expected: 82B7, Valid Bit: 1
+diff : 0
+   390.00ns INFO     cocotb.axis_rgb2ycbcr              Test completed successfully.
+   390.00ns INFO     cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr passed
+   390.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   PASS         390.00           0.00      86990.99  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             390.00           0.01      73966.93  **
+                                                        ***************************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_axis_rgb2ycbcr[5-3].result.xml
+PASSED
+../../src/test_runner.py::test_axis_rgb2ycbcr[6-2] Test Runner: IMG_WIDTH=6, IMG_HEIGHT=2
+Running simulation with IMG_WIDTH=6, IMG_HEIGHT=2
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=6 +IMG_HEIGHT=2 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256126
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 9513) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: 8348, Expected: 8348, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 1000001101001000
+Pixel 1 (value 58532) sent successfully
+Received Pixel 1: A9D5, Expected: A9D5, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 2; Read pointer: 2; fifo data: XXXXXXXXXXXXXXXX
+Pixel 2 (value 56845) sent successfully
+Received Pixel 2: CA72, Expected: CA72, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 3; Read pointer: 3; fifo data: XXXXXXXXXXXXXXXX
+Pixel 3 (value 38422) sent successfully
+Received Pixel 3: BC0D, Expected: BC0D, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 4; Read pointer: 4; fifo data: XXXXXXXXXXXXXXXX
+Pixel 4 (value 56733) sent successfully
+Received Pixel 4: D4B1, Expected: D4B1, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 5; Read pointer: 5; fifo data: XXXXXXXXXXXXXXXX
+Pixel 5 (value 24006) sent successfully
+Received Pixel 5: 9A6B, Expected: 9A6B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 6; Read pointer: 6; fifo data: XXXXXXXXXXXXXXXX
+Pixel 6 (value 22409) sent successfully
+Received Pixel 6: BA27, Expected: BA27, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 7; Read pointer: 7; fifo data: XXXXXXXXXXXXXXXX
+Pixel 7 (value 57605) sent successfully
+Received Pixel 7: 6B1B, Expected: 6B1B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 8; Read pointer: 8; fifo data: XXXXXXXXXXXXXXXX
+Pixel 8 (value 2529) sent successfully
+Received Pixel 8: 336D, Expected: 336D, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 9; Read pointer: 9; fifo data: XXXXXXXXXXXXXXXX
+Pixel 9 (value 39423) sent successfully
+Received Pixel 9: 7E73, Expected: 7E73, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 10; Read pointer: 10; fifo data: XXXXXXXXXXXXXXXX
+Pixel 10 (value 1521) sent successfully
+Received Pixel 10: 8C24, Expected: 8C24, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+fifo_read 0; empty: 1
+write pointer: 11; Read pointer: 11; fifo data: XXXXXXXXXXXXXXXX
+Pixel 11 (value 28840) sent successfully
+Received Pixel 11: 4435, Expected: 4435, Valid Bit: 1
+diff : 0
+   330.00ns INFO     cocotb.axis_rgb2ycbcr              Test completed successfully.
+   330.00ns INFO     cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr passed
+   330.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   PASS         330.00           0.01      63040.64  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             330.00           0.01      55177.21  **
+                                                        ***************************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_axis_rgb2ycbcr[6-2].result.xml
+PASSED
+
+============================== 4 passed in 1.77s ===============================
+Cleaning up Docker resources...

@@ -1,0 +1,370 @@
+Running harness with project name: cvdp_copilot_image_rotate_14_1790255809
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_random_image_rotate[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255810
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 2, IN_COL: 7
+DATA_WIDTH: 3
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.02      14746.91  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.02      13598.34  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255811
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 5, IN_COL: 7
+DATA_WIDTH: 5
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.02      12930.49  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.02      11887.19  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255811
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 5, IN_COL: 8
+DATA_WIDTH: 15
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.03       9938.47  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.03       9430.78  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255811
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 7, IN_COL: 3
+DATA_WIDTH: 16
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.02      13297.55  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.02      12317.93  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255812
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 8, IN_COL: 1
+DATA_WIDTH: 5
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.02      11694.57  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.02      10818.32  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255812
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 2, IN_COL: 6
+DATA_WIDTH: 10
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.02      17043.35  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.02      15444.70  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255812
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 3, IN_COL: 2
+DATA_WIDTH: 7
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.01      33397.21  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.01      26422.73  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255813
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 4, IN_COL: 1
+DATA_WIDTH: 4
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.01      27547.40  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.01      22771.33  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255813
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 5, IN_COL: 2
+DATA_WIDTH: 8
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.01      19457.22  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.02      17101.62  **
+                                                        ***********************************************************************************************
+PASSED
+../../src/test_runner.py::test_random_image_rotate[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255813
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_image_rotate.verify_image_rotate (1/1)
+                                                            Verify the DUT's image rotate functionality.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+IN_ROW: 7, IN_COL: 1
+DATA_WIDTH: 11
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+Test 5 passed
+Test 6 passed
+Test 7 passed
+Test 8 passed
+Test 9 passed
+Test 10 passed
+   260.00ns INFO     cocotb.regression                  test_image_rotate.verify_image_rotate passed
+   260.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_image_rotate.verify_image_rotate   PASS         260.00           0.02      12686.35  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         260.00           0.02      11791.69  **
+                                                        ***********************************************************************************************
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-ln0pjeve'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-ds0u90ul'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 10 passed, 2 warnings in 3.53s ========================
+Cleaning up Docker resources...

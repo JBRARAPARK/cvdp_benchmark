@@ -1,0 +1,409 @@
+{
+  "source": "datasets/cvdp_v1.1.0_nonagentic_code_generation_no_commercial.jsonl",
+  "source_sha256": "cbcd81295561ebb16e4d857e096f4d9908d042c33aff3b58abf236e868411857",
+  "excluded_solved_ids": [
+    "cvdp_copilot_32_bit_Brent_Kung_PP_adder_0001",
+    "cvdp_copilot_8x3_priority_encoder_0001",
+    "cvdp_copilot_FIR_0001",
+    "cvdp_copilot_GFCM_0003",
+    "cvdp_copilot_MSHR_0001",
+    "cvdp_copilot_axi_register_0001",
+    "cvdp_copilot_lfsr_0001",
+    "cvdp_copilot_rs_232_0001",
+    "cvdp_copilot_sigma_delta_audio_0007",
+    "cvdp_copilot_vending_machine_0001",
+    "cvdp_copilot_vga_controller_0026"
+  ],
+  "problems": [
+    {
+      "order": 1,
+      "id": "cvdp_copilot_barrel_shifter_0037",
+      "title_ko": "시프트·회전 기능 확장",
+      "domain": "비트 연산",
+      "categories": [
+        "cid004",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "1a0954fc01c407182a975c5a36e8b07ab7bdeb7e84ea243b602df7c32f6a9789"
+    },
+    {
+      "order": 2,
+      "id": "cvdp_copilot_comparator_0001",
+      "title_ko": "부호·크기 모드 비교기",
+      "domain": "비교 연산",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "3b23d3c0a933d653574221d5642e2d57ed1db1076bf631ddbb474c63b8af6f77"
+    },
+    {
+      "order": 3,
+      "id": "cvdp_copilot_bcd_counter_0001",
+      "title_ko": "24시간 BCD 시계",
+      "domain": "카운터",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "d415e2f569785d3258348df50b7d0c67e6d7b66bd0b7d92d214056c518105f70"
+    },
+    {
+      "order": 4,
+      "id": "cvdp_copilot_binary_to_BCD_0001",
+      "title_ko": "이진수→BCD 변환",
+      "domain": "수 표현",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "2f5d3f2f9aacd40b95ff76bbf6df465830739b7253e7a0c91580585e35eb8a95"
+    },
+    {
+      "order": 5,
+      "id": "cvdp_copilot_complex_multiplier_0001",
+      "title_ko": "복소수 곱셈기",
+      "domain": "산술 연산",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "79542bf462203783340fb409bf1e5b052a0b1a5f0e8924f3aafdfe43bdf209f5"
+    },
+    {
+      "order": 6,
+      "id": "cvdp_copilot_hamming_code_tx_and_rx_0003",
+      "title_ko": "해밍 코드 수신기",
+      "domain": "오류 정정",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "3b449e7ea403f44ca98bf2647af706a7c2a28dabd27114ca9e343cfe47edfe66"
+    },
+    {
+      "order": 7,
+      "id": "cvdp_copilot_moving_average_0001",
+      "title_ko": "이동평균 필터",
+      "domain": "신호처리",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "08ea5856571e6501c3a1a6fa134fba32e9b1caedd74ac1d67c8d81cc250a62dd"
+    },
+    {
+      "order": 8,
+      "id": "cvdp_copilot_clock_divider_0003",
+      "title_ko": "클록 분주기",
+      "domain": "클록 제어",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "e23d7e6592f9fd0788dd363229369537ba99ff0e3c33c041627c35ed3c751b09"
+    },
+    {
+      "order": 9,
+      "id": "cvdp_copilot_cdc_pulse_synchronizer_0004",
+      "title_ko": "CDC 펄스 동기화 버그 수정",
+      "domain": "클록 도메인 교차",
+      "categories": [
+        "cid016",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "4b22c8ac83616c4f127855cf96b66b34bf6e99e795dda4a96b5636ac48268044"
+    },
+    {
+      "order": 10,
+      "id": "cvdp_copilot_radix2_div_0001",
+      "title_ko": "반복 나눗셈기 버그 수정",
+      "domain": "산술 디버깅",
+      "categories": [
+        "cid016",
+        "easy"
+      ],
+      "batch": 1,
+      "status": "passed",
+      "harness_compose_sha256": "4f8dbac653d1dd65ab9c6c273db1371b99f3e3ce77fb9dee37b2b64feab70787"
+    },
+    {
+      "order": 11,
+      "id": "cvdp_copilot_binary_multiplier_0012",
+      "title_ko": "곱셈기 순차회로 전환",
+      "domain": "구조 변경",
+      "categories": [
+        "cid004",
+        "easy"
+      ],
+      "batch": 2,
+      "status": "passed",
+      "harness_compose_sha256": "0efa2ce6376eefc49db0a426778506cac6559ee6fa46f59aca5b6274577d688e"
+    },
+    {
+      "order": 12,
+      "id": "cvdp_copilot_manchester_enc_0005",
+      "title_ko": "맨체스터 인코더 래치 수정",
+      "domain": "래치 제거",
+      "categories": [
+        "cid016",
+        "easy"
+      ],
+      "batch": 2,
+      "status": "passed",
+      "harness_compose_sha256": "1de2c38827d78a73ade5d8fd45da9e498dd6674e61b32f48112f776b91687a46"
+    },
+    {
+      "order": 13,
+      "id": "cvdp_copilot_image_rotate_0014",
+      "title_ko": "이미지 회전 RTL Lint 수정",
+      "domain": "코드 정비",
+      "categories": [
+        "cid007",
+        "easy"
+      ],
+      "batch": 2,
+      "status": "passed",
+      "harness_compose_sha256": "cbd1441b1c801eb4dfbd85b4c297059414c79e6a5337388982c70123222537db"
+    },
+    {
+      "order": 14,
+      "id": "cvdp_copilot_gf_multiplier_0005",
+      "title_ko": "GF 곱셈기 8비트 확장",
+      "domain": "유한체 연산",
+      "categories": [
+        "cid004",
+        "easy"
+      ],
+      "batch": 2,
+      "status": "passed",
+      "harness_compose_sha256": "1a0954fc01c407182a975c5a36e8b07ab7bdeb7e84ea243b602df7c32f6a9789"
+    },
+    {
+      "order": 15,
+      "id": "cvdp_copilot_pipeline_mac_0017",
+      "title_ko": "2단 파이프라인 MAC",
+      "domain": "파이프라인",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "batch": 2,
+      "status": "passed",
+      "harness_compose_sha256": "08ea5856571e6501c3a1a6fa134fba32e9b1caedd74ac1d67c8d81cc250a62dd"
+    },
+    {
+      "order": 16,
+      "id": "cvdp_copilot_simple_spi_0001",
+      "title_ko": "SPI 송신 상태 기계",
+      "domain": "직렬 통신",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "batch": 2,
+      "status": "official_failed_diagnostic_passed",
+      "harness_compose_sha256": "3b23d3c0a933d653574221d5642e2d57ed1db1076bf631ddbb474c63b8af6f77"
+    },
+    {
+      "order": 17,
+      "id": "cvdp_copilot_skid_buffer_0001",
+      "title_ko": "파이프라인 Skid 버퍼",
+      "domain": "흐름 제어",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "batch": 2,
+      "status": "passed_harness_compatible",
+      "harness_compose_sha256": "b82f4f77b6c6c73a6b90f43b5795d7c23259611dcd193e355e0f5ce7908162ef"
+    },
+    {
+      "order": 18,
+      "id": "cvdp_copilot_fifo_async_0001",
+      "title_ko": "비동기 FIFO",
+      "domain": "버퍼·CDC",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "batch": 2,
+      "status": "passed",
+      "harness_compose_sha256": "cfd195dcf75d79644d51b1f94849c231f01b5e246823523069bb2d50a281319a"
+    },
+    {
+      "order": 19,
+      "id": "cvdp_copilot_apb_gpio_0001",
+      "title_ko": "APB GPIO 제어기",
+      "domain": "버스 주변장치",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "batch": 2,
+      "status": "passed_harness_compatible",
+      "harness_compose_sha256": "4f8dbac653d1dd65ab9c6c273db1371b99f3e3ce77fb9dee37b2b64feab70787"
+    },
+    {
+      "order": 20,
+      "id": "cvdp_copilot_round_robin_arbiter_0005",
+      "title_ko": "중재기 우선순위·타임아웃 확장",
+      "domain": "자원 중재",
+      "categories": [
+        "cid004",
+        "medium"
+      ],
+      "batch": 2,
+      "status": "passed",
+      "harness_compose_sha256": "78a7f44f2d4b43ce7aa0122150507a57e6fd3223a02d9ffa6c0da550ceee4dc8"
+    },
+    {
+      "order": 21,
+      "id": "cvdp_copilot_cache_lru_0019",
+      "title_ko": "트리 기반 pseudo-LRU",
+      "domain": "캐시 교체 정책",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "e6095f3594a32a62ea9599fd137a6e97edb82cceab7a32dc902e967ba52718e6"
+    },
+    {
+      "order": 22,
+      "id": "cvdp_copilot_load_store_unit_0001",
+      "title_ko": "Load/Store 유닛",
+      "domain": "프로세서",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "08ea5856571e6501c3a1a6fa134fba32e9b1caedd74ac1d67c8d81cc250a62dd"
+    },
+    {
+      "order": 23,
+      "id": "cvdp_copilot_interrupt_controller_0017",
+      "title_ko": "동적 우선순위 인터럽트 제어기",
+      "domain": "인터럽트",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "official_failed_diagnostic_passed",
+      "harness_compose_sha256": "cfd195dcf75d79644d51b1f94849c231f01b5e246823523069bb2d50a281319a"
+    },
+    {
+      "order": 24,
+      "id": "cvdp_copilot_ethernet_packet_parser_0001",
+      "title_ko": "이더넷 패킷 파서",
+      "domain": "패킷 처리",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "cfd195dcf75d79644d51b1f94849c231f01b5e246823523069bb2d50a281319a"
+    },
+    {
+      "order": 25,
+      "id": "cvdp_copilot_16qam_mapper_0001",
+      "title_ko": "16QAM 매퍼와 보간",
+      "domain": "디지털 통신",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "d630cdb8d014b7e9999c3dd8b55db857ec8bd1535f6490a76f46ece8b9cdb02f"
+    },
+    {
+      "order": 26,
+      "id": "cvdp_copilot_restoring_division_0001",
+      "title_ko": "복원 나눗셈기 설계",
+      "domain": "반복 알고리즘",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "2f1ce0730e00dd9f7355af130fcb32cb51560049fbf85ceef8df893e2223e806"
+    },
+    {
+      "order": 27,
+      "id": "cvdp_copilot_rgb2ycbcr_0001",
+      "title_ko": "영상 변환 FIFO 버그 수정",
+      "domain": "영상 디버깅",
+      "categories": [
+        "cid016",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "a69fa6957a4164a6d483835f922600207536dff2b954491abb4dde4ddb0664fb"
+    },
+    {
+      "order": 28,
+      "id": "cvdp_copilot_sorter_0003",
+      "title_ko": "버블 정렬→삽입 정렬 전환",
+      "domain": "정렬 알고리즘",
+      "categories": [
+        "cid004",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "08ea5856571e6501c3a1a6fa134fba32e9b1caedd74ac1d67c8d81cc250a62dd"
+    },
+    {
+      "order": 29,
+      "id": "cvdp_copilot_fan_controller_0005",
+      "title_ko": "팬 제어기 Lint 수정",
+      "domain": "코드 정비",
+      "categories": [
+        "cid007",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "cbd1441b1c801eb4dfbd85b4c297059414c79e6a5337388982c70123222537db"
+    },
+    {
+      "order": 30,
+      "id": "cvdp_copilot_scrambler_0024",
+      "title_ko": "조합논리 면적 최적화",
+      "domain": "합성 최적화",
+      "categories": [
+        "cid007",
+        "medium"
+      ],
+      "batch": 3,
+      "status": "passed",
+      "harness_compose_sha256": "ccf11f0e575c64ceb048bbb6ce9abaa6f135cb579d0b8f1e11ed27c0ef01d67d"
+    }
+  ]
+}

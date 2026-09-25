@@ -1,0 +1,2 @@
+PASS: five words, accepted-bit done, stalls, final-word CRC
+solutions/next_50/retry_20260925/diagnostics/sipo_gaps_crc.sv:20: $finish called at 1366000 (1ps)

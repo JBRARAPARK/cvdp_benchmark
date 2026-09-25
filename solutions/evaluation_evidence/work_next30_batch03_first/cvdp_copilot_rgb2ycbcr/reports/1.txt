@@ -1,0 +1,373 @@
+Running harness with project name: cvdp_copilot_rgb2ycbcr_1_1790255912
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test_runner Running simulation with IMG_WIDTH=4, IMG_HEIGHT=3
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=4 +IMG_HEIGHT=3 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255913
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 658) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: 4D6A, Expected: 4D6A, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 0100110101101010
+Pixel 1 (value 44697) sent successfully
+Received Pixel 1: D40D, Expected: D40D, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+    85.00ns WARNING  cocotb.Task 3.verify_output_stream axis_rgb2ycbcr contains no child object named fifo_read
+                                                        Traceback (most recent call last):
+                                                          File "/src/axis_rgb2ycbcr_tester.py", line 103, in verify_output_stream
+                                                            print(f"fifo_read {dut.fifo_read.value}; empty: {dut.empty.value}")
+                                                                               ^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: axis_rgb2ycbcr contains no child object named fifo_read
+    85.00ns WARNING  cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr failed
+    85.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   FAIL          85.00           0.00      39674.59  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                              85.00           0.00      17698.36  **
+                                                        ***************************************************************************************************
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+FAILED
+../../src/test_runner.py::test_axis_rgb2ycbcr[2-4] Test Runner: IMG_WIDTH=2, IMG_HEIGHT=4
+Running simulation with IMG_WIDTH=2, IMG_HEIGHT=4
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=2 +IMG_HEIGHT=4 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255914
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 10268) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: 3750, Expected: 3750, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 0011011101010000
+Pixel 1 (value 2429) sent successfully
+Received Pixel 1: 472B, Expected: 472B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+    85.00ns WARNING  cocotb.Task 3.verify_output_stream axis_rgb2ycbcr contains no child object named fifo_read
+                                                        Traceback (most recent call last):
+                                                          File "/src/axis_rgb2ycbcr_tester.py", line 103, in verify_output_stream
+                                                            print(f"fifo_read {dut.fifo_read.value}; empty: {dut.empty.value}")
+                                                                               ^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: axis_rgb2ycbcr contains no child object named fifo_read
+    85.00ns WARNING  cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr failed
+    85.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   FAIL          85.00           0.00      41230.00  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                              85.00           0.00      18015.86  **
+                                                        ***************************************************************************************************
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+FAILED
+../../src/test_runner.py::test_axis_rgb2ycbcr[5-3] Test Runner: IMG_WIDTH=5, IMG_HEIGHT=3
+Running simulation with IMG_WIDTH=5, IMG_HEIGHT=3
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=5 +IMG_HEIGHT=3 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255914
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 10268) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: 3750, Expected: 3750, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 0011011101010000
+Pixel 1 (value 2429) sent successfully
+Received Pixel 1: 472B, Expected: 472B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+    85.00ns WARNING  cocotb.Task 3.verify_output_stream axis_rgb2ycbcr contains no child object named fifo_read
+                                                        Traceback (most recent call last):
+                                                          File "/src/axis_rgb2ycbcr_tester.py", line 103, in verify_output_stream
+                                                            print(f"fifo_read {dut.fifo_read.value}; empty: {dut.empty.value}")
+                                                                               ^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: axis_rgb2ycbcr contains no child object named fifo_read
+    85.00ns WARNING  cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr failed
+    85.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   FAIL          85.00           0.00      40536.20  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                              85.00           0.00      17774.25  **
+                                                        ***************************************************************************************************
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+FAILED
+../../src/test_runner.py::test_axis_rgb2ycbcr[6-2] Test Runner: IMG_WIDTH=6, IMG_HEIGHT=2
+Running simulation with IMG_WIDTH=6, IMG_HEIGHT=2
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=6 +IMG_HEIGHT=2 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255914
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr (1/1)
+                                                            Top-Level Test
+write pointer: 0; Read pointer: 0; fifo data: XXXXXXXXXXXXXXXX
+Pixel 0 (value 10268) sent successfully
+    65.00ns WARNING  py.warnings                        /src/axis_rgb2ycbcr_tester.py:111: DeprecationWarning: `str(handle)` casts have been deprecated. Use `str(handle.value)` instead.
+                                                          print(f"Received Pixel {len(received_pixels)-1}: {pixel:04X}, Expected: {expected_pixels[len(received_pixels)-1]:04X}, Valid Bit: {dut.m_axis_tvalid}")
+Received Pixel 0: 3750, Expected: 3750, Valid Bit: 1
+diff : 0
+write pointer: 1; Read pointer: 0; fifo data: 0011011101010000
+Pixel 1 (value 2429) sent successfully
+Received Pixel 1: 472B, Expected: 472B, Valid Bit: 1
+diff : 0
+Waiting for tvalid to be 1
+    85.00ns WARNING  cocotb.Task 3.verify_output_stream axis_rgb2ycbcr contains no child object named fifo_read
+                                                        Traceback (most recent call last):
+                                                          File "/src/axis_rgb2ycbcr_tester.py", line 103, in verify_output_stream
+                                                            print(f"fifo_read {dut.fifo_read.value}; empty: {dut.empty.value}")
+                                                                               ^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: axis_rgb2ycbcr contains no child object named fifo_read
+    85.00ns WARNING  cocotb.regression                  axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr failed
+    85.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** axis_rgb2ycbcr_tester.test_axis_rgb2ycbcr   FAIL          85.00           0.00      40112.04  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                              85.00           0.00      17833.82  **
+                                                        ***************************************************************************************************
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+IMG_WIDTH = 4, IMG_HEIGHT = 3
+
+    def test_runner(IMG_WIDTH=4, IMG_HEIGHT=3):
+        """Run Cocotb Test for AXI-Stream RGB to YCbCr Conversion"""
+    
+        # Parameterized test
+        parameter_defines = {
+            "IMG_WIDTH": IMG_WIDTH,
+            "IMG_HEIGHT": IMG_HEIGHT,
+        }
+        print(f"Running simulation with IMG_WIDTH={IMG_WIDTH}, IMG_HEIGHT={IMG_HEIGHT}")
+    
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file="sim.log",
+            defines={"SIMULATION": 1}
+        )
+        plusargs = [f"+IMG_WIDTH={IMG_WIDTH}", f"+IMG_HEIGHT={IMG_HEIGHT}"]
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:36: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=4 +IMG_HEIGHT=3 -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_axis_rgb2ycbcr[2-4] ___________________________
+
+IMG_WIDTH = 2, IMG_HEIGHT = 4
+
+    @pytest.mark.parametrize("IMG_WIDTH,IMG_HEIGHT", [(2, 4), (5, 3), (6, 2)])
+    def test_axis_rgb2ycbcr(IMG_WIDTH, IMG_HEIGHT):
+        """Parameterized test for AXIS RGB to YCbCr Converter"""
+    
+        print(f"Test Runner: IMG_WIDTH={IMG_WIDTH}, IMG_HEIGHT={IMG_HEIGHT}")
+>       test_runner(IMG_WIDTH=IMG_WIDTH, IMG_HEIGHT=IMG_HEIGHT)
+
+/src/test_runner.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+IMG_WIDTH = 2, IMG_HEIGHT = 4
+
+    def test_runner(IMG_WIDTH=4, IMG_HEIGHT=3):
+        """Run Cocotb Test for AXI-Stream RGB to YCbCr Conversion"""
+    
+        # Parameterized test
+        parameter_defines = {
+            "IMG_WIDTH": IMG_WIDTH,
+            "IMG_HEIGHT": IMG_HEIGHT,
+        }
+        print(f"Running simulation with IMG_WIDTH={IMG_WIDTH}, IMG_HEIGHT={IMG_HEIGHT}")
+    
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file="sim.log",
+            defines={"SIMULATION": 1}
+        )
+        plusargs = [f"+IMG_WIDTH={IMG_WIDTH}", f"+IMG_HEIGHT={IMG_HEIGHT}"]
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:36: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=2 +IMG_HEIGHT=4 -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_axis_rgb2ycbcr[5-3] ___________________________
+
+IMG_WIDTH = 5, IMG_HEIGHT = 3
+
+    @pytest.mark.parametrize("IMG_WIDTH,IMG_HEIGHT", [(2, 4), (5, 3), (6, 2)])
+    def test_axis_rgb2ycbcr(IMG_WIDTH, IMG_HEIGHT):
+        """Parameterized test for AXIS RGB to YCbCr Converter"""
+    
+        print(f"Test Runner: IMG_WIDTH={IMG_WIDTH}, IMG_HEIGHT={IMG_HEIGHT}")
+>       test_runner(IMG_WIDTH=IMG_WIDTH, IMG_HEIGHT=IMG_HEIGHT)
+
+/src/test_runner.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+IMG_WIDTH = 5, IMG_HEIGHT = 3
+
+    def test_runner(IMG_WIDTH=4, IMG_HEIGHT=3):
+        """Run Cocotb Test for AXI-Stream RGB to YCbCr Conversion"""
+    
+        # Parameterized test
+        parameter_defines = {
+            "IMG_WIDTH": IMG_WIDTH,
+            "IMG_HEIGHT": IMG_HEIGHT,
+        }
+        print(f"Running simulation with IMG_WIDTH={IMG_WIDTH}, IMG_HEIGHT={IMG_HEIGHT}")
+    
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file="sim.log",
+            defines={"SIMULATION": 1}
+        )
+        plusargs = [f"+IMG_WIDTH={IMG_WIDTH}", f"+IMG_HEIGHT={IMG_HEIGHT}"]
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:36: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=5 +IMG_HEIGHT=3 -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_axis_rgb2ycbcr[6-2] ___________________________
+
+IMG_WIDTH = 6, IMG_HEIGHT = 2
+
+    @pytest.mark.parametrize("IMG_WIDTH,IMG_HEIGHT", [(2, 4), (5, 3), (6, 2)])
+    def test_axis_rgb2ycbcr(IMG_WIDTH, IMG_HEIGHT):
+        """Parameterized test for AXIS RGB to YCbCr Converter"""
+    
+        print(f"Test Runner: IMG_WIDTH={IMG_WIDTH}, IMG_HEIGHT={IMG_HEIGHT}")
+>       test_runner(IMG_WIDTH=IMG_WIDTH, IMG_HEIGHT=IMG_HEIGHT)
+
+/src/test_runner.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+IMG_WIDTH = 6, IMG_HEIGHT = 2
+
+    def test_runner(IMG_WIDTH=4, IMG_HEIGHT=3):
+        """Run Cocotb Test for AXI-Stream RGB to YCbCr Conversion"""
+    
+        # Parameterized test
+        parameter_defines = {
+            "IMG_WIDTH": IMG_WIDTH,
+            "IMG_HEIGHT": IMG_HEIGHT,
+        }
+        print(f"Running simulation with IMG_WIDTH={IMG_WIDTH}, IMG_HEIGHT={IMG_HEIGHT}")
+    
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file="sim.log",
+            defines={"SIMULATION": 1}
+        )
+        plusargs = [f"+IMG_WIDTH={IMG_WIDTH}", f"+IMG_HEIGHT={IMG_HEIGHT}"]
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:36: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axis_rgb2ycbcr -g2012 -DSIMULATION=1 -f /code/rundir/sim_build/cmds.f /code/rtl/axis_rgb2ycbcr.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +IMG_WIDTH=6 +IMG_HEIGHT=2 -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: 1
+FAILED ../../src/test_runner.py::test_axis_rgb2ycbcr[2-4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_axis_rgb2ycbcr[5-3] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_axis_rgb2ycbcr[6-2] - SystemExit: 1
+============================== 4 failed in 0.90s ===============================
+Cleaning up Docker resources...

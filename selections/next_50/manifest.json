@@ -1,0 +1,1530 @@
+{
+  "source": "datasets/cvdp_v1.1.0_nonagentic_code_generation_no_commercial.jsonl",
+  "source_sha256": "cbcd81295561ebb16e4d857e096f4d9908d042c33aff3b58abf236e868411857",
+  "source_record_count": 302,
+  "excluded_previously_attempted_ids": [
+    "cvdp_copilot_16qam_mapper_0001",
+    "cvdp_copilot_32_bit_Brent_Kung_PP_adder_0001",
+    "cvdp_copilot_8x3_priority_encoder_0001",
+    "cvdp_copilot_FIR_0001",
+    "cvdp_copilot_GFCM_0003",
+    "cvdp_copilot_MSHR_0001",
+    "cvdp_copilot_apb_gpio_0001",
+    "cvdp_copilot_axi_register_0001",
+    "cvdp_copilot_barrel_shifter_0037",
+    "cvdp_copilot_bcd_counter_0001",
+    "cvdp_copilot_binary_multiplier_0012",
+    "cvdp_copilot_binary_to_BCD_0001",
+    "cvdp_copilot_cache_lru_0019",
+    "cvdp_copilot_cdc_pulse_synchronizer_0004",
+    "cvdp_copilot_clock_divider_0003",
+    "cvdp_copilot_comparator_0001",
+    "cvdp_copilot_complex_multiplier_0001",
+    "cvdp_copilot_ethernet_packet_parser_0001",
+    "cvdp_copilot_fan_controller_0005",
+    "cvdp_copilot_fifo_async_0001",
+    "cvdp_copilot_gf_multiplier_0005",
+    "cvdp_copilot_hamming_code_tx_and_rx_0003",
+    "cvdp_copilot_image_rotate_0014",
+    "cvdp_copilot_interrupt_controller_0017",
+    "cvdp_copilot_lfsr_0001",
+    "cvdp_copilot_load_store_unit_0001",
+    "cvdp_copilot_manchester_enc_0005",
+    "cvdp_copilot_moving_average_0001",
+    "cvdp_copilot_pipeline_mac_0017",
+    "cvdp_copilot_radix2_div_0001",
+    "cvdp_copilot_restoring_division_0001",
+    "cvdp_copilot_rgb2ycbcr_0001",
+    "cvdp_copilot_round_robin_arbiter_0005",
+    "cvdp_copilot_rs_232_0001",
+    "cvdp_copilot_scrambler_0024",
+    "cvdp_copilot_sigma_delta_audio_0007",
+    "cvdp_copilot_simple_spi_0001",
+    "cvdp_copilot_skid_buffer_0001",
+    "cvdp_copilot_sorter_0003",
+    "cvdp_copilot_vending_machine_0001",
+    "cvdp_copilot_vga_controller_0026"
+  ],
+  "excluded_ids_present_in_source": 40,
+  "selection_basis": "기존 시도 ID 제외, 분야 다양성, Easy 20/Medium 30, 원문 요구와 제공 코드 및 실행 설정 정적 확인",
+  "status": "evaluated_with_remaining_failures",
+  "problems": [
+    {
+      "id": "cvdp_copilot_bcd_adder_0001",
+      "title_ko": "BCD 가산기",
+      "focus": "십진 보정과 자리올림",
+      "order": 1,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/01_bcd_adder_0001/problem.md",
+      "record_sha256": "d410438be5b2f6dc78550bf4222c7a6d7aeede1a14912b3f576d66678a763063",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "800fc56b90c913165504b5b829371995b7ac747acd8fbe108d6d7b79acdbf3aa",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_bcd_adder_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_rounding_0001",
+      "title_ko": "매개변수화 반올림 회로",
+      "focus": "반올림 모드와 경계값",
+      "order": 2,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/02_rounding_0001/problem.md",
+      "record_sha256": "8fd2d633c130060106cfbdd5f01e42e86e4a7c0baa13d23d53d7270e9725d38b",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "f547b41b364718995344e1f568db60d21bef35b3d73d67d380b9a276e45262da",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_rounding_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_dot_product_0002",
+      "title_ko": "벡터 내적 계산기",
+      "focus": "곱셈·누산과 출력 폭",
+      "order": 3,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/03_dot_product_0002/problem.md",
+      "record_sha256": "6ec2f99d6e6dc13401f8e3392c3d52783065920cd46910deed71b20b1414886e",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "c40dbd27b01c1110503bb69e01cc04f2367710974b8aa88a4ce9b210d75488e1",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_dot_product_0002.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_modified_booth_mul_0002",
+      "title_ko": "순차 Booth 곱셈기 수정",
+      "focus": "부호 확장과 반복 연산",
+      "order": 4,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid016",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/04_modified_booth_mul_0002/problem.md",
+      "record_sha256": "dd2037448e8bb0237e0fedd8f23285b2b3b95786dab3c0c4737403152ccaa96d",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "103d7c15cf6a11b152d2936c13c209ca768c6410938aabca4c1d466050a34be0",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_modified_booth_mul_0002.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_montgomery_0001",
+      "title_ko": "Montgomery reduction 수정",
+      "focus": "모듈러 연산과 비트 폭",
+      "order": 5,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid016",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/05_montgomery_0001/problem.md",
+      "record_sha256": "b72aad0e29596b8a281b342cae8564b125e800229c904e69a0df94d2295a2c1c",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_montgomery_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_square_root_0003",
+      "title_ko": "제곱근 회로 순차화",
+      "focus": "조합 알고리즘의 다중 사이클 전환",
+      "order": 6,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid004",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/06_square_root_0003/problem.md",
+      "record_sha256": "c5da6f23e9aef7b6e398c18493c0671347855f2a1678a7053fc89aa8614eb1a3",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "103d7c15cf6a11b152d2936c13c209ca768c6410938aabca4c1d466050a34be0",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_square_root_0003.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_matrix_multiplier_0007",
+      "title_ko": "행렬 곱셈기 순차화",
+      "focus": "행렬 인덱스와 완료 제어",
+      "order": 7,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid004",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/07_matrix_multiplier_0007/problem.md",
+      "record_sha256": "ccc374c16302770880e08df62a5c90736147cc8ff94dfd55ba2c818866de3f79",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "4e4138e511fce51f4dec7d5d655b60020465cb04529e4a723343d0bfa076cd2e",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_matrix_multiplier_0007.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_kogge_stone_adder_0007",
+      "title_ko": "Kogge–Stone 가산기 수정",
+      "focus": "프리픽스 캐리 연결",
+      "order": 8,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid016",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/08_kogge_stone_adder_0007/problem.md",
+      "record_sha256": "cb4f42c14c85423572b1d7f52a763798a8a33800c30e0e40d0ef8f359704f740",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "f8d0cd5e0bf647706a0cd805f8e3dd87d3de566042a15ffc762d95f9f1b96832",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_kogge_stone_adder_0007.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_signed_adder_0001",
+      "title_ko": "부호 있는 가감산기",
+      "focus": "부호·오버플로 처리",
+      "order": 9,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/09_signed_adder_0001/problem.md",
+      "record_sha256": "f120c45973127ef96efc861bf7e9a98668217f27623d6a2c758a026a16b06643",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "d7ca9fe8f001b72c523eea0c6dabbf8c3bd62452dd4c6c3b62d8af2f2d389629",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_signed_adder_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_cascaded_adder_0025",
+      "title_ko": "병렬 가산 트리",
+      "focus": "가산 구조와 병렬 처리",
+      "order": 10,
+      "batch": 1,
+      "domain": "산술·수치 연산",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/10_cascaded_adder_0025/problem.md",
+      "record_sha256": "3216cbbe5e87f52c07860a6474c5bcf4e6cec4ae3623f5da95fbfb452a03760c",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "103d7c15cf6a11b152d2936c13c209ca768c6410938aabca4c1d466050a34be0",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_cascaded_adder_0025.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_64b66b_encoder_0001",
+      "title_ko": "64b/66b 인코더",
+      "focus": "데이터와 동기 헤더",
+      "order": 11,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/11_64b66b_encoder_0001/problem.md",
+      "record_sha256": "28b18944658f4f04113ae6ff8576b83b66cae5e316acd11010e47e942806e18f",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "c40dbd27b01c1110503bb69e01cc04f2367710974b8aa88a4ce9b210d75488e1",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_64b66b_encoder_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_64b66b_decoder_0011",
+      "title_ko": "64b/66b 복합 모드 디코더",
+      "focus": "데이터·제어·혼합 모드",
+      "order": 12,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/12_64b66b_decoder_0011/problem.md",
+      "record_sha256": "282f91e2315c241c80bb97c70d46c16b3c9999d6c2e399b77f436bf4ec16d12d",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "c40dbd27b01c1110503bb69e01cc04f2367710974b8aa88a4ce9b210d75488e1",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_64b66b_decoder_0011.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_convolutional_encoder_0001",
+      "title_ko": "컨볼루션 인코더",
+      "focus": "상태와 생성 다항식",
+      "order": 13,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/13_convolutional_encoder_0001/problem.md",
+      "record_sha256": "dc6ef4501d7f4b1478c99aac56da469aac0dbea8a4865695ff6e035de5922b88",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "04fc681f72785f04bebc8aa26c3f449fea39c9a2ac8451e8e78553ce287f7b2f",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_convolutional_encoder_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_reed_solomon_encoder_and_decoder_0005",
+      "title_ko": "Reed–Solomon 인코더",
+      "focus": "유한체 기반 오류 정정 부호",
+      "order": 14,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/14_reed_solomon_encoder_and_decoder_0005/problem.md",
+      "record_sha256": "02aa4e16458bd54cde3dfedc585eebed860e86cf2fcf562501213843b9ebd094",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_reed_solomon_encoder_and_decoder_0005.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_huffman_0001",
+      "title_ko": "Huffman 인코더",
+      "focus": "부호 테이블과 입력 우선순위",
+      "order": 15,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/15_huffman_0001/problem.md",
+      "record_sha256": "e1503f426911aab4ca784775fdcff1507480f92309552620372507412a19d96f",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "c41804549bf22d07227c68cf6fb3e874da845789bf20d3c030b015ed0680b8e0",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_huffman_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_prbs_gen_0003",
+      "title_ko": "PRBS 생성기·검사기",
+      "focus": "의사난수 패턴 생성과 오류 검출",
+      "order": 16,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/16_prbs_gen_0003/problem.md",
+      "record_sha256": "cd212609c56c45a1bfe297af15a2000a8b38a6ecf74db1de84436231aae05609",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_prbs_gen_0003.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_serial_in_parallel_out_0014",
+      "title_ko": "SIPO에 CRC 추가",
+      "focus": "직렬 수신과 CRC 누적",
+      "order": 17,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid004",
+        "medium"
+      ],
+      "status": "official_fail",
+      "problem_file": "selections/next_50/problems/17_serial_in_parallel_out_0014/problem.md",
+      "record_sha256": "398b8ebe8e48b81cfa8dcfc6c1445b062388cc485c7b98606574edcc73de5d3f",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "981a122b1d4a34f7f7b1450bf8555ad1be7a101754a19645454c863d124e0a3a",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": false,
+        "rtl": "solutions/next_50/final/cvdp_copilot_serial_in_parallel_out_0014.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_ir_receiver_0005",
+      "title_ko": "Sony IR 수신기",
+      "focus": "펄스 길이와 프레임 해석",
+      "order": 18,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/18_ir_receiver_0005/problem.md",
+      "record_sha256": "8469cc9b5d1669fb6fd16d9d0a6140683b2f2a015aad76be3deb69d5c48a88d8",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "c40dbd27b01c1110503bb69e01cc04f2367710974b8aa88a4ce9b210d75488e1",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_ir_receiver_0005.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_dbi_0001",
+      "title_ko": "Data Bus Inversion 인코더",
+      "focus": "비트 반전 판단과 제어 신호",
+      "order": 19,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/19_dbi_0001/problem.md",
+      "record_sha256": "466c75e0f7b82fdb853fd0369e0afe9b1720bc0b4707d2f850c76cd9bb3a416a",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "674b596906de122d47ffa353cbf7075ba93e7aba603e465dac968b3a5a02f7a9",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_dbi_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_packet_controller_0001",
+      "title_ko": "패킷 송수신 제어기",
+      "focus": "패킷 FSM과 데이터 흐름",
+      "order": 20,
+      "batch": 2,
+      "domain": "통신·부호화",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/20_packet_controller_0001/problem.md",
+      "record_sha256": "dbcdec6aef62a077a9718b8c4721e1e93d565ba4a738090233d07560b45365c7",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "f547b41b364718995344e1f568db60d21bef35b3d73d67d380b9a276e45262da",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_packet_controller_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_data_width_converter_0003",
+      "title_ko": "32→128비트 폭 변환기",
+      "focus": "데이터 조립과 valid 타이밍",
+      "order": 21,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/21_data_width_converter_0003/problem.md",
+      "record_sha256": "4960762c6f9debdf61f1289b0f35304af7ad7562b91fc884d43e58b6ac9f32ac",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "74f49c02065d3dd1147401802ed97bd9817289a0fe4b319e263739825f702f61",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_data_width_converter_0003.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_ping_pong_buffer_0001",
+      "title_ko": "핑퐁 버퍼",
+      "focus": "이중 버퍼와 읽기·쓰기 전환",
+      "order": 22,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_fail",
+      "problem_file": "selections/next_50/problems/22_ping_pong_buffer_0001/problem.md",
+      "record_sha256": "a33689587c9d703874761d274afd81a8bf85e02be0e851e572b990ca237fc596",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "c41804549bf22d07227c68cf6fb3e874da845789bf20d3c030b015ed0680b8e0",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": false,
+        "rtl": "solutions/next_50/final/cvdp_copilot_ping_pong_buffer_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_bit_synchronizer_0001",
+      "title_ko": "다단 비트 동기화기",
+      "focus": "클록 도메인 간 제어 신호 전달",
+      "order": 23,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/23_bit_synchronizer_0001/problem.md",
+      "record_sha256": "4b3acd47f1025fb95bbb2ef65feae12eb1ee885059706a9b37316a14c551422a",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "4fc1090599387dc752b01cd0f02cc7aa6e433750391de5f4ba454d35ebff178e",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_bit_synchronizer_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_mux_synch_0011",
+      "title_ko": "MUX 기반 CDC 수정",
+      "focus": "제어 펄스와 데이터 정합",
+      "order": 24,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid016",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/24_mux_synch_0011/problem.md",
+      "record_sha256": "9c98a98f3848ab93b5a6e294392f51c0aa308605008f94031c51bcc6f71207fc",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "674b596906de122d47ffa353cbf7075ba93e7aba603e465dac968b3a5a02f7a9",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_mux_synch_0011.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_sync_lifo_0001",
+      "title_ko": "동기 LIFO",
+      "focus": "push·pop과 full·empty",
+      "order": 25,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/25_sync_lifo_0001/problem.md",
+      "record_sha256": "a9e9c4103900984ae5263ee50fa6172a5cec57d57fbe015825cd21e46b6455db",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "800fc56b90c913165504b5b829371995b7ac747acd8fbe108d6d7b79acdbf3aa",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_sync_lifo_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_crossbar_switch_0001",
+      "title_ko": "4×4 크로스바 스위치",
+      "focus": "입출력 라우팅",
+      "order": 26,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/26_crossbar_switch_0001/problem.md",
+      "record_sha256": "4374b201d247a2a4fad860cc367ea5d1f874dcfb0b55caf256e652fdea9710fa",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_crossbar_switch_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_axis_mux_0001",
+      "title_ko": "AXI Stream 멀티플렉서",
+      "focus": "선택·프레임·역압 처리",
+      "order": 27,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/27_axis_mux_0001/problem.md",
+      "record_sha256": "aec39dec7d79372f250eaa74ca7e3a7810faeb0328512e4456b6326fa9c88c04",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6a734b54db12c30cc858ea0669f4ff0a6eafe5da61d9515884aa08654b2ccb8f",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_axis_mux_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_axis_joiner_0001",
+      "title_ko": "AXI Stream 결합기",
+      "focus": "다중 입력과 출력 흐름 제어",
+      "order": 28,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/28_axis_joiner_0001/problem.md",
+      "record_sha256": "2ca368b8391689f9f6d2312d22e99699556939589c34c3e30826246a6733fd14",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "674b596906de122d47ffa353cbf7075ba93e7aba603e465dac968b3a5a02f7a9",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_axis_joiner_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_axi_tap_0001",
+      "title_ko": "AXI4-Lite TAP",
+      "focus": "독립 채널의 트랜잭션 처리",
+      "order": 29,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/29_axi_tap_0001/problem.md",
+      "record_sha256": "1077f07aff7639702e82c0d68ffab098aae0a1ddcdede8ec400caef91fcedee1",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_axi_tap_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_wb2ahb_0001",
+      "title_ko": "Wishbone→AHB 브리지",
+      "focus": "버스 프로토콜 변환",
+      "order": 30,
+      "batch": 3,
+      "domain": "버퍼·CDC·버스",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_fail",
+      "problem_file": "selections/next_50/problems/30_wb2ahb_0001/problem.md",
+      "record_sha256": "65e0bee851a18eef5b6687171d69fbc19866ac4b8a796fb41e7a32ea6b14120f",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "da4d924e4fcb1ea553a2a9a75cee1b6312127f4f3c863808d4fec8b32ec10baf",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": false,
+        "rtl": "solutions/next_50/final/cvdp_copilot_wb2ahb_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_perf_counters_0001",
+      "title_ko": "CPU 성능 카운터",
+      "focus": "이벤트 집계와 소프트웨어 리셋",
+      "order": 31,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid003",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/31_perf_counters_0001/problem.md",
+      "record_sha256": "6c689ded3d20ee240469939f5f6be70f7050cdde0d52c2323af5281ed20ca544",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "f547b41b364718995344e1f568db60d21bef35b3d73d67d380b9a276e45262da",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_perf_counters_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_write_buffer_merge_0001",
+      "title_ko": "쓰기 병합 버퍼",
+      "focus": "주소·바이트 단위 병합",
+      "order": 32,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/32_write_buffer_merge_0001/problem.md",
+      "record_sha256": "c098fcb16f92b053f8f4fd429b72bdd2c6a0188882a111f3ac66336992a0d95b",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "4e4138e511fce51f4dec7d5d655b60020465cb04529e4a723343d0bfa076cd2e",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_write_buffer_merge_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_cache_lru_0008",
+      "title_ko": "엄격한 LRU 교체 정책",
+      "focus": "기존 pseudo-LRU와 다른 교체 정책",
+      "order": 33,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/33_cache_lru_0008/problem.md",
+      "record_sha256": "b635dcc1587ea37f032708faad69c06311dba29aa69f1dcc043e5321ff96a697",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "a32b2cafe6dab69b8ba73e51d486cf5fd5b802ebf65ab2414ed4dcd7bcda90b5",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_cache_lru_0008.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_virtual2physical_tlb_0001",
+      "title_ko": "가상→물리 주소 TLB",
+      "focus": "태그 검색과 주소 변환",
+      "order": 34,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/34_virtual2physical_tlb_0001/problem.md",
+      "record_sha256": "0578fd90a3f7f552d2dc22ae993ddc7f22088c0083d65995afa7ad2154a6f418",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_virtual2physical_tlb_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_icache_controller_0001",
+      "title_ko": "명령어 캐시 제어기",
+      "focus": "히트·미스·메모리 요청",
+      "order": 35,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/35_icache_controller_0001/problem.md",
+      "record_sha256": "039d97db7645a9772287ef5569bc297efb9a7540db8bade91da1646f179924cb",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "800fc56b90c913165504b5b829371995b7ac747acd8fbe108d6d7b79acdbf3aa",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_icache_controller_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_static_branch_predict_0001",
+      "title_ko": "RISC-V 정적 분기 예측기",
+      "focus": "명령어 디코딩과 분기 판단",
+      "order": 36,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/36_static_branch_predict_0001/problem.md",
+      "record_sha256": "200f1c839459f4ca65f054dd5cdf2863c8cc08c54cfb779ab7f1ced3b488c018",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "bd03f4a1e4e1b1a97066c46b72e6091d415bd512e449ea26b04bfcdc8a775c6b",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_static_branch_predict_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_mem_allocator_0001",
+      "title_ko": "자원 할당기",
+      "focus": "빈 슬롯 탐색과 반환",
+      "order": 37,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/37_mem_allocator_0001/problem.md",
+      "record_sha256": "340513bfb82972ee5c4f7d177a4f9211f64adfddddb1a0dcd41430a9b665c232",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_mem_allocator_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_microcode_sequencer_0001",
+      "title_ko": "마이크로코드 시퀀서",
+      "focus": "명령어와 제어 주소 생성",
+      "order": 38,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_fail",
+      "problem_file": "selections/next_50/problems/38_microcode_sequencer_0001/problem.md",
+      "record_sha256": "4f7f21eca6f582dd13203166fddf604125490fe4e4192231db271c9dde9c62ca",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "bd03f4a1e4e1b1a97066c46b72e6091d415bd512e449ea26b04bfcdc8a775c6b",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": false,
+        "rtl": "solutions/next_50/final/cvdp_copilot_microcode_sequencer_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_register_file_2R1W_0006",
+      "title_ko": "레지스터 파일 BIST 확장",
+      "focus": "내장 자기진단과 정상 접근",
+      "order": 39,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid004",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/39_register_file_2R1W_0006/problem.md",
+      "record_sha256": "ceaeed9fbd23e01f3281ef416dbcf4fef72d19a4cf450227ee2f969be6b0da05",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "f547b41b364718995344e1f568db60d21bef35b3d73d67d380b9a276e45262da",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_register_file_2R1W_0006.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_apb_history_shift_register_0001",
+      "title_ko": "APB 분기 이력 레지스터",
+      "focus": "버스 접근과 이력 갱신",
+      "order": 40,
+      "batch": 4,
+      "domain": "CPU·캐시·메모리",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/40_apb_history_shift_register_0001/problem.md",
+      "record_sha256": "f1d7ece4ea9bdec6e75048db6bde2789e4f7289ddf0940525dedf6d2c8754b72",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "d7ca9fe8f001b72c523eea0c6dabbf8c3bd62452dd4c6c3b62d8af2f2d389629",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_apb_history_shift_register_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_configurable_digital_low_pass_filter_0001",
+      "title_ko": "설정 가능한 저역통과 필터",
+      "focus": "고정소수점과 샘플 상태",
+      "order": 41,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/41_configurable_digital_low_pass_filter_0001/problem.md",
+      "record_sha256": "973b16caade743eda44588cf6bf60f866eae08cf772a4ee63da47680356b793b",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "4fc1090599387dc752b01cd0f02cc7aa6e433750391de5f4ba454d35ebff178e",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_configurable_digital_low_pass_filter_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_configurable_digital_low_pass_filter_0004",
+      "title_ko": "데시메이터·적응형 피크 검출",
+      "focus": "샘플 간격과 검출 상태",
+      "order": 42,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_fail",
+      "problem_file": "selections/next_50/problems/42_configurable_digital_low_pass_filter_0004/problem.md",
+      "record_sha256": "bf40b7d5b69331d4f4b5bd9be829cba91546cb4b71e62f653d53b100668cd70d",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "4fc1090599387dc752b01cd0f02cc7aa6e433750391de5f4ba454d35ebff178e",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": false,
+        "rtl": "solutions/next_50/final/cvdp_copilot_configurable_digital_low_pass_filter_0004.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_neuromorphic_array_0001",
+      "title_ko": "뉴로모픽 배열",
+      "focus": "배열 연산과 제어",
+      "order": 43,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid002",
+        "medium"
+      ],
+      "status": "official_fail",
+      "problem_file": "selections/next_50/problems/43_neuromorphic_array_0001/problem.md",
+      "record_sha256": "4c7cbb327267eabcbb3e13dd493d8c1949bc3c93cf016722312d61ea997d5230",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": false,
+        "rtl": "solutions/next_50/final/cvdp_copilot_neuromorphic_array_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_sobel_filter_0011",
+      "title_ko": "Sobel 필터 수정",
+      "focus": "영상 경계 연산",
+      "order": 44,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid016",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/44_sobel_filter_0011/problem.md",
+      "record_sha256": "00ba1811a61f8cf01860dd0ea8b13d9380d5fa5b7c81a18131701927e86c03c6",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "4b9ef6d114e662c0ec5ded6ced1f1b501b12ccdf2e53837102819311425428a2",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_sobel_filter_0011.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_line_buffer_0003",
+      "title_ko": "영상 라인 버퍼 수정",
+      "focus": "픽셀 윈도와 인덱스",
+      "order": 45,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid016",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/45_line_buffer_0003/problem.md",
+      "record_sha256": "c1c70812a89b80b4f40301acfad9302fe7837b379aed7f630c41d48c13e31472",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "04fc681f72785f04bebc8aa26c3f449fea39c9a2ac8451e8e78553ce287f7b2f",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_line_buffer_0003.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_clock_jitter_detection_module_0003",
+      "title_ko": "클록 지터 검출기",
+      "focus": "주기 측정과 임계 비교",
+      "order": 46,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid002",
+        "easy"
+      ],
+      "status": "official_fail",
+      "problem_file": "selections/next_50/problems/46_clock_jitter_detection_module_0003/problem.md",
+      "record_sha256": "9d6b517e559148e182ca9b250a0345f1c279d2fd457dd5f4aa6d9df8188b413f",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "6275c940a968ab763053965ec72167dc376317aa53a898aaddf4dac03c41408c",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": false,
+        "rtl": "solutions/next_50/final/cvdp_copilot_clock_jitter_detection_module_0003.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_thermostat_0001",
+      "title_ko": "온도 제어 FSM",
+      "focus": "가열·냉각 상태 전이",
+      "order": 47,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/47_thermostat_0001/problem.md",
+      "record_sha256": "ed0b4dea3f034abf5374b888ec3dfd80b4acad860075f324dcf5e4647d5fc128",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "d7ca9fe8f001b72c523eea0c6dabbf8c3bd62452dd4c6c3b62d8af2f2d389629",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_thermostat_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_ttc_lite_0001",
+      "title_ko": "경량 타이머·카운터",
+      "focus": "설정 가능한 계수와 이벤트",
+      "order": 48,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid003",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/48_ttc_lite_0001/problem.md",
+      "record_sha256": "8c3d3224547b4c7ea10303c1330523bed6b754e06a68772c1a9e2aa2e979a386",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "800fc56b90c913165504b5b829371995b7ac747acd8fbe108d6d7b79acdbf3aa",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_ttc_lite_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_axi_alu_0001",
+      "title_ko": "AXI 제어 ALU 수정",
+      "focus": "버스 설정과 산술·논리 연산 제어",
+      "order": 49,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid016",
+        "medium"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/49_axi_alu_0001/problem.md",
+      "record_sha256": "43b3e11bdb2c435b61909b1a014adb4319b3ca5277fba5a25414c4a6ec0a5d82",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "c40dbd27b01c1110503bb69e01cc04f2367710974b8aa88a4ce9b210d75488e1",
+      "evaluation": {
+        "first_pass": false,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_axi_alu_0001.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    },
+    {
+      "id": "cvdp_copilot_alphablending_0003",
+      "title_ko": "알파 블렌딩 RTL Lint 수정",
+      "focus": "case 중복·다중 구동·순차 할당 점검",
+      "order": 50,
+      "batch": 5,
+      "domain": "신호처리·영상·제어",
+      "categories": [
+        "cid007",
+        "easy"
+      ],
+      "status": "official_pass",
+      "problem_file": "selections/next_50/problems/50_alphablending_0003/problem.md",
+      "record_sha256": "c0303d07f70382b22ba483a07f6734b74df42d545a3d3dfd883d3723d5be1cbf",
+      "harness_images": [
+        "__OSS_SIM_IMAGE__"
+      ],
+      "simulator_settings": [
+        "icarus"
+      ],
+      "harness_check": "static_config_only_not_executed",
+      "harness_compose_sha256": "5823494000c7f6bc893ce9afdc02c370d5a95e95551a0693c915d4828ac9f268",
+      "evaluation": {
+        "first_pass": true,
+        "final_pass": true,
+        "rtl": "solutions/next_50/final/cvdp_copilot_alphablending_0003.sv",
+        "result_file": "work_next50_final/raw_result.json"
+      }
+    }
+  ],
+  "difficulty_counts": {
+    "easy": 20,
+    "medium": 30
+  },
+  "category_counts": {
+    "cid002": 21,
+    "cid016": 7,
+    "cid004": 4,
+    "cid003": 17,
+    "cid007": 1
+  },
+  "evaluation_summary": {
+    "attempted": 50,
+    "first_official_pass": 23,
+    "final_official_pass": 43,
+    "final_official_fail": 7,
+    "independent_diagnostic_pass": 7,
+    "subjective_score": null,
+    "official_result": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/raw_result.json"
+  },
+  "followup_retry_20260925": {
+    "attempted": 7,
+    "compatibility_pass": 4,
+    "failed": 3,
+    "report": "solutions/next_50/retry_20260925/README_KO.md",
+    "baseline_pass_count_unchanged": 43
+  }
+}

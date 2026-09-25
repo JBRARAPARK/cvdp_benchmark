@@ -1,0 +1,150 @@
+module vending_machine (
+    input  logic       clk, rst, item_button,
+    input  logic [2:0] item_selected,
+    input  logic [3:0] coin_input,
+    input  logic       cancel,
+    output logic       dispense_item, return_change,
+    output logic [4:0] item_price, change_amount,
+    output logic [2:0] dispense_item_id,
+    output logic       error, return_money
+);
+    typedef enum logic [2:0] {
+        IDLE, ITEM_SELECTION, PAYMENT_VALIDATION,
+        DISPENSING_ITEM, RETURN_CHANGE, RETURN_MONEY
+    } state_t;
+    state_t state;
+    logic button_q, cancel_q;
+    logic [5:0] balance;
+    logic [2:0] selected;
+    wire button_edge = item_button && !button_q;
+    wire cancel_edge = cancel && !cancel_q;
+    wire valid_item = item_selected >= 3'd1 && item_selected <= 3'd4;
+    wire valid_coin = coin_input == 4'd1 || coin_input == 4'd2 ||
+                      coin_input == 4'd5 || coin_input == 4'd10;
+    wire [5:0] paid_total = balance + {2'b00, coin_input};
+
+    function automatic [4:0] price(input logic [2:0] id);
+        case (id)
+            3'd1: price = 5'd5;
+            3'd2: price = 5'd10;
+            3'd3: price = 5'd15;
+            3'd4: price = 5'd20;
+            default: price = 5'd0;
+        endcase
+    endfunction
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state <= IDLE;
+            button_q <= 0;
+            cancel_q <= 0;
+            balance <= 0;
+            selected <= 0;
+            item_price <= 0;
+            change_amount <= 0;
+            dispense_item_id <= 0;
+            dispense_item <= 0;
+            return_change <= 0;
+            return_money <= 0;
+            error <= 0;
+        end else begin
+            button_q <= item_button;
+            cancel_q <= cancel;
+            // All event outputs are one-cycle pulses.
+            dispense_item <= 0;
+            return_change <= 0;
+            return_money <= 0;
+            error <= 0;
+            change_amount <= 0;
+
+            // A queued dispense is still cancellable until its output is asserted.
+            if (cancel_edge && (state == ITEM_SELECTION ||
+                                state == PAYMENT_VALIDATION ||
+                                state == DISPENSING_ITEM)) begin
+                error <= 1;
+                state <= RETURN_MONEY;
+            end else begin
+                case (state)
+                    IDLE: begin
+                        balance <= 0;
+                        selected <= 0;
+                        item_price <= 0;
+                        // Coin insertion cannot bypass item selection.
+                        if (coin_input != 0) begin
+                            balance <= {2'b00, coin_input};
+                            error <= 1;
+                            state <= RETURN_MONEY;
+                        end else if (button_edge) begin
+                            dispense_item_id <= 0;
+                            state <= ITEM_SELECTION;
+                        end
+                    end
+                    ITEM_SELECTION: begin
+                        // Sample the ID on the first selection-state clock.
+                        // No selection-valid port exists; zero is an invalid ID.
+                        if (!valid_item || coin_input != 0) begin
+                            balance <= {2'b00, coin_input};
+                            error <= 1;
+                            state <= RETURN_MONEY;
+                        end else begin
+                            selected <= item_selected;
+                            item_price <= price(item_selected);
+                            state <= PAYMENT_VALIDATION;
+                        end
+                    end
+                    PAYMENT_VALIDATION: begin
+                        // Zero denotes no coin event, not an invalid denomination.
+                        if (coin_input != 0) begin
+                            if (!valid_coin) begin
+                                error <= 1;
+                                return_money <= 1;
+                                change_amount <= balance[4:0];
+                                balance <= 0;
+                                selected <= 0;
+                                item_price <= 0;
+                                state <= IDLE;
+                            end else begin
+                                balance <= paid_total;
+                                if (paid_total >= {1'b0, item_price})
+                                    state <= DISPENSING_ITEM;
+                            end
+                        end
+                    end
+                    DISPENSING_ITEM: begin
+                        dispense_item <= 1;
+                        dispense_item_id <= selected;
+                        if (balance > {1'b0, item_price})
+                            state <= RETURN_CHANGE;
+                        else begin
+                            balance <= 0;
+                            state <= IDLE;
+                        end
+                    end
+                    RETURN_CHANGE: begin
+                        // Exactly the clock after dispense, with no extra wait state.
+                        return_change <= 1;
+                        change_amount <= balance[4:0] - item_price;
+                        balance <= 0;
+                        state <= IDLE;
+                    end
+                    RETURN_MONEY: begin
+                        return_money <= balance != 0;
+                        change_amount <= balance[4:0];
+                        balance <= 0;
+                        selected <= 0;
+                        item_price <= 0;
+                        dispense_item_id <= 0;
+                        state <= IDLE;
+                    end
+                    default: begin
+                        state <= IDLE;
+                        balance <= 0;
+                        selected <= 0;
+                        item_price <= 0;
+                        dispense_item_id <= 0;
+                    end
+                endcase
+            end
+        end
+    end
+endmodule

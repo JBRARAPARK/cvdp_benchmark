@@ -1,0 +1,2 @@
+module data_width_converter(input clk,reset,input [31:0] data_in,input data_valid,output reg [127:0] o_data_out,output reg o_data_out_valid);
+reg [127:0] buffer;reg [1:0] count;always @(posedge clk or posedge reset)if(reset)begin buffer<=0;count<=0;o_data_out<=0;o_data_out_valid<=0;end else begin o_data_out_valid<=0;if(data_valid)begin buffer<={buffer[95:0],data_in};count<=count+1'b1;if(count==3)begin o_data_out<={buffer[95:0],data_in};o_data_out_valid<=1;end end end endmodule

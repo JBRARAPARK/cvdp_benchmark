@@ -1,0 +1,935 @@
+Running harness with project name: cvdp_copilot_interrupt_controller_17_1790256865
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 11 items
+
+../../src/test_runner.py::test_data[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256866
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 3
+   180.00ns INFO     test                               Interrupt Request Made: ID = 4
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00     106523.74  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      29923.14  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=5
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 5}
+FAILED
+../../src/test_runner.py::test_data[19]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256866
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 3
+   180.00ns INFO     test                               Interrupt Request Made: ID = 4
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00      97194.21  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      28417.68  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=19
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 19}
+FAILED
+../../src/test_runner.py::test_data[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256866
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 3
+   180.00ns INFO     test                               Interrupt Request Made: ID = 4
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00      89621.88  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      28846.66  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=8
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 8}
+FAILED
+../../src/test_runner.py::test_data[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256866
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 3
+   180.00ns INFO     test                               Interrupt Request Made: ID = 4
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00      92281.31  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      26287.70  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=6
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 6}
+FAILED
+../../src/test_runner.py::test_data[15_0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256867
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 1
+   180.00ns INFO     test                               Interrupt Request Made: ID = 8
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00     101073.81  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      28129.36  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=15
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 15}
+FAILED
+../../src/test_runner.py::test_data[15_1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256867
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 1
+   180.00ns INFO     test                               Interrupt Request Made: ID = 8
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00      95147.66  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      27149.85  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=15
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 15}
+FAILED
+../../src/test_runner.py::test_data[13]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256867
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 1
+   180.00ns INFO     test                               Interrupt Request Made: ID = 8
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00     109636.63  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      30083.84  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=13
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 13}
+FAILED
+../../src/test_runner.py::test_data[9_0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256867
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 1
+   180.00ns INFO     test                               Interrupt Request Made: ID = 8
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00      74057.34  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      24202.92  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=9
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 9}
+FAILED
+../../src/test_runner.py::test_data[15_2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256868
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 5
+   180.00ns INFO     test                               Interrupt Request Made: ID = 8
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00     105398.10  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      27586.66  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=15
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 15}
+FAILED
+../../src/test_runner.py::test_data[10]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256868
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 5
+   180.00ns INFO     test                               Interrupt Request Made: ID = 8
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00     102569.51  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      27138.14  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=10
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 10}
+FAILED
+../../src/test_runner.py::test_data[9_1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256868
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_controller.test_interrupt_controller (1/1)
+     0.00ns INFO     test                               Test Initialized
+    50.00ns INFO     test                               Check interrupt_valid Signal Seq Started
+    50.00ns INFO     test                               Check interrupt_id Signal Seq Started
+   150.00ns INFO     test                               Sequential Interrupts Seq Started
+   150.00ns INFO     test                               Generate Ack Seq Started
+   160.00ns INFO     test                               Interrupt Request Made: ID = 5
+   180.00ns INFO     test                               Interrupt Request Made: ID = 8
+   195.00ns WARNING  ..ontroller.<locals>.check_int_out No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_int_controller.py", line 257, in check_int_out
+                                                            assert dut.interrupt_valid.value == 1, f"No Interrupt active while {len(interrupts_list)} interrupts are pending"
+                                                        AssertionError: No Interrupt active while 2 interrupts are pending
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(interrupt_controller.interrupt_valid).value
+                                                         +    where LogicObject(interrupt_controller.interrupt_valid) = HierarchyObject(interrupt_controller).interrupt_valid
+   195.00ns WARNING  cocotb.regression                  test_int_controller.test_interrupt_controller failed
+   195.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_int_controller.test_interrupt_controller   FAIL         195.00           0.00      83765.80  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                 195.00           0.01      26703.10  **
+                                                        *******************************************************************************************************
+[DEBUG] Running simulation with STARVATION_THRESHOLD=9
+[DEBUG] Parameters: {'STARVATION_THRESHOLD': 9}
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_data[5] _________________________________
+
+STARVATION_THRESHOLD = 5
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 5
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=5 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+________________________________ test_data[19] _________________________________
+
+STARVATION_THRESHOLD = 19
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 19
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=19 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________________ test_data[8] _________________________________
+
+STARVATION_THRESHOLD = 8
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 8
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=8 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________________ test_data[6] _________________________________
+
+STARVATION_THRESHOLD = 6
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 6
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=6 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_______________________________ test_data[15_0] ________________________________
+
+STARVATION_THRESHOLD = 15
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 15
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=15 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_______________________________ test_data[15_1] ________________________________
+
+STARVATION_THRESHOLD = 15
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 15
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=15 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+________________________________ test_data[13] _________________________________
+
+STARVATION_THRESHOLD = 13
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 13
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=13 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+________________________________ test_data[9_0] ________________________________
+
+STARVATION_THRESHOLD = 9
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 9
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=9 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_______________________________ test_data[15_2] ________________________________
+
+STARVATION_THRESHOLD = 15
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 15
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=15 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+________________________________ test_data[10] _________________________________
+
+STARVATION_THRESHOLD = 10
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 10
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=10 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+________________________________ test_data[9_1] ________________________________
+
+STARVATION_THRESHOLD = 9
+
+    @pytest.mark.parametrize("STARVATION_THRESHOLD", random_starvation_threshold)
+    def test_data(STARVATION_THRESHOLD):
+        # Run the simulation with specified parameters
+>       runner(STARVATION_THRESHOLD=STARVATION_THRESHOLD)
+
+/src/test_runner.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+STARVATION_THRESHOLD = 9
+
+    def runner(STARVATION_THRESHOLD: int = 8):
+        # Simulation parameters
+        parameter = {
+            "STARVATION_THRESHOLD": STARVATION_THRESHOLD
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with STARVATION_THRESHOLD={STARVATION_THRESHOLD}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:39: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s interrupt_controller -g2012 -Pinterrupt_controller.STARVATION_THRESHOLD=9 -f /code/rundir/sim_build/cmds.f /code/rtl/pic_starvation_prevention.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_data[5] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[19] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[8] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[6] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[15_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[15_1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[13] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[9_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[15_2] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[10] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[9_1] - SystemExit: 1
+============================== 11 failed in 2.80s ==============================
+Cleaning up Docker resources...

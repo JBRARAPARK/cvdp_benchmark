@@ -1,0 +1,406 @@
+Running harness with project name: cvdp_copilot_rounding_1_1790257424
+Sending build context to Docker daemon  4.362kB
+Step 1/2 : FROM nvidia/cvdp-sim:v1.0.0
+ ---> 9bbd232afa15
+Step 2/2 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in 8fbbaa4cf5f6
+ ---> Removed intermediate container 8fbbaa4cf5f6
+ ---> 0f63b5694e34
+Successfully built 0f63b5694e34
+Successfully tagged cvdp_copilot_rounding_1_1790257424-direct:latest
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test_rounding[8] FAILED                        [ 25%]
+../../src/test_runner.py::test_rounding[16] FAILED                       [ 50%]
+../../src/test_runner.py::test_rounding[24] FAILED                       [ 75%]
+../../src/test_runner.py::test_rounding[32] FAILED                       [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_rounding[8] _______________________________
+
+WIDTH = 8
+
+    @pytest.mark.parametrize("WIDTH", width_values)
+    def test_rounding(WIDTH):
+        """
+        Parameterized test_runner to verify the rounding module for multiple WIDTH values.
+        """
+        print(f"Running simulation with WIDTH = {WIDTH}")
+        runner = get_runner(sim)
+    
+        # Build and simulate with parameters
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters={
+                'WIDTH': WIDTH
+            },
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file=f"sim_WIDTH_{WIDTH}.log"
+        )
+    
+>       runner.test(
+            hdl_toplevel=toplevel,
+            test_module=module,
+            waves=True
+        )
+E       SystemExit: 1
+
+/src/test_runner.py:42: SystemExit
+----------------------------- Captured stdout call -----------------------------
+Running simulation with WIDTH = 8
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257426
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_rounding.rounding_test (1/1)
+                                                            Cocotb testbench for the rounding module.
+     1.00ns INFO     cocotb.rounding                    PASS: in_data=FF, rm=000, sign=0, roundin=0, stickyin=0
+     2.00ns INFO     cocotb.rounding                    PASS: in_data=7F, rm=000, sign=0, roundin=1, stickyin=0
+     3.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=000, sign=0, roundin=1, stickyin=1
+     4.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 255, Got 0
+                                                        assert LogicArray('00000000', Range(7, 'downto', 0)) == 255
+                                                         +  where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+     5.00ns INFO     cocotb.rounding                    PASS: in_data=3F, rm=010, sign=0, roundin=1, stickyin=1
+     6.00ns INFO     cocotb.rounding                    PASS: in_data=01, rm=100, sign=0, roundin=1, stickyin=0
+     7.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=001, sign=1, roundin=1, stickyin=1
+     8.00ns INFO     cocotb.rounding                    PASS: in_data=FE, rm=010, sign=0, roundin=1, stickyin=1
+     9.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=000, sign=0, roundin=1, stickyin=1
+    10.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=001, sign=1, roundin=1, stickyin=1
+    11.00ns INFO     cocotb.rounding                    PASS: in_data=FF, rm=010, sign=0, roundin=1, stickyin=1
+    12.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 255, Got 0
+                                                        assert LogicArray('00000000', Range(7, 'downto', 0)) == 255
+                                                         +  where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+    13.00ns INFO     cocotb.rounding                    PASS: in_data=01, rm=000, sign=0, roundin=1, stickyin=0
+    14.00ns INFO     cocotb.rounding                    PASS: in_data=01, rm=011, sign=1, roundin=1, stickyin=0
+    15.00ns INFO     cocotb.rounding                    PASS: in_data=01, rm=100, sign=0, roundin=1, stickyin=1
+    16.00ns INFO     cocotb.rounding                    PASS: in_data=FF, rm=010, sign=0, roundin=1, stickyin=0
+    17.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=011, sign=1, roundin=1, stickyin=0
+    18.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=001, sign=0, roundin=0, stickyin=0
+    19.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=010, sign=0, roundin=1, stickyin=1
+    20.00ns INFO     cocotb.rounding                    PASS: in_data=00, rm=011, sign=1, roundin=1, stickyin=1
+    21.00ns INFO     cocotb.rounding                    PASS: in_data=0F, rm=000, sign=0, roundin=1, stickyin=0
+    22.00ns INFO     cocotb.rounding                    PASS: in_data=FF, rm=100, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    PASS: in_data=01, rm=000, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    Test completed: Passed = 21, Failed = 2
+    23.00ns WARNING  ..Test rounding_test.rounding_test Some tests failed: 2 failures.
+                                                        assert 2 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rounding.py", line 122, in rounding_test
+                                                            assert fail_count == 0, f"Some tests failed: {fail_count} failures."
+                                                        AssertionError: Some tests failed: 2 failures.
+                                                        assert 2 == 0
+    23.00ns WARNING  cocotb.regression                  test_rounding.rounding_test failed
+    23.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_rounding.rounding_test    FAIL          23.00           0.00      16191.51  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                 23.00           0.00       5071.44  **
+                                                        **************************************************************************************
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s rounding -g2012 -Prounding.WIDTH=8 -f /code/rundir/sim_build/cmds.f /code/rtl/rounding.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_rounding[16] _______________________________
+
+WIDTH = 16
+
+    @pytest.mark.parametrize("WIDTH", width_values)
+    def test_rounding(WIDTH):
+        """
+        Parameterized test_runner to verify the rounding module for multiple WIDTH values.
+        """
+        print(f"Running simulation with WIDTH = {WIDTH}")
+        runner = get_runner(sim)
+    
+        # Build and simulate with parameters
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters={
+                'WIDTH': WIDTH
+            },
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file=f"sim_WIDTH_{WIDTH}.log"
+        )
+    
+>       runner.test(
+            hdl_toplevel=toplevel,
+            test_module=module,
+            waves=True
+        )
+E       SystemExit: 1
+
+/src/test_runner.py:42: SystemExit
+----------------------------- Captured stdout call -----------------------------
+Running simulation with WIDTH = 16
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257426
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_rounding.rounding_test (1/1)
+                                                            Cocotb testbench for the rounding module.
+     1.00ns INFO     cocotb.rounding                    PASS: in_data=FFFF, rm=000, sign=0, roundin=0, stickyin=0
+     2.00ns INFO     cocotb.rounding                    PASS: in_data=7FFF, rm=000, sign=0, roundin=1, stickyin=0
+     3.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=000, sign=0, roundin=1, stickyin=1
+     4.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 65535, Got 0
+                                                        assert LogicArray('0000000000000000', Range(15, 'downto', 0)) == 65535
+                                                         +  where LogicArray('0000000000000000', Range(15, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+     5.00ns INFO     cocotb.rounding                    PASS: in_data=3FFF, rm=010, sign=0, roundin=1, stickyin=1
+     6.00ns INFO     cocotb.rounding                    PASS: in_data=0001, rm=100, sign=0, roundin=1, stickyin=0
+     7.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=001, sign=1, roundin=1, stickyin=1
+     8.00ns INFO     cocotb.rounding                    PASS: in_data=FFFE, rm=010, sign=0, roundin=1, stickyin=1
+     9.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=000, sign=0, roundin=1, stickyin=1
+    10.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=001, sign=1, roundin=1, stickyin=1
+    11.00ns INFO     cocotb.rounding                    PASS: in_data=FFFF, rm=010, sign=0, roundin=1, stickyin=1
+    12.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 65535, Got 0
+                                                        assert LogicArray('0000000000000000', Range(15, 'downto', 0)) == 65535
+                                                         +  where LogicArray('0000000000000000', Range(15, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+    13.00ns INFO     cocotb.rounding                    PASS: in_data=0001, rm=000, sign=0, roundin=1, stickyin=0
+    14.00ns INFO     cocotb.rounding                    PASS: in_data=0001, rm=011, sign=1, roundin=1, stickyin=0
+    15.00ns INFO     cocotb.rounding                    PASS: in_data=0001, rm=100, sign=0, roundin=1, stickyin=1
+    16.00ns INFO     cocotb.rounding                    PASS: in_data=FFFF, rm=010, sign=0, roundin=1, stickyin=0
+    17.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=011, sign=1, roundin=1, stickyin=0
+    18.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=001, sign=0, roundin=0, stickyin=0
+    19.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=010, sign=0, roundin=1, stickyin=1
+    20.00ns INFO     cocotb.rounding                    PASS: in_data=0000, rm=011, sign=1, roundin=1, stickyin=1
+    21.00ns INFO     cocotb.rounding                    PASS: in_data=000F, rm=000, sign=0, roundin=1, stickyin=0
+    22.00ns INFO     cocotb.rounding                    PASS: in_data=FFFF, rm=100, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    PASS: in_data=0001, rm=000, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    Test completed: Passed = 21, Failed = 2
+    23.00ns WARNING  ..Test rounding_test.rounding_test Some tests failed: 2 failures.
+                                                        assert 2 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rounding.py", line 122, in rounding_test
+                                                            assert fail_count == 0, f"Some tests failed: {fail_count} failures."
+                                                        AssertionError: Some tests failed: 2 failures.
+                                                        assert 2 == 0
+    23.00ns WARNING  cocotb.regression                  test_rounding.rounding_test failed
+    23.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_rounding.rounding_test    FAIL          23.00           0.00      16059.43  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                 23.00           0.00       5054.70  **
+                                                        **************************************************************************************
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s rounding -g2012 -Prounding.WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/rounding.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_rounding[24] _______________________________
+
+WIDTH = 24
+
+    @pytest.mark.parametrize("WIDTH", width_values)
+    def test_rounding(WIDTH):
+        """
+        Parameterized test_runner to verify the rounding module for multiple WIDTH values.
+        """
+        print(f"Running simulation with WIDTH = {WIDTH}")
+        runner = get_runner(sim)
+    
+        # Build and simulate with parameters
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters={
+                'WIDTH': WIDTH
+            },
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file=f"sim_WIDTH_{WIDTH}.log"
+        )
+    
+>       runner.test(
+            hdl_toplevel=toplevel,
+            test_module=module,
+            waves=True
+        )
+E       SystemExit: 1
+
+/src/test_runner.py:42: SystemExit
+----------------------------- Captured stdout call -----------------------------
+Running simulation with WIDTH = 24
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257427
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_rounding.rounding_test (1/1)
+                                                            Cocotb testbench for the rounding module.
+     1.00ns INFO     cocotb.rounding                    PASS: in_data=FFFFFF, rm=000, sign=0, roundin=0, stickyin=0
+     2.00ns INFO     cocotb.rounding                    PASS: in_data=7FFFFF, rm=000, sign=0, roundin=1, stickyin=0
+     3.00ns INFO     cocotb.rounding                    PASS: in_data=000000, rm=000, sign=0, roundin=1, stickyin=1
+     4.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 16777215, Got 0
+                                                        assert LogicArray('000000000000000000000000', Range(23, 'downto', 0)) == 16777215
+                                                         +  where LogicArray('000000000000000000000000', Range(23, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+     5.00ns INFO     cocotb.rounding                    PASS: in_data=3FFFFF, rm=010, sign=0, roundin=1, stickyin=1
+     6.00ns INFO     cocotb.rounding                    PASS: in_data=000001, rm=100, sign=0, roundin=1, stickyin=0
+     7.00ns INFO     cocotb.rounding                    PASS: in_data=000000, rm=001, sign=1, roundin=1, stickyin=1
+     8.00ns INFO     cocotb.rounding                    PASS: in_data=FFFFFE, rm=010, sign=0, roundin=1, stickyin=1
+     9.00ns INFO     cocotb.rounding                    PASS: in_data=000000, rm=000, sign=0, roundin=1, stickyin=1
+    10.00ns INFO     cocotb.rounding                    PASS: in_data=000000, rm=001, sign=1, roundin=1, stickyin=1
+    11.00ns INFO     cocotb.rounding                    PASS: in_data=FFFFFF, rm=010, sign=0, roundin=1, stickyin=1
+    12.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 16777215, Got 0
+                                                        assert LogicArray('000000000000000000000000', Range(23, 'downto', 0)) == 16777215
+                                                         +  where LogicArray('000000000000000000000000', Range(23, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+    13.00ns INFO     cocotb.rounding                    PASS: in_data=000001, rm=000, sign=0, roundin=1, stickyin=0
+    14.00ns INFO     cocotb.rounding                    PASS: in_data=000001, rm=011, sign=1, roundin=1, stickyin=0
+    15.00ns INFO     cocotb.rounding                    PASS: in_data=000001, rm=100, sign=0, roundin=1, stickyin=1
+    16.00ns INFO     cocotb.rounding                    PASS: in_data=7FFFFF, rm=010, sign=0, roundin=1, stickyin=0
+    17.00ns INFO     cocotb.rounding                    PASS: in_data=800000, rm=011, sign=1, roundin=1, stickyin=0
+    18.00ns INFO     cocotb.rounding                    PASS: in_data=800000, rm=001, sign=0, roundin=0, stickyin=0
+    19.00ns INFO     cocotb.rounding                    PASS: in_data=000000, rm=010, sign=0, roundin=1, stickyin=1
+    20.00ns INFO     cocotb.rounding                    PASS: in_data=000000, rm=011, sign=1, roundin=1, stickyin=1
+    21.00ns INFO     cocotb.rounding                    PASS: in_data=00000F, rm=000, sign=0, roundin=1, stickyin=0
+    22.00ns INFO     cocotb.rounding                    PASS: in_data=FFFFFF, rm=100, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    PASS: in_data=800001, rm=000, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    Test completed: Passed = 21, Failed = 2
+    23.00ns WARNING  ..Test rounding_test.rounding_test Some tests failed: 2 failures.
+                                                        assert 2 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rounding.py", line 122, in rounding_test
+                                                            assert fail_count == 0, f"Some tests failed: {fail_count} failures."
+                                                        AssertionError: Some tests failed: 2 failures.
+                                                        assert 2 == 0
+    23.00ns WARNING  cocotb.regression                  test_rounding.rounding_test failed
+    23.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_rounding.rounding_test    FAIL          23.00           0.00      16353.45  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                 23.00           0.00       5003.58  **
+                                                        **************************************************************************************
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s rounding -g2012 -Prounding.WIDTH=24 -f /code/rundir/sim_build/cmds.f /code/rtl/rounding.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_rounding[32] _______________________________
+
+WIDTH = 32
+
+    @pytest.mark.parametrize("WIDTH", width_values)
+    def test_rounding(WIDTH):
+        """
+        Parameterized test_runner to verify the rounding module for multiple WIDTH values.
+        """
+        print(f"Running simulation with WIDTH = {WIDTH}")
+        runner = get_runner(sim)
+    
+        # Build and simulate with parameters
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters={
+                'WIDTH': WIDTH
+            },
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file=f"sim_WIDTH_{WIDTH}.log"
+        )
+    
+>       runner.test(
+            hdl_toplevel=toplevel,
+            test_module=module,
+            waves=True
+        )
+E       SystemExit: 1
+
+/src/test_runner.py:42: SystemExit
+----------------------------- Captured stdout call -----------------------------
+Running simulation with WIDTH = 32
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257427
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_rounding.rounding_test (1/1)
+                                                            Cocotb testbench for the rounding module.
+     1.00ns INFO     cocotb.rounding                    PASS: in_data=FFFFFFFF, rm=000, sign=0, roundin=0, stickyin=0
+     2.00ns INFO     cocotb.rounding                    PASS: in_data=7FFFFFFF, rm=000, sign=0, roundin=1, stickyin=0
+     3.00ns INFO     cocotb.rounding                    PASS: in_data=00000000, rm=000, sign=0, roundin=1, stickyin=1
+     4.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 4294967295, Got 0
+                                                        assert LogicArray('00000000000000000000000000000000', Range(31, 'downto', 0)) == 4294967295
+                                                         +  where LogicArray('00000000000000000000000000000000', Range(31, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+     5.00ns INFO     cocotb.rounding                    PASS: in_data=3FFFFFFF, rm=010, sign=0, roundin=1, stickyin=1
+     6.00ns INFO     cocotb.rounding                    PASS: in_data=00000001, rm=100, sign=0, roundin=1, stickyin=0
+     7.00ns INFO     cocotb.rounding                    PASS: in_data=00000000, rm=001, sign=1, roundin=1, stickyin=1
+     8.00ns INFO     cocotb.rounding                    PASS: in_data=FFFFFFFE, rm=010, sign=0, roundin=1, stickyin=1
+     9.00ns INFO     cocotb.rounding                    PASS: in_data=00000000, rm=000, sign=0, roundin=1, stickyin=1
+    10.00ns INFO     cocotb.rounding                    PASS: in_data=00000000, rm=001, sign=1, roundin=1, stickyin=1
+    11.00ns INFO     cocotb.rounding                    PASS: in_data=FFFFFFFF, rm=010, sign=0, roundin=1, stickyin=1
+    12.00ns ERROR    cocotb.rounding                    FAIL: OUT_DATA MISMATCH: Expected 4294967295, Got 0
+                                                        assert LogicArray('00000000000000000000000000000000', Range(31, 'downto', 0)) == 4294967295
+                                                         +  where LogicArray('00000000000000000000000000000000', Range(31, 'downto', 0)) = LogicArrayObject(rounding.out_data).value
+                                                         +    where LogicArrayObject(rounding.out_data) = HierarchyObject(rounding).out_data
+    13.00ns INFO     cocotb.rounding                    PASS: in_data=00000001, rm=000, sign=0, roundin=1, stickyin=0
+    14.00ns INFO     cocotb.rounding                    PASS: in_data=00000001, rm=011, sign=1, roundin=1, stickyin=0
+    15.00ns INFO     cocotb.rounding                    PASS: in_data=00000001, rm=100, sign=0, roundin=1, stickyin=1
+    16.00ns INFO     cocotb.rounding                    PASS: in_data=007FFFFF, rm=010, sign=0, roundin=1, stickyin=0
+    17.00ns INFO     cocotb.rounding                    PASS: in_data=00800000, rm=011, sign=1, roundin=1, stickyin=0
+    18.00ns INFO     cocotb.rounding                    PASS: in_data=00800000, rm=001, sign=0, roundin=0, stickyin=0
+    19.00ns INFO     cocotb.rounding                    PASS: in_data=00000000, rm=010, sign=0, roundin=1, stickyin=1
+    20.00ns INFO     cocotb.rounding                    PASS: in_data=00000000, rm=011, sign=1, roundin=1, stickyin=1
+    21.00ns INFO     cocotb.rounding                    PASS: in_data=0000000F, rm=000, sign=0, roundin=1, stickyin=0
+    22.00ns INFO     cocotb.rounding                    PASS: in_data=00FFFFFF, rm=100, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    PASS: in_data=00800001, rm=000, sign=1, roundin=1, stickyin=1
+    23.00ns INFO     cocotb.rounding                    Test completed: Passed = 21, Failed = 2
+    23.00ns WARNING  ..Test rounding_test.rounding_test Some tests failed: 2 failures.
+                                                        assert 2 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rounding.py", line 122, in rounding_test
+                                                            assert fail_count == 0, f"Some tests failed: {fail_count} failures."
+                                                        AssertionError: Some tests failed: 2 failures.
+                                                        assert 2 == 0
+    23.00ns WARNING  cocotb.regression                  test_rounding.rounding_test failed
+    23.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_rounding.rounding_test    FAIL          23.00           0.00      16350.68  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                 23.00           0.00       5065.85  **
+                                                        **************************************************************************************
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s rounding -g2012 -Prounding.WIDTH=32 -f /code/rundir/sim_build/cmds.f /code/rtl/rounding.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_rounding[8] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_rounding[16] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_rounding[24] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_rounding[32] - SystemExit: 1
+============================== 4 failed in 0.90s ===============================
+Cleaning up Docker resources...
+Untagged: cvdp_copilot_rounding_1_1790257424-direct:latest
+Deleted: sha256:0f63b5694e34d5e58b7468f0640725fe210d2e93b5fe4a371fa3807315ee425b

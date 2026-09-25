@@ -1,0 +1,110 @@
+Running harness with project name: cvdp_copilot_ping_pong_buffer_1_1790258067
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_moving_run[0] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s ping_pong_buffer -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/ping_pong_buffer.sv /code/rtl/dual_port_memory.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +encoder_in=46 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258068
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_ping_pong_buffer.data_validation_test (1/6)
+   710.00ns INFO     cocotb.regression                  test_ping_pong_buffer.data_validation_test passed
+   710.00ns INFO     cocotb.regression                  running test_ping_pong_buffer.buffer_alternation_test (2/6)
+  3391.00ns INFO     cocotb.regression                  test_ping_pong_buffer.buffer_alternation_test passed
+  3391.00ns INFO     cocotb.regression                  running test_ping_pong_buffer.stress_test (3/6)
+ 13492.00ns INFO     cocotb.regression                  test_ping_pong_buffer.stress_test passed
+ 13492.00ns INFO     cocotb.regression                  running test_ping_pong_buffer.async_reset_test (4/6)
+ 13563.00ns WARNING  ..sync_reset_test.async_reset_test Buffer should be empty after reset
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(ping_pong_buffer.buffer_empty).value
+                                                         +    where LogicObject(ping_pong_buffer.buffer_empty) = HierarchyObject(ping_pong_buffer).buffer_empty
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_ping_pong_buffer.py", line 103, in async_reset_test
+                                                            assert dut.buffer_empty.value == 1, "Buffer should be empty after reset"
+                                                        AssertionError: Buffer should be empty after reset
+                                                        assert Logic('0') == 1
+                                                         +  where Logic('0') = LogicObject(ping_pong_buffer.buffer_empty).value
+                                                         +    where LogicObject(ping_pong_buffer.buffer_empty) = HierarchyObject(ping_pong_buffer).buffer_empty
+ 13563.00ns WARNING  cocotb.regression                  test_ping_pong_buffer.async_reset_test failed
+ 13563.00ns INFO     cocotb.regression                  running test_ping_pong_buffer.random_operation_test (5/6)
+ 18664.00ns INFO     cocotb.regression                  test_ping_pong_buffer.random_operation_test passed
+ 18664.00ns INFO     cocotb.regression                  running test_ping_pong_buffer.boundary_condition_test (6/6)
+ 21345.00ns WARNING  ..ion_test.boundary_condition_test Buffer never reported full when expected.
+                                                        assert False
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_ping_pong_buffer.py", line 140, in boundary_condition_test
+                                                            assert full_flag, "Buffer never reported full when expected."
+                                                        AssertionError: Buffer never reported full when expected.
+                                                        assert False
+ 21345.00ns WARNING  cocotb.regression                  test_ping_pong_buffer.boundary_condition_test failed
+ 21345.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_ping_pong_buffer.data_validation_test      PASS         710.00           0.00     307100.74  **
+                                                        ** test_ping_pong_buffer.buffer_alternation_test   PASS        2680.00           0.01     344279.78  **
+                                                        ** test_ping_pong_buffer.stress_test               PASS       10100.00           0.03     328467.63  **
+                                                        ** test_ping_pong_buffer.async_reset_test          FAIL          70.00           0.00     172402.40  **
+                                                        ** test_ping_pong_buffer.random_operation_test     PASS        5100.00           0.01     347735.52  **
+                                                        ** test_ping_pong_buffer.boundary_condition_test   FAIL        2680.00           0.01     399613.73  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=6 PASS=4 FAIL=2 SKIP=0                               21345.00           0.07     318263.13  **
+                                                        *******************************************************************************************************
+ERROR    Icarus:runner.py:572 ERROR: Failed 2 of 6 tests.
+FAILED
+
+=================================== FAILURES ===================================
+______________________________ test_moving_run[0] ______________________________
+
+test = 0
+
+    @pytest.mark.parametrize("test", range(1))
+    def test_moving_run(test):
+        encoder_in = random.randint(0, 255)
+    
+        plusargs=[f'+encoder_in={encoder_in}']
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            # parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, plusargs=plusargs, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:33: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s ping_pong_buffer -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/ping_pong_buffer.sv /code/rtl/dual_port_memory.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +encoder_in=46 -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 2 of 6 tests.
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-yoyumdc3'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-2oeib7am'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-h7dajips'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_moving_run[0] - SystemExit: 1
+======================== 1 failed, 3 warnings in 0.32s =========================
+Cleaning up Docker resources...

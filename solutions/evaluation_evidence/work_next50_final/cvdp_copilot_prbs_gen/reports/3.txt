@@ -1,0 +1,992 @@
+Running harness with project name: cvdp_copilot_prbs_gen_3_1790258476
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 54 items
+
+../../src/test_runner.py::test_prbs[8-1-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258478
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     342735.29  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     264829.77  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=1, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 1, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-1-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258478
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     248961.94  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     209290.70  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=1, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 1, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-1-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258478
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     349580.30  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     273244.56  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=1, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 1, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-1-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258478
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     244916.12  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     204402.66  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=1, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 1, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-1-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258478
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     340895.74  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     266209.34  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=1, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 1, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-1-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258479
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     250082.25  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     207503.14  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=1, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 1, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-3-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258479
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     345854.71  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     269582.96  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=3, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 3, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-3-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258479
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     243094.88  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     203896.46  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=3, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 3, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-3-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258479
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     342102.36  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     267925.89  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=3, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 3, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-3-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258480
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     241680.92  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     202024.91  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=3, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 3, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-3-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258480
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     339282.83  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     266992.69  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=3, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 3, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-3-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258480
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     242352.81  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     202531.08  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=3, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 3, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-5-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258480
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     341891.90  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     266624.42  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=5, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 5, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-5-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258480
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     247699.72  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     206779.32  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=5, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 5, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-5-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258481
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     346528.62  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     273985.47  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=5, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 5, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-5-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258481
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     239313.29  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     201594.37  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=5, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 5, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-5-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258481
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     345935.44  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     270979.60  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=5, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 5, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[8-5-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258481
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     242551.13  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     203877.76  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=5, WIDTH=8
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 5, 'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_prbs[16-1-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258482
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     288361.80  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     236047.90  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=1, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 1, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-1-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258482
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     191141.97  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     166627.77  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=1, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 1, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-1-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258482
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     289884.74  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     238185.06  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=1, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 1, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-1-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258482
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.02      57003.17  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.02      48870.69  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=1, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 1, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-1-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258482
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     290111.73  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     236550.27  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=1, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 1, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-1-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258483
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     191117.32  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     166453.10  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=1, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 1, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-3-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258483
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     299250.34  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     242326.39  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=3, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 3, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-3-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258483
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     188260.60  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     162945.29  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=3, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 3, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-3-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258483
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     287243.97  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     234912.94  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=3, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 3, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-3-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258484
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     189633.71  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     165111.68  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=3, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 3, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-3-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258484
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     289563.78  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     237447.25  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=3, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 3, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-3-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258484
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     186116.97  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     161027.25  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=3, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 3, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-5-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258484
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     293928.48  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     236928.44  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=5, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 5, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-5-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258484
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     189909.11  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     164995.26  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=5, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 5, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-5-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258485
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     284359.59  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     232517.24  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=5, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 5, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-5-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258485
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     189342.97  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     164470.34  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=5, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 5, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-5-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258485
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     278586.52  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.00     228490.20  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=5, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 5, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[16-5-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258485
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     187720.07  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     164203.07  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=5, WIDTH=16
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 5, 'WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_prbs[32-1-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258486
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     224418.87  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     190707.43  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=1, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 1, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-1-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258486
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     131580.17  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     119750.11  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=1, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 1, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-1-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258486
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     216538.20  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     183694.68  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=1, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 1, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-1-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258486
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     125418.55  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     114145.37  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=1, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 1, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-1-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258486
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     214978.11  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     182578.22  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=1, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 1, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-1-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258487
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     130234.99  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     118083.51  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=1, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 1, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-3-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258487
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     226384.35  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     191026.99  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=3, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 3, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-3-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258487
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     127746.52  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     115596.64  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=3, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 3, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-3-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258487
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     214366.55  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     182660.73  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=3, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 3, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-3-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258488
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     126201.77  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     114110.22  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=3, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 3, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-3-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258488
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     210539.48  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     181186.82  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=3, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 3, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-3-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258488
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     126065.79  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     114808.58  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=3, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 3, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-5-7-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258488
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     217406.47  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     185209.84  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=7, POLY_TAP=5, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 7, 'POLY_TAP': 5, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-5-7-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258488
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     125588.61  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     114592.56  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=7, POLY_TAP=5, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 7, 'POLY_TAP': 5, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-5-23-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258489
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     223090.08  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     190715.61  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=23, POLY_TAP=5, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 23, 'POLY_TAP': 5, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-5-23-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258489
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     129055.51  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     117146.98  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=23, POLY_TAP=5, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 23, 'POLY_TAP': 5, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-5-31-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258489
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.00     220086.25  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     186319.77  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=0, POLY_LENGTH=31, POLY_TAP=5, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 0, 'POLY_LENGTH': 31, 'POLY_TAP': 5, 'WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_prbs[32-5-31-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258489
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_prbs_gen.test_prbs_gen (1/1)
+  1060.00ns INFO     cocotb.regression                  test_prbs_gen.test_prbs_gen passed
+  1060.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_prbs_gen.test_prbs_gen    PASS        1060.00           0.01     120398.68  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1060.00           0.01     108295.47  **
+                                                        **************************************************************************************
+[DEBUG] Running simulation with CHECK_MODE=1, POLY_LENGTH=31, POLY_TAP=5, WIDTH=32
+[DEBUG] Parameters: {'CHECK_MODE': 1, 'POLY_LENGTH': 31, 'POLY_TAP': 5, 'WIDTH': 32}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-wed_mwqa'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-nr1gdmv4'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 54 passed, 2 warnings in 11.95s ========================
+Cleaning up Docker resources...

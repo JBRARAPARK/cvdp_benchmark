@@ -1,0 +1,336 @@
+Running harness with project name: cvdp_copilot_16qam_mapper_1_1790255905
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 15 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255906
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.00     327270.91  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.00     257952.28  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=2
+[DEBUG] Parameters: {'N': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255906
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.00     224294.33  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01     188898.58  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=4
+[DEBUG] Parameters: {'N': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255906
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01     107252.00  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      98501.77  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=10
+[DEBUG] Parameters: {'N': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255906
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.02      54167.58  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.02      50398.98  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=14
+[DEBUG] Parameters: {'N': 14}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255907
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01     105863.30  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      97252.46  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=10
+[DEBUG] Parameters: {'N': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255907
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.00     302641.17  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.00     240678.49  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=2
+[DEBUG] Parameters: {'N': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255907
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01     191783.45  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01     158694.82  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=4
+[DEBUG] Parameters: {'N': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255907
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01     108122.91  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      99454.72  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=10
+[DEBUG] Parameters: {'N': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255908
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01      78898.14  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      74024.53  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=14
+[DEBUG] Parameters: {'N': 14}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255908
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01     107098.64  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      98619.89  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=10
+[DEBUG] Parameters: {'N': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255908
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.00     314722.29  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.00     253034.75  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=2
+[DEBUG] Parameters: {'N': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255908
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.00     224270.35  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01     189367.65  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=4
+[DEBUG] Parameters: {'N': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255909
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01     108223.35  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      99177.22  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=10
+[DEBUG] Parameters: {'N': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255909
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01      80197.02  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      75297.63  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=14
+[DEBUG] Parameters: {'N': 14}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255909
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_qam16_mapper_interpolated.test_qam16_mapper_interpolated (1/1)
+                                                            Test the 16-QAM mapper with interpolation.
+    10.00ns WARNING  py.warnings                        /src/harness_library.py:17: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+  1000.00ns INFO     test                               All 100 tests passed successfully.
+  1000.00ns INFO     cocotb.regression                  test_qam16_mapper_interpolated.test_qam16_mapper_interpolated passed
+  1000.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_qam16_mapper_interpolated.test_qam16_mapper_interpolated   PASS        1000.00           0.01     108562.29  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                1000.00           0.01      99431.15  **
+                                                        ***********************************************************************************************************************
+[DEBUG] Running simulation with N=10
+[DEBUG] Parameters: {'N': 10}
+.
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-mlh39hz4'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-9s4sdqdt'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 15 passed, 2 warnings in 3.46s ========================
+Cleaning up Docker resources...

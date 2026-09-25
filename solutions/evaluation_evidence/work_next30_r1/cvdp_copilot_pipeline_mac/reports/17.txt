@@ -1,0 +1,3842 @@
+Running harness with project name: cvdp_copilot_pipeline_mac_17_1790256055
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 9 items
+
+../../src/test_runner.py::test_pipeline_mac[0-13-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256057
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 46, N = 13
+[DEBUG] Cycle 1/52: N = 1/13
+[DEBUG] Cycle 1/52: valid_in 1
+[DEBUG] Cycle 1/52: random_multiplicand = 0x438ea, random_multiplier = 0x15b5e8
+[DEBUG] Cycle 1/52: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/52: N = 2/13
+[DEBUG] Cycle 2/52: valid_in 1
+[DEBUG] Cycle 2/52: random_multiplicand = 0x19943, random_multiplier = 0x122ff8
+[DEBUG] Cycle 2/52: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/52: N = 3/13
+[DEBUG] Cycle 3/52: valid_in 1
+[DEBUG] Cycle 3/52: random_multiplicand = 0x13122f, random_multiplier = 0xe9b9b
+[DEBUG] Cycle 3/52: Expected result = 0x5bab430610, Expected valid_out = 0
+[DEBUG] Cycle 3/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/52: N = 4/13
+[DEBUG] Cycle 4/52: valid_in 1
+[DEBUG] Cycle 4/52: random_multiplicand = 0x173b02, random_multiplier = 0x763d3
+[DEBUG] Cycle 4/52: Expected result = 0x78bea8cbf8, Expected valid_out = 0
+[DEBUG] Cycle 4/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/52: N = 5/13
+[DEBUG] Cycle 5/52: valid_in 1
+[DEBUG] Cycle 5/52: random_multiplicand = 0x13decf, random_multiplier = 0x1d7544
+[DEBUG] Cycle 5/52: Expected result = 0x18f54c9436d, Expected valid_out = 0
+[DEBUG] Cycle 5/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/52: N = 6/13
+[DEBUG] Cycle 6/52: valid_in 1
+[DEBUG] Cycle 6/52: random_multiplicand = 0x1d1f6c, random_multiplier = 0xa7469
+[DEBUG] Cycle 6/52: Expected result = 0x23b00ceac13, Expected valid_out = 0
+[DEBUG] Cycle 6/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/52: N = 7/13
+[DEBUG] Cycle 7/52: valid_in 1
+[DEBUG] Cycle 7/52: random_multiplicand = 0x85eed, random_multiplier = 0x17d23a
+[DEBUG] Cycle 7/52: Expected result = 0x484585d760f, Expected valid_out = 0
+[DEBUG] Cycle 7/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/52: N = 8/13
+[DEBUG] Cycle 8/52: valid_in 1
+[DEBUG] Cycle 8/52: random_multiplicand = 0x1e1455, random_multiplier = 0xce23d
+[DEBUG] Cycle 8/52: Expected result = 0x5b4d0c4495b, Expected valid_out = 0
+[DEBUG] Cycle 8/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 9/52: N = 9/13
+[DEBUG] Cycle 9/52: valid_in 1
+[DEBUG] Cycle 9/52: random_multiplicand = 0x1ecf08, random_multiplier = 0xd065f
+[DEBUG] Cycle 9/52: Expected result = 0x67c37d3350d, Expected valid_out = 0
+[DEBUG] Cycle 9/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/52: N = 10/13
+[DEBUG] Cycle 10/52: valid_in 1
+[DEBUG] Cycle 10/52: random_multiplicand = 0x17d2cd, random_multiplier = 0x1d0ca9
+[DEBUG] Cycle 10/52: Expected result = 0x7ffc0ed174e, Expected valid_out = 0
+[DEBUG] Cycle 10/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/52: N = 11/13
+[DEBUG] Cycle 11/52: valid_in 1
+[DEBUG] Cycle 11/52: random_multiplicand = 0xf2ce3, random_multiplier = 0x183c73
+[DEBUG] Cycle 11/52: Expected result = 0x991089e1b46, Expected valid_out = 0
+[DEBUG] Cycle 11/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/52: N = 12/13
+[DEBUG] Cycle 12/52: valid_in 1
+[DEBUG] Cycle 12/52: random_multiplicand = 0x1dd709, random_multiplier = 0x13c617
+[DEBUG] Cycle 12/52: Expected result = 0xc451772e09b, Expected valid_out = 0
+[DEBUG] Cycle 12/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/52: N = 13/13
+[DEBUG] Cycle 13/52: valid_in 1
+[DEBUG] Cycle 13/52: random_multiplicand = 0x646c6, random_multiplier = 0x368c0
+[DEBUG] Cycle 13/52: Expected result = 0xdb4e2113e94, Expected valid_out = 0
+[DEBUG] Cycle 13/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/52: N = 14/13
+[DEBUG] Cycle 14/52: valid_in 1
+[DEBUG] Cycle 14/52: random_multiplicand = 0x8eddd, random_multiplier = 0x19c227
+[DEBUG] Cycle 14/52: Expected result = 0x1002eebb8663, Expected valid_out = 0
+[DEBUG] Cycle 14/52: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 15/52: N = 0/13
+[DEBUG] Cycle 15/52: valid_in 1
+[DEBUG] Cycle 15/52: random_multiplicand = 0x1fcf99, random_multiplier = 0x1e675f
+[DEBUG] Cycle 15/52: Expected result = 0x101854830ae3, Expected valid_out = 1
+[DEBUG] Cycle 15/52: Actual result   = 0x101854830ae3, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 16/52: N = 1/13
+[DEBUG] Cycle 16/52: valid_in 1
+[DEBUG] Cycle 16/52: random_multiplicand = 0xa020c, random_multiplier = 0x1dcc61
+[DEBUG] Cycle 16/52: Expected result = 0xe60032b6ab, Expected valid_out = 0
+[DEBUG] Cycle 16/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/52: N = 2/13
+[DEBUG] Cycle 17/52: valid_in 1
+[DEBUG] Cycle 17/52: random_multiplicand = 0x16c0c3, random_multiplier = 0x1a7a5d
+[DEBUG] Cycle 17/52: Expected result = 0x4ad2c754f72, Expected valid_out = 0
+[DEBUG] Cycle 17/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/52: N = 3/13
+[DEBUG] Cycle 18/52: valid_in 1
+[DEBUG] Cycle 18/52: random_multiplicand = 0x6385c, random_multiplier = 0xa743e
+[DEBUG] Cycle 18/52: Expected result = 0x5d7653da5fe, Expected valid_out = 0
+[DEBUG] Cycle 18/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 19/52: N = 4/13
+[DEBUG] Cycle 19/52: valid_in 1
+[DEBUG] Cycle 19/52: random_multiplicand = 0x890f1, random_multiplier = 0x4529d
+[DEBUG] Cycle 19/52: Expected result = 0x831d92c9ad5, Expected valid_out = 0
+[DEBUG] Cycle 19/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 20/52: N = 5/13
+[DEBUG] Cycle 20/52: valid_in 1
+[DEBUG] Cycle 20/52: random_multiplicand = 0xe4c99, random_multiplier = 0x12eb1d
+[DEBUG] Cycle 20/52: Expected result = 0x872dfcff11d, Expected valid_out = 0
+[DEBUG] Cycle 20/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 21/52: N = 6/13
+[DEBUG] Cycle 21/52: valid_in 1
+[DEBUG] Cycle 21/52: random_multiplicand = 0x842d6, random_multiplier = 0x1c73d4
+[DEBUG] Cycle 21/52: Expected result = 0x897e74206ea, Expected valid_out = 0
+[DEBUG] Cycle 21/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/52: N = 7/13
+[DEBUG] Cycle 22/52: valid_in 1
+[DEBUG] Cycle 22/52: random_multiplicand = 0xf0c98, random_multiplier = 0x1f10de
+[DEBUG] Cycle 22/52: Expected result = 0x9a66bf3273f, Expected valid_out = 0
+[DEBUG] Cycle 22/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/52: N = 8/13
+[DEBUG] Cycle 23/52: valid_in 1
+[DEBUG] Cycle 23/52: random_multiplicand = 0x45f90, random_multiplier = 0x1a4b52
+[DEBUG] Cycle 23/52: Expected result = 0xa917838a277, Expected valid_out = 0
+[DEBUG] Cycle 23/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 24/52: N = 9/13
+[DEBUG] Cycle 24/52: valid_in 1
+[DEBUG] Cycle 24/52: random_multiplicand = 0xea823, random_multiplier = 0xe4d91
+[DEBUG] Cycle 24/52: Expected result = 0xc64fc770e47, Expected valid_out = 0
+[DEBUG] Cycle 24/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 25/52: N = 10/13
+[DEBUG] Cycle 25/52: valid_in 1
+[DEBUG] Cycle 25/52: random_multiplicand = 0x1105fb, random_multiplier = 0xbb1a
+[DEBUG] Cycle 25/52: Expected result = 0xcd7fa7cda67, Expected valid_out = 0
+[DEBUG] Cycle 25/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 26/52: N = 11/13
+[DEBUG] Cycle 26/52: valid_in 1
+[DEBUG] Cycle 26/52: random_multiplicand = 0x624b, random_multiplier = 0xcad3b
+[DEBUG] Cycle 26/52: Expected result = 0xda99d469d3a, Expected valid_out = 0
+[DEBUG] Cycle 26/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 27/52: N = 12/13
+[DEBUG] Cycle 27/52: valid_in 1
+[DEBUG] Cycle 27/52: random_multiplicand = 0x12effc, random_multiplier = 0xf249b
+[DEBUG] Cycle 27/52: Expected result = 0xdb60e5f91b8, Expected valid_out = 0
+[DEBUG] Cycle 27/52: Actual result   = 0x101854830ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 28/52: N = 0/13
+[DEBUG] Cycle 28/52: valid_in 1
+[DEBUG] Cycle 28/52: random_multiplicand = 0x134e8e, random_multiplier = 0x1ffe5d
+[DEBUG] Cycle 28/52: Expected result = 0xdbaec66e801, Expected valid_out = 1
+[DEBUG] Cycle 28/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 29/52: N = 1/13
+[DEBUG] Cycle 29/52: valid_in 1
+[DEBUG] Cycle 29/52: random_multiplicand = 0x8d7a6, random_multiplier = 0x197748
+[DEBUG] Cycle 29/52: Expected result = 0x11ec4fabd94, Expected valid_out = 0
+[DEBUG] Cycle 29/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 30/52: N = 2/13
+[DEBUG] Cycle 30/52: valid_in 1
+[DEBUG] Cycle 30/52: random_multiplicand = 0x101f1d, random_multiplier = 0x1a174e
+[DEBUG] Cycle 30/52: Expected result = 0x38877212b2a, Expected valid_out = 0
+[DEBUG] Cycle 30/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 31/52: N = 3/13
+[DEBUG] Cycle 31/52: valid_in 1
+[DEBUG] Cycle 31/52: random_multiplicand = 0x19cec, random_multiplier = 0xb2694
+[DEBUG] Cycle 31/52: Expected result = 0x469a511fbda, Expected valid_out = 0
+[DEBUG] Cycle 31/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 32/52: N = 4/13
+[DEBUG] Cycle 32/52: valid_in 1
+[DEBUG] Cycle 32/52: random_multiplicand = 0x814b5, random_multiplier = 0x79893
+[DEBUG] Cycle 32/52: Expected result = 0x60e45b911b0, Expected valid_out = 0
+[DEBUG] Cycle 32/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 33/52: N = 5/13
+[DEBUG] Cycle 33/52: valid_in 1
+[DEBUG] Cycle 33/52: random_multiplicand = 0x19a4a1, random_multiplier = 0x650ed
+[DEBUG] Cycle 33/52: Expected result = 0x6204216d220, Expected valid_out = 0
+[DEBUG] Cycle 33/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 34/52: N = 6/13
+[DEBUG] Cycle 34/52: valid_in 1
+[DEBUG] Cycle 34/52: random_multiplicand = 0x8b6fa, random_multiplier = 0xc83e0
+[DEBUG] Cycle 34/52: Expected result = 0x65da3f92e0f, Expected valid_out = 0
+[DEBUG] Cycle 34/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 35/52: N = 7/13
+[DEBUG] Cycle 35/52: valid_in 1
+[DEBUG] Cycle 35/52: random_multiplicand = 0x6db, random_multiplier = 0x11d587
+[DEBUG] Cycle 35/52: Expected result = 0x6ff9aeee71c, Expected valid_out = 0
+[DEBUG] Cycle 35/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 36/52: N = 8/13
+[DEBUG] Cycle 36/52: valid_in 1
+[DEBUG] Cycle 36/52: random_multiplicand = 0xcc2e3, random_multiplier = 0xfbfb3
+[DEBUG] Cycle 36/52: Expected result = 0x76cabe8efdc, Expected valid_out = 0
+[DEBUG] Cycle 36/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 37/52: N = 9/13
+[DEBUG] Cycle 37/52: valid_in 1
+[DEBUG] Cycle 37/52: random_multiplicand = 0xd3bbf, random_multiplier = 0x4063
+[DEBUG] Cycle 37/52: Expected result = 0x76d262bc459, Expected valid_out = 0
+[DEBUG] Cycle 37/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 38/52: N = 10/13
+[DEBUG] Cycle 38/52: valid_in 1
+[DEBUG] Cycle 38/52: random_multiplicand = 0x5edce, random_multiplier = 0xac9f2
+[DEBUG] Cycle 38/52: Expected result = 0x8361fcc6612, Expected valid_out = 0
+[DEBUG] Cycle 38/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 39/52: N = 11/13
+[DEBUG] Cycle 39/52: valid_in 1
+[DEBUG] Cycle 39/52: random_multiplicand = 0x169610, random_multiplier = 0x140ff1
+[DEBUG] Cycle 39/52: Expected result = 0x83973da40ef, Expected valid_out = 0
+[DEBUG] Cycle 39/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 40/52: N = 12/13
+[DEBUG] Cycle 40/52: valid_in 1
+[DEBUG] Cycle 40/52: random_multiplicand = 0x1a7271, random_multiplier = 0x14eb2
+[DEBUG] Cycle 40/52: Expected result = 0x8796b37cbab, Expected valid_out = 0
+[DEBUG] Cycle 40/52: Actual result   = 0xdbaec66e801, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 41/52: N = 0/13
+[DEBUG] Cycle 41/52: valid_in 1
+[DEBUG] Cycle 41/52: random_multiplicand = 0x1be1d2, random_multiplier = 0x1b259a
+[DEBUG] Cycle 41/52: Expected result = 0xa3e8c8600bb, Expected valid_out = 1
+[DEBUG] Cycle 41/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 42/52: N = 1/13
+[DEBUG] Cycle 42/52: valid_in 1
+[DEBUG] Cycle 42/52: random_multiplicand = 0xf2423, random_multiplier = 0xe2b59
+[DEBUG] Cycle 42/52: Expected result = 0x2293b30092, Expected valid_out = 0
+[DEBUG] Cycle 42/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 43/52: N = 2/13
+[DEBUG] Cycle 43/52: valid_in 1
+[DEBUG] Cycle 43/52: random_multiplicand = 0x1793a, random_multiplier = 0x14ee79
+[DEBUG] Cycle 43/52: Expected result = 0x3177d4232e6, Expected valid_out = 0
+[DEBUG] Cycle 43/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 44/52: N = 3/13
+[DEBUG] Cycle 44/52: valid_in 1
+[DEBUG] Cycle 44/52: random_multiplicand = 0x1e5318, random_multiplier = 0xc3022
+[DEBUG] Cycle 44/52: Expected result = 0x3ee0781a411, Expected valid_out = 0
+[DEBUG] Cycle 44/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 45/52: N = 4/13
+[DEBUG] Cycle 45/52: valid_in 1
+[DEBUG] Cycle 45/52: random_multiplicand = 0x1957ef, random_multiplier = 0xc09cd
+[DEBUG] Cycle 45/52: Expected result = 0x40cdf6fdc7b, Expected valid_out = 0
+[DEBUG] Cycle 45/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 46/52: N = 5/13
+[DEBUG] Cycle 46/52: valid_in 1
+[DEBUG] Cycle 46/52: random_multiplicand = 0x8ae3d, random_multiplier = 0x2a9ce
+[DEBUG] Cycle 46/52: Expected result = 0x57e782b65ab, Expected valid_out = 0
+[DEBUG] Cycle 46/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 47/52: N = 6/13
+[DEBUG] Cycle 47/52: valid_in 1
+[DEBUG] Cycle 47/52: random_multiplicand = 0x68fc, random_multiplier = 0x117a2f
+[DEBUG] Cycle 47/52: Expected result = 0x6af8fc2370e, Expected valid_out = 0
+[DEBUG] Cycle 47/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 48/52: N = 7/13
+[DEBUG] Cycle 48/52: valid_in 1
+[DEBUG] Cycle 48/52: random_multiplicand = 0x11b21f, random_multiplier = 0x64c6b
+[DEBUG] Cycle 48/52: Expected result = 0x6c6ae3eb124, Expected valid_out = 0
+[DEBUG] Cycle 48/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 49/52: N = 8/13
+[DEBUG] Cycle 49/52: valid_in 1
+[DEBUG] Cycle 49/52: random_multiplicand = 0x98e2, random_multiplier = 0x19b0b7
+[DEBUG] Cycle 49/52: Expected result = 0x6cdd9160f68, Expected valid_out = 0
+[DEBUG] Cycle 49/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 50/52: N = 9/13
+[DEBUG] Cycle 50/52: valid_in 1
+[DEBUG] Cycle 50/52: random_multiplicand = 0x18a8cd, random_multiplier = 0xdbf8f
+[DEBUG] Cycle 50/52: Expected result = 0x73d4e16b65d, Expected valid_out = 0
+[DEBUG] Cycle 50/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 51/52: N = 10/13
+[DEBUG] Cycle 51/52: valid_in 1
+[DEBUG] Cycle 51/52: random_multiplicand = 0x19455, random_multiplier = 0x17363b
+[DEBUG] Cycle 51/52: Expected result = 0x74ca5b15feb, Expected valid_out = 0
+[DEBUG] Cycle 51/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 52/52: N = 11/13
+[DEBUG] Cycle 52/52: valid_in 1
+[DEBUG] Cycle 52/52: random_multiplicand = 0x185f3c, random_multiplier = 0xae7f9
+[DEBUG] Cycle 52/52: Expected result = 0x89fabd19d6e, Expected valid_out = 0
+[DEBUG] Cycle 52/52: Actual result   = 0xa3e8c8600bb, Actual valid_out   = 0
+
+
+   560.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+   560.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS         560.00           0.01      73806.25  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                       560.00           0.01      52486.21  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=13
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 13}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[0-6-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256057
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 45, N = 6
+[DEBUG] Cycle 1/25: N = 1/6
+[DEBUG] Cycle 1/25: valid_in 1
+[DEBUG] Cycle 1/25: random_multiplicand = 0x438ea, random_multiplier = 0x624b
+[DEBUG] Cycle 1/25: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/25: N = 2/6
+[DEBUG] Cycle 2/25: valid_in 1
+[DEBUG] Cycle 2/25: random_multiplicand = 0x19943, random_multiplier = 0x12effc
+[DEBUG] Cycle 2/25: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/25: N = 3/6
+[DEBUG] Cycle 3/25: valid_in 1
+[DEBUG] Cycle 3/25: random_multiplicand = 0x13122f, random_multiplier = 0x134e8e
+[DEBUG] Cycle 3/25: Expected result = 0x19f06408e, Expected valid_out = 0
+[DEBUG] Cycle 3/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/25: N = 4/6
+[DEBUG] Cycle 4/25: valid_in 1
+[DEBUG] Cycle 4/25: random_multiplicand = 0x173b02, random_multiplier = 0x8d7a6
+[DEBUG] Cycle 4/25: Expected result = 0x1fe564ab82, Expected valid_out = 0
+[DEBUG] Cycle 4/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/25: N = 5/6
+[DEBUG] Cycle 5/25: valid_in 1
+[DEBUG] Cycle 5/25: random_multiplicand = 0x13decf, random_multiplier = 0x101f1d
+[DEBUG] Cycle 5/25: Expected result = 0x19019001394, Expected valid_out = 0
+[DEBUG] Cycle 5/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/25: N = 6/6
+[DEBUG] Cycle 6/25: valid_in 1
+[DEBUG] Cycle 6/25: random_multiplicand = 0x1d1f6c, random_multiplier = 0x19cec
+[DEBUG] Cycle 6/25: Expected result = 0x25d82af04e0, Expected valid_out = 0
+[DEBUG] Cycle 6/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/25: N = 7/6
+[DEBUG] Cycle 7/25: valid_in 1
+[DEBUG] Cycle 7/25: random_multiplicand = 0x85eed, random_multiplier = 0x814b5
+[DEBUG] Cycle 7/25: Expected result = 0x39dd9da5353, Expected valid_out = 0
+[DEBUG] Cycle 7/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/25: N = 0/6
+[DEBUG] Cycle 8/25: valid_in 1
+[DEBUG] Cycle 8/25: random_multiplicand = 0x1e1455, random_multiplier = 0x19a4a1
+[DEBUG] Cycle 8/25: Expected result = 0x3ccd3451ae3, Expected valid_out = 1
+[DEBUG] Cycle 8/25: Actual result   = 0x3ccd3451ae3, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 9/25: N = 1/6
+[DEBUG] Cycle 9/25: valid_in 1
+[DEBUG] Cycle 9/25: random_multiplicand = 0x1ecf08, random_multiplier = 0x8b6fa
+[DEBUG] Cycle 9/25: Expected result = 0x43a4bda191, Expected valid_out = 0
+[DEBUG] Cycle 9/25: Actual result   = 0x3ccd3451ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/25: N = 2/6
+[DEBUG] Cycle 10/25: valid_in 1
+[DEBUG] Cycle 10/25: random_multiplicand = 0x17d2cd, random_multiplier = 0x6db
+[DEBUG] Cycle 10/25: Expected result = 0x346f8fbdf06, Expected valid_out = 0
+[DEBUG] Cycle 10/25: Actual result   = 0x3ccd3451ae3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/25: N = 3/6
+[DEBUG] Cycle 11/25: valid_in 1
+[DEBUG] Cycle 11/25: random_multiplicand = 0xf2ce3, random_multiplier = 0xcc2e3
+[DEBUG] Cycle 11/25: Expected result = 0x4537681bcd6, Expected valid_out = 0
+[DEBUG] Cycle 11/25: Actual result   = 0x3ccd3451ae3, Actual valid_out   = 0
+
+
+Reset Applied!
+[DEBUG] Cycle 12/25: N = 1/6
+[DEBUG] Cycle 12/25: valid_in 1
+[DEBUG] Cycle 12/25: random_multiplicand = 0x1dd709, random_multiplier = 0xd3bbf
+[DEBUG] Cycle 12/25: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 12/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/25: N = 2/6
+[DEBUG] Cycle 13/25: valid_in 1
+[DEBUG] Cycle 13/25: random_multiplicand = 0x646c6, random_multiplier = 0x5edce
+[DEBUG] Cycle 13/25: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 13/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/25: N = 3/6
+[DEBUG] Cycle 14/25: valid_in 1
+[DEBUG] Cycle 14/25: random_multiplicand = 0x8eddd, random_multiplier = 0x169610
+[DEBUG] Cycle 14/25: Expected result = 0x18ae24782b7, Expected valid_out = 0
+[DEBUG] Cycle 14/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 15/25: N = 4/6
+[DEBUG] Cycle 15/25: valid_in 1
+[DEBUG] Cycle 15/25: random_multiplicand = 0x1fcf99, random_multiplier = 0x1a7271
+[DEBUG] Cycle 15/25: Expected result = 0x1b018b7c40b, Expected valid_out = 0
+[DEBUG] Cycle 15/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 16/25: N = 5/6
+[DEBUG] Cycle 16/25: valid_in 1
+[DEBUG] Cycle 16/25: random_multiplicand = 0xa020c, random_multiplier = 0x1be1d2
+[DEBUG] Cycle 16/25: Expected result = 0x279c5a41fdb, Expected valid_out = 0
+[DEBUG] Cycle 16/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/25: N = 6/6
+[DEBUG] Cycle 17/25: valid_in 1
+[DEBUG] Cycle 17/25: random_multiplicand = 0x16c0c3, random_multiplier = 0xf2423
+[DEBUG] Cycle 17/25: Expected result = 0x5c313aae464, Expected valid_out = 0
+[DEBUG] Cycle 17/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/25: N = 7/6
+[DEBUG] Cycle 18/25: valid_in 1
+[DEBUG] Cycle 18/25: random_multiplicand = 0x6385c, random_multiplier = 0x1793a
+[DEBUG] Cycle 18/25: Expected result = 0x6da1ef11e3c, Expected valid_out = 0
+[DEBUG] Cycle 18/25: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 19/25: N = 0/6
+[DEBUG] Cycle 19/25: valid_in 1
+[DEBUG] Cycle 19/25: random_multiplicand = 0x890f1, random_multiplier = 0x1e5318
+[DEBUG] Cycle 19/25: Expected result = 0x832a095e4e5, Expected valid_out = 1
+[DEBUG] Cycle 19/25: Actual result   = 0x832a095e4e5, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 20/25: N = 1/6
+[DEBUG] Cycle 20/25: valid_in 1
+[DEBUG] Cycle 20/25: random_multiplicand = 0xe4c99, random_multiplier = 0x1957ef
+[DEBUG] Cycle 20/25: Expected result = 0x92a6840d8, Expected valid_out = 0
+[DEBUG] Cycle 20/25: Actual result   = 0x832a095e4e5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 21/25: N = 2/6
+[DEBUG] Cycle 21/25: valid_in 1
+[DEBUG] Cycle 21/25: random_multiplicand = 0x842d6, random_multiplier = 0x8ae3d
+[DEBUG] Cycle 21/25: Expected result = 0x10cee71fa70, Expected valid_out = 0
+[DEBUG] Cycle 21/25: Actual result   = 0x832a095e4e5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/25: N = 3/6
+[DEBUG] Cycle 22/25: valid_in 1
+[DEBUG] Cycle 22/25: random_multiplicand = 0xf0c98, random_multiplier = 0x68fc
+[DEBUG] Cycle 22/25: Expected result = 0x27752c47c47, Expected valid_out = 0
+[DEBUG] Cycle 22/25: Actual result   = 0x832a095e4e5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/25: N = 4/6
+[DEBUG] Cycle 23/25: valid_in 1
+[DEBUG] Cycle 23/25: random_multiplicand = 0x45f90, random_multiplier = 0x11b21f
+[DEBUG] Cycle 23/25: Expected result = 0x2bf08d9dd45, Expected valid_out = 0
+[DEBUG] Cycle 23/25: Actual result   = 0x832a095e4e5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 24/25: N = 5/6
+[DEBUG] Cycle 24/25: valid_in 1
+[DEBUG] Cycle 24/25: random_multiplicand = 0xea823, random_multiplier = 0x98e2
+[DEBUG] Cycle 24/25: Expected result = 0x2c534c802e5, Expected valid_out = 0
+[DEBUG] Cycle 24/25: Actual result   = 0x832a095e4e5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 25/25: N = 0/6
+[DEBUG] Cycle 25/25: valid_in 1
+[DEBUG] Cycle 25/25: random_multiplicand = 0x1105fb, random_multiplier = 0x18a8cd
+[DEBUG] Cycle 25/25: Expected result = 0x3129851b555, Expected valid_out = 1
+[DEBUG] Cycle 25/25: Actual result   = 0x3129851b555, Actual valid_out   = 1
+
+
+   330.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+   330.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS         330.00           0.00      86708.03  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                       330.00           0.01      44255.03  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=6
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 6}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[0-16-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256058
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 46, N = 16
+[DEBUG] Cycle 1/97: N = 1/16
+[DEBUG] Cycle 1/97: valid_in 1
+[DEBUG] Cycle 1/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 1/97: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/97: N = 2/16
+[DEBUG] Cycle 2/97: valid_in 1
+[DEBUG] Cycle 2/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 2/97: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/97: N = 3/16
+[DEBUG] Cycle 3/97: valid_in 1
+[DEBUG] Cycle 3/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 3/97: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 3/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/97: N = 4/16
+[DEBUG] Cycle 4/97: valid_in 1
+[DEBUG] Cycle 4/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 4/97: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 4/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/97: N = 5/16
+[DEBUG] Cycle 5/97: valid_in 1
+[DEBUG] Cycle 5/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 5/97: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 5/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/97: N = 6/16
+[DEBUG] Cycle 6/97: valid_in 1
+[DEBUG] Cycle 6/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 6/97: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 6/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/97: N = 7/16
+[DEBUG] Cycle 7/97: valid_in 1
+[DEBUG] Cycle 7/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 7/97: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 7/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/97: N = 8/16
+[DEBUG] Cycle 8/97: valid_in 1
+[DEBUG] Cycle 8/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 8/97: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 8/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 9/97: N = 9/16
+[DEBUG] Cycle 9/97: valid_in 1
+[DEBUG] Cycle 9/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 9/97: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 9/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/97: N = 10/16
+[DEBUG] Cycle 10/97: valid_in 1
+[DEBUG] Cycle 10/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 10/97: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 10/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/97: N = 11/16
+[DEBUG] Cycle 11/97: valid_in 1
+[DEBUG] Cycle 11/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 11/97: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 11/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/97: N = 12/16
+[DEBUG] Cycle 12/97: valid_in 1
+[DEBUG] Cycle 12/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 12/97: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 12/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/97: N = 13/16
+[DEBUG] Cycle 13/97: valid_in 1
+[DEBUG] Cycle 13/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 13/97: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 13/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/97: N = 14/16
+[DEBUG] Cycle 14/97: valid_in 1
+[DEBUG] Cycle 14/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 14/97: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 14/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 15/97: N = 15/16
+[DEBUG] Cycle 15/97: valid_in 1
+[DEBUG] Cycle 15/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 15/97: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 15/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 16/97: N = 16/16
+[DEBUG] Cycle 16/97: valid_in 1
+[DEBUG] Cycle 16/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 16/97: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 16/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/97: N = 17/16
+[DEBUG] Cycle 17/97: valid_in 1
+[DEBUG] Cycle 17/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 17/97: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 17/97: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/97: N = 0/16
+[DEBUG] Cycle 18/97: valid_in 1
+[DEBUG] Cycle 18/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 18/97: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 18/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 19/97: N = 1/16
+[DEBUG] Cycle 19/97: valid_in 1
+[DEBUG] Cycle 19/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 19/97: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 19/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 20/97: N = 2/16
+[DEBUG] Cycle 20/97: valid_in 1
+[DEBUG] Cycle 20/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 20/97: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 20/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 21/97: N = 3/16
+[DEBUG] Cycle 21/97: valid_in 1
+[DEBUG] Cycle 21/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 21/97: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 21/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/97: N = 4/16
+[DEBUG] Cycle 22/97: valid_in 1
+[DEBUG] Cycle 22/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 22/97: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 22/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/97: N = 5/16
+[DEBUG] Cycle 23/97: valid_in 1
+[DEBUG] Cycle 23/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 23/97: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 23/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 24/97: N = 6/16
+[DEBUG] Cycle 24/97: valid_in 1
+[DEBUG] Cycle 24/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 24/97: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 24/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 25/97: N = 7/16
+[DEBUG] Cycle 25/97: valid_in 1
+[DEBUG] Cycle 25/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 25/97: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 25/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 26/97: N = 8/16
+[DEBUG] Cycle 26/97: valid_in 1
+[DEBUG] Cycle 26/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 26/97: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 26/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 27/97: N = 9/16
+[DEBUG] Cycle 27/97: valid_in 1
+[DEBUG] Cycle 27/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 27/97: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 27/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 28/97: N = 10/16
+[DEBUG] Cycle 28/97: valid_in 1
+[DEBUG] Cycle 28/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 28/97: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 28/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 29/97: N = 11/16
+[DEBUG] Cycle 29/97: valid_in 1
+[DEBUG] Cycle 29/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 29/97: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 29/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 30/97: N = 12/16
+[DEBUG] Cycle 30/97: valid_in 1
+[DEBUG] Cycle 30/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 30/97: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 30/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 31/97: N = 13/16
+[DEBUG] Cycle 31/97: valid_in 1
+[DEBUG] Cycle 31/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 31/97: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 31/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 32/97: N = 14/16
+[DEBUG] Cycle 32/97: valid_in 1
+[DEBUG] Cycle 32/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 32/97: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 32/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 33/97: N = 15/16
+[DEBUG] Cycle 33/97: valid_in 1
+[DEBUG] Cycle 33/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 33/97: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 33/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 34/97: N = 0/16
+[DEBUG] Cycle 34/97: valid_in 1
+[DEBUG] Cycle 34/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 34/97: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 34/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 35/97: N = 1/16
+[DEBUG] Cycle 35/97: valid_in 1
+[DEBUG] Cycle 35/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 35/97: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 35/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 36/97: N = 2/16
+[DEBUG] Cycle 36/97: valid_in 1
+[DEBUG] Cycle 36/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 36/97: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 36/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 37/97: N = 3/16
+[DEBUG] Cycle 37/97: valid_in 1
+[DEBUG] Cycle 37/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 37/97: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 37/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 38/97: N = 4/16
+[DEBUG] Cycle 38/97: valid_in 1
+[DEBUG] Cycle 38/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 38/97: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 38/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 39/97: N = 5/16
+[DEBUG] Cycle 39/97: valid_in 1
+[DEBUG] Cycle 39/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 39/97: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 39/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 40/97: N = 6/16
+[DEBUG] Cycle 40/97: valid_in 1
+[DEBUG] Cycle 40/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 40/97: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 40/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 41/97: N = 7/16
+[DEBUG] Cycle 41/97: valid_in 1
+[DEBUG] Cycle 41/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 41/97: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 41/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 42/97: N = 8/16
+[DEBUG] Cycle 42/97: valid_in 1
+[DEBUG] Cycle 42/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 42/97: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 42/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 43/97: N = 9/16
+[DEBUG] Cycle 43/97: valid_in 1
+[DEBUG] Cycle 43/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 43/97: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 43/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 44/97: N = 10/16
+[DEBUG] Cycle 44/97: valid_in 1
+[DEBUG] Cycle 44/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 44/97: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 44/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 45/97: N = 11/16
+[DEBUG] Cycle 45/97: valid_in 1
+[DEBUG] Cycle 45/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 45/97: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 45/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 46/97: N = 12/16
+[DEBUG] Cycle 46/97: valid_in 1
+[DEBUG] Cycle 46/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 46/97: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 46/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 47/97: N = 13/16
+[DEBUG] Cycle 47/97: valid_in 1
+[DEBUG] Cycle 47/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 47/97: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 47/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 48/97: N = 14/16
+[DEBUG] Cycle 48/97: valid_in 1
+[DEBUG] Cycle 48/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 48/97: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 48/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 49/97: N = 15/16
+[DEBUG] Cycle 49/97: valid_in 1
+[DEBUG] Cycle 49/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 49/97: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 49/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 50/97: N = 0/16
+[DEBUG] Cycle 50/97: valid_in 1
+[DEBUG] Cycle 50/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 50/97: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 50/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 51/97: N = 1/16
+[DEBUG] Cycle 51/97: valid_in 1
+[DEBUG] Cycle 51/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 51/97: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 51/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 52/97: N = 2/16
+[DEBUG] Cycle 52/97: valid_in 1
+[DEBUG] Cycle 52/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 52/97: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 52/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 53/97: N = 3/16
+[DEBUG] Cycle 53/97: valid_in 1
+[DEBUG] Cycle 53/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 53/97: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 53/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 54/97: N = 4/16
+[DEBUG] Cycle 54/97: valid_in 1
+[DEBUG] Cycle 54/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 54/97: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 54/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 55/97: N = 5/16
+[DEBUG] Cycle 55/97: valid_in 1
+[DEBUG] Cycle 55/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 55/97: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 55/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 56/97: N = 6/16
+[DEBUG] Cycle 56/97: valid_in 1
+[DEBUG] Cycle 56/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 56/97: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 56/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 57/97: N = 7/16
+[DEBUG] Cycle 57/97: valid_in 1
+[DEBUG] Cycle 57/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 57/97: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 57/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 58/97: N = 8/16
+[DEBUG] Cycle 58/97: valid_in 1
+[DEBUG] Cycle 58/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 58/97: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 58/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 59/97: N = 9/16
+[DEBUG] Cycle 59/97: valid_in 1
+[DEBUG] Cycle 59/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 59/97: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 59/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 60/97: N = 10/16
+[DEBUG] Cycle 60/97: valid_in 1
+[DEBUG] Cycle 60/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 60/97: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 60/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 61/97: N = 11/16
+[DEBUG] Cycle 61/97: valid_in 1
+[DEBUG] Cycle 61/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 61/97: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 61/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 62/97: N = 12/16
+[DEBUG] Cycle 62/97: valid_in 1
+[DEBUG] Cycle 62/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 62/97: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 62/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 63/97: N = 13/16
+[DEBUG] Cycle 63/97: valid_in 1
+[DEBUG] Cycle 63/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 63/97: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 63/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 64/97: N = 14/16
+[DEBUG] Cycle 64/97: valid_in 1
+[DEBUG] Cycle 64/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 64/97: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 64/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 65/97: N = 15/16
+[DEBUG] Cycle 65/97: valid_in 1
+[DEBUG] Cycle 65/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 65/97: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 65/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 66/97: N = 0/16
+[DEBUG] Cycle 66/97: valid_in 1
+[DEBUG] Cycle 66/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 66/97: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 66/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 67/97: N = 1/16
+[DEBUG] Cycle 67/97: valid_in 1
+[DEBUG] Cycle 67/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 67/97: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 67/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 68/97: N = 2/16
+[DEBUG] Cycle 68/97: valid_in 1
+[DEBUG] Cycle 68/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 68/97: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 68/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 69/97: N = 3/16
+[DEBUG] Cycle 69/97: valid_in 1
+[DEBUG] Cycle 69/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 69/97: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 69/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 70/97: N = 4/16
+[DEBUG] Cycle 70/97: valid_in 1
+[DEBUG] Cycle 70/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 70/97: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 70/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 71/97: N = 5/16
+[DEBUG] Cycle 71/97: valid_in 1
+[DEBUG] Cycle 71/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 71/97: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 71/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 72/97: N = 6/16
+[DEBUG] Cycle 72/97: valid_in 1
+[DEBUG] Cycle 72/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 72/97: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 72/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 73/97: N = 7/16
+[DEBUG] Cycle 73/97: valid_in 1
+[DEBUG] Cycle 73/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 73/97: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 73/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 74/97: N = 8/16
+[DEBUG] Cycle 74/97: valid_in 1
+[DEBUG] Cycle 74/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 74/97: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 74/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 75/97: N = 9/16
+[DEBUG] Cycle 75/97: valid_in 1
+[DEBUG] Cycle 75/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 75/97: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 75/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 76/97: N = 10/16
+[DEBUG] Cycle 76/97: valid_in 1
+[DEBUG] Cycle 76/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 76/97: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 76/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 77/97: N = 11/16
+[DEBUG] Cycle 77/97: valid_in 1
+[DEBUG] Cycle 77/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 77/97: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 77/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 78/97: N = 12/16
+[DEBUG] Cycle 78/97: valid_in 1
+[DEBUG] Cycle 78/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 78/97: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 78/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 79/97: N = 13/16
+[DEBUG] Cycle 79/97: valid_in 1
+[DEBUG] Cycle 79/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 79/97: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 79/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 80/97: N = 14/16
+[DEBUG] Cycle 80/97: valid_in 1
+[DEBUG] Cycle 80/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 80/97: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 80/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 81/97: N = 15/16
+[DEBUG] Cycle 81/97: valid_in 1
+[DEBUG] Cycle 81/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 81/97: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 81/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 82/97: N = 0/16
+[DEBUG] Cycle 82/97: valid_in 1
+[DEBUG] Cycle 82/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 82/97: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 82/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 83/97: N = 1/16
+[DEBUG] Cycle 83/97: valid_in 1
+[DEBUG] Cycle 83/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 83/97: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 83/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 84/97: N = 2/16
+[DEBUG] Cycle 84/97: valid_in 1
+[DEBUG] Cycle 84/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 84/97: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 84/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 85/97: N = 3/16
+[DEBUG] Cycle 85/97: valid_in 1
+[DEBUG] Cycle 85/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 85/97: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 85/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 86/97: N = 4/16
+[DEBUG] Cycle 86/97: valid_in 1
+[DEBUG] Cycle 86/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 86/97: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 86/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 87/97: N = 5/16
+[DEBUG] Cycle 87/97: valid_in 1
+[DEBUG] Cycle 87/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 87/97: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 87/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 88/97: N = 6/16
+[DEBUG] Cycle 88/97: valid_in 1
+[DEBUG] Cycle 88/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 88/97: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 88/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 89/97: N = 7/16
+[DEBUG] Cycle 89/97: valid_in 1
+[DEBUG] Cycle 89/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 89/97: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 89/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 90/97: N = 8/16
+[DEBUG] Cycle 90/97: valid_in 1
+[DEBUG] Cycle 90/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 90/97: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 90/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 91/97: N = 9/16
+[DEBUG] Cycle 91/97: valid_in 1
+[DEBUG] Cycle 91/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 91/97: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 91/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 92/97: N = 10/16
+[DEBUG] Cycle 92/97: valid_in 1
+[DEBUG] Cycle 92/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 92/97: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 92/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 93/97: N = 11/16
+[DEBUG] Cycle 93/97: valid_in 1
+[DEBUG] Cycle 93/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 93/97: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 93/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 94/97: N = 12/16
+[DEBUG] Cycle 94/97: valid_in 1
+[DEBUG] Cycle 94/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 94/97: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 94/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 95/97: N = 13/16
+[DEBUG] Cycle 95/97: valid_in 1
+[DEBUG] Cycle 95/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 95/97: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 95/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 96/97: N = 14/16
+[DEBUG] Cycle 96/97: valid_in 1
+[DEBUG] Cycle 96/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 96/97: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 96/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 97/97: N = 15/16
+[DEBUG] Cycle 97/97: valid_in 1
+[DEBUG] Cycle 97/97: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 97/97: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 97/97: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+  1010.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+  1010.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS        1010.00           0.01      92307.04  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1010.00           0.01      74100.42  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=16
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 16}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[1-13-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256058
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 46, N = 13
+[DEBUG] Cycle 1/91: N = 1/13
+[DEBUG] Cycle 1/91: valid_in 1
+[DEBUG] Cycle 1/91: random_multiplicand = 0x7abf7, random_multiplier = 0xb284c
+[DEBUG] Cycle 1/91: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/91: N = 2/13
+[DEBUG] Cycle 2/91: valid_in 1
+[DEBUG] Cycle 2/91: random_multiplicand = 0x1afe87, random_multiplier = 0x1335c4
+[DEBUG] Cycle 2/91: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/91: N = 3/13
+[DEBUG] Cycle 3/91: valid_in 1
+[DEBUG] Cycle 3/91: random_multiplicand = 0x1694bb, random_multiplier = 0x773fd
+[DEBUG] Cycle 3/91: Expected result = 0x5598c2a554, Expected valid_out = 0
+[DEBUG] Cycle 3/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/91: N = 4/13
+[DEBUG] Cycle 4/91: valid_in 1
+[DEBUG] Cycle 4/91: random_multiplicand = 0xb67ed, random_multiplier = 0x1bc280
+[DEBUG] Cycle 4/91: Expected result = 0x25c282477b0, Expected valid_out = 0
+[DEBUG] Cycle 4/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/91: N = 5/13
+[DEBUG] Cycle 5/91: valid_in 1
+[DEBUG] Cycle 5/91: random_multiplicand = 0x10945c, random_multiplier = 0x1ab717
+[DEBUG] Cycle 5/91: Expected result = 0x3047462757f, Expected valid_out = 0
+[DEBUG] Cycle 5/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/91: N = 6/13
+[DEBUG] Cycle 6/91: valid_in 1
+[DEBUG] Cycle 6/91: random_multiplicand = 0x9870f, random_multiplier = 0x134daf
+[DEBUG] Cycle 6/91: Expected result = 0x44114d705ff, Expected valid_out = 0
+[DEBUG] Cycle 6/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/91: N = 7/13
+[DEBUG] Cycle 7/91: valid_in 1
+[DEBUG] Cycle 7/91: random_multiplicand = 0x88097, random_multiplier = 0xd5ac3
+[DEBUG] Cycle 7/91: Expected result = 0x5fc01ba1e43, Expected valid_out = 0
+[DEBUG] Cycle 7/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/91: N = 8/13
+[DEBUG] Cycle 8/91: valid_in 1
+[DEBUG] Cycle 8/91: random_multiplicand = 0x195a92, random_multiplier = 0x6692a
+[DEBUG] Cycle 8/91: Expected result = 0x6b3ebf9f484, Expected valid_out = 0
+[DEBUG] Cycle 8/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 9/91: N = 9/13
+[DEBUG] Cycle 9/91: valid_in 1
+[DEBUG] Cycle 9/91: random_multiplicand = 0x183b5a, random_multiplier = 0xe3051
+[DEBUG] Cycle 9/91: Expected result = 0x7257753fd89, Expected valid_out = 0
+[DEBUG] Cycle 9/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/91: N = 10/13
+[DEBUG] Cycle 10/91: valid_in 1
+[DEBUG] Cycle 10/91: random_multiplicand = 0x1134e8, random_multiplier = 0xbc9e9
+[DEBUG] Cycle 10/91: Expected result = 0x7c8010ebb7d, Expected valid_out = 0
+[DEBUG] Cycle 10/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/91: N = 11/13
+[DEBUG] Cycle 11/91: valid_in 1
+[DEBUG] Cycle 11/91: random_multiplicand = 0xc8351, random_multiplier = 0x19aabe
+[DEBUG] Cycle 11/91: Expected result = 0x91fd2c662f7, Expected valid_out = 0
+[DEBUG] Cycle 11/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/91: N = 12/13
+[DEBUG] Cycle 12/91: valid_in 1
+[DEBUG] Cycle 12/91: random_multiplicand = 0x1e1b83, random_multiplier = 0x151405
+[DEBUG] Cycle 12/91: Expected result = 0x9eaaaf1b21f, Expected valid_out = 0
+[DEBUG] Cycle 12/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/91: N = 13/13
+[DEBUG] Cycle 13/91: valid_in 1
+[DEBUG] Cycle 13/91: random_multiplicand = 0x128f2b, random_multiplier = 0x1d34c5
+[DEBUG] Cycle 13/91: Expected result = 0xb2bd657f23d, Expected valid_out = 0
+[DEBUG] Cycle 13/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/91: N = 14/13
+[DEBUG] Cycle 14/91: valid_in 1
+[DEBUG] Cycle 14/91: random_multiplicand = 0xecc34, random_multiplier = 0x65d13
+[DEBUG] Cycle 14/91: Expected result = 0xda672d3b7cc, Expected valid_out = 0
+[DEBUG] Cycle 14/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 15/91: N = 0/13
+[DEBUG] Cycle 15/91: valid_in 1
+[DEBUG] Cycle 15/91: random_multiplicand = 0x71003, random_multiplier = 0xd4671
+[DEBUG] Cycle 15/91: Expected result = 0xfc47e0f9fe3, Expected valid_out = 1
+[DEBUG] Cycle 15/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 16/91: N = 1/13
+[DEBUG] Cycle 16/91: valid_in 1
+[DEBUG] Cycle 16/91: random_multiplicand = 0x2aaf6, random_multiplier = 0xa5fc6
+[DEBUG] Cycle 16/91: Expected result = 0x5e2a800bdc, Expected valid_out = 0
+[DEBUG] Cycle 16/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/91: N = 2/13
+[DEBUG] Cycle 17/91: valid_in 1
+[DEBUG] Cycle 17/91: random_multiplicand = 0xf539f, random_multiplier = 0x1b1dea
+[DEBUG] Cycle 17/91: Expected result = 0xbbec25ef2f, Expected valid_out = 0
+[DEBUG] Cycle 17/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/91: N = 3/13
+[DEBUG] Cycle 18/91: valid_in 1
+[DEBUG] Cycle 18/91: random_multiplicand = 0x102457, random_multiplier = 0xd1872
+[DEBUG] Cycle 18/91: Expected result = 0xd799437373, Expected valid_out = 0
+[DEBUG] Cycle 18/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 19/91: N = 4/13
+[DEBUG] Cycle 19/91: valid_in 1
+[DEBUG] Cycle 19/91: random_multiplicand = 0x1a12b8, random_multiplier = 0xa8305
+[DEBUG] Cycle 19/91: Expected result = 0x2773583e5c9, Expected valid_out = 0
+[DEBUG] Cycle 19/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 20/91: N = 5/13
+[DEBUG] Cycle 20/91: valid_in 1
+[DEBUG] Cycle 20/91: random_multiplicand = 0xaa7e, random_multiplier = 0x578e8
+[DEBUG] Cycle 20/91: Expected result = 0x34a98873c87, Expected valid_out = 0
+[DEBUG] Cycle 20/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 21/91: N = 6/13
+[DEBUG] Cycle 21/91: valid_in 1
+[DEBUG] Cycle 21/91: random_multiplicand = 0x1136fd, random_multiplier = 0x17bca9
+[DEBUG] Cycle 21/91: Expected result = 0x45cabcdc21f, Expected valid_out = 0
+[DEBUG] Cycle 21/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/91: N = 7/13
+[DEBUG] Cycle 22/91: valid_in 1
+[DEBUG] Cycle 22/91: random_multiplicand = 0xc17bd, random_multiplier = 0x1fac7a
+[DEBUG] Cycle 22/91: Expected result = 0x46050c9544f, Expected valid_out = 0
+[DEBUG] Cycle 22/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/91: N = 8/13
+[DEBUG] Cycle 23/91: valid_in 1
+[DEBUG] Cycle 23/91: random_multiplicand = 0x19e683, random_multiplier = 0x6c2b4
+[DEBUG] Cycle 23/91: Expected result = 0x5f8f1436d54, Expected valid_out = 0
+[DEBUG] Cycle 23/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 24/91: N = 9/13
+[DEBUG] Cycle 24/91: valid_in 1
+[DEBUG] Cycle 24/91: random_multiplicand = 0x1b7c5a, random_multiplier = 0x229e8
+[DEBUG] Cycle 24/91: Expected result = 0x777f6dcb966, Expected valid_out = 0
+[DEBUG] Cycle 24/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 25/91: N = 10/13
+[DEBUG] Cycle 25/91: valid_in 1
+[DEBUG] Cycle 25/91: random_multiplicand = 0x1040b4, random_multiplier = 0x38b58
+[DEBUG] Cycle 25/91: Expected result = 0x82710d41382, Expected valid_out = 0
+[DEBUG] Cycle 25/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 26/91: N = 11/13
+[DEBUG] Cycle 26/91: valid_in 1
+[DEBUG] Cycle 26/91: random_multiplicand = 0xe8c03, random_multiplier = 0x17f801
+[DEBUG] Cycle 26/91: Expected result = 0x862895b2f12, Expected valid_out = 0
+[DEBUG] Cycle 26/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 27/91: N = 12/13
+[DEBUG] Cycle 27/91: valid_in 1
+[DEBUG] Cycle 27/91: random_multiplicand = 0x1b441d, random_multiplier = 0xb14fc
+[DEBUG] Cycle 27/91: Expected result = 0x89c242f28f2, Expected valid_out = 0
+[DEBUG] Cycle 27/91: Actual result   = 0xfc47e0f9fe3, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 28/91: N = 0/13
+[DEBUG] Cycle 28/91: valid_in 1
+[DEBUG] Cycle 28/91: random_multiplicand = 0x1a441e, random_multiplier = 0xe973f
+[DEBUG] Cycle 28/91: Expected result = 0x9f8d0259cf5, Expected valid_out = 1
+[DEBUG] Cycle 28/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 29/91: N = 1/13
+[DEBUG] Cycle 29/91: valid_in 1
+[DEBUG] Cycle 29/91: random_multiplicand = 0x1a4bf4, random_multiplier = 0x1cf219
+[DEBUG] Cycle 29/91: Expected result = 0x12e2968508c, Expected valid_out = 0
+[DEBUG] Cycle 29/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 30/91: N = 2/13
+[DEBUG] Cycle 30/91: valid_in 1
+[DEBUG] Cycle 30/91: random_multiplicand = 0xb177, random_multiplier = 0x3bf23
+[DEBUG] Cycle 30/91: Expected result = 0x2ad67b0c5ee, Expected valid_out = 0
+[DEBUG] Cycle 30/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 31/91: N = 3/13
+[DEBUG] Cycle 31/91: valid_in 1
+[DEBUG] Cycle 31/91: random_multiplicand = 0x16194f, random_multiplier = 0x5044c
+[DEBUG] Cycle 31/91: Expected result = 0x5a694bed8c2, Expected valid_out = 0
+[DEBUG] Cycle 31/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 32/91: N = 4/13
+[DEBUG] Cycle 32/91: valid_in 1
+[DEBUG] Cycle 32/91: random_multiplicand = 0xaed45, random_multiplier = 0xfc8a
+[DEBUG] Cycle 32/91: Expected result = 0x5a92da3e507, Expected valid_out = 0
+[DEBUG] Cycle 32/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+Valid in Deasserted for 3 cycles!
+[DEBUG] Cycle 33/91: N = 5/13
+[DEBUG] Cycle 33/91: valid_in 0
+[DEBUG] Cycle 33/91: random_multiplicand = 0xaecc1, random_multiplier = 0x24b22
+[DEBUG] Cycle 33/91: Expected result = 0x6180b23a47b, Expected valid_out = 0
+[DEBUG] Cycle 33/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+Valid in Deasserted for 3 cycles!
+[DEBUG] Cycle 34/91: N = 6/13
+[DEBUG] Cycle 34/91: valid_in 0
+[DEBUG] Cycle 34/91: random_multiplicand = 0x1e5cc5, random_multiplier = 0x9156c
+[DEBUG] Cycle 34/91: Expected result = 0x622d29777ad, Expected valid_out = 0
+[DEBUG] Cycle 34/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+Valid in Deasserted for 3 cycles!
+[DEBUG] Cycle 35/91: N = 7/13
+[DEBUG] Cycle 35/91: valid_in 0
+[DEBUG] Cycle 35/91: random_multiplicand = 0x15737c, random_multiplier = 0x17058b
+[DEBUG] Cycle 35/91: Expected result = 0x622d29777ad, Expected valid_out = 0
+[DEBUG] Cycle 35/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 36/91: N = 8/13
+[DEBUG] Cycle 36/91: valid_in 1
+[DEBUG] Cycle 36/91: random_multiplicand = 0x6439f, random_multiplier = 0x1742ba
+[DEBUG] Cycle 36/91: Expected result = 0x622d29777ad, Expected valid_out = 0
+[DEBUG] Cycle 36/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 37/91: N = 9/13
+[DEBUG] Cycle 37/91: valid_in 1
+[DEBUG] Cycle 37/91: random_multiplicand = 0x57a8a, random_multiplier = 0xf990
+[DEBUG] Cycle 37/91: Expected result = 0x622d29777ad, Expected valid_out = 0
+[DEBUG] Cycle 37/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 38/91: N = 10/13
+[DEBUG] Cycle 38/91: valid_in 1
+[DEBUG] Cycle 38/91: random_multiplicand = 0x188208, random_multiplier = 0x13df32
+[DEBUG] Cycle 38/91: Expected result = 0x6b487dc9733, Expected valid_out = 0
+[DEBUG] Cycle 38/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 39/91: N = 11/13
+[DEBUG] Cycle 39/91: valid_in 1
+[DEBUG] Cycle 39/91: random_multiplicand = 0x1d5173, random_multiplier = 0x168b91
+[DEBUG] Cycle 39/91: Expected result = 0x6b9df21bed3, Expected valid_out = 0
+[DEBUG] Cycle 39/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 40/91: N = 12/13
+[DEBUG] Cycle 40/91: valid_in 1
+[DEBUG] Cycle 40/91: random_multiplicand = 0xb1fec, random_multiplier = 0x1fd3cf
+[DEBUG] Cycle 40/91: Expected result = 0x8a0e3c81c63, Expected valid_out = 0
+[DEBUG] Cycle 40/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 41/91: N = 13/13
+[DEBUG] Cycle 41/91: valid_in 1
+[DEBUG] Cycle 41/91: random_multiplicand = 0x8c951, random_multiplier = 0x1e0eb8
+[DEBUG] Cycle 41/91: Expected result = 0xb35df7eaf86, Expected valid_out = 0
+[DEBUG] Cycle 41/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 42/91: N = 14/13
+[DEBUG] Cycle 42/91: valid_in 1
+[DEBUG] Cycle 42/91: random_multiplicand = 0x1cbc7a, random_multiplier = 0x1f3c71
+[DEBUG] Cycle 42/91: Expected result = 0xc97f161035a, Expected valid_out = 0
+[DEBUG] Cycle 42/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 43/91: N = 15/13
+[DEBUG] Cycle 43/91: valid_in 1
+[DEBUG] Cycle 43/91: random_multiplicand = 0x9dfc0, random_multiplier = 0x83da9
+[DEBUG] Cycle 43/91: Expected result = 0xda00a322392, Expected valid_out = 0
+[DEBUG] Cycle 43/91: Actual result   = 0x9f8d0259cf5, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 44/91: N = 0/13
+[DEBUG] Cycle 44/91: valid_in 1
+[DEBUG] Cycle 44/91: random_multiplicand = 0x1bbbe4, random_multiplier = 0x13ebbb
+[DEBUG] Cycle 44/91: Expected result = 0x1121a5d3ed6c, Expected valid_out = 1
+[DEBUG] Cycle 44/91: Actual result   = 0x1121a5d3ed6c, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 45/91: N = 1/13
+[DEBUG] Cycle 45/91: valid_in 1
+[DEBUG] Cycle 45/91: random_multiplicand = 0x12705f, random_multiplier = 0x16dfcf
+[DEBUG] Cycle 45/91: Expected result = 0x515ed575c0, Expected valid_out = 0
+[DEBUG] Cycle 45/91: Actual result   = 0x1121a5d3ed6c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 46/91: N = 2/13
+[DEBUG] Cycle 46/91: valid_in 1
+[DEBUG] Cycle 46/91: random_multiplicand = 0xa6243, random_multiplier = 0x427d6
+[DEBUG] Cycle 46/91: Expected result = 0x279da7e014c, Expected valid_out = 0
+[DEBUG] Cycle 46/91: Actual result   = 0x1121a5d3ed6c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 47/91: N = 3/13
+[DEBUG] Cycle 47/91: valid_in 1
+[DEBUG] Cycle 47/91: random_multiplicand = 0xa11e2, random_multiplier = 0x144b1b
+[DEBUG] Cycle 47/91: Expected result = 0x41fa1739f1d, Expected valid_out = 0
+[DEBUG] Cycle 47/91: Actual result   = 0x1121a5d3ed6c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 48/91: N = 4/13
+[DEBUG] Cycle 48/91: valid_in 1
+[DEBUG] Cycle 48/91: random_multiplicand = 0x1fd75b, random_multiplier = 0x1f8b23
+[DEBUG] Cycle 48/91: Expected result = 0x44ac825f81f, Expected valid_out = 0
+[DEBUG] Cycle 48/91: Actual result   = 0x1121a5d3ed6c, Actual valid_out   = 0
+
+
+Reset Applied!
+[DEBUG] Cycle 49/91: N = 1/13
+[DEBUG] Cycle 49/91: valid_in 1
+[DEBUG] Cycle 49/91: random_multiplicand = 0xc1ae0, random_multiplier = 0x19077e
+[DEBUG] Cycle 49/91: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 49/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 50/91: N = 2/13
+[DEBUG] Cycle 50/91: valid_in 1
+[DEBUG] Cycle 50/91: random_multiplicand = 0xfe834, random_multiplier = 0xa440c
+[DEBUG] Cycle 50/91: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 50/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 51/91: N = 3/13
+[DEBUG] Cycle 51/91: valid_in 1
+[DEBUG] Cycle 51/91: random_multiplicand = 0x54b3d, random_multiplier = 0x1a7343
+[DEBUG] Cycle 51/91: Expected result = 0x12efa915a40, Expected valid_out = 0
+[DEBUG] Cycle 51/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 52/91: N = 4/13
+[DEBUG] Cycle 52/91: valid_in 1
+[DEBUG] Cycle 52/91: random_multiplicand = 0x1d4f76, random_multiplier = 0x1192f6
+[DEBUG] Cycle 52/91: Expected result = 0x1d247060cb0, Expected valid_out = 0
+[DEBUG] Cycle 52/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 53/91: N = 5/13
+[DEBUG] Cycle 53/91: valid_in 1
+[DEBUG] Cycle 53/91: random_multiplicand = 0x55bc4, random_multiplier = 0x5fc21
+[DEBUG] Cycle 53/91: Expected result = 0x25e4d6724a7, Expected valid_out = 0
+[DEBUG] Cycle 53/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 54/91: N = 6/13
+[DEBUG] Cycle 54/91: valid_in 1
+[DEBUG] Cycle 54/91: random_multiplicand = 0x191247, random_multiplier = 0x9fa
+[DEBUG] Cycle 54/91: Expected result = 0x46167b8cc0b, Expected valid_out = 0
+[DEBUG] Cycle 54/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 55/91: N = 7/13
+[DEBUG] Cycle 55/91: valid_in 1
+[DEBUG] Cycle 55/91: random_multiplicand = 0xdae8c, random_multiplier = 0x128c34
+[DEBUG] Cycle 55/91: Expected result = 0x4817992904f, Expected valid_out = 0
+[DEBUG] Cycle 55/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 56/91: N = 8/13
+[DEBUG] Cycle 56/91: valid_in 1
+[DEBUG] Cycle 56/91: random_multiplicand = 0xbe66f, random_multiplier = 0x1a22d9
+[DEBUG] Cycle 56/91: Expected result = 0x48273b2e8a5, Expected valid_out = 0
+[DEBUG] Cycle 56/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 57/91: N = 9/13
+[DEBUG] Cycle 57/91: valid_in 1
+[DEBUG] Cycle 57/91: random_multiplicand = 0x5e001, random_multiplier = 0xada4c
+[DEBUG] Cycle 57/91: Expected result = 0x58037c6ed15, Expected valid_out = 0
+[DEBUG] Cycle 57/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 58/91: N = 10/13
+[DEBUG] Cycle 58/91: valid_in 1
+[DEBUG] Cycle 58/91: random_multiplicand = 0x19a9d5, random_multiplier = 0x1fad9a
+[DEBUG] Cycle 58/91: Expected result = 0x6b73dbdff2c, Expected valid_out = 0
+[DEBUG] Cycle 58/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 59/91: N = 11/13
+[DEBUG] Cycle 59/91: valid_in 1
+[DEBUG] Cycle 59/91: random_multiplicand = 0x73b03, random_multiplier = 0x1f1a35
+[DEBUG] Cycle 59/91: Expected result = 0x6f700475978, Expected valid_out = 0
+[DEBUG] Cycle 59/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 60/91: N = 12/13
+[DEBUG] Cycle 60/91: valid_in 1
+[DEBUG] Cycle 60/91: random_multiplicand = 0x1f4c7e, random_multiplier = 0xc39
+[DEBUG] Cycle 60/91: Expected result = 0xa23f847749a, Expected valid_out = 0
+[DEBUG] Cycle 60/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 61/91: N = 13/13
+[DEBUG] Cycle 61/91: valid_in 1
+[DEBUG] Cycle 61/91: random_multiplicand = 0x1cc604, random_multiplier = 0xe2cba
+[DEBUG] Cycle 61/91: Expected result = 0xb04db21fa39, Expected valid_out = 0
+[DEBUG] Cycle 61/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 62/91: N = 14/13
+[DEBUG] Cycle 62/91: valid_in 1
+[DEBUG] Cycle 62/91: random_multiplicand = 0xf7d92, random_multiplier = 0x1eed1a
+[DEBUG] Cycle 62/91: Expected result = 0xb0659afea47, Expected valid_out = 0
+[DEBUG] Cycle 62/91: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 63/91: N = 0/13
+[DEBUG] Cycle 63/91: valid_in 1
+[DEBUG] Cycle 63/91: random_multiplicand = 0x10379, random_multiplier = 0x11db51
+[DEBUG] Cycle 63/91: Expected result = 0xc9e34d8792f, Expected valid_out = 1
+[DEBUG] Cycle 63/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 64/91: N = 1/13
+[DEBUG] Cycle 64/91: valid_in 1
+[DEBUG] Cycle 64/91: random_multiplicand = 0x1794d6, random_multiplier = 0x18ab59
+[DEBUG] Cycle 64/91: Expected result = 0x1df0feeead4, Expected valid_out = 0
+[DEBUG] Cycle 64/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 65/91: N = 2/13
+[DEBUG] Cycle 65/91: valid_in 1
+[DEBUG] Cycle 65/91: random_multiplicand = 0x4e1e3, random_multiplier = 0x7c8e7
+[DEBUG] Cycle 65/91: Expected result = 0x1f12942871d, Expected valid_out = 0
+[DEBUG] Cycle 65/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 66/91: N = 3/13
+[DEBUG] Cycle 66/91: valid_in 1
+[DEBUG] Cycle 66/91: random_multiplicand = 0x846a8, random_multiplier = 0x20e73
+[DEBUG] Cycle 66/91: Expected result = 0x436e5f03783, Expected valid_out = 0
+[DEBUG] Cycle 66/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 67/91: N = 4/13
+[DEBUG] Cycle 67/91: valid_in 1
+[DEBUG] Cycle 67/91: random_multiplicand = 0xcf862, random_multiplier = 0x1af274
+[DEBUG] Cycle 67/91: Expected result = 0x45ce8066358, Expected valid_out = 0
+[DEBUG] Cycle 67/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 68/91: N = 5/13
+[DEBUG] Cycle 68/91: valid_in 1
+[DEBUG] Cycle 68/91: random_multiplicand = 0xa0e35, random_multiplier = 0x40d03
+[DEBUG] Cycle 68/91: Expected result = 0x46deceb50d0, Expected valid_out = 0
+[DEBUG] Cycle 68/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 69/91: N = 6/13
+[DEBUG] Cycle 69/91: valid_in 1
+[DEBUG] Cycle 69/91: random_multiplicand = 0x1bd136, random_multiplier = 0x143e2f
+[DEBUG] Cycle 69/91: Expected result = 0x5cb6f8c8138, Expected valid_out = 0
+[DEBUG] Cycle 69/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 70/91: N = 7/13
+[DEBUG] Cycle 70/91: valid_in 1
+[DEBUG] Cycle 70/91: random_multiplicand = 0xd4fb2, random_multiplier = 0xacb9d
+[DEBUG] Cycle 70/91: Expected result = 0x5f42b375cd7, Expected valid_out = 0
+[DEBUG] Cycle 70/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 71/91: N = 8/13
+[DEBUG] Cycle 71/91: valid_in 1
+[DEBUG] Cycle 71/91: random_multiplicand = 0x16b3fc, random_multiplier = 0x8360c
+[DEBUG] Cycle 71/91: Expected result = 0x8274535d9c1, Expected valid_out = 0
+[DEBUG] Cycle 71/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 72/91: N = 9/13
+[DEBUG] Cycle 72/91: valid_in 1
+[DEBUG] Cycle 72/91: random_multiplicand = 0x1c1423, random_multiplier = 0x1add4c
+[DEBUG] Cycle 72/91: Expected result = 0x8b6f885dfeb, Expected valid_out = 0
+[DEBUG] Cycle 72/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 73/91: N = 10/13
+[DEBUG] Cycle 73/91: valid_in 1
+[DEBUG] Cycle 73/91: random_multiplicand = 0x49a2b, random_multiplier = 0xa0a0e
+[DEBUG] Cycle 73/91: Expected result = 0x971636d77bb, Expected valid_out = 0
+[DEBUG] Cycle 73/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 74/91: N = 11/13
+[DEBUG] Cycle 74/91: valid_in 1
+[DEBUG] Cycle 74/91: random_multiplicand = 0x112753, random_multiplier = 0x7b73a
+[DEBUG] Cycle 74/91: Expected result = 0xc63b4b3a91f, Expected valid_out = 0
+[DEBUG] Cycle 74/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 75/91: N = 12/13
+[DEBUG] Cycle 75/91: valid_in 1
+[DEBUG] Cycle 75/91: random_multiplicand = 0x18ca86, random_multiplier = 0xb65ca
+[DEBUG] Cycle 75/91: Expected result = 0xc91e8a7c579, Expected valid_out = 0
+[DEBUG] Cycle 75/91: Actual result   = 0xc9e34d8792f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 76/91: N = 0/13
+[DEBUG] Cycle 76/91: valid_in 1
+[DEBUG] Cycle 76/91: random_multiplicand = 0x67236, random_multiplier = 0x116c4f
+[DEBUG] Cycle 76/91: Expected result = 0xd1642ec0347, Expected valid_out = 1
+[DEBUG] Cycle 76/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 77/91: N = 1/13
+[DEBUG] Cycle 77/91: valid_in 1
+[DEBUG] Cycle 77/91: random_multiplicand = 0x17bfc, random_multiplier = 0xca879
+[DEBUG] Cycle 77/91: Expected result = 0x11a8f38abbc, Expected valid_out = 0
+[DEBUG] Cycle 77/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 78/91: N = 2/13
+[DEBUG] Cycle 78/91: valid_in 1
+[DEBUG] Cycle 78/91: random_multiplicand = 0x1f4eb7, random_multiplier = 0x1adae6
+[DEBUG] Cycle 78/91: Expected result = 0x18adefab266, Expected valid_out = 0
+[DEBUG] Cycle 78/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 79/91: N = 3/13
+[DEBUG] Cycle 79/91: valid_in 1
+[DEBUG] Cycle 79/91: random_multiplicand = 0x323c9, random_multiplier = 0x1b604f
+[DEBUG] Cycle 79/91: Expected result = 0x19da8dbac82, Expected valid_out = 0
+[DEBUG] Cycle 79/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 80/91: N = 4/13
+[DEBUG] Cycle 80/91: valid_in 1
+[DEBUG] Cycle 80/91: random_multiplicand = 0xbdcad, random_multiplier = 0xc7bb4
+[DEBUG] Cycle 80/91: Expected result = 0x4e66c9a3aec, Expected valid_out = 0
+[DEBUG] Cycle 80/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 81/91: N = 5/13
+[DEBUG] Cycle 81/91: valid_in 1
+[DEBUG] Cycle 81/91: random_multiplicand = 0x747bd, random_multiplier = 0x186429
+[DEBUG] Cycle 81/91: Expected result = 0x53c6130a5f3, Expected valid_out = 0
+[DEBUG] Cycle 81/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 82/91: N = 6/13
+[DEBUG] Cycle 82/91: valid_in 1
+[DEBUG] Cycle 82/91: random_multiplicand = 0x149c95, random_multiplier = 0x1903f5
+[DEBUG] Cycle 82/91: Expected result = 0x5d074aaee97, Expected valid_out = 0
+[DEBUG] Cycle 82/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 83/91: N = 7/13
+[DEBUG] Cycle 83/91: valid_in 1
+[DEBUG] Cycle 83/91: random_multiplicand = 0x19fa07, random_multiplier = 0x193ccf
+[DEBUG] Cycle 83/91: Expected result = 0x68207933fdc, Expected valid_out = 0
+[DEBUG] Cycle 83/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 84/91: N = 8/13
+[DEBUG] Cycle 84/91: valid_in 1
+[DEBUG] Cycle 84/91: random_multiplicand = 0x1a0ac3, random_multiplier = 0x1b9603
+[DEBUG] Cycle 84/91: Expected result = 0x885a3afd975, Expected valid_out = 0
+[DEBUG] Cycle 84/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 85/91: N = 9/13
+[DEBUG] Cycle 85/91: valid_in 1
+[DEBUG] Cycle 85/91: random_multiplicand = 0x1f6b5f, random_multiplier = 0x156a6c
+[DEBUG] Cycle 85/91: Expected result = 0xb1539f9a91e, Expected valid_out = 0
+[DEBUG] Cycle 85/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 86/91: N = 10/13
+[DEBUG] Cycle 86/91: valid_in 1
+[DEBUG] Cycle 86/91: random_multiplicand = 0xd8c9d, random_multiplier = 0xc2f4
+[DEBUG] Cycle 86/91: Expected result = 0xde39f270b67, Expected valid_out = 0
+[DEBUG] Cycle 86/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 87/91: N = 11/13
+[DEBUG] Cycle 87/91: valid_in 1
+[DEBUG] Cycle 87/91: random_multiplicand = 0x171807, random_multiplier = 0x108be0
+[DEBUG] Cycle 87/91: Expected result = 0x10847da8ad7b, Expected valid_out = 0
+[DEBUG] Cycle 87/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 88/91: N = 12/13
+[DEBUG] Cycle 88/91: valid_in 1
+[DEBUG] Cycle 88/91: random_multiplicand = 0x14b087, random_multiplier = 0x1518d1
+[DEBUG] Cycle 88/91: Expected result = 0x108ecf21ad1f, Expected valid_out = 0
+[DEBUG] Cycle 88/91: Actual result   = 0xd1642ec0347, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 89/91: N = 0/13
+[DEBUG] Cycle 89/91: valid_in 1
+[DEBUG] Cycle 89/91: random_multiplicand = 0x8acae, random_multiplier = 0xd48bc
+[DEBUG] Cycle 89/91: Expected result = 0x120cedd2803f, Expected valid_out = 1
+[DEBUG] Cycle 89/91: Actual result   = 0x120cedd2803f, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 90/91: N = 1/13
+[DEBUG] Cycle 90/91: valid_in 1
+[DEBUG] Cycle 90/91: random_multiplicand = 0x13fc3a, random_multiplier = 0xc97b8
+[DEBUG] Cycle 90/91: Expected result = 0x1b47c83c637, Expected valid_out = 0
+[DEBUG] Cycle 90/91: Actual result   = 0x120cedd2803f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 91/91: N = 2/13
+[DEBUG] Cycle 91/91: valid_in 1
+[DEBUG] Cycle 91/91: random_multiplicand = 0x966ca, random_multiplier = 0x188acd
+[DEBUG] Cycle 91/91: Expected result = 0x227b84985ff, Expected valid_out = 0
+[DEBUG] Cycle 91/91: Actual result   = 0x120cedd2803f, Actual valid_out   = 0
+
+
+   990.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+   990.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS         990.00           0.01     111099.96  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                       990.00           0.01      84445.64  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=13
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 13}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[1-6-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256059
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 45, N = 6
+[DEBUG] Cycle 1/23: N = 1/6
+[DEBUG] Cycle 1/23: valid_in 1
+[DEBUG] Cycle 1/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 1/23: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/23: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/23: N = 2/6
+[DEBUG] Cycle 2/23: valid_in 1
+[DEBUG] Cycle 2/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 2/23: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/23: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/23: N = 3/6
+[DEBUG] Cycle 3/23: valid_in 1
+[DEBUG] Cycle 3/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 3/23: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 3/23: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/23: N = 4/6
+[DEBUG] Cycle 4/23: valid_in 1
+[DEBUG] Cycle 4/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 4/23: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 4/23: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/23: N = 5/6
+[DEBUG] Cycle 5/23: valid_in 1
+[DEBUG] Cycle 5/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 5/23: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 5/23: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/23: N = 6/6
+[DEBUG] Cycle 6/23: valid_in 1
+[DEBUG] Cycle 6/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 6/23: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 6/23: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/23: N = 7/6
+[DEBUG] Cycle 7/23: valid_in 1
+[DEBUG] Cycle 7/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 7/23: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 7/23: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/23: N = 0/6
+[DEBUG] Cycle 8/23: valid_in 1
+[DEBUG] Cycle 8/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 8/23: Expected result = 0x17fffe800006, Expected valid_out = 1
+[DEBUG] Cycle 8/23: Actual result   = 0x17fffe800006, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 9/23: N = 1/6
+[DEBUG] Cycle 9/23: valid_in 1
+[DEBUG] Cycle 9/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 9/23: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 9/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/23: N = 2/6
+[DEBUG] Cycle 10/23: valid_in 1
+[DEBUG] Cycle 10/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 10/23: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 10/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/23: N = 3/6
+[DEBUG] Cycle 11/23: valid_in 1
+[DEBUG] Cycle 11/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 11/23: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 11/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/23: N = 4/6
+[DEBUG] Cycle 12/23: valid_in 1
+[DEBUG] Cycle 12/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 12/23: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 12/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/23: N = 5/6
+[DEBUG] Cycle 13/23: valid_in 1
+[DEBUG] Cycle 13/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 13/23: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 13/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/23: N = 0/6
+[DEBUG] Cycle 14/23: valid_in 1
+[DEBUG] Cycle 14/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 14/23: Expected result = 0x17fffe800006, Expected valid_out = 1
+[DEBUG] Cycle 14/23: Actual result   = 0x17fffe800006, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 15/23: N = 1/6
+[DEBUG] Cycle 15/23: valid_in 1
+[DEBUG] Cycle 15/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 15/23: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 15/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 16/23: N = 2/6
+[DEBUG] Cycle 16/23: valid_in 1
+[DEBUG] Cycle 16/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 16/23: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 16/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/23: N = 3/6
+[DEBUG] Cycle 17/23: valid_in 1
+[DEBUG] Cycle 17/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 17/23: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 17/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/23: N = 4/6
+[DEBUG] Cycle 18/23: valid_in 1
+[DEBUG] Cycle 18/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 18/23: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 18/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 19/23: N = 5/6
+[DEBUG] Cycle 19/23: valid_in 1
+[DEBUG] Cycle 19/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 19/23: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 19/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 20/23: N = 0/6
+[DEBUG] Cycle 20/23: valid_in 1
+[DEBUG] Cycle 20/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 20/23: Expected result = 0x17fffe800006, Expected valid_out = 1
+[DEBUG] Cycle 20/23: Actual result   = 0x17fffe800006, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 21/23: N = 1/6
+[DEBUG] Cycle 21/23: valid_in 1
+[DEBUG] Cycle 21/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 21/23: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 21/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/23: N = 2/6
+[DEBUG] Cycle 22/23: valid_in 1
+[DEBUG] Cycle 22/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 22/23: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 22/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/23: N = 3/6
+[DEBUG] Cycle 23/23: valid_in 1
+[DEBUG] Cycle 23/23: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 23/23: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 23/23: Actual result   = 0x17fffe800006, Actual valid_out   = 0
+
+
+   270.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+   270.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS         270.00           0.00      94711.22  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                       270.00           0.01      49073.19  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=6
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 6}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[1-16-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256059
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 46, N = 16
+[DEBUG] Cycle 1/55: N = 1/16
+[DEBUG] Cycle 1/55: valid_in 1
+[DEBUG] Cycle 1/55: random_multiplicand = 0xc5e4, random_multiplier = 0x30b6b
+[DEBUG] Cycle 1/55: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/55: N = 2/16
+[DEBUG] Cycle 2/55: valid_in 1
+[DEBUG] Cycle 2/55: random_multiplicand = 0xf8102, random_multiplier = 0x1cf64
+[DEBUG] Cycle 2/55: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/55: N = 3/16
+[DEBUG] Cycle 3/55: valid_in 1
+[DEBUG] Cycle 3/55: random_multiplicand = 0x1cbf9a, random_multiplier = 0x1be325
+[DEBUG] Cycle 3/55: Expected result = 0x25a7f824c, Expected valid_out = 0
+[DEBUG] Cycle 3/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/55: N = 4/16
+[DEBUG] Cycle 4/55: valid_in 1
+[DEBUG] Cycle 4/55: random_multiplicand = 0x9e7de, random_multiplier = 0x5872f
+[DEBUG] Cycle 4/55: Expected result = 0x1e6ae08514, Expected valid_out = 0
+[DEBUG] Cycle 4/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/55: N = 5/16
+[DEBUG] Cycle 5/55: valid_in 1
+[DEBUG] Cycle 5/55: random_multiplicand = 0x29968, random_multiplier = 0x16a00b
+[DEBUG] Cycle 5/55: Expected result = 0x340222bc456, Expected valid_out = 0
+[DEBUG] Cycle 5/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/55: N = 6/16
+[DEBUG] Cycle 6/55: valid_in 1
+[DEBUG] Cycle 6/55: random_multiplicand = 0x144e83, random_multiplier = 0x145fe9
+[DEBUG] Cycle 6/55: Expected result = 0x376e4996818, Expected valid_out = 0
+[DEBUG] Cycle 6/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/55: N = 7/16
+[DEBUG] Cycle 7/55: valid_in 1
+[DEBUG] Cycle 7/55: random_multiplicand = 0x151ee1, random_multiplier = 0x18fb49
+[DEBUG] Cycle 7/55: Expected result = 0x3b1b386ff90, Expected valid_out = 0
+[DEBUG] Cycle 7/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/55: N = 8/16
+[DEBUG] Cycle 8/55: valid_in 1
+[DEBUG] Cycle 8/55: random_multiplicand = 0x8b641, random_multiplier = 0x1b4358
+[DEBUG] Cycle 8/55: Expected result = 0x54f716111cb, Expected valid_out = 0
+[DEBUG] Cycle 8/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 9/55: N = 9/16
+[DEBUG] Cycle 9/55: valid_in 1
+[DEBUG] Cycle 9/55: random_multiplicand = 0x73cfe, random_multiplier = 0xbef22
+[DEBUG] Cycle 9/55: Expected result = 0x75f11c57af4, Expected valid_out = 0
+[DEBUG] Cycle 9/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/55: N = 10/16
+[DEBUG] Cycle 10/55: valid_in 1
+[DEBUG] Cycle 10/55: random_multiplicand = 0x141c46, random_multiplier = 0x24ac1
+[DEBUG] Cycle 10/55: Expected result = 0x84c9552244c, Expected valid_out = 0
+[DEBUG] Cycle 10/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/55: N = 11/16
+[DEBUG] Cycle 11/55: valid_in 1
+[DEBUG] Cycle 11/55: random_multiplicand = 0xc3188, random_multiplier = 0xad907
+[DEBUG] Cycle 11/55: Expected result = 0x8a2f7236008, Expected valid_out = 0
+[DEBUG] Cycle 11/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/55: N = 12/16
+[DEBUG] Cycle 12/55: valid_in 1
+[DEBUG] Cycle 12/55: random_multiplicand = 0x754fe, random_multiplier = 0x1fd9b6
+[DEBUG] Cycle 12/55: Expected result = 0x8d10f04ecce, Expected valid_out = 0
+[DEBUG] Cycle 12/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/55: N = 13/16
+[DEBUG] Cycle 13/55: valid_in 1
+[DEBUG] Cycle 13/55: random_multiplicand = 0xb0378, random_multiplier = 0xf2ebd
+[DEBUG] Cycle 13/55: Expected result = 0x95554a68f86, Expected valid_out = 0
+[DEBUG] Cycle 13/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/55: N = 14/16
+[DEBUG] Cycle 14/55: valid_in 1
+[DEBUG] Cycle 14/55: random_multiplicand = 0xf330c, random_multiplier = 0x83feb
+[DEBUG] Cycle 14/55: Expected result = 0xa3edbaa4a1a, Expected valid_out = 0
+[DEBUG] Cycle 14/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 15/55: N = 15/16
+[DEBUG] Cycle 15/55: valid_in 1
+[DEBUG] Cycle 15/55: random_multiplicand = 0x4f85b, random_multiplier = 0x41267
+[DEBUG] Cycle 15/55: Expected result = 0xae6127369b2, Expected valid_out = 0
+[DEBUG] Cycle 15/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 16/55: N = 16/16
+[DEBUG] Cycle 16/55: valid_in 1
+[DEBUG] Cycle 16/55: random_multiplicand = 0x1794b7, random_multiplier = 0x2230f
+[DEBUG] Cycle 16/55: Expected result = 0xb63765739b6, Expected valid_out = 0
+[DEBUG] Cycle 16/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/55: N = 17/16
+[DEBUG] Cycle 17/55: valid_in 1
+[DEBUG] Cycle 17/55: random_multiplicand = 0x1d0633, random_multiplier = 0x7e821
+[DEBUG] Cycle 17/55: Expected result = 0xb77b3398c53, Expected valid_out = 0
+[DEBUG] Cycle 17/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/55: N = 0/16
+[DEBUG] Cycle 18/55: valid_in 1
+[DEBUG] Cycle 18/55: random_multiplicand = 0x1203c, random_multiplier = 0xcbfce
+[DEBUG] Cycle 18/55: Expected result = 0xbaa175e480c, Expected valid_out = 1
+[DEBUG] Cycle 18/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 19/55: N = 1/16
+[DEBUG] Cycle 19/55: valid_in 1
+[DEBUG] Cycle 19/55: random_multiplicand = 0xc6114, random_multiplier = 0x1d716b
+[DEBUG] Cycle 19/55: Expected result = 0xe57cc10493, Expected valid_out = 0
+[DEBUG] Cycle 19/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 20/55: N = 2/16
+[DEBUG] Cycle 20/55: valid_in 1
+[DEBUG] Cycle 20/55: random_multiplicand = 0xd97c5, random_multiplier = 0xf8987
+[DEBUG] Cycle 20/55: Expected result = 0xf3d785b8db, Expected valid_out = 0
+[DEBUG] Cycle 20/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 21/55: N = 3/16
+[DEBUG] Cycle 21/55: valid_in 1
+[DEBUG] Cycle 21/55: random_multiplicand = 0x1c9848, random_multiplier = 0x49b0d
+[DEBUG] Cycle 21/55: Expected result = 0x26052d02037, Expected valid_out = 0
+[DEBUG] Cycle 21/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/55: N = 4/16
+[DEBUG] Cycle 22/55: valid_in 1
+[DEBUG] Cycle 22/55: random_multiplicand = 0x6c54e, random_multiplier = 0xb3fc9
+[DEBUG] Cycle 22/55: Expected result = 0x33384be961a, Expected valid_out = 0
+[DEBUG] Cycle 22/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/55: N = 5/16
+[DEBUG] Cycle 23/55: valid_in 1
+[DEBUG] Cycle 23/55: random_multiplicand = 0x13f4d3, random_multiplier = 0x14d773
+[DEBUG] Cycle 23/55: Expected result = 0x3b73785e9c2, Expected valid_out = 0
+[DEBUG] Cycle 23/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 24/55: N = 6/16
+[DEBUG] Cycle 24/55: valid_in 1
+[DEBUG] Cycle 24/55: random_multiplicand = 0x1d46d, random_multiplier = 0x1751b0
+[DEBUG] Cycle 24/55: Expected result = 0x40361bf0600, Expected valid_out = 0
+[DEBUG] Cycle 24/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 25/55: N = 7/16
+[DEBUG] Cycle 25/55: valid_in 1
+[DEBUG] Cycle 25/55: random_multiplicand = 0xcec9c, random_multiplier = 0x103719
+[DEBUG] Cycle 25/55: Expected result = 0x5a34dcf35c9, Expected valid_out = 0
+[DEBUG] Cycle 25/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 26/55: N = 8/16
+[DEBUG] Cycle 26/55: valid_in 1
+[DEBUG] Cycle 26/55: random_multiplicand = 0x1d6a4b, random_multiplier = 0x17345a
+[DEBUG] Cycle 26/55: Expected result = 0x5cdf912bdb9, Expected valid_out = 0
+[DEBUG] Cycle 26/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 27/55: N = 9/16
+[DEBUG] Cycle 27/55: valid_in 1
+[DEBUG] Cycle 27/55: random_multiplicand = 0x1640aa, random_multiplier = 0x4c725
+[DEBUG] Cycle 27/55: Expected result = 0x69f8aeb5cf5, Expected valid_out = 0
+[DEBUG] Cycle 27/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 28/55: N = 10/16
+[DEBUG] Cycle 28/55: valid_in 1
+[DEBUG] Cycle 28/55: random_multiplicand = 0x1b0aaf, random_multiplier = 0x5e60f
+[DEBUG] Cycle 28/55: Expected result = 0x94a1b96f753, Expected valid_out = 0
+[DEBUG] Cycle 28/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 29/55: N = 11/16
+[DEBUG] Cycle 29/55: valid_in 1
+[DEBUG] Cycle 29/55: random_multiplicand = 0x77544, random_multiplier = 0x41d28
+[DEBUG] Cycle 29/55: Expected result = 0x9b46dba75e5, Expected valid_out = 0
+[DEBUG] Cycle 29/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 30/55: N = 12/16
+[DEBUG] Cycle 30/55: valid_in 1
+[DEBUG] Cycle 30/55: random_multiplicand = 0xd1fcf, random_multiplier = 0x51c4e
+[DEBUG] Cycle 30/55: Expected result = 0xa53f0545026, Expected valid_out = 0
+[DEBUG] Cycle 30/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 31/55: N = 13/16
+[DEBUG] Cycle 31/55: valid_in 1
+[DEBUG] Cycle 31/55: random_multiplicand = 0x165cc2, random_multiplier = 0xc6aa8
+[DEBUG] Cycle 31/55: Expected result = 0xa729ed756c6, Expected valid_out = 0
+[DEBUG] Cycle 31/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 32/55: N = 14/16
+[DEBUG] Cycle 32/55: valid_in 1
+[DEBUG] Cycle 32/55: random_multiplicand = 0x117371, random_multiplier = 0x91fd3
+[DEBUG] Cycle 32/55: Expected result = 0xab5b15cabd8, Expected valid_out = 0
+[DEBUG] Cycle 32/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 33/55: N = 15/16
+[DEBUG] Cycle 33/55: valid_in 1
+[DEBUG] Cycle 33/55: random_multiplicand = 0x15f372, random_multiplier = 0xad03b
+[DEBUG] Cycle 33/55: Expected result = 0xbcb5b89df28, Expected valid_out = 0
+[DEBUG] Cycle 33/55: Actual result   = 0xbaa175e480c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 34/55: N = 0/16
+[DEBUG] Cycle 34/55: valid_in 1
+[DEBUG] Cycle 34/55: random_multiplicand = 0xc813e, random_multiplier = 0x309a9
+[DEBUG] Cycle 34/55: Expected result = 0xc6a95dfb44b, Expected valid_out = 1
+[DEBUG] Cycle 34/55: Actual result   = 0xc6a95dfb44b, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 35/55: N = 1/16
+[DEBUG] Cycle 35/55: valid_in 1
+[DEBUG] Cycle 35/55: random_multiplicand = 0x12c206, random_multiplier = 0x1f675b
+[DEBUG] Cycle 35/55: Expected result = 0xed5d4fbb46, Expected valid_out = 0
+[DEBUG] Cycle 35/55: Actual result   = 0xc6a95dfb44b, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 36/55: N = 2/16
+[DEBUG] Cycle 36/55: valid_in 1
+[DEBUG] Cycle 36/55: random_multiplicand = 0x1e9e6, random_multiplier = 0xc3827
+[DEBUG] Cycle 36/55: Expected result = 0x11359d63b34, Expected valid_out = 0
+[DEBUG] Cycle 36/55: Actual result   = 0xc6a95dfb44b, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 37/55: N = 3/16
+[DEBUG] Cycle 37/55: valid_in 1
+[DEBUG] Cycle 37/55: random_multiplicand = 0x1dfed9, random_multiplier = 0x4efc2
+[DEBUG] Cycle 37/55: Expected result = 0x3606b4b9d56, Expected valid_out = 0
+[DEBUG] Cycle 37/55: Actual result   = 0xc6a95dfb44b, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 38/55: N = 4/16
+[DEBUG] Cycle 38/55: valid_in 1
+[DEBUG] Cycle 38/55: random_multiplicand = 0x1abded, random_multiplier = 0x1e2367
+[DEBUG] Cycle 38/55: Expected result = 0x377cd888f60, Expected valid_out = 0
+[DEBUG] Cycle 38/55: Actual result   = 0xc6a95dfb44b, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 39/55: N = 5/16
+[DEBUG] Cycle 39/55: valid_in 1
+[DEBUG] Cycle 39/55: random_multiplicand = 0xa4f8e, random_multiplier = 0x1c1f0a
+[DEBUG] Cycle 39/55: Expected result = 0x40be09446d2, Expected valid_out = 0
+[DEBUG] Cycle 39/55: Actual result   = 0xc6a95dfb44b, Actual valid_out   = 0
+
+
+Reset Applied!
+[DEBUG] Cycle 40/55: N = 1/16
+[DEBUG] Cycle 40/55: valid_in 1
+[DEBUG] Cycle 40/55: random_multiplicand = 0xee5ba, random_multiplier = 0x1567ea
+[DEBUG] Cycle 40/55: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 40/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 41/55: N = 2/16
+[DEBUG] Cycle 41/55: valid_in 1
+[DEBUG] Cycle 41/55: random_multiplicand = 0xc7235, random_multiplier = 0x138a94
+[DEBUG] Cycle 41/55: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 41/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 42/55: N = 3/16
+[DEBUG] Cycle 42/55: valid_in 1
+[DEBUG] Cycle 42/55: random_multiplicand = 0x1e9389, random_multiplier = 0x1db9f0
+[DEBUG] Cycle 42/55: Expected result = 0x13ee44dd204, Expected valid_out = 0
+[DEBUG] Cycle 42/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 43/55: N = 4/16
+[DEBUG] Cycle 43/55: valid_in 1
+[DEBUG] Cycle 43/55: random_multiplicand = 0x73e67, random_multiplier = 0x1c2717
+[DEBUG] Cycle 43/55: Expected result = 0x2321aff6aa8, Expected valid_out = 0
+[DEBUG] Cycle 43/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 44/55: N = 5/16
+[DEBUG] Cycle 44/55: valid_in 1
+[DEBUG] Cycle 44/55: random_multiplicand = 0x1b26d2, random_multiplier = 0x15c104
+[DEBUG] Cycle 44/55: Expected result = 0x5bf06ccbc18, Expected valid_out = 0
+[DEBUG] Cycle 44/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 45/55: N = 6/16
+[DEBUG] Cycle 45/55: valid_in 1
+[DEBUG] Cycle 45/55: random_multiplicand = 0x1225e3, random_multiplier = 0x87dce
+[DEBUG] Cycle 45/55: Expected result = 0x68af5390859, Expected valid_out = 0
+[DEBUG] Cycle 45/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 46/55: N = 7/16
+[DEBUG] Cycle 46/55: valid_in 1
+[DEBUG] Cycle 46/55: random_multiplicand = 0xdc3d, random_multiplier = 0x901c8
+[DEBUG] Cycle 46/55: Expected result = 0x8d99d23f5a1, Expected valid_out = 0
+[DEBUG] Cycle 46/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 47/55: N = 8/16
+[DEBUG] Cycle 47/55: valid_in 1
+[DEBUG] Cycle 47/55: random_multiplicand = 0xfac25, random_multiplier = 0x1c5ebd
+[DEBUG] Cycle 47/55: Expected result = 0x973b756494b, Expected valid_out = 0
+[DEBUG] Cycle 47/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 48/55: N = 9/16
+[DEBUG] Cycle 48/55: valid_in 1
+[DEBUG] Cycle 48/55: random_multiplicand = 0x181d4f, random_multiplier = 0x1dc117
+[DEBUG] Cycle 48/55: Expected result = 0x97b770395f3, Expected valid_out = 0
+[DEBUG] Cycle 48/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 49/55: N = 10/16
+[DEBUG] Cycle 49/55: valid_in 1
+[DEBUG] Cycle 49/55: random_multiplicand = 0x11c668, random_multiplier = 0xaa167
+[DEBUG] Cycle 49/55: Expected result = 0xb3817d74344, Expected valid_out = 0
+[DEBUG] Cycle 49/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 50/55: N = 11/16
+[DEBUG] Cycle 50/55: valid_in 1
+[DEBUG] Cycle 50/55: random_multiplicand = 0x1b9d44, random_multiplier = 0x1e5d3c
+[DEBUG] Cycle 50/55: Expected result = 0xe059a0d745d, Expected valid_out = 0
+[DEBUG] Cycle 50/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 51/55: N = 12/16
+[DEBUG] Cycle 51/55: valid_in 1
+[DEBUG] Cycle 51/55: random_multiplicand = 0x1a18b, random_multiplier = 0xb043d
+[DEBUG] Cycle 51/55: Expected result = 0xec28f0bb035, Expected valid_out = 0
+[DEBUG] Cycle 51/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 52/55: N = 13/16
+[DEBUG] Cycle 52/55: valid_in 1
+[DEBUG] Cycle 52/55: random_multiplicand = 0x1138ad, random_multiplier = 0xc4154
+[DEBUG] Cycle 52/55: Expected result = 0x12090b9e4025, Expected valid_out = 0
+[DEBUG] Cycle 52/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 53/55: N = 14/16
+[DEBUG] Cycle 53/55: valid_in 1
+[DEBUG] Cycle 53/55: random_multiplicand = 0x16adc0, random_multiplier = 0x1787aa
+[DEBUG] Cycle 53/55: Expected result = 0x121b0380ea44, Expected valid_out = 0
+[DEBUG] Cycle 53/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 54/55: N = 15/16
+[DEBUG] Cycle 54/55: valid_in 1
+[DEBUG] Cycle 54/55: random_multiplicand = 0x80d94, random_multiplier = 0x15143b
+[DEBUG] Cycle 54/55: Expected result = 0x12ee10a77008, Expected valid_out = 0
+[DEBUG] Cycle 54/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 55/55: N = 16/16
+[DEBUG] Cycle 55/55: valid_in 1
+[DEBUG] Cycle 55/55: random_multiplicand = 0x4b9c, random_multiplier = 0x79a9f
+[DEBUG] Cycle 55/55: Expected result = 0x1503b1971188, Expected valid_out = 0
+[DEBUG] Cycle 55/55: Actual result   = 0x0, Actual valid_out   = 0
+
+
+   630.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+   630.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS         630.00           0.00     127142.93  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                       630.00           0.01      80993.46  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=16
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 16}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[2-13-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256059
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 46, N = 13
+[DEBUG] Cycle 1/49: N = 1/13
+[DEBUG] Cycle 1/49: valid_in 1
+[DEBUG] Cycle 1/49: random_multiplicand = 0xc5e4, random_multiplier = 0x1b9d44
+[DEBUG] Cycle 1/49: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/49: N = 2/13
+[DEBUG] Cycle 2/49: valid_in 1
+[DEBUG] Cycle 2/49: random_multiplicand = 0xf8102, random_multiplier = 0x1a18b
+[DEBUG] Cycle 2/49: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/49: N = 3/13
+[DEBUG] Cycle 3/49: valid_in 1
+[DEBUG] Cycle 3/49: random_multiplicand = 0x1cbf9a, random_multiplier = 0x1138ad
+[DEBUG] Cycle 3/49: Expected result = 0x15589d6490, Expected valid_out = 0
+[DEBUG] Cycle 3/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/49: N = 4/13
+[DEBUG] Cycle 4/49: valid_in 1
+[DEBUG] Cycle 4/49: random_multiplicand = 0x9e7de, random_multiplier = 0x16adc0
+[DEBUG] Cycle 4/49: Expected result = 0x2ea22cb2a6, Expected valid_out = 0
+[DEBUG] Cycle 4/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/49: N = 5/13
+[DEBUG] Cycle 5/49: valid_in 1
+[DEBUG] Cycle 5/49: random_multiplicand = 0x29968, random_multiplier = 0x80d94
+[DEBUG] Cycle 5/49: Expected result = 0x21db8bdddb8, Expected valid_out = 0
+[DEBUG] Cycle 5/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/49: N = 6/13
+[DEBUG] Cycle 6/49: valid_in 1
+[DEBUG] Cycle 6/49: random_multiplicand = 0x144e83, random_multiplier = 0x4b9c
+[DEBUG] Cycle 6/49: Expected result = 0x2fe5ef0ca38, Expected valid_out = 0
+[DEBUG] Cycle 6/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/49: N = 7/13
+[DEBUG] Cycle 7/49: valid_in 1
+[DEBUG] Cycle 7/49: random_multiplicand = 0x151ee1, random_multiplier = 0x30b6b
+[DEBUG] Cycle 7/49: Expected result = 0x3134d7bc258, Expected valid_out = 0
+[DEBUG] Cycle 7/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/49: N = 8/13
+[DEBUG] Cycle 8/49: valid_in 1
+[DEBUG] Cycle 8/49: random_multiplicand = 0x8b641, random_multiplier = 0x1cf64
+[DEBUG] Cycle 8/49: Expected result = 0x3194cdbfb2c, Expected valid_out = 0
+[DEBUG] Cycle 8/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 9/49: N = 9/13
+[DEBUG] Cycle 9/49: valid_in 1
+[DEBUG] Cycle 9/49: random_multiplicand = 0x73cfe, random_multiplier = 0x1be325
+[DEBUG] Cycle 9/49: Expected result = 0x3599aa68e37, Expected valid_out = 0
+[DEBUG] Cycle 9/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/49: N = 10/13
+[DEBUG] Cycle 10/49: valid_in 1
+[DEBUG] Cycle 10/49: random_multiplicand = 0x141c46, random_multiplier = 0x5872f
+[DEBUG] Cycle 10/49: Expected result = 0x3695fad4e9b, Expected valid_out = 0
+[DEBUG] Cycle 10/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/49: N = 11/13
+[DEBUG] Cycle 11/49: valid_in 1
+[DEBUG] Cycle 11/49: random_multiplicand = 0xc3188, random_multiplier = 0x16a00b
+[DEBUG] Cycle 11/49: Expected result = 0x4333a985951, Expected valid_out = 0
+[DEBUG] Cycle 11/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/49: N = 12/13
+[DEBUG] Cycle 12/49: valid_in 1
+[DEBUG] Cycle 12/49: random_multiplicand = 0x754fe, random_multiplier = 0x145fe9
+[DEBUG] Cycle 12/49: Expected result = 0x4a26690742b, Expected valid_out = 0
+[DEBUG] Cycle 12/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/49: N = 13/13
+[DEBUG] Cycle 13/49: valid_in 1
+[DEBUG] Cycle 13/49: random_multiplicand = 0xb0378, random_multiplier = 0x18fb49
+[DEBUG] Cycle 13/49: Expected result = 0x5b647bb9503, Expected valid_out = 0
+[DEBUG] Cycle 13/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/49: N = 14/13
+[DEBUG] Cycle 14/49: valid_in 1
+[DEBUG] Cycle 14/49: random_multiplicand = 0xf330c, random_multiplier = 0x1b4358
+[DEBUG] Cycle 14/49: Expected result = 0x64baaca3231, Expected valid_out = 0
+[DEBUG] Cycle 14/49: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 15/49: N = 0/13
+[DEBUG] Cycle 15/49: valid_in 1
+[DEBUG] Cycle 15/49: random_multiplicand = 0x4f85b, random_multiplier = 0xbef22
+[DEBUG] Cycle 15/49: Expected result = 0x75ecd94d769, Expected valid_out = 1
+[DEBUG] Cycle 15/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 16/49: N = 1/13
+[DEBUG] Cycle 16/49: valid_in 1
+[DEBUG] Cycle 16/49: random_multiplicand = 0x1794b7, random_multiplier = 0x24ac1
+[DEBUG] Cycle 16/49: Expected result = 0x19e61d9b020, Expected valid_out = 0
+[DEBUG] Cycle 16/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/49: N = 2/13
+[DEBUG] Cycle 17/49: valid_in 1
+[DEBUG] Cycle 17/49: random_multiplicand = 0x1d0633, random_multiplier = 0xad907
+[DEBUG] Cycle 17/49: Expected result = 0x1d9b248a136, Expected valid_out = 0
+[DEBUG] Cycle 17/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/49: N = 3/13
+[DEBUG] Cycle 18/49: valid_in 1
+[DEBUG] Cycle 18/49: random_multiplicand = 0x1203c, random_multiplier = 0x1fd9b6
+[DEBUG] Cycle 18/49: Expected result = 0x20fbe7aa52d, Expected valid_out = 0
+[DEBUG] Cycle 18/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 19/49: N = 4/13
+[DEBUG] Cycle 19/49: valid_in 1
+[DEBUG] Cycle 19/49: random_multiplicand = 0xc6114, random_multiplier = 0xf2ebd
+[DEBUG] Cycle 19/49: Expected result = 0x34a97850b92, Expected valid_out = 0
+[DEBUG] Cycle 19/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 20/49: N = 5/13
+[DEBUG] Cycle 20/49: valid_in 1
+[DEBUG] Cycle 20/49: random_multiplicand = 0xd97c5, random_multiplier = 0x83feb
+[DEBUG] Cycle 20/49: Expected result = 0x36e73e8d23a, Expected valid_out = 0
+[DEBUG] Cycle 20/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 21/49: N = 6/13
+[DEBUG] Cycle 21/49: valid_in 1
+[DEBUG] Cycle 21/49: random_multiplicand = 0x1c9848, random_multiplier = 0x41267
+[DEBUG] Cycle 21/49: Expected result = 0x42a66aa15fe, Expected valid_out = 0
+[DEBUG] Cycle 21/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/49: N = 7/13
+[DEBUG] Cycle 22/49: valid_in 1
+[DEBUG] Cycle 22/49: random_multiplicand = 0x6c54e, random_multiplier = 0x2230f
+[DEBUG] Cycle 22/49: Expected result = 0x49a89a5e2d5, Expected valid_out = 0
+[DEBUG] Cycle 22/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/49: N = 8/13
+[DEBUG] Cycle 23/49: valid_in 1
+[DEBUG] Cycle 23/49: random_multiplicand = 0x13f4d3, random_multiplier = 0x7e821
+[DEBUG] Cycle 23/49: Expected result = 0x50ef8fc37cd, Expected valid_out = 0
+[DEBUG] Cycle 23/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 24/49: N = 9/13
+[DEBUG] Cycle 24/49: valid_in 1
+[DEBUG] Cycle 24/49: random_multiplicand = 0x1d46d, random_multiplier = 0xcbfce
+[DEBUG] Cycle 24/49: Expected result = 0x51d70f7715f, Expected valid_out = 0
+[DEBUG] Cycle 24/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 25/49: N = 10/13
+[DEBUG] Cycle 25/49: valid_in 1
+[DEBUG] Cycle 25/49: random_multiplicand = 0xcec9c, random_multiplier = 0x1d716b
+[DEBUG] Cycle 25/49: Expected result = 0x5bb3b2e3892, Expected valid_out = 0
+[DEBUG] Cycle 25/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 26/49: N = 11/13
+[DEBUG] Cycle 26/49: valid_in 1
+[DEBUG] Cycle 26/49: random_multiplicand = 0x1d6a4b, random_multiplier = 0xf8987
+[DEBUG] Cycle 26/49: Expected result = 0x5d28f407b48, Expected valid_out = 0
+[DEBUG] Cycle 26/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 27/49: N = 12/13
+[DEBUG] Cycle 27/49: valid_in 1
+[DEBUG] Cycle 27/49: random_multiplicand = 0x1640aa, random_multiplier = 0x49b0d
+[DEBUG] Cycle 27/49: Expected result = 0x74f16c43c7c, Expected valid_out = 0
+[DEBUG] Cycle 27/49: Actual result   = 0x75ecd94d769, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 28/49: N = 0/13
+[DEBUG] Cycle 28/49: valid_in 1
+[DEBUG] Cycle 28/49: random_multiplicand = 0x1b0aaf, random_multiplier = 0xb3fc9
+[DEBUG] Cycle 28/49: Expected result = 0x9181e8e6d09, Expected valid_out = 1
+[DEBUG] Cycle 28/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 29/49: N = 1/13
+[DEBUG] Cycle 29/49: valid_in 1
+[DEBUG] Cycle 29/49: random_multiplicand = 0x77544, random_multiplier = 0x14d773
+[DEBUG] Cycle 29/49: Expected result = 0x667cf036a2, Expected valid_out = 0
+[DEBUG] Cycle 29/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 30/49: N = 2/13
+[DEBUG] Cycle 30/49: valid_in 1
+[DEBUG] Cycle 30/49: random_multiplicand = 0xd1fcf, random_multiplier = 0x1751b0
+[DEBUG] Cycle 30/49: Expected result = 0x196af51ab09, Expected valid_out = 0
+[DEBUG] Cycle 30/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 31/49: N = 3/13
+[DEBUG] Cycle 31/49: valid_in 1
+[DEBUG] Cycle 31/49: random_multiplicand = 0x165cc2, random_multiplier = 0x103719
+[DEBUG] Cycle 31/49: Expected result = 0x2321f777495, Expected valid_out = 0
+[DEBUG] Cycle 31/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 32/49: N = 4/13
+[DEBUG] Cycle 32/49: valid_in 1
+[DEBUG] Cycle 32/49: random_multiplicand = 0x117371, random_multiplier = 0x17345a
+[DEBUG] Cycle 32/49: Expected result = 0x3642b26d1e5, Expected valid_out = 0
+[DEBUG] Cycle 32/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 33/49: N = 5/13
+[DEBUG] Cycle 33/49: valid_in 1
+[DEBUG] Cycle 33/49: random_multiplicand = 0x15f372, random_multiplier = 0x4c725
+[DEBUG] Cycle 33/49: Expected result = 0x4cec7638ed7, Expected valid_out = 0
+[DEBUG] Cycle 33/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 34/49: N = 6/13
+[DEBUG] Cycle 34/49: valid_in 1
+[DEBUG] Cycle 34/49: random_multiplicand = 0xc813e, random_multiplier = 0x5e60f
+[DEBUG] Cycle 34/49: Expected result = 0x663b8201891, Expected valid_out = 0
+[DEBUG] Cycle 34/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 35/49: N = 7/13
+[DEBUG] Cycle 35/49: valid_in 1
+[DEBUG] Cycle 35/49: random_multiplicand = 0x12c206, random_multiplier = 0x41d28
+[DEBUG] Cycle 35/49: Expected result = 0x6cc9951e60b, Expected valid_out = 0
+[DEBUG] Cycle 35/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 36/49: N = 8/13
+[DEBUG] Cycle 36/49: valid_in 1
+[DEBUG] Cycle 36/49: random_multiplicand = 0x1e9e6, random_multiplier = 0x51c4e
+[DEBUG] Cycle 36/49: Expected result = 0x7165c612cad, Expected valid_out = 0
+[DEBUG] Cycle 36/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 37/49: N = 9/13
+[DEBUG] Cycle 37/49: valid_in 1
+[DEBUG] Cycle 37/49: random_multiplicand = 0x1dfed9, random_multiplier = 0xc6aa8
+[DEBUG] Cycle 37/49: Expected result = 0x76387622b9d, Expected valid_out = 0
+[DEBUG] Cycle 37/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 38/49: N = 10/13
+[DEBUG] Cycle 38/49: valid_in 1
+[DEBUG] Cycle 38/49: random_multiplicand = 0x1abded, random_multiplier = 0x91fd3
+[DEBUG] Cycle 38/49: Expected result = 0x76d4f0a97b1, Expected valid_out = 0
+[DEBUG] Cycle 38/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 39/49: N = 11/13
+[DEBUG] Cycle 39/49: valid_in 1
+[DEBUG] Cycle 39/49: random_multiplicand = 0xa4f8e, random_multiplier = 0xad03b
+[DEBUG] Cycle 39/49: Expected result = 0x8e1c06bb019, Expected valid_out = 0
+[DEBUG] Cycle 39/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 40/49: N = 12/13
+[DEBUG] Cycle 40/49: valid_in 1
+[DEBUG] Cycle 40/49: random_multiplicand = 0xee5ba, random_multiplier = 0x309a9
+[DEBUG] Cycle 40/49: Expected result = 0x9d5c0caed70, Expected valid_out = 0
+[DEBUG] Cycle 40/49: Actual result   = 0x9181e8e6d09, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 41/49: N = 0/13
+[DEBUG] Cycle 41/49: valid_in 1
+[DEBUG] Cycle 41/49: random_multiplicand = 0xc7235, random_multiplier = 0x1f675b
+[DEBUG] Cycle 41/49: Expected result = 0xa453f5aa32a, Expected valid_out = 1
+[DEBUG] Cycle 41/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 42/49: N = 1/13
+[DEBUG] Cycle 42/49: valid_in 1
+[DEBUG] Cycle 42/49: random_multiplicand = 0x1e9389, random_multiplier = 0xc3827
+[DEBUG] Cycle 42/49: Expected result = 0x2d411731ca, Expected valid_out = 0
+[DEBUG] Cycle 42/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 43/49: N = 2/13
+[DEBUG] Cycle 43/49: valid_in 1
+[DEBUG] Cycle 43/49: random_multiplicand = 0x73e67, random_multiplier = 0x4efc2
+[DEBUG] Cycle 43/49: Expected result = 0x1b41be21da1, Expected valid_out = 0
+[DEBUG] Cycle 43/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 44/49: N = 3/13
+[DEBUG] Cycle 44/49: valid_in 1
+[DEBUG] Cycle 44/49: random_multiplicand = 0x1b26d2, random_multiplier = 0x1e2367
+[DEBUG] Cycle 44/49: Expected result = 0x329bb3c8f80, Expected valid_out = 0
+[DEBUG] Cycle 44/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 45/49: N = 4/13
+[DEBUG] Cycle 45/49: valid_in 1
+[DEBUG] Cycle 45/49: random_multiplicand = 0x1225e3, random_multiplier = 0x1c1f0a
+[DEBUG] Cycle 45/49: Expected result = 0x34d7d98028e, Expected valid_out = 0
+[DEBUG] Cycle 45/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 46/49: N = 5/13
+[DEBUG] Cycle 46/49: valid_in 1
+[DEBUG] Cycle 46/49: random_multiplicand = 0xdc3d, random_multiplier = 0x1567ea
+[DEBUG] Cycle 46/49: Expected result = 0x67fcb6f570c, Expected valid_out = 0
+[DEBUG] Cycle 46/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 47/49: N = 6/13
+[DEBUG] Cycle 47/49: valid_in 1
+[DEBUG] Cycle 47/49: random_multiplicand = 0xfac25, random_multiplier = 0x138a94
+[DEBUG] Cycle 47/49: Expected result = 0x87e238f4eea, Expected valid_out = 0
+[DEBUG] Cycle 47/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 48/49: N = 7/13
+[DEBUG] Cycle 48/49: valid_in 1
+[DEBUG] Cycle 48/49: random_multiplicand = 0x181d4f, random_multiplier = 0x1db9f0
+[DEBUG] Cycle 48/49: Expected result = 0x8908df629ac, Expected valid_out = 0
+[DEBUG] Cycle 48/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 49/49: N = 8/13
+[DEBUG] Cycle 49/49: valid_in 1
+[DEBUG] Cycle 49/49: random_multiplicand = 0x11c668, random_multiplier = 0x1c2717
+[DEBUG] Cycle 49/49: Expected result = 0x9c2d090a110, Expected valid_out = 0
+[DEBUG] Cycle 49/49: Actual result   = 0xa453f5aa32a, Actual valid_out   = 0
+
+
+   530.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+   530.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS         530.00           0.01      95702.65  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                       530.00           0.01      67242.84  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=13
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 13}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[2-6-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256060
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 45, N = 6
+[DEBUG] Cycle 1/18: N = 1/6
+[DEBUG] Cycle 1/18: valid_in 1
+[DEBUG] Cycle 1/18: random_multiplicand = 0x10d6ce, random_multiplier = 0x1eb5ac
+[DEBUG] Cycle 1/18: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/18: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/18: N = 2/6
+[DEBUG] Cycle 2/18: valid_in 1
+[DEBUG] Cycle 2/18: random_multiplicand = 0x9a806, random_multiplier = 0x1408c5
+[DEBUG] Cycle 2/18: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/18: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/18: N = 3/6
+[DEBUG] Cycle 3/18: valid_in 1
+[DEBUG] Cycle 3/18: random_multiplicand = 0x7884c, random_multiplier = 0x13eb7a
+[DEBUG] Cycle 3/18: Expected result = 0x2051f53f868, Expected valid_out = 0
+[DEBUG] Cycle 3/18: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/18: N = 4/6
+[DEBUG] Cycle 4/18: valid_in 1
+[DEBUG] Cycle 4/18: random_multiplicand = 0x76d40, random_multiplier = 0x1cab16
+[DEBUG] Cycle 4/18: Expected result = 0x2c6947a7506, Expected valid_out = 0
+[DEBUG] Cycle 4/18: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/18: N = 5/6
+[DEBUG] Cycle 5/18: valid_in 1
+[DEBUG] Cycle 5/18: random_multiplicand = 0x278da, random_multiplier = 0x67d88
+[DEBUG] Cycle 5/18: Expected result = 0x35c9fd32d3e, Expected valid_out = 0
+[DEBUG] Cycle 5/18: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/18: N = 6/6
+[DEBUG] Cycle 6/18: valid_in 1
+[DEBUG] Cycle 6/18: random_multiplicand = 0x3beee, random_multiplier = 0x17dd69
+[DEBUG] Cycle 6/18: Expected result = 0x431897050be, Expected valid_out = 0
+[DEBUG] Cycle 6/18: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/18: N = 7/6
+[DEBUG] Cycle 7/18: valid_in 1
+[DEBUG] Cycle 7/18: random_multiplicand = 0x3711b, random_multiplier = 0x44f64
+[DEBUG] Cycle 7/18: Expected result = 0x44194def68e, Expected valid_out = 0
+[DEBUG] Cycle 7/18: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/18: N = 0/6
+[DEBUG] Cycle 8/18: valid_in 1
+[DEBUG] Cycle 8/18: random_multiplicand = 0xbd525, random_multiplier = 0x70309
+[DEBUG] Cycle 8/18: Expected result = 0x49af99dbc2c, Expected valid_out = 1
+[DEBUG] Cycle 8/18: Actual result   = 0x49af99dbc2c, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 9/18: N = 1/6
+[DEBUG] Cycle 9/18: valid_in 1
+[DEBUG] Cycle 9/18: random_multiplicand = 0x10980b, random_multiplier = 0xc77e3
+[DEBUG] Cycle 9/18: Expected result = 0xed5ab838c, Expected valid_out = 0
+[DEBUG] Cycle 9/18: Actual result   = 0x49af99dbc2c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/18: N = 2/6
+[DEBUG] Cycle 10/18: valid_in 1
+[DEBUG] Cycle 10/18: random_multiplicand = 0xe9beb, random_multiplier = 0x837e2
+[DEBUG] Cycle 10/18: Expected result = 0x61cd9870d9, Expected valid_out = 0
+[DEBUG] Cycle 10/18: Actual result   = 0x49af99dbc2c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/18: N = 3/6
+[DEBUG] Cycle 11/18: valid_in 1
+[DEBUG] Cycle 11/18: random_multiplicand = 0x6c019, random_multiplier = 0x1e229f
+[DEBUG] Cycle 11/18: Expected result = 0x130b3805f9a, Expected valid_out = 0
+[DEBUG] Cycle 11/18: Actual result   = 0x49af99dbc2c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/18: N = 4/6
+[DEBUG] Cycle 12/18: valid_in 1
+[DEBUG] Cycle 12/18: random_multiplicand = 0x125ec2, random_multiplier = 0x18587c
+[DEBUG] Cycle 12/18: Expected result = 0x1a8c33d8210, Expected valid_out = 0
+[DEBUG] Cycle 12/18: Actual result   = 0x49af99dbc2c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/18: N = 5/6
+[DEBUG] Cycle 13/18: valid_in 1
+[DEBUG] Cycle 13/18: random_multiplicand = 0x106f3f, random_multiplier = 0x1a293b
+[DEBUG] Cycle 13/18: Expected result = 0x2742fe02397, Expected valid_out = 0
+[DEBUG] Cycle 13/18: Actual result   = 0x49af99dbc2c, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/18: N = 0/6
+[DEBUG] Cycle 14/18: valid_in 1
+[DEBUG] Cycle 14/18: random_multiplicand = 0x9c67b, random_multiplier = 0x2576a
+[DEBUG] Cycle 14/18: Expected result = 0x4336b88b98f, Expected valid_out = 1
+[DEBUG] Cycle 14/18: Actual result   = 0x4336b88b98f, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 15/18: N = 1/6
+[DEBUG] Cycle 15/18: valid_in 1
+[DEBUG] Cycle 15/18: random_multiplicand = 0x1cc9c0, random_multiplier = 0x17a222
+[DEBUG] Cycle 15/18: Expected result = 0x1adf200ba85, Expected valid_out = 0
+[DEBUG] Cycle 15/18: Actual result   = 0x4336b88b98f, Actual valid_out   = 0
+
+
+Valid in Deasserted for 1 cycles!
+[DEBUG] Cycle 16/18: N = 2/6
+[DEBUG] Cycle 16/18: valid_in 0
+[DEBUG] Cycle 16/18: random_multiplicand = 0xda8c9, random_multiplier = 0x10b7c8
+[DEBUG] Cycle 16/18: Expected result = 0x1c4d576b673, Expected valid_out = 0
+[DEBUG] Cycle 16/18: Actual result   = 0x4336b88b98f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/18: N = 3/6
+[DEBUG] Cycle 17/18: valid_in 1
+[DEBUG] Cycle 17/18: random_multiplicand = 0x72871, random_multiplier = 0x16d904
+[DEBUG] Cycle 17/18: Expected result = 0x46d313501f3, Expected valid_out = 0
+[DEBUG] Cycle 17/18: Actual result   = 0x4336b88b98f, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/18: N = 4/6
+[DEBUG] Cycle 18/18: valid_in 1
+[DEBUG] Cycle 18/18: random_multiplicand = 0x1d18d9, random_multiplier = 0x325ec
+[DEBUG] Cycle 18/18: Expected result = 0x46d313501f3, Expected valid_out = 0
+[DEBUG] Cycle 18/18: Actual result   = 0x4336b88b98f, Actual valid_out   = 0
+
+
+   220.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+   220.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS         220.00           0.00      90235.37  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                       220.00           0.01      43201.78  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=6
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 6}
+PASSED
+../../src/test_runner.py::test_pipeline_mac[2-16-21]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256060
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+DWIDTH = 21, DWIDTH_ACCUMULATOR = 46, N = 16
+[DEBUG] Cycle 1/108: N = 1/16
+[DEBUG] Cycle 1/108: valid_in 1
+[DEBUG] Cycle 1/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 1/108: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 1/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 2/108: N = 2/16
+[DEBUG] Cycle 2/108: valid_in 1
+[DEBUG] Cycle 2/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 2/108: Expected result = 0x0, Expected valid_out = 0
+[DEBUG] Cycle 2/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 3/108: N = 3/16
+[DEBUG] Cycle 3/108: valid_in 1
+[DEBUG] Cycle 3/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 3/108: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 3/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 4/108: N = 4/16
+[DEBUG] Cycle 4/108: valid_in 1
+[DEBUG] Cycle 4/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 4/108: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 4/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 5/108: N = 5/16
+[DEBUG] Cycle 5/108: valid_in 1
+[DEBUG] Cycle 5/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 5/108: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 5/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 6/108: N = 6/16
+[DEBUG] Cycle 6/108: valid_in 1
+[DEBUG] Cycle 6/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 6/108: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 6/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 7/108: N = 7/16
+[DEBUG] Cycle 7/108: valid_in 1
+[DEBUG] Cycle 7/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 7/108: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 7/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 8/108: N = 8/16
+[DEBUG] Cycle 8/108: valid_in 1
+[DEBUG] Cycle 8/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 8/108: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 8/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 9/108: N = 9/16
+[DEBUG] Cycle 9/108: valid_in 1
+[DEBUG] Cycle 9/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 9/108: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 9/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 10/108: N = 10/16
+[DEBUG] Cycle 10/108: valid_in 1
+[DEBUG] Cycle 10/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 10/108: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 10/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 11/108: N = 11/16
+[DEBUG] Cycle 11/108: valid_in 1
+[DEBUG] Cycle 11/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 11/108: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 11/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 12/108: N = 12/16
+[DEBUG] Cycle 12/108: valid_in 1
+[DEBUG] Cycle 12/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 12/108: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 12/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 13/108: N = 13/16
+[DEBUG] Cycle 13/108: valid_in 1
+[DEBUG] Cycle 13/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 13/108: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 13/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 14/108: N = 14/16
+[DEBUG] Cycle 14/108: valid_in 1
+[DEBUG] Cycle 14/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 14/108: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 14/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 15/108: N = 15/16
+[DEBUG] Cycle 15/108: valid_in 1
+[DEBUG] Cycle 15/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 15/108: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 15/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 16/108: N = 16/16
+[DEBUG] Cycle 16/108: valid_in 1
+[DEBUG] Cycle 16/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 16/108: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 16/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 17/108: N = 17/16
+[DEBUG] Cycle 17/108: valid_in 1
+[DEBUG] Cycle 17/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 17/108: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 17/108: Actual result   = 0x0, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 18/108: N = 0/16
+[DEBUG] Cycle 18/108: valid_in 1
+[DEBUG] Cycle 18/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 18/108: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 18/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 19/108: N = 1/16
+[DEBUG] Cycle 19/108: valid_in 1
+[DEBUG] Cycle 19/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 19/108: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 19/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 20/108: N = 2/16
+[DEBUG] Cycle 20/108: valid_in 1
+[DEBUG] Cycle 20/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 20/108: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 20/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 21/108: N = 3/16
+[DEBUG] Cycle 21/108: valid_in 1
+[DEBUG] Cycle 21/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 21/108: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 21/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 22/108: N = 4/16
+[DEBUG] Cycle 22/108: valid_in 1
+[DEBUG] Cycle 22/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 22/108: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 22/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 23/108: N = 5/16
+[DEBUG] Cycle 23/108: valid_in 1
+[DEBUG] Cycle 23/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 23/108: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 23/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 24/108: N = 6/16
+[DEBUG] Cycle 24/108: valid_in 1
+[DEBUG] Cycle 24/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 24/108: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 24/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 25/108: N = 7/16
+[DEBUG] Cycle 25/108: valid_in 1
+[DEBUG] Cycle 25/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 25/108: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 25/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 26/108: N = 8/16
+[DEBUG] Cycle 26/108: valid_in 1
+[DEBUG] Cycle 26/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 26/108: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 26/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 27/108: N = 9/16
+[DEBUG] Cycle 27/108: valid_in 1
+[DEBUG] Cycle 27/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 27/108: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 27/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 28/108: N = 10/16
+[DEBUG] Cycle 28/108: valid_in 1
+[DEBUG] Cycle 28/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 28/108: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 28/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 29/108: N = 11/16
+[DEBUG] Cycle 29/108: valid_in 1
+[DEBUG] Cycle 29/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 29/108: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 29/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 30/108: N = 12/16
+[DEBUG] Cycle 30/108: valid_in 1
+[DEBUG] Cycle 30/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 30/108: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 30/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 31/108: N = 13/16
+[DEBUG] Cycle 31/108: valid_in 1
+[DEBUG] Cycle 31/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 31/108: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 31/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 32/108: N = 14/16
+[DEBUG] Cycle 32/108: valid_in 1
+[DEBUG] Cycle 32/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 32/108: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 32/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 33/108: N = 15/16
+[DEBUG] Cycle 33/108: valid_in 1
+[DEBUG] Cycle 33/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 33/108: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 33/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 34/108: N = 0/16
+[DEBUG] Cycle 34/108: valid_in 1
+[DEBUG] Cycle 34/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 34/108: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 34/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 35/108: N = 1/16
+[DEBUG] Cycle 35/108: valid_in 1
+[DEBUG] Cycle 35/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 35/108: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 35/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 36/108: N = 2/16
+[DEBUG] Cycle 36/108: valid_in 1
+[DEBUG] Cycle 36/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 36/108: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 36/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 37/108: N = 3/16
+[DEBUG] Cycle 37/108: valid_in 1
+[DEBUG] Cycle 37/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 37/108: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 37/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 38/108: N = 4/16
+[DEBUG] Cycle 38/108: valid_in 1
+[DEBUG] Cycle 38/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 38/108: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 38/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 39/108: N = 5/16
+[DEBUG] Cycle 39/108: valid_in 1
+[DEBUG] Cycle 39/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 39/108: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 39/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 40/108: N = 6/16
+[DEBUG] Cycle 40/108: valid_in 1
+[DEBUG] Cycle 40/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 40/108: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 40/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 41/108: N = 7/16
+[DEBUG] Cycle 41/108: valid_in 1
+[DEBUG] Cycle 41/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 41/108: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 41/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 42/108: N = 8/16
+[DEBUG] Cycle 42/108: valid_in 1
+[DEBUG] Cycle 42/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 42/108: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 42/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 43/108: N = 9/16
+[DEBUG] Cycle 43/108: valid_in 1
+[DEBUG] Cycle 43/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 43/108: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 43/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 44/108: N = 10/16
+[DEBUG] Cycle 44/108: valid_in 1
+[DEBUG] Cycle 44/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 44/108: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 44/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 45/108: N = 11/16
+[DEBUG] Cycle 45/108: valid_in 1
+[DEBUG] Cycle 45/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 45/108: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 45/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 46/108: N = 12/16
+[DEBUG] Cycle 46/108: valid_in 1
+[DEBUG] Cycle 46/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 46/108: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 46/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 47/108: N = 13/16
+[DEBUG] Cycle 47/108: valid_in 1
+[DEBUG] Cycle 47/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 47/108: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 47/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 48/108: N = 14/16
+[DEBUG] Cycle 48/108: valid_in 1
+[DEBUG] Cycle 48/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 48/108: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 48/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 49/108: N = 15/16
+[DEBUG] Cycle 49/108: valid_in 1
+[DEBUG] Cycle 49/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 49/108: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 49/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 50/108: N = 0/16
+[DEBUG] Cycle 50/108: valid_in 1
+[DEBUG] Cycle 50/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 50/108: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 50/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 51/108: N = 1/16
+[DEBUG] Cycle 51/108: valid_in 1
+[DEBUG] Cycle 51/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 51/108: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 51/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 52/108: N = 2/16
+[DEBUG] Cycle 52/108: valid_in 1
+[DEBUG] Cycle 52/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 52/108: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 52/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 53/108: N = 3/16
+[DEBUG] Cycle 53/108: valid_in 1
+[DEBUG] Cycle 53/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 53/108: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 53/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 54/108: N = 4/16
+[DEBUG] Cycle 54/108: valid_in 1
+[DEBUG] Cycle 54/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 54/108: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 54/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 55/108: N = 5/16
+[DEBUG] Cycle 55/108: valid_in 1
+[DEBUG] Cycle 55/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 55/108: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 55/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 56/108: N = 6/16
+[DEBUG] Cycle 56/108: valid_in 1
+[DEBUG] Cycle 56/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 56/108: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 56/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 57/108: N = 7/16
+[DEBUG] Cycle 57/108: valid_in 1
+[DEBUG] Cycle 57/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 57/108: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 57/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 58/108: N = 8/16
+[DEBUG] Cycle 58/108: valid_in 1
+[DEBUG] Cycle 58/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 58/108: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 58/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 59/108: N = 9/16
+[DEBUG] Cycle 59/108: valid_in 1
+[DEBUG] Cycle 59/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 59/108: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 59/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 60/108: N = 10/16
+[DEBUG] Cycle 60/108: valid_in 1
+[DEBUG] Cycle 60/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 60/108: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 60/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 61/108: N = 11/16
+[DEBUG] Cycle 61/108: valid_in 1
+[DEBUG] Cycle 61/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 61/108: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 61/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 62/108: N = 12/16
+[DEBUG] Cycle 62/108: valid_in 1
+[DEBUG] Cycle 62/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 62/108: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 62/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 63/108: N = 13/16
+[DEBUG] Cycle 63/108: valid_in 1
+[DEBUG] Cycle 63/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 63/108: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 63/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 64/108: N = 14/16
+[DEBUG] Cycle 64/108: valid_in 1
+[DEBUG] Cycle 64/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 64/108: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 64/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 65/108: N = 15/16
+[DEBUG] Cycle 65/108: valid_in 1
+[DEBUG] Cycle 65/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 65/108: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 65/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 66/108: N = 0/16
+[DEBUG] Cycle 66/108: valid_in 1
+[DEBUG] Cycle 66/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 66/108: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 66/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 67/108: N = 1/16
+[DEBUG] Cycle 67/108: valid_in 1
+[DEBUG] Cycle 67/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 67/108: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 67/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 68/108: N = 2/16
+[DEBUG] Cycle 68/108: valid_in 1
+[DEBUG] Cycle 68/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 68/108: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 68/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 69/108: N = 3/16
+[DEBUG] Cycle 69/108: valid_in 1
+[DEBUG] Cycle 69/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 69/108: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 69/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 70/108: N = 4/16
+[DEBUG] Cycle 70/108: valid_in 1
+[DEBUG] Cycle 70/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 70/108: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 70/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 71/108: N = 5/16
+[DEBUG] Cycle 71/108: valid_in 1
+[DEBUG] Cycle 71/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 71/108: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 71/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 72/108: N = 6/16
+[DEBUG] Cycle 72/108: valid_in 1
+[DEBUG] Cycle 72/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 72/108: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 72/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 73/108: N = 7/16
+[DEBUG] Cycle 73/108: valid_in 1
+[DEBUG] Cycle 73/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 73/108: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 73/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 74/108: N = 8/16
+[DEBUG] Cycle 74/108: valid_in 1
+[DEBUG] Cycle 74/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 74/108: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 74/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 75/108: N = 9/16
+[DEBUG] Cycle 75/108: valid_in 1
+[DEBUG] Cycle 75/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 75/108: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 75/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 76/108: N = 10/16
+[DEBUG] Cycle 76/108: valid_in 1
+[DEBUG] Cycle 76/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 76/108: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 76/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 77/108: N = 11/16
+[DEBUG] Cycle 77/108: valid_in 1
+[DEBUG] Cycle 77/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 77/108: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 77/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 78/108: N = 12/16
+[DEBUG] Cycle 78/108: valid_in 1
+[DEBUG] Cycle 78/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 78/108: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 78/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 79/108: N = 13/16
+[DEBUG] Cycle 79/108: valid_in 1
+[DEBUG] Cycle 79/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 79/108: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 79/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 80/108: N = 14/16
+[DEBUG] Cycle 80/108: valid_in 1
+[DEBUG] Cycle 80/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 80/108: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 80/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 81/108: N = 15/16
+[DEBUG] Cycle 81/108: valid_in 1
+[DEBUG] Cycle 81/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 81/108: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 81/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 82/108: N = 0/16
+[DEBUG] Cycle 82/108: valid_in 1
+[DEBUG] Cycle 82/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 82/108: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 82/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 83/108: N = 1/16
+[DEBUG] Cycle 83/108: valid_in 1
+[DEBUG] Cycle 83/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 83/108: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 83/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 84/108: N = 2/16
+[DEBUG] Cycle 84/108: valid_in 1
+[DEBUG] Cycle 84/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 84/108: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 84/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 85/108: N = 3/16
+[DEBUG] Cycle 85/108: valid_in 1
+[DEBUG] Cycle 85/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 85/108: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 85/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 86/108: N = 4/16
+[DEBUG] Cycle 86/108: valid_in 1
+[DEBUG] Cycle 86/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 86/108: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 86/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 87/108: N = 5/16
+[DEBUG] Cycle 87/108: valid_in 1
+[DEBUG] Cycle 87/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 87/108: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 87/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 88/108: N = 6/16
+[DEBUG] Cycle 88/108: valid_in 1
+[DEBUG] Cycle 88/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 88/108: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 88/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 89/108: N = 7/16
+[DEBUG] Cycle 89/108: valid_in 1
+[DEBUG] Cycle 89/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 89/108: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 89/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 90/108: N = 8/16
+[DEBUG] Cycle 90/108: valid_in 1
+[DEBUG] Cycle 90/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 90/108: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 90/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 91/108: N = 9/16
+[DEBUG] Cycle 91/108: valid_in 1
+[DEBUG] Cycle 91/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 91/108: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 91/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 92/108: N = 10/16
+[DEBUG] Cycle 92/108: valid_in 1
+[DEBUG] Cycle 92/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 92/108: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 92/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 93/108: N = 11/16
+[DEBUG] Cycle 93/108: valid_in 1
+[DEBUG] Cycle 93/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 93/108: Expected result = 0x2bfffd40000b, Expected valid_out = 0
+[DEBUG] Cycle 93/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 94/108: N = 12/16
+[DEBUG] Cycle 94/108: valid_in 1
+[DEBUG] Cycle 94/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 94/108: Expected result = 0x2ffffd00000c, Expected valid_out = 0
+[DEBUG] Cycle 94/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 95/108: N = 13/16
+[DEBUG] Cycle 95/108: valid_in 1
+[DEBUG] Cycle 95/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 95/108: Expected result = 0x33fffcc0000d, Expected valid_out = 0
+[DEBUG] Cycle 95/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 96/108: N = 14/16
+[DEBUG] Cycle 96/108: valid_in 1
+[DEBUG] Cycle 96/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 96/108: Expected result = 0x37fffc80000e, Expected valid_out = 0
+[DEBUG] Cycle 96/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 97/108: N = 15/16
+[DEBUG] Cycle 97/108: valid_in 1
+[DEBUG] Cycle 97/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 97/108: Expected result = 0x3bfffc40000f, Expected valid_out = 0
+[DEBUG] Cycle 97/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 98/108: N = 0/16
+[DEBUG] Cycle 98/108: valid_in 1
+[DEBUG] Cycle 98/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 98/108: Expected result = 0x3ffffc000010, Expected valid_out = 1
+[DEBUG] Cycle 98/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 1
+
+
+[DEBUG] Cycle 99/108: N = 1/16
+[DEBUG] Cycle 99/108: valid_in 1
+[DEBUG] Cycle 99/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 99/108: Expected result = 0x3ffffc00001, Expected valid_out = 0
+[DEBUG] Cycle 99/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 100/108: N = 2/16
+[DEBUG] Cycle 100/108: valid_in 1
+[DEBUG] Cycle 100/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 100/108: Expected result = 0x7ffff800002, Expected valid_out = 0
+[DEBUG] Cycle 100/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 101/108: N = 3/16
+[DEBUG] Cycle 101/108: valid_in 1
+[DEBUG] Cycle 101/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 101/108: Expected result = 0xbffff400003, Expected valid_out = 0
+[DEBUG] Cycle 101/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 102/108: N = 4/16
+[DEBUG] Cycle 102/108: valid_in 1
+[DEBUG] Cycle 102/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 102/108: Expected result = 0xfffff000004, Expected valid_out = 0
+[DEBUG] Cycle 102/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 103/108: N = 5/16
+[DEBUG] Cycle 103/108: valid_in 1
+[DEBUG] Cycle 103/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 103/108: Expected result = 0x13fffec00005, Expected valid_out = 0
+[DEBUG] Cycle 103/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 104/108: N = 6/16
+[DEBUG] Cycle 104/108: valid_in 1
+[DEBUG] Cycle 104/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 104/108: Expected result = 0x17fffe800006, Expected valid_out = 0
+[DEBUG] Cycle 104/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 105/108: N = 7/16
+[DEBUG] Cycle 105/108: valid_in 1
+[DEBUG] Cycle 105/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 105/108: Expected result = 0x1bfffe400007, Expected valid_out = 0
+[DEBUG] Cycle 105/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 106/108: N = 8/16
+[DEBUG] Cycle 106/108: valid_in 1
+[DEBUG] Cycle 106/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 106/108: Expected result = 0x1ffffe000008, Expected valid_out = 0
+[DEBUG] Cycle 106/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 107/108: N = 9/16
+[DEBUG] Cycle 107/108: valid_in 1
+[DEBUG] Cycle 107/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 107/108: Expected result = 0x23fffdc00009, Expected valid_out = 0
+[DEBUG] Cycle 107/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+[DEBUG] Cycle 108/108: N = 10/16
+[DEBUG] Cycle 108/108: valid_in 1
+[DEBUG] Cycle 108/108: random_multiplicand = 0x1fffff, random_multiplier = 0x1fffff
+[DEBUG] Cycle 108/108: Expected result = 0x27fffd80000a, Expected valid_out = 0
+[DEBUG] Cycle 108/108: Actual result   = 0x3ffffc000010, Actual valid_out   = 0
+
+
+  1120.00ns INFO     cocotb.regression                  test_pipeline_mac.test_pipeline_mac passed
+  1120.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   PASS        1120.00           0.01     118196.97  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1120.00           0.01      91955.14  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=21, N=16
+[DEBUG] Parameters: {'DWIDTH': 21, 'N': 16}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-1_xkwsqg'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-i2b3na6c'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 9 passed, 2 warnings in 4.14s =========================
+Cleaning up Docker resources...

@@ -1,0 +1,2174 @@
+Running harness with project name: cvdp_copilot_configurable_digital_low_pass_filter_4_1790257966
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 32 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257968
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-27982, -7932] == [-4973, -12795]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-27982, -7932] == [-4973, -12795]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      27679.08  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7358.86  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257968
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   190.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 9
+                                                        assert [7737] == [-7322]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 9
+                                                        assert [7737] == [-7322]
+   190.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+   190.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL         190.00           0.00     103254.44  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                               190.00           0.00      39253.17  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257968
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-27982, -7932] == [-4973, -12795]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-27982, -7932] == [-4973, -12795]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      22890.51  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7059.93  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257968
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      91588.21  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      72363.12  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257968
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-110, -31] == [-20, -50]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-110, -31] == [-20, -50]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      23634.32  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7064.69  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257969
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     130528.13  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      96315.35  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 8, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257969
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    70.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 3
+                                                        assert [62, -109, -94, -14] == [-106, -2, -56, -116]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 3
+                                                        assert [62, -109, -94, -14] == [-106, -2, -56, -116]
+    70.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    70.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          70.00           0.00      50248.38  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                70.00           0.00      16050.80  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 2}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257969
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    70.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 3
+                                                        assert [-35] == [-112]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 3
+                                                        assert [-35] == [-112]
+    70.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    70.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          70.00           0.00      50231.19  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                70.00           0.00      15972.22  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=17 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=17
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 8, 'DEC_FACTOR': 17}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257969
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     113388.75  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      85448.57  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257970
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [10136] == [-18530]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [10136] == [-18530]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      24305.41  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7097.36  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257970
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [10136] == [-3488]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [10136] == [-3488]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      23858.38  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7078.99  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=8 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=8
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 8}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257970
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    90.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 4
+                                                        assert [23301] == [-28977]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 4
+                                                        assert [23301] == [-28977]
+    90.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    90.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          90.00           0.00      58227.27  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                90.00           0.00      19124.90  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=17 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=17
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 16, 'DEC_FACTOR': 17}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257970
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [40547] == [-13952]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [40547] == [-13952]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      24286.65  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7247.39  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=8 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=8
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 18, 'DEC_FACTOR': 8}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257970
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     123310.07  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      90795.16  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 18, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257971
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      96526.45  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      74815.58  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 18, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257971
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      90561.78  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      72226.64  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 18, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257971
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-23388, -6992] == [-9980, 14976]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-23388, -6992] == [-9980, 14976]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      24207.22  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7092.56  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257971
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    50.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 2
+                                                        assert [-4329] == [27178]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 2
+                                                        assert [-4329] == [27178]
+    50.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    50.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          50.00           0.00      37276.08  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                50.00           0.00      11713.32  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257972
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [19953] == [24549]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [19953] == [24549]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      24566.40  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7079.39  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=8 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=8
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 8}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257972
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      92038.02  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      73192.94  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257972
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [77, 114] == [-103, 95]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [77, 114] == [-103, 95]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      25055.58  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7140.86  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257972
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [77, 86] == [-66, -103]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [77, 86] == [-66, -103]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      24380.76  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7139.65  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 8, 'DEC_FACTOR': 2}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257972
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     115122.71  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      87390.00  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257973
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      99875.70  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      77954.14  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 8, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257973
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-26785] == [-26427]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-26785] == [-26427]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      26501.50  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7217.04  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=8 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=8
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 8}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257973
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     123137.68  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      91693.09  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257973
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     104410.13  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      79566.74  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257973
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      94557.58  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      74879.18  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257974
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-46717, -121604, -84210, -128072] == [-57855, -113712, -35136, 76436]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-46717, -121604, -84210, -128072] == [-57855, -113712, -35136, 76436]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      23258.62  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7113.81  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 18, 'DEC_FACTOR': 2}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257974
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    90.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 4
+                                                        assert [-117501, 36478] == [50311, -105112]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 4
+                                                        assert [-117501, 36478] == [50311, -105112]
+    90.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    90.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          90.00           0.00      60349.70  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                90.00           0.00      20348.63  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 18, 'DEC_FACTOR': 2}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257974
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-46717, -84210] == [-113712, 76436]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-46717, -84210] == [-113712, 76436]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      23656.54  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7010.37  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 18, 'DEC_FACTOR': 4}
+F     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257974
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+    30.00ns WARNING  ..r_with_adaptive_peak_detection_0 [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-46717] == [50311]
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_advanced_decimator_with_adaptive_peak_detection.py", line 77, in test_advanced_decimator_with_adaptive_peak_detection_0
+                                                            assert output_data == dec_model, f"[ERROR] DUT output data does not match model output data on Test Case {test_case + 1}"
+                                                        AssertionError: [ERROR] DUT output data does not match model output data on Test Case 1
+                                                        assert [-46717] == [50311]
+    30.00ns WARNING  cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 failed
+    30.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   FAIL          30.00           0.00      23781.73  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                                                                                30.00           0.00       7011.15  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=17 for N=17
+[DEBUG] Running simulation with N=17
+[DEBUG] Running simulation with DATA_WIDTH=18
+[DEBUG] Running simulation with DEC_FACTOR=17
+[DEBUG] Parameters: {'N': 17, 'DATA_WIDTH': 18, 'DEC_FACTOR': 17}
+F
+
+=================================== FAILURES ===================================
+____________________________ test_data[0-16_0-8_0] _____________________________
+
+N = 8, DATA_WIDTH = 16, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 16, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_____________________________ test_data[0-16_0-4] ______________________________
+
+N = 4, DATA_WIDTH = 16, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 4, DATA_WIDTH = 16, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=4 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+____________________________ test_data[0-16_0-8_1] _____________________________
+
+N = 8, DATA_WIDTH = 16, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 16, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_data[0-8-8_0] ______________________________
+
+N = 8, DATA_WIDTH = 8, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 8, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=8 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_data[0-8-8_1] ______________________________
+
+N = 8, DATA_WIDTH = 8, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 8, DEC_FACTOR = 2
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=8 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=2 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_data[0-8-17] _______________________________
+
+N = 17, DATA_WIDTH = 8, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 17, DATA_WIDTH = 8, DEC_FACTOR = 17
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=17 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=8 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=17 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_____________________________ test_data[0-16_1-4] ______________________________
+
+N = 4, DATA_WIDTH = 16, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 4, DATA_WIDTH = 16, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=4 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+____________________________ test_data[0-16_1-8_1] _____________________________
+
+N = 8, DATA_WIDTH = 16, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 16, DEC_FACTOR = 8
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=8 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_____________________________ test_data[0-16_1-17] _____________________________
+
+N = 17, DATA_WIDTH = 16, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 17, DATA_WIDTH = 16, DEC_FACTOR = 17
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=17 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=17 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_____________________________ test_data[0-18-8_0] ______________________________
+
+N = 8, DATA_WIDTH = 18, test = 0
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 18, DEC_FACTOR = 8
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=18 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=8 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+____________________________ test_data[1-16_0-8_0] _____________________________
+
+N = 8, DATA_WIDTH = 16, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 16, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_____________________________ test_data[1-16_0-4] ______________________________
+
+N = 4, DATA_WIDTH = 16, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 4, DATA_WIDTH = 16, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=4 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+____________________________ test_data[1-16_0-8_1] _____________________________
+
+N = 8, DATA_WIDTH = 16, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 16, DEC_FACTOR = 8
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=8 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_data[1-8-8_0] ______________________________
+
+N = 8, DATA_WIDTH = 8, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 8, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=8 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_______________________________ test_data[1-8-4] _______________________________
+
+N = 4, DATA_WIDTH = 8, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 4, DATA_WIDTH = 8, DEC_FACTOR = 2
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=4 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=8 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=2 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+____________________________ test_data[1-16_1-8_0] _____________________________
+
+N = 8, DATA_WIDTH = 16, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 16, DEC_FACTOR = 8
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=16 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=8 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_____________________________ test_data[1-18-8_0] ______________________________
+
+N = 8, DATA_WIDTH = 18, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 18, DEC_FACTOR = 2
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=18 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=2 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_data[1-18-4] _______________________________
+
+N = 4, DATA_WIDTH = 18, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 4, DATA_WIDTH = 18, DEC_FACTOR = 2
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=4 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=18 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=2 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_____________________________ test_data[1-18-8_1] ______________________________
+
+N = 8, DATA_WIDTH = 18, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 8, DATA_WIDTH = 18, DEC_FACTOR = 4
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=8 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=18 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=4 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+______________________________ test_data[1-18-17] ______________________________
+
+N = 17, DATA_WIDTH = 18, test = 1
+
+    @pytest.mark.parametrize("N", random_n)
+    @pytest.mark.parametrize("DATA_WIDTH", random_data_width)
+    @pytest.mark.parametrize("test", range(2))
+    def test_data(N, DATA_WIDTH, test):
+        # Generate valid DEC_FACTOR values dynamically
+        valid_dec_factors = generate_valid_dec_factors(N)
+        # Randomly select a DEC_FACTOR from the valid options
+        DEC_FACTOR = random.choice(valid_dec_factors)
+    
+        # Debug information
+        print(f"[DEBUG] Selected DEC_FACTOR={DEC_FACTOR} for N={N}")
+    
+        # Run the simulation with specified parameters
+>       runner(N=N, DATA_WIDTH=DATA_WIDTH, DEC_FACTOR=DEC_FACTOR)
+
+/src/test_runner.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 17, DATA_WIDTH = 18, DEC_FACTOR = 17
+
+    def runner(N: int = 8, DATA_WIDTH: int = 16, DEC_FACTOR: int = 4):
+        # Simulation parameters
+        parameter = {
+            "N": N,
+            "DATA_WIDTH": DATA_WIDTH,
+            "DEC_FACTOR": DEC_FACTOR
+        }
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N}")
+        print(f"[DEBUG] Running simulation with DATA_WIDTH={DATA_WIDTH}")
+        print(f"[DEBUG] Running simulation with DEC_FACTOR={DEC_FACTOR}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:43: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s advanced_decimator_with_adaptive_peak_detection -g2012 -Padvanced_decimator_with_adaptive_peak_detection.N=17 -Padvanced_decimator_with_adaptive_peak_detection.DATA_WIDTH=18 -Padvanced_decimator_with_adaptive_peak_detection.DEC_FACTOR=17 -f /code/rundir/sim_build/cmds.f /code/rtl/decimator_and_peak_detector.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-w3eyoqrk'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-7uyfgnbi'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-flsi60xo'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_data[0-16_0-8_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-16_0-4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-16_0-8_1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-8-8_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-8-8_1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-8-17] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-16_1-4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-16_1-8_1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-16_1-17] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[0-18-8_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-16_0-8_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-16_0-4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-16_0-8_1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-8-8_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-8-4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-16_1-8_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-18-8_0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-18-4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-18-8_1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_data[1-18-17] - SystemExit: 1
+================== 20 failed, 12 passed, 3 warnings in 7.05s ===================
+Cleaning up Docker resources...

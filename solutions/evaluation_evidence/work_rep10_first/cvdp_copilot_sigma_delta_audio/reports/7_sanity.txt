@@ -1,0 +1,380 @@
+Running harness with project name: cvdp_copilot_sigma_delta_audio_7_1790201835
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_sigma_delta_audio[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201836
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     132475.96  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      83041.23  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201836
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     117716.89  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      74464.68  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201836
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     106149.86  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      66890.16  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201837
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     102278.41  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      67569.51  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201837
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     125545.28  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      79053.50  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201837
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     127016.45  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      80283.78  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201837
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     129245.70  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      83119.93  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201838
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     120300.53  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      79417.96  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201838
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     117846.31  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      75307.57  **
+                                                        *******************************************************************************************************
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201838
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating the paula_audio_sigmadelta_tb logic.
+     0.00ns INFO     test                               ----- Test Start -----
+    20.00ns INFO     test                               Running Test Case 1: Zero Input Test
+    40.00ns INFO     test                               Test Case 1 Passed
+    40.00ns INFO     test                               Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     test                               Test Case 2 Passed
+    60.00ns INFO     test                               Running Test Case 3: Small Positive Values
+    80.00ns INFO     test                               Test Case 3 Passed
+    80.00ns INFO     test                               Running Test Case 4: Small Negative Values
+   100.00ns INFO     test                               Test Case 4 Passed
+   100.00ns INFO     test                               Running Test Case 5: Large Alternating Values
+   110.00ns INFO     test                               Test Case 5 Passed
+   110.00ns INFO     test                               Running Test Case 6: Rapid Change in Values
+   130.00ns INFO     test                               Test Case 6 Passed
+   130.00ns INFO     test                               Running Test Case 7: Incremental Increase
+   180.00ns INFO     test                               Test Case 7 Passed
+   180.00ns INFO     test                               Running Test Case 8: Decremental Decrease
+   230.00ns INFO     test                               Test Case 8 Passed
+   230.00ns INFO     test                               All tests passed!
+   230.00ns INFO     test                               ----- Test Completed -----
+   230.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   230.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         230.00           0.00     127858.17  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 230.00           0.00      81380.96  **
+                                                        *******************************************************************************************************
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-cel718q_'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-nmo70_hb'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 10 passed, 2 warnings in 2.37s ========================
+Cleaning up Docker resources...

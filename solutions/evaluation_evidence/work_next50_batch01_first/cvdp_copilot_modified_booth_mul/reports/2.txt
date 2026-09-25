@@ -1,0 +1,439 @@
+Running harness with project name: cvdp_copilot_modified_booth_mul_2_1790257428
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257429
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier (1/2)
+                                                            Testbench for the signed sequential booth multiplier using cocotb.
+    80.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+    80.00ns INFO     ..gned_sequential_booth_multiplier MAX Test passed for A = 7, B = 7: Result = 49, Latency = 6 cycles
+   100.00ns INFO     ..gned_sequential_booth_multiplier MAX testcase completed.
+   170.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   170.00ns INFO     ..gned_sequential_booth_multiplier MINI Test passed for A = -8, B = -8: Result = 64, Latency = 6 cycles
+   190.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   260.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   260.00ns INFO     ..gned_sequential_booth_multiplier ZERO Test passed for A = 0, B = 0: Result = 0, Latency = 6 cycles
+   280.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   350.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   350.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 2, B = 0: Result = 0, Latency = 6 cycles
+   440.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   440.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 3, B = 7: Result = 21, Latency = 6 cycles
+   530.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   530.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 7, B = 0: Result = 0, Latency = 6 cycles
+   620.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   620.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 2, B = -6: Result = -12, Latency = 6 cycles
+   710.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   710.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 3, B = 7: Result = 21, Latency = 6 cycles
+   800.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   800.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 3, B = 3: Result = 9, Latency = 6 cycles
+   890.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   890.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 6, B = 3: Result = 18, Latency = 6 cycles
+   980.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   980.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 4, B = 4: Result = 16, Latency = 6 cycles
+  1070.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1070.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -5, B = -8: Result = 40, Latency = 6 cycles
+  1160.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1160.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -5, B = 2: Result = -10, Latency = 6 cycles
+  1250.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1250.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 5, B = 3: Result = 15, Latency = 6 cycles
+  1340.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1340.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 7, B = 7: Result = 49, Latency = 6 cycles
+  1430.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1430.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -4, B = 0: Result = 0, Latency = 6 cycles
+  1520.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1520.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 2, B = 2: Result = 4, Latency = 6 cycles
+  1610.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1610.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 4, B = -8: Result = -32, Latency = 6 cycles
+  1700.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1700.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 0, B = 0: Result = 0, Latency = 6 cycles
+  1790.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1790.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 0, B = 6: Result = 0, Latency = 6 cycles
+  1880.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1880.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 3, B = -5: Result = -15, Latency = 6 cycles
+  1970.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1970.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 2, B = -7: Result = -14, Latency = 6 cycles
+  2060.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2060.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 1, B = 2: Result = 2, Latency = 6 cycles
+  2080.00ns INFO     ..gned_sequential_booth_multiplier All tests completed.
+  2080.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier passed
+  2080.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.verify_specific_scenarios (2/2)
+                                                            Test specific scenarios derived from result tables.
+  2171.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2171.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-7, B=-7: Expected 49, got 49
+  2261.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2261.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-8, B=-7: Expected 56, got 56
+  2351.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2351.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-7, B=2: Expected -14, got -14
+  2441.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2441.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=2, B=4: Expected 8, got 8
+  2531.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2531.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-8, B=-2: Expected 16, got 16
+  2621.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2621.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-1, B=-4: Expected 4, got 4
+  2711.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2711.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-8, B=-1: Expected 8, got 8
+  2801.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2801.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=5, B=-6: Expected -30, got -30
+  2891.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2891.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=1, B=4: Expected 4, got 4
+  2981.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  2981.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=2, B=-2: Expected -4, got -4
+  3071.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 6, got 6
+  3071.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-7, B=4: Expected -28, got -28
+  3091.00ns INFO     ..gned_sequential_booth_multiplier All scenarios verified.
+  3091.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.verify_specific_scenarios passed
+  3091.00ns INFO     cocotb.regression                  *****************************************************************************************************************************************
+                                                        ** TEST                                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************************************
+                                                        ** test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier   PASS        2080.00           0.01     316115.38  **
+                                                        ** test_signed_sequential_booth_multiplier.verify_specific_scenarios                 PASS        1010.00           0.00     358882.33  **
+                                                        *****************************************************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                                                                  3091.00           0.01     265168.00  **
+                                                        *****************************************************************************************************************************************
+Running with: WIDTH = 4
+PASSED
+../../src/test_runner.py::test[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257430
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier (1/2)
+                                                            Testbench for the signed sequential booth multiplier using cocotb.
+   100.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   100.00ns INFO     ..gned_sequential_booth_multiplier MAX Test passed for A = 127, B = 127: Result = 16129, Latency = 8 cycles
+   120.00ns INFO     ..gned_sequential_booth_multiplier MAX testcase completed.
+   210.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   210.00ns INFO     ..gned_sequential_booth_multiplier MINI Test passed for A = -128, B = -128: Result = 16384, Latency = 8 cycles
+   230.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   320.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   320.00ns INFO     ..gned_sequential_booth_multiplier ZERO Test passed for A = 0, B = 0: Result = 0, Latency = 8 cycles
+   340.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   430.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   430.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 104, B = 66: Result = 6864, Latency = 8 cycles
+   540.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   540.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 51, B = 120: Result = 6120, Latency = 8 cycles
+   650.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   650.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -103, B = -67: Result = 6901, Latency = 8 cycles
+   760.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   760.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -44, B = 107: Result = -4708, Latency = 8 cycles
+   870.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   870.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 40, B = 110: Result = 4400, Latency = 8 cycles
+   980.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   980.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 98, B = 73: Result = 7154, Latency = 8 cycles
+  1090.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1090.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -116, B = -66: Result = 7656, Latency = 8 cycles
+  1200.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1200.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 94, B = -39: Result = -3666, Latency = 8 cycles
+  1310.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1310.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 112, B = -95: Result = -10640, Latency = 8 cycles
+  1420.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1420.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -60, B = -41: Result = 2460, Latency = 8 cycles
+  1530.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1530.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -40, B = -22: Result = 880, Latency = 8 cycles
+  1640.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1640.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 20, B = -84: Result = -1680, Latency = 8 cycles
+  1750.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1750.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 109, B = 24: Result = 2616, Latency = 8 cycles
+  1860.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1860.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -44, B = 7: Result = -308, Latency = 8 cycles
+  1970.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1970.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -75, B = 52: Result = -3900, Latency = 8 cycles
+  2080.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2080.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 98, B = 74: Result = 7252, Latency = 8 cycles
+  2190.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2190.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -32, B = 72: Result = -2304, Latency = 8 cycles
+  2300.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2300.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -114, B = -4: Result = 456, Latency = 8 cycles
+  2410.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2410.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -92, B = -124: Result = 11408, Latency = 8 cycles
+  2520.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2520.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -24, B = -20: Result = 480, Latency = 8 cycles
+  2540.00ns INFO     ..gned_sequential_booth_multiplier All tests completed.
+  2540.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier passed
+  2540.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.verify_specific_scenarios (2/2)
+                                                            Test specific scenarios derived from result tables.
+  2651.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 8, got 8
+  2651.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=120, B=-64: Expected -7680, got -7680
+  2761.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 8, got 8
+  2761.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-114, B=-38: Expected 4332, got 4332
+  2871.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 8, got 8
+  2871.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-94, B=-57: Expected 5358, got 5358
+  2981.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 8, got 8
+  2981.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=89, B=-120: Expected -10680, got -10680
+  3001.00ns INFO     ..gned_sequential_booth_multiplier All scenarios verified.
+  3001.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.verify_specific_scenarios passed
+  3001.00ns INFO     cocotb.regression                  *****************************************************************************************************************************************
+                                                        ** TEST                                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************************************
+                                                        ** test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier   PASS        2540.00           0.01     343584.74  **
+                                                        ** test_signed_sequential_booth_multiplier.verify_specific_scenarios                 PASS         460.00           0.00     352205.16  **
+                                                        *****************************************************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                                                                  3001.00           0.01     277004.98  **
+                                                        *****************************************************************************************************************************************
+Running with: WIDTH = 8
+PASSED
+../../src/test_runner.py::test[16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257430
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier (1/2)
+                                                            Testbench for the signed sequential booth multiplier using cocotb.
+   140.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   140.00ns INFO     ..gned_sequential_booth_multiplier MAX Test passed for A = 32767, B = 32767: Result = 1073676289, Latency = 12 cycles
+   160.00ns INFO     ..gned_sequential_booth_multiplier MAX testcase completed.
+   290.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   290.00ns INFO     ..gned_sequential_booth_multiplier MINI Test passed for A = -32768, B = -32768: Result = 1073741824, Latency = 12 cycles
+   310.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   440.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   440.00ns INFO     ..gned_sequential_booth_multiplier ZERO Test passed for A = 0, B = 0: Result = 0, Latency = 12 cycles
+   460.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   590.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   590.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 26782, B = 17027: Result = 456017114, Latency = 12 cycles
+   740.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   740.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 13102, B = 30726: Result = 402572052, Latency = 12 cycles
+   890.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   890.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -26296, B = -16937: Result = 445375352, Latency = 12 cycles
+  1040.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1040.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -11223, B = 27514: Result = -308789622, Latency = 12 cycles
+  1190.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1190.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 10314, B = 28216: Result = 291019824, Latency = 12 cycles
+  1340.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1340.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 25135, B = 18737: Result = 470954495, Latency = 12 cycles
+  1490.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1490.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -29558, B = -16685: Result = 493175230, Latency = 12 cycles
+  1640.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1640.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 24275, B = -9748: Result = -236632700, Latency = 12 cycles
+  1790.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1790.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 28673, B = -24148: Result = -692395604, Latency = 12 cycles
+  1940.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1940.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -15173, B = -10480: Result = 159013040, Latency = 12 cycles
+  2090.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2090.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -10063, B = -5535: Result = 55698705, Latency = 12 cycles
+  2240.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2240.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 5249, B = -21368: Result = -112160632, Latency = 12 cycles
+  2390.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2390.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 27956, B = 6301: Result = 176150756, Latency = 12 cycles
+  2540.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2540.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -11102, B = 2009: Result = -22303918, Latency = 12 cycles
+  2690.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2690.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -19158, B = 13458: Result = -257828364, Latency = 12 cycles
+  2840.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2840.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 25204, B = 19044: Result = 479984976, Latency = 12 cycles
+  2990.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2990.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -8095, B = 18489: Result = -149668455, Latency = 12 cycles
+  3140.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3140.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -28993, B = -987: Result = 28616091, Latency = 12 cycles
+  3290.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3290.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -23303, B = -31593: Result = 736211679, Latency = 12 cycles
+  3440.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3440.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -6028, B = -5095: Result = 30712660, Latency = 12 cycles
+  3460.00ns INFO     ..gned_sequential_booth_multiplier All tests completed.
+  3460.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier passed
+  3460.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.verify_specific_scenarios (2/2)
+                                                            Test specific scenarios derived from result tables.
+  3611.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 12, got 12
+  3611.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=120, B=-64: Expected -7680, got -7680
+  3761.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 12, got 12
+  3761.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-114, B=-38: Expected 4332, got 4332
+  3911.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 12, got 12
+  3911.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-94, B=-57: Expected 5358, got 5358
+  4061.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 12, got 12
+  4061.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=89, B=-120: Expected -10680, got -10680
+  4081.00ns INFO     ..gned_sequential_booth_multiplier All scenarios verified.
+  4081.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.verify_specific_scenarios passed
+  4081.00ns INFO     cocotb.regression                  *****************************************************************************************************************************************
+                                                        ** TEST                                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************************************
+                                                        ** test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier   PASS        3460.00           0.01     376278.05  **
+                                                        ** test_signed_sequential_booth_multiplier.verify_specific_scenarios                 PASS         620.00           0.00     379077.04  **
+                                                        *****************************************************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                                                                  4081.00           0.01     316904.35  **
+                                                        *****************************************************************************************************************************************
+Running with: WIDTH = 16
+PASSED
+../../src/test_runner.py::test[32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257430
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier (1/2)
+                                                            Testbench for the signed sequential booth multiplier using cocotb.
+   220.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   220.00ns INFO     ..gned_sequential_booth_multiplier MAX Test passed for A = 2147483647, B = 2147483647: Result = 4611686014132420609, Latency = 20 cycles
+   240.00ns INFO     ..gned_sequential_booth_multiplier MAX testcase completed.
+   450.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   450.00ns INFO     ..gned_sequential_booth_multiplier MINI Test passed for A = -2147483648, B = -2147483648: Result = 4611686018427387904, Latency = 20 cycles
+   470.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   680.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   680.00ns INFO     ..gned_sequential_booth_multiplier ZERO Test passed for A = 0, B = 0: Result = 0, Latency = 20 cycles
+   700.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+   910.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   910.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 1765383159, B = -66902210: Result = -118108034833881390, Latency = 20 cycles
+  1140.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1140.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -1628706017, B = -735753417: Result = 1198326017296210089, Latency = 20 cycles
+  1370.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1370.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -250113980, B = 382931520: Result = -95776526534649600, Latency = 20 cycles
+  1600.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1600.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 1402167233, B = -1393159846: Result = -1953443086392526118, Latency = 20 cycles
+  1830.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1830.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -1865008906, B = 576984677: Result = -1076081561230533362, Latency = 20 cycles
+  2060.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2060.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 1390763934, B = 406081886: Result = 564764041299499524, Latency = 20 cycles
+  2290.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2290.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 595677035, B = -1007894165: Result = -600379407801000775, Latency = 20 cycles
+  2520.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2520.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -632733417, B = -1338996591: Result = 847227888374781447, Latency = 20 cycles
+  2750.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2750.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -2023769007, B = 1567568052: Result = -3172395640000964364, Latency = 20 cycles
+  2980.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2980.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -2108974968, B = -1240682161: Result = 2616567620793145848, Latency = 20 cycles
+  3210.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3210.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 731967313, B = 1820088487: Result = 1332245279251625431, Latency = 20 cycles
+  3440.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3440.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 53840770, B = -1908975834: Result = -102780728813952180, Latency = 20 cycles
+  3670.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3670.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 381725593, B = 1860906776: Result = 710355742586318168, Latency = 20 cycles
+  3900.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3900.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -1872844745, B = -714481716: Result = 1338113327209182420, Latency = 20 cycles
+  4130.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  4130.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -837281938, B = -696121779: Result = 582850192205127702, Latency = 20 cycles
+  4360.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  4360.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -37322478, B = 278987021: Result = -10412486953558038, Latency = 20 cycles
+  4590.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  4590.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -670252803, B = 377754287: Result = -253190869707016461, Latency = 20 cycles
+  4820.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  4820.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -869672258, B = -89234744: Result = 77604981306531952, Latency = 20 cycles
+  5050.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  5050.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 499361051, B = 1398254771: Result = 698233972012324321, Latency = 20 cycles
+  5280.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  5280.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -1286801064, B = -1084931193: Result = 1396090613519189352, Latency = 20 cycles
+  5300.00ns INFO     ..gned_sequential_booth_multiplier All tests completed.
+  5300.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier passed
+  5300.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.verify_specific_scenarios (2/2)
+                                                            Test specific scenarios derived from result tables.
+  5531.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 20, got 20
+  5531.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=120, B=-64: Expected -7680, got -7680
+  5761.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 20, got 20
+  5761.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-114, B=-38: Expected 4332, got 4332
+  5991.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 20, got 20
+  5991.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-94, B=-57: Expected 5358, got 5358
+  6221.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 20, got 20
+  6221.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=89, B=-120: Expected -10680, got -10680
+  6241.00ns INFO     ..gned_sequential_booth_multiplier All scenarios verified.
+  6241.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.verify_specific_scenarios passed
+  6241.00ns INFO     cocotb.regression                  *****************************************************************************************************************************************
+                                                        ** TEST                                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************************************
+                                                        ** test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier   PASS        5300.00           0.01     420557.18  **
+                                                        ** test_signed_sequential_booth_multiplier.verify_specific_scenarios                 PASS         940.00           0.00     420190.32  **
+                                                        *****************************************************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                                                                  6241.00           0.02     369033.47  **
+                                                        *****************************************************************************************************************************************
+Running with: WIDTH = 32
+PASSED
+../../src/test_runner.py::test[64]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257430
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier (1/2)
+                                                            Testbench for the signed sequential booth multiplier using cocotb.
+   380.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   380.00ns INFO     ..gned_sequential_booth_multiplier MAX Test passed for A = 9223372036854775807, B = 9223372036854775807: Result = 85070591730234615847396907784232501249, Latency = 36 cycles
+   400.00ns INFO     ..gned_sequential_booth_multiplier MAX testcase completed.
+   770.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+   770.00ns INFO     ..gned_sequential_booth_multiplier MINI Test passed for A = -9223372036854775808, B = -9223372036854775808: Result = 85070591730234615865843651857942052864, Latency = 36 cycles
+   790.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+  1160.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1160.00ns INFO     ..gned_sequential_booth_multiplier ZERO Test passed for A = 0, B = 0: Result = 0, Latency = 36 cycles
+  1180.00ns INFO     ..gned_sequential_booth_multiplier MINI testcase completed.
+  1550.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1550.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 8816096638220053756, B = 7582262936676690877: Result = 66845962786135886771880267511134784012, Latency = 36 cycles
+  1940.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  1940.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 707330879183970821, B = -287342801649065804: Result = -203246436517619055799980505844905084, Latency = 36 cycles
+  2330.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2330.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -6191152651805398241, B = -640602763152766153: Result = 3966069495847113624751999076910536873, Latency = 36 cycles
+  2720.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  2720.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 6022262409784826270, B = -576253510787133094: Result = -3470349856519886526321533876157579380, Latency = 36 cycles
+  3110.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3110.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -5390614484758470754, B = 2558413385583484824: Result = -13791420254326291813055789280406837296, Latency = 36 cycles
+  3500.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3500.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -7307903934089346709, B = 3188515506146171856: Result = -23301365011270493852572111232282021904, Latency = 36 cycles
+  3890.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  3890.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -9057978515332492291, B = 7817220529352476337: Result = -70808215604490823085648537158812418067, Latency = 36 cycles
+  4280.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  4280.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 231244348517854218, B = 7992533746189613623: Result = 1848228259144581999594185646460811814, Latency = 36 cycles
+  4670.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  4670.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 8973174329436943409, B = -8043806927833010960: Result = -72178481835778217965432818631596762640, Latency = 36 cycles
+  5060.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  5060.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -4519419120065060916, B = -2989820274782362516: Result = 13512250915409583439334418125935024656, Latency = 36 cycles
+  5450.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  5450.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 569026156307010467, B = 1484500411900492265: Result = 844719563419910932779945827807537755, Latency = 36 cycles
+  5840.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  5840.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -383260305162861791, B = -5526768486330262863: Result = 2118190976635424289729658842368967633, Latency = 36 cycles
+  6230.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  6230.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 1894021980925796513, B = -275485109652241350: Result = -521774853099098427064340684464412550, Latency = 36 cycles
+  6620.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  6620.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -2450365872374295516, B = 5789983050178849079: Result = -14187576867783879972818178096310429764, Latency = 36 cycles
+  7010.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  7010.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -201346719359359158, B = -6892859488001781916: Result = 1387854644914190836760765055833386728, Latency = 36 cycles
+  7400.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  7400.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -8455785118559165974, B = -7515710391037966852: Result = 63551232079939330201225574141778293848, Latency = 36 cycles
+  7790.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  7790.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 508229704111279605, B = 6227149982527849160: Result = 3164822593076688740674904596024381800, Latency = 36 cycles
+  8180.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  8180.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -6389081816964091292, B = -1534814933892807831: Result = 9806058186539482318822112787296507652, Latency = 36 cycles
+  8570.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  8570.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = 8121160969936379278, B = 5089362958370914030: Result = 41331535819361812857729795605611470340, Latency = 36 cycles
+  8960.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS
+  8960.00ns INFO     ..gned_sequential_booth_multiplier Random Test passed for A = -3395374521838979950, B = 7399917829985370866: Result = -25125492463634320732157340135888136700, Latency = 36 cycles
+  8980.00ns INFO     ..gned_sequential_booth_multiplier All tests completed.
+  8980.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier passed
+  8980.00ns INFO     cocotb.regression                  running test_signed_sequential_booth_multiplier.verify_specific_scenarios (2/2)
+                                                            Test specific scenarios derived from result tables.
+  9371.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 36, got 36
+  9371.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=120, B=-64: Expected -7680, got -7680
+  9761.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 36, got 36
+  9761.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-114, B=-38: Expected 4332, got 4332
+ 10151.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 36, got 36
+ 10151.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=-94, B=-57: Expected 5358, got 5358
+ 10541.00ns INFO     ..gned_sequential_booth_multiplier Latency PASS Expected 36, got 36
+ 10541.00ns INFO     ..gned_sequential_booth_multiplier Result PASS for A=89, B=-120: Expected -10680, got -10680
+ 10561.00ns INFO     ..gned_sequential_booth_multiplier All scenarios verified.
+ 10561.00ns INFO     cocotb.regression                  test_signed_sequential_booth_multiplier.verify_specific_scenarios passed
+ 10561.00ns INFO     cocotb.regression                  *****************************************************************************************************************************************
+                                                        ** TEST                                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************************************
+                                                        ** test_signed_sequential_booth_multiplier.test_signed_sequential_booth_multiplier   PASS        8980.00           0.02     429273.09  **
+                                                        ** test_signed_sequential_booth_multiplier.verify_specific_scenarios                 PASS        1580.00           0.00     414420.63  **
+                                                        *****************************************************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                                                                 10561.00           0.03     392170.45  **
+                                                        *****************************************************************************************************************************************
+Running with: WIDTH = 64
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-0xbiewgg'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-tko5psh9'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 5 passed, 2 warnings in 1.22s =========================
+Cleaning up Docker resources...

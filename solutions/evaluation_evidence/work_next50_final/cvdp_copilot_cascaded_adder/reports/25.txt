@@ -1,0 +1,125 @@
+Running harness with project name: cvdp_copilot_cascaded_adder_25_1790258466
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test_tree_adder[1-9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258467
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cascaded_adder.test_cascaded_adder (1/1)
+     0.00ns WARNING  py.warnings                        /src/test_cascaded_adder.py:11: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.cascaded_adder              DUT_CLK STARTED
+    35.00ns INFO     cocotb.cascaded_adder              DUT IS OUT OF RESET
+  1052.00ns INFO     cocotb.regression                  test_cascaded_adder.test_cascaded_adder passed
+  1052.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_cascaded_adder.test_cascaded_adder   PASS        1052.00           0.01     152741.89  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1052.00           0.01     141636.69  **
+                                                        *************************************************************************************************
+Running with: IN_DATA_NS = 2, IN_DATA_WIDTH = 9, REG = 1, NUM_STAGES=1
+PASSED
+../../src/test_runner.py::test_tree_adder[7-2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258467
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cascaded_adder.test_cascaded_adder (1/1)
+     0.00ns WARNING  py.warnings                        /src/test_cascaded_adder.py:11: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.cascaded_adder              DUT_CLK STARTED
+    35.00ns INFO     cocotb.cascaded_adder              DUT IS OUT OF RESET
+  1868.00ns INFO     cocotb.regression                  test_cascaded_adder.test_cascaded_adder passed
+  1868.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_cascaded_adder.test_cascaded_adder   PASS        1868.00           0.03      71711.94  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1868.00           0.03      70140.37  **
+                                                        *************************************************************************************************
+Running with: IN_DATA_NS = 128, IN_DATA_WIDTH = 2, REG = 55, NUM_STAGES=7
+PASSED
+../../src/test_runner.py::test_tree_adder[2-13]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258467
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cascaded_adder.test_cascaded_adder (1/1)
+     0.00ns WARNING  py.warnings                        /src/test_cascaded_adder.py:11: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.cascaded_adder              DUT_CLK STARTED
+    35.00ns INFO     cocotb.cascaded_adder              DUT IS OUT OF RESET
+   848.00ns INFO     cocotb.regression                  test_cascaded_adder.test_cascaded_adder passed
+   848.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_cascaded_adder.test_cascaded_adder   PASS         848.00           0.01     139328.18  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                           848.00           0.01     127592.55  **
+                                                        *************************************************************************************************
+Running with: IN_DATA_NS = 4, IN_DATA_WIDTH = 13, REG = 0, NUM_STAGES=2
+PASSED
+../../src/test_runner.py::test_tree_adder[5-1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258468
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cascaded_adder.test_cascaded_adder (1/1)
+     0.00ns WARNING  py.warnings                        /src/test_cascaded_adder.py:11: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.cascaded_adder              DUT_CLK STARTED
+    35.00ns INFO     cocotb.cascaded_adder              DUT IS OUT OF RESET
+  2478.00ns INFO     cocotb.regression                  test_cascaded_adder.test_cascaded_adder passed
+  2478.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_cascaded_adder.test_cascaded_adder   PASS        2478.00           0.01     193370.77  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          2478.00           0.01     185138.41  **
+                                                        *************************************************************************************************
+Running with: IN_DATA_NS = 32, IN_DATA_WIDTH = 1, REG = 27, NUM_STAGES=5
+PASSED
+../../src/test_runner.py::test_tree_adder[3-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258468
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cascaded_adder.test_cascaded_adder (1/1)
+     0.00ns WARNING  py.warnings                        /src/test_cascaded_adder.py:11: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.cascaded_adder              DUT_CLK STARTED
+    35.00ns INFO     cocotb.cascaded_adder              DUT IS OUT OF RESET
+  1866.00ns INFO     cocotb.regression                  test_cascaded_adder.test_cascaded_adder passed
+  1866.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_cascaded_adder.test_cascaded_adder   PASS        1866.00           0.01     221753.59  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1866.00           0.01     207854.98  **
+                                                        *************************************************************************************************
+Running with: IN_DATA_NS = 8, IN_DATA_WIDTH = 8, REG = 3, NUM_STAGES=3
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-vtvepiy7'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-xkksxiol'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 5 passed, 2 warnings in 1.17s =========================
+Cleaning up Docker resources...

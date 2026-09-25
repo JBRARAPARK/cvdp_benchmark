@@ -1,0 +1,742 @@
+Running harness with project name: cvdp_copilot_vending_machine_1_1790201812
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_vending_machine1[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201813
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 15
+   140.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   140.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   140.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         140.00           0.00     105726.06  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             140.00           0.00      31694.42  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201814
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 5
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 17
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     135937.96  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.00      46276.17  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201814
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 5
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 17
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     146143.00  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.01      43852.62  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201814
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 5
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 17
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     111241.34  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.01      42621.10  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201814
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 5
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 17
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     134884.79  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.00      47066.92  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201815
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 29
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     141373.81  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.00      46514.11  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201815
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 29
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     144744.61  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.01      43382.55  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201815
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 29
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     131090.62  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.00      45408.54  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201815
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   200.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 29
+   220.00ns WARNING  ..ing_machine.test_vending_machine Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 37, in check_dispense
+                                                            assert dut.return_change.value == 0, "Change should not be returned change in this clock cycle"
+                                                        AssertionError: Change should not be returned change in this clock cycle
+                                                        assert Logic('1') == 0
+                                                         +  where Logic('1') = LogicObject(vending_machine.return_change).value
+                                                         +    where LogicObject(vending_machine.return_change) = HierarchyObject(vending_machine).return_change
+   220.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   220.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         220.00           0.00     138779.80  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             220.00           0.01      42248.38  **
+                                                        ***************************************************************************************************
+FAILED
+../../src/test_runner.py::test_vending_machine1[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201816
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 1, expected price: 5
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   120.00ns WARNING  ..ing_machine.test_vending_machine Dispensed item ID mismatch, got 000, expected 1
+                                                        assert LogicArray('000', Range(2, 'downto', 0)) == 1
+                                                         +  where LogicArray('000', Range(2, 'downto', 0)) = LogicArrayObject(vending_machine.dispense_item_id).value
+                                                         +    where LogicArrayObject(vending_machine.dispense_item_id) = HierarchyObject(vending_machine).dispense_item_id
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_vending_machine.py", line 254, in test_vending_machine
+                                                            await random_purchase(dut)
+                                                          File "/src/test_vending_machine.py", line 71, in random_purchase
+                                                            await check_dispense(dut, item_id)
+                                                          File "/src/test_vending_machine.py", line 35, in check_dispense
+                                                            assert dut.dispense_item_id.value == expected_item_id, f"Dispensed item ID mismatch, got {dut.dispense_item_id.value}, expected {expected_item_id}"
+                                                        AssertionError: Dispensed item ID mismatch, got 000, expected 1
+                                                        assert LogicArray('000', Range(2, 'downto', 0)) == 1
+                                                         +  where LogicArray('000', Range(2, 'downto', 0)) = LogicArrayObject(vending_machine.dispense_item_id).value
+                                                         +    where LogicArrayObject(vending_machine.dispense_item_id) = HierarchyObject(vending_machine).dispense_item_id
+   120.00ns WARNING  cocotb.regression                  test_vending_machine.test_vending_machine failed
+   120.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   FAIL         120.00           0.00     103905.14  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             120.00           0.00      27487.11  **
+                                                        ***************************************************************************************************
+FAILED
+
+=================================== FAILURES ===================================
+___________________________ test_vending_machine1[0] ___________________________
+
+test = 0
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[1] ___________________________
+
+test = 1
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[2] ___________________________
+
+test = 2
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[3] ___________________________
+
+test = 3
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[4] ___________________________
+
+test = 4
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[5] ___________________________
+
+test = 5
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[6] ___________________________
+
+test = 6
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[7] ___________________________
+
+test = 7
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[8] ___________________________
+
+test = 8
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+___________________________ test_vending_machine1[9] ___________________________
+
+test = 9
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_vending_machine1(test):
+>           runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: 1
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s vending_machine -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/vending_machine.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_vending_machine1[0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[2] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[3] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[5] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[6] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[7] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[8] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_vending_machine1[9] - SystemExit: 1
+============================== 10 failed in 2.37s ==============================
+Cleaning up Docker resources...

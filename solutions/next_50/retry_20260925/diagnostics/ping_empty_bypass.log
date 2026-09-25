@@ -1,0 +1,2 @@
+PASS: 600 empty simultaneous transfers and bank wrapping
+solutions/next_50/retry_20260925/diagnostics/ping_empty_bypass.sv:7: $finish called at 6021000 (1ps)

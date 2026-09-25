@@ -1,0 +1,50 @@
+# 46. 클록 지터 검출기
+
+ID: `cvdp_copilot_clock_jitter_detection_module_0003`
+
+난이도: easy / 분류: cid002 / 묶음: 5
+
+선정 이유: 주기 측정과 임계 비교
+
+## 문제 원문
+
+The clock_jitter_detection_module is a SystemVerilog RTL module designed to detect clock jitter by measuring the number of cycles between consecutive rising edges of the input system clock (system_clk) based on the primary input clock (clk). The module includes a configurable parameter, JITTER_THRESHOLD which user gives, it specifies the acceptable number of clock cycles of primary clock between rising edges of system clock before jitter is flagged. 
+Upon detecting a rising edge, the module resets an internal counter (edge_count) and begins counting the number of clk cycles until the next rising edge is observed. The previous edge count is stored in edge_count_r for comparison. If the measured time between edges (edge_count_r) deviates from the JITTER_THRESHOLD by more than one clock cycle, the module asserts the active-high output signal jitter_detected, indicating the presence of jitter. 
+The module supports an active-high reset (rst), which clears all internal states, including counters and flags, ensuring proper initialization. The jitter_detected signal remains asserted for one clock cycle when jitter is detected and resets on the next clock cycle unless additional jitter is identified. The design ensures synchronous operation on the positive edge of clk, with precise timing and edge detection logic to maintain accuracy. The implementation includes provisions for starting and stopping the counter based on edge detection, resetting the counter on new edges, and comparing the recorded edge timings to detect any variations that exceed the defined threshold, effectively identifying jitter in the input system clock. 
+
+
+```verilog
+module clock_jitter_detection_module #(
+    parameter JITTER_THRESHOLD = 5    // Threshold (in clock cycles) for detecting jitter
+)(
+    input logic clk,               // Input clock
+    input logic system_clk,        // Input system clock
+    input logic rst,               // Active high reset
+    output logic jitter_detected   // Output flag indicating jitter detection
+);
+
+    // Internal signals
+    logic [31:0] edge_count, edge_count_r;   // Counters to measure time between rising edges
+    logic prev_system_clk;                   // To store the previous clock state (rising edge detection)
+    logic edge_detected;                     // Flag for detecting rising edges
+    logic start_counter;
+
+    // Rising edge detection logic (detects when clock transitions from 0 to 1)
+    always @(posedge clk) begin
+        if (rst) begin
+            // Insert code to initialize counters, edge detection, and jitter detection on reset
+        end else begin
+            prev_system_clk <= system_clk;
+
+            // Insert code to detect rising edge transitions of system_clk
+            // Insert code to reset and increment edge_count as necessary
+
+            // Insert code to compare edge_count_r with JITTER_THRESHOLD and detect jitter
+        end
+    end
+
+endmodule
+```
+
+## 제공 코드·문서
+

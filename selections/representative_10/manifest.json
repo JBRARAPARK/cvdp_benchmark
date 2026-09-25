@@ -1,0 +1,17 @@
+{
+  "source": "datasets/cvdp_v1.1.0_nonagentic_code_generation_no_commercial.jsonl",
+  "source_sha256": "cbcd81295561ebb16e4d857e096f4d9908d042c33aff3b58abf236e868411857",
+  "ids": [
+    "cvdp_copilot_8x3_priority_encoder_0001",
+    "cvdp_copilot_vending_machine_0001",
+    "cvdp_copilot_FIR_0001",
+    "cvdp_copilot_axi_register_0001",
+    "cvdp_copilot_GFCM_0003",
+    "cvdp_copilot_MSHR_0001",
+    "cvdp_copilot_rs_232_0001",
+    "cvdp_copilot_32_bit_Brent_Kung_PP_adder_0001",
+    "cvdp_copilot_sigma_delta_audio_0007",
+    "cvdp_copilot_vga_controller_0026"
+  ],
+  "selection": "purposeful diversity sample; not statistical representation"
+}

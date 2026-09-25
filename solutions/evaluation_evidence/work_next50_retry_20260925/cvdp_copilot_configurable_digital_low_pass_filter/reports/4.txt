@@ -1,0 +1,789 @@
+Running harness with project name: cvdp_copilot_configurable_digital_low_pass_filter_4_1790291174
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 32 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291175
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     104484.44  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      78960.45  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291175
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     118722.72  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      87957.24  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291175
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     113960.91  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      85241.83  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291175
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      76266.68  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      61784.78  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291176
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     103758.26  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      78988.78  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291176
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     121256.04  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      82172.20  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 8, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291176
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     106274.59  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      78272.80  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291176
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     109430.22  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      80270.10  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=23 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=23
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 8, 'DEC_FACTOR': 23}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291177
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     100766.94  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      75813.72  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291177
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     121624.39  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      89603.65  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291177
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     124179.31  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      91693.09  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=8 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=8
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291177
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      71914.10  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      58975.82  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291177
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     118196.97  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      87096.20  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 11, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291178
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     115621.40  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      85332.67  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 11, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291178
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     115363.96  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      85556.47  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 11, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291178
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      89832.11  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      70804.17  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=23 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=23
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 11, 'DEC_FACTOR': 23}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291178
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     110004.23  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      83599.45  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291179
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     120873.31  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      89603.65  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291179
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     122384.86  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      90080.16  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=8 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=8
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291179
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      74866.45  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      61607.60  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291179
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     116554.70  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      85923.70  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291180
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     116462.23  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      87338.01  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 8, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291180
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     115515.26  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      86116.92  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 8, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291180
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     120691.13  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      87572.46  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=23 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=8
+[DEBUG] Running simulation with DEC_FACTOR=23
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 8, 'DEC_FACTOR': 23}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291180
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     110224.48  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      82774.54  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291181
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     120906.50  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      88979.07  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=4 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=4
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 16, 'DEC_FACTOR': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291181
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     116554.70  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      87078.98  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 16, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291181
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      73590.43  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      60370.38  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=16
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 16, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291181
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      93206.76  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      69689.36  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=2 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=2
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 11, 'DEC_FACTOR': 2}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291182
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00      89521.68  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      69871.79  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=4
+[DEBUG] Running simulation with N=4
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 4, 'DATA_WIDTH': 11, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291182
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     107888.76  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      81180.08  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=1 for N=8
+[DEBUG] Running simulation with N=8
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=1
+[DEBUG] Parameters: {'N': 8, 'DATA_WIDTH': 11, 'DEC_FACTOR': 1}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291182
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 (1/1)
+    30.00ns WARNING  py.warnings                        /src/harness_library.py:25: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          unsigned_value = (signal.value.signed_integer >> (width * i)) & ((1 << width) - 1)
+    30.00ns WARNING  py.warnings                        /src/test_advanced_decimator_with_adaptive_peak_detection.py:63: DeprecationWarning: `logic_array.signed_integer` getter is deprecated. Use `logic_array.to_signed()` instead.
+                                                          peak_value = dut.peak_value.value.signed_integer
+   210.00ns INFO     cocotb.regression                  test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0 passed
+   210.00ns INFO     cocotb.regression                  *********************************************************************************************************************************************************************
+                                                        ** TEST                                                                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** test_advanced_decimator_with_adaptive_peak_detection.test_advanced_decimator_with_adaptive_peak_detection_0   PASS         210.00           0.00     115925.75  **
+                                                        *********************************************************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                                                               210.00           0.00      86404.14  **
+                                                        *********************************************************************************************************************************************************************
+[DEBUG] Selected DEC_FACTOR=23 for N=23
+[DEBUG] Running simulation with N=23
+[DEBUG] Running simulation with DATA_WIDTH=11
+[DEBUG] Running simulation with DEC_FACTOR=23
+[DEBUG] Parameters: {'N': 23, 'DATA_WIDTH': 11, 'DEC_FACTOR': 23}
+.
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-7yv_o733'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-cfi_9b75'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 32 passed, 2 warnings in 7.66s ========================
+Cleaning up Docker resources...

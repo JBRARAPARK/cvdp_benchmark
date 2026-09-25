@@ -1,0 +1,104 @@
+Running harness with project name: cvdp_copilot_neuromorphic_array_1_1790257975
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_neuromorphic_array[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257976
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_neuromorphic_array.test_neuromorphic_array (1/1)
+                                                            Test the neuromorphic_array with various inputs and control signals.
+test 0
+control_signal=0,input_data=0
+expected_output=0,actual_output=0
+
+Test passed! 
+test 1
+control_signal=0,input_data=241
+expected_output=0,actual_output=0
+
+Test passed! 
+test 2
+control_signal=1,input_data=15
+expected_output=15,actual_output=0
+
+   125.00ns WARNING  ..ic_array.test_neuromorphic_array Expected=00001111, Got=00000000
+                                                        assert 0 == 15
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(neuromorphic_array.uo_out).value
+                                                         +      where LogicArrayObject(neuromorphic_array.uo_out) = HierarchyObject(neuromorphic_array).uo_out
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_neuromorphic_array.py", line 33, in test_neuromorphic_array
+                                                            await apply_test_case(dut,  random.randint(0, 1), 0xF)
+                                                          File "/src/test_neuromorphic_array.py", line 69, in apply_test_case
+                                                            assert int(dut.uo_out.value) == expected_output, (
+                                                        AssertionError: Expected=00001111, Got=00000000
+                                                        assert 0 == 15
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(neuromorphic_array.uo_out).value
+                                                         +      where LogicArrayObject(neuromorphic_array.uo_out) = HierarchyObject(neuromorphic_array).uo_out
+   125.00ns WARNING  cocotb.regression                  test_neuromorphic_array.test_neuromorphic_array failed
+   125.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_neuromorphic_array.test_neuromorphic_array   FAIL         125.00           0.00      97669.15  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                   125.00           0.00      29517.40  **
+                                                        *********************************************************************************************************
+FAILED
+
+=================================== FAILURES ===================================
+__________________________ test_neuromorphic_array[0] __________________________
+
+test = 0
+
+    @pytest.mark.parametrize("test", range(1))
+    def test_neuromorphic_array(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s neuromorphic_array -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/neuromorphic_array.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-e54dr1pn'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-j9jr0pn5'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-wdnc0gxj'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_neuromorphic_array[0] - SystemExit: 1
+======================== 1 failed, 3 warnings in 0.30s =========================
+Cleaning up Docker resources...

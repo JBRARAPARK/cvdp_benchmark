@@ -1,0 +1,759 @@
+{
+  "cvdp_copilot_bcd_adder_0001": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_bcd_adder/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.8665308952331543,
+        "pid": 38476
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_bcd_adder_0001.sv"
+  },
+  "cvdp_copilot_rounding_0001": {
+    "run": "work_next50_r1",
+    "revision": "revised_r1",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r1/cvdp_copilot_rounding/reports/1.txt",
+        "error_msg": null,
+        "execution": 2.3991010189056396,
+        "pid": 40537
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r1/cvdp_copilot_rounding_0001.sv"
+  },
+  "cvdp_copilot_dot_product_0002": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_dot_product/reports/2.txt",
+        "error_msg": null,
+        "execution": 1.144603967666626,
+        "pid": 38508
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_dot_product_0002.sv"
+  },
+  "cvdp_copilot_modified_booth_mul_0002": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_modified_booth_mul/reports/2.txt",
+        "error_msg": null,
+        "execution": 1.9778709411621094,
+        "pid": 38521
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_modified_booth_mul_0002.sv"
+  },
+  "cvdp_copilot_montgomery_0001": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_montgomery/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.9344079494476318,
+        "pid": 38533
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_montgomery_0001.sv"
+  },
+  "cvdp_copilot_square_root_0003": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_square_root/reports/3.txt",
+        "error_msg": null,
+        "execution": 2.0799410343170166,
+        "pid": 38546
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_square_root_0003.sv"
+  },
+  "cvdp_copilot_matrix_multiplier_0007": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_matrix_multiplier/reports/7.txt",
+        "error_msg": null,
+        "execution": 8.87283992767334,
+        "pid": 38563
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_matrix_multiplier_0007.sv"
+  },
+  "cvdp_copilot_kogge_stone_adder_0007": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_kogge_stone_adder/reports/7.txt",
+        "error_msg": null,
+        "execution": 1.4571480751037598,
+        "pid": 38577
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_kogge_stone_adder_0007.sv"
+  },
+  "cvdp_copilot_signed_adder_0001": {
+    "run": "work_next50_batch01_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch01_first/cvdp_copilot_signed_adder/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.1910960674285889,
+        "pid": 38588
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_signed_adder_0001.sv"
+  },
+  "cvdp_copilot_cascaded_adder_0025": {
+    "run": "work_next50_r3",
+    "revision": "revised_r3",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r3/cvdp_copilot_cascaded_adder/reports/25.txt",
+        "error_msg": null,
+        "execution": 3.11193585395813,
+        "pid": 41293
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r3/cvdp_copilot_cascaded_adder_0025.sv"
+  },
+  "cvdp_copilot_64b66b_encoder_0001": {
+    "run": "work_next50_batch02_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch02_first/cvdp_copilot_64b66b_encoder/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.1807539463043213,
+        "pid": 38866
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_64b66b_encoder_0001.sv"
+  },
+  "cvdp_copilot_64b66b_decoder_0011": {
+    "run": "work_next50_r5",
+    "revision": "revised_r5",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r5/cvdp_copilot_64b66b_decoder/reports/11.txt",
+        "error_msg": null,
+        "execution": 1.2647979259490967,
+        "pid": 41892
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_64b66b_decoder_0011.sv"
+  },
+  "cvdp_copilot_convolutional_encoder_0001": {
+    "run": "work_next50_r1",
+    "revision": "revised_r1",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r1/cvdp_copilot_convolutional_encoder/reports/1.txt",
+        "error_msg": null,
+        "execution": 0.9171562194824219,
+        "pid": 40589
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r1/cvdp_copilot_convolutional_encoder_0001.sv"
+  },
+  "cvdp_copilot_reed_solomon_encoder_and_decoder_0005": {
+    "run": "work_next50_r1",
+    "revision": "revised_r1",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r1/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+        "error_msg": null,
+        "execution": 2.9937968254089355,
+        "pid": 40601
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r1/cvdp_copilot_reed_solomon_encoder_and_decoder_0005.sv"
+  },
+  "cvdp_copilot_huffman_0001": {
+    "run": "work_next50_r5",
+    "revision": "revised_r5",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r5/cvdp_copilot_huffman/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.3235177993774414,
+        "pid": 41907
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_huffman_0001.sv"
+  },
+  "cvdp_copilot_prbs_gen_0003": {
+    "run": "work_next50_r1",
+    "revision": "revised_r1",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r1/cvdp_copilot_prbs_gen/reports/3.txt",
+        "error_msg": null,
+        "execution": 13.391184091567993,
+        "pid": 40638
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r1/cvdp_copilot_prbs_gen_0003.sv"
+  },
+  "cvdp_copilot_serial_in_parallel_out_0014": {
+    "run": "work_next50_r1",
+    "revision": "revised_r1",
+    "passed": false,
+    "tests": [
+      {
+        "result": 1,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r1/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+        "error_msg": null,
+        "execution": 5.373043060302734,
+        "pid": 40672
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r1/cvdp_copilot_serial_in_parallel_out_0014.sv"
+  },
+  "cvdp_copilot_ir_receiver_0005": {
+    "run": "work_next50_r2",
+    "revision": "revised_r2",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r2/cvdp_copilot_ir_receiver/reports/5.txt",
+        "error_msg": null,
+        "execution": 2.153527021408081,
+        "pid": 40751
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r2/cvdp_copilot_ir_receiver_0005.sv"
+  },
+  "cvdp_copilot_dbi_0001": {
+    "run": "work_next50_batch02_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch02_first/cvdp_copilot_dbi/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.0267839431762695,
+        "pid": 39041
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_dbi_0001.sv"
+  },
+  "cvdp_copilot_packet_controller_0001": {
+    "run": "work_next50_batch02_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch02_first/cvdp_copilot_packet_controller/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.7824859619140625,
+        "pid": 39054
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_packet_controller_0001.sv"
+  },
+  "cvdp_copilot_data_width_converter_0003": {
+    "run": "work_next50_batch03_first_valid",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch03_first_valid/cvdp_copilot_data_width_converter/reports/3.txt",
+        "error_msg": null,
+        "execution": 1.0704729557037354,
+        "pid": 39272
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_data_width_converter_0003.sv"
+  },
+  "cvdp_copilot_ping_pong_buffer_0001": {
+    "run": "work_next50_r5",
+    "revision": "revised_r5",
+    "passed": false,
+    "tests": [
+      {
+        "result": 1,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r5/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.1387760639190674,
+        "pid": 41920
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_ping_pong_buffer_0001.sv"
+  },
+  "cvdp_copilot_bit_synchronizer_0001": {
+    "run": "work_next50_batch03_first_valid",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch03_first_valid/cvdp_copilot_bit_synchronizer/reports/1.txt",
+        "error_msg": null,
+        "execution": 9.601662874221802,
+        "pid": 39301
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_bit_synchronizer_0001.sv"
+  },
+  "cvdp_copilot_mux_synch_0011": {
+    "run": "work_next50_batch03_first_valid",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch03_first_valid/cvdp_copilot_mux_synch/reports/11.txt",
+        "error_msg": null,
+        "execution": 1.0766239166259766,
+        "pid": 39324
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_mux_synch_0011.sv"
+  },
+  "cvdp_copilot_sync_lifo_0001": {
+    "run": "work_next50_batch03_first_valid",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch03_first_valid/cvdp_copilot_sync_lifo/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.9922020435333252,
+        "pid": 39336
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_sync_lifo_0001.sv"
+  },
+  "cvdp_copilot_crossbar_switch_0001": {
+    "run": "work_next50_batch03_first_valid",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch03_first_valid/cvdp_copilot_crossbar_switch/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.4027841091156006,
+        "pid": 39349
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_crossbar_switch_0001.sv"
+  },
+  "cvdp_copilot_axis_mux_0001": {
+    "run": "work_next50_batch03_first_valid",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch03_first_valid/cvdp_copilot_axis_mux/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.6559650897979736,
+        "pid": 39362
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_axis_mux_0001.sv"
+  },
+  "cvdp_copilot_axis_joiner_0001": {
+    "run": "work_next50_r2",
+    "revision": "revised_r2",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r2/cvdp_copilot_axis_joiner/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.0865638256072998,
+        "pid": 40770
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r2/cvdp_copilot_axis_joiner_0001.sv"
+  },
+  "cvdp_copilot_axi_tap_0001": {
+    "run": "work_next50_r6",
+    "revision": "revised_r6",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r6/cvdp_copilot_axi_tap/reports/1.txt",
+        "error_msg": null,
+        "execution": 5.897479772567749,
+        "pid": 42218
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r6/cvdp_copilot_axi_tap_0001.sv"
+  },
+  "cvdp_copilot_wb2ahb_0001": {
+    "run": "work_next50_batch03_first_valid",
+    "revision": "first",
+    "passed": false,
+    "tests": [
+      {
+        "result": 1,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch03_first_valid/cvdp_copilot_wb2ahb/reports/1.txt",
+        "error_msg": null,
+        "execution": 0.9712917804718018,
+        "pid": 39434
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_wb2ahb_0001.sv"
+  },
+  "cvdp_copilot_perf_counters_0001": {
+    "run": "work_next50_r3",
+    "revision": "revised_r3",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r3/cvdp_copilot_perf_counters/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.752333164215088,
+        "pid": 41342
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r3/cvdp_copilot_perf_counters_0001.sv"
+  },
+  "cvdp_copilot_write_buffer_merge_0001": {
+    "run": "work_next50_r1",
+    "revision": "revised_r1",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r1/cvdp_copilot_write_buffer_merge/reports/1.txt",
+        "error_msg": null,
+        "execution": 4.623549938201904,
+        "pid": 41164
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r1/cvdp_copilot_write_buffer_merge_0001.sv"
+  },
+  "cvdp_copilot_cache_lru_0008": {
+    "run": "work_next50_batch04_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch04_first/cvdp_copilot_cache_lru/reports/8.txt",
+        "error_msg": null,
+        "execution": 1.5454299449920654,
+        "pid": 39614
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_cache_lru_0008.sv"
+  },
+  "cvdp_copilot_virtual2physical_tlb_0001": {
+    "run": "work_next50_r2",
+    "revision": "revised_r2",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r2/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+        "error_msg": null,
+        "execution": 3.543256998062134,
+        "pid": 40781
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r2/cvdp_copilot_virtual2physical_tlb_0001.sv"
+  },
+  "cvdp_copilot_icache_controller_0001": {
+    "run": "work_next50_r4",
+    "revision": "revised_r4",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r4/cvdp_copilot_icache_controller/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.9935932159423828,
+        "pid": 41535
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r4/cvdp_copilot_icache_controller_0001.sv"
+  },
+  "cvdp_copilot_static_branch_predict_0001": {
+    "run": "work_next50_r4",
+    "revision": "revised_r4",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r4/cvdp_copilot_static_branch_predict/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.3516747951507568,
+        "pid": 41552
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r4/cvdp_copilot_static_branch_predict_0001.sv"
+  },
+  "cvdp_copilot_mem_allocator_0001": {
+    "run": "work_next50_batch04_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch04_first/cvdp_copilot_mem_allocator/reports/1.txt",
+        "error_msg": null,
+        "execution": 3.582876205444336,
+        "pid": 39676
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_mem_allocator_0001.sv"
+  },
+  "cvdp_copilot_microcode_sequencer_0001": {
+    "run": "work_next50_r5",
+    "revision": "revised_r5",
+    "passed": false,
+    "tests": [
+      {
+        "result": 1,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r5/cvdp_copilot_microcode_sequencer/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.0771238803863525,
+        "pid": 41931
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_microcode_sequencer_0001.sv"
+  },
+  "cvdp_copilot_register_file_2R1W_0006": {
+    "run": "work_next50_r2",
+    "revision": "revised_r2",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r2/cvdp_copilot_register_file_2R1W/reports/6.txt",
+        "error_msg": null,
+        "execution": 1.3568410873413086,
+        "pid": 40801
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r2/cvdp_copilot_register_file_2R1W_0006.sv"
+  },
+  "cvdp_copilot_apb_history_shift_register_0001": {
+    "run": "work_next50_r2",
+    "revision": "revised_r2",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r2/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.036182165145874,
+        "pid": 40821
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r2/cvdp_copilot_apb_history_shift_register_0001.sv"
+  },
+  "cvdp_copilot_configurable_digital_low_pass_filter_0001": {
+    "run": "work_next50_batch05_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_configurable_digital_low_pass_filter/reports/1.txt",
+        "error_msg": null,
+        "execution": 31.091418981552124,
+        "pid": 40167
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_configurable_digital_low_pass_filter_0001.sv"
+  },
+  "cvdp_copilot_configurable_digital_low_pass_filter_0004": {
+    "run": "work_next50_batch05_first",
+    "revision": "first",
+    "passed": false,
+    "tests": [
+      {
+        "result": 1,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+        "error_msg": null,
+        "execution": 8.16101884841919,
+        "pid": 40285
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_configurable_digital_low_pass_filter_0004.sv"
+  },
+  "cvdp_copilot_neuromorphic_array_0001": {
+    "run": "work_next50_batch05_first",
+    "revision": "first",
+    "passed": false,
+    "tests": [
+      {
+        "result": 1,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_neuromorphic_array/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.1311509609222412,
+        "pid": 40311
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_neuromorphic_array_0001.sv"
+  },
+  "cvdp_copilot_sobel_filter_0011": {
+    "run": "work_next50_batch05_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_sobel_filter/reports/11.txt",
+        "error_msg": null,
+        "execution": 1.0316801071166992,
+        "pid": 40330
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_sobel_filter_0011.sv"
+  },
+  "cvdp_copilot_line_buffer_0003": {
+    "run": "work_next50_batch05_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_line_buffer/reports/3.txt",
+        "error_msg": null,
+        "execution": 22.59430694580078,
+        "pid": 40349
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_line_buffer_0003.sv"
+  },
+  "cvdp_copilot_clock_jitter_detection_module_0003": {
+    "run": "work_next50_batch05_first",
+    "revision": "first",
+    "passed": false,
+    "tests": [
+      {
+        "result": 1,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+        "error_msg": null,
+        "execution": 2.1636810302734375,
+        "pid": 40433
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_clock_jitter_detection_module_0003.sv"
+  },
+  "cvdp_copilot_thermostat_0001": {
+    "run": "work_next50_r3",
+    "revision": "revised_r3",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r3/cvdp_copilot_thermostat/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.02162504196167,
+        "pid": 41360
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r3/cvdp_copilot_thermostat_0001.sv"
+  },
+  "cvdp_copilot_ttc_lite_0001": {
+    "run": "work_next50_r3",
+    "revision": "revised_r3",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r3/cvdp_copilot_ttc_lite/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.0326530933380127,
+        "pid": 41373
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r3/cvdp_copilot_ttc_lite_0001.sv"
+  },
+  "cvdp_copilot_axi_alu_0001": {
+    "run": "work_next50_r6",
+    "revision": "revised_r6",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_r6/cvdp_copilot_axi_alu/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.43906831741333,
+        "pid": 42249
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r6/cvdp_copilot_axi_alu_0001.sv"
+  },
+  "cvdp_copilot_alphablending_0003": {
+    "run": "work_next50_batch05_first",
+    "revision": "first",
+    "passed": true,
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_alphablending/reports/3_lint.txt",
+        "error_msg": null,
+        "execution": 0.8661367893218994,
+        "pid": 41165
+      },
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_batch05_first/cvdp_copilot_alphablending/reports/3_sanity.txt",
+        "error_msg": null,
+        "execution": 1.4983859062194824,
+        "pid": 41182
+      }
+    ],
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_alphablending_0003.sv"
+  }
+}

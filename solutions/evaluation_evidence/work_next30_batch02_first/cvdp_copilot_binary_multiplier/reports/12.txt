@@ -1,0 +1,170 @@
+Running harness with project name: cvdp_copilot_binary_multiplier_12_1790255804
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test_array_multiplier_run[23]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255805
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_random (1/4)
+   270.00ns INFO     cocotb.binary_multiplier           Check passed: A=7587469, B=6171028, Product=46822483648132
+   530.00ns INFO     cocotb.binary_multiplier           Check passed: A=3339896, B=5725858, Product=19123770230768
+   790.00ns INFO     cocotb.binary_multiplier           Check passed: A=6381409, B=5077211, Product=32399759970299
+  1050.00ns INFO     cocotb.binary_multiplier           Check passed: A=2117618, B=1950434, Product=4130274146212
+  1310.00ns INFO     cocotb.binary_multiplier           Check passed: A=4987344, B=3367871, Product=16796731224624
+  1310.00ns INFO     cocotb.binary_multiplier           Completed random test cases for WIDTH = 23
+  1310.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_random passed
+  1310.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_max_value (2/4)
+  1581.00ns INFO     cocotb.binary_multiplier           Check passed: A=8388607, B=8388607, Product=70368727400449
+  1581.00ns INFO     cocotb.binary_multiplier           Max value test completed for WIDTH = 23
+  1581.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_max_value passed
+  1581.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_alternating_bits (3/4)
+  1852.00ns INFO     cocotb.binary_multiplier           Check passed: A=2796202, B=5592405, Product=15637494045810
+  1852.00ns INFO     cocotb.binary_multiplier           Alternating bits test completed.
+  1852.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_alternating_bits passed
+  1852.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_zero (4/4)
+  2123.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=3892697, Product=0
+  2383.00ns INFO     cocotb.binary_multiplier           Check passed: A=5258973, B=0, Product=0
+  2643.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=0, Product=0
+  2643.00ns INFO     cocotb.binary_multiplier           Zero multiplication test cases completed.
+  2643.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_zero passed
+  2643.00ns INFO     cocotb.regression                  ************************************************************************************************************************
+                                                        ** TEST                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************
+                                                        ** test_binary_multiplier.test_binary_multiplier_random             PASS        1310.00           0.00     296745.42  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_max_value          PASS         270.00           0.00     275002.93  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_alternating_bits   PASS         270.00           0.00     292550.27  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_zero               PASS         790.00           0.00     339393.65  **
+                                                        ************************************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                                                 2643.00           0.01     242529.66  **
+                                                        ************************************************************************************************************************
+Running with WIDTH = 23
+PASSED
+../../src/test_runner.py::test_array_multiplier_run[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255806
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_random (1/4)
+    70.00ns INFO     cocotb.binary_multiplier           Check passed: A=4, B=4, Product=16
+   130.00ns INFO     cocotb.binary_multiplier           Check passed: A=4, B=0, Product=0
+   190.00ns INFO     cocotb.binary_multiplier           Check passed: A=2, B=1, Product=2
+   250.00ns INFO     cocotb.binary_multiplier           Check passed: A=2, B=3, Product=6
+   310.00ns INFO     cocotb.binary_multiplier           Check passed: A=1, B=6, Product=6
+   310.00ns INFO     cocotb.binary_multiplier           Completed random test cases for WIDTH = 3
+   310.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_random passed
+   310.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_max_value (2/4)
+   381.00ns INFO     cocotb.binary_multiplier           Check passed: A=7, B=7, Product=49
+   381.00ns INFO     cocotb.binary_multiplier           Max value test completed for WIDTH = 3
+   381.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_max_value passed
+   381.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_alternating_bits (3/4)
+   452.00ns INFO     cocotb.binary_multiplier           Check passed: A=2, B=5, Product=10
+   452.00ns INFO     cocotb.binary_multiplier           Alternating bits test completed.
+   452.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_alternating_bits passed
+   452.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_zero (4/4)
+   523.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=6, Product=0
+   583.00ns INFO     cocotb.binary_multiplier           Check passed: A=4, B=0, Product=0
+   643.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=0, Product=0
+   643.00ns INFO     cocotb.binary_multiplier           Zero multiplication test cases completed.
+   643.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_zero passed
+   643.00ns INFO     cocotb.regression                  ************************************************************************************************************************
+                                                        ** TEST                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************
+                                                        ** test_binary_multiplier.test_binary_multiplier_random             PASS         310.00           0.00     163161.53  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_max_value          PASS          70.00           0.00     154040.55  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_alternating_bits   PASS          70.00           0.00     186531.94  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_zero               PASS         190.00           0.00     181076.52  **
+                                                        ************************************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                                                  643.00           0.01     103168.87  **
+                                                        ************************************************************************************************************************
+Running with WIDTH = 3
+PASSED
+../../src/test_runner.py::test_array_multiplier_run[30]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255806
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_random (1/4)
+   340.00ns INFO     cocotb.binary_multiplier           Check passed: A=571405087, B=557683831, Product=318663377971048297
+   670.00ns INFO     cocotb.binary_multiplier           Check passed: A=577955174, B=132783155, Product=76742711452293970
+  1000.00ns INFO     cocotb.binary_multiplier           Check passed: A=341889750, B=219314337, Product=74981323848345750
+  1330.00ns INFO     cocotb.binary_multiplier           Check passed: A=270636576, B=472601697, Product=127903305087869472
+  1660.00ns INFO     cocotb.binary_multiplier           Check passed: A=203558908, B=866590885, Product=176402294233353580
+  1660.00ns INFO     cocotb.binary_multiplier           Completed random test cases for WIDTH = 30
+  1660.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_random passed
+  1660.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_max_value (2/4)
+  2001.00ns INFO     cocotb.binary_multiplier           Check passed: A=1073741823, B=1073741823, Product=1152921502459363329
+  2001.00ns INFO     cocotb.binary_multiplier           Max value test completed for WIDTH = 30
+  2001.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_max_value passed
+  2001.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_alternating_bits (3/4)
+  2342.00ns INFO     cocotb.binary_multiplier           Check passed: A=357913941, B=715827882, Product=256204778324302962
+  2342.00ns INFO     cocotb.binary_multiplier           Alternating bits test completed.
+  2342.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_alternating_bits passed
+  2342.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_zero (4/4)
+  2683.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=757309478, Product=0
+  3013.00ns INFO     cocotb.binary_multiplier           Check passed: A=429764657, B=0, Product=0
+  3343.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=0, Product=0
+  3343.00ns INFO     cocotb.binary_multiplier           Zero multiplication test cases completed.
+  3343.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_zero passed
+  3343.00ns INFO     cocotb.regression                  ************************************************************************************************************************
+                                                        ** TEST                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************
+                                                        ** test_binary_multiplier.test_binary_multiplier_random             PASS        1660.00           0.01     268979.90  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_max_value          PASS         340.00           0.00     326554.47  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_alternating_bits   PASS         340.00           0.00     341572.06  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_zero               PASS        1000.00           0.00     380090.98  **
+                                                        ************************************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                                                 3343.00           0.01     251697.39  **
+                                                        ************************************************************************************************************************
+Running with WIDTH = 30
+PASSED
+../../src/test_runner.py::test_array_multiplier_run[28]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255806
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_random (1/4)
+   320.00ns INFO     cocotb.binary_multiplier           Check passed: A=142851271, B=139420957, Product=19916460911486347
+   630.00ns INFO     cocotb.binary_multiplier           Check passed: A=144488793, B=33195788, Product=4796419340803884
+   940.00ns INFO     cocotb.binary_multiplier           Check passed: A=85472437, B=54828584, Product=4686332691739208
+  1250.00ns INFO     cocotb.binary_multiplier           Check passed: A=67659144, B=118150424, Product=7993956551077056
+  1560.00ns INFO     cocotb.binary_multiplier           Check passed: A=50889727, B=216647721, Product=11025143376862167
+  1560.00ns INFO     cocotb.binary_multiplier           Completed random test cases for WIDTH = 28
+  1560.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_random passed
+  1560.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_max_value (2/4)
+  1881.00ns INFO     cocotb.binary_multiplier           Check passed: A=268435455, B=268435455, Product=72057593501057025
+  1881.00ns INFO     cocotb.binary_multiplier           Max value test completed for WIDTH = 28
+  1881.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_max_value passed
+  1881.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_alternating_bits (3/4)
+  2202.00ns INFO     cocotb.binary_multiplier           Check passed: A=89478485, B=178956970, Product=16012798555790450
+  2202.00ns INFO     cocotb.binary_multiplier           Alternating bits test completed.
+  2202.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_alternating_bits passed
+  2202.00ns INFO     cocotb.regression                  running test_binary_multiplier.test_binary_multiplier_zero (4/4)
+  2523.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=189327370, Product=0
+  2833.00ns INFO     cocotb.binary_multiplier           Check passed: A=107441165, B=0, Product=0
+  3143.00ns INFO     cocotb.binary_multiplier           Check passed: A=0, B=0, Product=0
+  3143.00ns INFO     cocotb.binary_multiplier           Zero multiplication test cases completed.
+  3143.00ns INFO     cocotb.regression                  test_binary_multiplier.test_binary_multiplier_zero passed
+  3143.00ns INFO     cocotb.regression                  ************************************************************************************************************************
+                                                        ** TEST                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************
+                                                        ** test_binary_multiplier.test_binary_multiplier_random             PASS        1560.00           0.00     368605.39  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_max_value          PASS         320.00           0.00     161708.11  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_alternating_bits   PASS         320.00           0.00     238864.08  **
+                                                        ** test_binary_multiplier.test_binary_multiplier_zero               PASS         940.00           0.00     413795.73  **
+                                                        ************************************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                                                 3143.00           0.01     249223.89  **
+                                                        ************************************************************************************************************************
+Running with WIDTH = 28
+PASSED
+
+============================== 4 passed in 1.46s ===============================
+Cleaning up Docker resources...

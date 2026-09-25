@@ -1,0 +1,51 @@
+[
+  {
+    "id": "cvdp_copilot_configurable_digital_low_pass_filter_0004",
+    "check": "decimator_msb_example",
+    "passed": true,
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/rtl/cvdp_copilot_configurable_digital_low_pass_filter_0004.sv",
+    "log": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/diagnostics/decimator_msb_example.log"
+  },
+  {
+    "id": "cvdp_copilot_neuromorphic_array_0001",
+    "check": "neuron_cascade_and_hold",
+    "passed": true,
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/rtl/cvdp_copilot_neuromorphic_array_0001.sv",
+    "log": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/diagnostics/neuron_cascade_and_hold.log"
+  },
+  {
+    "id": "cvdp_copilot_serial_in_parallel_out_0014",
+    "check": "crc_reference",
+    "passed": true,
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/rtl/cvdp_copilot_serial_in_parallel_out_0014.sv",
+    "log": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/diagnostics/crc_reference.log"
+  },
+  {
+    "id": "cvdp_copilot_clock_jitter_detection_module_0003",
+    "check": "jitter_tolerance_and_pulse",
+    "passed": true,
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/rtl/cvdp_copilot_clock_jitter_detection_module_0003.sv",
+    "log": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/diagnostics/jitter_tolerance_and_pulse.log"
+  },
+  {
+    "id": "cvdp_copilot_wb2ahb_0001",
+    "check": "wishbone_cdc_endian_wait",
+    "passed": true,
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/rtl/cvdp_copilot_wb2ahb_0001.sv",
+    "log": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/diagnostics/wishbone_cdc_endian_wait.log"
+  },
+  {
+    "id": "cvdp_copilot_ping_pong_buffer_0001",
+    "check": "ping_pong_capacity_order_reset",
+    "passed": true,
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/rtl/cvdp_copilot_ping_pong_buffer_0001.sv",
+    "log": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/diagnostics/ping_pong_capacity_order_reset.log"
+  },
+  {
+    "id": "cvdp_copilot_microcode_sequencer_0001",
+    "check": "microcode_pop_three_cycles",
+    "passed": true,
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/rtl/cvdp_copilot_microcode_sequencer_0001.sv",
+    "log": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/retry_20260925/diagnostics/microcode_pop_three_cycles.log"
+  }
+]

@@ -1,0 +1,25 @@
+Running harness with project name: cvdp_copilot_rounding_1_1790258037
+Sending build context to Docker daemon  4.372kB
+Step 1/2 : FROM nvidia/cvdp-sim:v1.0.0
+ ---> 9bbd232afa15
+Step 2/2 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in ac1e7a1e8d97
+ ---> Removed intermediate container ac1e7a1e8d97
+ ---> b224f1e5a84e
+Successfully built b224f1e5a84e
+Successfully tagged cvdp_copilot_rounding_1_1790258037-direct:latest
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test_rounding[8] PASSED                        [ 25%]
+../../src/test_runner.py::test_rounding[16] PASSED                       [ 50%]
+../../src/test_runner.py::test_rounding[24] PASSED                       [ 75%]
+../../src/test_runner.py::test_rounding[32] PASSED                       [100%]
+
+============================== 4 passed in 0.88s ===============================
+Cleaning up Docker resources...
+Untagged: cvdp_copilot_rounding_1_1790258037-direct:latest
+Deleted: sha256:b224f1e5a84e8cf88b2204f8983bf52f4a0ae693aebce0b24f27790e4d270d81

@@ -1,0 +1,1688 @@
+[
+  {
+    "original": "work_llm_example_20260924_070948/cvdp_copilot_lfsr/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_llm_example_20260924_070948/cvdp_copilot_lfsr/reports/1.txt",
+    "sha256": "d40e0096b1eb05646590e2ebc636937cab02c3284313d2250ae6688b56560c1c",
+    "bytes": 5818
+  },
+  {
+    "original": "work_llm_example_20260924_070948/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_llm_example_20260924_070948/raw_result.json",
+    "sha256": "e7a84c0b1cdda8bc5d95203209418f3e3fce8ab43d6bed274cc064f050ab8669",
+    "bytes": 285
+  },
+  {
+    "original": "work_llm_example_20260924_070948/report.txt",
+    "archived": "solutions/evaluation_evidence/work_llm_example_20260924_070948/report.txt",
+    "sha256": "601d45837355c5c1d7463cf7ee601df3fca5227df04b9b5de847dd38c5540331",
+    "bytes": 3941
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_barrel_shifter/reports/37.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_barrel_shifter/reports/37.txt",
+    "sha256": "b06b3c0115ec1594639afc9743dd5b951bae7dff36de39453729f6b988b28ce4",
+    "bytes": 7528
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_bcd_counter/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_bcd_counter/reports/1.txt",
+    "sha256": "cfc32b9e24a5c78b89a219cb7b0b5cbe031090a40952fcbc3d539283e9497775",
+    "bytes": 4851
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_binary_to_BCD/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_binary_to_BCD/reports/1.txt",
+    "sha256": "0d1ade18481e7c1c705fa02bf19c274ac4989f5efa3756b1a2fe1a79c57eb40b",
+    "bytes": 4584
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_cdc_pulse_synchronizer/reports/4.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_cdc_pulse_synchronizer/reports/4.txt",
+    "sha256": "20955abc32e28bd499c680069d57282ff4238b318b462574c9bb8daf690dcda2",
+    "bytes": 12469
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_clock_divider/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_clock_divider/reports/3.txt",
+    "sha256": "074f0becff089af406612d8abcd2fe315874fddf914a564ed454b6b1f6d14bf8",
+    "bytes": 3747
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_comparator/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_comparator/reports/1.txt",
+    "sha256": "ce7dc407e54d88c78051437c1ace5eaa5a35d8a3ab3b16bdf1f7ec80fa34544f",
+    "bytes": 1371
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_complex_multiplier/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_complex_multiplier/reports/1.txt",
+    "sha256": "ce561ed915f1108f27bd8093a9316eb1c4ad9d82647ce4b24407923dba2da43b",
+    "bytes": 83048
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_hamming_code_tx_and_rx/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_hamming_code_tx_and_rx/reports/3.txt",
+    "sha256": "11306a0c8cef30dd6467d6233be5482f530017ea07023ac02fbaed61528b610f",
+    "bytes": 10198
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_moving_average/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_moving_average/reports/1.txt",
+    "sha256": "1fc0ac8a2c39206effcda0c378a5e4f68fddf7ca145014bc466c05a18d842412",
+    "bytes": 38523
+  },
+  {
+    "original": "work_next30_batch01_first/cvdp_copilot_radix2_div/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/cvdp_copilot_radix2_div/reports/1.txt",
+    "sha256": "2f1fe57d6eb45dcf2c294351a2daf8cbaa3fe21d294427c493032c8a6fa2b9b3",
+    "bytes": 1593
+  },
+  {
+    "original": "work_next30_batch01_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/raw_result.json",
+    "sha256": "0d8d1cfd3a8a964e1da4e47e4ddbf3645425f80e648f6be481b6013af2a6e2ee",
+    "bytes": 2992
+  },
+  {
+    "original": "work_next30_batch01_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch01_first/report.txt",
+    "sha256": "e1a443aaf1fbb34ed28b9ba3a332fdef5b7e896aad6424ac060eca2e69feac5a",
+    "bytes": 13110
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_apb_gpio/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_apb_gpio/reports/1.txt",
+    "sha256": "137eaa4d8bc52ac1d5f5b4b839220e6a5c4bf4d52b1b098a632dc4e88ecfa858",
+    "bytes": 59503
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_binary_multiplier/reports/12.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_binary_multiplier/reports/12.txt",
+    "sha256": "b8af5576a9802b57c9e30752ec410cc732351db78f0c552f2be03bf466a5d4b4",
+    "bytes": 20385
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_fifo_async/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_fifo_async/reports/1.txt",
+    "sha256": "dffc4b203cf7148930ce909d841a69db9fc35f603d4a69a751e55f961815ad1a",
+    "bytes": 6372
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_gf_multiplier/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_gf_multiplier/reports/5.txt",
+    "sha256": "374734f742b57db95fe4853674806649f5f606c982daa3852ae41ab7aebed87a",
+    "bytes": 25880
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_image_rotate/reports/14_lint.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_image_rotate/reports/14_lint.txt",
+    "sha256": "fe11c240f4286f4237fbbb7bb8d14b7dfe732ad1797279380b44c711fe77e604",
+    "bytes": 457
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_image_rotate/reports/14_sanity.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_image_rotate/reports/14_sanity.txt",
+    "sha256": "2d526147302df67f505efefe66cbf4e3cb890bec83bd1fe9220206006201400f",
+    "bytes": 31490
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_manchester_enc/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_manchester_enc/reports/5.txt",
+    "sha256": "9b6175ad2fc8991606ae6fb8c69159fe02dcebab68450d829b67936d59424d65",
+    "bytes": 23609
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_pipeline_mac/reports/17.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_pipeline_mac/reports/17.txt",
+    "sha256": "cb0afd28d23dfe512f4a4aa876f67f5b321ef7f5b895a47d04c4d0577c8b4ab4",
+    "bytes": 50155
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_round_robin_arbiter/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_round_robin_arbiter/reports/5.txt",
+    "sha256": "ac2b8b7faa075d3698571227562967307b1defb46fae6dbe4754c9bfbbb20351",
+    "bytes": 79817
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_simple_spi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_simple_spi/reports/1.txt",
+    "sha256": "9facfd0fb34f9e28833ae8aa698298c0c44344af6e8ec72790bd2fecffddd0c4",
+    "bytes": 6454
+  },
+  {
+    "original": "work_next30_batch02_first/cvdp_copilot_skid_buffer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/cvdp_copilot_skid_buffer/reports/1.txt",
+    "sha256": "54bef42fec41ced496d2c734bba81a9af0ae883a171eac259e5ceec53eefb86e",
+    "bytes": 6937
+  },
+  {
+    "original": "work_next30_batch02_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/raw_result.json",
+    "sha256": "0be72e322782095bc666a37180dc4ded668adb566f885fa7e58442235e58b720",
+    "bytes": 3160
+  },
+  {
+    "original": "work_next30_batch02_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch02_first/report.txt",
+    "sha256": "718a2117d23368db794ff88a9c6aa7cf5683bcdb25e62af3eef2574919e42670",
+    "bytes": 14263
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_16qam_mapper/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_16qam_mapper/reports/1.txt",
+    "sha256": "c0fbc04c04da3607f9216c17f892195a769bf034d6f6697eca6446923b715b18",
+    "bytes": 43139
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_cache_lru/reports/19.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_cache_lru/reports/19.txt",
+    "sha256": "3d89eca2557c28fe6caed9ed070e356b525177c8a11e60a7ec168460cc99aeb9",
+    "bytes": 8560
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_ethernet_packet_parser/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_ethernet_packet_parser/reports/1.txt",
+    "sha256": "b1c9d4054944700cf1d86d7e2392ca132767e502c5011acdb750e91f88f26eb0",
+    "bytes": 6476
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_fan_controller/reports/5_lint.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_fan_controller/reports/5_lint.txt",
+    "sha256": "dfed27f249b64624805aa656f15c790ba4e9d526adf535569686eb68a19285f5",
+    "bytes": 458
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_fan_controller/reports/5_sanity.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_fan_controller/reports/5_sanity.txt",
+    "sha256": "7ed72fefdb022f2113bced0bc983de5c3246ac058f36410171921a7092ae7ae0",
+    "bytes": 12491
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "sha256": "229fde140ee907f4b9cb9e7a1ee36a86d1fdb5dc96602a9239208ad4732c70c0",
+    "bytes": 69805
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_load_store_unit/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_load_store_unit/reports/1.txt",
+    "sha256": "f0504a8179adf22415c133f94ed4cafa46a70c1e6eef8acfef1c63432fa9b302",
+    "bytes": 3680
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_restoring_division/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_restoring_division/reports/1.txt",
+    "sha256": "d5457c96e04158cb3ea3917bd81ec2077be52ae282f49cc337c160ce4161a1f7",
+    "bytes": 68115
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_rgb2ycbcr/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_rgb2ycbcr/reports/1.txt",
+    "sha256": "1067512dc4bcb0d07fcda3fd3b0b959aa87e374784e03c14ef2bc7cad280b24a",
+    "bytes": 27256
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_scrambler/reports/24_sanity.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_scrambler/reports/24_sanity.txt",
+    "sha256": "e143f2e28b1eb4d459ba357ed1570cc95ad6f1c5a0aa590f57560d64f6f0571d",
+    "bytes": 11702
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_scrambler/reports/24_synth.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_scrambler/reports/24_synth.txt",
+    "sha256": "14e6f966627013648454dcc717b5d7239ece6422c057ec406c6999161877e290",
+    "bytes": 27000
+  },
+  {
+    "original": "work_next30_batch03_first/cvdp_copilot_sorter/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/cvdp_copilot_sorter/reports/3.txt",
+    "sha256": "aadf526bfc0669404c4cf667b1c2d890f4898ff3dfce740c284b81349ad94bd1",
+    "bytes": 105295
+  },
+  {
+    "original": "work_next30_batch03_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/raw_result.json",
+    "sha256": "e00248e103e7e71d2e058447bb6d602a655ecad54f0da915027d8e76f4c20a83",
+    "bytes": 3393
+  },
+  {
+    "original": "work_next30_batch03_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_batch03_first/report.txt",
+    "sha256": "c1e56978b38c69a511e03985b38f490f69b069484335baab923303f7a17fa51f",
+    "bytes": 14963
+  },
+  {
+    "original": "work_next30_final_two_diagnostic/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "sha256": "481c4ef2836d79bc799bea0636235bfaefd007a97e4e3ddd63dd8d62afd8d8eb",
+    "bytes": 479861
+  },
+  {
+    "original": "work_next30_final_two_diagnostic/cvdp_copilot_simple_spi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic/cvdp_copilot_simple_spi/reports/1.txt",
+    "sha256": "841a5ba3c6495142b71949ec3609468543a4421eac0bd34cc59de515ff80f3ee",
+    "bytes": 1371
+  },
+  {
+    "original": "work_next30_final_two_diagnostic/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic/raw_result.json",
+    "sha256": "739af8926aadcf6ba4c85282bb7f98c38f7ab218ad3cd9be9323abbddcdfb955",
+    "bytes": 616
+  },
+  {
+    "original": "work_next30_final_two_diagnostic/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic/report.txt",
+    "sha256": "f49d83909b9c59cb9a19c8923a121634b94f0027ecb35dd989b247c07cc4c25a",
+    "bytes": 5448
+  },
+  {
+    "original": "work_next30_final_two_diagnostic2/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic2/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "sha256": "dccb2e86f1a1ae3cc8dcaf19d202b08c115967f53151b14aae1b9a4c18f4577a",
+    "bytes": 465813
+  },
+  {
+    "original": "work_next30_final_two_diagnostic2/cvdp_copilot_simple_spi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic2/cvdp_copilot_simple_spi/reports/1.txt",
+    "sha256": "c4767024fbedf5e088d970bf021e64255ce24ff8d326d364881a38df8720ce65",
+    "bytes": 1371
+  },
+  {
+    "original": "work_next30_final_two_diagnostic2/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic2/raw_result.json",
+    "sha256": "b14f16323057127b6ff13601686f71fc045d45905b558e97d6eca9cbaf32e4ab",
+    "bytes": 620
+  },
+  {
+    "original": "work_next30_final_two_diagnostic2/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_diagnostic2/report.txt",
+    "sha256": "ee6eecb46bf252cf08e5e890cc56fb8c6b17a67230be92f1f6595bf51e81b912",
+    "bytes": 5018
+  },
+  {
+    "original": "work_next30_final_two_official/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "sha256": "28f6e936f39f5bcc9453aa91326b724475c656a30683fbc3b620ef4d9c9905a5",
+    "bytes": 69812
+  },
+  {
+    "original": "work_next30_final_two_official/cvdp_copilot_simple_spi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official/cvdp_copilot_simple_spi/reports/1.txt",
+    "sha256": "289a261ea8f85d1a5c8945916bb88a80ee1db19f4494913314e2f040c6b85b6a",
+    "bytes": 6472
+  },
+  {
+    "original": "work_next30_final_two_official/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official/raw_result.json",
+    "sha256": "f883ca9501497477bd376acc73fac249301a7927f142f1d214848c234fd42c50",
+    "bytes": 614
+  },
+  {
+    "original": "work_next30_final_two_official/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official/report.txt",
+    "sha256": "916a0657ab8a4a861500b902e466c6ac05cffc8927377f2be8f63ab44b59ec97",
+    "bytes": 4932
+  },
+  {
+    "original": "work_next30_final_two_official2/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official2/cvdp_copilot_interrupt_controller/reports/17.txt",
+    "sha256": "544f19f0df810479af5eb7678fc20893ac839816e005dae39b29436042543fd9",
+    "bytes": 69810
+  },
+  {
+    "original": "work_next30_final_two_official2/cvdp_copilot_simple_spi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official2/cvdp_copilot_simple_spi/reports/1.txt",
+    "sha256": "f2d268cb274b9e3013df33273bf92117e8ba464b2bcfa6fa7ad33c86c7d809bf",
+    "bytes": 6472
+  },
+  {
+    "original": "work_next30_final_two_official2/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official2/raw_result.json",
+    "sha256": "78efaa797c5d9b2d2ca99218fcc8db738c143b4424050f8ca8c9039ba6e47327",
+    "bytes": 616
+  },
+  {
+    "original": "work_next30_final_two_official2/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_final_two_official2/report.txt",
+    "sha256": "4c088f05b101bcea9b48d82ab5b51f74e8ced6415d77c223c46400ea1759cc6c",
+    "bytes": 4943
+  },
+  {
+    "original": "work_next30_r1/cvdp_copilot_fifo_async/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r1/cvdp_copilot_fifo_async/reports/1.txt",
+    "sha256": "a2766f351329b8a12eabb5532cde6531192f412816764e43fa3b356a9902d7d1",
+    "bytes": 11278
+  },
+  {
+    "original": "work_next30_r1/cvdp_copilot_manchester_enc/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r1/cvdp_copilot_manchester_enc/reports/5.txt",
+    "sha256": "b8b873a1d2d20172cc1baecb41df13b1594b46953b142d9d802e057566f64651",
+    "bytes": 429
+  },
+  {
+    "original": "work_next30_r1/cvdp_copilot_pipeline_mac/reports/17.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r1/cvdp_copilot_pipeline_mac/reports/17.txt",
+    "sha256": "64c581cc04687802fa57d401cc564e13916eef4065d0ab5fa00c03c6583f102d",
+    "bytes": 175499
+  },
+  {
+    "original": "work_next30_r1/cvdp_copilot_simple_spi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r1/cvdp_copilot_simple_spi/reports/1.txt",
+    "sha256": "9cc852fde6f7513c202adc8f26c4fb6a19bed09a91f1177cb2dc163fce3e42f4",
+    "bytes": 6514
+  },
+  {
+    "original": "work_next30_r1/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_r1/raw_result.json",
+    "sha256": "c87abc6aee5722d110409caba5a2f59d20a620f3267fd4c298157d5b22882c66",
+    "bytes": 1136
+  },
+  {
+    "original": "work_next30_r1/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r1/report.txt",
+    "sha256": "16c94bbbe0ec45a1841ad949bb86a36371ecc2a45830cfb1df18ef388db598a3",
+    "bytes": 7668
+  },
+  {
+    "original": "work_next30_r2/cvdp_copilot_cache_lru/reports/19.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r2/cvdp_copilot_cache_lru/reports/19.txt",
+    "sha256": "dac148c4c6335464ec9a4f1e539e7305ad0b5d89ef06be3a60fd77e782ddd7a9",
+    "bytes": 105254
+  },
+  {
+    "original": "work_next30_r2/cvdp_copilot_ethernet_packet_parser/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r2/cvdp_copilot_ethernet_packet_parser/reports/1.txt",
+    "sha256": "5df5f9978ae18860f7a11a03308523f1addd65aed8301258dab501be564d48af",
+    "bytes": 2952
+  },
+  {
+    "original": "work_next30_r2/cvdp_copilot_manchester_enc/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r2/cvdp_copilot_manchester_enc/reports/5.txt",
+    "sha256": "dfe05a219f3ae5f74133445d02b699fbd00fe05659764af2d53a2b1417f035e9",
+    "bytes": 23609
+  },
+  {
+    "original": "work_next30_r2/cvdp_copilot_rgb2ycbcr/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r2/cvdp_copilot_rgb2ycbcr/reports/1.txt",
+    "sha256": "ad4450d52627bd7acea4a478f56357dde4e9061e9680da4478fe01c4196b7fe9",
+    "bytes": 25168
+  },
+  {
+    "original": "work_next30_r2/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_r2/raw_result.json",
+    "sha256": "1e362c3d431e5b6914e8366fc7ad39eefcd1e7ee6bed5d94e8556f5f18656b9a",
+    "bytes": 1150
+  },
+  {
+    "original": "work_next30_r2/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r2/report.txt",
+    "sha256": "5f0317ce32c46ceb46dba11be057e55f047afa253609fbe5d75d5b58ea15f3d5",
+    "bytes": 7897
+  },
+  {
+    "original": "work_next30_r3/cvdp_copilot_fifo_async/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r3/cvdp_copilot_fifo_async/reports/1.txt",
+    "sha256": "651a845ac78a56f4f37921fbb7cf66193107656812b326c620d1878ae3ed86b8",
+    "bytes": 21166
+  },
+  {
+    "original": "work_next30_r3/cvdp_copilot_manchester_enc/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r3/cvdp_copilot_manchester_enc/reports/5.txt",
+    "sha256": "a44f13fb66e3b2937f356487a5a073ed9fb05f56c4eaff2cbdc6fa5e5ac7cf12",
+    "bytes": 813
+  },
+  {
+    "original": "work_next30_r3/cvdp_copilot_rgb2ycbcr/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r3/cvdp_copilot_rgb2ycbcr/reports/1.txt",
+    "sha256": "20ac7c62a505d21be45d9e92129f1375ab29d23eb89b413cf6d3a0ae84f41ee2",
+    "bytes": 23698
+  },
+  {
+    "original": "work_next30_r3/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_r3/raw_result.json",
+    "sha256": "727ded4345d6b74ffeb42d5473f8e36f0803f9ea0d1242a7662cf2a13803bd3b",
+    "bytes": 846
+  },
+  {
+    "original": "work_next30_r3/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r3/report.txt",
+    "sha256": "eb4f1dff30e5257bc16c486fa046f02b35ab5583c0c6e0b3053693edce38485e",
+    "bytes": 5992
+  },
+  {
+    "original": "work_next30_r4/cvdp_copilot_apb_gpio/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r4/cvdp_copilot_apb_gpio/reports/1.txt",
+    "sha256": "105d6f4ea82826e8364ff939467327b660179b99dfe90644fa6300c5f9508c4b",
+    "bytes": 1169
+  },
+  {
+    "original": "work_next30_r4/cvdp_copilot_skid_buffer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r4/cvdp_copilot_skid_buffer/reports/1.txt",
+    "sha256": "aef7ee03de6c68f77f69f1ec9c1f009b700b87ef8bf47ed46ce9ced7e34e12e8",
+    "bytes": 4406
+  },
+  {
+    "original": "work_next30_r4/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next30_r4/raw_result.json",
+    "sha256": "ae0da0f27b0faa5a9ae3e167107c805c965b0940bce3a6787b70cbc477a99abd",
+    "bytes": 559
+  },
+  {
+    "original": "work_next30_r4/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next30_r4/report.txt",
+    "sha256": "44a55666bf0d59aac441a8b896d02d6daf6f1b490c0da3d81617e7ae51915f31",
+    "bytes": 5085
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_bcd_adder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_bcd_adder/reports/1.txt",
+    "sha256": "0c733704808c40a92712699de1b6850c7c6a3c516dbf2638899b4eebb7b77b77",
+    "bytes": 12856
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "sha256": "db6968ed985e744165c0dce6107d08abda51f62d4447f4cd4e2e18ba955f3a95",
+    "bytes": 24616
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_dot_product/reports/2.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_dot_product/reports/2.txt",
+    "sha256": "669a20ce07851ab47b4182b437fef67ce4a6a871582f528c51039a260db83abf",
+    "bytes": 50033
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_kogge_stone_adder/reports/7.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_kogge_stone_adder/reports/7.txt",
+    "sha256": "f93f0c68ed6600be07772a1ece25021146c59b39be935be06aa821e0c912f027",
+    "bytes": 15773
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_matrix_multiplier/reports/7.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_matrix_multiplier/reports/7.txt",
+    "sha256": "f7c365f5f1843d9034ba500b46b1e58a495f0670e52dc7ba5a6d576c130f651f",
+    "bytes": 85606
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_modified_booth_mul/reports/2.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_modified_booth_mul/reports/2.txt",
+    "sha256": "218e560719d21d225a9c5453ae193e254290b5b9777f4ab8ea14f56463e199e5",
+    "bytes": 49372
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_montgomery/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_montgomery/reports/1.txt",
+    "sha256": "652da627f09fc22359677cab553f35b8d64d2779ef21af25bb87707de6a0bf31",
+    "bytes": 11404
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_rounding/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_rounding/reports/1.txt",
+    "sha256": "3f339d96f36dcb3d015053659bf166bc24f84ee0d8fd04ec159bb14538cdf14a",
+    "bytes": 33404
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_signed_adder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_signed_adder/reports/1.txt",
+    "sha256": "45cef9d9799814cba348ff09cee3ef5d1199ff4b5016291bdefd96673a3b5ceb",
+    "bytes": 1373
+  },
+  {
+    "original": "work_next50_batch01_first/cvdp_copilot_square_root/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/cvdp_copilot_square_root/reports/3.txt",
+    "sha256": "b0d9bd5ee310369c106d7a53fa55e3ef9d124aa9b42f638fb9c165214a2c8626",
+    "bytes": 13700
+  },
+  {
+    "original": "work_next50_batch01_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/raw_result.json",
+    "sha256": "cbaabbd29b14745e9931534fc0c1fd115ac574aa7948c4a2723d95af01d9e4a5",
+    "bytes": 2958
+  },
+  {
+    "original": "work_next50_batch01_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch01_first/report.txt",
+    "sha256": "9f936360d8d6fd449917c0932c0ac60517c4bb6b69d8b73970869cac3a95f1aa",
+    "bytes": 12961
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "sha256": "d3187ac913734baf55a00c2a2b9e9f27b68cdd4b101788d8a77338276d761dcf",
+    "bytes": 34966
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_64b66b_encoder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_64b66b_encoder/reports/1.txt",
+    "sha256": "4b478fb00d2b5b9b2c5a3c71ce6dd763f8358cb1bb4f8de890751245f88c2cc2",
+    "bytes": 13426
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_convolutional_encoder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_convolutional_encoder/reports/1.txt",
+    "sha256": "40d502ae872baffbe451aadcdb6e69632f3d711f505be5e1ac4e18499235bcb5",
+    "bytes": 9081
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_dbi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_dbi/reports/1.txt",
+    "sha256": "0c7cca3ea8ded0c5fd398236e16cd3f6436bba6f0acc75f6adeeee4e02bd46a3",
+    "bytes": 5295
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_huffman/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_huffman/reports/1.txt",
+    "sha256": "2eb3ec4814a4227d422f410d7b18a3b31dd031a131832fe263a7ac15240b2b00",
+    "bytes": 7849
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_ir_receiver/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_ir_receiver/reports/5.txt",
+    "sha256": "3e414962f7b43443b65161bb21e5e73505dda81b606d12db73ceeb6de63ff5e1",
+    "bytes": 13997
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_packet_controller/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_packet_controller/reports/1.txt",
+    "sha256": "542c2df744bda8a6151e50d54486fb2a1ba479f26a6474cd5f42aa24ffed24db",
+    "bytes": 1453
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_prbs_gen/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_prbs_gen/reports/3.txt",
+    "sha256": "c21eade3c4277c63646345d20ceda68d8270b7f13740487b72b698bb3d4faef8",
+    "bytes": 229353
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+    "sha256": "08d0f0747281e161e91afd3b8150b771576dbe85e57cf6f63e1b062c3e9496bd",
+    "bytes": 67354
+  },
+  {
+    "original": "work_next50_batch02_first/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "sha256": "08f19e438fcde2cc596fbfe0eaea8cca325dfb3cc79cc8cb39009554fc43cf64",
+    "bytes": 247503
+  },
+  {
+    "original": "work_next50_batch02_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/raw_result.json",
+    "sha256": "b774a051ebd1e35a53d6de299bdadfe5247749584f358011b030e065f9ab4950",
+    "bytes": 3006
+  },
+  {
+    "original": "work_next50_batch02_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch02_first/report.txt",
+    "sha256": "277ee62fa8ed82781e8c628786fd6c20b58dffa0ba8b7a74834d4c2bc0211186",
+    "bytes": 13858
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_axi_tap/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_axi_tap/reports/1.txt",
+    "sha256": "4dc0e9d0acb0bfaf22048af0489fdbf23b40c91c197a3874afd9e47f6bd1afee",
+    "bytes": 105465
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_axis_joiner/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_axis_joiner/reports/1.txt",
+    "sha256": "919431f70a4ce6ba8ded1da2cd820563bd864964eff42819300b5fe6ae9c3d83",
+    "bytes": 7134
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_axis_mux/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_axis_mux/reports/1.txt",
+    "sha256": "a5975295ec111e6facaa91b00fc9e2bc31eba8f7f7bdce5e38e850ba8e66be4c",
+    "bytes": 11986
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_bit_synchronizer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_bit_synchronizer/reports/1.txt",
+    "sha256": "51a27fb017c5120ad77f56d6feb26de44eaa1e8d7775f03f31d59ab993f4fe5a",
+    "bytes": 83010
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_crossbar_switch/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_crossbar_switch/reports/1.txt",
+    "sha256": "8a4035d6bd36517a1b3fcf75d8654992e960bef2b6c837846933e5443807d41c",
+    "bytes": 22718
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_data_width_converter/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_data_width_converter/reports/3.txt",
+    "sha256": "3bd010843238b1b22922f59270e881eb1342f03471d8b8efd7896dcc393616cf",
+    "bytes": 3687
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_mux_synch/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_mux_synch/reports/11.txt",
+    "sha256": "f1d03041da01eb7292d246b62d4631ba09b6e1d7799891c8867b6580a0fe7bee",
+    "bytes": 4367
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "sha256": "20d93f4a7a3f5289b8ad9c937cc6f9daa7fb3a65c7efc51151b0970e25a3eece",
+    "bytes": 7868
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_sync_lifo/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_sync_lifo/reports/1.txt",
+    "sha256": "a635e354fb2757299f5e30176ec0083000ae0c8c7bc37318c5d994c20aa5900c",
+    "bytes": 60132
+  },
+  {
+    "original": "work_next50_batch03_first_valid/cvdp_copilot_wb2ahb/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/cvdp_copilot_wb2ahb/reports/1.txt",
+    "sha256": "0808301858aae897f3d1d5d76c74fa5e4c03eb3e43920edeeb324abbf06afc1a",
+    "bytes": 5659
+  },
+  {
+    "original": "work_next50_batch03_first_valid/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/raw_result.json",
+    "sha256": "1831c339dcb8e8152c705db36629c05527cb5316865cb657868467fb0bed8bf8",
+    "bytes": 3007
+  },
+  {
+    "original": "work_next50_batch03_first_valid/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch03_first_valid/report.txt",
+    "sha256": "7334272300b0596ac41f17c701cbe47df5545c54d062aee6a914b01e0074c391",
+    "bytes": 13346
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+    "sha256": "fb8d824de7efa1f1468ea8ce3c69d63630a18fc1b20db801c319499469eda4c3",
+    "bytes": 7136
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_cache_lru/reports/8.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_cache_lru/reports/8.txt",
+    "sha256": "fb7508b7eccb8404305d68607581dc2e14c3a0faf6798f75e7a2069688631b28",
+    "bytes": 11199
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_icache_controller/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_icache_controller/reports/1.txt",
+    "sha256": "e7920a0f8e7546c8a29fc1c482ed58856b63b8b6735314c9f88f5edf044c17bc",
+    "bytes": 27576
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_mem_allocator/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_mem_allocator/reports/1.txt",
+    "sha256": "ffa49c60476a54ecb79f3233edc3777f92f92417c4bffeccdc0d6bdc19e991ce",
+    "bytes": 27698
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "sha256": "fba6f47595ff518c302793e55d1de97821b14754900334ef431abb1b5d650011",
+    "bytes": 11376
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_perf_counters/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_perf_counters/reports/1.txt",
+    "sha256": "57b5eaa750167502aae2fbf0fa67197849a420bae701c34408b58ca5017b297e",
+    "bytes": 7081
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_register_file_2R1W/reports/6.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_register_file_2R1W/reports/6.txt",
+    "sha256": "bbe0290bcf8cba54620a8f6eeddf71fae015a1838812ed59fcbf8f0fb60aefbf",
+    "bytes": 6994
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "sha256": "db49d7b3fa7f4a52563fb4920c18144cabc7ddc74481343980e1ede2bebe3769",
+    "bytes": 7046
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+    "sha256": "a0467095d1481bda122b4803f77d1d9f309476c8f828bb3776368f605b158078",
+    "bytes": 56874
+  },
+  {
+    "original": "work_next50_batch04_first/cvdp_copilot_write_buffer_merge/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/cvdp_copilot_write_buffer_merge/reports/1.txt",
+    "sha256": "7c6daf67e8c51636d2e131c6be7bc9ce668f54427ffc7b40c65a08e25f633c7c",
+    "bytes": 94123
+  },
+  {
+    "original": "work_next50_batch04_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/raw_result.json",
+    "sha256": "e93f0c47d35e4e034d5e65e28e23da6b7fe6d4ef34799c79d4719b063a2a8beb",
+    "bytes": 3061
+  },
+  {
+    "original": "work_next50_batch04_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch04_first/report.txt",
+    "sha256": "d660b36bfaecf0cfed72f84ec84b28512cd2c02a8dceab45b4cbfbafaaac08a5",
+    "bytes": 13470
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_alphablending/reports/3_lint.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_alphablending/reports/3_lint.txt",
+    "sha256": "e8a151a99be422d15494264213d148bb7bc2e3fd615b5f9292b31268870463ad",
+    "bytes": 457
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_alphablending/reports/3_sanity.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_alphablending/reports/3_sanity.txt",
+    "sha256": "32f484acaf81dd4038cc166c71aee9b6731cc8e7020a4bcd287618540fd24d0c",
+    "bytes": 29225
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_axi_alu/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_axi_alu/reports/1.txt",
+    "sha256": "df8683b994670bd3e615bba7d4da761e6a70148aad4005d98bd3d71c85410d18",
+    "bytes": 2667
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+    "sha256": "b5accee016dec1f9cdd51cb26860957939225e286bafa2e55f205bd6faf222f6",
+    "bytes": 38302
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_configurable_digital_low_pass_filter/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_configurable_digital_low_pass_filter/reports/1.txt",
+    "sha256": "dccade3a21f138b4ca3b2a6852136c350f94bc4828e4ae40e8e88b8befcb8a19",
+    "bytes": 352159
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+    "sha256": "0d4bfea47b55dd4ab670de5fd92ff447b3cf6441366c46720b1a5936bfd80475",
+    "bytes": 189984
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_line_buffer/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_line_buffer/reports/3.txt",
+    "sha256": "9b335c86221ceb691a571ef3870130aa6bc81c41476a15e57179104352ce8e87",
+    "bytes": 176910
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_neuromorphic_array/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_neuromorphic_array/reports/1.txt",
+    "sha256": "da42ae7dcc757adeb1f409bf737ea271a50cf469ad2fe02d5325ee67c876ac08",
+    "bytes": 7496
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_sobel_filter/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_sobel_filter/reports/11.txt",
+    "sha256": "b7cbfc79c73cfd506cd401207e5be7ebc27688fb1eeb728ca3e52b67c3088ee0",
+    "bytes": 2498
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_thermostat/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_thermostat/reports/1.txt",
+    "sha256": "dacac380798ed89706eba5cbb7246c1cd51da92395098cb0c97c04d76ab62afa",
+    "bytes": 6473
+  },
+  {
+    "original": "work_next50_batch05_first/cvdp_copilot_ttc_lite/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/cvdp_copilot_ttc_lite/reports/1.txt",
+    "sha256": "a5870f69cef20e8492a3af42edcc2aff6df24c4999b2f1bdd353503f39d8d139",
+    "bytes": 5147
+  },
+  {
+    "original": "work_next50_batch05_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/raw_result.json",
+    "sha256": "85b72ec59cca85fde15b240a4f80f2ccbc3a61c7015997070b9b748658846245",
+    "bytes": 3278
+  },
+  {
+    "original": "work_next50_batch05_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_batch05_first/report.txt",
+    "sha256": "4a9c35b210f4bd8c1c09b2eb4a394b7f6ce40a311174654ed74cd30cb9d92466",
+    "bytes": 15660
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "sha256": "e15ec43247a2ac92f4148d971cfa21560ed6ac240635342b5eb91d1dd11a4222",
+    "bytes": 33679
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_64b66b_encoder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_64b66b_encoder/reports/1.txt",
+    "sha256": "ab0195f723187163ff6679d7704393e599366338aca8f0fb601552eeea2095cf",
+    "bytes": 13427
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_alphablending/reports/3_lint.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_alphablending/reports/3_lint.txt",
+    "sha256": "7b889083a7e49d2b87e3dac8426c5c0d0f5758a54a7eb7f663a081f28626b181",
+    "bytes": 457
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_alphablending/reports/3_sanity.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_alphablending/reports/3_sanity.txt",
+    "sha256": "a822964a9a96a4a942f68cf26a0c62519e37a54fcee26391e334d81e1613a945",
+    "bytes": 29225
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+    "sha256": "8e8bccdfdde7b7a10c2b6614f301112b6637e4cba8cfcd1f8b2f92e5b0de91ec",
+    "bytes": 1387
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_axi_alu/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_axi_alu/reports/1.txt",
+    "sha256": "1b2c31ae491a82f57077f8189892aee04783f1be44403995c0a17497213cff9a",
+    "bytes": 44063
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_axi_tap/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_axi_tap/reports/1.txt",
+    "sha256": "365ede6f167635d36d2c6c16efaf90b0683c510ff00c1179173983db156295b1",
+    "bytes": 50469
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_axis_joiner/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_axis_joiner/reports/1.txt",
+    "sha256": "984bbffdc66648edc07d06b41c8892533b0878b9fde1ea583f815024508fad36",
+    "bytes": 4168
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_axis_mux/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_axis_mux/reports/1.txt",
+    "sha256": "c9ad6c1cbab1652844899fce7f21e8df1a48a811cec8a06ce3cdf00f5a4818b5",
+    "bytes": 14535
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_bcd_adder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_bcd_adder/reports/1.txt",
+    "sha256": "e3e483a32172665604d20fba8a97241598fa5cf1bd96198f13ae05b25f605158",
+    "bytes": 12856
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_bit_synchronizer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_bit_synchronizer/reports/1.txt",
+    "sha256": "974593fd73192b7986d7180d82392824285b823c6855bde6ccc98702e5f66bc5",
+    "bytes": 83010
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_cache_lru/reports/8.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_cache_lru/reports/8.txt",
+    "sha256": "274a95c9fd36453562ca5d80df901c6b49e13c461debd0a1ed3c9517ab3286e1",
+    "bytes": 11199
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "sha256": "9ee156fbe0dfd8438fbc69291d8d60bd3b6bb7b6c3d31170c250b5aa0cea9ad6",
+    "bytes": 13834
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+    "sha256": "1fdfb9f63ac7bcf80f2f142d7e99926df85a483ec69f3d8c815210ae80e90871",
+    "bytes": 45386
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_configurable_digital_low_pass_filter/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_configurable_digital_low_pass_filter/reports/1.txt",
+    "sha256": "a2040597e49b9c7923b5a0a77b728c9bce59b3945e2c19d1c125d4e2b240a1f2",
+    "bytes": 352223
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+    "sha256": "62d44d1688c24f72dc0c71d3ffa79a369b6103b4b13a084bfee739c440896dfd",
+    "bytes": 217118
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_convolutional_encoder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_convolutional_encoder/reports/1.txt",
+    "sha256": "11faa20de78db49283cb6e1461857932562ba6a54901d8d46fa44a3761435e9b",
+    "bytes": 6487
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_crossbar_switch/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_crossbar_switch/reports/1.txt",
+    "sha256": "9129f89daf54958f93051317ec148f59b140a6cebf9c30ee8fe55910b9e63ab0",
+    "bytes": 75704
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_data_width_converter/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_data_width_converter/reports/3.txt",
+    "sha256": "05da0cbd995fb725359aaf36cb8cc08def7eec360a3fce5553a6636376aa8f2d",
+    "bytes": 3687
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_dbi/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_dbi/reports/1.txt",
+    "sha256": "0cc3d2ba7f653c6ead151a8dd78ef2cbfc4fd200e9911dee589baf61e616415e",
+    "bytes": 5295
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_dot_product/reports/2.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_dot_product/reports/2.txt",
+    "sha256": "771b81c5e1f105bf3be634f8fbc43c32f18f3c4fd0805850f5a88a12f1f759ae",
+    "bytes": 46423
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_huffman/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_huffman/reports/1.txt",
+    "sha256": "4a883a466af121a402069b77fdef8927ba49caee9e40859dac4e9e33c92df733",
+    "bytes": 4119
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_icache_controller/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_icache_controller/reports/1.txt",
+    "sha256": "684fb3afc0dd7f07d41d08ca74ed011de56049df1b03de0bde48373cb6144a10",
+    "bytes": 28882
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_ir_receiver/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_ir_receiver/reports/5.txt",
+    "sha256": "db0ad5ec7a103a4b3a79c799fae5666b958d875844821112608dbe459bd84d73",
+    "bytes": 20282
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_kogge_stone_adder/reports/7.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_kogge_stone_adder/reports/7.txt",
+    "sha256": "3011dba5264abd2e556dfe443d449924596aa872b7a33fbb90eca138e7823cea",
+    "bytes": 15778
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_line_buffer/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_line_buffer/reports/3.txt",
+    "sha256": "0c446f9d585ac5f4e2504faed744e568c7b11d6cc2d7356fb017e4a47db35a5d",
+    "bytes": 176974
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_matrix_multiplier/reports/7.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_matrix_multiplier/reports/7.txt",
+    "sha256": "1de6a29a07e4006a3c664eb6eaac420dfebc27ef02db4beee1fda4b91c5fea5a",
+    "bytes": 85605
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_mem_allocator/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_mem_allocator/reports/1.txt",
+    "sha256": "4bacea8b2a8d40de0a1e1e739493aed3dd4e6a22494fdc3288dce0cca4fdbf8b",
+    "bytes": 27688
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "sha256": "d7d78f6c14971d41d962168a330039549eb3e92b11755835ee72e82fb9a486ff",
+    "bytes": 11376
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_modified_booth_mul/reports/2.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_modified_booth_mul/reports/2.txt",
+    "sha256": "1fe1042d9935b5a48ed1171007044e18e53a66e2d846644826a782d72947b553",
+    "bytes": 49400
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_montgomery/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_montgomery/reports/1.txt",
+    "sha256": "44817d884c5c6ef6d077ace16305ec729a821013da9f64207719afa325d81ea4",
+    "bytes": 11404
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_mux_synch/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_mux_synch/reports/11.txt",
+    "sha256": "a132d3ee419b7ecba7dd91601aae2d88bc43a3005814a8bf1ab5338690b92d6c",
+    "bytes": 4367
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_neuromorphic_array/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_neuromorphic_array/reports/1.txt",
+    "sha256": "028e8799797d344eb253843bc05182c7b885334f5de65490f1b9521e57d74329",
+    "bytes": 7412
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_packet_controller/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_packet_controller/reports/1.txt",
+    "sha256": "f272c300c755e88a36b8d7a86584e95c6ffeedc566836cb72967166bdcfab988",
+    "bytes": 1453
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_perf_counters/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_perf_counters/reports/1.txt",
+    "sha256": "76bad8aa465ad06ec33d5dd594aad68d6b2b221a3b2532d45468f73cbffea06f",
+    "bytes": 1441
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "sha256": "4978bed3845fc2ad24d47623fe28050a4fd03d23861ec7e43353ef4903e15680",
+    "bytes": 9796
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_prbs_gen/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_prbs_gen/reports/3.txt",
+    "sha256": "6ed22b3d99a3588101e517ac32b6bd27dbfca79d8f4dd56e2eeb74d4d69cceb5",
+    "bytes": 115501
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+    "sha256": "820f9435f0b9743d916499cfe9a3ad296f9617c4b7dc3aa589351b85412dfe11",
+    "bytes": 493783
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_register_file_2R1W/reports/6.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_register_file_2R1W/reports/6.txt",
+    "sha256": "61dc694b9ae447df1fe9f2aa4aeaf2d7db951876da0422abffbcc1beabd5cb4e",
+    "bytes": 1456
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_rounding/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_rounding/reports/1.txt",
+    "sha256": "fed5ddec63a8ce77608f3632b673e3a448167d2f12751685b883f4c440a79e48",
+    "bytes": 1249
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "sha256": "9b3c8eec9743dd06e780baad52aeda7720fe13f4554db9ba67f3b73d03b587e0",
+    "bytes": 245081
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_signed_adder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_signed_adder/reports/1.txt",
+    "sha256": "e37077d779f7478a1aa96f48380ef929447fc97bc1f67a9416b9430decf64009",
+    "bytes": 1373
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_sobel_filter/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_sobel_filter/reports/11.txt",
+    "sha256": "1bc2716f23d85dd4cf667b971dd6b9eb001fc43243cd6545a5481f2719841067",
+    "bytes": 2498
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_square_root/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_square_root/reports/3.txt",
+    "sha256": "1810327f2e3a1ebda9256c0b9833ea057c0cbb9dbd24dcd596bf2d9e5c1bad15",
+    "bytes": 13698
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "sha256": "a563f6b10b819d86960f1366a832f8010842bc3533758ca5cceb430d6b0c4cd1",
+    "bytes": 12944
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_sync_lifo/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_sync_lifo/reports/1.txt",
+    "sha256": "2faed9bb3be1285c3a2ce2145b4da298aa4262b54904c7ee076f96c5c14237b7",
+    "bytes": 60140
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_thermostat/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_thermostat/reports/1.txt",
+    "sha256": "884f09f2a6b83b97b981392baeb59c2451364261ba4f3920cba182e30b0f6e06",
+    "bytes": 1371
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_ttc_lite/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_ttc_lite/reports/1.txt",
+    "sha256": "26240c202aedcb28e0c45777706dce10c26eebb1d4263b9250b60fc18f2e625d",
+    "bytes": 3617
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+    "sha256": "0a3122a030faaec291f6f8d66f3d1d9fa7b005f2ee4b79806f97328b60859408",
+    "bytes": 35663
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_wb2ahb/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_wb2ahb/reports/1.txt",
+    "sha256": "513b5e161e3d461c8ab22725c0d614799a2a74e89b09f0c365da36bedf3a3adf",
+    "bytes": 5659
+  },
+  {
+    "original": "work_next50_final/cvdp_copilot_write_buffer_merge/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/cvdp_copilot_write_buffer_merge/reports/1.txt",
+    "sha256": "6c21172fc2b4e8e93d968349dbec6fa71029e986c99853aef432f2f7f5246064",
+    "bytes": 39512
+  },
+  {
+    "original": "work_next50_final/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_final/raw_result.json",
+    "sha256": "45042afe836d9016d0a19a9b3e786c074b2d56909aea5187e65bc4aa4141f6d3",
+    "bytes": 14825
+  },
+  {
+    "original": "work_next50_final/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_final/report.txt",
+    "sha256": "193c700ba85f3c9e64dc7e6d6f5d6a3708dd6f2b4f019cdb4ab52855a3f80e1e",
+    "bytes": 52964
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "sha256": "8139739094b92007c02c4256a8ebed402aa6fcd9de9651307016602022680c87",
+    "bytes": 6019
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "sha256": "cf040187fc0890f353bc7ca1d7acdf2e7f13057805ec7010e7d6322f4eb07e11",
+    "bytes": 21245
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_convolutional_encoder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_convolutional_encoder/reports/1.txt",
+    "sha256": "838145610d44bc14c8e6e040943696ba819de0b9deb100072452922e0a457d68",
+    "bytes": 6487
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_huffman/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_huffman/reports/1.txt",
+    "sha256": "4f55838e1967fb413af0f9fde49307f28a8e750694d04502168c2dd27c8394e3",
+    "bytes": 7255
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_icache_controller/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_icache_controller/reports/1.txt",
+    "sha256": "1ff538bef3f1fd7ed1df59b61f3b184c88608dc604efd858fb7f12e17bd47bb8",
+    "bytes": 27586
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_perf_counters/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_perf_counters/reports/1.txt",
+    "sha256": "cbb000efeb7b35f1f30d188d90029e908a64abc05f92be815dfee950f84b3409",
+    "bytes": 899
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "sha256": "40c3bbeeb36ee40de355ed03eb65ec8c24602268ff79092b392a3ec97025241c",
+    "bytes": 9790
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_prbs_gen/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_prbs_gen/reports/3.txt",
+    "sha256": "968144961a5f1775f4d0af936e1c7357c5dcdad3ff464aeba5a05cad3c621bea",
+    "bytes": 115501
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+    "sha256": "f91f031a602a9ac7684ef4c7d5a97c82bbe366a925aaae41feab58d021b7cac4",
+    "bytes": 429157
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_rounding/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_rounding/reports/1.txt",
+    "sha256": "04d58fdd7b7ad1dc359fd453b23476145491955fff63b2ecb1b9d446070e479c",
+    "bytes": 1249
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "sha256": "e7f154f28154881c9b2469f3fe9df5036b8a546b738c21574ea5f94f40037e37",
+    "bytes": 245058
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "sha256": "0a541796f41354924cfef114f826c7eb73f34f8d5a488926bd82edd1546a9ba7",
+    "bytes": 9593
+  },
+  {
+    "original": "work_next50_r1/cvdp_copilot_write_buffer_merge/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/cvdp_copilot_write_buffer_merge/reports/1.txt",
+    "sha256": "3f34c0eaf753342118972e588c0ce23a003622c9909fca042bd9eec3b732cd7c",
+    "bytes": 38324
+  },
+  {
+    "original": "work_next50_r1/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/raw_result.json",
+    "sha256": "a270c20db75a2e1378383986f66830284ce0718b88beb900c014b393ba0c7b4a",
+    "bytes": 3804
+  },
+  {
+    "original": "work_next50_r1/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r1/report.txt",
+    "sha256": "46b5c64c09f321c9766da3e59b2d87c8763b319b1fcf3a9f6affa5a4bf10bc98",
+    "bytes": 15804
+  },
+  {
+    "original": "work_next50_r2/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r2/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+    "sha256": "10b1d29f2c0c67a01f4b489882acf905970f602f41c70cbe3b75f86c129987fd",
+    "bytes": 1387
+  },
+  {
+    "original": "work_next50_r2/cvdp_copilot_axis_joiner/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r2/cvdp_copilot_axis_joiner/reports/1.txt",
+    "sha256": "652d45faae6428788d1c41db44a1557786464b76d98966d3f81c9acd185127b6",
+    "bytes": 4168
+  },
+  {
+    "original": "work_next50_r2/cvdp_copilot_ir_receiver/reports/5.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r2/cvdp_copilot_ir_receiver/reports/5.txt",
+    "sha256": "16147b6211d86cf123b1c119add8563d3a9aedc4af07fde1c15ed71929da3b45",
+    "bytes": 20282
+  },
+  {
+    "original": "work_next50_r2/cvdp_copilot_register_file_2R1W/reports/6.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r2/cvdp_copilot_register_file_2R1W/reports/6.txt",
+    "sha256": "70a05139f88a536b9f07f05870d98dc0d6ddab3d4bbe6e4a51f5ea9c026b8331",
+    "bytes": 1313
+  },
+  {
+    "original": "work_next50_r2/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r2/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+    "sha256": "af8319d42114af5a3b2bb6c0fbdc8813bb4f8e1efe046e819cb0fa1fb8c2774a",
+    "bytes": 35663
+  },
+  {
+    "original": "work_next50_r2/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_r2/raw_result.json",
+    "sha256": "51f3e0a822e38078e037ae6d03025ee6d7cbcaa252f6aff18a2a71d1f284cb9d",
+    "bytes": 1472
+  },
+  {
+    "original": "work_next50_r2/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r2/report.txt",
+    "sha256": "da58800270961f591f757990cc0ca7b59c3415f02184913c5b57b1c97d27a452",
+    "bytes": 8512
+  },
+  {
+    "original": "work_next50_r3/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "sha256": "b98e79a484f6a24ca7dc330a944562143da122f84eebe8e82b3b42548f595460",
+    "bytes": 6019
+  },
+  {
+    "original": "work_next50_r3/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/cvdp_copilot_cascaded_adder/reports/25.txt",
+    "sha256": "8ef6de65a210f1157e4b7bab7d5da05c2a3db670a37cd667b21e1a6f2e08b9c1",
+    "bytes": 13851
+  },
+  {
+    "original": "work_next50_r3/cvdp_copilot_perf_counters/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/cvdp_copilot_perf_counters/reports/1.txt",
+    "sha256": "477734e86183b0d6ea8279a6615919cfc967a0fee4e28fbc988f7567dabc6f56",
+    "bytes": 1441
+  },
+  {
+    "original": "work_next50_r3/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "sha256": "1f459d0817a5c7ef831a9717231ecdd991b3ae1466dbbce147c6f5065977f68e",
+    "bytes": 244618
+  },
+  {
+    "original": "work_next50_r3/cvdp_copilot_thermostat/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/cvdp_copilot_thermostat/reports/1.txt",
+    "sha256": "4ebd6dc3e9479bb704665bb079adc364389d044459cfe4ed903141ab36102879",
+    "bytes": 1371
+  },
+  {
+    "original": "work_next50_r3/cvdp_copilot_ttc_lite/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/cvdp_copilot_ttc_lite/reports/1.txt",
+    "sha256": "3bbddbaaa978bab3bebe898cf709c1adb9074baafdfac16362e4989f07b2ec73",
+    "bytes": 3617
+  },
+  {
+    "original": "work_next50_r3/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/raw_result.json",
+    "sha256": "18ee5d20f7e02c709e356dff96ecb492919d76c4b73e565fcac6ae154d2b3a88",
+    "bytes": 1723
+  },
+  {
+    "original": "work_next50_r3/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r3/report.txt",
+    "sha256": "e251f5588154957f2c914158bc5e035840ee8dc48dc0f85efaa45221729ec665",
+    "bytes": 9418
+  },
+  {
+    "original": "work_next50_r4/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r4/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "sha256": "8c6d0311077886655d7c10e58aa7d1e8338b2edc10310743fef9d96f15fdf5d8",
+    "bytes": 35512
+  },
+  {
+    "original": "work_next50_r4/cvdp_copilot_axi_alu/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r4/cvdp_copilot_axi_alu/reports/1.txt",
+    "sha256": "00766f3bcd482c4eba642878ce5a9339e6f48787cd161ba31de9186671d777be",
+    "bytes": 5976
+  },
+  {
+    "original": "work_next50_r4/cvdp_copilot_icache_controller/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r4/cvdp_copilot_icache_controller/reports/1.txt",
+    "sha256": "8d8a362d98c6f3438027c7177bfcb7244950212ff6a62e2bdd0d23bfcd155fe4",
+    "bytes": 28882
+  },
+  {
+    "original": "work_next50_r4/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r4/cvdp_copilot_static_branch_predict/reports/1.txt",
+    "sha256": "3f7a9620ee2adecbe84df89f9071f425f2ac804173593666b71ac3e7641abffb",
+    "bytes": 12944
+  },
+  {
+    "original": "work_next50_r4/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_r4/raw_result.json",
+    "sha256": "a0afb213ad74982c6c537ae8da752d52a0b16d46d48b884b1730f43d5db73031",
+    "bytes": 1163
+  },
+  {
+    "original": "work_next50_r4/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r4/report.txt",
+    "sha256": "47b908891650a1816484b8da0aa981a78d25bd60fcc001a580fd17cda307edf0",
+    "bytes": 7778
+  },
+  {
+    "original": "work_next50_r5/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r5/cvdp_copilot_64b66b_decoder/reports/11.txt",
+    "sha256": "0c7c67fc9ed873d1a6786ad7752f34fc1e3c7e6f727457c758003d0d29c78998",
+    "bytes": 33677
+  },
+  {
+    "original": "work_next50_r5/cvdp_copilot_axi_alu/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r5/cvdp_copilot_axi_alu/reports/1.txt",
+    "sha256": "8e000b8c77787c9f0df23eef266ee072981dc820913f80794a11980feccb4723",
+    "bytes": 47151
+  },
+  {
+    "original": "work_next50_r5/cvdp_copilot_huffman/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r5/cvdp_copilot_huffman/reports/1.txt",
+    "sha256": "22531e007f57fba9dfbd8ec1b2321f001dea26a63bbf55c9225088ebd84c0b16",
+    "bytes": 4119
+  },
+  {
+    "original": "work_next50_r5/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r5/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "sha256": "f2d74adc0f7d8c5d98d8a4fffc53fbb736cf0eeae44ffced5de842a3a6219621",
+    "bytes": 11376
+  },
+  {
+    "original": "work_next50_r5/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r5/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "sha256": "43907ad4738dd3e656ec3686026ae5437c66fd848119fe5bf99e6cec73111590",
+    "bytes": 9796
+  },
+  {
+    "original": "work_next50_r5/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_r5/raw_result.json",
+    "sha256": "5b0f9acadb64abb7cc8eb1ad8d3bc37e17c1e5d5ec34d99027d16bff56572312",
+    "bytes": 1428
+  },
+  {
+    "original": "work_next50_r5/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r5/report.txt",
+    "sha256": "c9eb42fd104200afda4dfdf61462e0159b3fb2b488ce1e2c48edc5d14f318343",
+    "bytes": 8606
+  },
+  {
+    "original": "work_next50_r6/cvdp_copilot_axi_alu/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r6/cvdp_copilot_axi_alu/reports/1.txt",
+    "sha256": "3f918f5749f59679b877ad17dc767532d42df4dab5d9a9e6ec5485c213af74c7",
+    "bytes": 43967
+  },
+  {
+    "original": "work_next50_r6/cvdp_copilot_axi_tap/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r6/cvdp_copilot_axi_tap/reports/1.txt",
+    "sha256": "10dd65903de9a98039ff8849ab70485ede26780c67f618863a4e392b629c6bd9",
+    "bytes": 51746
+  },
+  {
+    "original": "work_next50_r6/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_r6/raw_result.json",
+    "sha256": "d7024522d25f8daa57588efefb6633fc7d31b91fc2b4ee0c1aa67d7c67ded1ea",
+    "bytes": 547
+  },
+  {
+    "original": "work_next50_r6/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_r6/report.txt",
+    "sha256": "d5249257638b2a483cf99f936fcfbaf8b364aa1004887d282b7eca679775a80a",
+    "bytes": 4986
+  },
+  {
+    "original": "work_next50_retry_20260925/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+    "sha256": "2809f457a65cff7a74da333f1e59aef2985184e1a6c999f989cf3ef966f94992",
+    "bytes": 61986
+  },
+  {
+    "original": "work_next50_retry_20260925/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+    "sha256": "b65b8fd5503e53a5b6b69d21e3d06bdb4788948c7a713bc8857bbfd37d0cbffc",
+    "bytes": 113682
+  },
+  {
+    "original": "work_next50_retry_20260925/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/cvdp_copilot_microcode_sequencer/reports/1.txt",
+    "sha256": "a9bdae5ec240ea2dcc5bc95f57d5022e5af63ed06464498197614b53106259cc",
+    "bytes": 9207
+  },
+  {
+    "original": "work_next50_retry_20260925/cvdp_copilot_neuromorphic_array/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/cvdp_copilot_neuromorphic_array/reports/1.txt",
+    "sha256": "86af7cc7bc99f24211448cba1a6bba5a96a2c996a3d275c2d6483b4f9e303259",
+    "bytes": 6894
+  },
+  {
+    "original": "work_next50_retry_20260925/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+    "sha256": "77811d987cda2377d1f088efe7f7587db829c81a2a1abb67c25b47029f8d6b77",
+    "bytes": 8512
+  },
+  {
+    "original": "work_next50_retry_20260925/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+    "sha256": "31a172711f697f96ee36fcba9a04fe4fc4d44e71e493226059a28652f5a14e4f",
+    "bytes": 245051
+  },
+  {
+    "original": "work_next50_retry_20260925/cvdp_copilot_wb2ahb/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/cvdp_copilot_wb2ahb/reports/1.txt",
+    "sha256": "9e926db46c333f188cd7e68e26fa1a01ec5937accf3633cfeb3b98e83ac35d1f",
+    "bytes": 3273
+  },
+  {
+    "original": "work_next50_retry_20260925/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/raw_result.json",
+    "sha256": "65d614da4390bd9a03fe6a088fa7ec2ba9e94d72006ce27193125a5825cd16af",
+    "bytes": 2196
+  },
+  {
+    "original": "work_next50_retry_20260925/report.txt",
+    "archived": "solutions/evaluation_evidence/work_next50_retry_20260925/report.txt",
+    "sha256": "8c005371de594a2f77c2f33c0fee40e986e1068c315159f1747ae0315e22f4ec",
+    "bytes": 11656
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_32_bit_Brent_Kung_PP_adder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_32_bit_Brent_Kung_PP_adder/reports/1.txt",
+    "sha256": "9528de9a2d2ff6bf101b24ac10f86fe96cb892b05542e094774d75d98cc5c8e6",
+    "bytes": 11746
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_8x3_priority_encoder/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_8x3_priority_encoder/reports/1.txt",
+    "sha256": "e2465bd2e81ffeaa9ec4017b3e1e606df14f161f80e6c6be0cb066d48b2ce836",
+    "bytes": 20935
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_FIR/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_FIR/reports/1.txt",
+    "sha256": "fb424bed53bc7cf849f0574be30d574ef53a4415a8781531c5abf16326f33ca0",
+    "bytes": 4985
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_GFCM/reports/3.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_GFCM/reports/3.txt",
+    "sha256": "d4903c66786e884f7a8223a68b04dcf13b0f52da2fb47ceafe74472c8b75b722",
+    "bytes": 25474
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_MSHR/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_MSHR/reports/1.txt",
+    "sha256": "5aef25dbaa11b3985da7b7c081e3a079bf7efc1563804e2eaf234c8e594acd6d",
+    "bytes": 29430
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_axi_register/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_axi_register/reports/1.txt",
+    "sha256": "5f55d845fc07a4cb657edba159f3817848e68294bbe6160a7a31daf4cd934ccf",
+    "bytes": 69736
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_rs_232/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_rs_232/reports/1.txt",
+    "sha256": "c9be032ce2e3a5438157d8c2a75c5f9d6977da8c0b10ee052ee4c17f39538cdf",
+    "bytes": 19412
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_sigma_delta_audio/reports/7_lint.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_sigma_delta_audio/reports/7_lint.txt",
+    "sha256": "206f9bd098e9a79e3b2b6182770c2fbc9585388215fdd70146582f3a8a6b45f6",
+    "bytes": 461
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_sigma_delta_audio/reports/7_sanity.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_sigma_delta_audio/reports/7_sanity.txt",
+    "sha256": "e21bac302f309470fed86ba9afe680db80ae6c2a82a6b49b3e981d9abfc60b68",
+    "bytes": 39910
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_vending_machine/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_vending_machine/reports/1.txt",
+    "sha256": "3028945eae671f60da3b1c6e10ea3beadbc58fd1aa473608d9573fa06e8ce116",
+    "bytes": 60581
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_vga_controller/reports/26_sanity.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_vga_controller/reports/26_sanity.txt",
+    "sha256": "c787ea67f6590b4ba262d05b97e3448b65e6e7ceebde97c08dad180ad4d2d668",
+    "bytes": 109607
+  },
+  {
+    "original": "work_rep10_first/cvdp_copilot_vga_controller/reports/26_synth.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/cvdp_copilot_vga_controller/reports/26_synth.txt",
+    "sha256": "ba6e633a03443de27db3aaa962f9d394a7f03a64ed2f5de607e983dffbf40deb",
+    "bytes": 40961
+  },
+  {
+    "original": "work_rep10_first/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/raw_result.json",
+    "sha256": "e6ddfdc74b12bf211a62c308b7264ed7063b3111a10067b0334ece1d78d7a5db",
+    "bytes": 3255
+  },
+  {
+    "original": "work_rep10_first/report.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_first/report.txt",
+    "sha256": "5ea098e85f360102a574c8156c227339dc21a94b2d0095892e7fb34baa33a438",
+    "bytes": 15039
+  },
+  {
+    "original": "work_rep10_vending_r1/cvdp_copilot_vending_machine/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_vending_r1/cvdp_copilot_vending_machine/reports/1.txt",
+    "sha256": "4990a800a9cd9d1be1b3b1fd38ea547e8cbf2d9d83059e09cb7c122802cc9dd6",
+    "bytes": 64185
+  },
+  {
+    "original": "work_rep10_vending_r1/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_rep10_vending_r1/raw_result.json",
+    "sha256": "7f425717daf4751a1cc2c011aff251999ef7832664de77d79c588331d76d87a4",
+    "bytes": 297
+  },
+  {
+    "original": "work_rep10_vending_r1/report.txt",
+    "archived": "solutions/evaluation_evidence/work_rep10_vending_r1/report.txt",
+    "sha256": "047c2bb79c5276d38edd36310cc946ad37fd00fc14324a002863cfa2c4bf8239",
+    "bytes": 3989
+  },
+  {
+    "original": "work_vending_comb_20260924_204429/cvdp_copilot_vending_machine/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_20260924_204429/cvdp_copilot_vending_machine/reports/1.txt",
+    "sha256": "066e3c6eef03ad636f532a98d62c952b90bf176eb5ae740df05576ab0f51133c",
+    "bytes": 62174
+  },
+  {
+    "original": "work_vending_comb_20260924_204429/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_20260924_204429/raw_result.json",
+    "sha256": "c129079a18c5e9dc7432aeeb22b06417ddd521f184c8597bf703d17def6b7a61",
+    "bytes": 309
+  },
+  {
+    "original": "work_vending_comb_20260924_204429/report.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_20260924_204429/report.txt",
+    "sha256": "d648345d469f956cd6758548ac97ff85843204617e02082b4e712bf72434db0a",
+    "bytes": 4020
+  },
+  {
+    "original": "work_vending_comb_compatible_r1/cvdp_copilot_vending_machine/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r1/cvdp_copilot_vending_machine/reports/1.txt",
+    "sha256": "ed02e6819c740fb01b08afe38f084c2a94d59ec20aec35d1fc59666e631bba88",
+    "bytes": 59745
+  },
+  {
+    "original": "work_vending_comb_compatible_r1/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r1/raw_result.json",
+    "sha256": "7d1cc03f169c5679363f7a220cc2d43a48c4a4dbd399c3e6a69bebbcbc95cbc6",
+    "bytes": 308
+  },
+  {
+    "original": "work_vending_comb_compatible_r1/report.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r1/report.txt",
+    "sha256": "109c0afc9723e5270d71544addfd138efbef606de2e331a9bf56c970d9afe938",
+    "bytes": 4011
+  },
+  {
+    "original": "work_vending_comb_compatible_r2/cvdp_copilot_vending_machine/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r2/cvdp_copilot_vending_machine/reports/1.txt",
+    "sha256": "db84384e2a3c99e2f3eadbcbde8303a908f2c0114745e5c6ec888f9055ab4a8d",
+    "bytes": 54210
+  },
+  {
+    "original": "work_vending_comb_compatible_r2/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r2/raw_result.json",
+    "sha256": "e282d8f5d08e41adae05a45fd4b27e71c05401b7d67c019db150ea1dca55ba53",
+    "bytes": 308
+  },
+  {
+    "original": "work_vending_comb_compatible_r2/report.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r2/report.txt",
+    "sha256": "fbac58597b0d8c0edb1253a2a342b4be793b94c7f81521d80c7406cc106fc9be",
+    "bytes": 4011
+  },
+  {
+    "original": "work_vending_comb_compatible_r3/cvdp_copilot_vending_machine/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r3/cvdp_copilot_vending_machine/reports/1.txt",
+    "sha256": "9012baf308ddd55dddc693ec393add78a8e2da050ffe15f4acb1bba47463f87f",
+    "bytes": 62029
+  },
+  {
+    "original": "work_vending_comb_compatible_r3/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r3/raw_result.json",
+    "sha256": "59afc0d9c8df0d9c9ad99c3eb63599c3430b476dc810bc1d0e626fb11e73ac6a",
+    "bytes": 307
+  },
+  {
+    "original": "work_vending_comb_compatible_r3/report.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_comb_compatible_r3/report.txt",
+    "sha256": "6165bf5382e94807bb9506e29e815739c793091b86a63b0ec39f0ced21482bc3",
+    "bytes": 4062
+  },
+  {
+    "original": "work_vending_spec_fixed/cvdp_copilot_vending_machine/reports/1.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_spec_fixed/cvdp_copilot_vending_machine/reports/1.txt",
+    "sha256": "09b07d69e49b28558c94278697f270a82b54aa2c378b90cbb457aa55ddc66969",
+    "bytes": 59462
+  },
+  {
+    "original": "work_vending_spec_fixed/raw_result.json",
+    "archived": "solutions/evaluation_evidence/work_vending_spec_fixed/raw_result.json",
+    "sha256": "e955a057f22f14b65b6274ebbe5a7ab3254dd0b76b7a1587fab39d557a81c93e",
+    "bytes": 299
+  },
+  {
+    "original": "work_vending_spec_fixed/report.txt",
+    "archived": "solutions/evaluation_evidence/work_vending_spec_fixed/report.txt",
+    "sha256": "068c42b0e9a2cd527a790a27696efa1e01cb11d87cd41d8ef68bbb2d964b734a",
+    "bytes": 3950
+  }
+]

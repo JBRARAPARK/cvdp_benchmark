@@ -1,0 +1,3 @@
+module clock_jitter_detection_module #(parameter JITTER_THRESHOLD=5)(input clk,system_clk,rst,output reg jitter_detected);
+reg prev_system_clk,start_counter;reg [31:0] edge_count,edge_count_r;wire edge_detected=system_clk&&!prev_system_clk;
+always @(posedge clk)if(rst)begin prev_system_clk<=0;start_counter<=0;edge_count<=0;edge_count_r<=0;jitter_detected<=0;end else begin prev_system_clk<=system_clk;jitter_detected<=0;if(edge_detected)begin if(start_counter)begin edge_count_r<=edge_count+1;jitter_detected<=((edge_count+1)>JITTER_THRESHOLD+1)||((edge_count+1)<JITTER_THRESHOLD-1);end start_counter<=1;edge_count<=0;end else if(start_counter)edge_count<=edge_count+1;end endmodule

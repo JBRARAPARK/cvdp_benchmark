@@ -1,0 +1,585 @@
+Running harness with project name: cvdp_copilot_sync_lifo_1_1790258514
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test_areg_param[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258515
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sync_lifo.lifo_test (1/1)
+                                                            Test the basic functionality of the LIFO with continuous write and read enable.
+     0.00ns INFO     cocotb.sync_lifo                   ADDR_WIDTH = 2, DATA_WIDTH = 4
+    60.00ns INFO     cocotb.sync_lifo                   Wrote 10 to LIFO
+    70.00ns INFO     cocotb.sync_lifo                   Wrote 5 to LIFO
+    80.00ns INFO     cocotb.sync_lifo                   Wrote 10 to LIFO
+    90.00ns INFO     cocotb.sync_lifo                   Wrote 6 to LIFO
+   100.00ns INFO     cocotb.sync_lifo                   Wrote 15 to LIFO
+   120.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 4 when attempting to write to a full LIFO.
+   120.00ns INFO     cocotb.sync_lifo                   Wrote 13 to LIFO
+   140.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 5 when attempting to write to a full LIFO.
+   160.00ns INFO     cocotb.sync_lifo                   Two-clock cycle delay before first read
+   160.00ns INFO     cocotb.sync_lifo                   Read 6 from LIFO
+   170.00ns INFO     cocotb.sync_lifo                   Read 10 from LIFO
+   180.00ns INFO     cocotb.sync_lifo                   Read 5 from LIFO
+   190.00ns INFO     cocotb.sync_lifo                   Read 10 from LIFO
+   190.00ns INFO     cocotb.sync_lifo                   Read 10 from LIFO
+   210.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 4 when attempting to read from an empty LIFO.
+   210.00ns INFO     cocotb.sync_lifo                   Read 10 from LIFO
+   230.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 5 when attempting to read from an empty LIFO.
+   230.00ns INFO     cocotb.regression                  test_sync_lifo.lifo_test passed
+   230.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_sync_lifo.lifo_test       PASS         230.00           0.00     191103.39  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                230.00           0.00     115379.73  **
+                                                        **************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258516
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sync_lifo.lifo_test (1/1)
+                                                            Test the basic functionality of the LIFO with continuous write and read enable.
+     0.00ns INFO     cocotb.sync_lifo                   ADDR_WIDTH = 3, DATA_WIDTH = 8
+    60.00ns INFO     cocotb.sync_lifo                   Wrote 99 to LIFO
+    70.00ns INFO     cocotb.sync_lifo                   Wrote 25 to LIFO
+    80.00ns INFO     cocotb.sync_lifo                   Wrote 121 to LIFO
+    90.00ns INFO     cocotb.sync_lifo                   Wrote 253 to LIFO
+   100.00ns INFO     cocotb.sync_lifo                   Wrote 247 to LIFO
+   110.00ns INFO     cocotb.sync_lifo                   Wrote 140 to LIFO
+   120.00ns INFO     cocotb.sync_lifo                   Wrote 46 to LIFO
+   130.00ns INFO     cocotb.sync_lifo                   Wrote 98 to LIFO
+   140.00ns INFO     cocotb.sync_lifo                   Wrote 31 to LIFO
+   160.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 8 when attempting to write to a full LIFO.
+   160.00ns INFO     cocotb.sync_lifo                   Wrote 153 to LIFO
+   180.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 9 when attempting to write to a full LIFO.
+   200.00ns INFO     cocotb.sync_lifo                   Two-clock cycle delay before first read
+   200.00ns INFO     cocotb.sync_lifo                   Read 98 from LIFO
+   210.00ns INFO     cocotb.sync_lifo                   Read 46 from LIFO
+   220.00ns INFO     cocotb.sync_lifo                   Read 140 from LIFO
+   230.00ns INFO     cocotb.sync_lifo                   Read 247 from LIFO
+   240.00ns INFO     cocotb.sync_lifo                   Read 253 from LIFO
+   250.00ns INFO     cocotb.sync_lifo                   Read 121 from LIFO
+   260.00ns INFO     cocotb.sync_lifo                   Read 25 from LIFO
+   270.00ns INFO     cocotb.sync_lifo                   Read 99 from LIFO
+   270.00ns INFO     cocotb.sync_lifo                   Read 99 from LIFO
+   290.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 8 when attempting to read from an empty LIFO.
+   290.00ns INFO     cocotb.sync_lifo                   Read 99 from LIFO
+   310.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 9 when attempting to read from an empty LIFO.
+   310.00ns INFO     cocotb.regression                  test_sync_lifo.lifo_test passed
+   310.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_sync_lifo.lifo_test       PASS         310.00           0.00     202339.60  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                310.00           0.00     132975.48  **
+                                                        **************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258516
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sync_lifo.lifo_test (1/1)
+                                                            Test the basic functionality of the LIFO with continuous write and read enable.
+     0.00ns INFO     cocotb.sync_lifo                   ADDR_WIDTH = 4, DATA_WIDTH = 16
+    60.00ns INFO     cocotb.sync_lifo                   Wrote 25564 to LIFO
+    70.00ns INFO     cocotb.sync_lifo                   Wrote 6651 to LIFO
+    80.00ns INFO     cocotb.sync_lifo                   Wrote 31095 to LIFO
+    90.00ns INFO     cocotb.sync_lifo                   Wrote 64798 to LIFO
+   100.00ns INFO     cocotb.sync_lifo                   Wrote 63483 to LIFO
+   110.00ns INFO     cocotb.sync_lifo                   Wrote 35956 to LIFO
+   120.00ns INFO     cocotb.sync_lifo                   Wrote 11987 to LIFO
+   130.00ns INFO     cocotb.sync_lifo                   Wrote 25270 to LIFO
+   140.00ns INFO     cocotb.sync_lifo                   Wrote 7939 to LIFO
+   150.00ns INFO     cocotb.sync_lifo                   Wrote 39316 to LIFO
+   160.00ns INFO     cocotb.sync_lifo                   Wrote 62891 to LIFO
+   170.00ns INFO     cocotb.sync_lifo                   Wrote 37153 to LIFO
+   180.00ns INFO     cocotb.sync_lifo                   Wrote 27038 to LIFO
+   190.00ns INFO     cocotb.sync_lifo                   Wrote 36171 to LIFO
+   200.00ns INFO     cocotb.sync_lifo                   Wrote 57945 to LIFO
+   210.00ns INFO     cocotb.sync_lifo                   Wrote 63293 to LIFO
+   220.00ns INFO     cocotb.sync_lifo                   Wrote 1707 to LIFO
+   240.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 16 when attempting to write to a full LIFO.
+   240.00ns INFO     cocotb.sync_lifo                   Wrote 42714 to LIFO
+   260.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 17 when attempting to write to a full LIFO.
+   280.00ns INFO     cocotb.sync_lifo                   Two-clock cycle delay before first read
+   280.00ns INFO     cocotb.sync_lifo                   Read 63293 from LIFO
+   290.00ns INFO     cocotb.sync_lifo                   Read 57945 from LIFO
+   300.00ns INFO     cocotb.sync_lifo                   Read 36171 from LIFO
+   310.00ns INFO     cocotb.sync_lifo                   Read 27038 from LIFO
+   320.00ns INFO     cocotb.sync_lifo                   Read 37153 from LIFO
+   330.00ns INFO     cocotb.sync_lifo                   Read 62891 from LIFO
+   340.00ns INFO     cocotb.sync_lifo                   Read 39316 from LIFO
+   350.00ns INFO     cocotb.sync_lifo                   Read 7939 from LIFO
+   360.00ns INFO     cocotb.sync_lifo                   Read 25270 from LIFO
+   370.00ns INFO     cocotb.sync_lifo                   Read 11987 from LIFO
+   380.00ns INFO     cocotb.sync_lifo                   Read 35956 from LIFO
+   390.00ns INFO     cocotb.sync_lifo                   Read 63483 from LIFO
+   400.00ns INFO     cocotb.sync_lifo                   Read 64798 from LIFO
+   410.00ns INFO     cocotb.sync_lifo                   Read 31095 from LIFO
+   420.00ns INFO     cocotb.sync_lifo                   Read 6651 from LIFO
+   430.00ns INFO     cocotb.sync_lifo                   Read 25564 from LIFO
+   430.00ns INFO     cocotb.sync_lifo                   Read 25564 from LIFO
+   450.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 16 when attempting to read from an empty LIFO.
+   450.00ns INFO     cocotb.sync_lifo                   Read 25564 from LIFO
+   470.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 17 when attempting to read from an empty LIFO.
+   470.00ns INFO     cocotb.regression                  test_sync_lifo.lifo_test passed
+   470.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_sync_lifo.lifo_test       PASS         470.00           0.00     204600.20  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                470.00           0.00     153029.26  **
+                                                        **************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[64]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258516
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sync_lifo.lifo_test (1/1)
+                                                            Test the basic functionality of the LIFO with continuous write and read enable.
+     0.00ns INFO     cocotb.sync_lifo                   ADDR_WIDTH = 6, DATA_WIDTH = 64
+    60.00ns INFO     cocotb.sync_lifo                   Wrote 936121563616278573 to LIFO
+    70.00ns INFO     cocotb.sync_lifo                   Wrote 1687102793300183617 to LIFO
+    80.00ns INFO     cocotb.sync_lifo                   Wrote 15053362338868789983 to LIFO
+    90.00ns INFO     cocotb.sync_lifo                   Wrote 13618119624723401053 to LIFO
+   100.00ns INFO     cocotb.sync_lifo                   Wrote 12543959645398437589 to LIFO
+   110.00ns INFO     cocotb.sync_lifo                   Wrote 9660255880174426595 to LIFO
+   120.00ns INFO     cocotb.sync_lifo                   Wrote 16881785675614435560 to LIFO
+   130.00ns INFO     cocotb.sync_lifo                   Wrote 6011593055738691062 to LIFO
+   140.00ns INFO     cocotb.sync_lifo                   Wrote 3506971337694777261 to LIFO
+   150.00ns INFO     cocotb.sync_lifo                   Wrote 12811850251326210313 to LIFO
+   160.00ns INFO     cocotb.sync_lifo                   Wrote 5143358612129362696 to LIFO
+   170.00ns INFO     cocotb.sync_lifo                   Wrote 1726589844326518230 to LIFO
+   180.00ns INFO     cocotb.sync_lifo                   Wrote 6185371963730220900 to LIFO
+   190.00ns INFO     cocotb.sync_lifo                   Wrote 5766867511073323426 to LIFO
+   200.00ns INFO     cocotb.sync_lifo                   Wrote 3095740847824420268 to LIFO
+   210.00ns INFO     cocotb.sync_lifo                   Wrote 4329119654498592388 to LIFO
+   220.00ns INFO     cocotb.sync_lifo                   Wrote 18014959044421337679 to LIFO
+   230.00ns INFO     cocotb.sync_lifo                   Wrote 8957769598764398536 to LIFO
+   240.00ns INFO     cocotb.sync_lifo                   Wrote 5874759305962939396 to LIFO
+   250.00ns INFO     cocotb.sync_lifo                   Wrote 14977526030417691085 to LIFO
+   260.00ns INFO     cocotb.sync_lifo                   Wrote 7354823539312838047 to LIFO
+   270.00ns INFO     cocotb.sync_lifo                   Wrote 3427334545252282411 to LIFO
+   280.00ns INFO     cocotb.sync_lifo                   Wrote 14929242296310857126 to LIFO
+   290.00ns INFO     cocotb.sync_lifo                   Wrote 13456809048875789622 to LIFO
+   300.00ns INFO     cocotb.sync_lifo                   Wrote 8596161122527809180 to LIFO
+   310.00ns INFO     cocotb.sync_lifo                   Wrote 7258078556651476950 to LIFO
+   320.00ns INFO     cocotb.sync_lifo                   Wrote 5006216361039632851 to LIFO
+   330.00ns INFO     cocotb.sync_lifo                   Wrote 13259302488657922710 to LIFO
+   340.00ns INFO     cocotb.sync_lifo                   Wrote 5735970573362434700 to LIFO
+   350.00ns INFO     cocotb.sync_lifo                   Wrote 17999483202003188429 to LIFO
+   360.00ns INFO     cocotb.sync_lifo                   Wrote 14193923623775768962 to LIFO
+   370.00ns INFO     cocotb.sync_lifo                   Wrote 1640932257584918366 to LIFO
+   380.00ns INFO     cocotb.sync_lifo                   Wrote 11620416285475846743 to LIFO
+   390.00ns INFO     cocotb.sync_lifo                   Wrote 765433166446288997 to LIFO
+   400.00ns INFO     cocotb.sync_lifo                   Wrote 5342932970656983602 to LIFO
+   410.00ns INFO     cocotb.sync_lifo                   Wrote 2363947278630535080 to LIFO
+   420.00ns INFO     cocotb.sync_lifo                   Wrote 7860884643376122643 to LIFO
+   430.00ns INFO     cocotb.sync_lifo                   Wrote 14349342780452353381 to LIFO
+   440.00ns INFO     cocotb.sync_lifo                   Wrote 784516471042466798 to LIFO
+   450.00ns INFO     cocotb.sync_lifo                   Wrote 10278296828327592587 to LIFO
+   460.00ns INFO     cocotb.sync_lifo                   Wrote 11015028250572956410 to LIFO
+   470.00ns INFO     cocotb.sync_lifo                   Wrote 5124267205250446015 to LIFO
+   480.00ns INFO     cocotb.sync_lifo                   Wrote 2607036588701901490 to LIFO
+   490.00ns INFO     cocotb.sync_lifo                   Wrote 10070479222975264419 to LIFO
+   500.00ns INFO     cocotb.sync_lifo                   Wrote 780859469870929900 to LIFO
+   510.00ns INFO     cocotb.sync_lifo                   Wrote 2853136456317525398 to LIFO
+   520.00ns INFO     cocotb.sync_lifo                   Wrote 17658831333832053643 to LIFO
+   530.00ns INFO     cocotb.sync_lifo                   Wrote 14307177973172907202 to LIFO
+   540.00ns INFO     cocotb.sync_lifo                   Wrote 17152832866187172704 to LIFO
+   550.00ns INFO     cocotb.sync_lifo                   Wrote 2845314747051239657 to LIFO
+   560.00ns INFO     cocotb.sync_lifo                   Wrote 13846264577341504186 to LIFO
+   570.00ns INFO     cocotb.sync_lifo                   Wrote 8337315382555285976 to LIFO
+   580.00ns INFO     cocotb.sync_lifo                   Wrote 2540122106899569580 to LIFO
+   590.00ns INFO     cocotb.sync_lifo                   Wrote 5121453058078611011 to LIFO
+   600.00ns INFO     cocotb.sync_lifo                   Wrote 18327789569748943221 to LIFO
+   610.00ns INFO     cocotb.sync_lifo                   Wrote 310394014476110758 to LIFO
+   620.00ns INFO     cocotb.sync_lifo                   Wrote 7863113020782697385 to LIFO
+   630.00ns INFO     cocotb.sync_lifo                   Wrote 4781077836477422830 to LIFO
+   640.00ns INFO     cocotb.sync_lifo                   Wrote 10147524226307850561 to LIFO
+   650.00ns INFO     cocotb.sync_lifo                   Wrote 11975648661566732976 to LIFO
+   660.00ns INFO     cocotb.sync_lifo                   Wrote 2719114048572508303 to LIFO
+   670.00ns INFO     cocotb.sync_lifo                   Wrote 1091663173367322018 to LIFO
+   680.00ns INFO     cocotb.sync_lifo                   Wrote 10622710733974152242 to LIFO
+   690.00ns INFO     cocotb.sync_lifo                   Wrote 3568993035700141807 to LIFO
+   700.00ns INFO     cocotb.sync_lifo                   Wrote 15233165683240406051 to LIFO
+   720.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 64 when attempting to write to a full LIFO.
+   720.00ns INFO     cocotb.sync_lifo                   Wrote 15549450493113827123 to LIFO
+   740.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 65 when attempting to write to a full LIFO.
+   760.00ns INFO     cocotb.sync_lifo                   Two-clock cycle delay before first read
+   760.00ns INFO     cocotb.sync_lifo                   Read 3568993035700141807 from LIFO
+   770.00ns INFO     cocotb.sync_lifo                   Read 10622710733974152242 from LIFO
+   780.00ns INFO     cocotb.sync_lifo                   Read 1091663173367322018 from LIFO
+   790.00ns INFO     cocotb.sync_lifo                   Read 2719114048572508303 from LIFO
+   800.00ns INFO     cocotb.sync_lifo                   Read 11975648661566732976 from LIFO
+   810.00ns INFO     cocotb.sync_lifo                   Read 10147524226307850561 from LIFO
+   820.00ns INFO     cocotb.sync_lifo                   Read 4781077836477422830 from LIFO
+   830.00ns INFO     cocotb.sync_lifo                   Read 7863113020782697385 from LIFO
+   840.00ns INFO     cocotb.sync_lifo                   Read 310394014476110758 from LIFO
+   850.00ns INFO     cocotb.sync_lifo                   Read 18327789569748943221 from LIFO
+   860.00ns INFO     cocotb.sync_lifo                   Read 5121453058078611011 from LIFO
+   870.00ns INFO     cocotb.sync_lifo                   Read 2540122106899569580 from LIFO
+   880.00ns INFO     cocotb.sync_lifo                   Read 8337315382555285976 from LIFO
+   890.00ns INFO     cocotb.sync_lifo                   Read 13846264577341504186 from LIFO
+   900.00ns INFO     cocotb.sync_lifo                   Read 2845314747051239657 from LIFO
+   910.00ns INFO     cocotb.sync_lifo                   Read 17152832866187172704 from LIFO
+   920.00ns INFO     cocotb.sync_lifo                   Read 14307177973172907202 from LIFO
+   930.00ns INFO     cocotb.sync_lifo                   Read 17658831333832053643 from LIFO
+   940.00ns INFO     cocotb.sync_lifo                   Read 2853136456317525398 from LIFO
+   950.00ns INFO     cocotb.sync_lifo                   Read 780859469870929900 from LIFO
+   960.00ns INFO     cocotb.sync_lifo                   Read 10070479222975264419 from LIFO
+   970.00ns INFO     cocotb.sync_lifo                   Read 2607036588701901490 from LIFO
+   980.00ns INFO     cocotb.sync_lifo                   Read 5124267205250446015 from LIFO
+   990.00ns INFO     cocotb.sync_lifo                   Read 11015028250572956410 from LIFO
+  1000.00ns INFO     cocotb.sync_lifo                   Read 10278296828327592587 from LIFO
+  1010.00ns INFO     cocotb.sync_lifo                   Read 784516471042466798 from LIFO
+  1020.00ns INFO     cocotb.sync_lifo                   Read 14349342780452353381 from LIFO
+  1030.00ns INFO     cocotb.sync_lifo                   Read 7860884643376122643 from LIFO
+  1040.00ns INFO     cocotb.sync_lifo                   Read 2363947278630535080 from LIFO
+  1050.00ns INFO     cocotb.sync_lifo                   Read 5342932970656983602 from LIFO
+  1060.00ns INFO     cocotb.sync_lifo                   Read 765433166446288997 from LIFO
+  1070.00ns INFO     cocotb.sync_lifo                   Read 11620416285475846743 from LIFO
+  1080.00ns INFO     cocotb.sync_lifo                   Read 1640932257584918366 from LIFO
+  1090.00ns INFO     cocotb.sync_lifo                   Read 14193923623775768962 from LIFO
+  1100.00ns INFO     cocotb.sync_lifo                   Read 17999483202003188429 from LIFO
+  1110.00ns INFO     cocotb.sync_lifo                   Read 5735970573362434700 from LIFO
+  1120.00ns INFO     cocotb.sync_lifo                   Read 13259302488657922710 from LIFO
+  1130.00ns INFO     cocotb.sync_lifo                   Read 5006216361039632851 from LIFO
+  1140.00ns INFO     cocotb.sync_lifo                   Read 7258078556651476950 from LIFO
+  1150.00ns INFO     cocotb.sync_lifo                   Read 8596161122527809180 from LIFO
+  1160.00ns INFO     cocotb.sync_lifo                   Read 13456809048875789622 from LIFO
+  1170.00ns INFO     cocotb.sync_lifo                   Read 14929242296310857126 from LIFO
+  1180.00ns INFO     cocotb.sync_lifo                   Read 3427334545252282411 from LIFO
+  1190.00ns INFO     cocotb.sync_lifo                   Read 7354823539312838047 from LIFO
+  1200.00ns INFO     cocotb.sync_lifo                   Read 14977526030417691085 from LIFO
+  1210.00ns INFO     cocotb.sync_lifo                   Read 5874759305962939396 from LIFO
+  1220.00ns INFO     cocotb.sync_lifo                   Read 8957769598764398536 from LIFO
+  1230.00ns INFO     cocotb.sync_lifo                   Read 18014959044421337679 from LIFO
+  1240.00ns INFO     cocotb.sync_lifo                   Read 4329119654498592388 from LIFO
+  1250.00ns INFO     cocotb.sync_lifo                   Read 3095740847824420268 from LIFO
+  1260.00ns INFO     cocotb.sync_lifo                   Read 5766867511073323426 from LIFO
+  1270.00ns INFO     cocotb.sync_lifo                   Read 6185371963730220900 from LIFO
+  1280.00ns INFO     cocotb.sync_lifo                   Read 1726589844326518230 from LIFO
+  1290.00ns INFO     cocotb.sync_lifo                   Read 5143358612129362696 from LIFO
+  1300.00ns INFO     cocotb.sync_lifo                   Read 12811850251326210313 from LIFO
+  1310.00ns INFO     cocotb.sync_lifo                   Read 3506971337694777261 from LIFO
+  1320.00ns INFO     cocotb.sync_lifo                   Read 6011593055738691062 from LIFO
+  1330.00ns INFO     cocotb.sync_lifo                   Read 16881785675614435560 from LIFO
+  1340.00ns INFO     cocotb.sync_lifo                   Read 9660255880174426595 from LIFO
+  1350.00ns INFO     cocotb.sync_lifo                   Read 12543959645398437589 from LIFO
+  1360.00ns INFO     cocotb.sync_lifo                   Read 13618119624723401053 from LIFO
+  1370.00ns INFO     cocotb.sync_lifo                   Read 15053362338868789983 from LIFO
+  1380.00ns INFO     cocotb.sync_lifo                   Read 1687102793300183617 from LIFO
+  1390.00ns INFO     cocotb.sync_lifo                   Read 936121563616278573 from LIFO
+  1390.00ns INFO     cocotb.sync_lifo                   Read 936121563616278573 from LIFO
+  1410.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 64 when attempting to read from an empty LIFO.
+  1410.00ns INFO     cocotb.sync_lifo                   Read 936121563616278573 from LIFO
+  1430.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 65 when attempting to read from an empty LIFO.
+  1430.00ns INFO     cocotb.regression                  test_sync_lifo.lifo_test passed
+  1430.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_sync_lifo.lifo_test       PASS        1430.00           0.01     226146.40  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               1430.00           0.01     200704.55  **
+                                                        **************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[128]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258516
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sync_lifo.lifo_test (1/1)
+                                                            Test the basic functionality of the LIFO with continuous write and read enable.
+     0.00ns INFO     cocotb.sync_lifo                   ADDR_WIDTH = 7, DATA_WIDTH = 128
+    60.00ns INFO     cocotb.sync_lifo                   Wrote 80728160955485335691381959425434203615 to LIFO
+    70.00ns INFO     cocotb.sync_lifo                   Wrote 93347320969064809359641184553521402044 to LIFO
+    80.00ns INFO     cocotb.sync_lifo                   Wrote 110894318574501193552400606955800372896 to LIFO
+    90.00ns INFO     cocotb.sync_lifo                   Wrote 265684918617842630818585553444075647752 to LIFO
+   100.00ns INFO     cocotb.sync_lifo                   Wrote 15459438178825881902027835943545059007 to LIFO
+   110.00ns INFO     cocotb.sync_lifo                   Wrote 106379929083759980949678006538048597491 to LIFO
+   120.00ns INFO     cocotb.sync_lifo                   Wrote 201356028775710931299090308332510887340 to LIFO
+   130.00ns INFO     cocotb.sync_lifo                   Wrote 332317338990799597849310736866985910115 to LIFO
+   140.00ns INFO     cocotb.sync_lifo                   Wrote 276286589540438088540281329328423655030 to LIFO
+   150.00ns INFO     cocotb.sync_lifo                   Wrote 311172925909467151201994844666971571615 to LIFO
+   160.00ns INFO     cocotb.sync_lifo                   Wrote 304436663358798379679713937777552896221 to LIFO
+   170.00ns INFO     cocotb.sync_lifo                   Wrote 275395911854446281458276883970925811356 to LIFO
+   180.00ns INFO     cocotb.sync_lifo                   Wrote 37608102485957271060559116895172750646 to LIFO
+   190.00ns INFO     cocotb.sync_lifo                   Wrote 244590959604172844991552262167921796929 to LIFO
+   200.00ns INFO     cocotb.sync_lifo                   Wrote 30269857397963428307739721041711749551 to LIFO
+   210.00ns INFO     cocotb.sync_lifo                   Wrote 278251951479472115591822068492092553815 to LIFO
+   220.00ns INFO     cocotb.sync_lifo                   Wrote 57229521905327734659793395835375017578 to LIFO
+   230.00ns INFO     cocotb.sync_lifo                   Wrote 152229050463138938847480774651676866845 to LIFO
+   240.00ns INFO     cocotb.sync_lifo                   Wrote 314715686772106431408964705272953423436 to LIFO
+   250.00ns INFO     cocotb.sync_lifo                   Wrote 264698653896936389356340057692639295727 to LIFO
+   260.00ns INFO     cocotb.sync_lifo                   Wrote 178637783470468700319735903066197451758 to LIFO
+   270.00ns INFO     cocotb.sync_lifo                   Wrote 59832587370520682684607912687146125075 to LIFO
+   280.00ns INFO     cocotb.sync_lifo                   Wrote 158200294174729935173776545422571676410 to LIFO
+   290.00ns INFO     cocotb.sync_lifo                   Wrote 48091336742580767109816701396402867056 to LIFO
+   300.00ns INFO     cocotb.sync_lifo                   Wrote 52631078017059982629501721237968530316 to LIFO
+   310.00ns INFO     cocotb.sync_lifo                   Wrote 43634353801584404751982511628270228363 to LIFO
+   320.00ns INFO     cocotb.sync_lifo                   Wrote 279266259429389024821147293330974405934 to LIFO
+   330.00ns INFO     cocotb.sync_lifo                   Wrote 229109107791999794777250729127332571925 to LIFO
+   340.00ns INFO     cocotb.sync_lifo                   Wrote 153796323123799204776039781225028112453 to LIFO
+   350.00ns INFO     cocotb.sync_lifo                   Wrote 37039810959947717463653162614370288029 to LIFO
+   360.00ns INFO     cocotb.sync_lifo                   Wrote 152243240287193111962073052917150860327 to LIFO
+   370.00ns INFO     cocotb.sync_lifo                   Wrote 60155591545384958935726418949817942389 to LIFO
+   380.00ns INFO     cocotb.sync_lifo                   Wrote 88195319245983984294354311117226861473 to LIFO
+   390.00ns INFO     cocotb.sync_lifo                   Wrote 150681797926320452984259822298249298241 to LIFO
+   400.00ns INFO     cocotb.sync_lifo                   Wrote 210195136993646935852203602354411999970 to LIFO
+   410.00ns INFO     cocotb.sync_lifo                   Wrote 220911725976583855295138409078868180479 to LIFO
+   420.00ns INFO     cocotb.sync_lifo                   Wrote 339701491774306902394034403061077462170 to LIFO
+   430.00ns INFO     cocotb.sync_lifo                   Wrote 174896169193183299780963358099853355318 to LIFO
+   440.00ns INFO     cocotb.sync_lifo                   Wrote 20137631173800610263302967512964807634 to LIFO
+   450.00ns INFO     cocotb.sync_lifo                   Wrote 237599482658507714272242902878224825113 to LIFO
+   460.00ns INFO     cocotb.sync_lifo                   Wrote 173949437567399261728044123269278451554 to LIFO
+   470.00ns INFO     cocotb.sync_lifo                   Wrote 75088909671742196114320983255344260723 to LIFO
+   480.00ns INFO     cocotb.sync_lifo                   Wrote 73256586847517100635591573718353895616 to LIFO
+   490.00ns INFO     cocotb.sync_lifo                   Wrote 224833366550534870113749736137554398796 to LIFO
+   500.00ns INFO     cocotb.sync_lifo                   Wrote 98429495843746597651138066363815913241 to LIFO
+   510.00ns INFO     cocotb.sync_lifo                   Wrote 307617757442164458115943051137819391213 to LIFO
+   520.00ns INFO     cocotb.sync_lifo                   Wrote 239567007931757776857252188167755141974 to LIFO
+   530.00ns INFO     cocotb.sync_lifo                   Wrote 115756966207452828891911006183174508433 to LIFO
+   540.00ns INFO     cocotb.sync_lifo                   Wrote 214643850176859531089378571317813558695 to LIFO
+   550.00ns INFO     cocotb.sync_lifo                   Wrote 173108586295784757569830732351572153521 to LIFO
+   560.00ns INFO     cocotb.sync_lifo                   Wrote 298646442080494172316161902390340997884 to LIFO
+   570.00ns INFO     cocotb.sync_lifo                   Wrote 86334435200851933634636813726235394179 to LIFO
+   580.00ns INFO     cocotb.sync_lifo                   Wrote 249376191536002343850866634709280184878 to LIFO
+   590.00ns INFO     cocotb.sync_lifo                   Wrote 256979932334230076723724098444563021400 to LIFO
+   600.00ns INFO     cocotb.sync_lifo                   Wrote 168246975705041569533472544516312744552 to LIFO
+   610.00ns INFO     cocotb.sync_lifo                   Wrote 198387360776205586519785584212797127112 to LIFO
+   620.00ns INFO     cocotb.sync_lifo                   Wrote 38476195013358112059296786022026819246 to LIFO
+   630.00ns INFO     cocotb.sync_lifo                   Wrote 250948905572701615235140184490644557115 to LIFO
+   640.00ns INFO     cocotb.sync_lifo                   Wrote 125085358783067714713239683720533334774 to LIFO
+   650.00ns INFO     cocotb.sync_lifo                   Wrote 54076840771364038575137968871512040248 to LIFO
+   660.00ns INFO     cocotb.sync_lifo                   Wrote 307220597108758355416746416496379984841 to LIFO
+   670.00ns INFO     cocotb.sync_lifo                   Wrote 88306926846559613461603798976132353320 to LIFO
+   680.00ns INFO     cocotb.sync_lifo                   Wrote 193834934823348017189199082209062858275 to LIFO
+   690.00ns INFO     cocotb.sync_lifo                   Wrote 278287812378624119724730933770682147181 to LIFO
+   700.00ns INFO     cocotb.sync_lifo                   Wrote 251791016181625141826406580215667830225 to LIFO
+   710.00ns INFO     cocotb.sync_lifo                   Wrote 166528794465428971546134953885099707592 to LIFO
+   720.00ns INFO     cocotb.sync_lifo                   Wrote 44166650716462515229109276439607718638 to LIFO
+   730.00ns INFO     cocotb.sync_lifo                   Wrote 41852694864539494561799915493026477668 to LIFO
+   740.00ns INFO     cocotb.sync_lifo                   Wrote 217498770246821326201272619836099756788 to LIFO
+   750.00ns INFO     cocotb.sync_lifo                   Wrote 34946247676396013903950329387448323295 to LIFO
+   760.00ns INFO     cocotb.sync_lifo                   Wrote 285885829217864854191060862375857042655 to LIFO
+   770.00ns INFO     cocotb.sync_lifo                   Wrote 128859916836156748885744121987876856909 to LIFO
+   780.00ns INFO     cocotb.sync_lifo                   Wrote 7220731287577466195453901636436753806 to LIFO
+   790.00ns INFO     cocotb.sync_lifo                   Wrote 206527072175864673892215850975208624739 to LIFO
+   800.00ns INFO     cocotb.sync_lifo                   Wrote 228897482127378197680006547505085561867 to LIFO
+   810.00ns INFO     cocotb.sync_lifo                   Wrote 297839870565195289212375527533283294686 to LIFO
+   820.00ns INFO     cocotb.sync_lifo                   Wrote 30672095145674063791800626757403535684 to LIFO
+   830.00ns INFO     cocotb.sync_lifo                   Wrote 168170588180084533261747580506649063401 to LIFO
+   840.00ns INFO     cocotb.sync_lifo                   Wrote 201290361453416980552494209695407377957 to LIFO
+   850.00ns INFO     cocotb.sync_lifo                   Wrote 15465405454787636480022088365320862301 to LIFO
+   860.00ns INFO     cocotb.sync_lifo                   Wrote 150017560552686574732341159135522784624 to LIFO
+   870.00ns INFO     cocotb.sync_lifo                   Wrote 139788589357472380998368886919667999414 to LIFO
+   880.00ns INFO     cocotb.sync_lifo                   Wrote 318847264628977605738775284811816421750 to LIFO
+   890.00ns INFO     cocotb.sync_lifo                   Wrote 144953347856006168787603334368060924230 to LIFO
+   900.00ns INFO     cocotb.sync_lifo                   Wrote 77291640290846667326246784318641801797 to LIFO
+   910.00ns INFO     cocotb.sync_lifo                   Wrote 200335146225158674771265996519463717412 to LIFO
+   920.00ns INFO     cocotb.sync_lifo                   Wrote 154730162350606112446156289936129133103 to LIFO
+   930.00ns INFO     cocotb.sync_lifo                   Wrote 90973772090647599699626306170651343636 to LIFO
+   940.00ns INFO     cocotb.sync_lifo                   Wrote 15030978694711108271538505541638527783 to LIFO
+   950.00ns INFO     cocotb.sync_lifo                   Wrote 295101632291232657353341839461989050717 to LIFO
+   960.00ns INFO     cocotb.sync_lifo                   Wrote 248204677418121897755276945639952680991 to LIFO
+   970.00ns INFO     cocotb.sync_lifo                   Wrote 246369532370836770830919074085960062628 to LIFO
+   980.00ns INFO     cocotb.sync_lifo                   Wrote 152534406731806872259732442580189417098 to LIFO
+   990.00ns INFO     cocotb.sync_lifo                   Wrote 150780262593290626517926289149450766719 to LIFO
+  1000.00ns INFO     cocotb.sync_lifo                   Wrote 324127822881454189903590547425286060922 to LIFO
+  1010.00ns INFO     cocotb.sync_lifo                   Wrote 307205968593008711691985433357624008608 to LIFO
+  1020.00ns INFO     cocotb.sync_lifo                   Wrote 14046837702337825265753908685971973120 to LIFO
+  1030.00ns INFO     cocotb.sync_lifo                   Wrote 22460236281927275633309927293940465259 to LIFO
+  1040.00ns INFO     cocotb.sync_lifo                   Wrote 172944881205163965259077172244852372965 to LIFO
+  1050.00ns INFO     cocotb.sync_lifo                   Wrote 239722121535840996869977731210197715008 to LIFO
+  1060.00ns INFO     cocotb.sync_lifo                   Wrote 300553695512169538814792583984644162241 to LIFO
+  1070.00ns INFO     cocotb.sync_lifo                   Wrote 261070133153628388357997843662073427742 to LIFO
+  1080.00ns INFO     cocotb.sync_lifo                   Wrote 104669931990211433775848751195438131307 to LIFO
+  1090.00ns INFO     cocotb.sync_lifo                   Wrote 226422616947762668874272549857003580932 to LIFO
+  1100.00ns INFO     cocotb.sync_lifo                   Wrote 4709855553280090629582265725686212960 to LIFO
+  1110.00ns INFO     cocotb.sync_lifo                   Wrote 162220553640710939120878583824608413436 to LIFO
+  1120.00ns INFO     cocotb.sync_lifo                   Wrote 122336465210539779214705067926631669629 to LIFO
+  1130.00ns INFO     cocotb.sync_lifo                   Wrote 141805723120264102848651843301892423708 to LIFO
+  1140.00ns INFO     cocotb.sync_lifo                   Wrote 223001933809453112587679016905187696145 to LIFO
+  1150.00ns INFO     cocotb.sync_lifo                   Wrote 237490071321041567522310716511773038641 to LIFO
+  1160.00ns INFO     cocotb.sync_lifo                   Wrote 210489001368592454655755165121821639981 to LIFO
+  1170.00ns INFO     cocotb.sync_lifo                   Wrote 114899541183750917365569243835317877268 to LIFO
+  1180.00ns INFO     cocotb.sync_lifo                   Wrote 245529535597747853171828819048091999680 to LIFO
+  1190.00ns INFO     cocotb.sync_lifo                   Wrote 171232282991784415657433659537687518542 to LIFO
+  1200.00ns INFO     cocotb.sync_lifo                   Wrote 123748852612816770567115790939383182937 to LIFO
+  1210.00ns INFO     cocotb.sync_lifo                   Wrote 3927867748133525684152248094667437595 to LIFO
+  1220.00ns INFO     cocotb.sync_lifo                   Wrote 229438850138964275090022759831816322239 to LIFO
+  1230.00ns INFO     cocotb.sync_lifo                   Wrote 71763590707396893983946729472741324297 to LIFO
+  1240.00ns INFO     cocotb.sync_lifo                   Wrote 328466219763446446991017943083833974884 to LIFO
+  1250.00ns INFO     cocotb.sync_lifo                   Wrote 7752560192503407218953238273478858571 to LIFO
+  1260.00ns INFO     cocotb.sync_lifo                   Wrote 113171684081207428575151201630735097959 to LIFO
+  1270.00ns INFO     cocotb.sync_lifo                   Wrote 311591743088151588658111246302624565163 to LIFO
+  1280.00ns INFO     cocotb.sync_lifo                   Wrote 314265189370305642883126924261703079100 to LIFO
+  1290.00ns INFO     cocotb.sync_lifo                   Wrote 291977934199879384768469739566932256953 to LIFO
+  1300.00ns INFO     cocotb.sync_lifo                   Wrote 2809675653121340319265492556076893477 to LIFO
+  1310.00ns INFO     cocotb.sync_lifo                   Wrote 62031476442107092636251547311165695876 to LIFO
+  1320.00ns INFO     cocotb.sync_lifo                   Wrote 246556710977011839047739612329172880772 to LIFO
+  1330.00ns INFO     cocotb.sync_lifo                   Wrote 127859214774780376496367761821066145055 to LIFO
+  1340.00ns INFO     cocotb.sync_lifo                   Wrote 178824602411144969509920430700474191526 to LIFO
+  1360.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 128 when attempting to write to a full LIFO.
+  1360.00ns INFO     cocotb.sync_lifo                   Wrote 3124080693229340005360181753539946592 to LIFO
+  1380.00ns INFO     cocotb.sync_lifo                   Overflow occurred on iteration 129 when attempting to write to a full LIFO.
+  1400.00ns INFO     cocotb.sync_lifo                   Two-clock cycle delay before first read
+  1400.00ns INFO     cocotb.sync_lifo                   Read 127859214774780376496367761821066145055 from LIFO
+  1410.00ns INFO     cocotb.sync_lifo                   Read 246556710977011839047739612329172880772 from LIFO
+  1420.00ns INFO     cocotb.sync_lifo                   Read 62031476442107092636251547311165695876 from LIFO
+  1430.00ns INFO     cocotb.sync_lifo                   Read 2809675653121340319265492556076893477 from LIFO
+  1440.00ns INFO     cocotb.sync_lifo                   Read 291977934199879384768469739566932256953 from LIFO
+  1450.00ns INFO     cocotb.sync_lifo                   Read 314265189370305642883126924261703079100 from LIFO
+  1460.00ns INFO     cocotb.sync_lifo                   Read 311591743088151588658111246302624565163 from LIFO
+  1470.00ns INFO     cocotb.sync_lifo                   Read 113171684081207428575151201630735097959 from LIFO
+  1480.00ns INFO     cocotb.sync_lifo                   Read 7752560192503407218953238273478858571 from LIFO
+  1490.00ns INFO     cocotb.sync_lifo                   Read 328466219763446446991017943083833974884 from LIFO
+  1500.00ns INFO     cocotb.sync_lifo                   Read 71763590707396893983946729472741324297 from LIFO
+  1510.00ns INFO     cocotb.sync_lifo                   Read 229438850138964275090022759831816322239 from LIFO
+  1520.00ns INFO     cocotb.sync_lifo                   Read 3927867748133525684152248094667437595 from LIFO
+  1530.00ns INFO     cocotb.sync_lifo                   Read 123748852612816770567115790939383182937 from LIFO
+  1540.00ns INFO     cocotb.sync_lifo                   Read 171232282991784415657433659537687518542 from LIFO
+  1550.00ns INFO     cocotb.sync_lifo                   Read 245529535597747853171828819048091999680 from LIFO
+  1560.00ns INFO     cocotb.sync_lifo                   Read 114899541183750917365569243835317877268 from LIFO
+  1570.00ns INFO     cocotb.sync_lifo                   Read 210489001368592454655755165121821639981 from LIFO
+  1580.00ns INFO     cocotb.sync_lifo                   Read 237490071321041567522310716511773038641 from LIFO
+  1590.00ns INFO     cocotb.sync_lifo                   Read 223001933809453112587679016905187696145 from LIFO
+  1600.00ns INFO     cocotb.sync_lifo                   Read 141805723120264102848651843301892423708 from LIFO
+  1610.00ns INFO     cocotb.sync_lifo                   Read 122336465210539779214705067926631669629 from LIFO
+  1620.00ns INFO     cocotb.sync_lifo                   Read 162220553640710939120878583824608413436 from LIFO
+  1630.00ns INFO     cocotb.sync_lifo                   Read 4709855553280090629582265725686212960 from LIFO
+  1640.00ns INFO     cocotb.sync_lifo                   Read 226422616947762668874272549857003580932 from LIFO
+  1650.00ns INFO     cocotb.sync_lifo                   Read 104669931990211433775848751195438131307 from LIFO
+  1660.00ns INFO     cocotb.sync_lifo                   Read 261070133153628388357997843662073427742 from LIFO
+  1670.00ns INFO     cocotb.sync_lifo                   Read 300553695512169538814792583984644162241 from LIFO
+  1680.00ns INFO     cocotb.sync_lifo                   Read 239722121535840996869977731210197715008 from LIFO
+  1690.00ns INFO     cocotb.sync_lifo                   Read 172944881205163965259077172244852372965 from LIFO
+  1700.00ns INFO     cocotb.sync_lifo                   Read 22460236281927275633309927293940465259 from LIFO
+  1710.00ns INFO     cocotb.sync_lifo                   Read 14046837702337825265753908685971973120 from LIFO
+  1720.00ns INFO     cocotb.sync_lifo                   Read 307205968593008711691985433357624008608 from LIFO
+  1730.00ns INFO     cocotb.sync_lifo                   Read 324127822881454189903590547425286060922 from LIFO
+  1740.00ns INFO     cocotb.sync_lifo                   Read 150780262593290626517926289149450766719 from LIFO
+  1750.00ns INFO     cocotb.sync_lifo                   Read 152534406731806872259732442580189417098 from LIFO
+  1760.00ns INFO     cocotb.sync_lifo                   Read 246369532370836770830919074085960062628 from LIFO
+  1770.00ns INFO     cocotb.sync_lifo                   Read 248204677418121897755276945639952680991 from LIFO
+  1780.00ns INFO     cocotb.sync_lifo                   Read 295101632291232657353341839461989050717 from LIFO
+  1790.00ns INFO     cocotb.sync_lifo                   Read 15030978694711108271538505541638527783 from LIFO
+  1800.00ns INFO     cocotb.sync_lifo                   Read 90973772090647599699626306170651343636 from LIFO
+  1810.00ns INFO     cocotb.sync_lifo                   Read 154730162350606112446156289936129133103 from LIFO
+  1820.00ns INFO     cocotb.sync_lifo                   Read 200335146225158674771265996519463717412 from LIFO
+  1830.00ns INFO     cocotb.sync_lifo                   Read 77291640290846667326246784318641801797 from LIFO
+  1840.00ns INFO     cocotb.sync_lifo                   Read 144953347856006168787603334368060924230 from LIFO
+  1850.00ns INFO     cocotb.sync_lifo                   Read 318847264628977605738775284811816421750 from LIFO
+  1860.00ns INFO     cocotb.sync_lifo                   Read 139788589357472380998368886919667999414 from LIFO
+  1870.00ns INFO     cocotb.sync_lifo                   Read 150017560552686574732341159135522784624 from LIFO
+  1880.00ns INFO     cocotb.sync_lifo                   Read 15465405454787636480022088365320862301 from LIFO
+  1890.00ns INFO     cocotb.sync_lifo                   Read 201290361453416980552494209695407377957 from LIFO
+  1900.00ns INFO     cocotb.sync_lifo                   Read 168170588180084533261747580506649063401 from LIFO
+  1910.00ns INFO     cocotb.sync_lifo                   Read 30672095145674063791800626757403535684 from LIFO
+  1920.00ns INFO     cocotb.sync_lifo                   Read 297839870565195289212375527533283294686 from LIFO
+  1930.00ns INFO     cocotb.sync_lifo                   Read 228897482127378197680006547505085561867 from LIFO
+  1940.00ns INFO     cocotb.sync_lifo                   Read 206527072175864673892215850975208624739 from LIFO
+  1950.00ns INFO     cocotb.sync_lifo                   Read 7220731287577466195453901636436753806 from LIFO
+  1960.00ns INFO     cocotb.sync_lifo                   Read 128859916836156748885744121987876856909 from LIFO
+  1970.00ns INFO     cocotb.sync_lifo                   Read 285885829217864854191060862375857042655 from LIFO
+  1980.00ns INFO     cocotb.sync_lifo                   Read 34946247676396013903950329387448323295 from LIFO
+  1990.00ns INFO     cocotb.sync_lifo                   Read 217498770246821326201272619836099756788 from LIFO
+  2000.00ns INFO     cocotb.sync_lifo                   Read 41852694864539494561799915493026477668 from LIFO
+  2010.00ns INFO     cocotb.sync_lifo                   Read 44166650716462515229109276439607718638 from LIFO
+  2020.00ns INFO     cocotb.sync_lifo                   Read 166528794465428971546134953885099707592 from LIFO
+  2030.00ns INFO     cocotb.sync_lifo                   Read 251791016181625141826406580215667830225 from LIFO
+  2040.00ns INFO     cocotb.sync_lifo                   Read 278287812378624119724730933770682147181 from LIFO
+  2050.00ns INFO     cocotb.sync_lifo                   Read 193834934823348017189199082209062858275 from LIFO
+  2060.00ns INFO     cocotb.sync_lifo                   Read 88306926846559613461603798976132353320 from LIFO
+  2070.00ns INFO     cocotb.sync_lifo                   Read 307220597108758355416746416496379984841 from LIFO
+  2080.00ns INFO     cocotb.sync_lifo                   Read 54076840771364038575137968871512040248 from LIFO
+  2090.00ns INFO     cocotb.sync_lifo                   Read 125085358783067714713239683720533334774 from LIFO
+  2100.00ns INFO     cocotb.sync_lifo                   Read 250948905572701615235140184490644557115 from LIFO
+  2110.00ns INFO     cocotb.sync_lifo                   Read 38476195013358112059296786022026819246 from LIFO
+  2120.00ns INFO     cocotb.sync_lifo                   Read 198387360776205586519785584212797127112 from LIFO
+  2130.00ns INFO     cocotb.sync_lifo                   Read 168246975705041569533472544516312744552 from LIFO
+  2140.00ns INFO     cocotb.sync_lifo                   Read 256979932334230076723724098444563021400 from LIFO
+  2150.00ns INFO     cocotb.sync_lifo                   Read 249376191536002343850866634709280184878 from LIFO
+  2160.00ns INFO     cocotb.sync_lifo                   Read 86334435200851933634636813726235394179 from LIFO
+  2170.00ns INFO     cocotb.sync_lifo                   Read 298646442080494172316161902390340997884 from LIFO
+  2180.00ns INFO     cocotb.sync_lifo                   Read 173108586295784757569830732351572153521 from LIFO
+  2190.00ns INFO     cocotb.sync_lifo                   Read 214643850176859531089378571317813558695 from LIFO
+  2200.00ns INFO     cocotb.sync_lifo                   Read 115756966207452828891911006183174508433 from LIFO
+  2210.00ns INFO     cocotb.sync_lifo                   Read 239567007931757776857252188167755141974 from LIFO
+  2220.00ns INFO     cocotb.sync_lifo                   Read 307617757442164458115943051137819391213 from LIFO
+  2230.00ns INFO     cocotb.sync_lifo                   Read 98429495843746597651138066363815913241 from LIFO
+  2240.00ns INFO     cocotb.sync_lifo                   Read 224833366550534870113749736137554398796 from LIFO
+  2250.00ns INFO     cocotb.sync_lifo                   Read 73256586847517100635591573718353895616 from LIFO
+  2260.00ns INFO     cocotb.sync_lifo                   Read 75088909671742196114320983255344260723 from LIFO
+  2270.00ns INFO     cocotb.sync_lifo                   Read 173949437567399261728044123269278451554 from LIFO
+  2280.00ns INFO     cocotb.sync_lifo                   Read 237599482658507714272242902878224825113 from LIFO
+  2290.00ns INFO     cocotb.sync_lifo                   Read 20137631173800610263302967512964807634 from LIFO
+  2300.00ns INFO     cocotb.sync_lifo                   Read 174896169193183299780963358099853355318 from LIFO
+  2310.00ns INFO     cocotb.sync_lifo                   Read 339701491774306902394034403061077462170 from LIFO
+  2320.00ns INFO     cocotb.sync_lifo                   Read 220911725976583855295138409078868180479 from LIFO
+  2330.00ns INFO     cocotb.sync_lifo                   Read 210195136993646935852203602354411999970 from LIFO
+  2340.00ns INFO     cocotb.sync_lifo                   Read 150681797926320452984259822298249298241 from LIFO
+  2350.00ns INFO     cocotb.sync_lifo                   Read 88195319245983984294354311117226861473 from LIFO
+  2360.00ns INFO     cocotb.sync_lifo                   Read 60155591545384958935726418949817942389 from LIFO
+  2370.00ns INFO     cocotb.sync_lifo                   Read 152243240287193111962073052917150860327 from LIFO
+  2380.00ns INFO     cocotb.sync_lifo                   Read 37039810959947717463653162614370288029 from LIFO
+  2390.00ns INFO     cocotb.sync_lifo                   Read 153796323123799204776039781225028112453 from LIFO
+  2400.00ns INFO     cocotb.sync_lifo                   Read 229109107791999794777250729127332571925 from LIFO
+  2410.00ns INFO     cocotb.sync_lifo                   Read 279266259429389024821147293330974405934 from LIFO
+  2420.00ns INFO     cocotb.sync_lifo                   Read 43634353801584404751982511628270228363 from LIFO
+  2430.00ns INFO     cocotb.sync_lifo                   Read 52631078017059982629501721237968530316 from LIFO
+  2440.00ns INFO     cocotb.sync_lifo                   Read 48091336742580767109816701396402867056 from LIFO
+  2450.00ns INFO     cocotb.sync_lifo                   Read 158200294174729935173776545422571676410 from LIFO
+  2460.00ns INFO     cocotb.sync_lifo                   Read 59832587370520682684607912687146125075 from LIFO
+  2470.00ns INFO     cocotb.sync_lifo                   Read 178637783470468700319735903066197451758 from LIFO
+  2480.00ns INFO     cocotb.sync_lifo                   Read 264698653896936389356340057692639295727 from LIFO
+  2490.00ns INFO     cocotb.sync_lifo                   Read 314715686772106431408964705272953423436 from LIFO
+  2500.00ns INFO     cocotb.sync_lifo                   Read 152229050463138938847480774651676866845 from LIFO
+  2510.00ns INFO     cocotb.sync_lifo                   Read 57229521905327734659793395835375017578 from LIFO
+  2520.00ns INFO     cocotb.sync_lifo                   Read 278251951479472115591822068492092553815 from LIFO
+  2530.00ns INFO     cocotb.sync_lifo                   Read 30269857397963428307739721041711749551 from LIFO
+  2540.00ns INFO     cocotb.sync_lifo                   Read 244590959604172844991552262167921796929 from LIFO
+  2550.00ns INFO     cocotb.sync_lifo                   Read 37608102485957271060559116895172750646 from LIFO
+  2560.00ns INFO     cocotb.sync_lifo                   Read 275395911854446281458276883970925811356 from LIFO
+  2570.00ns INFO     cocotb.sync_lifo                   Read 304436663358798379679713937777552896221 from LIFO
+  2580.00ns INFO     cocotb.sync_lifo                   Read 311172925909467151201994844666971571615 from LIFO
+  2590.00ns INFO     cocotb.sync_lifo                   Read 276286589540438088540281329328423655030 from LIFO
+  2600.00ns INFO     cocotb.sync_lifo                   Read 332317338990799597849310736866985910115 from LIFO
+  2610.00ns INFO     cocotb.sync_lifo                   Read 201356028775710931299090308332510887340 from LIFO
+  2620.00ns INFO     cocotb.sync_lifo                   Read 106379929083759980949678006538048597491 from LIFO
+  2630.00ns INFO     cocotb.sync_lifo                   Read 15459438178825881902027835943545059007 from LIFO
+  2640.00ns INFO     cocotb.sync_lifo                   Read 265684918617842630818585553444075647752 from LIFO
+  2650.00ns INFO     cocotb.sync_lifo                   Read 110894318574501193552400606955800372896 from LIFO
+  2660.00ns INFO     cocotb.sync_lifo                   Read 93347320969064809359641184553521402044 from LIFO
+  2670.00ns INFO     cocotb.sync_lifo                   Read 80728160955485335691381959425434203615 from LIFO
+  2670.00ns INFO     cocotb.sync_lifo                   Read 80728160955485335691381959425434203615 from LIFO
+  2690.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 128 when attempting to read from an empty LIFO.
+  2690.00ns INFO     cocotb.sync_lifo                   Read 80728160955485335691381959425434203615 from LIFO
+  2710.00ns INFO     cocotb.sync_lifo                   Underflow occurred on iteration 129 when attempting to read from an empty LIFO.
+  2710.00ns INFO     cocotb.regression                  test_sync_lifo.lifo_test passed
+  2710.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_sync_lifo.lifo_test       PASS        2710.00           0.01     210980.30  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0               2710.00           0.01     196908.86  **
+                                                        **************************************************************************************
+PASSED
+
+============================== 5 passed in 1.12s ===============================
+Cleaning up Docker resources...

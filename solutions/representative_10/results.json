@@ -1,0 +1,186 @@
+[
+  {
+    "id": "cvdp_copilot_8x3_priority_encoder_0001",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_8x3_priority_encoder_0001.sv",
+    "sha256": "70e028bd3c6736b2b8a20fc0e876ecabbfd4982c272424b3ff0f8066e5133974",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_8x3_priority_encoder/reports/1.txt",
+        "error_msg": null,
+        "execution": 3.6466948986053467,
+        "pid": 83946
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_vending_machine_0001",
+    "initial_pass": false,
+    "final_pass": true,
+    "revised": true,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_vending_machine_0001.sv",
+    "sha256": "f0956b9ef24bb2311c7e3008d957120d37f5bb8629418788d4364970c17d3883",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_vending_r1/cvdp_copilot_vending_machine/reports/1.txt",
+        "error_msg": null,
+        "execution": 3.333296775817871,
+        "pid": 84241
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_FIR_0001",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_FIR_0001.sv",
+    "sha256": "5abab7759df8b0d164768398e6b6aeacf2229fa1c55d9c6a263b44dfa019c4b4",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_FIR/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.087364912033081,
+        "pid": 83999
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_axi_register_0001",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_axi_register_0001.sv",
+    "sha256": "bcb9ef5c9e886eb843053d51ade0ae278acad58b38a02e31369eddc2985459d6",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_axi_register/reports/1.txt",
+        "error_msg": null,
+        "execution": 3.5780208110809326,
+        "pid": 84016
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_GFCM_0003",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_GFCM_0003.sv",
+    "sha256": "756d5ac276a1fb8391300b2503eeead690c2e66073b23a91a9139f4d7bb142d7",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_GFCM/reports/3.txt",
+        "error_msg": null,
+        "execution": 1.1978261470794678,
+        "pid": 84030
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_MSHR_0001",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_MSHR_0001.sv",
+    "sha256": "3916bfde3524ded0d6c7884f12da0453ee340a3750ef24dbce42eca22c07877c",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_MSHR/reports/1.txt",
+        "error_msg": null,
+        "execution": 3.1321351528167725,
+        "pid": 84041
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_rs_232_0001",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_rs_232_0001.sv",
+    "sha256": "45a1ed31f6284a8c544078214d5dcc9b73e1831c6c4949be9618109a7ff75dc2",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_rs_232/reports/1.txt",
+        "error_msg": null,
+        "execution": 6.970508098602295,
+        "pid": 84052
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_32_bit_Brent_Kung_PP_adder_0001",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_32_bit_Brent_Kung_PP_adder_0001.sv",
+    "sha256": "80f40098b6da0a4ab50bf7591f9dffd447f80cfb6ec37be24555fb726b7948ea",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_32_bit_Brent_Kung_PP_adder/reports/1.txt",
+        "error_msg": null,
+        "execution": 1.1422700881958008,
+        "pid": 84084
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_sigma_delta_audio_0007",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_sigma_delta_audio_0007.sv",
+    "sha256": "718822dc9e8d279f5af254b3019787134cc0c96b49fc15c6cf21e7e0ad4e2254",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_sigma_delta_audio/reports/7_lint.txt",
+        "error_msg": null,
+        "execution": 0.8754129409790039,
+        "pid": 84096
+      },
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_sigma_delta_audio/reports/7_sanity.txt",
+        "error_msg": null,
+        "execution": 3.243546724319458,
+        "pid": 84107
+      }
+    ]
+  },
+  {
+    "id": "cvdp_copilot_vga_controller_0026",
+    "initial_pass": true,
+    "final_pass": true,
+    "revised": false,
+    "rtl": "solutions/representative_10/revised/cvdp_copilot_vga_controller_0026.sv",
+    "sha256": "4b988a41f480f2a65917d031f768c97f44850731b8143d74e757efb1be5f5d89",
+    "tests": [
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_vga_controller/reports/26_sanity.txt",
+        "error_msg": null,
+        "execution": 10.791491746902466,
+        "pid": 84154
+      },
+      {
+        "result": 0,
+        "log": "/Users/bagjunbeom/Downloads/CVDP/work_rep10_first/cvdp_copilot_vga_controller/reports/26_synth.txt",
+        "error_msg": null,
+        "execution": 6.557615756988525,
+        "pid": 84190
+      }
+    ]
+  }
+]

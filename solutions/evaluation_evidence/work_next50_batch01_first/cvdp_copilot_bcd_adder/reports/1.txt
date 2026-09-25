@@ -1,0 +1,154 @@
+Running harness with project name: cvdp_copilot_bcd_adder_1_1790257422
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test_areg_param[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257423
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bcd_adder.test_bcd_adder (1/1)
+Performing_write_operation:: a_value = 2, b_value = 8
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 2, b_value = 7
+Performing_reading_operation:: sum_value = 9, cout_value = 0
+Performing_write_operation:: a_value = 9, b_value = 5
+Performing_reading_operation:: sum_value = 4, cout_value = 1
+Performing_write_operation:: a_value = 8, b_value = 6
+Performing_reading_operation:: sum_value = 4, cout_value = 1
+Performing_write_operation:: a_value = 7, b_value = 3
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 9, b_value = 3
+Performing_reading_operation:: sum_value = 2, cout_value = 1
+Performing_write_operation:: a_value = 7, b_value = 7
+Performing_reading_operation:: sum_value = 4, cout_value = 1
+Performing_write_operation:: a_value = 8, b_value = 3
+Performing_reading_operation:: sum_value = 1, cout_value = 1
+Performing_write_operation:: a_value = 5, b_value = 0
+Performing_reading_operation:: sum_value = 5, cout_value = 0
+Performing_write_operation:: a_value = 8, b_value = 0
+Performing_reading_operation:: sum_value = 8, cout_value = 0
+   200.00ns INFO     cocotb.regression                  test_bcd_adder.test_bcd_adder passed
+   200.00ns INFO     cocotb.regression                  ***************************************************************************************
+                                                        ** TEST                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************
+                                                        ** test_bcd_adder.test_bcd_adder   PASS         200.00           0.00     428865.44  **
+                                                        ***************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                 200.00           0.00     186953.60  **
+                                                        ***************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257424
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bcd_adder.test_bcd_adder (1/1)
+Performing_write_operation:: a_value = 7, b_value = 6
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 9, b_value = 4
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 0, b_value = 5
+Performing_reading_operation:: sum_value = 5, cout_value = 0
+Performing_write_operation:: a_value = 7, b_value = 9
+Performing_reading_operation:: sum_value = 6, cout_value = 1
+Performing_write_operation:: a_value = 3, b_value = 6
+Performing_reading_operation:: sum_value = 9, cout_value = 0
+Performing_write_operation:: a_value = 3, b_value = 7
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 5, b_value = 8
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 4, b_value = 5
+Performing_reading_operation:: sum_value = 9, cout_value = 0
+Performing_write_operation:: a_value = 9, b_value = 1
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 3, b_value = 5
+Performing_reading_operation:: sum_value = 8, cout_value = 0
+   200.00ns INFO     cocotb.regression                  test_bcd_adder.test_bcd_adder passed
+   200.00ns INFO     cocotb.regression                  ***************************************************************************************
+                                                        ** TEST                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************
+                                                        ** test_bcd_adder.test_bcd_adder   PASS         200.00           0.00     460406.59  **
+                                                        ***************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                 200.00           0.00     191520.73  **
+                                                        ***************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257424
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bcd_adder.test_bcd_adder (1/1)
+Performing_write_operation:: a_value = 7, b_value = 6
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 9, b_value = 4
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 0, b_value = 5
+Performing_reading_operation:: sum_value = 5, cout_value = 0
+Performing_write_operation:: a_value = 7, b_value = 9
+Performing_reading_operation:: sum_value = 6, cout_value = 1
+Performing_write_operation:: a_value = 3, b_value = 6
+Performing_reading_operation:: sum_value = 9, cout_value = 0
+Performing_write_operation:: a_value = 3, b_value = 7
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 5, b_value = 8
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 4, b_value = 5
+Performing_reading_operation:: sum_value = 9, cout_value = 0
+Performing_write_operation:: a_value = 9, b_value = 1
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 3, b_value = 5
+Performing_reading_operation:: sum_value = 8, cout_value = 0
+   200.00ns INFO     cocotb.regression                  test_bcd_adder.test_bcd_adder passed
+   200.00ns INFO     cocotb.regression                  ***************************************************************************************
+                                                        ** TEST                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************
+                                                        ** test_bcd_adder.test_bcd_adder   PASS         200.00           0.00     459398.03  **
+                                                        ***************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                 200.00           0.00     187413.05  **
+                                                        ***************************************************************************************
+PASSED
+../../src/test_runner.py::test_areg_param[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257424
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_bcd_adder.test_bcd_adder (1/1)
+Performing_write_operation:: a_value = 7, b_value = 6
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 9, b_value = 4
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 0, b_value = 5
+Performing_reading_operation:: sum_value = 5, cout_value = 0
+Performing_write_operation:: a_value = 7, b_value = 9
+Performing_reading_operation:: sum_value = 6, cout_value = 1
+Performing_write_operation:: a_value = 3, b_value = 6
+Performing_reading_operation:: sum_value = 9, cout_value = 0
+Performing_write_operation:: a_value = 3, b_value = 7
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 5, b_value = 8
+Performing_reading_operation:: sum_value = 3, cout_value = 1
+Performing_write_operation:: a_value = 4, b_value = 5
+Performing_reading_operation:: sum_value = 9, cout_value = 0
+Performing_write_operation:: a_value = 9, b_value = 1
+Performing_reading_operation:: sum_value = 0, cout_value = 1
+Performing_write_operation:: a_value = 3, b_value = 5
+Performing_reading_operation:: sum_value = 8, cout_value = 0
+   200.00ns INFO     cocotb.regression                  test_bcd_adder.test_bcd_adder passed
+   200.00ns INFO     cocotb.regression                  ***************************************************************************************
+                                                        ** TEST                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************
+                                                        ** test_bcd_adder.test_bcd_adder   PASS         200.00           0.00     438047.42  **
+                                                        ***************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                 200.00           0.00     181140.32  **
+                                                        ***************************************************************************************
+PASSED
+
+============================== 4 passed in 0.88s ===============================
+Cleaning up Docker resources...

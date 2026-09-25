@@ -1,0 +1,8 @@
+.git
+.venv
+.env
+.docker-cvdp
+datasets
+logs
+work*
+**/__pycache__

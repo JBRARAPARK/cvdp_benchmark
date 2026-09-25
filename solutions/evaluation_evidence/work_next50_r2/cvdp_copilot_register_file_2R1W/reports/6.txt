@@ -1,0 +1,26 @@
+Running harness with project name: cvdp_copilot_register_file_2r1w_6_1790258086
+Sending build context to Docker daemon  4.675kB
+Step 1/2 : FROM nvidia/cvdp-sim:v1.0.0
+ ---> 9bbd232afa15
+Step 2/2 : LABEL com.docker.compose.image.builder=classic
+ ---> Using cache
+ ---> 0583b0db7236
+Successfully built 0583b0db7236
+Successfully tagged cvdp_copilot_register_file_2r1w_6_1790258086-direct:latest
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner PASSED                             [100%]
+
+=============================== warnings summary ===============================
+../../src/test_runner.py:17
+  /src/test_runner.py:17: PytestUnknownMarkWarning: Unknown pytest.mark.tb - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.tb
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 1 passed, 1 warning in 0.29s =========================
+Cleaning up Docker resources...
+Untagged: cvdp_copilot_register_file_2r1w_6_1790258086-direct:latest

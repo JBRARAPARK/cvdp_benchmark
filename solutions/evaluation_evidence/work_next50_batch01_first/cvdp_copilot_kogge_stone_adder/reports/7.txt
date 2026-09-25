@@ -1,0 +1,149 @@
+Running harness with project name: cvdp_copilot_kogge_stone_adder_7_1790257444
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s kogge_stone_adder -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/kogge_stone_adder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257445
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_kogge_stone_adder.test_kogge_stone_adder (1/1)
+                                                            Test Kogge-Stone Adder: Should pass for bug-free RTL and fail for bugged RTL.
+    90.00ns INFO     test                               Test 1: A=30437, B=38115, Expected=68552, Got=68552
+   160.00ns INFO     test                               Test 2: A=18534, B=26550, Expected=45084, Got=45084
+   230.00ns INFO     test                               Test 3: A=38317, B=54865, Expected=93182, Got=93182
+   300.00ns INFO     test                               Test 4: A=12124, B=930, Expected=13054, Got=13054
+   370.00ns INFO     test                               Test 5: A=15163, B=6941, Expected=22104, Got=22104
+   440.00ns INFO     test                               Test 6: A=45864, B=12863, Expected=58727, Got=58727
+   510.00ns INFO     test                               Test 7: A=23827, B=11559, Expected=35386, Got=35386
+   580.00ns INFO     test                               Test 8: A=8671, B=22660, Expected=31331, Got=31331
+   650.00ns INFO     test                               Test 9: A=42287, B=19759, Expected=62046, Got=62046
+   720.00ns INFO     test                               Test 10: A=29724, B=10626, Expected=40350, Got=40350
+   790.00ns INFO     test                               Test 11: A=7754, B=1724, Expected=9478, Got=9478
+   860.00ns INFO     test                               Test 12: A=63568, B=35751, Expected=99319, Got=99319
+   930.00ns INFO     test                               Test 13: A=46143, B=62175, Expected=108318, Got=108318
+  1000.00ns INFO     test                               Test 14: A=13339, B=27717, Expected=41056, Got=41056
+  1070.00ns INFO     test                               Test 15: A=31217, B=51604, Expected=82821, Got=82821
+  1140.00ns INFO     test                               Test 16: A=47148, B=24470, Expected=71618, Got=71618
+  1210.00ns INFO     test                               Test 17: A=53720, B=26164, Expected=79884, Got=79884
+  1280.00ns INFO     test                               Test 18: A=1858, B=35614, Expected=37472, Got=37472
+  1350.00ns INFO     test                               Test 19: A=1298, B=50319, Expected=51617, Got=51617
+  1420.00ns INFO     test                               Test 20: A=11681, B=6819, Expected=18500, Got=18500
+  1490.00ns INFO     test                               Test 21: A=58490, B=18985, Expected=77475, Got=77475
+  1560.00ns INFO     test                               Test 22: A=27589, B=15531, Expected=43120, Got=43120
+  1630.00ns INFO     test                               Test 23: A=31617, B=49197, Expected=80814, Got=80814
+  1700.00ns INFO     test                               Test 24: A=63760, B=2863, Expected=66623, Got=66623
+  1770.00ns INFO     test                               Test 25: A=61992, B=59273, Expected=121265, Got=121265
+  1840.00ns INFO     test                               Test 26: A=41752, B=9785, Expected=51537, Got=51537
+  1910.00ns INFO     test                               Test 27: A=60420, B=58105, Expected=118525, Got=118525
+  1980.00ns INFO     test                               Test 28: A=51229, B=36219, Expected=87448, Got=87448
+  2050.00ns INFO     test                               Test 29: A=12375, B=7403, Expected=19778, Got=19778
+  2120.00ns INFO     test                               Test 30: A=62952, B=52420, Expected=115372, Got=115372
+  2190.00ns INFO     test                               Test 31: A=13708, B=20952, Expected=34660, Got=34660
+  2260.00ns INFO     test                               Test 32: A=40431, B=43325, Expected=83756, Got=83756
+  2330.00ns INFO     test                               Test 33: A=4457, B=59251, Expected=63708, Got=63708
+  2400.00ns INFO     test                               Test 34: A=8268, B=28604, Expected=36872, Got=36872
+  2470.00ns INFO     test                               Test 35: A=64515, B=16560, Expected=81075, Got=81075
+  2540.00ns INFO     test                               Test 36: A=2925, B=48854, Expected=51779, Got=51779
+  2610.00ns INFO     test                               Test 37: A=54893, B=37236, Expected=92129, Got=92129
+  2680.00ns INFO     test                               Test 38: A=54513, B=17718, Expected=72231, Got=72231
+  2750.00ns INFO     test                               Test 39: A=43094, B=4454, Expected=47548, Got=47548
+  2820.00ns INFO     test                               Test 40: A=18211, B=57503, Expected=75714, Got=75714
+  2890.00ns INFO     test                               Test 41: A=43049, B=11622, Expected=54671, Got=54671
+  2960.00ns INFO     test                               Test 42: A=29898, B=60690, Expected=90588, Got=90588
+  3030.00ns INFO     test                               Test 43: A=63856, B=5215, Expected=69071, Got=69071
+  3100.00ns INFO     test                               Test 44: A=16753, B=48954, Expected=65707, Got=65707
+  3170.00ns INFO     test                               Test 45: A=1065, B=50303, Expected=51368, Got=51368
+  3240.00ns INFO     test                               Test 46: A=57727, B=41531, Expected=99258, Got=99258
+  3310.00ns INFO     test                               Test 47: A=2276, B=3899, Expected=6175, Got=6175
+  3380.00ns INFO     test                               Test 48: A=52392, B=24136, Expected=76528, Got=76528
+  3450.00ns INFO     test                               Test 49: A=21233, B=6463, Expected=27696, Got=27696
+  3520.00ns INFO     test                               Test 50: A=9287, B=6979, Expected=16266, Got=16266
+  3590.00ns INFO     test                               Test 51: A=11154, B=14716, Expected=25870, Got=25870
+  3660.00ns INFO     test                               Test 52: A=41889, B=52778, Expected=94667, Got=94667
+  3730.00ns INFO     test                               Test 53: A=43263, B=63625, Expected=106888, Got=106888
+  3800.00ns INFO     test                               Test 54: A=13929, B=31389, Expected=45318, Got=45318
+  3870.00ns INFO     test                               Test 55: A=17886, B=13234, Expected=31120, Got=31120
+  3940.00ns INFO     test                               Test 56: A=58645, B=2487, Expected=61132, Got=61132
+  4010.00ns INFO     test                               Test 57: A=53021, B=60555, Expected=113576, Got=113576
+  4080.00ns INFO     test                               Test 58: A=48491, B=6145, Expected=54636, Got=54636
+  4150.00ns INFO     test                               Test 59: A=26841, B=60630, Expected=87471, Got=87471
+  4220.00ns INFO     test                               Test 60: A=52923, B=60325, Expected=113248, Got=113248
+  4290.00ns INFO     test                               Test 61: A=60429, B=39244, Expected=99673, Got=99673
+  4360.00ns INFO     test                               Test 62: A=20672, B=50973, Expected=71645, Got=71645
+  4430.00ns INFO     test                               Test 63: A=30678, B=54906, Expected=85584, Got=85584
+  4500.00ns INFO     test                               Test 64: A=14003, B=30496, Expected=44499, Got=44499
+  4570.00ns INFO     test                               Test 65: A=53272, B=6477, Expected=59749, Got=59749
+  4640.00ns INFO     test                               Test 66: A=35672, B=30973, Expected=66645, Got=66645
+  4710.00ns INFO     test                               Test 67: A=17911, B=36692, Expected=54603, Got=54603
+  4780.00ns INFO     test                               Test 68: A=13622, B=58703, Expected=72325, Got=72325
+  4850.00ns INFO     test                               Test 69: A=43819, B=41421, Expected=85240, Got=85240
+  4920.00ns INFO     test                               Test 70: A=27088, B=26808, Expected=53896, Got=53896
+  4990.00ns INFO     test                               Test 71: A=33319, B=41021, Expected=74340, Got=74340
+  5060.00ns INFO     test                               Test 72: A=16307, B=19695, Expected=36002, Got=36002
+  5130.00ns INFO     test                               Test 73: A=63603, B=39030, Expected=102633, Got=102633
+  5200.00ns INFO     test                               Test 74: A=26335, B=42793, Expected=69128, Got=69128
+  5270.00ns INFO     test                               Test 75: A=21723, B=980, Expected=22703, Got=22703
+  5340.00ns INFO     test                               Test 76: A=26459, B=36480, Expected=62939, Got=62939
+  5410.00ns INFO     test                               Test 77: A=54888, B=37164, Expected=92052, Got=92052
+  5480.00ns INFO     test                               Test 78: A=52681, B=3222, Expected=55903, Got=55903
+  5550.00ns INFO     test                               Test 79: A=12075, B=54442, Expected=66517, Got=66517
+  5620.00ns INFO     test                               Test 80: A=19529, B=35288, Expected=54817, Got=54817
+  5690.00ns INFO     test                               Test 81: A=35953, B=17677, Expected=53630, Got=53630
+  5760.00ns INFO     test                               Test 82: A=1422, B=14072, Expected=15494, Got=15494
+  5830.00ns INFO     test                               Test 83: A=13198, B=29409, Expected=42607, Got=42607
+  5900.00ns INFO     test                               Test 84: A=29020, B=2528, Expected=31548, Got=31548
+  5970.00ns INFO     test                               Test 85: A=39485, B=28034, Expected=67519, Got=67519
+  6040.00ns INFO     test                               Test 86: A=38923, B=57541, Expected=96464, Got=96464
+  6110.00ns INFO     test                               Test 87: A=23114, B=5591, Expected=28705, Got=28705
+  6180.00ns INFO     test                               Test 88: A=3580, B=32826, Expected=36406, Got=36406
+  6250.00ns INFO     test                               Test 89: A=13838, B=45141, Expected=58979, Got=58979
+  6320.00ns INFO     test                               Test 90: A=45748, B=25948, Expected=71696, Got=71696
+  6390.00ns INFO     test                               Test 91: A=646, B=32270, Expected=32916, Got=32916
+  6460.00ns INFO     test                               Test 92: A=19690, B=51216, Expected=70906, Got=70906
+  6530.00ns INFO     test                               Test 93: A=16488, B=32920, Expected=49408, Got=49408
+  6600.00ns INFO     test                               Test 94: A=51690, B=39747, Expected=91437, Got=91437
+  6670.00ns INFO     test                               Test 95: A=52655, B=19812, Expected=72467, Got=72467
+  6740.00ns INFO     test                               Test 96: A=50198, B=13986, Expected=64184, Got=64184
+  6810.00ns INFO     test                               Test 97: A=8618, B=11559, Expected=20177, Got=20177
+  6880.00ns INFO     test                               Test 98: A=11227, B=22719, Expected=33946, Got=33946
+  6950.00ns INFO     test                               Test 99: A=54039, B=25604, Expected=79643, Got=79643
+  7020.00ns INFO     test                               Test 100: A=3060, B=40217, Expected=43277, Got=43277
+  7090.00ns INFO     test                               Special Case 1: A=3855, B=3855, Expected=7710, Got=7710
+  7160.00ns INFO     test                               Special Case 2: A=255, B=65280, Expected=65535, Got=65535
+  7230.00ns INFO     test                               Special Case 3: A=21845, B=43690, Expected=65535, Got=65535
+  7300.00ns INFO     test                               Special Case 4: A=32768, B=32768, Expected=65536, Got=65536
+  7370.00ns INFO     test                               Special Case 5: A=0, B=65535, Expected=65535, Got=65535
+  7440.00ns INFO     test                               Special Case 6: A=65535, B=1, Expected=65536, Got=65536
+  7440.00ns INFO     test                               All test cases passed successfully for bug-free RTL!
+  7440.00ns INFO     cocotb.regression                  test_kogge_stone_adder.test_kogge_stone_adder passed
+  7440.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_kogge_stone_adder.test_kogge_stone_adder   PASS        7440.00           0.06     119300.77  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                7440.00           0.06     117403.52  **
+                                                        *******************************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_runner.result.xml
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-y11khkey'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-nqsokxop'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 1 passed, 2 warnings in 0.30s =========================
+Cleaning up Docker resources...

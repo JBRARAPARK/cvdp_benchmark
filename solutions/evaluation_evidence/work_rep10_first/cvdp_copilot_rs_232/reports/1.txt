@@ -1,0 +1,242 @@
+Running harness with project name: cvdp_copilot_rs_232_1_1790201825
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 6 items
+
+../../src/test_runner.py::test_copilot_rs_232[0-19200-100000000]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201826
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_copilot_rs_232.test_copilot_rs_232 (1/1)
+                                                            Test the RS232 transmitter module 
+Check 0
+Check 1
+Check 2
+CLOCK_FREQ = 100000000,clock_period_ns = 10.0
+BAUD_RATE = 19200
+baud_interval = 52083
+Bit 0: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 1: 1, transmitted_word=0x1,transmitted_data=0x2
+Bit 2: 0, transmitted_word=0x2,transmitted_data=0x4
+Bit 3: 0, transmitted_word=0x4,transmitted_data=0x8
+Bit 4: 1, transmitted_word=0x9,transmitted_data=0x12
+Bit 5: 1, transmitted_word=0x13,transmitted_data=0x26
+Bit 6: 0, transmitted_word=0x26,transmitted_data=0x4c
+Bit 7: 1, transmitted_word=0x4d,transmitted_data=0x9a
+Bit 8: 1, transmitted_word=0x9b,transmitted_data=0x136
+Bit 9: 1, transmitted_word=0x137,transmitted_data=0x26e
+transmitted_data = 155, reverse_transmitted_data=217
+Transmission completed
+495910.00ns INFO     cocotb.regression                  test_copilot_rs_232.test_copilot_rs_232 passed
+495910.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_copilot_rs_232.test_copilot_rs_232   PASS      495910.00           0.78     631751.03  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        495910.00           0.79     630798.06  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with CLOCK_FREQ=100000000,CLOCK_FREQ=100000000
+[DEBUG] Parameters: {'CLOCK_FREQ': 100000000, 'BAUD_RATE': 19200}
+PASSED
+../../src/test_runner.py::test_copilot_rs_232[0-19200-200000000]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201827
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_copilot_rs_232.test_copilot_rs_232 (1/1)
+                                                            Test the RS232 transmitter module 
+Check 0
+Check 1
+Check 2
+CLOCK_FREQ = 200000000,clock_period_ns = 5.0
+BAUD_RATE = 19200
+baud_interval = 52083
+Bit 0: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 1: 1, transmitted_word=0x1,transmitted_data=0x2
+Bit 2: 0, transmitted_word=0x2,transmitted_data=0x4
+Bit 3: 0, transmitted_word=0x4,transmitted_data=0x8
+Bit 4: 1, transmitted_word=0x9,transmitted_data=0x12
+Bit 5: 0, transmitted_word=0x12,transmitted_data=0x24
+Bit 6: 1, transmitted_word=0x25,transmitted_data=0x4a
+Bit 7: 1, transmitted_word=0x4b,transmitted_data=0x96
+Bit 8: 0, transmitted_word=0x96,transmitted_data=0x12c
+Bit 9: 1, transmitted_word=0x12d,transmitted_data=0x25a
+transmitted_data = 150, reverse_transmitted_data=105
+Transmission completed
+495335.00ns INFO     cocotb.regression                  test_copilot_rs_232.test_copilot_rs_232 passed
+495335.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_copilot_rs_232.test_copilot_rs_232   PASS      495335.00           1.45     341628.53  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        495335.00           1.45     341363.76  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with CLOCK_FREQ=200000000,CLOCK_FREQ=200000000
+[DEBUG] Parameters: {'CLOCK_FREQ': 200000000, 'BAUD_RATE': 19200}
+PASSED
+../../src/test_runner.py::test_copilot_rs_232[0-19200-250000000]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201829
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_copilot_rs_232.test_copilot_rs_232 (1/1)
+                                                            Test the RS232 transmitter module 
+Check 0
+Check 1
+Check 2
+CLOCK_FREQ = 250000000,clock_period_ns = 4.0
+BAUD_RATE = 19200
+baud_interval = 52083
+Bit 0: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 1: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 2: 1, transmitted_word=0x1,transmitted_data=0x2
+Bit 3: 0, transmitted_word=0x2,transmitted_data=0x4
+Bit 4: 0, transmitted_word=0x4,transmitted_data=0x8
+Bit 5: 1, transmitted_word=0x9,transmitted_data=0x12
+Bit 6: 1, transmitted_word=0x13,transmitted_data=0x26
+Bit 7: 1, transmitted_word=0x27,transmitted_data=0x4e
+Bit 8: 1, transmitted_word=0x4f,transmitted_data=0x9e
+Bit 9: 1, transmitted_word=0x9f,transmitted_data=0x13e
+transmitted_data = 79, reverse_transmitted_data=242
+Transmission completed
+495220.00ns INFO     cocotb.regression                  test_copilot_rs_232.test_copilot_rs_232 passed
+495220.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_copilot_rs_232.test_copilot_rs_232   PASS      495220.00           1.81     272863.17  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        495220.00           1.82     272685.71  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with CLOCK_FREQ=250000000,CLOCK_FREQ=250000000
+[DEBUG] Parameters: {'CLOCK_FREQ': 250000000, 'BAUD_RATE': 19200}
+PASSED
+../../src/test_runner.py::test_copilot_rs_232[0-115200-100000000]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201831
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_copilot_rs_232.test_copilot_rs_232 (1/1)
+                                                            Test the RS232 transmitter module 
+Check 0
+Check 1
+Check 2
+CLOCK_FREQ = 100000000,clock_period_ns = 10.0
+BAUD_RATE = 115200
+baud_interval = 8680
+Bit 0: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 1: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 2: 1, transmitted_word=0x1,transmitted_data=0x2
+Bit 3: 0, transmitted_word=0x2,transmitted_data=0x4
+Bit 4: 0, transmitted_word=0x4,transmitted_data=0x8
+Bit 5: 0, transmitted_word=0x8,transmitted_data=0x10
+Bit 6: 1, transmitted_word=0x11,transmitted_data=0x22
+Bit 7: 0, transmitted_word=0x22,transmitted_data=0x44
+Bit 8: 1, transmitted_word=0x45,transmitted_data=0x8a
+Bit 9: 1, transmitted_word=0x8b,transmitted_data=0x116
+transmitted_data = 69, reverse_transmitted_data=162
+Transmission completed
+ 83510.00ns INFO     cocotb.regression                  test_copilot_rs_232.test_copilot_rs_232 passed
+ 83510.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_copilot_rs_232.test_copilot_rs_232   PASS       83510.00           0.12     681731.85  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         83510.00           0.12     677036.77  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with CLOCK_FREQ=100000000,CLOCK_FREQ=100000000
+[DEBUG] Parameters: {'CLOCK_FREQ': 100000000, 'BAUD_RATE': 115200}
+PASSED
+../../src/test_runner.py::test_copilot_rs_232[0-115200-200000000]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201831
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_copilot_rs_232.test_copilot_rs_232 (1/1)
+                                                            Test the RS232 transmitter module 
+Check 0
+Check 1
+Check 2
+CLOCK_FREQ = 200000000,clock_period_ns = 5.0
+BAUD_RATE = 115200
+baud_interval = 8680
+Bit 0: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 1: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 2: 1, transmitted_word=0x1,transmitted_data=0x2
+Bit 3: 0, transmitted_word=0x2,transmitted_data=0x4
+Bit 4: 0, transmitted_word=0x4,transmitted_data=0x8
+Bit 5: 0, transmitted_word=0x8,transmitted_data=0x10
+Bit 6: 1, transmitted_word=0x11,transmitted_data=0x22
+Bit 7: 0, transmitted_word=0x22,transmitted_data=0x44
+Bit 8: 1, transmitted_word=0x45,transmitted_data=0x8a
+Bit 9: 1, transmitted_word=0x8b,transmitted_data=0x116
+transmitted_data = 69, reverse_transmitted_data=162
+Transmission completed
+ 82985.00ns INFO     cocotb.regression                  test_copilot_rs_232.test_copilot_rs_232 passed
+ 82985.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_copilot_rs_232.test_copilot_rs_232   PASS       82985.00           0.25     333754.91  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         82985.00           0.25     332078.71  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with CLOCK_FREQ=200000000,CLOCK_FREQ=200000000
+[DEBUG] Parameters: {'CLOCK_FREQ': 200000000, 'BAUD_RATE': 115200}
+PASSED
+../../src/test_runner.py::test_copilot_rs_232[0-115200-250000000]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201832
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_copilot_rs_232.test_copilot_rs_232 (1/1)
+                                                            Test the RS232 transmitter module 
+Check 0
+Check 1
+Check 2
+CLOCK_FREQ = 250000000,clock_period_ns = 4.0
+BAUD_RATE = 115200
+baud_interval = 8680
+Bit 0: 0, transmitted_word=0x0,transmitted_data=0x0
+Bit 1: 1, transmitted_word=0x1,transmitted_data=0x2
+Bit 2: 1, transmitted_word=0x3,transmitted_data=0x6
+Bit 3: 1, transmitted_word=0x7,transmitted_data=0xe
+Bit 4: 0, transmitted_word=0xe,transmitted_data=0x1c
+Bit 5: 0, transmitted_word=0x1c,transmitted_data=0x38
+Bit 6: 0, transmitted_word=0x38,transmitted_data=0x70
+Bit 7: 1, transmitted_word=0x71,transmitted_data=0xe2
+Bit 8: 0, transmitted_word=0xe2,transmitted_data=0x1c4
+Bit 9: 1, transmitted_word=0x1c5,transmitted_data=0x38a
+transmitted_data = 226, reverse_transmitted_data=71
+Transmission completed
+ 82880.00ns INFO     cocotb.regression                  test_copilot_rs_232.test_copilot_rs_232 passed
+ 82880.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_copilot_rs_232.test_copilot_rs_232   PASS       82880.00           0.33     251472.06  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         82880.00           0.33     250617.25  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with CLOCK_FREQ=250000000,CLOCK_FREQ=250000000
+[DEBUG] Parameters: {'CLOCK_FREQ': 250000000, 'BAUD_RATE': 115200}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-gz69ptls'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-tdlubteh'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 6 passed, 2 warnings in 6.10s =========================
+Cleaning up Docker resources...

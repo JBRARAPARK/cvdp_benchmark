@@ -1,0 +1,260 @@
+Running harness with project name: cvdp_copilot_mem_allocator_1_1790257713
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_allocator[108]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257714
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 13
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+ 15542.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+ 15542.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS       15542.00           0.08     196450.20  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                 15542.00           0.08     194399.75  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+108
+Running
+PASSED
+../../src/test_runner.py::test_allocator[52_0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257714
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 13
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+  7534.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+  7534.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS        7534.00           0.03     292377.67  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                  7534.00           0.03     283120.12  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+52
+Running
+PASSED
+../../src/test_runner.py::test_allocator[16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257714
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 13
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+  2386.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+  2386.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS        2386.00           0.01     280931.12  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                  2386.00           0.01     249896.61  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+16
+Running
+PASSED
+../../src/test_runner.py::test_allocator[104_0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257715
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 10
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+ 11515.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+ 11515.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS       11515.00           0.07     153584.99  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                 11515.00           0.08     151821.84  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+104
+Running
+PASSED
+../../src/test_runner.py::test_allocator[112_0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257715
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 10
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+ 12395.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+ 12395.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS       12395.00           0.08     147135.03  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                 12395.00           0.09     145675.96  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+112
+Running
+PASSED
+../../src/test_runner.py::test_allocator[44]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257715
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 10
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+  4915.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+  4915.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS        4915.00           0.02     214592.09  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                  4915.00           0.02     207081.91  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+44
+Running
+PASSED
+../../src/test_runner.py::test_allocator[52_1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257715
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 10
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+  5795.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+  5795.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS        5795.00           0.03     219687.38  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                  5795.00           0.03     212948.94  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+52
+Running
+PASSED
+../../src/test_runner.py::test_allocator[104_1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257716
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 17
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+ 19576.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+ 19576.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS       19576.00           0.08     232691.99  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                 19576.00           0.09     229405.57  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+104
+Running
+PASSED
+../../src/test_runner.py::test_allocator[76]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257716
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 17
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+ 14340.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+ 14340.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS       14340.00           0.05     314355.78  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                 14340.00           0.05     308523.35  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+76
+Running
+PASSED
+../../src/test_runner.py::test_allocator[112_1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257716
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator (1/1)
+Clk period is 17
+     0.00ns WARNING  py.warnings                        /src/test_cvdp_copilot_mem_allocator.py:16: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.clk                         clk STARTED
+ 21072.00ns INFO     cocotb.regression                  test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator passed
+ 21072.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_cvdp_copilot_mem_allocator.test_cvdp_copilot_mem_allocator   PASS       21072.00           0.09     224366.87  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                 21072.00           0.10     220846.06  **
+                                                        *************************************************************************************************************************
+Calling Runner
+Inside Runner
+112
+Running
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-l5atbbiq'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-mg5_g0gw'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 10 passed, 2 warnings in 2.79s ========================
+Cleaning up Docker resources...

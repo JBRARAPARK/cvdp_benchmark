@@ -1,0 +1,161 @@
+Running harness with project name: cvdp_copilot_ir_receiver_5_1790258079
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258080
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_ir_receiver.test_ir_receiver_address_00000 (1/7)
+                                                            Test Case: Address 5'b00000 with all valid 7-bit function combinations.
+17300000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000000, Expected: 000010000001, Received: 000010000001
+75000000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000001, Expected: 000010000010, Received: 000010000010
+132700000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000010, Expected: 000010000011, Received: 000010000011
+191000000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000011, Expected: 000010000100, Received: 000010000100
+248700000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000100, Expected: 000010000101, Received: 000010000101
+307000000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000101, Expected: 000010000110, Received: 000010000110
+365300000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000110, Expected: 000010000111, Received: 000010000111
+424200000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000111, Expected: 000010001000, Received: 000010001000
+481900000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000001000, Expected: 000010001001, Received: 000010001001
+540200000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000001001, Expected: 000010000000, Received: 000010000000
+597900000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000010000, Expected: 000010011111, Received: 000010011111
+656200000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000010001, Expected: 000010101111, Received: 000010101111
+714500000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000010010, Expected: 000010111111, Received: 000010111111
+773400000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000010011, Expected: 000011001111, Received: 000011001111
+831700000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000010100, Expected: 000011011111, Received: 000011011111
+890600000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000010101, Expected: 000011101111, Received: 000011101111
+949500000.00ns INFO     cocotb.ir_receiver                 Predefined: 000000010110, Expected: 000011111111, Received: 000011111111
+989500000.00ns INFO     cocotb.ir_receiver                 Test Case for Address 00000 passed successfully.
+989500000.00ns INFO     cocotb.regression                  test_ir_receiver.test_ir_receiver_address_00000 passed
+989500000.00ns INFO     cocotb.regression                  running test_ir_receiver.test_ir_receiver_address_00001 (2/7)
+                                                               Test Case: Address 5'b00001 with all valid 7-bit function combinations.
+1007400001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000000, Expected: 000100000001, Received: 000100000001
+1065700001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000001, Expected: 000100000010, Received: 000100000010
+1124000001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000010, Expected: 000100000011, Received: 000100000011
+1182900001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000011, Expected: 000100000100, Received: 000100000100
+1241200001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000100, Expected: 000100000101, Received: 000100000101
+1300100001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000101, Expected: 000100000110, Received: 000100000110
+1359000001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000110, Expected: 000100000111, Received: 000100000111
+1418500001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000111, Expected: 000100001000, Received: 000100001000
+1476800001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010001000, Expected: 000100001001, Received: 000100001001
+1535700001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010001001, Expected: 000100000000, Received: 000100000000
+1594000001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010010000, Expected: 000100011111, Received: 000100011111
+1652900001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010010001, Expected: 000100101111, Received: 000100101111
+1711800001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010010010, Expected: 000100111111, Received: 000100111111
+1771300001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010010011, Expected: 000101001111, Received: 000101001111
+1830200001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010010100, Expected: 000101011111, Received: 000101011111
+1889700001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010010101, Expected: 000101101111, Received: 000101101111
+1949200001.00ns INFO     cocotb.ir_receiver                 Predefined: 000010010110, Expected: 000101111111, Received: 000101111111
+1989200001.00ns INFO     cocotb.ir_receiver                 Test Case for Address 00001 passed successfully.
+1989200001.00ns INFO     cocotb.regression                  test_ir_receiver.test_ir_receiver_address_00001 passed
+1989200001.00ns INFO     cocotb.regression                  running test_ir_receiver.test_ir_receiver_address_00010 (3/7)
+                                                                Test Case: Address 5'b00010 with all valid 7-bit function combinations.
+2007100002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000000, Expected: 001000000001, Received: 001000000001
+2065400002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000001, Expected: 001000000010, Received: 001000000010
+2123700002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000010, Expected: 001000000011, Received: 001000000011
+2182600002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000011, Expected: 001000000100, Received: 001000000100
+2240900002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000100, Expected: 001000000101, Received: 001000000101
+2299800002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000101, Expected: 001000000110, Received: 001000000110
+2358700002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000110, Expected: 001000000111, Received: 001000000111
+2418200002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000111, Expected: 001000001000, Received: 001000001000
+2476500002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100001000, Expected: 001000001001, Received: 001000001001
+2535400002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100001001, Expected: 001000000000, Received: 001000000000
+2593700002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100010000, Expected: 001000011111, Received: 001000011111
+2652600002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100010001, Expected: 001000101111, Received: 001000101111
+2711500002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100010010, Expected: 001000111111, Received: 001000111111
+2771000002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100010011, Expected: 001001001111, Received: 001001001111
+2829900002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100010100, Expected: 001001011111, Received: 001001011111
+2889400002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100010101, Expected: 001001101111, Received: 001001101111
+2948900002.00ns INFO     cocotb.ir_receiver                 Predefined: 000100010110, Expected: 001001111111, Received: 001001111111
+2988900002.00ns INFO     cocotb.ir_receiver                 Test Case for Address 00010 passed successfully.
+2988900002.00ns INFO     cocotb.regression                  test_ir_receiver.test_ir_receiver_address_00010 passed
+2988900002.00ns INFO     cocotb.regression                  running test_ir_receiver.test_ir_receiver_address_00011 (4/7)
+                                                                Test Case: Address 5'b00011 with all valid 7-bit function combinations.
+3007400003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000000, Expected: 010000000001, Received: 010000000001
+3066300003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000001, Expected: 010000000010, Received: 010000000010
+3125200003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000010, Expected: 010000000011, Received: 010000000011
+3184700003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000011, Expected: 010000000100, Received: 010000000100
+3243600003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000100, Expected: 010000000101, Received: 010000000101
+3303100003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000101, Expected: 010000000110, Received: 010000000110
+3362600003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000110, Expected: 010000000111, Received: 010000000111
+3422700003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000111, Expected: 010000001000, Received: 010000001000
+3481600003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110001000, Expected: 010000001001, Received: 010000001001
+3541100003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110001001, Expected: 010000000000, Received: 010000000000
+3600000003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110010000, Expected: 010000011111, Received: 010000011111
+3659500003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110010001, Expected: 010000101111, Received: 010000101111
+3719000003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110010010, Expected: 010000111111, Received: 010000111111
+3779100003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110010011, Expected: 010001001111, Received: 010001001111
+3838600003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110010100, Expected: 010001011111, Received: 010001011111
+3898700003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110010101, Expected: 010001101111, Received: 010001101111
+3958800003.00ns INFO     cocotb.ir_receiver                 Predefined: 000110010110, Expected: 010001111111, Received: 010001111111
+3998800003.00ns INFO     cocotb.ir_receiver                 Test Case for Address 00011 passed successfully.
+3998800003.00ns INFO     cocotb.regression                  test_ir_receiver.test_ir_receiver_address_00011 passed
+3998800003.00ns INFO     cocotb.regression                  running test_ir_receiver.test_ir_receiver_address_00100 (5/7)
+                                                                Test Case: Address 5'b00100 with all valid 7-bit function combinations.
+4016700004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000000, Expected: 100000000001, Received: 100000000001
+4075000004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000001, Expected: 100000000010, Received: 100000000010
+4133300004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000010, Expected: 100000000011, Received: 100000000011
+4192200004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000011, Expected: 100000000100, Received: 100000000100
+4250500004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000100, Expected: 100000000101, Received: 100000000101
+4309400004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000101, Expected: 100000000110, Received: 100000000110
+4368300004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000110, Expected: 100000000111, Received: 100000000111
+4427800004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000111, Expected: 100000001000, Received: 100000001000
+4486100004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000001000, Expected: 100000001001, Received: 100000001001
+4545000004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000001001, Expected: 100000000000, Received: 100000000000
+4603300004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000010000, Expected: 100000011111, Received: 100000011111
+4662200004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000010001, Expected: 100000101111, Received: 100000101111
+4721100004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000010010, Expected: 100000111111, Received: 100000111111
+4780600004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000010011, Expected: 100001001111, Received: 100001001111
+4839500004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000010100, Expected: 100001011111, Received: 100001011111
+4899000004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000010101, Expected: 100001101111, Received: 100001101111
+4958500004.00ns INFO     cocotb.ir_receiver                 Predefined: 001000010110, Expected: 100001111111, Received: 100001111111
+4998500004.00ns INFO     cocotb.ir_receiver                 Test Case for Address 00100 passed successfully.
+4998500004.00ns INFO     cocotb.regression                  test_ir_receiver.test_ir_receiver_address_00100 passed
+4998500004.00ns INFO     cocotb.regression                  running test_ir_receiver.test_ir_received_random_input (6/7)
+                                                                Run a test case for a random IR 12-bit frame.
+5016400005.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000001, Expected: 000010000010, Received: 000010000010
+5076500005.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000111, Expected: 010000001000, Received: 010000001000
+5135400005.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000100, Expected: 010000000101, Received: 010000000101
+5193700005.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000011, Expected: 000010000100, Received: 000010000100
+5253200005.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000111, Expected: 100000001000, Received: 100000001000
+5312100005.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000101, Expected: 001000000110, Received: 001000000110
+5371000005.00ns INFO     cocotb.ir_receiver                 Predefined: 000100001001, Expected: 001000000000, Received: 001000000000
+5429900005.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000010, Expected: 010000000011, Received: 010000000011
+5488200005.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000110, Expected: 000010000111, Received: 000010000111
+5545900005.00ns INFO     cocotb.ir_receiver                 Predefined: 000100000000, Expected: 001000000001, Received: 001000000001
+5604200005.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000011, Expected: 000010000100, Received: 000010000100
+5663100005.00ns INFO     cocotb.ir_receiver                 Predefined: 001000000101, Expected: 100000000110, Received: 100000000110
+5721400005.00ns INFO     cocotb.ir_receiver                 Predefined: 001000001000, Expected: 100000001001, Received: 100000001001
+5780300005.00ns INFO     cocotb.ir_receiver                 Predefined: 000010001001, Expected: 000100000000, Received: 000100000000
+5838000005.00ns INFO     cocotb.ir_receiver                 Predefined: 000000000100, Expected: 000010000101, Received: 000010000101
+5896900005.00ns INFO     cocotb.ir_receiver                 Predefined: 000110000100, Expected: 010000000101, Received: 010000000101
+5955800005.00ns INFO     cocotb.ir_receiver                 Predefined: 000010000110, Expected: 000100000111, Received: 000100000111
+5995800005.00ns INFO     cocotb.ir_receiver                 Test Case for Address 00001 passed successfully.
+5995800005.00ns INFO     cocotb.regression                  test_ir_receiver.test_ir_received_random_input passed
+5995800005.00ns INFO     cocotb.regression                  running test_ir_receiver.test_reset_behavior (7/7)
+                                                                Test the DUT's behavior during and after reset.
+5996000006.00ns INFO     cocotb.ir_receiver                 Expected: 000000000000, Received: 000000000000, Valid: 0
+5996000006.00ns INFO     cocotb.ir_receiver                 Reset behavior test passed.
+5996000006.00ns INFO     cocotb.regression                  test_ir_receiver.test_reset_behavior passed
+5996000006.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                            ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                            *********************************************************************************************************
+                                                            ** test_ir_receiver.test_ir_receiver_address_00000   PASS   989500000.00           0.17   5744238214.33  **
+                                                            ** test_ir_receiver.test_ir_receiver_address_00001   PASS   999700000.00           0.18   5611625304.37  **
+                                                            ** test_ir_receiver.test_ir_receiver_address_00010   PASS   999700000.00           0.18   5488250989.26  **
+                                                            ** test_ir_receiver.test_ir_receiver_address_00011   PASS   1009900000.00           0.17   5870033078.62  **
+                                                            ** test_ir_receiver.test_ir_receiver_address_00100   PASS   999700000.00           0.17   5787798284.80  **
+                                                            ** test_ir_receiver.test_ir_received_random_input    PASS   997300000.00           0.17   5748314358.90  **
+                                                            ** test_ir_receiver.test_reset_behavior              PASS      200000.00           0.00   1112547480.11  **
+                                                            *********************************************************************************************************
+                                                            ** TESTS=7 PASS=7 FAIL=0 SKIP=0                             5996000006.00           1.05   5691774069.69  **
+                                                            *********************************************************************************************************
+PASSED
+
+============================== 1 passed in 1.33s ===============================
+Cleaning up Docker resources...

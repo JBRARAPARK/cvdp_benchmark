@@ -1,0 +1,630 @@
+Running harness with project name: cvdp_copilot_axi_alu_1_1790258343
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258345
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_alu.test_burst_write_transaction (1/10)
+Starting burst transactions with burst length = 16...
+
+Memory Contents After Burst Write:
+Address: 0x00000020 | Data: 0x00000005 | Expected: 0x00000005
+Address: 0x00000024 | Data: 0x00000006 | Expected: 0x00000006
+Address: 0x00000028 | Data: 0x00000007 | Expected: 0x00000007
+Address: 0x0000002C | Data: 0x00000008 | Expected: 0x00000008
+Address: 0x00000030 | Data: 0x00000009 | Expected: 0x00000009
+Address: 0x00000034 | Data: 0x0000000A | Expected: 0x0000000A
+Address: 0x00000038 | Data: 0x0000000B | Expected: 0x0000000B
+Address: 0x0000003C | Data: 0x0000000C | Expected: 0x0000000C
+Address: 0x00000040 | Data: 0x0000000D | Expected: 0x0000000D
+Address: 0x00000044 | Data: 0x0000000E | Expected: 0x0000000E
+Address: 0x00000048 | Data: 0x0000000F | Expected: 0x0000000F
+Address: 0x0000004C | Data: 0x00000010 | Expected: 0x00000010
+Address: 0x00000050 | Data: 0x00000011 | Expected: 0x00000011
+Address: 0x00000054 | Data: 0x00000012 | Expected: 0x00000012
+Address: 0x00000058 | Data: 0x00000013 | Expected: 0x00000013
+Address: 0x0000005C | Data: 0x00000014 | Expected: 0x00000014
+   410.00ns INFO     cocotb.regression                  test_axi_alu.test_burst_write_transaction passed
+   410.00ns INFO     cocotb.regression                  running test_axi_alu.test_axi_alu_incremental_data (2/10)
+Starting burst transactions with burst length = 16...
+Testing with operands: op_a = 0xa, op_b = 0x5, op_c = 0x2, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xaf, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xAF, Got = 0xAF
+Testing with operands: op_a = 0x4, op_b = 0xa, op_c = 0x6, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x87, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x87, Got = 0x87
+Testing with operands: op_a = 0x4, op_b = 0x0, op_c = 0xe, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x6, op_b = 0xc, op_c = 0xf, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xa, op_b = 0x5, op_c = 0x2, op_select = 0b100, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xaf, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xAF, Got = 0xAF
+Testing with operands: op_a = 0x4, op_b = 0xa, op_c = 0x6, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x87, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x87, Got = 0x87
+Testing with operands: op_a = 0x4, op_b = 0x0, op_c = 0xe, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x6, op_b = 0xc, op_c = 0xf, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xa, op_b = 0x5, op_c = 0x2, op_select = 0b0, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x4, op_b = 0xa, op_c = 0x6, op_select = 0b1, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x4, op_b = 0x0, op_c = 0xe, op_select = 0b10, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x6, op_b = 0xc, op_c = 0xf, op_select = 0b11, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+  7661.00ns INFO     cocotb.regression                  test_axi_alu.test_axi_alu_incremental_data passed
+  7661.00ns INFO     cocotb.regression                  running test_axi_alu.test_axi_alu_mac_operation_random_address (3/10)
+Starting burst transactions with burst length = 16...
+Testing with operands: op_a = 0x2, op_b = 0xb, op_c = 0x3, op_select = 0b100, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xb8, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xB8, Got = 0xB8
+Testing with operands: op_a = 0x1, op_b = 0xa, op_c = 0x9, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x126, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x126, Got = 0x126
+Testing with operands: op_a = 0x9, op_b = 0xd, op_c = 0xc, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x220, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x220, Got = 0x220
+Testing with operands: op_a = 0x3, op_b = 0x2, op_c = 0xf, op_select = 0b100, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x12c, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x12C, Got = 0x12C
+Testing with operands: op_a = 0x1, op_b = 0x7, op_c = 0x5, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xb4, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xB4, Got = 0xB4
+Testing with operands: op_a = 0x6, op_b = 0x1, op_c = 0xa, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xff, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xFF, Got = 0xFF
+Testing with operands: op_a = 0x8, op_b = 0x1, op_c = 0x5, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xbe, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xBE, Got = 0xBE
+Testing with operands: op_a = 0x0, op_b = 0xf, op_c = 0xd, op_select = 0b100, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x1c2, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1C2, Got = 0x1C2
+Testing with operands: op_a = 0xd, op_b = 0xe, op_c = 0xe, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x2bf, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2BF, Got = 0x2BF
+Testing with operands: op_a = 0x6, op_b = 0x3, op_c = 0x1, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x72, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x72, Got = 0x72
+Testing with operands: op_a = 0x4, op_b = 0x2, op_c = 0xa, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xf0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xF0, Got = 0xF0
+Testing with operands: op_a = 0x5, op_b = 0x6, op_c = 0x4, op_select = 0b100, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xbd, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xBD, Got = 0xBD
+Testing with operands: op_a = 0x0, op_b = 0xd, op_c = 0x9, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x142, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x142, Got = 0x142
+Testing with operands: op_a = 0x8, op_b = 0x5, op_c = 0x1, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x8a, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x8A, Got = 0x8A
+Testing with operands: op_a = 0x3, op_b = 0x3, op_c = 0xc, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x110, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x110, Got = 0x110
+Testing with operands: op_a = 0x0, op_b = 0x9, op_c = 0x5, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xbe, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xBE, Got = 0xBE
+ 17192.00ns INFO     cocotb.regression                  test_axi_alu.test_axi_alu_mac_operation_random_address passed
+ 17192.00ns INFO     cocotb.regression                  running test_axi_alu.test_axi_alu_mult_operation_random_address (4/10)
+Starting burst transactions with burst length = 16...
+Testing with operands: op_a = 0x4, op_b = 0x0, op_c = 0x0, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x2d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2D, Got = 0x2D
+Testing with operands: op_a = 0xb, op_b = 0x1, op_c = 0x7, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x60, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x60, Got = 0x60
+Testing with operands: op_a = 0xc, op_b = 0xd, op_c = 0x6, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x132, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x132, Got = 0x132
+Testing with operands: op_a = 0xd, op_b = 0x9, op_c = 0x1, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xfc, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xFC, Got = 0xFC
+Testing with operands: op_a = 0x8, op_b = 0xd, op_c = 0x5, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xea, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xEA, Got = 0xEA
+Testing with operands: op_a = 0x2, op_b = 0x5, op_c = 0x7, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x46, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x46, Got = 0x46
+Testing with operands: op_a = 0xe, op_b = 0x4, op_c = 0x6, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xab, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xAB, Got = 0xAB
+Testing with operands: op_a = 0xd, op_b = 0xb, op_c = 0xf, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x120, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x120, Got = 0x120
+Testing with operands: op_a = 0xf, op_b = 0x4, op_c = 0x1, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xb4, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xB4, Got = 0xB4
+Testing with operands: op_a = 0x8, op_b = 0x2, op_c = 0x6, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x5b, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x5B, Got = 0x5B
+Testing with operands: op_a = 0x2, op_b = 0xf, op_c = 0x4, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x8c, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x8C, Got = 0x8C
+Testing with operands: op_a = 0xc, op_b = 0x2, op_c = 0x6, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x77, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77, Got = 0x77
+Testing with operands: op_a = 0xa, op_b = 0x5, op_c = 0xc, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x96, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x96, Got = 0x96
+Testing with operands: op_a = 0xf, op_b = 0x3, op_c = 0x2, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xa0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xA0, Got = 0xA0
+Testing with operands: op_a = 0xe, op_b = 0x3, op_c = 0xc, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x98, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x98, Got = 0x98
+Testing with operands: op_a = 0x2, op_b = 0x1, op_c = 0x3, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x2a, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2A, Got = 0x2A
+ 26723.00ns INFO     cocotb.regression                  test_axi_alu.test_axi_alu_mult_operation_random_address passed
+ 26723.00ns INFO     cocotb.regression                  running test_axi_alu.test_axi_alu_shift_operation_random_address (5/10)
+Starting burst transactions with burst length = 16...
+Testing with operands: op_a = 0x6, op_b = 0x3, op_c = 0xe, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x0, op_b = 0x7, op_c = 0x4, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x7, op_b = 0x0, op_c = 0x8, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xb, op_b = 0x5, op_c = 0x3, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x2, op_b = 0xf, op_c = 0x1, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x9, op_b = 0xd, op_c = 0x6, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x8, op_b = 0xc, op_c = 0x5, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xa, op_b = 0x9, op_c = 0xa, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x0, op_b = 0xc, op_c = 0x0, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xa, op_b = 0x4, op_c = 0x9, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xc, op_b = 0x9, op_c = 0x4, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x0, op_b = 0x3, op_c = 0x4, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xc, op_b = 0xd, op_c = 0xf, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x6, op_b = 0xe, op_c = 0x5, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x4, op_b = 0xe, op_c = 0x1, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x6, op_b = 0x4, op_c = 0xe, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+ 36254.00ns INFO     cocotb.regression                  test_axi_alu.test_axi_alu_shift_operation_random_address passed
+ 36254.00ns INFO     cocotb.regression                  running test_axi_alu.test_axi_alu_div_operation_random_address (6/10)
+Starting burst transactions with burst length = 16...
+Testing with operands: op_a = 0x6, op_b = 0x4, op_c = 0x9, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x1, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1, Got = 0x1
+Testing with operands: op_a = 0x5, op_b = 0xb, op_c = 0x5, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x4, op_b = 0xc, op_c = 0xf, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x2, op_b = 0x1, op_c = 0x3, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x1, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1, Got = 0x1
+Testing with operands: op_a = 0x8, op_b = 0xe, op_c = 0xc, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xd, op_b = 0x6, op_c = 0xf, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x1, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1, Got = 0x1
+Testing with operands: op_a = 0xb, op_b = 0x3, op_c = 0xc, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x2, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2, Got = 0x2
+Testing with operands: op_a = 0x6, op_b = 0x7, op_c = 0x7, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x3, op_b = 0xb, op_c = 0x2, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x7, op_b = 0x4, op_c = 0x0, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x1, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1, Got = 0x1
+Testing with operands: op_a = 0x2, op_b = 0xa, op_c = 0x3, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0xc, op_b = 0x8, op_c = 0x8, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x1, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1, Got = 0x1
+Testing with operands: op_a = 0x1, op_b = 0xc, op_c = 0xf, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x3, op_b = 0x2, op_c = 0x1, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x1, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1, Got = 0x1
+Testing with operands: op_a = 0x6, op_b = 0x8, op_c = 0xa, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with operands: op_a = 0x9, op_b = 0x1, op_c = 0x5, op_select = 0b111, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x2, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2, Got = 0x2
+ 45785.00ns INFO     cocotb.regression                  test_axi_alu.test_axi_alu_div_operation_random_address passed
+ 45785.00ns INFO     cocotb.regression                  running test_axi_alu.test_random_memory_operands (7/10)
+Starting random memory operations...
+Testing with random memory values: op_a = 0xf8503083, op_b = 0x560a8ff, op_c = 0x5, op_select = 0b1, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with random memory values: op_a = 0x1e18fc2d, op_b = 0xefaa73b7, op_c = 0xa9953a99, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x36067b2b, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x1c2d5da0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1C2D5DA036067B2B, Got = 0x1C2D5DA036067B2B
+Testing with random memory values: op_a = 0xe3b253f1, op_b = 0x5758e526, op_c = 0x9d9b8c7b, op_select = 0b0, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x36067b2b, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x1c2d5da0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1C2D5DA036067B2B, Got = 0x1C2D5DA036067B2B
+Testing with random memory values: op_a = 0xb235b95f, op_b = 0x9d9b8c7b, op_c = 0x9e662fae, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x16, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x16, Got = 0x16
+Testing with random memory values: op_a = 0xa9953a99, op_b = 0x9d9b8c7b, op_c = 0xefaa73b7, op_select = 0b1, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x16, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x16, Got = 0x16
+Testing with random memory values: op_a = 0xf8503083, op_b = 0x9d9b8c7b, op_c = 0xa9953a99, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x1f, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1F, Got = 0x1F
+Testing with random memory values: op_a = 0xc2077a96, op_b = 0x9d9b8c7b, op_c = 0x5758e526, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x8773ee12, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x77747b2e, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77747B2E8773EE12, Got = 0x77747B2E8773EE12
+Testing with random memory values: op_a = 0x560a8ff, op_b = 0x1e18fc2d, op_c = 0x177ccb3d, op_select = 0b10, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x8773ee12, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x77747b2e, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77747B2E8773EE12, Got = 0x77747B2E8773EE12
+Testing with random memory values: op_a = 0x5758e526, op_b = 0x5758e526, op_c = 0x11ee2b00, op_select = 0b1, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x8773ee12, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x77747b2e, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77747B2E8773EE12, Got = 0x77747B2E8773EE12
+Testing with random memory values: op_a = 0xe3b253f1, op_b = 0x9e662fae, op_c = 0x177ccb3d, op_select = 0b1, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x8773ee12, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x77747b2e, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77747B2E8773EE12, Got = 0x77747B2E8773EE12
+Testing with random memory values: op_a = 0xc2077a96, op_b = 0xb28aded3, op_c = 0xf8503083, op_select = 0b1, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x8773ee12, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x77747b2e, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77747B2E8773EE12, Got = 0x77747B2E8773EE12
+Testing with random memory values: op_a = 0xb28aded3, op_b = 0xa9953a99, op_c = 0x177ccb3d, op_select = 0b10, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x8773ee12, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x77747b2e, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77747B2E8773EE12, Got = 0x77747B2E8773EE12
+Testing with random memory values: op_a = 0xd9bea056, op_b = 0xd9bea056, op_c = 0x5, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x30139ce4, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xb934b9c4, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xB934B9C430139CE4, Got = 0xB934B9C430139CE4
+Testing with random memory values: op_a = 0x560a8ff, op_b = 0xe3b253f1, op_c = 0xd9bea056, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x517c50f, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x4c874d3, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x4C874D30517C50F, Got = 0x4C874D30517C50F
+Testing with random memory values: op_a = 0x177ccb3d, op_b = 0x5758e526, op_c = 0x11ee2b00, op_select = 0b1, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x517c50f, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x4c874d3, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x4C874D30517C50F, Got = 0x4C874D30517C50F
+Testing with random memory values: op_a = 0xc2077a96, op_b = 0xc2077a96, op_c = 0x11ee2b00, op_select = 0b10, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x517c50f, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x4c874d3, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x4C874D30517C50F, Got = 0x4C874D30517C50F
+Testing with random memory values: op_a = 0x5, op_b = 0xefaa73b7, op_c = 0x5758e526, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with random memory values: op_a = 0x5758e526, op_b = 0xd9bea056, op_c = 0xe3b253f1, op_select = 0b11, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with random memory values: op_a = 0x9e662fae, op_b = 0x5758e526, op_c = 0x9e662fae, op_select = 0b1, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with random memory values: op_a = 0xd9bea056, op_b = 0x1e18fc2d, op_c = 0x9e662fae, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x407a6e0a, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x995a00aa, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x995A00AA407A6E0A, Got = 0x995A00AA407A6E0A
+Testing with random memory values: op_a = 0x560a8ff, op_b = 0xd9bea056, op_c = 0xe3b253f1, op_select = 0b0, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x407a6e0a, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x995a00aa, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x995A00AA407A6E0A, Got = 0x995A00AA407A6E0A
+Testing with random memory values: op_a = 0xa9953a99, op_b = 0x177ccb3d, op_c = 0x11ee2b00, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xdf224975, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xf8f132d, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xF8F132DDF224975, Got = 0xF8F132DDF224975
+Testing with random memory values: op_a = 0xb28aded3, op_b = 0xe3b253f1, op_c = 0xb28aded3, op_select = 0b0, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xdf224975, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xf8f132d, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xF8F132DDF224975, Got = 0xF8F132DDF224975
+Testing with random memory values: op_a = 0x560a8ff, op_b = 0x1e18fc2d, op_c = 0x560a8ff, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xf71066d4, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xbec542, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xBEC542F71066D4, Got = 0xBEC542F71066D4
+Testing with random memory values: op_a = 0xa9953a99, op_b = 0x11ee2b00, op_c = 0xd9bea056, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xb415b300, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xbe0ae1c, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xBE0AE1CB415B300, Got = 0xBE0AE1CB415B300
+Testing with random memory values: op_a = 0xf8503083, op_b = 0xa9953a99, op_c = 0x11ee2b00, op_select = 0b100, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xf905b400, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x1d450597, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1D450597F905B400, Got = 0x1D450597F905B400
+Testing with random memory values: op_a = 0xefaa73b7, op_b = 0x9d9b8c7b, op_c = 0x5758e526, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x1d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1D, Got = 0x1D
+Testing with random memory values: op_a = 0x9e662fae, op_b = 0x5, op_c = 0xefaa73b7, op_select = 0b1, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x1d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1D, Got = 0x1D
+Testing with random memory values: op_a = 0x11ee2b00, op_b = 0xf8503083, op_c = 0x560a8ff, op_select = 0b1, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x1d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1D, Got = 0x1D
+Testing with random memory values: op_a = 0x9e662fae, op_b = 0x9d9b8c7b, op_c = 0xb28aded3, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x9186109a, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x6184ea08, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x6184EA089186109A, Got = 0x6184EA089186109A
+Testing with random memory values: op_a = 0x560a8ff, op_b = 0x177ccb3d, op_c = 0xc2077a96, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xb28e79c3, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x7e4e45, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x7E4E45B28E79C3, Got = 0x7E4E45B28E79C3
+Testing with random memory values: op_a = 0x1e18fc2d, op_b = 0xb235b95f, op_c = 0x9e662fae, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xb8d319b3, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x14f3b04e, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x14F3B04EB8D319B3, Got = 0x14F3B04EB8D319B3
+Testing with random memory values: op_a = 0x177ccb3d, op_b = 0xf8503083, op_c = 0xe3b253f1, op_select = 0b101, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x6077037, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x16c84056, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x16C8405606077037, Got = 0x16C8405606077037
+Testing with random memory values: op_a = 0xefaa73b7, op_b = 0x5, op_c = 0xefaa73b7, op_select = 0b110, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x77d539d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77D539D, Got = 0x77D539D
+Testing with random memory values: op_a = 0xf8503083, op_b = 0x9e662fae, op_c = 0x1e18fc2d, op_select = 0b0, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x77d539d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77D539D, Got = 0x77D539D
+Testing with random memory values: op_a = 0x5758e526, op_b = 0x11ee2b00, op_c = 0xe3b253f1, op_select = 0b0, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x77d539d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77D539D, Got = 0x77D539D
+Testing with random memory values: op_a = 0x1e18fc2d, op_b = 0xc2077a96, op_c = 0x11ee2b00, op_select = 0b1, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x77d539d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77D539D, Got = 0x77D539D
+Testing with random memory values: op_a = 0x177ccb3d, op_b = 0x177ccb3d, op_c = 0x5758e526, op_select = 0b0, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x77d539d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77D539D, Got = 0x77D539D
+Testing with random memory values: op_a = 0xc2077a96, op_b = 0x9d9b8c7b, op_c = 0x9d9b8c7b, op_select = 0b0, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x77d539d, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x77D539D, Got = 0x77D539D
+Testing with random memory values: op_a = 0xe3b253f1, op_b = 0xc2077a96, op_c = 0x9d9b8c7b, op_select = 0b110, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x38e, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x38E, Got = 0x38E
+Testing with random memory values: op_a = 0xb28aded3, op_b = 0x5758e526, op_c = 0x177ccb3d, op_select = 0b11, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x38e, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x38E, Got = 0x38E
+Testing with random memory values: op_a = 0xb28aded3, op_b = 0x11ee2b00, op_c = 0xc2077a96, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x7e977100, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xc8153e4, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xC8153E47E977100, Got = 0xC8153E47E977100
+Testing with random memory values: op_a = 0x11ee2b00, op_b = 0x9e662fae, op_c = 0xe3b253f1, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0xbc63a00, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xb1826c6, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xB1826C60BC63A00, Got = 0xB1826C60BC63A00
+Testing with random memory values: op_a = 0x560a8ff, op_b = 0x560a8ff, op_c = 0xf8503083, op_select = 0b10, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xbc63a00, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0xb1826c6, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0xB1826C60BC63A00, Got = 0xB1826C60BC63A00
+Testing with random memory values: op_a = 0xf8503083, op_b = 0x5758e526, op_c = 0xe3b253f1, op_select = 0b100, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xbab52f19, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x2a8cbfd5, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2A8CBFD5BAB52F19, Got = 0x2A8CBFD5BAB52F19
+Testing with random memory values: op_a = 0x1e18fc2d, op_b = 0xb235b95f, op_c = 0xf8503083, op_select = 0b10, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xbab52f19, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x2a8cbfd5, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2A8CBFD5BAB52F19, Got = 0x2A8CBFD5BAB52F19
+Testing with random memory values: op_a = 0x177ccb3d, op_b = 0x5, op_c = 0x11ee2b00, op_select = 0b10, clock_ctrl = 1
+Single read from addr 0x14: Data = 0xbab52f19, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x2a8cbfd5, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x2A8CBFD5BAB52F19, Got = 0x2A8CBFD5BAB52F19
+Testing with random memory values: op_a = 0xb28aded3, op_b = 0xe3b253f1, op_c = 0x5758e526, op_select = 0b101, clock_ctrl = 0
+Single read from addr 0x14: Data = 0x22b02da3, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x9ecd82af, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x9ECD82AF22B02DA3, Got = 0x9ECD82AF22B02DA3
+Testing with random memory values: op_a = 0x1e18fc2d, op_b = 0x9e662fae, op_c = 0xefaa73b7, op_select = 0b111, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+Testing with random memory values: op_a = 0xe3b253f1, op_b = 0x9e662fae, op_c = 0x11ee2b00, op_select = 0b0, clock_ctrl = 1
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x0, Got = 0x0
+ 75126.00ns INFO     cocotb.regression                  test_axi_alu.test_random_memory_operands passed
+ 75126.00ns INFO     cocotb.regression                  running test_axi_alu.test_overlapping_dsp_sram_access (8/10)
+Starting burst transactions with burst length = 16...
+Single read from addr 0x14: Data = 0x1, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Test Passed: Expected = 0x1, Got = 0x1
+ 76207.00ns INFO     cocotb.regression                  test_axi_alu.test_overlapping_dsp_sram_access passed
+ 76207.00ns INFO     cocotb.regression                  running test_axi_alu.test_unaligned_axi_access (9/10)
+Single read from addr 0x13: Data = 0x12345678, RRESP = 0b0, RLAST = 0b0
+ 76358.00ns WARNING  ..access.test_unaligned_axi_access Unaligned access failed: Expected 0x12345678, Got 0x12345678
+                                                        assert 305419896 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_alu.py", line 393, in test_unaligned_axi_access
+                                                            assert read_data == 0x0, f"Unaligned access failed: Expected 0x{test_data:X}, Got 0x{read_data:X}"
+                                                        AssertionError: Unaligned access failed: Expected 0x12345678, Got 0x12345678
+                                                        assert 305419896 == 0
+ 76358.00ns WARNING  cocotb.regression                  test_axi_alu.test_unaligned_axi_access failed
+ 76358.00ns INFO     cocotb.regression                  running test_axi_alu.test_axi_burst_boundary_wrap (10/10)
+Single read from addr 0x14: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+Single read from addr 0x18: Data = 0x0, RRESP = 0b0, RLAST = 0b0
+ 77329.00ns WARNING  ..rap.test_axi_burst_boundary_wrap Test Failed: Expected = 0xAF, Got = 0x0
+                                                        assert 0 == 175
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_alu.py", line 419, in test_axi_burst_boundary_wrap
+                                                            await axi_check_result(dut, op_a, op_b, op_c, op_select)
+                                                          File "/src/test_axi_alu.py", line 451, in axi_check_result
+                                                            assert result == expected_result, f"Test Failed: Expected = 0x{expected_result:X}, Got = 0x{result:X}"
+                                                        AssertionError: Test Failed: Expected = 0xAF, Got = 0x0
+                                                        assert 0 == 175
+ 77329.00ns WARNING  cocotb.regression                  test_axi_alu.test_axi_burst_boundary_wrap failed
+ 77329.00ns INFO     cocotb.regression                  ******************************************************************************************************************
+                                                        ** TEST                                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ******************************************************************************************************************
+                                                        ** test_axi_alu.test_burst_write_transaction                  PASS         410.00           0.00     152384.99  **
+                                                        ** test_axi_alu.test_axi_alu_incremental_data                 PASS        7250.00           0.03     209220.29  **
+                                                        ** test_axi_alu.test_axi_alu_mac_operation_random_address     PASS        9530.00           0.05     208160.01  **
+                                                        ** test_axi_alu.test_axi_alu_mult_operation_random_address    PASS        9530.00           0.05     211525.26  **
+                                                        ** test_axi_alu.test_axi_alu_shift_operation_random_address   PASS        9530.00           0.05     211217.88  **
+                                                        ** test_axi_alu.test_axi_alu_div_operation_random_address     PASS        9530.00           0.04     212892.96  **
+                                                        ** test_axi_alu.test_random_memory_operands                   PASS       29340.00           0.14     208810.99  **
+                                                        ** test_axi_alu.test_overlapping_dsp_sram_access              PASS        1080.00           0.01     194022.71  **
+                                                        ** test_axi_alu.test_unaligned_axi_access                     FAIL         150.00           0.00     130799.50  **
+                                                        ** test_axi_alu.test_axi_burst_boundary_wrap                  FAIL         970.00           0.01     189743.26  **
+                                                        ******************************************************************************************************************
+                                                        ** TESTS=10 PASS=8 FAIL=2 SKIP=0                                         77329.00           0.38     205723.19  **
+                                                        ******************************************************************************************************************
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+        runner = get_runner(sim)
+    
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+>       runner.test(hdl_toplevel=toplevel, test_module=module,waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:26: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_alu -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_alu.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 2 of 10 tests.
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: 1
+============================== 1 failed in 0.62s ===============================
+Cleaning up Docker resources...

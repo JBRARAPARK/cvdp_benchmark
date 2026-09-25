@@ -1,0 +1,100 @@
+--- cvdp_copilot_simple_spi_0001/original/src/test_spi_fsm.py
++++ cvdp_copilot_simple_spi_0001/diagnostic/src/test_spi_fsm.py
+@@ -48,64 +48,85 @@
+     await RisingEdge(dut.i_clk)
+     # Simulate data transmission
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 1, "Mismatch in transmitted data bit 0")
+     assert_equal(dut.o_bits_left.value, 15, "o_bits_left incorrect at bit 0")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 0, "Mismatch in transmitted data bit 1")
+     assert_equal(dut.o_bits_left.value, 14, "o_bits_left incorrect at bit 1")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 1, "Mismatch in transmitted data bit 2")
+     assert_equal(dut.o_bits_left.value, 13, "o_bits_left incorrect at bit 2")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 0, "Mismatch in transmitted data bit 3")
+     assert_equal(dut.o_bits_left.value, 12, "o_bits_left incorrect at bit 3")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 1, "Mismatch in transmitted data bit 4")
+     assert_equal(dut.o_bits_left.value, 11, "o_bits_left incorrect at bit 4")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 0, "Mismatch in transmitted data bit 5")
+     assert_equal(dut.o_bits_left.value, 10, "o_bits_left incorrect at bit 5")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 1, "Mismatch in transmitted data bit 6")
+     assert_equal(dut.o_bits_left.value, 9, "o_bits_left incorrect at bit 6")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, 1, "Mismatch in transmitted data bit 7")
+     assert_equal(dut.o_bits_left.value, 8, "o_bits_left incorrect at bit 7")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, (0xABCD >> 7) & 1, "Mismatch in transmitted data bit 8")
+     assert_equal(dut.o_bits_left.value, 7, "o_bits_left incorrect at bit 8")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, (0xABCD >> 6) & 1, "Mismatch in transmitted data bit 9")
+     assert_equal(dut.o_bits_left.value, 6, "o_bits_left incorrect at bit 9")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, (0xABCD >> 5) & 1, "Mismatch in transmitted data bit 10")
+     assert_equal(dut.o_bits_left.value, 5, "o_bits_left incorrect at bit 10")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, (0xABCD >> 4) & 1, "Mismatch in transmitted data bit 11")
+     assert_equal(dut.o_bits_left.value, 4, "o_bits_left incorrect at bit 11")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, (0xABCD >> 3) & 1, "Mismatch in transmitted data bit 12")
+     assert_equal(dut.o_bits_left.value, 3, "o_bits_left incorrect at bit 12")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, (0xABCD >> 2) & 1, "Mismatch in transmitted data bit 13")
+     assert_equal(dut.o_bits_left.value, 2, "o_bits_left incorrect at bit 13")
+ 
+     await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
+     assert_equal(dut.o_spi_data.value, (0xABCD >> 1) & 1, "Mismatch in transmitted data bit 14")
+     assert_equal(dut.o_bits_left.value, 1, "o_bits_left incorrect at bit 14")
++
++    # Diagnostic correction: also check the sixteenth (LSB) bit.
++    await RisingEdge(dut.o_spi_clk)
++    await Timer(1, unit="ns")
++    assert_equal(dut.o_spi_data.value, 0xABCD & 1, "Final bit")
++    assert_equal(dut.o_bits_left.value, 0, "Final count")
+ 
+     # Check end of transmission
+     await RisingEdge(dut.i_clk)
+--- cvdp_copilot_interrupt_controller_0017/original/src/test_int_controller.py
++++ cvdp_copilot_interrupt_controller_0017/diagnostic/src/test_int_controller.py
+@@ -365,6 +365,9 @@
+         cocotb.log.info('Priority Map Overlap Test Finished')
+         return
+ 
++    # Diagnostic correction: define the mask input.
++    dut.interrupt_mask.value = 0
++
+     # Initialize signals
+     dut.rst_n.value = 0
+     dut.interrupt_requests.value = 0

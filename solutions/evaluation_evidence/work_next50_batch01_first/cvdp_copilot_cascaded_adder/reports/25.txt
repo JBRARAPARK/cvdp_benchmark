@@ -1,0 +1,376 @@
+Running harness with project name: cvdp_copilot_cascaded_adder_25_1790257447
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test_tree_adder[7-11] Running with: IN_DATA_NS = 128, IN_DATA_WIDTH = 11, REG = 59, NUM_STAGES=7
+FAILED
+../../src/test_runner.py::test_tree_adder[8-12] Running with: IN_DATA_NS = 256, IN_DATA_WIDTH = 12, REG = 45, NUM_STAGES=8
+FAILED
+../../src/test_runner.py::test_tree_adder[1-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257448
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cascaded_adder.test_cascaded_adder (1/1)
+     0.00ns WARNING  py.warnings                        /src/test_cascaded_adder.py:11: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.cascaded_adder              DUT_CLK STARTED
+    35.00ns INFO     cocotb.cascaded_adder              DUT IS OUT OF RESET
+  3296.00ns INFO     cocotb.regression                  test_cascaded_adder.test_cascaded_adder passed
+  3296.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_cascaded_adder.test_cascaded_adder   PASS        3296.00           0.01     574820.21  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          3296.00           0.01     521952.20  **
+                                                        *************************************************************************************************
+Running with: IN_DATA_NS = 2, IN_DATA_WIDTH = 8, REG = 0, NUM_STAGES=1
+PASSED
+../../src/test_runner.py::test_tree_adder[2-13]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257448
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_cascaded_adder.test_cascaded_adder (1/1)
+     0.00ns WARNING  py.warnings                        /src/test_cascaded_adder.py:11: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(DUT_CLK.start())
+     0.00ns INFO     cocotb.cascaded_adder              DUT_CLK STARTED
+    35.00ns INFO     cocotb.cascaded_adder              DUT IS OUT OF RESET
+  4112.00ns INFO     cocotb.regression                  test_cascaded_adder.test_cascaded_adder passed
+  4112.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_cascaded_adder.test_cascaded_adder   PASS        4112.00           0.01     550441.33  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          4112.00           0.01     505910.01  **
+                                                        *************************************************************************************************
+Running with: IN_DATA_NS = 4, IN_DATA_WIDTH = 13, REG = 2, NUM_STAGES=2
+PASSED
+../../src/test_runner.py::test_tree_adder[9-4] Running with: IN_DATA_NS = 512, IN_DATA_WIDTH = 4, REG = 241, NUM_STAGES=9
+FAILED
+
+=================================== FAILURES ===================================
+____________________________ test_tree_adder[7-11] _____________________________
+
+NUM_STAGES = 7, IN_DATA_WIDTH = 11
+
+    @pytest.mark.parametrize("NUM_STAGES ,IN_DATA_WIDTH", test_param )
+    
+    # random test
+    def test_tree_adder(NUM_STAGES, IN_DATA_WIDTH):
+        IN_DATA_NS = 2**NUM_STAGES
+        REG = random.getrandbits(NUM_STAGES)
+        print(f'Running with: IN_DATA_NS = {IN_DATA_NS}, IN_DATA_WIDTH = {IN_DATA_WIDTH}, REG = {REG}, NUM_STAGES={NUM_STAGES}')
+>       runner(IN_DATA_NS, IN_DATA_WIDTH, REG)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner.py:17: in runner
+    runner.build(
+/venv/lib/python3.12/site-packages/cocotb_tools/runner.py:389: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'cascaded_adder', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '25-parallel_arch', 'HOME': '/code/rundir', 'HOSTNAME': '...0b', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='utf-8'>}
+process = <Popen: returncode: 19 args: ['iverilog', '-o', '/code/rundir/sim_build/sim....>
+stdout = None, stderr = None, retcode = 19
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'cascaded_adder', '-g2012', '-Pcascaded_adder.IN_DATA_NS=128', '-Pcascaded_adder.IN_DATA_WIDTH=11', '-Pcascaded_adder.REG=59', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/cascaded_adder.sv']' returned non-zero exit status 19.
+
+/usr/lib/python3.12/subprocess.py:571: CalledProcessError
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s cascaded_adder -g2012 -Pcascaded_adder.IN_DATA_NS=128 -Pcascaded_adder.IN_DATA_WIDTH=11 -Pcascaded_adder.REG=59 -f /code/rundir/sim_build/cmds.f /code/rtl/cascaded_adder.sv in directory /code/rundir/sim_build
+____________________________ test_tree_adder[8-12] _____________________________
+
+NUM_STAGES = 8, IN_DATA_WIDTH = 12
+
+    @pytest.mark.parametrize("NUM_STAGES ,IN_DATA_WIDTH", test_param )
+    
+    # random test
+    def test_tree_adder(NUM_STAGES, IN_DATA_WIDTH):
+        IN_DATA_NS = 2**NUM_STAGES
+        REG = random.getrandbits(NUM_STAGES)
+        print(f'Running with: IN_DATA_NS = {IN_DATA_NS}, IN_DATA_WIDTH = {IN_DATA_WIDTH}, REG = {REG}, NUM_STAGES={NUM_STAGES}')
+>       runner(IN_DATA_NS, IN_DATA_WIDTH, REG)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner.py:17: in runner
+    runner.build(
+/venv/lib/python3.12/site-packages/cocotb_tools/runner.py:389: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'cascaded_adder', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '25-parallel_arch', 'HOME': '/code/rundir', 'HOSTNAME': '...0b', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='utf-8'>}
+process = <Popen: returncode: 79 args: ['iverilog', '-o', '/code/rundir/sim_build/sim....>
+stdout = None, stderr = None, retcode = 79
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'cascaded_adder', '-g2012', '-Pcascaded_adder.IN_DATA_NS=256', '-Pcascaded_adder.IN_DATA_WIDTH=12', '-Pcascaded_adder.REG=45', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/cascaded_adder.sv']' returned non-zero exit status 79.
+
+/usr/lib/python3.12/subprocess.py:571: CalledProcessError
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s cascaded_adder -g2012 -Pcascaded_adder.IN_DATA_NS=256 -Pcascaded_adder.IN_DATA_WIDTH=12 -Pcascaded_adder.REG=45 -f /code/rundir/sim_build/cmds.f /code/rtl/cascaded_adder.sv in directory /code/rundir/sim_build
+_____________________________ test_tree_adder[9-4] _____________________________
+
+NUM_STAGES = 9, IN_DATA_WIDTH = 4
+
+    @pytest.mark.parametrize("NUM_STAGES ,IN_DATA_WIDTH", test_param )
+    
+    # random test
+    def test_tree_adder(NUM_STAGES, IN_DATA_WIDTH):
+        IN_DATA_NS = 2**NUM_STAGES
+        REG = random.getrandbits(NUM_STAGES)
+        print(f'Running with: IN_DATA_NS = {IN_DATA_NS}, IN_DATA_WIDTH = {IN_DATA_WIDTH}, REG = {REG}, NUM_STAGES={NUM_STAGES}')
+>       runner(IN_DATA_NS, IN_DATA_WIDTH, REG)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner.py:17: in runner
+    runner.build(
+/venv/lib/python3.12/site-packages/cocotb_tools/runner.py:389: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'cascaded_adder', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '25-parallel_arch', 'HOME': '/code/rundir', 'HOSTNAME': '...0b', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='utf-8'>}
+process = <Popen: returncode: 229 args: ['iverilog', '-o', '/code/rundir/sim_build/sim...>
+stdout = None, stderr = None, retcode = 229
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'cascaded_adder', '-g2012', '-Pcascaded_adder.IN_DATA_NS=512', '-Pcascaded_adder.IN_DATA_WIDTH=4', '-Pcascaded_adder.REG=241', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/cascaded_adder.sv']' returned non-zero exit status 229.
+
+/usr/lib/python3.12/subprocess.py:571: CalledProcessError
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s cascaded_adder -g2012 -Pcascaded_adder.IN_DATA_NS=512 -Pcascaded_adder.IN_DATA_WIDTH=4 -Pcascaded_adder.REG=241 -f /code/rundir/sim_build/cmds.f /code/rtl/cascaded_adder.sv in directory /code/rundir/sim_build
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-0mozep9g'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-9u0e1d8d'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-fof5bucb'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_tree_adder[7-11] - subprocess.CalledPro...
+FAILED ../../src/test_runner.py::test_tree_adder[8-12] - subprocess.CalledPro...
+FAILED ../../src/test_runner.py::test_tree_adder[9-4] - subprocess.CalledProc...
+=================== 3 failed, 2 passed, 3 warnings in 0.73s ====================
+Cleaning up Docker resources...

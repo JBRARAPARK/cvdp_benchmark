@@ -1,0 +1,51 @@
+[
+  {
+    "check": "decimator_msb_example",
+    "id": "cvdp_copilot_configurable_digital_low_pass_filter_0004",
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_configurable_digital_low_pass_filter_0004.sv",
+    "passed": true,
+    "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/decimator_msb_example.sv:7: $finish called at 26 (1s)\n"
+  },
+  {
+    "check": "neuron_cascade_and_hold",
+    "id": "cvdp_copilot_neuromorphic_array_0001",
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_neuromorphic_array_0001.sv",
+    "passed": true,
+    "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/neuron_cascade_and_hold.sv:6: $finish called at 416 (1s)\n"
+  },
+  {
+    "check": "crc_reference",
+    "id": "cvdp_copilot_serial_in_parallel_out_0014",
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_serial_in_parallel_out_0014.sv",
+    "passed": true,
+    "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/crc_reference.sv:5: $finish called at 1016 (1s)\n"
+  },
+  {
+    "check": "jitter_tolerance_and_pulse",
+    "id": "cvdp_copilot_clock_jitter_detection_module_0003",
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_clock_jitter_detection_module_0003.sv",
+    "passed": true,
+    "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/jitter_tolerance_and_pulse.sv:6: $finish called at 226 (1s)\n"
+  },
+  {
+    "check": "wishbone_cdc_endian_wait",
+    "id": "cvdp_copilot_wb2ahb_0001",
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_wb2ahb_0001.sv",
+    "passed": true,
+    "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/wishbone_cdc_endian_wait.sv:8: $finish called at 180 (1s)\n"
+  },
+  {
+    "check": "ping_pong_capacity_order_reset",
+    "id": "cvdp_copilot_ping_pong_buffer_0001",
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_ping_pong_buffer_0001.sv",
+    "passed": true,
+    "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/ping_pong_capacity_order_reset.sv:12: $finish called at 10296 (1s)\n"
+  },
+  {
+    "check": "microcode_pop_three_cycles",
+    "id": "cvdp_copilot_microcode_sequencer_0001",
+    "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_microcode_sequencer_0001.sv",
+    "passed": true,
+    "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/microcode_pop_three_cycles.sv:5: $finish called at 130 (1s)\n"
+  }
+]

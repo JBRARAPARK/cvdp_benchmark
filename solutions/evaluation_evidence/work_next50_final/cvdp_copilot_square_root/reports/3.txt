@@ -1,0 +1,124 @@
+Running harness with project name: cvdp_copilot_square_root_3_1790258452
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258453
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_square_root_seq.test_square_root_seq (1/1)
+    60.00ns INFO     cocotb.square_root_seq             Test 0 PASSED: Input = 1, Calculated = 1, Expected = 1
+   100.00ns INFO     cocotb.square_root_seq             Test 1 PASSED: Input = 3, Calculated = 1, Expected = 1
+   130.00ns INFO     cocotb.square_root_seq             Test 2 PASSED: Input = 0, Calculated = 0, Expected = 0
+   170.00ns INFO     cocotb.square_root_seq             Test 3 PASSED: Input = 3, Calculated = 1, Expected = 1
+   210.00ns INFO     cocotb.square_root_seq             Test 4 PASSED: Input = 2, Calculated = 1, Expected = 1
+   250.00ns INFO     cocotb.square_root_seq             Test 5 PASSED: Input = 3, Calculated = 1, Expected = 1
+   290.00ns INFO     cocotb.square_root_seq             Test 6 PASSED: Input = 2, Calculated = 1, Expected = 1
+   330.00ns INFO     cocotb.square_root_seq             Test 7 PASSED: Input = 3, Calculated = 1, Expected = 1
+   360.00ns INFO     cocotb.square_root_seq             Test 8 PASSED: Input = 0, Calculated = 0, Expected = 0
+   360.00ns INFO     cocotb.regression                  test_square_root_seq.test_square_root_seq passed
+   360.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_square_root_seq.test_square_root_seq   PASS         360.00           0.00     277411.25  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             360.00           0.00     180897.26  **
+                                                        ***************************************************************************************************
+Running with: WIDTH = 2
+PASSED
+../../src/test_runner.py::test[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258453
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_square_root_seq.test_square_root_seq (1/1)
+    70.00ns INFO     cocotb.square_root_seq             Test 0 PASSED: Input = 6, Calculated = 2, Expected = 2
+   130.00ns INFO     cocotb.square_root_seq             Test 1 PASSED: Input = 14, Calculated = 3, Expected = 3
+   170.00ns INFO     cocotb.square_root_seq             Test 2 PASSED: Input = 1, Calculated = 1, Expected = 1
+   230.00ns INFO     cocotb.square_root_seq             Test 3 PASSED: Input = 13, Calculated = 3, Expected = 3
+   280.00ns INFO     cocotb.square_root_seq             Test 4 PASSED: Input = 8, Calculated = 2, Expected = 2
+   340.00ns INFO     cocotb.square_root_seq             Test 5 PASSED: Input = 12, Calculated = 3, Expected = 3
+   400.00ns INFO     cocotb.square_root_seq             Test 6 PASSED: Input = 11, Calculated = 3, Expected = 3
+   460.00ns INFO     cocotb.square_root_seq             Test 7 PASSED: Input = 15, Calculated = 3, Expected = 3
+   490.00ns INFO     cocotb.square_root_seq             Test 8 PASSED: Input = 0, Calculated = 0, Expected = 0
+   490.00ns INFO     cocotb.regression                  test_square_root_seq.test_square_root_seq passed
+   490.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_square_root_seq.test_square_root_seq   PASS         490.00           0.00     296566.95  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             490.00           0.00     211986.48  **
+                                                        ***************************************************************************************************
+Running with: WIDTH = 4
+PASSED
+../../src/test_runner.py::test[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258454
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_square_root_seq.test_square_root_seq (1/1)
+   190.00ns INFO     cocotb.square_root_seq             Test 0 PASSED: Input = 223, Calculated = 14, Expected = 14
+   340.00ns INFO     cocotb.square_root_seq             Test 1 PASSED: Input = 155, Calculated = 12, Expected = 12
+   470.00ns INFO     cocotb.square_root_seq             Test 2 PASSED: Input = 113, Calculated = 10, Expected = 10
+   600.00ns INFO     cocotb.square_root_seq             Test 3 PASSED: Input = 113, Calculated = 10, Expected = 10
+   650.00ns INFO     cocotb.square_root_seq             Test 4 PASSED: Input = 5, Calculated = 2, Expected = 2
+   810.00ns INFO     cocotb.square_root_seq             Test 5 PASSED: Input = 176, Calculated = 13, Expected = 13
+   910.00ns INFO     cocotb.square_root_seq             Test 6 PASSED: Input = 57, Calculated = 7, Expected = 7
+  1090.00ns INFO     cocotb.square_root_seq             Test 7 PASSED: Input = 255, Calculated = 15, Expected = 15
+  1120.00ns INFO     cocotb.square_root_seq             Test 8 PASSED: Input = 0, Calculated = 0, Expected = 0
+  1120.00ns INFO     cocotb.regression                  test_square_root_seq.test_square_root_seq passed
+  1120.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_square_root_seq.test_square_root_seq   PASS        1120.00           0.00     397800.02  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            1120.00           0.00     321688.73  **
+                                                        ***************************************************************************************************
+Running with: WIDTH = 8
+PASSED
+../../src/test_runner.py::test[16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258454
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_square_root_seq.test_square_root_seq (1/1)
+  2440.00ns INFO     cocotb.square_root_seq             Test 0 PASSED: Input = 57334, Calculated = 239, Expected = 239
+  4460.00ns INFO     cocotb.square_root_seq             Test 1 PASSED: Input = 39913, Calculated = 199, Expected = 199
+  6190.00ns INFO     cocotb.square_root_seq             Test 2 PASSED: Input = 29094, Calculated = 170, Expected = 170
+  7920.00ns INFO     cocotb.square_root_seq             Test 3 PASSED: Input = 29069, Calculated = 170, Expected = 170
+  8330.00ns INFO     cocotb.square_root_seq             Test 4 PASSED: Input = 1461, Calculated = 38, Expected = 38
+ 10480.00ns INFO     cocotb.square_root_seq             Test 5 PASSED: Input = 45057, Calculated = 212, Expected = 212
+ 11720.00ns INFO     cocotb.square_root_seq             Test 6 PASSED: Input = 14813, Calculated = 121, Expected = 121
+ 14300.00ns INFO     cocotb.square_root_seq             Test 7 PASSED: Input = 65535, Calculated = 255, Expected = 255
+ 14330.00ns INFO     cocotb.square_root_seq             Test 8 PASSED: Input = 0, Calculated = 0, Expected = 0
+ 14330.00ns INFO     cocotb.regression                  test_square_root_seq.test_square_root_seq passed
+ 14330.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_square_root_seq.test_square_root_seq   PASS       14330.00           0.03     513936.64  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                           14330.00           0.03     501141.25  **
+                                                        ***************************************************************************************************
+Running with: WIDTH = 16
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-sexom5v2'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-jsy2zc3t'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 4 passed, 2 warnings in 0.90s =========================
+Cleaning up Docker resources...

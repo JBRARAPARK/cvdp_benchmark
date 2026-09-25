@@ -1,0 +1,128 @@
+Running harness with project name: cvdp_copilot_fifo_async_1_1790256062
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256064
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running tb.test_empty (1/4)
+    10.00ns INFO     cocotb.fifo_async                  Clocks initialized.
+   110.00ns INFO     cocotb.fifo_async                  Resets initialized, ready for sequential value tests.
+   110.00ns INFO     cocotb.fifo_async                  Test Empty Started, executing 5 read and writes.
+   198.00ns INFO     cocotb.fifo_async                  Finished to write data in FIFO.
+   275.00ns INFO     cocotb.fifo_async                  Finished to read data from FIFO.
+   295.00ns WARNING  py.warnings                        /src/tb.py:167: DeprecationWarning: `task.kill()` is deprecated in favor of `task.cancel()`
+                                                          w_clk.kill()
+   295.00ns WARNING  py.warnings                        /src/tb.py:168: DeprecationWarning: `task.kill()` is deprecated in favor of `task.cancel()`
+                                                          r_clk.kill()
+   295.00ns INFO     cocotb.regression                  tb.test_empty passed
+   295.00ns INFO     cocotb.regression                  running tb.test_basic (2/4)
+   305.00ns INFO     cocotb.fifo_async                  Clocks initialized.
+   405.00ns INFO     cocotb.fifo_async                  Resets initialized, ready for sequential value tests.
+   410.00ns INFO     cocotb.fifo_async                  Wrote 0xdeadbeaf in w_data bus.
+   410.00ns WARNING  cocotb.Test test_basic.test_basic  Int value (3735928495) out of range for assignment of 8-bit signal ('w_data')
+                                                        Traceback (most recent call last):
+                                                          File "/src/tb.py", line 182, in test_basic
+                                                            await write_data(dut, 0xDEADBEAF)
+                                                          File "/src/tb.py", line 42, in write_data
+                                                            dut.w_data.value = w_data
+                                                            ^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 876, in value
+                                                            self.set(value)
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 1363, in set
+                                                            super().set(value)
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 925, in set
+                                                            self._set_value(value, _GPISetAction.DEPOSIT)
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 1291, in _set_value
+                                                            raise ValueError(
+                                                        ValueError: Int value (3735928495) out of range for assignment of 8-bit signal ('w_data')
+   410.00ns WARNING  cocotb.regression                  tb.test_basic failed
+   410.00ns INFO     cocotb.regression                  running tb.test_full (3/4)
+   420.00ns INFO     cocotb.fifo_async                  Clocks initialized.
+   520.00ns INFO     cocotb.fifo_async                  Resets initialized, ready for sequential value tests.
+   739.00ns INFO     cocotb.fifo_async                  Finished to write data into FIFO
+   752.00ns WARNING  py.warnings                        /src/tb.py:228: DeprecationWarning: `task.kill()` is deprecated in favor of `task.cancel()`
+                                                          w_clk.kill()
+   752.00ns WARNING  py.warnings                        /src/tb.py:229: DeprecationWarning: `task.kill()` is deprecated in favor of `task.cancel()`
+                                                          r_clk.kill()
+   752.00ns INFO     cocotb.regression                  tb.test_full passed
+   752.00ns INFO     cocotb.regression                  running tb.test_random (4/4)
+   762.00ns INFO     cocotb.fifo_async                  Clocks initialized.
+   862.00ns INFO     cocotb.fifo_async                  Resets initialized, ready for sequential value tests.
+   862.00ns INFO     cocotb.fifo_async                  Starting w_test thread...
+   862.00ns INFO     cocotb.fifo_async                  Starting r_test thread...
+   862.00ns INFO     cocotb.fifo_async                  Detected empty FIFO, skipping new data read.
+   864.00ns INFO     cocotb.fifo_async                  Detected empty FIFO, skipping new data read.
+   876.00ns INFO     cocotb.fifo_async                  Detected empty FIFO, skipping new data read.
+   888.00ns INFO     cocotb.fifo_async                  Detected empty FIFO, skipping new data read.
+   890.00ns INFO     cocotb.fifo_async                  Wrote 0x35 in w_data bus.
+   900.00ns INFO     cocotb.fifo_async                  Detected empty FIFO, skipping new data read.
+   912.00ns INFO     cocotb.fifo_async                  Finished to execute r_test thread.
+   912.00ns WARNING  cocotb.Task 14.r_test              Wrong domain transitioning
+                                                        assert LogicArray('00000000', Range(7, 'downto', 0)) == 53
+                                                         +  where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(fifo_async.r_data).value
+                                                         +    where LogicArrayObject(fifo_async.r_data) = HierarchyObject(fifo_async).r_data
+                                                        Traceback (most recent call last):
+                                                          File "/src/tb.py", line 92, in r_test
+                                                            read_data(dut, r_data)
+                                                          File "/src/tb.py", line 51, in read_data
+                                                            assert dut.r_data.value  == expected_data, "Wrong domain transitioning"
+                                                        AssertionError: Wrong domain transitioning
+                                                        assert LogicArray('00000000', Range(7, 'downto', 0)) == 53
+                                                         +  where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(fifo_async.r_data).value
+                                                         +    where LogicArrayObject(fifo_async.r_data) = HierarchyObject(fifo_async).r_data
+   912.00ns INFO     cocotb.fifo_async                  Wrote 0xce in w_data bus.
+   912.00ns INFO     cocotb.fifo_async                  Finished to execute w_test thread.
+   912.00ns WARNING  cocotb.regression                  tb.test_random failed
+   912.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** tb.test_empty                  PASS         295.00           0.00     108794.49  **
+                                                        ** tb.test_basic                  FAIL         115.00           0.00      90768.72  **
+                                                        ** tb.test_full                   PASS         342.00           0.00     185233.98  **
+                                                        ** tb.test_random                 FAIL         160.00           0.00      88452.44  **
+                                                        **************************************************************************************
+                                                        ** TESTS=4 PASS=2 FAIL=2 SKIP=0                912.00           0.01      67898.86  **
+                                                        **************************************************************************************
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    @pytest.mark.tb
+    def test_runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"))
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:30: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s fifo_async -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/fifo_async.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 2 of 4 tests.
+=============================== warnings summary ===============================
+../../src/test_runner.py:17
+  /src/test_runner.py:17: PytestUnknownMarkWarning: Unknown pytest.mark.tb - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.tb
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: 1
+========================= 1 failed, 1 warning in 0.45s =========================
+Cleaning up Docker resources...

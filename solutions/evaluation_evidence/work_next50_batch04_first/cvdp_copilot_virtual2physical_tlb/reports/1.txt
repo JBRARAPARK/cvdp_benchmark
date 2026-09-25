@@ -1,0 +1,657 @@
+Running harness with project name: cvdp_copilot_virtual2physical_tlb_1_1790257707
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_virtual2physical_tlb[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257708
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 FAILED! Virtual Address: 4, Expected: 4, Got: 0
+   101.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 4,Physical Address: 0
+                                                        assert 0 == 4
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 4,Physical Address: 0
+                                                        assert 0 == 4
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+   101.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+   101.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL         101.00           0.00     122505.70  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                       101.00           0.00      25775.77  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257708
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 FAILED! Virtual Address: 4, Expected: 4, Got: 0
+   101.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 4,Physical Address: 0
+                                                        assert 0 == 4
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 4,Physical Address: 0
+                                                        assert 0 == 4
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+   101.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+   101.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL         101.00           0.00     114959.21  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                       101.00           0.00      25592.02  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257709
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 7, Expected: 7, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00     104886.41  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      23232.19  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257709
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 7, Expected: 7, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00     102382.42  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      23003.96  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257709
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 7, Expected: 7, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00     105611.97  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      22866.14  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257709
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 7, Expected: 7, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00     111864.50  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      23294.58  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257709
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 7, Expected: 7, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 7,Physical Address: 0
+                                                        assert 0 == 7
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00     110185.24  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      23437.62  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257710
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 5, Expected: 5, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 5,Physical Address: 0
+                                                        assert 0 == 5
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 5,Physical Address: 0
+                                                        assert 0 == 5
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00      99499.91  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      22688.09  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257710
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 5, Expected: 5, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 5,Physical Address: 0
+                                                        assert 0 == 5
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 5,Physical Address: 0
+                                                        assert 0 == 5
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00     106585.22  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      23211.00  **
+                                                        *************************************************************************************************************
+FAILED
+../../src/test_runner.py::test_virtual2physical_tlb[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257710
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 FAILED! Virtual Address: 5, Expected: 5, Got: 0
+    91.00ns WARNING  ..al_tlb.test_virtual2physical_tlb TEST 1 PASSED! Virtual Address: 5,Physical Address: 0
+                                                        assert 0 == 5
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_virtual2physical_tlb.py", line 46, in test_virtual2physical_tlb
+                                                            assert int(dut.physical_address.value) == page_table_memory[int(dut.virtual_address.value)], f"TEST 1 PASSED! Virtual Address: {int(dut.virtual_address.value)},Physical Address: {int(dut.physical_address.value)}"
+                                                        AssertionError: TEST 1 PASSED! Virtual Address: 5,Physical Address: 0
+                                                        assert 0 == 5
+                                                         +  where 0 = int(LogicArray('00000000', Range(7, 'downto', 0)))
+                                                         +    where LogicArray('00000000', Range(7, 'downto', 0)) = LogicArrayObject(virtual2physical_tlb.physical_address).value
+                                                         +      where LogicArrayObject(virtual2physical_tlb.physical_address) = HierarchyObject(virtual2physical_tlb).physical_address
+    91.00ns WARNING  cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb failed
+    91.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   FAIL          91.00           0.00     104771.25  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        91.00           0.00      23044.23  **
+                                                        *************************************************************************************************************
+FAILED
+
+=================================== FAILURES ===================================
+_________________________ test_virtual2physical_tlb[0] _________________________
+
+test = 0
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[1] _________________________
+
+test = 1
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[2] _________________________
+
+test = 2
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[3] _________________________
+
+test = 3
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[4] _________________________
+
+test = 4
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[5] _________________________
+
+test = 5
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[6] _________________________
+
+test = 6
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[7] _________________________
+
+test = 7
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[8] _________________________
+
+test = 8
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_virtual2physical_tlb[9] _________________________
+
+test = 9
+
+    @pytest.mark.parametrize("test", range(10))
+    def test_virtual2physical_tlb(test):
+>       runner()
+
+/src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:25: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s virtual2physical_tlb -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/virtual2physical_tlb.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-sdso9lua'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-dl48vx2y'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-19colcrv'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[2] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[3] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[5] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[6] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[7] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[8] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_virtual2physical_tlb[9] - SystemExit: 1
+======================== 10 failed, 3 warnings in 2.24s ========================
+Cleaning up Docker resources...

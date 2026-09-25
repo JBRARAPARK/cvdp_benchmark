@@ -1,0 +1,91 @@
+Running harness with project name: cvdp_copilot_register_file_2r1w_6_1790257718
+Sending build context to Docker daemon  4.708kB
+Step 1/2 : FROM nvidia/cvdp-sim:v1.0.0
+ ---> 9bbd232afa15
+Step 2/2 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in c46b72327af4
+ ---> Removed intermediate container c46b72327af4
+ ---> aeacfb3a4098
+Successfully built aeacfb3a4098
+Successfully tagged cvdp_copilot_register_file_2r1w_6_1790257718-direct:latest
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner FAILED                             [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    @pytest.mark.tb
+    def test_runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ps"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:30: SystemExit
+----------------------------- Captured stdout call -----------------------------
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257719
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running tb_register_file_bist.test_register_file_bist (1/1)
+                                                            Test BIST functionality of the cvdp_copilot_register_file_2R1W module
+    15.00ns INFO     ...cvdp_copilot_register_file_2R1W Test 1: BIST Normal Operation
+   665.00ns INFO     ...cvdp_copilot_register_file_2R1W Test 1 Passed: BIST completed successfully
+   675.00ns INFO     ...cvdp_copilot_register_file_2R1W Test 3: Normal Operation After BIST
+   695.00ns ERROR    ...cvdp_copilot_register_file_2R1W Test 3 Failed: Expected dout1 = 0xA5A5A5A5, got 0x0
+   695.00ns INFO     ...cvdp_copilot_register_file_2R1W Test 4: BIST Re-entry
+  1345.00ns INFO     ...cvdp_copilot_register_file_2R1W Test 4 Passed: BIST re-entry successful
+  1355.00ns INFO     ...cvdp_copilot_register_file_2R1W Test 5: BIST Activation During Normal Operation
+  2015.00ns INFO     ...cvdp_copilot_register_file_2R1W Test 5 Passed: BIST during normal operation successful
+  2015.00ns INFO     ...cvdp_copilot_register_file_2R1W -------------------------------------------------
+  2015.00ns INFO     ...cvdp_copilot_register_file_2R1W Test Results:
+  2015.00ns INFO     ...cvdp_copilot_register_file_2R1W Total Tests Passed: 3
+  2015.00ns INFO     ...cvdp_copilot_register_file_2R1W Total Tests Failed: 1
+  2015.00ns INFO     ...cvdp_copilot_register_file_2R1W -------------------------------------------------
+  2015.00ns WARNING  ..ile_bist.test_register_file_bist Some tests failed. Check log for details.
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/tb_register_file_bist.py", line 140, in test_register_file_bist
+                                                            assert fail_count == 0, "Some tests failed. Check log for details."
+                                                        AssertionError: Some tests failed. Check log for details.
+                                                        assert 1 == 0
+  2015.00ns WARNING  cocotb.regression                  tb_register_file_bist.test_register_file_bist failed
+  2015.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** tb_register_file_bist.test_register_file_bist   FAIL        2015.00           0.01     359884.29  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                2015.00           0.01     230519.12  **
+                                                        *******************************************************************************************************
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s cvdp_copilot_register_file_2R1W -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/cvdp_copilot_register_file_2R1W.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=============================== warnings summary ===============================
+../../src/test_runner.py:17
+  /src/test_runner.py:17: PytestUnknownMarkWarning: Unknown pytest.mark.tb - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.tb
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: 1
+========================= 1 failed, 1 warning in 0.24s =========================
+Cleaning up Docker resources...
+Untagged: cvdp_copilot_register_file_2r1w_6_1790257718-direct:latest
+Deleted: sha256:aeacfb3a40980384e227bc22654d44fd57f0d5e201efdd082bdf9ac2350f2ca3

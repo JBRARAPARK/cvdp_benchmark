@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+export PATH="$ROOT/.venv/bin:/opt/homebrew/bin:$PATH"
+export DOCKER_CONFIG="$ROOT/.docker-cvdp"
+export DOCKER_HOST="unix://${HOME}/.colima/cvdp/docker.sock"
+unset DOCKER_CONTEXT
+DATASET="example_dataset/cvdp_v1.1.0_example_nonagentic_code_generation_no_commercial_with_solutions.jsonl"
+command="${1:-help}"
+if (( $# )); then shift; fi
+case "$command" in
+  start) colima start --profile cvdp --cpu 4 --memory 6 --disk 60 --vm-type vz --mount-type virtiofs --activate=false "$@" ;;
+  stop) colima stop --profile cvdp "$@" ;;
+  doctor)
+    python --version
+    python -m pip check
+    docker version
+    docker compose version
+    docker image inspect nvidia/cvdp-sim:v1.0.0 --format '{{.Os}}/{{.Architecture}} {{.Id}}'
+    ;;
+  build) docker build -f docker/Dockerfile.sim -t nvidia/cvdp-sim:v1.0.0 . "$@" ;;
+  smoke)
+    docker info >/dev/null
+    python run_benchmark.py -f "$DATASET" -p "work_smoke_$(date +%Y%m%d_%H%M%S)_$$" "$@"
+    ;;
+  benchmark) exec python run_benchmark.py "$@" ;;
+  samples) exec python run_samples.py "$@" ;;
+  docker) exec docker "$@" ;;
+  *)
+    cat <<'HELP'
+Usage: ./scripts/cvdp COMMAND [arguments]
+  start       Start the dedicated CVDP Docker VM (4 CPU, 6 GiB RAM)
+  stop        Stop the CVDP VM
+  doctor      Check Python, dependencies, Docker, Compose, simulation image
+  build       Build the official simulation image
+  smoke       Evaluate the bundled golden non-agentic example (no API key)
+  benchmark   Forward arguments to run_benchmark.py
+  samples     Forward arguments to run_samples.py
+  docker      Run Docker against the dedicated CVDP VM
+HELP
+    if [[ "$command" != help ]]; then exit 2; fi
+    ;;
+esac

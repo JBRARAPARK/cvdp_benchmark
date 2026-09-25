@@ -1,0 +1,120 @@
+Running harness with project name: cvdp_copilot_32_bit_brent_kung_pp_adder_1_1790201833
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s brent_kung_adder -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/brent_kung_adder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201834
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_brent_kung_adder.test_brent_kung_adder (1/1)
+                                                            Test the 32-bit Brent-Kung Adder for different input cases.
+    10.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 1: Zero inputs
+    10.00ns INFO     cocotb.brent_kung_adder            a: 00000000, b: 00000000, carry_in: 0
+    10.00ns INFO     cocotb.brent_kung_adder            Expected Sum: 00000000, Actual Sum: 00000000
+    10.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+    30.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 2: Large positive numbers with no carry
+    30.00ns INFO     cocotb.brent_kung_adder            a: 7FFFFFFF, b: 7FFFFFFF, carry_in: 0
+    30.00ns INFO     cocotb.brent_kung_adder            Expected Sum: FFFFFFFE, Actual Sum: FFFFFFFE
+    30.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+    50.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 3: Adding two large negative numbers, carry-out expected
+    50.00ns INFO     cocotb.brent_kung_adder            a: 80000000, b: 80000000, carry_in: 0
+    50.00ns INFO     cocotb.brent_kung_adder            Expected Sum: 00000000, Actual Sum: 00000000
+    50.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 1, Actual Carry Out: 1
+    70.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 4: Numbers with different magnitudes
+    70.00ns INFO     cocotb.brent_kung_adder            a: 0000FFFF, b: FFFF0000, carry_in: 0
+    70.00ns INFO     cocotb.brent_kung_adder            Expected Sum: FFFFFFFF, Actual Sum: FFFFFFFF
+    70.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+    90.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 5: Large numbers with carry-in
+    90.00ns INFO     cocotb.brent_kung_adder            a: FFFFFFFF, b: FFFFFFFF, carry_in: 1
+    90.00ns INFO     cocotb.brent_kung_adder            Expected Sum: FFFFFFFF, Actual Sum: FFFFFFFF
+    90.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 1, Actual Carry Out: 1
+   110.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 6: Alternating 1's and 0's, no carry-in
+   110.00ns INFO     cocotb.brent_kung_adder            a: 55555555, b: AAAAAAAA, carry_in: 0
+   110.00ns INFO     cocotb.brent_kung_adder            Expected Sum: FFFFFFFF, Actual Sum: FFFFFFFF
+   110.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+   130.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 7: Random values with carry-in
+   130.00ns INFO     cocotb.brent_kung_adder            a: A1B2C3D4, b: 4D3C2B1A, carry_in: 1
+   130.00ns INFO     cocotb.brent_kung_adder            Expected Sum: EEEEEEEF, Actual Sum: EEEEEEEF
+   130.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+   150.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 8: Large hexadecimal numbers
+   150.00ns INFO     cocotb.brent_kung_adder            a: F0F0F0F0, b: 0F0F0F0F, carry_in: 0
+   150.00ns INFO     cocotb.brent_kung_adder            Expected Sum: FFFFFFFF, Actual Sum: FFFFFFFF
+   150.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+   170.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 9: Random edge case with carry-in
+   170.00ns INFO     cocotb.brent_kung_adder            a: 12345678, b: 87654321, carry_in: 1
+   170.00ns INFO     cocotb.brent_kung_adder            Expected Sum: 9999999A, Actual Sum: 9999999A
+   170.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+   190.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 10: Random edge case, carry-out expected
+   190.00ns INFO     cocotb.brent_kung_adder            a: DEADBEEF, b: C0FFEE00, carry_in: 0
+   190.00ns INFO     cocotb.brent_kung_adder            Expected Sum: 9FADACEF, Actual Sum: 9FADACEF
+   190.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 1, Actual Carry Out: 1
+   210.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 11: Simple increasing values with carry-in
+   210.00ns INFO     cocotb.brent_kung_adder            a: 11111111, b: 22222222, carry_in: 1
+   210.00ns INFO     cocotb.brent_kung_adder            Expected Sum: 33333334, Actual Sum: 33333334
+   210.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+   230.00ns INFO     cocotb.brent_kung_adder            Running test case: Test Case 12: Smallest non-zero inputs with carry-in
+   230.00ns INFO     cocotb.brent_kung_adder            a: 00000001, b: 00000001, carry_in: 1
+   230.00ns INFO     cocotb.brent_kung_adder            Expected Sum: 00000003, Actual Sum: 00000003
+   230.00ns INFO     cocotb.brent_kung_adder            Expected Carry Out: 0, Actual Carry Out: 0
+   250.00ns INFO     cocotb.brent_kung_adder            Random Test Case 1
+   250.00ns INFO     cocotb.brent_kung_adder            a: AC261365, b: 2A3D5DFE, carry_in: 1
+   250.00ns INFO     cocotb.brent_kung_adder            Actual Sum: D6637164, Actual Carry Out: 0
+   270.00ns INFO     cocotb.brent_kung_adder            Random Test Case 2
+   270.00ns INFO     cocotb.brent_kung_adder            a: 7C75C00A, b: CAAD7EC1, carry_in: 0
+   270.00ns INFO     cocotb.brent_kung_adder            Actual Sum: 47233ECB, Actual Carry Out: 1
+   290.00ns INFO     cocotb.brent_kung_adder            Random Test Case 3
+   290.00ns INFO     cocotb.brent_kung_adder            a: E7E62B68, b: 109B923C, carry_in: 0
+   290.00ns INFO     cocotb.brent_kung_adder            Actual Sum: F881BDA4, Actual Carry Out: 0
+   310.00ns INFO     cocotb.brent_kung_adder            Random Test Case 4
+   310.00ns INFO     cocotb.brent_kung_adder            a: 7D2EB35A, b: 060D2348, carry_in: 1
+   310.00ns INFO     cocotb.brent_kung_adder            Actual Sum: 833BD6A3, Actual Carry Out: 0
+   330.00ns INFO     cocotb.brent_kung_adder            Random Test Case 5
+   330.00ns INFO     cocotb.brent_kung_adder            a: 495C26E6, b: 72670BD8, carry_in: 1
+   330.00ns INFO     cocotb.brent_kung_adder            Actual Sum: BBC332BF, Actual Carry Out: 0
+   350.00ns INFO     cocotb.brent_kung_adder            Random Test Case 6
+   350.00ns INFO     cocotb.brent_kung_adder            a: 6D229717, b: A3324C88, carry_in: 0
+   350.00ns INFO     cocotb.brent_kung_adder            Actual Sum: 1054E39F, Actual Carry Out: 1
+   370.00ns INFO     cocotb.brent_kung_adder            Random Test Case 7
+   370.00ns INFO     cocotb.brent_kung_adder            a: 6A221A84, b: 138B05FE, carry_in: 1
+   370.00ns INFO     cocotb.brent_kung_adder            Actual Sum: 7DAD2083, Actual Carry Out: 0
+   390.00ns INFO     cocotb.brent_kung_adder            Random Test Case 8
+   390.00ns INFO     cocotb.brent_kung_adder            a: 2419C69E, b: AC17984D, carry_in: 1
+   390.00ns INFO     cocotb.brent_kung_adder            Actual Sum: D0315EEC, Actual Carry Out: 0
+   410.00ns INFO     cocotb.brent_kung_adder            Random Test Case 9
+   410.00ns INFO     cocotb.brent_kung_adder            a: F2195E4F, b: 547CF15B, carry_in: 0
+   410.00ns INFO     cocotb.brent_kung_adder            Actual Sum: 46964FAA, Actual Carry Out: 1
+   430.00ns INFO     cocotb.brent_kung_adder            Random Test Case 10
+   430.00ns INFO     cocotb.brent_kung_adder            a: E507E567, b: 03C7FF9A, carry_in: 0
+   430.00ns INFO     cocotb.brent_kung_adder            Actual Sum: E8CFE501, Actual Carry Out: 0
+   440.00ns INFO     cocotb.regression                  test_brent_kung_adder.test_brent_kung_adder passed
+   440.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_brent_kung_adder.test_brent_kung_adder   PASS         440.00           0.00     175427.16  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               440.00           0.00     128328.61  **
+                                                        *****************************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_runner.result.xml
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-2g66hx9u'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-2hv97i0y'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 1 passed, 2 warnings in 0.26s =========================
+Cleaning up Docker resources...

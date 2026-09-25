@@ -1,0 +1,410 @@
+Running harness with project name: cvdp_copilot_virtual2physical_tlb_1_1790258083
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_virtual2physical_tlb[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258084
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     197273.52  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     122185.76  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258084
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     180983.99  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     110853.78  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258084
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     229539.02  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     145578.11  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258085
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 3, Physical Address: 3
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     202179.42  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     135718.03  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258085
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 3, Physical Address: 3
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     246789.75  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     153331.15  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258085
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 3, Physical Address: 3
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     243084.00  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     158506.72  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258085
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 3, Physical Address: 3
+TEST 1 PASSED! Virtual Address: 4, Physical Address: 4
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     219283.95  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     143317.06  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258086
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 3, Physical Address: 3
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 2, Physical Address: 2
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     250236.44  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     165574.53  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258086
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 3, Physical Address: 3
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 2, Physical Address: 2
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     251463.93  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     159121.72  **
+                                                        *************************************************************************************************************
+PASSED
+../../src/test_runner.py::test_virtual2physical_tlb[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258086
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_virtual2physical_tlb.test_virtual2physical_tlb (1/1)
+TEST 1 PASSED! Virtual Address: 1, Physical Address: 1
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 7, Physical Address: 7
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 3, Physical Address: 3
+TEST 1 PASSED! Virtual Address: 0, Physical Address: 0
+TEST 1 PASSED! Virtual Address: 6, Physical Address: 6
+TEST 1 PASSED! Virtual Address: 2, Physical Address: 2
+TEST 1 PASSED! Virtual Address: 5, Physical Address: 5
+MISS TEST PASSED! Virtual Address: 8 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 9 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 10 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 11 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 12 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 13 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 14 resulted in a Miss
+MISS TEST PASSED! Virtual Address: 15 resulted in a Miss
+HIT TEST PASSED! Virtual Address: 00000000 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000001 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000010 resulted in a Hit
+HIT TEST PASSED! Virtual Address: 00000011 resulted in a Hit
+Simulation completed.
+   440.00ns INFO     cocotb.regression                  test_virtual2physical_tlb.test_virtual2physical_tlb passed
+   440.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_virtual2physical_tlb.test_virtual2physical_tlb   PASS         440.00           0.00     249222.65  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       440.00           0.00     153496.94  **
+                                                        *************************************************************************************************************
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-mr698re3'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-9sra_z4a'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 10 passed, 2 warnings in 2.72s ========================
+Cleaning up Docker resources...

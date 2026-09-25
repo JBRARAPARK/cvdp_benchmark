@@ -1,0 +1,682 @@
+Running harness with project name: cvdp_copilot_pipeline_mac_17_1790255816
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 9 items
+
+../../src/test_runner.py::test_pipeline_mac[0-12-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255817
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=12
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 12}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[0-25-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255817
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=25
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 25}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[0-8-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255817
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=8
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 8}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[1-12-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255818
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=12
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 12}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[1-25-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255818
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=25
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 25}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[1-8-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255819
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=8
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 8}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[2-12-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255819
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=12
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 12}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[2-25-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255819
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=25
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 25}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[2-8-63]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255820
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_pipeline_mac' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pipeline_mac.test_pipeline_mac (1/1)
+[INFO] Clock started.
+     0.00ns WARNING  ..t_pipeline_mac.test_pipeline_mac pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_pipeline_mac.py", line 23, in test_pipeline_mac
+                                                            DWIDTH_ACCUMULATOR = int(dut.DWIDTH_ACCUMULATOR.value)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/venv/lib/python3.12/site-packages/cocotb/handle.py", line 484, in __getattr__
+                                                            raise AttributeError(f"{self._path} contains no child object named {name}")
+                                                        AttributeError: pipeline_mac contains no child object named DWIDTH_ACCUMULATOR
+     0.00ns WARNING  cocotb.regression                  test_pipeline_mac.test_pipeline_mac failed
+     0.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_pipeline_mac.test_pipeline_mac   FAIL           0.00           0.00          0.00  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                         0.00           0.01          0.00  **
+                                                        *********************************************************************************************
+[DEBUG] Running simulation with DWIDTH=63, N=8
+[DEBUG] Parameters: {'DWIDTH': 63, 'N': 8}
+FAILED
+
+=================================== FAILURES ===================================
+__________________________ test_pipeline_mac[0-12-63] __________________________
+
+DWIDTH = 63, N = 12, test = 0
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 12, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=12 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[0-25-63] __________________________
+
+DWIDTH = 63, N = 25, test = 0
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 25, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=25 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[0-8-63] ___________________________
+
+DWIDTH = 63, N = 8, test = 0
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 8, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=8 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[1-12-63] __________________________
+
+DWIDTH = 63, N = 12, test = 1
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 12, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=12 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[1-25-63] __________________________
+
+DWIDTH = 63, N = 25, test = 1
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 25, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=25 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[1-8-63] ___________________________
+
+DWIDTH = 63, N = 8, test = 1
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 8, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=8 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[2-12-63] __________________________
+
+DWIDTH = 63, N = 12, test = 2
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 12, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=12 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[2-25-63] __________________________
+
+DWIDTH = 63, N = 25, test = 2
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 25, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=25 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[2-8-63] ___________________________
+
+DWIDTH = 63, N = 8, test = 2
+
+    @pytest.mark.parametrize("DWIDTH", [ random.randint(1, 64)])
+    @pytest.mark.parametrize("N", [random.randint(5, 32), random.randint(5, 32), random.randint(5, 24)] )
+    # @pytest.mark.parametrize("N", [5] )
+    # random test
+    @pytest.mark.parametrize("test", range(3))
+    def test_pipeline_mac(DWIDTH, N, test):
+>       runner(DWIDTH=DWIDTH, N=N)
+
+/src/test_runner.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+DWIDTH = 63, N = 8, multiplicand = 0, multiplier = 0, valid_i = 0
+
+    def runner(DWIDTH: int=0 , N: int=0 , multiplicand : int=0, multiplier : int=0, valid_i : int=0):
+        plusargs=[f'+multiplicand={multiplicand}', f'+multiplier={multiplier}', f'+valid_i={valid_i}']
+        parameter = {"DWIDTH":DWIDTH, "N":N}
+        # Debug information
+        print(f"[DEBUG] Running simulation with DWIDTH={DWIDTH}, N={N}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:31: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pipeline_mac -g2012 -Ppipeline_mac.DWIDTH=63 -Ppipeline_mac.N=8 -f /code/rundir/sim_build/cmds.f /code/rtl/pipeline_mac.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-ywb58ai1'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-5m0gwnea'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-x575ux74'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_pipeline_mac[0-12-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[0-25-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[0-8-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[1-12-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[1-25-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[1-8-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[2-12-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[2-25-63] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[2-8-63] - SystemExit: 1
+======================== 9 failed, 3 warnings in 3.56s =========================
+Cleaning up Docker resources...

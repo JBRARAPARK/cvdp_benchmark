@@ -1,0 +1,42 @@
+Running harness with project name: cvdp_copilot_binary_to_bcd_1_1790255731
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s binary_to_bcd -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/binary_to_bcd.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255732
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_binary_to_bcd.test_binary_to_bcd (1/1)
+                                                            Test binary to BCD conversion using a reference model, with predefined and random test cases 
+    10.00ns INFO     cocotb.binary_to_bcd               Binary Input: 0 | Expected BCD Output: 000000000000 | DUT BCD Output: 000000000000
+    20.00ns INFO     cocotb.binary_to_bcd               Binary Input: 20 | Expected BCD Output: 000000100000 | DUT BCD Output: 000000100000
+    30.00ns INFO     cocotb.binary_to_bcd               Binary Input: 99 | Expected BCD Output: 000010011001 | DUT BCD Output: 000010011001
+    40.00ns INFO     cocotb.binary_to_bcd               Binary Input: 128 | Expected BCD Output: 000100101000 | DUT BCD Output: 000100101000
+    50.00ns INFO     cocotb.binary_to_bcd               Binary Input: 255 | Expected BCD Output: 001001010101 | DUT BCD Output: 001001010101
+    60.00ns INFO     cocotb.binary_to_bcd               Binary Input: 97 | Expected BCD Output: 000010010111 | DUT BCD Output: 000010010111
+    70.00ns INFO     cocotb.binary_to_bcd               Binary Input: 136 | Expected BCD Output: 000100110110 | DUT BCD Output: 000100110110
+    80.00ns INFO     cocotb.binary_to_bcd               Binary Input: 119 | Expected BCD Output: 000100011001 | DUT BCD Output: 000100011001
+    90.00ns INFO     cocotb.binary_to_bcd               Binary Input: 181 | Expected BCD Output: 000110000001 | DUT BCD Output: 000110000001
+   100.00ns INFO     cocotb.binary_to_bcd               Binary Input: 26 | Expected BCD Output: 000000100110 | DUT BCD Output: 000000100110
+   100.00ns INFO     cocotb.regression                  test_binary_to_bcd.test_binary_to_bcd passed
+   100.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_binary_to_bcd.test_binary_to_bcd   PASS         100.00           0.00     161381.45  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         100.00           0.00      62257.74  **
+                                                        ***********************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_runner.result.xml
+PASSED
+
+============================== 1 passed in 0.28s ===============================
+Cleaning up Docker resources...

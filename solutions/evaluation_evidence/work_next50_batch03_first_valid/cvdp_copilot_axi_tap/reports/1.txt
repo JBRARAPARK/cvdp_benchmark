@@ -1,0 +1,1525 @@
+Running harness with project name: cvdp_copilot_axi_tap_1_1790257624
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 20 items
+
+../../src/test_runner.py::test_pipeline_mac[0-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257625
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=2080024885
+[DEBUG] actual_master_awaddr=2080024885,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      77646.15  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      24421.63  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[0-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257625
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Default
+[DEBUG] addr=2080024885
+[DEBUG] actual_master_awaddr=2080024885,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      84423.32  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      25445.26  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[1-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257625
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=2080024885
+[DEBUG] actual_master_awaddr=2080024885,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      73245.51  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      24080.03  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[1-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257625
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Default
+[DEBUG] addr=2080024885
+[DEBUG] actual_master_awaddr=2080024885,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      84640.15  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      24807.69  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[2-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2310468078
+[DEBUG] actual_master_awaddr=2310468078,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      80942.71  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      24932.37  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[2-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2310468078
+[DEBUG] actual_master_awaddr=2310468078,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      90928.94  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      26131.26  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[3-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2310468078
+[DEBUG] actual_master_awaddr=2310468078,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      85392.09  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      25720.45  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[3-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2310468078
+[DEBUG] actual_master_awaddr=2310468078,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      78291.78  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      23347.68  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[4-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257626
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2310468078
+[DEBUG] actual_master_awaddr=2310468078,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      76805.97  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      24697.47  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[4-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257627
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Default
+[DEBUG] addr=27374786
+[DEBUG] actual_master_awaddr=27374786,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      82461.74  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      25189.64  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[5-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257627
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=27374786
+[DEBUG] actual_master_awaddr=27374786,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      86141.42  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      25989.94  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[5-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257627
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Default
+[DEBUG] addr=27374786
+[DEBUG] actual_master_awaddr=27374786,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      84889.32  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      25415.82  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[6-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257627
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Default
+[DEBUG] addr=27374786
+[DEBUG] actual_master_awaddr=27374786,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      87002.35  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      25935.88  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[6-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257628
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2591690174
+[DEBUG] actual_read_rdata   =0xbeef,actual_read_rvalid=0,actual_read_rresp=1
+[DEBUG] expected_read_rdata =0xfeed,expected_read_rvalid  =1,expected_read_rresp= 1
+   120.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 91, in master
+                                                            assert actual_read_rdata == expected_read_rdata , f"[ERROR] Wrong rdata!"
+                                                        AssertionError: [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+   120.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   120.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         120.00           0.00      88612.06  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                120.00           0.00      27274.11  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[7-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257628
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2591690174
+[DEBUG] actual_read_rdata   =0xdeadbeef,actual_read_rvalid=0,actual_read_rresp=1
+[DEBUG] expected_read_rdata =0xbeeffeed,expected_read_rvalid  =1,expected_read_rresp= 1
+   120.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong rdata!
+                                                        assert 3735928559 == 3203399405
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 91, in master
+                                                            assert actual_read_rdata == expected_read_rdata , f"[ERROR] Wrong rdata!"
+                                                        AssertionError: [ERROR] Wrong rdata!
+                                                        assert 3735928559 == 3203399405
+   120.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   120.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         120.00           0.00      75279.16  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                120.00           0.00      25590.63  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[7-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257628
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2591690174
+[DEBUG] actual_read_rdata   =0xbeef,actual_read_rvalid=0,actual_read_rresp=1
+[DEBUG] expected_read_rdata =0xfeed,expected_read_rvalid  =1,expected_read_rresp= 1
+   120.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 91, in master
+                                                            assert actual_read_rdata == expected_read_rdata , f"[ERROR] Wrong rdata!"
+                                                        AssertionError: [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+   120.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   120.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         120.00           0.00      84519.98  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                120.00           0.00      26896.62  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[8-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257628
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=2591690174
+[DEBUG] actual_read_rdata   =0xdeadbeef,actual_read_rvalid=0,actual_read_rresp=1
+[DEBUG] expected_read_rdata =0xbeeffeed,expected_read_rvalid  =1,expected_read_rresp= 1
+   120.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong rdata!
+                                                        assert 3735928559 == 3203399405
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 91, in master
+                                                            assert actual_read_rdata == expected_read_rdata , f"[ERROR] Wrong rdata!"
+                                                        AssertionError: [ERROR] Wrong rdata!
+                                                        assert 3735928559 == 3203399405
+   120.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   120.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         120.00           0.00      86465.64  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                120.00           0.00      27494.62  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[8-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257629
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=3723006589
+[DEBUG] actual_read_rdata   =0xbeef,actual_read_rvalid=0,actual_read_rresp=3
+[DEBUG] expected_read_rdata =0xfeed,expected_read_rvalid  =1,expected_read_rresp= 2
+   120.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 91, in master
+                                                            assert actual_read_rdata == expected_read_rdata , f"[ERROR] Wrong rdata!"
+                                                        AssertionError: [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+   120.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   120.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         120.00           0.00      86763.74  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                120.00           0.00      26725.24  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[9-61-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257629
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 61
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0x1fffffffffffffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=3723006589
+[DEBUG] actual_master_awaddr=3723006589,actual_master_awvalid=1
+[DEBUG] expected_awaddr     =0,expected_awvalid     =0
+   110.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 32, in master
+                                                            assert actual_master_awvalid == expected_awvalid , f"[ERROR] Wrong awvalid!"
+                                                        AssertionError: [ERROR] Wrong awvalid!
+                                                        assert 1 == 0
+   110.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   110.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         110.00           0.00      79905.34  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                110.00           0.00      24785.04  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 61}
+FAILED
+../../src/test_runner.py::test_pipeline_mac[9-16-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257629
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_tap.test_axi_tap (1/1)
+                                                            Test the AXI Tap module.
+ADDR_WIDTH = 32,DATA_WIDTH = 16
+MAX_ADDR_WIDTH = 0xffffffff,MAX_DATA_WIDTH = 0xffff
+[DEBUG] Salve=Peripheral0
+[DEBUG] addr=3723006589
+[DEBUG] actual_read_rdata   =0xbeef,actual_read_rvalid=0,actual_read_rresp=3
+[DEBUG] expected_read_rdata =0xfeed,expected_read_rvalid  =1,expected_read_rresp= 2
+   120.00ns WARNING  ..b.Test test_axi_tap.test_axi_tap [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axi_tap.py", line 150, in test_axi_tap
+                                                            await master(dut, addr, data, write)
+                                                          File "/src/test_axi_tap.py", line 91, in master
+                                                            assert actual_read_rdata == expected_read_rdata , f"[ERROR] Wrong rdata!"
+                                                        AssertionError: [ERROR] Wrong rdata!
+                                                        assert 48879 == 65261
+   120.00ns WARNING  cocotb.regression                  test_axi_tap.test_axi_tap failed
+   120.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_axi_tap.test_axi_tap      FAIL         120.00           0.00      87048.86  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                120.00           0.00      26973.02  **
+                                                        **************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+FAILED
+
+=================================== FAILURES ===================================
+__________________________ test_pipeline_mac[0-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 0
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[0-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 0
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[1-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 1
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[1-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 1
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[2-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 2
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[2-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 2
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[3-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 3
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[3-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 3
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[4-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 4
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[4-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 4
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[5-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 5
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[5-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 5
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[6-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 6
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[6-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 6
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[7-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 7
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[7-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 7
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[8-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 8
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[8-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 8
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[9-61-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61, test = 9
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 61
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=61 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+__________________________ test_pipeline_mac[9-16-32] __________________________
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16, test = 9
+
+    @pytest.mark.parametrize("ADDR_WIDTH", [32])
+    @pytest.mark.parametrize("DATA_WIDTH", [random.randint(8, 64),random.randint(8, 32)])
+    # random test
+    @pytest.mark.parametrize("test", range(10))
+    def test_pipeline_mac(ADDR_WIDTH, DATA_WIDTH, test):
+>       runner(ADDR_WIDTH=ADDR_WIDTH, DATA_WIDTH=DATA_WIDTH)
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ADDR_WIDTH = 32, DATA_WIDTH = 16
+
+    def runner(ADDR_WIDTH: int=0 ,DATA_WIDTH: int=0):
+        parameter = {"ADDR_WIDTH":ADDR_WIDTH,"DATA_WIDTH":DATA_WIDTH}
+        # Debug information
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:29: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s axi_tap -g2012 -Paxi_tap.ADDR_WIDTH=32 -Paxi_tap.DATA_WIDTH=16 -f /code/rundir/sim_build/cmds.f /code/rtl/axi_tap.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-50j3wkfy'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-q8nfygfd'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-jrqh502j'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_pipeline_mac[0-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[0-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[1-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[1-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[2-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[2-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[3-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[3-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[4-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[4-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[5-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[5-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[6-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[6-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[7-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[7-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[8-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[8-16-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[9-61-32] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_pipeline_mac[9-16-32] - SystemExit: 1
+======================== 20 failed, 3 warnings in 4.69s ========================
+Cleaning up Docker resources...

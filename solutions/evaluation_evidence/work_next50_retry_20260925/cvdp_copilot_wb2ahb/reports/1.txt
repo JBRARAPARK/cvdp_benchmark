@@ -1,0 +1,32 @@
+Running harness with project name: cvdp_copilot_wb2ahb_1_1790291171
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_areg_param[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790291172
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_wishbone_to_ahb_bridge.test_wishbone_to_ahb_bridge (1/1)
+                                                            Testbench for Wishbone-to-AHB Bridge
+    50.00ns INFO     cocotb.wishbone_to_ahb_bridge      [CHECK] AHB outputs for write correctly set: dut.hwdata.value = 3735928559, dut.hwrite.value = 1, dut.haddr.value = 268435456
+    50.00ns INFO     test                               PASS: Write operation successful
+    80.00ns INFO     cocotb.wishbone_to_ahb_bridge      [CHECK] Wishbone outputs for read correctly set: dut.data_o.value = 3405691582
+    80.00ns INFO     test                               PASS: Read operation successful
+    90.00ns INFO     test                               Test complete
+    90.00ns INFO     cocotb.regression                  test_wishbone_to_ahb_bridge.test_wishbone_to_ahb_bridge passed
+    90.00ns INFO     cocotb.regression                  *****************************************************************************************************************
+                                                        ** TEST                                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************
+                                                        ** test_wishbone_to_ahb_bridge.test_wishbone_to_ahb_bridge   PASS          90.00           0.00     104105.73  **
+                                                        *****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                            90.00           0.00      51407.78  **
+                                                        *****************************************************************************************************************
+PASSED
+
+============================== 1 passed in 0.25s ===============================
+Cleaning up Docker resources...

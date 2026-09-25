@@ -1,0 +1,921 @@
+Running harness with project name: cvdp_copilot_sorter_3_1790255914
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 17 items
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255915
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   180.00ns INFO     cocotb.sorting_engine              Testing with input: [3, 2, 1, 0]
+   370.00ns INFO     cocotb.sorting_engine              Sorted output after 18 cycles: [0, 1, 2, 3]
+   370.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   400.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   560.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   720.00ns INFO     cocotb.sorting_engine              Testing with input: [31, 31, 31, 31]
+   850.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [31, 31, 31, 31]
+   850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 31, 17, 23]
+  1030.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [0, 17, 23, 31]
+  1030.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1060.00ns INFO     cocotb.sorting_engine              Testing with input: [2, 4, 11, 24]
+  1190.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [2, 4, 11, 24]
+  1190.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1220.00ns INFO     cocotb.sorting_engine              Testing with input: [12, 26, 19, 10]
+  1390.00ns INFO     cocotb.sorting_engine              Sorted output after 16 cycles: [10, 12, 19, 26]
+  1390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1420.00ns INFO     cocotb.sorting_engine              Testing with input: [13, 13, 11, 31]
+  1570.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [11, 13, 13, 31]
+  1570.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1600.00ns INFO     cocotb.sorting_engine              Testing with input: [27, 8, 28, 5]
+  1770.00ns INFO     cocotb.sorting_engine              Sorted output after 16 cycles: [5, 8, 27, 28]
+  1770.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1800.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 29, 14, 16]
+  1950.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [0, 14, 16, 29]
+  1950.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1950.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  1950.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1950.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1950.00           0.01     377586.11  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1950.00           0.01     326021.16  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=5, N=4
+[DEBUG] Parameters: {'WIDTH': 5, 'N': 4}
+PASSED
+../../src/test_runner.py::test_gcd[4-4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255915
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   180.00ns INFO     cocotb.sorting_engine              Testing with input: [3, 2, 1, 0]
+   370.00ns INFO     cocotb.sorting_engine              Sorted output after 18 cycles: [0, 1, 2, 3]
+   370.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   400.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   560.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   720.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 15, 15, 15]
+   850.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [15, 15, 15, 15]
+   850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 15, 8, 11]
+  1030.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [0, 8, 11, 15]
+  1030.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1060.00ns INFO     cocotb.sorting_engine              Testing with input: [1, 2, 5, 12]
+  1190.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [1, 2, 5, 12]
+  1190.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1220.00ns INFO     cocotb.sorting_engine              Testing with input: [6, 13, 9, 5]
+  1390.00ns INFO     cocotb.sorting_engine              Sorted output after 16 cycles: [5, 6, 9, 13]
+  1390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1420.00ns INFO     cocotb.sorting_engine              Testing with input: [6, 6, 5, 15]
+  1570.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [5, 6, 6, 15]
+  1570.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1600.00ns INFO     cocotb.sorting_engine              Testing with input: [13, 4, 14, 2]
+  1770.00ns INFO     cocotb.sorting_engine              Sorted output after 16 cycles: [2, 4, 13, 14]
+  1770.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1800.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 14, 7, 8]
+  1950.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [0, 7, 8, 14]
+  1950.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1950.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  1950.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1950.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1950.00           0.01     385070.28  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1950.00           0.01     333682.54  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=4, N=4
+[DEBUG] Parameters: {'WIDTH': 4, 'N': 4}
+PASSED
+../../src/test_runner.py::test_gcd[4-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255916
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   180.00ns INFO     cocotb.sorting_engine              Testing with input: [3, 2, 1, 0]
+   370.00ns INFO     cocotb.sorting_engine              Sorted output after 18 cycles: [0, 1, 2, 3]
+   370.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   400.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   560.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   720.00ns INFO     cocotb.sorting_engine              Testing with input: [255, 255, 255, 255]
+   850.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [255, 255, 255, 255]
+   850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 255, 242, 4]
+  1040.00ns INFO     cocotb.sorting_engine              Sorted output after 15 cycles: [0, 4, 242, 255]
+  1040.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1070.00ns INFO     cocotb.sorting_engine              Testing with input: [191, 229, 127, 243]
+  1220.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [127, 191, 229, 243]
+  1220.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1250.00ns INFO     cocotb.sorting_engine              Testing with input: [52, 122, 93, 22]
+  1420.00ns INFO     cocotb.sorting_engine              Sorted output after 16 cycles: [22, 52, 93, 122]
+  1420.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1450.00ns INFO     cocotb.sorting_engine              Testing with input: [139, 140, 105, 74]
+  1630.00ns INFO     cocotb.sorting_engine              Sorted output after 17 cycles: [74, 105, 139, 140]
+  1630.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1660.00ns INFO     cocotb.sorting_engine              Testing with input: [8, 35, 75, 37]
+  1800.00ns INFO     cocotb.sorting_engine              Sorted output after 13 cycles: [8, 35, 37, 75]
+  1800.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1830.00ns INFO     cocotb.sorting_engine              Testing with input: [180, 145, 159, 67]
+  2010.00ns INFO     cocotb.sorting_engine              Sorted output after 17 cycles: [67, 145, 159, 180]
+  2010.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2010.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  2010.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  2010.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        2010.00           0.01     324639.03  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          2010.00           0.01     276094.68  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=8, N=4
+[DEBUG] Parameters: {'WIDTH': 8, 'N': 4}
+PASSED
+../../src/test_runner.py::test_gcd[4-12]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255916
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   180.00ns INFO     cocotb.sorting_engine              Testing with input: [3, 2, 1, 0]
+   370.00ns INFO     cocotb.sorting_engine              Sorted output after 18 cycles: [0, 1, 2, 3]
+   370.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   400.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   560.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   720.00ns INFO     cocotb.sorting_engine              Testing with input: [4095, 4095, 4095, 4095]
+   850.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [4095, 4095, 4095, 4095]
+   850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 4095, 3873, 72]
+  1040.00ns INFO     cocotb.sorting_engine              Sorted output after 15 cycles: [0, 72, 3873, 4095]
+  1040.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1070.00ns INFO     cocotb.sorting_engine              Testing with input: [3063, 3666, 2044, 3891]
+  1220.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [2044, 3063, 3666, 3891]
+  1220.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1250.00ns INFO     cocotb.sorting_engine              Testing with input: [844, 1954, 1493, 363]
+  1420.00ns INFO     cocotb.sorting_engine              Sorted output after 16 cycles: [363, 844, 1493, 1954]
+  1420.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1450.00ns INFO     cocotb.sorting_engine              Testing with input: [2224, 2244, 1695, 1198]
+  1630.00ns INFO     cocotb.sorting_engine              Sorted output after 17 cycles: [1198, 1695, 2224, 2244]
+  1630.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1660.00ns INFO     cocotb.sorting_engine              Testing with input: [137, 567, 1204, 603]
+  1800.00ns INFO     cocotb.sorting_engine              Sorted output after 13 cycles: [137, 567, 603, 1204]
+  1800.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1830.00ns INFO     cocotb.sorting_engine              Testing with input: [2884, 2320, 2558, 1075]
+  2010.00ns INFO     cocotb.sorting_engine              Sorted output after 17 cycles: [1075, 2320, 2558, 2884]
+  2010.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2010.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  2010.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  2010.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        2010.00           0.01     375041.20  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          2010.00           0.01     326057.82  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=12, N=4
+[DEBUG] Parameters: {'WIDTH': 12, 'N': 4}
+PASSED
+../../src/test_runner.py::test_gcd[4-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255916
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 1, 2, 3]
+   150.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   180.00ns INFO     cocotb.sorting_engine              Testing with input: [3, 2, 1, 0]
+   370.00ns INFO     cocotb.sorting_engine              Sorted output after 18 cycles: [0, 1, 2, 3]
+   370.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   400.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [5, 5, 5, 5]
+   530.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   560.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [0, 0, 0, 0]
+   690.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   720.00ns INFO     cocotb.sorting_engine              Testing with input: [65535, 65535, 65535, 65535]
+   850.00ns INFO     cocotb.sorting_engine              Sorted output after 12 cycles: [65535, 65535, 65535, 65535]
+   850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 65535, 61969, 1166]
+  1040.00ns INFO     cocotb.sorting_engine              Sorted output after 15 cycles: [0, 1166, 61969, 65535]
+  1040.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1070.00ns INFO     cocotb.sorting_engine              Testing with input: [49022, 58665, 32716, 62271]
+  1220.00ns INFO     cocotb.sorting_engine              Sorted output after 14 cycles: [32716, 49022, 58665, 62271]
+  1220.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1250.00ns INFO     cocotb.sorting_engine              Testing with input: [13511, 31279, 23903, 5820]
+  1420.00ns INFO     cocotb.sorting_engine              Sorted output after 16 cycles: [5820, 13511, 23903, 31279]
+  1420.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1450.00ns INFO     cocotb.sorting_engine              Testing with input: [35599, 35914, 27134, 19168]
+  1630.00ns INFO     cocotb.sorting_engine              Sorted output after 17 cycles: [19168, 27134, 35599, 35914]
+  1630.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1660.00ns INFO     cocotb.sorting_engine              Testing with input: [2200, 9078, 19264, 9650]
+  1800.00ns INFO     cocotb.sorting_engine              Sorted output after 13 cycles: [2200, 9078, 9650, 19264]
+  1800.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1830.00ns INFO     cocotb.sorting_engine              Testing with input: [46148, 37135, 40940, 17212]
+  2010.00ns INFO     cocotb.sorting_engine              Sorted output after 17 cycles: [17212, 37135, 40940, 46148]
+  2010.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2010.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  2010.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  2010.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        2010.00           0.01     294692.08  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          2010.00           0.01     265286.86  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=16, N=4
+[DEBUG] Parameters: {'WIDTH': 16, 'N': 4}
+PASSED
+../../src/test_runner.py::test_gcd[8-4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255916
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   300.00ns INFO     cocotb.sorting_engine              Testing with input: [7, 6, 5, 4, 3, 2, 1, 0]
+   830.00ns INFO     cocotb.sorting_engine              Sorted output after 52 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   830.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   860.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1140.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1420.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 15, 15, 15, 15, 15, 15, 15]
+  1670.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [15, 15, 15, 15, 15, 15, 15, 15]
+  1670.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1700.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 15, 15, 0, 11, 14, 7, 15]
+  2050.00ns INFO     cocotb.sorting_engine              Sorted output after 34 cycles: [0, 0, 7, 11, 14, 15, 15, 15]
+  2050.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2080.00ns INFO     cocotb.sorting_engine              Testing with input: [3, 7, 5, 1, 8, 8, 6, 4]
+  2450.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [1, 3, 4, 5, 6, 7, 8, 8]
+  2450.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2480.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 2, 4, 2, 11, 9, 9, 4]
+  2790.00ns INFO     cocotb.sorting_engine              Sorted output after 30 cycles: [0, 2, 2, 4, 4, 9, 9, 11]
+  2790.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2820.00ns INFO     cocotb.sorting_engine              Testing with input: [4, 1, 10, 3, 8, 12, 10, 1]
+  3180.00ns INFO     cocotb.sorting_engine              Sorted output after 35 cycles: [1, 1, 3, 4, 8, 10, 10, 12]
+  3180.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3210.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 4, 10, 7, 7, 3, 1, 4]
+  3640.00ns INFO     cocotb.sorting_engine              Sorted output after 42 cycles: [1, 3, 4, 4, 5, 7, 7, 10]
+  3640.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3670.00ns INFO     cocotb.sorting_engine              Testing with input: [14, 9, 9, 7, 9, 9, 3, 12]
+  4060.00ns INFO     cocotb.sorting_engine              Sorted output after 38 cycles: [3, 7, 9, 9, 9, 9, 12, 14]
+  4060.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4060.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  4060.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  4060.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        4060.00           0.01     405748.87  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          4060.00           0.01     365591.24  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=4, N=8
+[DEBUG] Parameters: {'WIDTH': 4, 'N': 8}
+PASSED
+../../src/test_runner.py::test_gcd[8-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255917
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   300.00ns INFO     cocotb.sorting_engine              Testing with input: [7, 6, 5, 4, 3, 2, 1, 0]
+   830.00ns INFO     cocotb.sorting_engine              Sorted output after 52 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   830.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   860.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1140.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1420.00ns INFO     cocotb.sorting_engine              Testing with input: [255, 255, 255, 255, 255, 255, 255, 255]
+  1670.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [255, 255, 255, 255, 255, 255, 255, 255]
+  1670.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1700.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 255, 87, 95, 152, 114, 101, 163]
+  2040.00ns INFO     cocotb.sorting_engine              Sorted output after 33 cycles: [0, 87, 95, 101, 114, 152, 163, 255]
+  2040.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2070.00ns INFO     cocotb.sorting_engine              Testing with input: [83, 133, 34, 32, 98, 124, 137, 145]
+  2390.00ns INFO     cocotb.sorting_engine              Sorted output after 31 cycles: [32, 34, 83, 98, 124, 133, 137, 145]
+  2390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2420.00ns INFO     cocotb.sorting_engine              Testing with input: [171, 133, 66, 108, 181, 28, 94, 188]
+  2810.00ns INFO     cocotb.sorting_engine              Sorted output after 38 cycles: [28, 66, 94, 108, 133, 171, 181, 188]
+  2810.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2840.00ns INFO     cocotb.sorting_engine              Testing with input: [208, 34, 18, 90, 74, 32, 231, 229]
+  3200.00ns INFO     cocotb.sorting_engine              Sorted output after 35 cycles: [18, 32, 34, 74, 90, 208, 229, 231]
+  3200.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3230.00ns INFO     cocotb.sorting_engine              Testing with input: [211, 72, 65, 73, 72, 234, 197, 62]
+  3630.00ns INFO     cocotb.sorting_engine              Sorted output after 39 cycles: [62, 65, 72, 72, 73, 197, 211, 234]
+  3630.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3660.00ns INFO     cocotb.sorting_engine              Testing with input: [10, 41, 14, 211, 238, 77, 2, 73]
+  4030.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [2, 10, 14, 41, 73, 77, 211, 238]
+  4030.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4030.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  4030.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  4030.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        4030.00           0.01     345185.53  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          4030.00           0.01     310940.66  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=8, N=8
+[DEBUG] Parameters: {'WIDTH': 8, 'N': 8}
+PASSED
+../../src/test_runner.py::test_gcd[8-12]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255917
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   300.00ns INFO     cocotb.sorting_engine              Testing with input: [7, 6, 5, 4, 3, 2, 1, 0]
+   830.00ns INFO     cocotb.sorting_engine              Sorted output after 52 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   830.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   860.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1140.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1420.00ns INFO     cocotb.sorting_engine              Testing with input: [4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095]
+  1670.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095]
+  1670.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1700.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 4095, 1398, 1530, 2438, 1825, 1616, 2622]
+  2040.00ns INFO     cocotb.sorting_engine              Sorted output after 33 cycles: [0, 1398, 1530, 1616, 1825, 2438, 2622, 4095]
+  2040.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2070.00ns INFO     cocotb.sorting_engine              Testing with input: [1338, 2131, 551, 518, 1578, 1984, 2195, 2328]
+  2390.00ns INFO     cocotb.sorting_engine              Sorted output after 31 cycles: [518, 551, 1338, 1578, 1984, 2131, 2195, 2328]
+  2390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2420.00ns INFO     cocotb.sorting_engine              Testing with input: [2749, 2141, 1071, 1728, 2906, 452, 1505, 3018]
+  2810.00ns INFO     cocotb.sorting_engine              Sorted output after 38 cycles: [452, 1071, 1505, 1728, 2141, 2749, 2906, 3018]
+  2810.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2840.00ns INFO     cocotb.sorting_engine              Testing with input: [3330, 552, 294, 1449, 1188, 523, 3704, 3669]
+  3200.00ns INFO     cocotb.sorting_engine              Sorted output after 35 cycles: [294, 523, 552, 1188, 1449, 3330, 3669, 3704]
+  3200.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3230.00ns INFO     cocotb.sorting_engine              Testing with input: [3378, 1153, 1040, 1168, 1162, 3745, 3152, 995]
+  3630.00ns INFO     cocotb.sorting_engine              Sorted output after 39 cycles: [995, 1040, 1153, 1162, 1168, 3152, 3378, 3745]
+  3630.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3660.00ns INFO     cocotb.sorting_engine              Testing with input: [164, 668, 234, 3384, 3813, 1246, 36, 1181]
+  4030.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [36, 164, 234, 668, 1181, 1246, 3384, 3813]
+  4030.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4030.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  4030.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  4030.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        4030.00           0.01     373994.27  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          4030.00           0.01     337029.59  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=12, N=8
+[DEBUG] Parameters: {'WIDTH': 12, 'N': 8}
+PASSED
+../../src/test_runner.py::test_gcd[8-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255917
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   300.00ns INFO     cocotb.sorting_engine              Testing with input: [7, 6, 5, 4, 3, 2, 1, 0]
+   830.00ns INFO     cocotb.sorting_engine              Sorted output after 52 cycles: [0, 1, 2, 3, 4, 5, 6, 7]
+   830.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   860.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [5, 5, 5, 5, 5, 5, 5, 5]
+  1110.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1140.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [0, 0, 0, 0, 0, 0, 0, 0]
+  1390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1420.00ns INFO     cocotb.sorting_engine              Testing with input: [65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535]
+  1670.00ns INFO     cocotb.sorting_engine              Sorted output after 24 cycles: [65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535]
+  1670.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1700.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 65535, 22375, 24493, 39008, 29214, 25862, 41957]
+  2040.00ns INFO     cocotb.sorting_engine              Sorted output after 33 cycles: [0, 22375, 24493, 25862, 29214, 39008, 41957, 65535]
+  2040.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2070.00ns INFO     cocotb.sorting_engine              Testing with input: [21419, 34100, 8818, 8299, 25263, 31755, 35125, 37258]
+  2390.00ns INFO     cocotb.sorting_engine              Sorted output after 31 cycles: [8299, 8818, 21419, 25263, 31755, 34100, 35125, 37258]
+  2390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2420.00ns INFO     cocotb.sorting_engine              Testing with input: [43986, 34266, 17144, 27662, 46500, 7247, 24091, 48288]
+  2810.00ns INFO     cocotb.sorting_engine              Sorted output after 38 cycles: [7247, 17144, 24091, 27662, 34266, 43986, 46500, 48288]
+  2810.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2840.00ns INFO     cocotb.sorting_engine              Testing with input: [53282, 8844, 4709, 23186, 19015, 8379, 59274, 58710]
+  3200.00ns INFO     cocotb.sorting_engine              Sorted output after 35 cycles: [4709, 8379, 8844, 19015, 23186, 53282, 58710, 59274]
+  3200.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3230.00ns INFO     cocotb.sorting_engine              Testing with input: [54056, 18456, 16645, 18695, 18596, 59920, 50447, 15935]
+  3630.00ns INFO     cocotb.sorting_engine              Sorted output after 39 cycles: [15935, 16645, 18456, 18596, 18695, 50447, 54056, 59920]
+  3630.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3660.00ns INFO     cocotb.sorting_engine              Testing with input: [2634, 10696, 3759, 54146, 61012, 19947, 589, 18901]
+  4030.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [589, 2634, 3759, 10696, 18901, 19947, 54146, 61012]
+  4030.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4030.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  4030.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  4030.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        4030.00           0.01     357532.10  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          4030.00           0.01     326011.52  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=16, N=8
+[DEBUG] Parameters: {'WIDTH': 16, 'N': 8}
+PASSED
+../../src/test_runner.py::test_gcd[12-4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255918
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   420.00ns INFO     cocotb.sorting_engine              Testing with input: [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  1450.00ns INFO     cocotb.sorting_engine              Sorted output after 102 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  1450.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1480.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2280.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
+  2650.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
+  2650.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2680.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 15, 5, 13, 1, 14, 2, 12, 3, 13, 14, 12]
+  3310.00ns INFO     cocotb.sorting_engine              Sorted output after 62 cycles: [0, 1, 2, 3, 5, 12, 12, 13, 13, 14, 14, 15]
+  3310.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3340.00ns INFO     cocotb.sorting_engine              Testing with input: [14, 12, 1, 14, 10, 8, 6, 12, 8, 4, 10, 0]
+  4160.00ns INFO     cocotb.sorting_engine              Sorted output after 81 cycles: [0, 1, 4, 6, 8, 8, 10, 10, 12, 12, 14, 14]
+  4160.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4190.00ns INFO     cocotb.sorting_engine              Testing with input: [10, 2, 5, 0, 5, 9, 6, 9, 14, 12, 15, 14]
+  4680.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 2, 5, 5, 6, 9, 9, 10, 12, 14, 14, 15]
+  4680.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4710.00ns INFO     cocotb.sorting_engine              Testing with input: [9, 9, 14, 1, 12, 1, 15, 8, 13, 12, 10, 7]
+  5400.00ns INFO     cocotb.sorting_engine              Sorted output after 68 cycles: [1, 1, 7, 8, 9, 9, 10, 12, 12, 13, 14, 15]
+  5400.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  5430.00ns INFO     cocotb.sorting_engine              Testing with input: [3, 5, 3, 6, 9, 4, 12, 15, 4, 6, 7, 5]
+  6010.00ns INFO     cocotb.sorting_engine              Sorted output after 57 cycles: [3, 3, 4, 4, 5, 5, 6, 6, 7, 9, 12, 15]
+  6010.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6040.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 6, 6, 11, 13, 2, 14, 0, 11, 10, 4, 1]
+  6730.00ns INFO     cocotb.sorting_engine              Sorted output after 68 cycles: [0, 0, 1, 2, 4, 6, 6, 10, 11, 11, 13, 14]
+  6730.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6730.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  6730.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  6730.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        6730.00           0.02     386637.98  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          6730.00           0.02     359702.66  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=4, N=12
+[DEBUG] Parameters: {'WIDTH': 4, 'N': 12}
+PASSED
+../../src/test_runner.py::test_gcd[12-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255918
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   420.00ns INFO     cocotb.sorting_engine              Testing with input: [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  1450.00ns INFO     cocotb.sorting_engine              Sorted output after 102 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  1450.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1480.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2280.00ns INFO     cocotb.sorting_engine              Testing with input: [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255]
+  2650.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255]
+  2650.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2680.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 255, 93, 213, 25, 238, 34, 193, 58, 216, 234, 196]
+  3320.00ns INFO     cocotb.sorting_engine              Sorted output after 63 cycles: [0, 25, 34, 58, 93, 193, 196, 213, 216, 234, 238, 255]
+  3320.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3350.00ns INFO     cocotb.sorting_engine              Testing with input: [235, 192, 23, 235, 169, 130, 104, 194, 129, 64, 168, 11]
+  4190.00ns INFO     cocotb.sorting_engine              Sorted output after 83 cycles: [11, 23, 64, 104, 129, 130, 168, 169, 192, 194, 235, 235]
+  4190.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4220.00ns INFO     cocotb.sorting_engine              Testing with input: [170, 44, 92, 0, 86, 156, 103, 149, 236, 201, 255, 226]
+  4740.00ns INFO     cocotb.sorting_engine              Sorted output after 51 cycles: [0, 44, 86, 92, 103, 149, 156, 170, 201, 226, 236, 255]
+  4740.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4770.00ns INFO     cocotb.sorting_engine              Testing with input: [155, 159, 231, 27, 206, 25, 242, 131, 217, 192, 174, 114]
+  5480.00ns INFO     cocotb.sorting_engine              Sorted output after 70 cycles: [25, 27, 114, 131, 155, 159, 174, 192, 206, 217, 231, 242]
+  5480.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  5510.00ns INFO     cocotb.sorting_engine              Testing with input: [61, 86, 60, 111, 151, 75, 197, 248, 64, 105, 115, 94]
+  6120.00ns INFO     cocotb.sorting_engine              Sorted output after 60 cycles: [60, 61, 64, 75, 86, 94, 105, 111, 115, 151, 197, 248]
+  6120.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6150.00ns INFO     cocotb.sorting_engine              Testing with input: [8, 108, 108, 179, 219, 41, 237, 8, 185, 174, 65, 21]
+  6840.00ns INFO     cocotb.sorting_engine              Sorted output after 68 cycles: [8, 8, 21, 41, 65, 108, 108, 174, 179, 185, 219, 237]
+  6840.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6840.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  6840.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  6840.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        6840.00           0.02     388062.05  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          6840.00           0.02     361723.82  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=8, N=12
+[DEBUG] Parameters: {'WIDTH': 8, 'N': 12}
+PASSED
+../../src/test_runner.py::test_gcd[12-12]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255918
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   420.00ns INFO     cocotb.sorting_engine              Testing with input: [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  1450.00ns INFO     cocotb.sorting_engine              Sorted output after 102 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  1450.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1480.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2280.00ns INFO     cocotb.sorting_engine              Testing with input: [4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095]
+  2650.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095]
+  2650.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2680.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 4095, 1498, 3420, 407, 3815, 547, 3102, 939, 3459, 3755, 3145]
+  3320.00ns INFO     cocotb.sorting_engine              Sorted output after 63 cycles: [0, 407, 547, 939, 1498, 3102, 3145, 3420, 3459, 3755, 3815, 4095]
+  3320.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3350.00ns INFO     cocotb.sorting_engine              Testing with input: [3766, 3078, 370, 3764, 2716, 2080, 1664, 3108, 2071, 1030, 2700, 186]
+  4200.00ns INFO     cocotb.sorting_engine              Sorted output after 84 cycles: [186, 370, 1030, 1664, 2071, 2080, 2700, 2716, 3078, 3108, 3764, 3766]
+  4200.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4230.00ns INFO     cocotb.sorting_engine              Testing with input: [2723, 709, 1472, 12, 1381, 2505, 1662, 2395, 3781, 3219, 4089, 3627]
+  4750.00ns INFO     cocotb.sorting_engine              Sorted output after 51 cycles: [12, 709, 1381, 1472, 1662, 2395, 2505, 2723, 3219, 3627, 3781, 4089]
+  4750.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4780.00ns INFO     cocotb.sorting_engine              Testing with input: [2487, 2550, 3697, 439, 3311, 405, 3887, 2107, 3480, 3087, 2796, 1834]
+  5490.00ns INFO     cocotb.sorting_engine              Sorted output after 70 cycles: [405, 439, 1834, 2107, 2487, 2550, 2796, 3087, 3311, 3480, 3697, 3887]
+  5490.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  5520.00ns INFO     cocotb.sorting_engine              Testing with input: [982, 1382, 968, 1785, 2418, 1212, 3167, 3969, 1029, 1681, 1855, 1512]
+  6130.00ns INFO     cocotb.sorting_engine              Sorted output after 60 cycles: [968, 982, 1029, 1212, 1382, 1512, 1681, 1785, 1855, 2418, 3167, 3969]
+  6130.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6160.00ns INFO     cocotb.sorting_engine              Testing with input: [135, 1741, 1737, 2876, 3518, 657, 3798, 129, 2974, 2786, 1053, 343]
+  6870.00ns INFO     cocotb.sorting_engine              Sorted output after 70 cycles: [129, 135, 343, 657, 1053, 1737, 1741, 2786, 2876, 2974, 3518, 3798]
+  6870.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6870.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  6870.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  6870.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        6870.00           0.02     367419.43  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          6870.00           0.02     340665.71  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=12, N=12
+[DEBUG] Parameters: {'WIDTH': 12, 'N': 12}
+PASSED
+../../src/test_runner.py::test_gcd[12-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255919
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   390.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   420.00ns INFO     cocotb.sorting_engine              Testing with input: [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  1450.00ns INFO     cocotb.sorting_engine              Sorted output after 102 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  1450.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1480.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  1850.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  1880.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  2250.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2280.00ns INFO     cocotb.sorting_engine              Testing with input: [65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535]
+  2650.00ns INFO     cocotb.sorting_engine              Sorted output after 36 cycles: [65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535]
+  2650.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2680.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 65535, 60061, 62235, 34165, 12713, 64701, 23764, 53163, 9429, 40891, 6736]
+  3470.00ns INFO     cocotb.sorting_engine              Sorted output after 78 cycles: [0, 6736, 9429, 12713, 23764, 34165, 40891, 53163, 60061, 62235, 64701, 65535]
+  3470.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3500.00ns INFO     cocotb.sorting_engine              Testing with input: [62846, 33745, 22532, 22108, 35356, 30690, 18913, 63809, 62760, 26037, 11853, 32394]
+  4260.00ns INFO     cocotb.sorting_engine              Sorted output after 75 cycles: [11853, 18913, 22108, 22532, 26037, 30690, 32394, 33745, 35356, 62760, 62846, 63809]
+  4260.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4290.00ns INFO     cocotb.sorting_engine              Testing with input: [12461, 51643, 48098, 38002, 50316, 20566, 61558, 47726, 62965, 21568, 45613, 24431]
+  4990.00ns INFO     cocotb.sorting_engine              Sorted output after 69 cycles: [12461, 20566, 21568, 24431, 38002, 45613, 47726, 48098, 50316, 51643, 61558, 62965]
+  4990.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  5020.00ns INFO     cocotb.sorting_engine              Testing with input: [38688, 44435, 2093, 39045, 27497, 38900, 34831, 3646, 33196, 59006, 7120, 34801]
+  5760.00ns INFO     cocotb.sorting_engine              Sorted output after 73 cycles: [2093, 3646, 7120, 27497, 33196, 34801, 34831, 38688, 38900, 39045, 44435, 59006]
+  5760.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  5790.00ns INFO     cocotb.sorting_engine              Testing with input: [61312, 32424, 12244, 14256, 763, 7492, 23035, 46581, 19259, 34812, 48326, 422]
+  6500.00ns INFO     cocotb.sorting_engine              Sorted output after 70 cycles: [422, 763, 7492, 12244, 14256, 19259, 23035, 32424, 34812, 46581, 48326, 61312]
+  6500.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6530.00ns INFO     cocotb.sorting_engine              Testing with input: [59276, 46903, 35830, 40361, 11451, 41203, 63999, 35880, 29816, 34448, 25100, 38798]
+  7340.00ns INFO     cocotb.sorting_engine              Sorted output after 80 cycles: [11451, 25100, 29816, 34448, 35830, 35880, 38798, 40361, 41203, 46903, 59276, 63999]
+  7340.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  7340.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+  7340.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  7340.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        7340.00           0.02     386746.62  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          7340.00           0.02     363066.12  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=16, N=12
+[DEBUG] Parameters: {'WIDTH': 16, 'N': 12}
+PASSED
+../../src/test_runner.py::test_gcd[16-4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255919
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   540.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  2230.00ns INFO     cocotb.sorting_engine              Sorted output after 168 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  2230.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2260.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2780.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3300.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
+  3790.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
+  3790.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3820.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 15, 14, 15, 8, 3, 15, 5, 12, 2, 9, 1, 15, 8, 5, 5]
+  4960.00ns INFO     cocotb.sorting_engine              Sorted output after 113 cycles: [0, 1, 2, 3, 5, 5, 5, 8, 8, 9, 12, 14, 15, 15, 15, 15]
+  4960.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4990.00ns INFO     cocotb.sorting_engine              Testing with input: [8, 7, 4, 15, 15, 6, 2, 7, 3, 12, 11, 9, 12, 5, 15, 11]
+  5970.00ns INFO     cocotb.sorting_engine              Sorted output after 97 cycles: [2, 3, 4, 5, 6, 7, 7, 8, 9, 11, 11, 12, 12, 15, 15, 15]
+  5970.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6000.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 5, 11, 5, 9, 10, 0, 9, 6, 9, 8, 0, 8, 14, 1, 8]
+  7160.00ns INFO     cocotb.sorting_engine              Sorted output after 115 cycles: [0, 0, 1, 5, 5, 6, 8, 8, 8, 9, 9, 9, 10, 11, 14, 15]
+  7160.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  7190.00ns INFO     cocotb.sorting_engine              Testing with input: [14, 7, 2, 3, 0, 1, 5, 11, 4, 8, 11, 0, 14, 11, 8, 9]
+  8130.00ns INFO     cocotb.sorting_engine              Sorted output after 93 cycles: [0, 0, 1, 2, 3, 4, 5, 7, 8, 8, 9, 11, 11, 11, 14, 14]
+  8130.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  8160.00ns INFO     cocotb.sorting_engine              Testing with input: [2, 10, 15, 8, 7, 8, 6, 9, 10, 12, 11, 2, 5, 0, 2, 4]
+  9380.00ns INFO     cocotb.sorting_engine              Sorted output after 121 cycles: [0, 2, 2, 2, 4, 5, 6, 7, 8, 8, 9, 10, 10, 11, 12, 15]
+  9380.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  9410.00ns INFO     cocotb.sorting_engine              Testing with input: [12, 4, 11, 9, 12, 5, 11, 6, 12, 14, 9, 11, 14, 6, 14, 6]
+ 10360.00ns INFO     cocotb.sorting_engine              Sorted output after 94 cycles: [4, 5, 6, 6, 6, 9, 9, 11, 11, 11, 12, 12, 12, 14, 14, 14]
+ 10360.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+ 10360.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+ 10360.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+ 10360.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS       10360.00           0.03     344698.12  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         10360.00           0.03     327423.21  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=4, N=16
+[DEBUG] Parameters: {'WIDTH': 4, 'N': 16}
+PASSED
+../../src/test_runner.py::test_gcd[16-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255919
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   540.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  2230.00ns INFO     cocotb.sorting_engine              Sorted output after 168 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  2230.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2260.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2780.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3300.00ns INFO     cocotb.sorting_engine              Testing with input: [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255]
+  3790.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255]
+  3790.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3820.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 255, 234, 243, 133, 49, 252, 92, 207, 36, 159, 26, 245, 131, 88, 86]
+  5040.00ns INFO     cocotb.sorting_engine              Sorted output after 121 cycles: [0, 26, 36, 49, 86, 88, 92, 131, 133, 159, 207, 234, 243, 245, 252, 255]
+  5040.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  5070.00ns INFO     cocotb.sorting_engine              Testing with input: [138, 119, 73, 249, 245, 101, 46, 126, 48, 201, 187, 148, 196, 80, 240, 186]
+  6100.00ns INFO     cocotb.sorting_engine              Sorted output after 102 cycles: [46, 48, 73, 80, 101, 119, 126, 138, 148, 186, 187, 196, 201, 240, 245, 249]
+  6100.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6130.00ns INFO     cocotb.sorting_engine              Testing with input: [245, 84, 178, 95, 151, 173, 8, 152, 107, 151, 136, 14, 129, 230, 27, 135]
+  7320.00ns INFO     cocotb.sorting_engine              Sorted output after 118 cycles: [8, 14, 27, 84, 95, 107, 129, 135, 136, 151, 151, 152, 173, 178, 230, 245]
+  7320.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  7350.00ns INFO     cocotb.sorting_engine              Testing with input: [239, 126, 47, 55, 2, 29, 89, 181, 75, 135, 188, 1, 231, 183, 139, 157]
+  8320.00ns INFO     cocotb.sorting_engine              Sorted output after 96 cycles: [1, 2, 29, 47, 55, 75, 89, 126, 135, 139, 157, 181, 183, 188, 231, 239]
+  8320.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  8350.00ns INFO     cocotb.sorting_engine              Testing with input: [44, 160, 249, 140, 116, 134, 98, 151, 160, 197, 186, 46, 91, 4, 38, 77]
+  9600.00ns INFO     cocotb.sorting_engine              Sorted output after 124 cycles: [4, 38, 44, 46, 77, 91, 98, 116, 134, 140, 151, 160, 160, 186, 197, 249]
+  9600.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  9630.00ns INFO     cocotb.sorting_engine              Testing with input: [199, 72, 191, 151, 203, 85, 176, 106, 192, 229, 151, 190, 229, 110, 239, 100]
+ 10640.00ns INFO     cocotb.sorting_engine              Sorted output after 100 cycles: [72, 85, 100, 106, 110, 151, 151, 176, 190, 191, 192, 199, 203, 229, 229, 239]
+ 10640.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+ 10640.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+ 10640.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+ 10640.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS       10640.00           0.03     385400.01  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         10640.00           0.03     369615.66  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=8, N=16
+[DEBUG] Parameters: {'WIDTH': 8, 'N': 16}
+PASSED
+../../src/test_runner.py::test_gcd[16-12]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255920
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   540.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  2230.00ns INFO     cocotb.sorting_engine              Sorted output after 168 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  2230.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2260.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2780.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3300.00ns INFO     cocotb.sorting_engine              Testing with input: [4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095]
+  3790.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095]
+  3790.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3820.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 4095, 1527, 2567, 1914, 286, 858, 1952, 2832, 185, 2437, 2389, 2194, 884, 3486, 1308]
+  4860.00ns INFO     cocotb.sorting_engine              Sorted output after 103 cycles: [0, 185, 286, 858, 884, 1308, 1527, 1914, 1952, 2194, 2389, 2437, 2567, 2832, 3486, 4095]
+  4860.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4890.00ns INFO     cocotb.sorting_engine              Testing with input: [1576, 1635, 2718, 1357, 1447, 2237, 3401, 2904, 1611, 1539, 690, 1268, 2233, 996, 3663, 1799]
+  6000.00ns INFO     cocotb.sorting_engine              Sorted output after 110 cycles: [690, 996, 1268, 1357, 1447, 1539, 1576, 1611, 1635, 1799, 2233, 2237, 2718, 2904, 3401, 3663]
+  6000.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6030.00ns INFO     cocotb.sorting_engine              Testing with input: [3178, 3418, 3462, 2794, 2259, 2254, 96, 994, 2394, 458, 3265, 179, 2346, 569, 1975, 2070]
+  7340.00ns INFO     cocotb.sorting_engine              Sorted output after 130 cycles: [96, 179, 458, 569, 994, 1975, 2070, 2254, 2259, 2346, 2394, 2794, 3178, 3265, 3418, 3462]
+  7340.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  7370.00ns INFO     cocotb.sorting_engine              Testing with input: [3986, 2219, 2028, 4002, 1704, 1448, 2357, 3032, 2815, 2179, 2409, 2594, 2167, 3451, 1946, 2195]
+  8510.00ns INFO     cocotb.sorting_engine              Sorted output after 113 cycles: [1448, 1704, 1946, 2028, 2167, 2179, 2195, 2219, 2357, 2409, 2594, 2815, 3032, 3451, 3986, 4002]
+  8510.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  8540.00ns INFO     cocotb.sorting_engine              Testing with input: [1521, 346, 1648, 3526, 3020, 3009, 2005, 2622, 1920, 2939, 1993, 2501, 3660, 1322, 344, 1137]
+  9710.00ns INFO     cocotb.sorting_engine              Sorted output after 116 cycles: [344, 346, 1137, 1322, 1521, 1648, 1920, 1993, 2005, 2501, 2622, 2939, 3009, 3020, 3526, 3660]
+  9710.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  9740.00ns INFO     cocotb.sorting_engine              Testing with input: [3253, 2591, 2723, 2075, 440, 340, 47, 3273, 3191, 2938, 2411, 2742, 1225, 3434, 3962, 2307]
+ 10770.00ns INFO     cocotb.sorting_engine              Sorted output after 102 cycles: [47, 340, 440, 1225, 2075, 2307, 2411, 2591, 2723, 2742, 2938, 3191, 3253, 3273, 3434, 3962]
+ 10770.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+ 10770.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+ 10770.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+ 10770.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS       10770.00           0.03     362204.16  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         10770.00           0.03     349433.41  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=12, N=16
+[DEBUG] Parameters: {'WIDTH': 12, 'N': 16}
+PASSED
+../../src/test_runner.py::test_gcd[16-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790255920
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Test the insertion sort engine with various cases and compare actual latency to expected operations.
+    20.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+   510.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+   540.00ns INFO     cocotb.sorting_engine              Testing with input: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  2230.00ns INFO     cocotb.sorting_engine              Sorted output after 168 cycles: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  2230.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2260.00ns INFO     cocotb.sorting_engine              Testing with input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  2750.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  2780.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  3270.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3300.00ns INFO     cocotb.sorting_engine              Testing with input: [65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535]
+  3790.00ns INFO     cocotb.sorting_engine              Sorted output after 48 cycles: [65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535]
+  3790.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  3820.00ns INFO     cocotb.sorting_engine              Testing with input: [0, 65535, 24437, 41087, 30625, 4581, 13733, 31233, 45326, 2971, 39006, 38233, 35110, 14152, 55790, 20936]
+  4860.00ns INFO     cocotb.sorting_engine              Sorted output after 103 cycles: [0, 2971, 4581, 13733, 14152, 20936, 24437, 30625, 31233, 35110, 38233, 39006, 41087, 45326, 55790, 65535]
+  4860.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  4890.00ns INFO     cocotb.sorting_engine              Testing with input: [25223, 26169, 43492, 21715, 23167, 35803, 54417, 46465, 25783, 24632, 11041, 20302, 35736, 15940, 58611, 28785]
+  6000.00ns INFO     cocotb.sorting_engine              Sorted output after 110 cycles: [11041, 15940, 20302, 21715, 23167, 24632, 25223, 25783, 26169, 28785, 35736, 35803, 43492, 46465, 54417, 58611]
+  6000.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  6030.00ns INFO     cocotb.sorting_engine              Testing with input: [50848, 54691, 55395, 44711, 36150, 36071, 1551, 15911, 38313, 7334, 52243, 2868, 37542, 9112, 31615, 33121]
+  7340.00ns INFO     cocotb.sorting_engine              Sorted output after 130 cycles: [1551, 2868, 7334, 9112, 15911, 31615, 33121, 36071, 36150, 37542, 38313, 44711, 50848, 52243, 54691, 55395]
+  7340.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  7370.00ns INFO     cocotb.sorting_engine              Testing with input: [63787, 35514, 32452, 64039, 27274, 23171, 37720, 48522, 45050, 34871, 38546, 41519, 34687, 55220, 31140, 35127]
+  8510.00ns INFO     cocotb.sorting_engine              Sorted output after 113 cycles: [23171, 27274, 31140, 32452, 34687, 34871, 35127, 35514, 37720, 38546, 41519, 45050, 48522, 55220, 63787, 64039]
+  8510.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  8540.00ns INFO     cocotb.sorting_engine              Testing with input: [24347, 5550, 26371, 56425, 48323, 48158, 32083, 41967, 30734, 47039, 31903, 40019, 58560, 21157, 5514, 18196]
+  9710.00ns INFO     cocotb.sorting_engine              Sorted output after 116 cycles: [5514, 5550, 18196, 21157, 24347, 26371, 30734, 31903, 32083, 40019, 41967, 47039, 48158, 48323, 56425, 58560]
+  9710.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+  9740.00ns INFO     cocotb.sorting_engine              Testing with input: [52057, 41459, 43572, 33203, 7042, 5455, 764, 52372, 51066, 47011, 38585, 43884, 19603, 54956, 63403, 36913]
+ 10770.00ns INFO     cocotb.sorting_engine              Sorted output after 102 cycles: [764, 5455, 7042, 19603, 33203, 36913, 38585, 41459, 43572, 43884, 47011, 51066, 52057, 52372, 54956, 63403]
+ 10770.00ns INFO     cocotb.sorting_engine              Output is correctly sorted.
+ 10770.00ns INFO     cocotb.sorting_engine              All tests completed successfully with latency checks against expected insertion sort operations.
+ 10770.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+ 10770.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS       10770.00           0.03     383882.91  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         10770.00           0.03     368789.48  **
+                                                        *************************************************************************************************
+[DEBUG] Running simulation with WIDTH=16, N=16
+[DEBUG] Parameters: {'WIDTH': 16, 'N': 16}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-e3ajhdor'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-09y05yuq'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 17 passed, 2 warnings in 5.04s ========================
+Cleaning up Docker resources...

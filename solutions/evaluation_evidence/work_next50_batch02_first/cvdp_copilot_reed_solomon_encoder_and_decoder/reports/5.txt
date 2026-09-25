@@ -1,0 +1,975 @@
+Running harness with project name: cvdp_copilot_reed_solomon_encoder_and_decoder_5_1790257512
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_reed_solomon_encoder[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257513
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=147 , K=145
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 145 cycles...
+[DEBUG] Cycle 1/145:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/145:
+dut enable = 0x1,dut data_in=0xf1,dut valid_in=1 
+Actual codeword_out = 0xf1,Actual valid_out=0x1,Actual parity_0=0x62,Actual parity_1=0xee 
+Expected codeword_out = 0xf1,Expected valid_out=0x1,Expected parity_0=0xf1,Expected parity_1=0x3 
+    78.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0xf1) != actual_parity_0 (0x62)
+                                                        assert '0xf1' == '0x62'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0xf1) != actual_parity_0 (0x62)
+                                                        assert '0xf1' == '0x62'
+    78.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    78.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          78.00           0.00      74218.63  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        78.00           0.00      18828.02  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 1: Randomized K=145, Calculated N=147
+[DEBUG] Running simulation with N=147 and K=145
+[DEBUG] Parameters: {'N': 147, 'K': 145}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257513
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=196 , K=194
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 194 cycles...
+[DEBUG] Cycle 1/194:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/194:
+dut enable = 0x1,dut data_in=0xf1,dut valid_in=1 
+Actual codeword_out = 0xf1,Actual valid_out=0x1,Actual parity_0=0x62,Actual parity_1=0xee 
+Expected codeword_out = 0xf1,Expected valid_out=0x1,Expected parity_0=0xf1,Expected parity_1=0x3 
+    78.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0xf1) != actual_parity_0 (0x62)
+                                                        assert '0xf1' == '0x62'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0xf1) != actual_parity_0 (0x62)
+                                                        assert '0xf1' == '0x62'
+    78.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    78.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          78.00           0.00      73320.42  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        78.00           0.00      18581.00  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 2: Randomized K=194, Calculated N=196
+[DEBUG] Running simulation with N=196 and K=194
+[DEBUG] Parameters: {'N': 196, 'K': 194}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257513
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=153 , K=151
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 151 cycles...
+[DEBUG] Cycle 1/151:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/151:
+dut enable = 0x1,dut data_in=0xf1,dut valid_in=1 
+Actual codeword_out = 0xf1,Actual valid_out=0x1,Actual parity_0=0x62,Actual parity_1=0xee 
+Expected codeword_out = 0xf1,Expected valid_out=0x1,Expected parity_0=0xf1,Expected parity_1=0x3 
+    78.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0xf1) != actual_parity_0 (0x62)
+                                                        assert '0xf1' == '0x62'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0xf1) != actual_parity_0 (0x62)
+                                                        assert '0xf1' == '0x62'
+    78.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    78.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          78.00           0.00      74984.12  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        78.00           0.00      18105.91  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 3: Randomized K=151, Calculated N=153
+[DEBUG] Running simulation with N=153 and K=151
+[DEBUG] Parameters: {'N': 153, 'K': 151}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257514
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=120 , K=118
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 118 cycles...
+[DEBUG] Cycle 1/118:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/118:
+dut enable = 0x1,dut data_in=0x83,dut valid_in=1 
+Actual codeword_out = 0x83,Actual valid_out=0x1,Actual parity_0=0x1,Actual parity_1=0xed 
+Expected codeword_out = 0x83,Expected valid_out=0x1,Expected parity_0=0x83,Expected parity_1=0x19 
+    42.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+    42.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    42.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          42.00           0.00      31867.00  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        42.00           0.00       9051.99  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 4: Randomized K=118, Calculated N=120
+[DEBUG] Running simulation with N=120 and K=118
+[DEBUG] Parameters: {'N': 120, 'K': 118}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257514
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=37 , K=35
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 35 cycles...
+[DEBUG] Cycle 1/35:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/35:
+dut enable = 0x1,dut data_in=0x83,dut valid_in=1 
+Actual codeword_out = 0x83,Actual valid_out=0x1,Actual parity_0=0x1,Actual parity_1=0xed 
+Expected codeword_out = 0x83,Expected valid_out=0x1,Expected parity_0=0x83,Expected parity_1=0x19 
+    42.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+    42.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    42.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          42.00           0.00      33187.79  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        42.00           0.00       9462.87  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 5: Randomized K=35, Calculated N=37
+[DEBUG] Running simulation with N=37 and K=35
+[DEBUG] Parameters: {'N': 37, 'K': 35}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257514
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=79 , K=77
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 77 cycles...
+[DEBUG] Cycle 1/77:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/77:
+dut enable = 0x1,dut data_in=0x83,dut valid_in=1 
+Actual codeword_out = 0x83,Actual valid_out=0x1,Actual parity_0=0x1,Actual parity_1=0xed 
+Expected codeword_out = 0x83,Expected valid_out=0x1,Expected parity_0=0x83,Expected parity_1=0x19 
+    42.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+    42.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    42.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          42.00           0.00      33250.43  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        42.00           0.00       9320.68  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 6: Randomized K=77, Calculated N=79
+[DEBUG] Running simulation with N=79 and K=77
+[DEBUG] Parameters: {'N': 79, 'K': 77}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257514
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=146 , K=144
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 144 cycles...
+[DEBUG] Cycle 1/144:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/144:
+dut enable = 0x1,dut data_in=0x83,dut valid_in=1 
+Actual codeword_out = 0x83,Actual valid_out=0x1,Actual parity_0=0x1,Actual parity_1=0xed 
+Expected codeword_out = 0x83,Expected valid_out=0x1,Expected parity_0=0x83,Expected parity_1=0x19 
+    42.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0x83) != actual_parity_0 (0x1)
+                                                        assert '0x83' == '0x1'
+    42.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    42.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          42.00           0.00      42716.00  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        42.00           0.00      10255.62  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 7: Randomized K=144, Calculated N=146
+[DEBUG] Running simulation with N=146 and K=144
+[DEBUG] Parameters: {'N': 146, 'K': 144}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257515
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=248 , K=246
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 246 cycles...
+[DEBUG] Cycle 1/246:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/246:
+dut enable = 0x1,dut data_in=0x55,dut valid_in=1 
+Actual codeword_out = 0x55,Actual valid_out=0x1,Actual parity_0=0xb7,Actual parity_1=0xb4 
+Expected codeword_out = 0x55,Expected valid_out=0x1,Expected parity_0=0x55,Expected parity_1=0xef 
+    30.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0x55) != actual_parity_0 (0xb7)
+                                                        assert '0x55' == '0xb7'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0x55) != actual_parity_0 (0xb7)
+                                                        assert '0x55' == '0xb7'
+    30.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    30.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          30.00           0.00      29365.02  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        30.00           0.00       7241.55  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 8: Randomized K=246, Calculated N=248
+[DEBUG] Running simulation with N=248 and K=246
+[DEBUG] Parameters: {'N': 248, 'K': 246}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257515
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=169 , K=167
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 167 cycles...
+[DEBUG] Cycle 1/167:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/167:
+dut enable = 0x1,dut data_in=0x55,dut valid_in=1 
+Actual codeword_out = 0x55,Actual valid_out=0x1,Actual parity_0=0xb7,Actual parity_1=0xb4 
+Expected codeword_out = 0x55,Expected valid_out=0x1,Expected parity_0=0x55,Expected parity_1=0xef 
+    30.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0x55) != actual_parity_0 (0xb7)
+                                                        assert '0x55' == '0xb7'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0x55) != actual_parity_0 (0xb7)
+                                                        assert '0x55' == '0xb7'
+    30.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    30.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          30.00           0.00      28669.20  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        30.00           0.00       7244.05  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 9: Randomized K=167, Calculated N=169
+[DEBUG] Running simulation with N=169 and K=167
+[DEBUG] Parameters: {'N': 169, 'K': 167}
+FAILED
+../../src/test_runner.py::test_reed_solomon_encoder[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790257515
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_reed_solomon_encoder' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reed_solomon_encoder.test_reed_solomon_encoder (1/1)
+                                                            Test the reed_solomon_encoder.
+Running with N=216 , K=214
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create generator_polynomial via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiFunction(20) to object.
+     0.00ns WARNING  gpi                                Unable to create gf_mult via any registered implementation
+Running for 214 cycles...
+[DEBUG] Cycle 1/214:
+dut enable = 0x0,dut data_in=0x0,dut valid_in=0 
+Actual codeword_out = 0x0,Actual valid_out=0x0,Actual parity_0=0x0,Actual parity_1=0x0 
+Expected codeword_out = 0x0,Expected valid_out=0x0,Expected parity_0=0x0,Expected parity_1=0x0 
+[DEBUG] Cycle 2/214:
+dut enable = 0x1,dut data_in=0x55,dut valid_in=1 
+Actual codeword_out = 0x55,Actual valid_out=0x1,Actual parity_0=0xb7,Actual parity_1=0xb4 
+Expected codeword_out = 0x55,Expected valid_out=0x1,Expected parity_0=0x55,Expected parity_1=0xef 
+    30.00ns WARNING  ..ncoder.test_reed_solomon_encoder expected_parity_0_r (0x55) != actual_parity_0 (0xb7)
+                                                        assert '0x55' == '0xb7'
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_reed_solomon_encoder.py", line 85, in test_reed_solomon_encoder
+                                                            assert expected_parity_0_r==actual_parity_0, (f"expected_parity_0_r ({expected_parity_0_r}) != " f"actual_parity_0 ({actual_parity_0})")
+                                                        AssertionError: expected_parity_0_r (0x55) != actual_parity_0 (0xb7)
+                                                        assert '0x55' == '0xb7'
+    30.00ns WARNING  cocotb.regression                  test_reed_solomon_encoder.test_reed_solomon_encoder failed
+    30.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_reed_solomon_encoder.test_reed_solomon_encoder   FAIL          30.00           0.00      28558.58  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                                        30.00           0.00       7074.62  **
+                                                        *************************************************************************************************************
+[DEBUG] Test 10: Randomized K=214, Calculated N=216
+[DEBUG] Running simulation with N=216 and K=214
+[DEBUG] Parameters: {'N': 216, 'K': 214}
+FAILED
+
+=================================== FAILURES ===================================
+_________________________ test_reed_solomon_encoder[0] _________________________
+
+test = 0
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 147, K = 145
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=147 -Preed_solomon_encoder.K=145 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[1] _________________________
+
+test = 1
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 196, K = 194
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=196 -Preed_solomon_encoder.K=194 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[2] _________________________
+
+test = 2
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 153, K = 151
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=153 -Preed_solomon_encoder.K=151 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[3] _________________________
+
+test = 3
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 120, K = 118
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=120 -Preed_solomon_encoder.K=118 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[4] _________________________
+
+test = 4
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 37, K = 35
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=37 -Preed_solomon_encoder.K=35 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[5] _________________________
+
+test = 5
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 79, K = 77
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=79 -Preed_solomon_encoder.K=77 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[6] _________________________
+
+test = 6
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 146, K = 144
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=146 -Preed_solomon_encoder.K=144 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[7] _________________________
+
+test = 7
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 248, K = 246
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=248 -Preed_solomon_encoder.K=246 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[8] _________________________
+
+test = 8
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 169, K = 167
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=169 -Preed_solomon_encoder.K=167 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+_________________________ test_reed_solomon_encoder[9] _________________________
+
+test = 9
+
+    @pytest.mark.parametrize("test", range(10))
+    
+    def test_reed_solomon_encoder(test):
+        # Randomize K within a valid range
+        K = random.randint(16, 253)  # Assuming 253 is the maximum valid value for K
+        N = K + 2  # Calculate N based on K
+        print(f"[DEBUG] Test {test + 1}: Randomized K={K}, Calculated N={N}")
+        # Pass the randomized values to the runner
+>       runner(N=N, K=K)
+
+/src/test_runner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+N = 216, K = 214
+
+    def runner(N: int=255, K : int=253):
+        # Define plusargs and parameters to pass into the simulator
+        parameter = {"N": N, "K" : K}
+    
+        # Debug information
+        print(f"[DEBUG] Running simulation with N={N} and K={K}")
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Create a simulator runner instance
+        runner = get_runner(sim)
+    
+        # Build the simulation
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the tests
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: 1
+
+/src/test_runner.py:38: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:644 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s reed_solomon_encoder -g2012 -Preed_solomon_encoder.N=216 -Preed_solomon_encoder.K=214 -f /code/rundir/sim_build/cmds.f /code/rtl/reed_solomon_encoder.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+ERROR    Icarus:runner.py:572 ERROR: Failed 1 of 1 tests.
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-qlqzn3x1'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:429: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/lastfailed: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-4ky2q9vl'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-3x_6niap'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[0] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[1] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[2] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[3] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[4] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[5] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[6] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[7] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[8] - SystemExit: 1
+FAILED ../../src/test_runner.py::test_reed_solomon_encoder[9] - SystemExit: 1
+======================== 10 failed, 3 warnings in 2.46s ========================
+Cleaning up Docker resources...

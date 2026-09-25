@@ -1,0 +1,710 @@
+Running harness with project name: cvdp_copilot_vending_machine_1_1790201874
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_vending_machine1[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201875
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 9
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 19
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 4
+Return change amount - 4
+   270.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   420.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 7
+   530.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   590.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   610.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   630.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   650.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+   760.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   810.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   830.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 6
+   850.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 16
+   870.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 26
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+   960.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+  1050.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1070.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+  1090.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 11
+  1110.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 21
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+  1250.00ns INFO     cocotb.vending_machine             Inserting random coin value: 1
+  1420.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1460.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1510.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 2
+  1590.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 4
+  1610.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1630.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+  1710.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1790.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1860.00ns INFO     cocotb.vending_machine             Selected item 2
+  1980.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1990.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2070.00ns INFO     cocotb.vending_machine             Selected item 1
+  2110.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2170.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2170.00           0.01     347390.83  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2170.00           0.01     315492.38  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201875
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 9
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 19
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 4
+Return change amount - 4
+   270.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   420.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 7
+   530.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   590.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   610.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   630.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   650.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+   760.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   810.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   830.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 6
+   850.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 16
+   870.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 26
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+   960.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+  1050.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1070.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+  1090.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 11
+  1110.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 21
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+  1250.00ns INFO     cocotb.vending_machine             Inserting random coin value: 1
+  1420.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1460.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1510.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 2
+  1590.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 4
+  1610.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1630.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+  1710.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1790.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1860.00ns INFO     cocotb.vending_machine             Selected item 2
+  1980.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1990.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2070.00ns INFO     cocotb.vending_machine             Selected item 1
+  2110.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2170.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2170.00           0.01     355991.70  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2170.00           0.01     322033.74  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201875
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 9
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 19
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 4
+Return change amount - 4
+   270.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   420.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 7
+   530.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   590.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   610.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   630.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   650.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+   760.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   810.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   830.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 6
+   850.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 16
+   870.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 26
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+   960.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+  1050.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1070.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+  1090.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 11
+  1110.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 21
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+  1250.00ns INFO     cocotb.vending_machine             Inserting random coin value: 1
+  1420.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1460.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1510.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 2
+  1590.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 4
+  1610.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1630.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+  1710.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1790.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1860.00ns INFO     cocotb.vending_machine             Selected item 2
+  1980.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1990.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2070.00ns INFO     cocotb.vending_machine             Selected item 1
+  2110.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2170.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2170.00           0.01     344615.49  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2170.00           0.01     314783.14  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201875
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 9
+   180.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 19
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 4
+Return change amount - 4
+   270.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   420.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 7
+   530.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   590.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   610.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 8
+   630.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 18
+   650.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 19
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+   760.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   810.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   830.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 6
+   850.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 16
+   870.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 26
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+   960.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+  1050.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1070.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+  1090.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 11
+  1110.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 21
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 6
+Return change amount - 6
+  1250.00ns INFO     cocotb.vending_machine             Inserting random coin value: 1
+  1420.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1460.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1510.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 2
+  1590.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 4
+  1610.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1630.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+  1710.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1790.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1860.00ns INFO     cocotb.vending_machine             Selected item 2
+  1980.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1990.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2070.00ns INFO     cocotb.vending_machine             Selected item 1
+  2110.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2170.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2170.00           0.01     343522.92  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2170.00           0.01     311988.47  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201876
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 14
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+   240.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   390.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 0
+   500.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   540.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+Dispense_item_id  - 2 , Error - 0 
+   620.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   690.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   710.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 7
+   730.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+   750.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+   770.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   790.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 22
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 7
+Return change amount - 7
+   880.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   930.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   950.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   970.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   990.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 16
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1170.00ns INFO     cocotb.vending_machine             Inserting random coin value: 10
+  1340.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1380.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1430.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+  1470.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+  1490.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 7
+  1510.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1530.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 11
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 16
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1660.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1740.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1810.00ns INFO     cocotb.vending_machine             Selected item 2
+  1930.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1940.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2020.00ns INFO     cocotb.vending_machine             Selected item 1
+  2060.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2120.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2120.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2120.00           0.01     337364.82  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2120.00           0.01     308244.34  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201876
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 14
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+   240.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   390.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 0
+   500.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   540.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+Dispense_item_id  - 2 , Error - 0 
+   620.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   690.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   710.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 7
+   730.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+   750.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+   770.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   790.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 22
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 7
+Return change amount - 7
+   880.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   930.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   950.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   970.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   990.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 16
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1170.00ns INFO     cocotb.vending_machine             Inserting random coin value: 10
+  1340.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1380.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1430.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+  1470.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+  1490.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 7
+  1510.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1530.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 11
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 16
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1660.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1740.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1810.00ns INFO     cocotb.vending_machine             Selected item 2
+  1930.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1940.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2020.00ns INFO     cocotb.vending_machine             Selected item 1
+  2060.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2120.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2120.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2120.00           0.01     338778.70  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2120.00           0.01     307700.34  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201876
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 14
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+   240.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   390.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 0
+   500.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   540.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+Dispense_item_id  - 2 , Error - 0 
+   620.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   690.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   710.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 7
+   730.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+   750.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+   770.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   790.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 22
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 7
+Return change amount - 7
+   880.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   930.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   950.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   970.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   990.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 16
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1170.00ns INFO     cocotb.vending_machine             Inserting random coin value: 10
+  1340.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1380.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1430.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+  1470.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+  1490.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 7
+  1510.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1530.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 11
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 16
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1660.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1740.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1810.00ns INFO     cocotb.vending_machine             Selected item 2
+  1930.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1940.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2020.00ns INFO     cocotb.vending_machine             Selected item 1
+  2060.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2120.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2120.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2120.00           0.01     343715.67  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2120.00           0.01     312359.03  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201876
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 14
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 15
+Dispense_item_id  - 3 , Error - 0 
+   240.00ns INFO     cocotb.vending_machine             Randomly selecting item 1 with price 5 and canceling the operation
+   390.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 0
+   500.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   540.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+Dispense_item_id  - 2 , Error - 0 
+   620.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   670.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   690.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 6
+   710.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 7
+   730.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+   750.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 10
+   770.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 12
+   790.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 22
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 7
+Return change amount - 7
+   880.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   930.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+   950.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+   970.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 4
+   990.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 14
+  1010.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 16
+  1030.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1170.00ns INFO     cocotb.vending_machine             Inserting random coin value: 10
+  1340.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1380.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1430.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+  1470.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+  1490.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 7
+  1510.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 9
+  1530.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 11
+  1550.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 16
+  1570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 21
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 1
+Return change amount - 1
+  1660.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1740.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1810.00ns INFO     cocotb.vending_machine             Selected item 2
+  1930.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1940.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  2020.00ns INFO     cocotb.vending_machine             Selected item 1
+  2060.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2120.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2120.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2120.00           0.01     359618.40  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2120.00           0.01     324771.70  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201877
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 15
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 17
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 27
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 7
+Return change amount - 7
+   250.00ns INFO     cocotb.vending_machine             Randomly selecting item 4 with price 20 and canceling the operation
+   400.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 0
+   510.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   550.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 10
+Dispense_item_id  - 2 , Error - 0 
+   650.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   700.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+   720.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 3
+   740.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 5
+   760.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+   780.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 12
+   800.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 17
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 2
+Return change amount - 2
+   890.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   940.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   960.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 20
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 5
+Return change amount - 5
+  1100.00ns INFO     cocotb.vending_machine             Inserting random coin value: 1
+  1270.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1310.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1360.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+  1400.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+  1420.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+  1440.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 8
+  1460.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 13
+  1480.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 23
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 3
+Return change amount - 3
+  1570.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1650.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1720.00ns INFO     cocotb.vending_machine             Selected item 2
+  1840.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1850.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  1930.00ns INFO     cocotb.vending_machine             Selected item 1
+  1970.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2030.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2030.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2030.00           0.01     335676.61  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2030.00           0.01     304141.35  **
+                                                        ***************************************************************************************************
+PASSED
+../../src/test_runner.py::test_vending_machine1[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201877
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_vending_machine.test_vending_machine (1/1)
+start of vending machine
+    50.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+   100.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   120.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 15
+   140.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 17
+   160.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 27
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 7
+Return change amount - 7
+   250.00ns INFO     cocotb.vending_machine             Randomly selecting item 4 with price 20 and canceling the operation
+   400.00ns INFO     cocotb.vending_machine             Selecting invalid item ID: 0
+   510.00ns INFO     cocotb.vending_machine             Randomly selecting item 2, expected price: 10
+   550.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 5
+   570.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 10
+Dispense_item_id  - 2 , Error - 0 
+   650.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   700.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 2
+   720.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 3
+   740.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 5
+   760.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 7
+   780.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 12
+   800.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 17
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 2
+Return change amount - 2
+   890.00ns INFO     cocotb.vending_machine             Randomly selecting item 3, expected price: 15
+   940.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 10
+   960.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 20
+Dispense_item_id  - 3 , Error - 0 
+expected_chang amount - 5
+Return change amount - 5
+  1100.00ns INFO     cocotb.vending_machine             Inserting random coin value: 1
+  1270.00ns INFO     cocotb.vending_machine             Resetting the machine during the transaction.
+  1310.00ns INFO     cocotb.vending_machine             reset_during_transaction: Machine successfully reset during transaction.
+  1360.00ns INFO     cocotb.vending_machine             Randomly selecting item 4, expected price: 20
+  1400.00ns INFO     cocotb.vending_machine             Inserted coin: 1, total so far: 1
+  1420.00ns INFO     cocotb.vending_machine             Inserted coin: 2, total so far: 3
+  1440.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 8
+  1460.00ns INFO     cocotb.vending_machine             Inserted coin: 5, total so far: 13
+  1480.00ns INFO     cocotb.vending_machine             Inserted coin: 10, total so far: 23
+Dispense_item_id  - 4 , Error - 0 
+expected_chang amount - 3
+Return change amount - 3
+  1570.00ns INFO     test                               Simulating coin insertion without selecting an item
+  1650.00ns INFO     test                               Simulating coin insertion without selecting an item: Coins returned when no item is selected.
+  1720.00ns INFO     cocotb.vending_machine             Selected item 2
+  1840.00ns INFO     cocotb.vending_machine             Inserted coin: 5 without selecting an item
+  1850.00ns INFO     cocotb.vending_machine             Coins returned successfully when inserted without item selection.
+  1930.00ns INFO     cocotb.vending_machine             Selected item 1
+  1970.00ns INFO     cocotb.vending_machine             Invalid coin insertion handled successfully.
+  2030.00ns INFO     cocotb.regression                  test_vending_machine.test_vending_machine passed
+  2030.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_vending_machine.test_vending_machine   PASS        2030.00           0.01     348666.55  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            2030.00           0.01     314708.45  **
+                                                        ***************************************************************************************************
+PASSED
+
+============================== 10 passed in 2.37s ==============================
+Cleaning up Docker resources...

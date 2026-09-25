@@ -1,0 +1,1233 @@
+Running harness with project name: cvdp_copilot_cache_lru_19_1790256074
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_data[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256075
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pseudo_lru_tree_policy.test_policy_working (1/1)
+                                                            Main test function to call all tests.
+     0.00ns INFO     test                               Starting test_policy_working...
+     0.00ns WARNING  py.warnings                        /src/test_pseudo_lru_tree_policy.py:174: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(Clock(dut.clock, clock_period, unit="ns", period_high=(clock_period+1)//2 if clock_period%2 else clock_period//2).start())
+     0.00ns INFO     test                               NWAYS: 4  NINDEXES: 32
+     0.00ns INFO     test                               Starting test_pseudo_lru_tree_initialization...
+    15.00ns DEBUG    test                               Reset complete
+    15.00ns INFO     test                               test_pseudo_lru_tree_initialization passed.
+    15.00ns INFO     test                               Test 1: Initialization passed.
+    15.00ns INFO     test                               Starting test_pseudo_lru_tree_hit_increment...
+    35.00ns DEBUG    test                               Reset complete
+    35.00ns DEBUG    test                               Target index: 0, Target way: 0
+    55.00ns DEBUG    test                               way_replace: 00
+    55.00ns DEBUG    test                               Target index: 0, Target way: 3
+    75.00ns DEBUG    test                               way_replace: 01
+    75.00ns DEBUG    test                               Target index: 0, Target way: 1
+    95.00ns DEBUG    test                               way_replace: 10
+    95.00ns DEBUG    test                               Target index: 0, Target way: 1
+   115.00ns DEBUG    test                               way_replace: 10
+   115.00ns DEBUG    test                               Target index: 0, Target way: 2
+   135.00ns DEBUG    test                               way_replace: 00
+   135.00ns DEBUG    test                               Target index: 0, Target way: 2
+   155.00ns DEBUG    test                               way_replace: 00
+   155.00ns DEBUG    test                               Target index: 31, Target way: 0
+   175.00ns DEBUG    test                               way_replace: 11
+   175.00ns DEBUG    test                               Target index: 31, Target way: 3
+   195.00ns DEBUG    test                               way_replace: 01
+   195.00ns DEBUG    test                               Target index: 31, Target way: 1
+   215.00ns DEBUG    test                               way_replace: 10
+   215.00ns DEBUG    test                               Target index: 31, Target way: 1
+   235.00ns DEBUG    test                               way_replace: 10
+   235.00ns DEBUG    test                               Target index: 31, Target way: 2
+   255.00ns DEBUG    test                               way_replace: 00
+   255.00ns DEBUG    test                               Target index: 31, Target way: 1
+   275.00ns DEBUG    test                               way_replace: 11
+   275.00ns DEBUG    test                               Target index: 13, Target way: 0
+   295.00ns DEBUG    test                               way_replace: 11
+   295.00ns DEBUG    test                               Target index: 13, Target way: 0
+   315.00ns DEBUG    test                               way_replace: 11
+   315.00ns DEBUG    test                               Target index: 13, Target way: 0
+   335.00ns DEBUG    test                               way_replace: 11
+   335.00ns DEBUG    test                               Target index: 13, Target way: 3
+   355.00ns DEBUG    test                               way_replace: 01
+   355.00ns DEBUG    test                               Target index: 13, Target way: 1
+   375.00ns DEBUG    test                               way_replace: 10
+   375.00ns DEBUG    test                               Target index: 13, Target way: 3
+   395.00ns DEBUG    test                               way_replace: 00
+   395.00ns DEBUG    test                               Target index: 13, Target way: 2
+   415.00ns DEBUG    test                               way_replace: 00
+   415.00ns DEBUG    test                               Target index: 13, Target way: 2
+   435.00ns DEBUG    test                               way_replace: 00
+   435.00ns INFO     test                               test_pseudo_lru_tree_hit_increment passed.
+   435.00ns INFO     test                               Test 2: Check MRU after hit.
+   435.00ns INFO     test                               Starting test_pseudo_lru_tree_miss_increment...
+   455.00ns DEBUG    test                               Reset complete
+   455.00ns DEBUG    test                               Target index: 0, Target way: 0
+   475.00ns DEBUG    test                               way_replace: 0b0001
+   475.00ns DEBUG    test                               Target index: 0, Target way: 3
+   495.00ns DEBUG    test                               way_replace: 0b0010
+   495.00ns DEBUG    test                               Target index: 0, Target way: 2
+   515.00ns DEBUG    test                               way_replace: 0b0000
+   515.00ns DEBUG    test                               Target index: 0, Target way: 2
+   535.00ns DEBUG    test                               way_replace: 0b0011
+   535.00ns DEBUG    test                               Target index: 0, Target way: 2
+   555.00ns DEBUG    test                               way_replace: 0b0001
+   555.00ns DEBUG    test                               Target index: 0, Target way: 1
+   575.00ns DEBUG    test                               way_replace: 0b0010
+   575.00ns DEBUG    test                               Target index: 31, Target way: 0
+   595.00ns DEBUG    test                               way_replace: 0b0001
+   595.00ns DEBUG    test                               Target index: 31, Target way: 3
+   615.00ns DEBUG    test                               way_replace: 0b0010
+   615.00ns DEBUG    test                               Target index: 31, Target way: 1
+   635.00ns DEBUG    test                               way_replace: 0b0000
+   635.00ns DEBUG    test                               Target index: 31, Target way: 1
+   655.00ns DEBUG    test                               way_replace: 0b0011
+   655.00ns DEBUG    test                               Target index: 31, Target way: 2
+   675.00ns DEBUG    test                               way_replace: 0b0001
+   675.00ns DEBUG    test                               Target index: 31, Target way: 2
+   695.00ns DEBUG    test                               way_replace: 0b0010
+   695.00ns DEBUG    test                               Target index: 29, Target way: 0
+   715.00ns DEBUG    test                               way_replace: 0b0001
+   715.00ns DEBUG    test                               Target index: 29, Target way: 0
+   735.00ns DEBUG    test                               way_replace: 0b0010
+   735.00ns DEBUG    test                               Target index: 29, Target way: 2
+   755.00ns DEBUG    test                               way_replace: 0b0000
+   755.00ns DEBUG    test                               Target index: 29, Target way: 1
+   775.00ns DEBUG    test                               way_replace: 0b0011
+   775.00ns DEBUG    test                               Target index: 29, Target way: 3
+   795.00ns DEBUG    test                               way_replace: 0b0001
+   795.00ns DEBUG    test                               Target index: 29, Target way: 2
+   815.00ns DEBUG    test                               way_replace: 0b0010
+   815.00ns DEBUG    test                               Target index: 29, Target way: 1
+   835.00ns DEBUG    test                               way_replace: 0b0000
+   835.00ns DEBUG    test                               Target index: 29, Target way: 2
+   855.00ns DEBUG    test                               way_replace: 0b0011
+   855.00ns INFO     test                               test_pseudo_lru_tree_miss_increment passed.
+   855.00ns INFO     test                               Test 3: Check MRU after miss.
+   855.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_hit...
+   875.00ns DEBUG    test                               Reset complete
+   895.00ns DEBUG    test                               way_replace: 01
+   915.00ns DEBUG    test                               way_replace: 01
+   935.00ns DEBUG    test                               way_replace: 01
+   935.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_hit passed.
+   935.00ns INFO     test                               Test 4: Replacement order after hit.
+   935.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_miss...
+   955.00ns DEBUG    test                               Reset complete
+   975.00ns DEBUG    test                               way_replace: 0b0001
+   995.00ns DEBUG    test                               way_replace: 0b0001
+  1015.00ns DEBUG    test                               way_replace: 0b0001
+  1015.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_miss passed.
+  1015.00ns INFO     test                               Test 5: Replacement order after miss.
+  1015.00ns INFO     test                               All tests passed.
+  1015.00ns INFO     cocotb.regression                  test_pseudo_lru_tree_policy.test_policy_working passed
+  1015.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_pseudo_lru_tree_policy.test_policy_working   PASS        1015.00           0.01      80355.20  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  1015.00           0.01      76594.85  **
+                                                        *********************************************************************************************************
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256076
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pseudo_lru_tree_policy.test_policy_working (1/1)
+                                                            Main test function to call all tests.
+     0.00ns INFO     test                               Starting test_policy_working...
+     0.00ns WARNING  py.warnings                        /src/test_pseudo_lru_tree_policy.py:174: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(Clock(dut.clock, clock_period, unit="ns", period_high=(clock_period+1)//2 if clock_period%2 else clock_period//2).start())
+     0.00ns INFO     test                               NWAYS: 8  NINDEXES: 16
+     0.00ns INFO     test                               Starting test_pseudo_lru_tree_initialization...
+    15.00ns DEBUG    test                               Reset complete
+    15.00ns INFO     test                               test_pseudo_lru_tree_initialization passed.
+    15.00ns INFO     test                               Test 1: Initialization passed.
+    15.00ns INFO     test                               Starting test_pseudo_lru_tree_hit_increment...
+    35.00ns DEBUG    test                               Reset complete
+    35.00ns DEBUG    test                               Target index: 0, Target way: 0
+    55.00ns DEBUG    test                               way_replace: 000
+    55.00ns DEBUG    test                               Target index: 0, Target way: 7
+    75.00ns DEBUG    test                               way_replace: 011
+    75.00ns DEBUG    test                               Target index: 0, Target way: 1
+    95.00ns DEBUG    test                               way_replace: 101
+    95.00ns DEBUG    test                               Target index: 0, Target way: 1
+   115.00ns DEBUG    test                               way_replace: 101
+   115.00ns DEBUG    test                               Target index: 0, Target way: 4
+   135.00ns DEBUG    test                               way_replace: 011
+   135.00ns DEBUG    test                               Target index: 0, Target way: 1
+   155.00ns DEBUG    test                               way_replace: 110
+   155.00ns DEBUG    test                               Target index: 0, Target way: 2
+   175.00ns DEBUG    test                               way_replace: 110
+   175.00ns DEBUG    test                               Target index: 0, Target way: 5
+   195.00ns DEBUG    test                               way_replace: 000
+   195.00ns DEBUG    test                               Target index: 0, Target way: 6
+   215.00ns DEBUG    test                               way_replace: 000
+   215.00ns DEBUG    test                               Target index: 0, Target way: 4
+   235.00ns DEBUG    test                               way_replace: 000
+   235.00ns DEBUG    test                               Target index: 15, Target way: 0
+   255.00ns DEBUG    test                               way_replace: 111
+   255.00ns DEBUG    test                               Target index: 15, Target way: 7
+   275.00ns DEBUG    test                               way_replace: 011
+   275.00ns DEBUG    test                               Target index: 15, Target way: 6
+   295.00ns DEBUG    test                               way_replace: 011
+   295.00ns DEBUG    test                               Target index: 15, Target way: 2
+   315.00ns DEBUG    test                               way_replace: 101
+   315.00ns DEBUG    test                               Target index: 15, Target way: 4
+   335.00ns DEBUG    test                               way_replace: 001
+   335.00ns DEBUG    test                               Target index: 15, Target way: 6
+   355.00ns DEBUG    test                               way_replace: 001
+   355.00ns DEBUG    test                               Target index: 15, Target way: 1
+   375.00ns DEBUG    test                               way_replace: 101
+   375.00ns DEBUG    test                               Target index: 15, Target way: 6
+   395.00ns DEBUG    test                               way_replace: 011
+   395.00ns DEBUG    test                               Target index: 15, Target way: 2
+   415.00ns DEBUG    test                               way_replace: 101
+   415.00ns DEBUG    test                               Target index: 15, Target way: 4
+   435.00ns DEBUG    test                               way_replace: 000
+   435.00ns DEBUG    test                               Target index: 5, Target way: 3
+   455.00ns DEBUG    test                               way_replace: 111
+   455.00ns DEBUG    test                               Target index: 5, Target way: 5
+   475.00ns DEBUG    test                               way_replace: 001
+   475.00ns DEBUG    test                               Target index: 5, Target way: 5
+   495.00ns DEBUG    test                               way_replace: 001
+   495.00ns DEBUG    test                               Target index: 5, Target way: 5
+   515.00ns DEBUG    test                               way_replace: 001
+   515.00ns DEBUG    test                               Target index: 5, Target way: 0
+   535.00ns DEBUG    test                               way_replace: 111
+   535.00ns DEBUG    test                               Target index: 5, Target way: 3
+   555.00ns DEBUG    test                               way_replace: 111
+   555.00ns DEBUG    test                               Target index: 5, Target way: 6
+   575.00ns DEBUG    test                               way_replace: 001
+   575.00ns DEBUG    test                               Target index: 5, Target way: 6
+   595.00ns DEBUG    test                               way_replace: 001
+   595.00ns DEBUG    test                               Target index: 5, Target way: 5
+   615.00ns DEBUG    test                               way_replace: 001
+   615.00ns DEBUG    test                               Target index: 5, Target way: 1
+   635.00ns DEBUG    test                               way_replace: 111
+   635.00ns DEBUG    test                               Target index: 5, Target way: 7
+   655.00ns DEBUG    test                               way_replace: 010
+   655.00ns DEBUG    test                               Target index: 5, Target way: 4
+   675.00ns DEBUG    test                               way_replace: 010
+   675.00ns DEBUG    test                               Target index: 5, Target way: 0
+   695.00ns DEBUG    test                               way_replace: 110
+   695.00ns DEBUG    test                               Target index: 5, Target way: 7
+   715.00ns DEBUG    test                               way_replace: 010
+   715.00ns DEBUG    test                               Target index: 5, Target way: 1
+   735.00ns DEBUG    test                               way_replace: 101
+   735.00ns DEBUG    test                               Target index: 5, Target way: 5
+   755.00ns DEBUG    test                               way_replace: 010
+   755.00ns INFO     test                               test_pseudo_lru_tree_hit_increment passed.
+   755.00ns INFO     test                               Test 2: Check MRU after hit.
+   755.00ns INFO     test                               Starting test_pseudo_lru_tree_miss_increment...
+   775.00ns DEBUG    test                               Reset complete
+   775.00ns DEBUG    test                               Target index: 0, Target way: 0
+   795.00ns DEBUG    test                               way_replace: 0b0011
+   795.00ns DEBUG    test                               Target index: 0, Target way: 7
+   815.00ns DEBUG    test                               way_replace: 0b0101
+   815.00ns DEBUG    test                               Target index: 0, Target way: 1
+   835.00ns DEBUG    test                               way_replace: 0b0001
+   835.00ns DEBUG    test                               Target index: 0, Target way: 2
+   855.00ns DEBUG    test                               way_replace: 0b0110
+   855.00ns DEBUG    test                               Target index: 0, Target way: 6
+   875.00ns DEBUG    test                               way_replace: 0b0010
+   875.00ns DEBUG    test                               Target index: 0, Target way: 3
+   895.00ns DEBUG    test                               way_replace: 0b0100
+   895.00ns DEBUG    test                               Target index: 0, Target way: 6
+   915.00ns DEBUG    test                               way_replace: 0b0000
+   915.00ns DEBUG    test                               Target index: 0, Target way: 3
+   935.00ns DEBUG    test                               way_replace: 0b0111
+   935.00ns DEBUG    test                               Target index: 0, Target way: 6
+   955.00ns DEBUG    test                               way_replace: 0b0011
+   955.00ns DEBUG    test                               Target index: 0, Target way: 3
+   975.00ns DEBUG    test                               way_replace: 0b0101
+   975.00ns DEBUG    test                               Target index: 15, Target way: 0
+   995.00ns DEBUG    test                               way_replace: 0b0011
+   995.00ns DEBUG    test                               Target index: 15, Target way: 7
+  1015.00ns DEBUG    test                               way_replace: 0b0101
+  1015.00ns DEBUG    test                               Target index: 15, Target way: 4
+  1035.00ns DEBUG    test                               way_replace: 0b0001
+  1035.00ns DEBUG    test                               Target index: 15, Target way: 6
+  1055.00ns DEBUG    test                               way_replace: 0b0110
+  1055.00ns DEBUG    test                               Target index: 15, Target way: 6
+  1075.00ns DEBUG    test                               way_replace: 0b0010
+  1075.00ns DEBUG    test                               Target index: 15, Target way: 5
+  1095.00ns DEBUG    test                               way_replace: 0b0100
+  1095.00ns DEBUG    test                               Target index: 15, Target way: 3
+  1115.00ns DEBUG    test                               way_replace: 0b0000
+  1115.00ns DEBUG    test                               Target index: 15, Target way: 6
+  1135.00ns DEBUG    test                               way_replace: 0b0111
+  1135.00ns DEBUG    test                               Target index: 15, Target way: 6
+  1155.00ns DEBUG    test                               way_replace: 0b0011
+  1155.00ns DEBUG    test                               Target index: 15, Target way: 4
+  1175.00ns DEBUG    test                               way_replace: 0b0101
+  1175.00ns DEBUG    test                               Target index: 14, Target way: 6
+  1195.00ns DEBUG    test                               way_replace: 0b0011
+  1195.00ns DEBUG    test                               Target index: 14, Target way: 0
+  1215.00ns DEBUG    test                               way_replace: 0b0101
+  1215.00ns DEBUG    test                               Target index: 14, Target way: 7
+  1235.00ns DEBUG    test                               way_replace: 0b0001
+  1235.00ns DEBUG    test                               Target index: 14, Target way: 2
+  1255.00ns DEBUG    test                               way_replace: 0b0110
+  1255.00ns DEBUG    test                               Target index: 14, Target way: 4
+  1275.00ns DEBUG    test                               way_replace: 0b0010
+  1275.00ns DEBUG    test                               Target index: 14, Target way: 6
+  1295.00ns DEBUG    test                               way_replace: 0b0100
+  1295.00ns DEBUG    test                               Target index: 14, Target way: 2
+  1315.00ns DEBUG    test                               way_replace: 0b0000
+  1315.00ns DEBUG    test                               Target index: 14, Target way: 6
+  1335.00ns DEBUG    test                               way_replace: 0b0111
+  1335.00ns DEBUG    test                               Target index: 14, Target way: 7
+  1355.00ns DEBUG    test                               way_replace: 0b0011
+  1355.00ns DEBUG    test                               Target index: 14, Target way: 4
+  1375.00ns DEBUG    test                               way_replace: 0b0101
+  1375.00ns DEBUG    test                               Target index: 14, Target way: 2
+  1395.00ns DEBUG    test                               way_replace: 0b0001
+  1395.00ns DEBUG    test                               Target index: 14, Target way: 6
+  1415.00ns DEBUG    test                               way_replace: 0b0110
+  1415.00ns DEBUG    test                               Target index: 14, Target way: 7
+  1435.00ns DEBUG    test                               way_replace: 0b0010
+  1435.00ns DEBUG    test                               Target index: 14, Target way: 7
+  1455.00ns DEBUG    test                               way_replace: 0b0100
+  1455.00ns DEBUG    test                               Target index: 14, Target way: 6
+  1475.00ns DEBUG    test                               way_replace: 0b0000
+  1475.00ns DEBUG    test                               Target index: 14, Target way: 0
+  1495.00ns DEBUG    test                               way_replace: 0b0111
+  1495.00ns INFO     test                               test_pseudo_lru_tree_miss_increment passed.
+  1495.00ns INFO     test                               Test 3: Check MRU after miss.
+  1495.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_hit...
+  1515.00ns DEBUG    test                               Reset complete
+  1535.00ns DEBUG    test                               way_replace: 011
+  1555.00ns DEBUG    test                               way_replace: 011
+  1575.00ns DEBUG    test                               way_replace: 011
+  1575.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_hit passed.
+  1575.00ns INFO     test                               Test 4: Replacement order after hit.
+  1575.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_miss...
+  1595.00ns DEBUG    test                               Reset complete
+  1615.00ns DEBUG    test                               way_replace: 0b0011
+  1635.00ns DEBUG    test                               way_replace: 0b0011
+  1655.00ns DEBUG    test                               way_replace: 0b0011
+  1655.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_miss passed.
+  1655.00ns INFO     test                               Test 5: Replacement order after miss.
+  1655.00ns INFO     test                               All tests passed.
+  1655.00ns INFO     cocotb.regression                  test_pseudo_lru_tree_policy.test_policy_working passed
+  1655.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_pseudo_lru_tree_policy.test_policy_working   PASS        1655.00           0.02     109247.29  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  1655.00           0.02     104799.03  **
+                                                        *********************************************************************************************************
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256076
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pseudo_lru_tree_policy.test_policy_working (1/1)
+                                                            Main test function to call all tests.
+     0.00ns INFO     test                               Starting test_policy_working...
+     0.00ns WARNING  py.warnings                        /src/test_pseudo_lru_tree_policy.py:174: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(Clock(dut.clock, clock_period, unit="ns", period_high=(clock_period+1)//2 if clock_period%2 else clock_period//2).start())
+     0.00ns INFO     test                               NWAYS: 16  NINDEXES: 64
+     0.00ns INFO     test                               Starting test_pseudo_lru_tree_initialization...
+    15.00ns DEBUG    test                               Reset complete
+    15.00ns INFO     test                               test_pseudo_lru_tree_initialization passed.
+    15.00ns INFO     test                               Test 1: Initialization passed.
+    15.00ns INFO     test                               Starting test_pseudo_lru_tree_hit_increment...
+    35.00ns DEBUG    test                               Reset complete
+    35.00ns DEBUG    test                               Target index: 0, Target way: 0
+    55.00ns DEBUG    test                               way_replace: 0000
+    55.00ns DEBUG    test                               Target index: 0, Target way: 15
+    75.00ns DEBUG    test                               way_replace: 0111
+    75.00ns DEBUG    test                               Target index: 0, Target way: 2
+    95.00ns DEBUG    test                               way_replace: 1011
+    95.00ns DEBUG    test                               Target index: 0, Target way: 2
+   115.00ns DEBUG    test                               way_replace: 1011
+   115.00ns DEBUG    test                               Target index: 0, Target way: 8
+   135.00ns DEBUG    test                               way_replace: 0111
+   135.00ns DEBUG    test                               Target index: 0, Target way: 2
+   155.00ns DEBUG    test                               way_replace: 1101
+   155.00ns DEBUG    test                               Target index: 0, Target way: 3
+   175.00ns DEBUG    test                               way_replace: 1101
+   175.00ns DEBUG    test                               Target index: 0, Target way: 9
+   195.00ns DEBUG    test                               way_replace: 0111
+   195.00ns DEBUG    test                               Target index: 0, Target way: 11
+   215.00ns DEBUG    test                               way_replace: 0111
+   215.00ns DEBUG    test                               Target index: 0, Target way: 8
+   235.00ns DEBUG    test                               way_replace: 0111
+   235.00ns DEBUG    test                               Target index: 0, Target way: 11
+   255.00ns DEBUG    test                               way_replace: 0111
+   255.00ns DEBUG    test                               Target index: 0, Target way: 3
+   275.00ns DEBUG    test                               way_replace: 1101
+   275.00ns DEBUG    test                               Target index: 0, Target way: 8
+   295.00ns DEBUG    test                               way_replace: 0111
+   295.00ns DEBUG    test                               Target index: 0, Target way: 12
+   315.00ns DEBUG    test                               way_replace: 0111
+   315.00ns DEBUG    test                               Target index: 0, Target way: 14
+   335.00ns DEBUG    test                               way_replace: 0111
+   335.00ns DEBUG    test                               Target index: 0, Target way: 2
+   355.00ns DEBUG    test                               way_replace: 1010
+   355.00ns DEBUG    test                               Target index: 0, Target way: 12
+   375.00ns DEBUG    test                               way_replace: 0111
+   375.00ns DEBUG    test                               Target index: 0, Target way: 3
+   395.00ns DEBUG    test                               way_replace: 1010
+   395.00ns DEBUG    test                               Target index: 63, Target way: 0
+   415.00ns DEBUG    test                               way_replace: 1111
+   415.00ns DEBUG    test                               Target index: 63, Target way: 15
+   435.00ns DEBUG    test                               way_replace: 0111
+   435.00ns DEBUG    test                               Target index: 63, Target way: 7
+   455.00ns DEBUG    test                               way_replace: 1011
+   455.00ns DEBUG    test                               Target index: 63, Target way: 3
+   475.00ns DEBUG    test                               way_replace: 1011
+   475.00ns DEBUG    test                               Target index: 63, Target way: 11
+   495.00ns DEBUG    test                               way_replace: 0101
+   495.00ns DEBUG    test                               Target index: 63, Target way: 11
+   515.00ns DEBUG    test                               way_replace: 0101
+   515.00ns DEBUG    test                               Target index: 63, Target way: 14
+   535.00ns DEBUG    test                               way_replace: 0101
+   535.00ns DEBUG    test                               Target index: 63, Target way: 4
+   555.00ns DEBUG    test                               way_replace: 1001
+   555.00ns DEBUG    test                               Target index: 63, Target way: 13
+   575.00ns DEBUG    test                               way_replace: 0001
+   575.00ns DEBUG    test                               Target index: 63, Target way: 6
+   595.00ns DEBUG    test                               way_replace: 1001
+   595.00ns DEBUG    test                               Target index: 63, Target way: 9
+   615.00ns DEBUG    test                               way_replace: 0001
+   615.00ns DEBUG    test                               Target index: 63, Target way: 9
+   635.00ns DEBUG    test                               way_replace: 0001
+   635.00ns DEBUG    test                               Target index: 63, Target way: 13
+   655.00ns DEBUG    test                               way_replace: 0001
+   655.00ns DEBUG    test                               Target index: 63, Target way: 12
+   675.00ns DEBUG    test                               way_replace: 0001
+   675.00ns DEBUG    test                               Target index: 63, Target way: 6
+   695.00ns DEBUG    test                               way_replace: 1010
+   695.00ns DEBUG    test                               Target index: 63, Target way: 6
+   715.00ns DEBUG    test                               way_replace: 1010
+   715.00ns DEBUG    test                               Target index: 63, Target way: 1
+   735.00ns DEBUG    test                               way_replace: 1010
+   735.00ns DEBUG    test                               Target index: 63, Target way: 13
+   755.00ns DEBUG    test                               way_replace: 0101
+   755.00ns DEBUG    test                               Target index: 29, Target way: 12
+   775.00ns DEBUG    test                               way_replace: 0111
+   775.00ns DEBUG    test                               Target index: 29, Target way: 12
+   795.00ns DEBUG    test                               way_replace: 0111
+   795.00ns DEBUG    test                               Target index: 29, Target way: 10
+   815.00ns DEBUG    test                               way_replace: 0111
+   815.00ns DEBUG    test                               Target index: 29, Target way: 3
+   835.00ns DEBUG    test                               way_replace: 1111
+   835.00ns DEBUG    test                               Target index: 29, Target way: 15
+   855.00ns DEBUG    test                               way_replace: 0111
+   855.00ns DEBUG    test                               Target index: 29, Target way: 8
+   875.00ns DEBUG    test                               way_replace: 0111
+   875.00ns DEBUG    test                               Target index: 29, Target way: 0
+   895.00ns DEBUG    test                               way_replace: 1101
+   895.00ns DEBUG    test                               Target index: 29, Target way: 15
+   915.00ns DEBUG    test                               way_replace: 0111
+   915.00ns DEBUG    test                               Target index: 29, Target way: 2
+   935.00ns DEBUG    test                               way_replace: 1011
+   935.00ns DEBUG    test                               Target index: 29, Target way: 10
+   955.00ns DEBUG    test                               way_replace: 0111
+   955.00ns DEBUG    test                               Target index: 29, Target way: 2
+   975.00ns DEBUG    test                               way_replace: 1101
+   975.00ns DEBUG    test                               Target index: 29, Target way: 7
+   995.00ns DEBUG    test                               way_replace: 1101
+   995.00ns DEBUG    test                               Target index: 29, Target way: 8
+  1015.00ns DEBUG    test                               way_replace: 0001
+  1015.00ns DEBUG    test                               Target index: 29, Target way: 10
+  1035.00ns DEBUG    test                               way_replace: 0001
+  1035.00ns DEBUG    test                               Target index: 29, Target way: 8
+  1055.00ns DEBUG    test                               way_replace: 0001
+  1055.00ns DEBUG    test                               Target index: 29, Target way: 14
+  1075.00ns DEBUG    test                               way_replace: 0001
+  1075.00ns DEBUG    test                               Target index: 29, Target way: 11
+  1095.00ns DEBUG    test                               way_replace: 0001
+  1095.00ns DEBUG    test                               Target index: 29, Target way: 14
+  1115.00ns DEBUG    test                               way_replace: 0001
+  1115.00ns DEBUG    test                               Target index: 29, Target way: 14
+  1135.00ns DEBUG    test                               way_replace: 0001
+  1135.00ns DEBUG    test                               Target index: 29, Target way: 13
+  1155.00ns DEBUG    test                               way_replace: 0001
+  1155.00ns DEBUG    test                               Target index: 29, Target way: 0
+  1175.00ns DEBUG    test                               way_replace: 1001
+  1175.00ns DEBUG    test                               Target index: 29, Target way: 15
+  1195.00ns DEBUG    test                               way_replace: 0101
+  1195.00ns DEBUG    test                               Target index: 29, Target way: 4
+  1215.00ns DEBUG    test                               way_replace: 1001
+  1215.00ns DEBUG    test                               Target index: 29, Target way: 9
+  1235.00ns DEBUG    test                               way_replace: 0011
+  1235.00ns DEBUG    test                               Target index: 29, Target way: 12
+  1255.00ns DEBUG    test                               way_replace: 0011
+  1255.00ns DEBUG    test                               Target index: 29, Target way: 4
+  1275.00ns DEBUG    test                               way_replace: 1010
+  1275.00ns DEBUG    test                               Target index: 29, Target way: 13
+  1295.00ns DEBUG    test                               way_replace: 0011
+  1295.00ns DEBUG    test                               Target index: 29, Target way: 14
+  1315.00ns DEBUG    test                               way_replace: 0011
+  1315.00ns DEBUG    test                               Target index: 29, Target way: 8
+  1335.00ns DEBUG    test                               way_replace: 0011
+  1335.00ns DEBUG    test                               Target index: 29, Target way: 5
+  1355.00ns DEBUG    test                               way_replace: 1100
+  1355.00ns DEBUG    test                               Target index: 29, Target way: 12
+  1375.00ns DEBUG    test                               way_replace: 0011
+  1375.00ns DEBUG    test                               Target index: 29, Target way: 14
+  1395.00ns DEBUG    test                               way_replace: 0011
+  1395.00ns INFO     test                               test_pseudo_lru_tree_hit_increment passed.
+  1395.00ns INFO     test                               Test 2: Check MRU after hit.
+  1395.00ns INFO     test                               Starting test_pseudo_lru_tree_miss_increment...
+  1415.00ns DEBUG    test                               Reset complete
+  1415.00ns DEBUG    test                               Target index: 0, Target way: 0
+  1435.00ns DEBUG    test                               way_replace: 0b0111
+  1435.00ns DEBUG    test                               Target index: 0, Target way: 15
+  1455.00ns DEBUG    test                               way_replace: 0b1011
+  1455.00ns DEBUG    test                               Target index: 0, Target way: 8
+  1475.00ns DEBUG    test                               way_replace: 0b0011
+  1475.00ns DEBUG    test                               Target index: 0, Target way: 13
+  1495.00ns DEBUG    test                               way_replace: 0b1101
+  1495.00ns DEBUG    test                               Target index: 0, Target way: 9
+  1515.00ns DEBUG    test                               way_replace: 0b0101
+  1515.00ns DEBUG    test                               Target index: 0, Target way: 12
+  1535.00ns DEBUG    test                               way_replace: 0b1001
+  1535.00ns DEBUG    test                               Target index: 0, Target way: 11
+  1555.00ns DEBUG    test                               way_replace: 0b0001
+  1555.00ns DEBUG    test                               Target index: 0, Target way: 14
+  1575.00ns DEBUG    test                               way_replace: 0b1110
+  1575.00ns DEBUG    test                               Target index: 0, Target way: 7
+  1595.00ns DEBUG    test                               way_replace: 0b0110
+  1595.00ns DEBUG    test                               Target index: 0, Target way: 1
+  1615.00ns DEBUG    test                               way_replace: 0b1010
+  1615.00ns DEBUG    test                               Target index: 0, Target way: 1
+  1635.00ns DEBUG    test                               way_replace: 0b0010
+  1635.00ns DEBUG    test                               Target index: 0, Target way: 3
+  1655.00ns DEBUG    test                               way_replace: 0b1100
+  1655.00ns DEBUG    test                               Target index: 0, Target way: 3
+  1675.00ns DEBUG    test                               way_replace: 0b0100
+  1675.00ns DEBUG    test                               Target index: 0, Target way: 14
+  1695.00ns DEBUG    test                               way_replace: 0b1000
+  1695.00ns DEBUG    test                               Target index: 0, Target way: 10
+  1715.00ns DEBUG    test                               way_replace: 0b0000
+  1715.00ns DEBUG    test                               Target index: 0, Target way: 2
+  1735.00ns DEBUG    test                               way_replace: 0b1111
+  1735.00ns DEBUG    test                               Target index: 0, Target way: 9
+  1755.00ns DEBUG    test                               way_replace: 0b0111
+  1755.00ns DEBUG    test                               Target index: 0, Target way: 8
+  1775.00ns DEBUG    test                               way_replace: 0b1011
+  1775.00ns DEBUG    test                               Target index: 63, Target way: 0
+  1795.00ns DEBUG    test                               way_replace: 0b0111
+  1795.00ns DEBUG    test                               Target index: 63, Target way: 15
+  1815.00ns DEBUG    test                               way_replace: 0b1011
+  1815.00ns DEBUG    test                               Target index: 63, Target way: 5
+  1835.00ns DEBUG    test                               way_replace: 0b0011
+  1835.00ns DEBUG    test                               Target index: 63, Target way: 1
+  1855.00ns DEBUG    test                               way_replace: 0b1101
+  1855.00ns DEBUG    test                               Target index: 63, Target way: 1
+  1875.00ns DEBUG    test                               way_replace: 0b0101
+  1875.00ns DEBUG    test                               Target index: 63, Target way: 2
+  1895.00ns DEBUG    test                               way_replace: 0b1001
+  1895.00ns DEBUG    test                               Target index: 63, Target way: 4
+  1915.00ns DEBUG    test                               way_replace: 0b0001
+  1915.00ns DEBUG    test                               Target index: 63, Target way: 8
+  1935.00ns DEBUG    test                               way_replace: 0b1110
+  1935.00ns DEBUG    test                               Target index: 63, Target way: 10
+  1955.00ns DEBUG    test                               way_replace: 0b0110
+  1955.00ns DEBUG    test                               Target index: 63, Target way: 4
+  1975.00ns DEBUG    test                               way_replace: 0b1010
+  1975.00ns DEBUG    test                               Target index: 63, Target way: 6
+  1995.00ns DEBUG    test                               way_replace: 0b0010
+  1995.00ns DEBUG    test                               Target index: 63, Target way: 2
+  2015.00ns DEBUG    test                               way_replace: 0b1100
+  2015.00ns DEBUG    test                               Target index: 63, Target way: 7
+  2035.00ns DEBUG    test                               way_replace: 0b0100
+  2035.00ns DEBUG    test                               Target index: 63, Target way: 6
+  2055.00ns DEBUG    test                               way_replace: 0b1000
+  2055.00ns DEBUG    test                               Target index: 63, Target way: 10
+  2075.00ns DEBUG    test                               way_replace: 0b0000
+  2075.00ns DEBUG    test                               Target index: 63, Target way: 10
+  2095.00ns DEBUG    test                               way_replace: 0b1111
+  2095.00ns DEBUG    test                               Target index: 63, Target way: 8
+  2115.00ns DEBUG    test                               way_replace: 0b0111
+  2115.00ns DEBUG    test                               Target index: 63, Target way: 13
+  2135.00ns DEBUG    test                               way_replace: 0b1011
+  2135.00ns DEBUG    test                               Target index: 24, Target way: 8
+  2155.00ns DEBUG    test                               way_replace: 0b0111
+  2155.00ns DEBUG    test                               Target index: 24, Target way: 1
+  2175.00ns DEBUG    test                               way_replace: 0b1011
+  2175.00ns DEBUG    test                               Target index: 24, Target way: 9
+  2195.00ns DEBUG    test                               way_replace: 0b0011
+  2195.00ns DEBUG    test                               Target index: 24, Target way: 11
+  2215.00ns DEBUG    test                               way_replace: 0b1101
+  2215.00ns DEBUG    test                               Target index: 24, Target way: 12
+  2235.00ns DEBUG    test                               way_replace: 0b0101
+  2235.00ns DEBUG    test                               Target index: 24, Target way: 13
+  2255.00ns DEBUG    test                               way_replace: 0b1001
+  2255.00ns DEBUG    test                               Target index: 24, Target way: 14
+  2275.00ns DEBUG    test                               way_replace: 0b0001
+  2275.00ns DEBUG    test                               Target index: 24, Target way: 4
+  2295.00ns DEBUG    test                               way_replace: 0b1110
+  2295.00ns DEBUG    test                               Target index: 24, Target way: 14
+  2315.00ns DEBUG    test                               way_replace: 0b0110
+  2315.00ns DEBUG    test                               Target index: 24, Target way: 2
+  2335.00ns DEBUG    test                               way_replace: 0b1010
+  2335.00ns DEBUG    test                               Target index: 24, Target way: 10
+  2355.00ns DEBUG    test                               way_replace: 0b0010
+  2355.00ns DEBUG    test                               Target index: 24, Target way: 9
+  2375.00ns DEBUG    test                               way_replace: 0b1100
+  2375.00ns DEBUG    test                               Target index: 24, Target way: 7
+  2395.00ns DEBUG    test                               way_replace: 0b0100
+  2395.00ns DEBUG    test                               Target index: 24, Target way: 5
+  2415.00ns DEBUG    test                               way_replace: 0b1000
+  2415.00ns DEBUG    test                               Target index: 24, Target way: 10
+  2435.00ns DEBUG    test                               way_replace: 0b0000
+  2435.00ns DEBUG    test                               Target index: 24, Target way: 4
+  2455.00ns DEBUG    test                               way_replace: 0b1111
+  2455.00ns DEBUG    test                               Target index: 24, Target way: 7
+  2475.00ns DEBUG    test                               way_replace: 0b0111
+  2475.00ns DEBUG    test                               Target index: 24, Target way: 2
+  2495.00ns DEBUG    test                               way_replace: 0b1011
+  2495.00ns DEBUG    test                               Target index: 24, Target way: 15
+  2515.00ns DEBUG    test                               way_replace: 0b0011
+  2515.00ns DEBUG    test                               Target index: 24, Target way: 12
+  2535.00ns DEBUG    test                               way_replace: 0b1101
+  2535.00ns DEBUG    test                               Target index: 24, Target way: 8
+  2555.00ns DEBUG    test                               way_replace: 0b0101
+  2555.00ns DEBUG    test                               Target index: 24, Target way: 6
+  2575.00ns DEBUG    test                               way_replace: 0b1001
+  2575.00ns DEBUG    test                               Target index: 24, Target way: 10
+  2595.00ns DEBUG    test                               way_replace: 0b0001
+  2595.00ns DEBUG    test                               Target index: 24, Target way: 2
+  2615.00ns DEBUG    test                               way_replace: 0b1110
+  2615.00ns DEBUG    test                               Target index: 24, Target way: 11
+  2635.00ns DEBUG    test                               way_replace: 0b0110
+  2635.00ns DEBUG    test                               Target index: 24, Target way: 0
+  2655.00ns DEBUG    test                               way_replace: 0b1010
+  2655.00ns DEBUG    test                               Target index: 24, Target way: 4
+  2675.00ns DEBUG    test                               way_replace: 0b0010
+  2675.00ns DEBUG    test                               Target index: 24, Target way: 4
+  2695.00ns DEBUG    test                               way_replace: 0b1100
+  2695.00ns DEBUG    test                               Target index: 24, Target way: 2
+  2715.00ns DEBUG    test                               way_replace: 0b0100
+  2715.00ns DEBUG    test                               Target index: 24, Target way: 7
+  2735.00ns DEBUG    test                               way_replace: 0b1000
+  2735.00ns DEBUG    test                               Target index: 24, Target way: 0
+  2755.00ns DEBUG    test                               way_replace: 0b0000
+  2755.00ns DEBUG    test                               Target index: 24, Target way: 4
+  2775.00ns DEBUG    test                               way_replace: 0b1111
+  2775.00ns INFO     test                               test_pseudo_lru_tree_miss_increment passed.
+  2775.00ns INFO     test                               Test 3: Check MRU after miss.
+  2775.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_hit...
+  2795.00ns DEBUG    test                               Reset complete
+  2815.00ns DEBUG    test                               way_replace: 0111
+  2835.00ns DEBUG    test                               way_replace: 0111
+  2855.00ns DEBUG    test                               way_replace: 0111
+  2855.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_hit passed.
+  2855.00ns INFO     test                               Test 4: Replacement order after hit.
+  2855.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_miss...
+  2875.00ns DEBUG    test                               Reset complete
+  2895.00ns DEBUG    test                               way_replace: 0b0111
+  2915.00ns DEBUG    test                               way_replace: 0b0111
+  2935.00ns DEBUG    test                               way_replace: 0b0111
+  2935.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_miss passed.
+  2935.00ns INFO     test                               Test 5: Replacement order after miss.
+  2935.00ns INFO     test                               All tests passed.
+  2935.00ns INFO     cocotb.regression                  test_pseudo_lru_tree_policy.test_policy_working passed
+  2935.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_pseudo_lru_tree_policy.test_policy_working   PASS        2935.00           0.03      94486.61  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  2935.00           0.03      92451.46  **
+                                                        *********************************************************************************************************
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790256076
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_pseudo_lru_tree_policy.test_policy_working (1/1)
+                                                            Main test function to call all tests.
+     0.00ns INFO     test                               Starting test_policy_working...
+     0.00ns WARNING  py.warnings                        /src/test_pseudo_lru_tree_policy.py:174: DeprecationWarning: Use ``cocotb.start_soon`` instead.
+                                                          await cocotb.start(Clock(dut.clock, clock_period, unit="ns", period_high=(clock_period+1)//2 if clock_period%2 else clock_period//2).start())
+     0.00ns INFO     test                               NWAYS: 32  NINDEXES: 64
+     0.00ns INFO     test                               Starting test_pseudo_lru_tree_initialization...
+    15.00ns DEBUG    test                               Reset complete
+    15.00ns INFO     test                               test_pseudo_lru_tree_initialization passed.
+    15.00ns INFO     test                               Test 1: Initialization passed.
+    15.00ns INFO     test                               Starting test_pseudo_lru_tree_hit_increment...
+    35.00ns DEBUG    test                               Reset complete
+    35.00ns DEBUG    test                               Target index: 0, Target way: 0
+    55.00ns DEBUG    test                               way_replace: 00000
+    55.00ns DEBUG    test                               Target index: 0, Target way: 31
+    75.00ns DEBUG    test                               way_replace: 01111
+    75.00ns DEBUG    test                               Target index: 0, Target way: 3
+    95.00ns DEBUG    test                               way_replace: 10111
+    95.00ns DEBUG    test                               Target index: 0, Target way: 4
+   115.00ns DEBUG    test                               way_replace: 10111
+   115.00ns DEBUG    test                               Target index: 0, Target way: 16
+   135.00ns DEBUG    test                               way_replace: 01111
+   135.00ns DEBUG    test                               Target index: 0, Target way: 3
+   155.00ns DEBUG    test                               way_replace: 11011
+   155.00ns DEBUG    test                               Target index: 0, Target way: 5
+   175.00ns DEBUG    test                               way_replace: 11011
+   175.00ns DEBUG    test                               Target index: 0, Target way: 17
+   195.00ns DEBUG    test                               way_replace: 01111
+   195.00ns DEBUG    test                               Target index: 0, Target way: 21
+   215.00ns DEBUG    test                               way_replace: 01111
+   215.00ns DEBUG    test                               Target index: 0, Target way: 16
+   235.00ns DEBUG    test                               way_replace: 01111
+   235.00ns DEBUG    test                               Target index: 0, Target way: 21
+   255.00ns DEBUG    test                               way_replace: 01111
+   255.00ns DEBUG    test                               Target index: 0, Target way: 5
+   275.00ns DEBUG    test                               way_replace: 11011
+   275.00ns DEBUG    test                               Target index: 0, Target way: 30
+   295.00ns DEBUG    test                               way_replace: 01111
+   295.00ns DEBUG    test                               Target index: 0, Target way: 15
+   315.00ns DEBUG    test                               way_replace: 10011
+   315.00ns DEBUG    test                               Target index: 0, Target way: 24
+   335.00ns DEBUG    test                               way_replace: 00001
+   335.00ns DEBUG    test                               Target index: 0, Target way: 27
+   355.00ns DEBUG    test                               way_replace: 00001
+   355.00ns DEBUG    test                               Target index: 0, Target way: 4
+   375.00ns DEBUG    test                               way_replace: 10011
+   375.00ns DEBUG    test                               Target index: 0, Target way: 24
+   395.00ns DEBUG    test                               way_replace: 01011
+   395.00ns DEBUG    test                               Target index: 0, Target way: 29
+   415.00ns DEBUG    test                               way_replace: 01011
+   415.00ns DEBUG    test                               Target index: 0, Target way: 6
+   435.00ns DEBUG    test                               way_replace: 10011
+   435.00ns DEBUG    test                               Target index: 0, Target way: 14
+   455.00ns DEBUG    test                               way_replace: 10011
+   455.00ns DEBUG    test                               Target index: 0, Target way: 6
+   475.00ns DEBUG    test                               way_replace: 10011
+   475.00ns DEBUG    test                               Target index: 0, Target way: 22
+   495.00ns DEBUG    test                               way_replace: 01011
+   495.00ns DEBUG    test                               Target index: 0, Target way: 21
+   515.00ns DEBUG    test                               way_replace: 01011
+   515.00ns DEBUG    test                               Target index: 0, Target way: 28
+   535.00ns DEBUG    test                               way_replace: 01011
+   535.00ns DEBUG    test                               Target index: 0, Target way: 29
+   555.00ns DEBUG    test                               way_replace: 01011
+   555.00ns DEBUG    test                               Target index: 0, Target way: 7
+   575.00ns DEBUG    test                               way_replace: 10011
+   575.00ns DEBUG    test                               Target index: 0, Target way: 26
+   595.00ns DEBUG    test                               way_replace: 01011
+   595.00ns DEBUG    test                               Target index: 0, Target way: 12
+   615.00ns DEBUG    test                               way_replace: 10011
+   615.00ns DEBUG    test                               Target index: 0, Target way: 17
+   635.00ns DEBUG    test                               way_replace: 00001
+   635.00ns DEBUG    test                               Target index: 0, Target way: 18
+   655.00ns DEBUG    test                               way_replace: 00001
+   655.00ns DEBUG    test                               Target index: 0, Target way: 26
+   675.00ns DEBUG    test                               way_replace: 00001
+   675.00ns DEBUG    test                               Target index: 0, Target way: 24
+   695.00ns DEBUG    test                               way_replace: 00001
+   695.00ns DEBUG    test                               Target index: 0, Target way: 12
+   715.00ns DEBUG    test                               way_replace: 10111
+   715.00ns DEBUG    test                               Target index: 63, Target way: 0
+   735.00ns DEBUG    test                               way_replace: 11111
+   735.00ns DEBUG    test                               Target index: 63, Target way: 31
+   755.00ns DEBUG    test                               way_replace: 01111
+   755.00ns DEBUG    test                               Target index: 63, Target way: 30
+   775.00ns DEBUG    test                               way_replace: 01111
+   775.00ns DEBUG    test                               Target index: 63, Target way: 11
+   795.00ns DEBUG    test                               way_replace: 10111
+   795.00ns DEBUG    test                               Target index: 63, Target way: 2
+   815.00ns DEBUG    test                               way_replace: 10111
+   815.00ns DEBUG    test                               Target index: 63, Target way: 25
+   835.00ns DEBUG    test                               way_replace: 01111
+   835.00ns DEBUG    test                               Target index: 63, Target way: 29
+   855.00ns DEBUG    test                               way_replace: 01111
+   855.00ns DEBUG    test                               Target index: 63, Target way: 8
+   875.00ns DEBUG    test                               way_replace: 10111
+   875.00ns DEBUG    test                               Target index: 63, Target way: 13
+   895.00ns DEBUG    test                               way_replace: 10111
+   895.00ns DEBUG    test                               Target index: 63, Target way: 13
+   915.00ns DEBUG    test                               way_replace: 10111
+   915.00ns DEBUG    test                               Target index: 63, Target way: 30
+   935.00ns DEBUG    test                               way_replace: 00111
+   935.00ns DEBUG    test                               Target index: 63, Target way: 11
+   955.00ns DEBUG    test                               way_replace: 10111
+   955.00ns DEBUG    test                               Target index: 63, Target way: 4
+   975.00ns DEBUG    test                               way_replace: 10111
+   975.00ns DEBUG    test                               Target index: 63, Target way: 16
+   995.00ns DEBUG    test                               way_replace: 01111
+   995.00ns DEBUG    test                               Target index: 63, Target way: 26
+  1015.00ns DEBUG    test                               way_replace: 01111
+  1015.00ns DEBUG    test                               Target index: 63, Target way: 9
+  1035.00ns DEBUG    test                               way_replace: 10111
+  1035.00ns DEBUG    test                               Target index: 63, Target way: 1
+  1055.00ns DEBUG    test                               way_replace: 10111
+  1055.00ns DEBUG    test                               Target index: 63, Target way: 23
+  1075.00ns DEBUG    test                               way_replace: 01111
+  1075.00ns DEBUG    test                               Target index: 63, Target way: 25
+  1095.00ns DEBUG    test                               way_replace: 01111
+  1095.00ns DEBUG    test                               Target index: 63, Target way: 22
+  1115.00ns DEBUG    test                               way_replace: 01111
+  1115.00ns DEBUG    test                               Target index: 63, Target way: 17
+  1135.00ns DEBUG    test                               way_replace: 01111
+  1135.00ns DEBUG    test                               Target index: 63, Target way: 16
+  1155.00ns DEBUG    test                               way_replace: 01111
+  1155.00ns DEBUG    test                               Target index: 63, Target way: 17
+  1175.00ns DEBUG    test                               way_replace: 01111
+  1175.00ns DEBUG    test                               Target index: 63, Target way: 23
+  1195.00ns DEBUG    test                               way_replace: 01111
+  1195.00ns DEBUG    test                               Target index: 63, Target way: 18
+  1215.00ns DEBUG    test                               way_replace: 01111
+  1215.00ns DEBUG    test                               Target index: 63, Target way: 3
+  1235.00ns DEBUG    test                               way_replace: 11100
+  1235.00ns DEBUG    test                               Target index: 63, Target way: 26
+  1255.00ns DEBUG    test                               way_replace: 01111
+  1255.00ns DEBUG    test                               Target index: 63, Target way: 22
+  1275.00ns DEBUG    test                               way_replace: 01111
+  1275.00ns DEBUG    test                               Target index: 63, Target way: 11
+  1295.00ns DEBUG    test                               way_replace: 11100
+  1295.00ns DEBUG    test                               Target index: 63, Target way: 3
+  1315.00ns DEBUG    test                               way_replace: 11100
+  1315.00ns DEBUG    test                               Target index: 63, Target way: 8
+  1335.00ns DEBUG    test                               way_replace: 11100
+  1335.00ns DEBUG    test                               Target index: 63, Target way: 22
+  1355.00ns DEBUG    test                               way_replace: 00111
+  1355.00ns DEBUG    test                               Target index: 63, Target way: 9
+  1375.00ns DEBUG    test                               way_replace: 11100
+  1375.00ns DEBUG    test                               Target index: 63, Target way: 23
+  1395.00ns DEBUG    test                               way_replace: 00111
+  1395.00ns DEBUG    test                               Target index: 41, Target way: 17
+  1415.00ns DEBUG    test                               way_replace: 01111
+  1415.00ns DEBUG    test                               Target index: 41, Target way: 28
+  1435.00ns DEBUG    test                               way_replace: 01111
+  1435.00ns DEBUG    test                               Target index: 41, Target way: 22
+  1455.00ns DEBUG    test                               way_replace: 01111
+  1455.00ns DEBUG    test                               Target index: 41, Target way: 28
+  1475.00ns DEBUG    test                               way_replace: 01111
+  1475.00ns DEBUG    test                               Target index: 41, Target way: 28
+  1495.00ns DEBUG    test                               way_replace: 01111
+  1495.00ns DEBUG    test                               Target index: 41, Target way: 26
+  1515.00ns DEBUG    test                               way_replace: 01111
+  1515.00ns DEBUG    test                               Target index: 41, Target way: 0
+  1535.00ns DEBUG    test                               way_replace: 10011
+  1535.00ns DEBUG    test                               Target index: 41, Target way: 31
+  1555.00ns DEBUG    test                               way_replace: 01111
+  1555.00ns DEBUG    test                               Target index: 41, Target way: 9
+  1575.00ns DEBUG    test                               way_replace: 10011
+  1575.00ns DEBUG    test                               Target index: 41, Target way: 18
+  1595.00ns DEBUG    test                               way_replace: 00111
+  1595.00ns DEBUG    test                               Target index: 41, Target way: 25
+  1615.00ns DEBUG    test                               way_replace: 00111
+  1615.00ns DEBUG    test                               Target index: 41, Target way: 8
+  1635.00ns DEBUG    test                               way_replace: 10101
+  1635.00ns DEBUG    test                               Target index: 41, Target way: 26
+  1655.00ns DEBUG    test                               way_replace: 00111
+  1655.00ns DEBUG    test                               Target index: 41, Target way: 28
+  1675.00ns DEBUG    test                               way_replace: 00111
+  1675.00ns DEBUG    test                               Target index: 41, Target way: 16
+  1695.00ns DEBUG    test                               way_replace: 00111
+  1695.00ns DEBUG    test                               Target index: 41, Target way: 10
+  1715.00ns DEBUG    test                               way_replace: 11000
+  1715.00ns DEBUG    test                               Target index: 41, Target way: 25
+  1735.00ns DEBUG    test                               way_replace: 00111
+  1735.00ns DEBUG    test                               Target index: 41, Target way: 29
+  1755.00ns DEBUG    test                               way_replace: 00111
+  1755.00ns DEBUG    test                               Target index: 41, Target way: 28
+  1775.00ns DEBUG    test                               way_replace: 00111
+  1775.00ns DEBUG    test                               Target index: 41, Target way: 24
+  1795.00ns DEBUG    test                               way_replace: 00111
+  1795.00ns DEBUG    test                               Target index: 41, Target way: 1
+  1815.00ns DEBUG    test                               way_replace: 10101
+  1815.00ns DEBUG    test                               Target index: 41, Target way: 0
+  1835.00ns DEBUG    test                               way_replace: 10101
+  1835.00ns DEBUG    test                               Target index: 41, Target way: 9
+  1855.00ns DEBUG    test                               way_replace: 10101
+  1855.00ns DEBUG    test                               Target index: 41, Target way: 9
+  1875.00ns DEBUG    test                               way_replace: 10101
+  1875.00ns DEBUG    test                               Target index: 41, Target way: 5
+  1895.00ns DEBUG    test                               way_replace: 10101
+  1895.00ns DEBUG    test                               Target index: 41, Target way: 30
+  1915.00ns DEBUG    test                               way_replace: 01111
+  1915.00ns DEBUG    test                               Target index: 41, Target way: 18
+  1935.00ns DEBUG    test                               way_replace: 01111
+  1935.00ns DEBUG    test                               Target index: 41, Target way: 2
+  1955.00ns DEBUG    test                               way_replace: 11011
+  1955.00ns DEBUG    test                               Target index: 41, Target way: 3
+  1975.00ns DEBUG    test                               way_replace: 11011
+  1975.00ns DEBUG    test                               Target index: 41, Target way: 6
+  1995.00ns DEBUG    test                               way_replace: 11011
+  1995.00ns DEBUG    test                               Target index: 41, Target way: 12
+  2015.00ns DEBUG    test                               way_replace: 11011
+  2015.00ns DEBUG    test                               Target index: 41, Target way: 30
+  2035.00ns DEBUG    test                               way_replace: 00001
+  2035.00ns DEBUG    test                               Target index: 41, Target way: 15
+  2055.00ns DEBUG    test                               way_replace: 10101
+  2055.00ns DEBUG    test                               Target index: 41, Target way: 22
+  2075.00ns DEBUG    test                               way_replace: 00001
+  2075.00ns DEBUG    test                               Target index: 41, Target way: 4
+  2095.00ns DEBUG    test                               way_replace: 11011
+  2095.00ns DEBUG    test                               Target index: 41, Target way: 25
+  2115.00ns DEBUG    test                               way_replace: 01011
+  2115.00ns DEBUG    test                               Target index: 41, Target way: 22
+  2135.00ns DEBUG    test                               way_replace: 01011
+  2135.00ns DEBUG    test                               Target index: 41, Target way: 28
+  2155.00ns DEBUG    test                               way_replace: 01011
+  2155.00ns DEBUG    test                               Target index: 41, Target way: 12
+  2175.00ns DEBUG    test                               way_replace: 10001
+  2175.00ns DEBUG    test                               Target index: 41, Target way: 16
+  2195.00ns DEBUG    test                               way_replace: 00001
+  2195.00ns DEBUG    test                               Target index: 41, Target way: 3
+  2215.00ns DEBUG    test                               way_replace: 11011
+  2215.00ns DEBUG    test                               Target index: 41, Target way: 18
+  2235.00ns DEBUG    test                               way_replace: 01011
+  2235.00ns DEBUG    test                               Target index: 41, Target way: 22
+  2255.00ns DEBUG    test                               way_replace: 01011
+  2255.00ns DEBUG    test                               Target index: 41, Target way: 25
+  2275.00ns DEBUG    test                               way_replace: 01011
+  2275.00ns DEBUG    test                               Target index: 41, Target way: 27
+  2295.00ns DEBUG    test                               way_replace: 01011
+  2295.00ns DEBUG    test                               Target index: 41, Target way: 28
+  2315.00ns DEBUG    test                               way_replace: 01011
+  2315.00ns DEBUG    test                               Target index: 41, Target way: 8
+  2335.00ns DEBUG    test                               way_replace: 10001
+  2335.00ns DEBUG    test                               Target index: 41, Target way: 28
+  2355.00ns DEBUG    test                               way_replace: 00111
+  2355.00ns DEBUG    test                               Target index: 41, Target way: 5
+  2375.00ns DEBUG    test                               way_replace: 10001
+  2375.00ns DEBUG    test                               Target index: 41, Target way: 20
+  2395.00ns DEBUG    test                               way_replace: 01110
+  2395.00ns DEBUG    test                               Target index: 41, Target way: 18
+  2415.00ns DEBUG    test                               way_replace: 01110
+  2415.00ns DEBUG    test                               Target index: 41, Target way: 14
+  2435.00ns DEBUG    test                               way_replace: 11000
+  2435.00ns DEBUG    test                               Target index: 41, Target way: 10
+  2455.00ns DEBUG    test                               way_replace: 11000
+  2455.00ns DEBUG    test                               Target index: 41, Target way: 20
+  2475.00ns DEBUG    test                               way_replace: 00001
+  2475.00ns DEBUG    test                               Target index: 41, Target way: 8
+  2495.00ns DEBUG    test                               way_replace: 11000
+  2495.00ns DEBUG    test                               Target index: 41, Target way: 15
+  2515.00ns DEBUG    test                               way_replace: 11000
+  2515.00ns DEBUG    test                               Target index: 41, Target way: 5
+  2535.00ns DEBUG    test                               way_replace: 11000
+  2535.00ns DEBUG    test                               Target index: 41, Target way: 30
+  2555.00ns DEBUG    test                               way_replace: 01011
+  2555.00ns DEBUG    test                               Target index: 41, Target way: 25
+  2575.00ns DEBUG    test                               way_replace: 01011
+  2575.00ns DEBUG    test                               Target index: 41, Target way: 16
+  2595.00ns DEBUG    test                               way_replace: 01011
+  2595.00ns DEBUG    test                               Target index: 41, Target way: 13
+  2615.00ns DEBUG    test                               way_replace: 11101
+  2615.00ns DEBUG    test                               Target index: 41, Target way: 21
+  2635.00ns DEBUG    test                               way_replace: 00001
+  2635.00ns DEBUG    test                               Target index: 41, Target way: 5
+  2655.00ns DEBUG    test                               way_replace: 11101
+  2655.00ns DEBUG    test                               Target index: 41, Target way: 22
+  2675.00ns DEBUG    test                               way_replace: 01011
+  2675.00ns INFO     test                               test_pseudo_lru_tree_hit_increment passed.
+  2675.00ns INFO     test                               Test 2: Check MRU after hit.
+  2675.00ns INFO     test                               Starting test_pseudo_lru_tree_miss_increment...
+  2695.00ns DEBUG    test                               Reset complete
+  2695.00ns DEBUG    test                               Target index: 0, Target way: 0
+  2715.00ns DEBUG    test                               way_replace: 0b1111
+  2715.00ns DEBUG    test                               Target index: 0, Target way: 31
+  2735.00ns DEBUG    test                               way_replace: 0b10111
+  2735.00ns DEBUG    test                               Target index: 0, Target way: 1
+  2755.00ns DEBUG    test                               way_replace: 0b0111
+  2755.00ns DEBUG    test                               Target index: 0, Target way: 5
+  2775.00ns DEBUG    test                               way_replace: 0b11011
+  2775.00ns DEBUG    test                               Target index: 0, Target way: 27
+  2795.00ns DEBUG    test                               way_replace: 0b1011
+  2795.00ns DEBUG    test                               Target index: 0, Target way: 20
+  2815.00ns DEBUG    test                               way_replace: 0b10011
+  2815.00ns DEBUG    test                               Target index: 0, Target way: 20
+  2835.00ns DEBUG    test                               way_replace: 0b0011
+  2835.00ns DEBUG    test                               Target index: 0, Target way: 5
+  2855.00ns DEBUG    test                               way_replace: 0b11101
+  2855.00ns DEBUG    test                               Target index: 0, Target way: 19
+  2875.00ns DEBUG    test                               way_replace: 0b1101
+  2875.00ns DEBUG    test                               Target index: 0, Target way: 3
+  2895.00ns DEBUG    test                               way_replace: 0b10101
+  2895.00ns DEBUG    test                               Target index: 0, Target way: 8
+  2915.00ns DEBUG    test                               way_replace: 0b0101
+  2915.00ns DEBUG    test                               Target index: 0, Target way: 1
+  2935.00ns DEBUG    test                               way_replace: 0b11001
+  2935.00ns DEBUG    test                               Target index: 0, Target way: 21
+  2955.00ns DEBUG    test                               way_replace: 0b1001
+  2955.00ns DEBUG    test                               Target index: 0, Target way: 5
+  2975.00ns DEBUG    test                               way_replace: 0b10001
+  2975.00ns DEBUG    test                               Target index: 0, Target way: 2
+  2995.00ns DEBUG    test                               way_replace: 0b0001
+  2995.00ns DEBUG    test                               Target index: 0, Target way: 25
+  3015.00ns DEBUG    test                               way_replace: 0b11110
+  3015.00ns DEBUG    test                               Target index: 0, Target way: 20
+  3035.00ns DEBUG    test                               way_replace: 0b1110
+  3035.00ns DEBUG    test                               Target index: 0, Target way: 4
+  3055.00ns DEBUG    test                               way_replace: 0b10110
+  3055.00ns DEBUG    test                               Target index: 0, Target way: 5
+  3075.00ns DEBUG    test                               way_replace: 0b0110
+  3075.00ns DEBUG    test                               Target index: 0, Target way: 26
+  3095.00ns DEBUG    test                               way_replace: 0b11010
+  3095.00ns DEBUG    test                               Target index: 0, Target way: 25
+  3115.00ns DEBUG    test                               way_replace: 0b1010
+  3115.00ns DEBUG    test                               Target index: 0, Target way: 17
+  3135.00ns DEBUG    test                               way_replace: 0b10010
+  3135.00ns DEBUG    test                               Target index: 0, Target way: 12
+  3155.00ns DEBUG    test                               way_replace: 0b0010
+  3155.00ns DEBUG    test                               Target index: 0, Target way: 14
+  3175.00ns DEBUG    test                               way_replace: 0b11100
+  3175.00ns DEBUG    test                               Target index: 0, Target way: 15
+  3195.00ns DEBUG    test                               way_replace: 0b1100
+  3195.00ns DEBUG    test                               Target index: 0, Target way: 16
+  3215.00ns DEBUG    test                               way_replace: 0b10100
+  3215.00ns DEBUG    test                               Target index: 0, Target way: 25
+  3235.00ns DEBUG    test                               way_replace: 0b0100
+  3235.00ns DEBUG    test                               Target index: 0, Target way: 1
+  3255.00ns DEBUG    test                               way_replace: 0b11000
+  3255.00ns DEBUG    test                               Target index: 0, Target way: 10
+  3275.00ns DEBUG    test                               way_replace: 0b1000
+  3275.00ns DEBUG    test                               Target index: 0, Target way: 4
+  3295.00ns DEBUG    test                               way_replace: 0b10000
+  3295.00ns DEBUG    test                               Target index: 0, Target way: 19
+  3315.00ns DEBUG    test                               way_replace: 0b0000
+  3315.00ns DEBUG    test                               Target index: 0, Target way: 3
+  3335.00ns DEBUG    test                               way_replace: 0b11111
+  3335.00ns DEBUG    test                               Target index: 0, Target way: 4
+  3355.00ns DEBUG    test                               way_replace: 0b1111
+  3355.00ns DEBUG    test                               Target index: 0, Target way: 24
+  3375.00ns DEBUG    test                               way_replace: 0b10111
+  3375.00ns DEBUG    test                               Target index: 63, Target way: 0
+  3395.00ns DEBUG    test                               way_replace: 0b1111
+  3395.00ns DEBUG    test                               Target index: 63, Target way: 31
+  3415.00ns DEBUG    test                               way_replace: 0b10111
+  3415.00ns DEBUG    test                               Target index: 63, Target way: 7
+  3435.00ns DEBUG    test                               way_replace: 0b0111
+  3435.00ns DEBUG    test                               Target index: 63, Target way: 14
+  3455.00ns DEBUG    test                               way_replace: 0b11011
+  3455.00ns DEBUG    test                               Target index: 63, Target way: 9
+  3475.00ns DEBUG    test                               way_replace: 0b1011
+  3475.00ns DEBUG    test                               Target index: 63, Target way: 9
+  3495.00ns DEBUG    test                               way_replace: 0b10011
+  3495.00ns DEBUG    test                               Target index: 63, Target way: 22
+  3515.00ns DEBUG    test                               way_replace: 0b0011
+  3515.00ns DEBUG    test                               Target index: 63, Target way: 29
+  3535.00ns DEBUG    test                               way_replace: 0b11101
+  3535.00ns DEBUG    test                               Target index: 63, Target way: 23
+  3555.00ns DEBUG    test                               way_replace: 0b1101
+  3555.00ns DEBUG    test                               Target index: 63, Target way: 13
+  3575.00ns DEBUG    test                               way_replace: 0b10101
+  3575.00ns DEBUG    test                               Target index: 63, Target way: 20
+  3595.00ns DEBUG    test                               way_replace: 0b0101
+  3595.00ns DEBUG    test                               Target index: 63, Target way: 17
+  3615.00ns DEBUG    test                               way_replace: 0b11001
+  3615.00ns DEBUG    test                               Target index: 63, Target way: 29
+  3635.00ns DEBUG    test                               way_replace: 0b1001
+  3635.00ns DEBUG    test                               Target index: 63, Target way: 7
+  3655.00ns DEBUG    test                               way_replace: 0b10001
+  3655.00ns DEBUG    test                               Target index: 63, Target way: 3
+  3675.00ns DEBUG    test                               way_replace: 0b0001
+  3675.00ns DEBUG    test                               Target index: 63, Target way: 19
+  3695.00ns DEBUG    test                               way_replace: 0b11110
+  3695.00ns DEBUG    test                               Target index: 63, Target way: 17
+  3715.00ns DEBUG    test                               way_replace: 0b1110
+  3715.00ns DEBUG    test                               Target index: 63, Target way: 24
+  3735.00ns DEBUG    test                               way_replace: 0b10110
+  3735.00ns DEBUG    test                               Target index: 63, Target way: 16
+  3755.00ns DEBUG    test                               way_replace: 0b0110
+  3755.00ns DEBUG    test                               Target index: 63, Target way: 8
+  3775.00ns DEBUG    test                               way_replace: 0b11010
+  3775.00ns DEBUG    test                               Target index: 63, Target way: 19
+  3795.00ns DEBUG    test                               way_replace: 0b1010
+  3795.00ns DEBUG    test                               Target index: 63, Target way: 25
+  3815.00ns DEBUG    test                               way_replace: 0b10010
+  3815.00ns DEBUG    test                               Target index: 63, Target way: 19
+  3835.00ns DEBUG    test                               way_replace: 0b0010
+  3835.00ns DEBUG    test                               Target index: 63, Target way: 11
+  3855.00ns DEBUG    test                               way_replace: 0b11100
+  3855.00ns DEBUG    test                               Target index: 63, Target way: 17
+  3875.00ns DEBUG    test                               way_replace: 0b1100
+  3875.00ns DEBUG    test                               Target index: 63, Target way: 11
+  3895.00ns DEBUG    test                               way_replace: 0b10100
+  3895.00ns DEBUG    test                               Target index: 63, Target way: 8
+  3915.00ns DEBUG    test                               way_replace: 0b0100
+  3915.00ns DEBUG    test                               Target index: 63, Target way: 22
+  3935.00ns DEBUG    test                               way_replace: 0b11000
+  3935.00ns DEBUG    test                               Target index: 63, Target way: 11
+  3955.00ns DEBUG    test                               way_replace: 0b1000
+  3955.00ns DEBUG    test                               Target index: 63, Target way: 26
+  3975.00ns DEBUG    test                               way_replace: 0b10000
+  3975.00ns DEBUG    test                               Target index: 63, Target way: 9
+  3995.00ns DEBUG    test                               way_replace: 0b0000
+  3995.00ns DEBUG    test                               Target index: 63, Target way: 3
+  4015.00ns DEBUG    test                               way_replace: 0b11111
+  4015.00ns DEBUG    test                               Target index: 63, Target way: 6
+  4035.00ns DEBUG    test                               way_replace: 0b1111
+  4035.00ns DEBUG    test                               Target index: 63, Target way: 10
+  4055.00ns DEBUG    test                               way_replace: 0b10111
+  4055.00ns DEBUG    test                               Target index: 27, Target way: 12
+  4075.00ns DEBUG    test                               way_replace: 0b1111
+  4075.00ns DEBUG    test                               Target index: 27, Target way: 31
+  4095.00ns DEBUG    test                               way_replace: 0b10111
+  4095.00ns DEBUG    test                               Target index: 27, Target way: 28
+  4115.00ns DEBUG    test                               way_replace: 0b0111
+  4115.00ns DEBUG    test                               Target index: 27, Target way: 23
+  4135.00ns DEBUG    test                               way_replace: 0b11011
+  4135.00ns DEBUG    test                               Target index: 27, Target way: 28
+  4155.00ns DEBUG    test                               way_replace: 0b1011
+  4155.00ns DEBUG    test                               Target index: 27, Target way: 29
+  4175.00ns DEBUG    test                               way_replace: 0b10011
+  4175.00ns DEBUG    test                               Target index: 27, Target way: 9
+  4195.00ns DEBUG    test                               way_replace: 0b0011
+  4195.00ns DEBUG    test                               Target index: 27, Target way: 23
+  4215.00ns DEBUG    test                               way_replace: 0b11101
+  4215.00ns DEBUG    test                               Target index: 27, Target way: 23
+  4235.00ns DEBUG    test                               way_replace: 0b1101
+  4235.00ns DEBUG    test                               Target index: 27, Target way: 21
+  4255.00ns DEBUG    test                               way_replace: 0b10101
+  4255.00ns DEBUG    test                               Target index: 27, Target way: 3
+  4275.00ns DEBUG    test                               way_replace: 0b0101
+  4275.00ns DEBUG    test                               Target index: 27, Target way: 28
+  4295.00ns DEBUG    test                               way_replace: 0b11001
+  4295.00ns DEBUG    test                               Target index: 27, Target way: 25
+  4315.00ns DEBUG    test                               way_replace: 0b1001
+  4315.00ns DEBUG    test                               Target index: 27, Target way: 31
+  4335.00ns DEBUG    test                               way_replace: 0b10001
+  4335.00ns DEBUG    test                               Target index: 27, Target way: 2
+  4355.00ns DEBUG    test                               way_replace: 0b0001
+  4355.00ns DEBUG    test                               Target index: 27, Target way: 2
+  4375.00ns DEBUG    test                               way_replace: 0b11110
+  4375.00ns DEBUG    test                               Target index: 27, Target way: 5
+  4395.00ns DEBUG    test                               way_replace: 0b1110
+  4395.00ns DEBUG    test                               Target index: 27, Target way: 2
+  4415.00ns DEBUG    test                               way_replace: 0b10110
+  4415.00ns DEBUG    test                               Target index: 27, Target way: 31
+  4435.00ns DEBUG    test                               way_replace: 0b0110
+  4435.00ns DEBUG    test                               Target index: 27, Target way: 10
+  4455.00ns DEBUG    test                               way_replace: 0b11010
+  4455.00ns DEBUG    test                               Target index: 27, Target way: 28
+  4475.00ns DEBUG    test                               way_replace: 0b1010
+  4475.00ns DEBUG    test                               Target index: 27, Target way: 22
+  4495.00ns DEBUG    test                               way_replace: 0b10010
+  4495.00ns DEBUG    test                               Target index: 27, Target way: 29
+  4515.00ns DEBUG    test                               way_replace: 0b0010
+  4515.00ns DEBUG    test                               Target index: 27, Target way: 14
+  4535.00ns DEBUG    test                               way_replace: 0b11100
+  4535.00ns DEBUG    test                               Target index: 27, Target way: 30
+  4555.00ns DEBUG    test                               way_replace: 0b1100
+  4555.00ns DEBUG    test                               Target index: 27, Target way: 19
+  4575.00ns DEBUG    test                               way_replace: 0b10100
+  4575.00ns DEBUG    test                               Target index: 27, Target way: 21
+  4595.00ns DEBUG    test                               way_replace: 0b0100
+  4595.00ns DEBUG    test                               Target index: 27, Target way: 13
+  4615.00ns DEBUG    test                               way_replace: 0b11000
+  4615.00ns DEBUG    test                               Target index: 27, Target way: 4
+  4635.00ns DEBUG    test                               way_replace: 0b1000
+  4635.00ns DEBUG    test                               Target index: 27, Target way: 6
+  4655.00ns DEBUG    test                               way_replace: 0b10000
+  4655.00ns DEBUG    test                               Target index: 27, Target way: 6
+  4675.00ns DEBUG    test                               way_replace: 0b0000
+  4675.00ns DEBUG    test                               Target index: 27, Target way: 30
+  4695.00ns DEBUG    test                               way_replace: 0b11111
+  4695.00ns DEBUG    test                               Target index: 27, Target way: 13
+  4715.00ns DEBUG    test                               way_replace: 0b1111
+  4715.00ns DEBUG    test                               Target index: 27, Target way: 6
+  4735.00ns DEBUG    test                               way_replace: 0b10111
+  4735.00ns DEBUG    test                               Target index: 27, Target way: 26
+  4755.00ns DEBUG    test                               way_replace: 0b0111
+  4755.00ns DEBUG    test                               Target index: 27, Target way: 20
+  4775.00ns DEBUG    test                               way_replace: 0b11011
+  4775.00ns DEBUG    test                               Target index: 27, Target way: 28
+  4795.00ns DEBUG    test                               way_replace: 0b1011
+  4795.00ns DEBUG    test                               Target index: 27, Target way: 2
+  4815.00ns DEBUG    test                               way_replace: 0b10011
+  4815.00ns DEBUG    test                               Target index: 27, Target way: 1
+  4835.00ns DEBUG    test                               way_replace: 0b0011
+  4835.00ns DEBUG    test                               Target index: 27, Target way: 6
+  4855.00ns DEBUG    test                               way_replace: 0b11101
+  4855.00ns DEBUG    test                               Target index: 27, Target way: 23
+  4875.00ns DEBUG    test                               way_replace: 0b1101
+  4875.00ns DEBUG    test                               Target index: 27, Target way: 18
+  4895.00ns DEBUG    test                               way_replace: 0b10101
+  4895.00ns DEBUG    test                               Target index: 27, Target way: 8
+  4915.00ns DEBUG    test                               way_replace: 0b0101
+  4915.00ns DEBUG    test                               Target index: 27, Target way: 30
+  4935.00ns DEBUG    test                               way_replace: 0b11001
+  4935.00ns DEBUG    test                               Target index: 27, Target way: 16
+  4955.00ns DEBUG    test                               way_replace: 0b1001
+  4955.00ns DEBUG    test                               Target index: 27, Target way: 19
+  4975.00ns DEBUG    test                               way_replace: 0b10001
+  4975.00ns DEBUG    test                               Target index: 27, Target way: 11
+  4995.00ns DEBUG    test                               way_replace: 0b0001
+  4995.00ns DEBUG    test                               Target index: 27, Target way: 14
+  5015.00ns DEBUG    test                               way_replace: 0b11110
+  5015.00ns DEBUG    test                               Target index: 27, Target way: 1
+  5035.00ns DEBUG    test                               way_replace: 0b1110
+  5035.00ns DEBUG    test                               Target index: 27, Target way: 14
+  5055.00ns DEBUG    test                               way_replace: 0b10110
+  5055.00ns DEBUG    test                               Target index: 27, Target way: 20
+  5075.00ns DEBUG    test                               way_replace: 0b0110
+  5075.00ns DEBUG    test                               Target index: 27, Target way: 28
+  5095.00ns DEBUG    test                               way_replace: 0b11010
+  5095.00ns DEBUG    test                               Target index: 27, Target way: 2
+  5115.00ns DEBUG    test                               way_replace: 0b1010
+  5115.00ns DEBUG    test                               Target index: 27, Target way: 22
+  5135.00ns DEBUG    test                               way_replace: 0b10010
+  5135.00ns DEBUG    test                               Target index: 27, Target way: 31
+  5155.00ns DEBUG    test                               way_replace: 0b0010
+  5155.00ns DEBUG    test                               Target index: 27, Target way: 30
+  5175.00ns DEBUG    test                               way_replace: 0b11100
+  5175.00ns DEBUG    test                               Target index: 27, Target way: 0
+  5195.00ns DEBUG    test                               way_replace: 0b1100
+  5195.00ns DEBUG    test                               Target index: 27, Target way: 25
+  5215.00ns DEBUG    test                               way_replace: 0b10100
+  5215.00ns DEBUG    test                               Target index: 27, Target way: 22
+  5235.00ns DEBUG    test                               way_replace: 0b0100
+  5235.00ns DEBUG    test                               Target index: 27, Target way: 9
+  5255.00ns DEBUG    test                               way_replace: 0b11000
+  5255.00ns DEBUG    test                               Target index: 27, Target way: 7
+  5275.00ns DEBUG    test                               way_replace: 0b1000
+  5275.00ns DEBUG    test                               Target index: 27, Target way: 6
+  5295.00ns DEBUG    test                               way_replace: 0b10000
+  5295.00ns DEBUG    test                               Target index: 27, Target way: 31
+  5315.00ns DEBUG    test                               way_replace: 0b0000
+  5315.00ns DEBUG    test                               Target index: 27, Target way: 19
+  5335.00ns DEBUG    test                               way_replace: 0b11111
+  5335.00ns INFO     test                               test_pseudo_lru_tree_miss_increment passed.
+  5335.00ns INFO     test                               Test 3: Check MRU after miss.
+  5335.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_hit...
+  5355.00ns DEBUG    test                               Reset complete
+  5375.00ns DEBUG    test                               way_replace: 01111
+  5395.00ns DEBUG    test                               way_replace: 01111
+  5415.00ns DEBUG    test                               way_replace: 01111
+  5415.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_hit passed.
+  5415.00ns INFO     test                               Test 4: Replacement order after hit.
+  5415.00ns INFO     test                               Starting test_pseudo_lru_tree_replace_order_after_miss...
+  5435.00ns DEBUG    test                               Reset complete
+  5455.00ns DEBUG    test                               way_replace: 0b1111
+  5475.00ns DEBUG    test                               way_replace: 0b1111
+  5495.00ns DEBUG    test                               way_replace: 0b1111
+  5495.00ns INFO     test                               test_pseudo_lru_tree_replace_order_after_miss passed.
+  5495.00ns INFO     test                               Test 5: Replacement order after miss.
+  5495.00ns INFO     test                               All tests passed.
+  5495.00ns INFO     cocotb.regression                  test_pseudo_lru_tree_policy.test_policy_working passed
+  5495.00ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_pseudo_lru_tree_policy.test_policy_working   PASS        5495.00           0.07      78956.98  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  5495.00           0.07      78050.81  **
+                                                        *********************************************************************************************************
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-phzkc8hv'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-w8k1lttq'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 1 passed, 2 warnings in 1.37s =========================
+Cleaning up Docker resources...

@@ -1,0 +1,1631 @@
+Running harness with project name: cvdp_copilot_crossbar_switch_1_1790258517
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 3 items
+
+../../src/test_runner.py::test_crossbar_switch[0-37]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258517
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_crossbar_switch' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_crossbar_switch.test_crossbar_switch (1/1)
+[INFO] Clock started.
+DATA_WIDTH = 37
+NUM_PORTS = 4
+Assigned value 0x5aa05b71e3 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 1/25 Actual  : out2   = 0x1aa05b71e3, valid_out2   = 1
+[DEBUG] Cycle 1/25 Expected: out2   = 0x1aa05b71e3, valid_out2   = 1
+[PASS] Cycle 1: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x146fc72bca to in3 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 2/25 Actual  : out0   = 0x146fc72bca, valid_out0   = 1
+[DEBUG] Cycle 2/25 Expected: out0   = 0x146fc72bca, valid_out0   = 1
+[PASS] Cycle 2: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xf02379019 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 3/25 Actual  : out0   = 0xf02379019, valid_out0   = 1
+[DEBUG] Cycle 3/25 Expected: out0   = 0xf02379019, valid_out0   = 1
+[PASS] Cycle 3: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x36f42e9082 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 4/25 Actual  : out1   = 0x16f42e9082, valid_out1   = 1
+[DEBUG] Cycle 4/25 Expected: out1   = 0x16f42e9082, valid_out1   = 1
+[PASS] Cycle 4: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7c239e5e61 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 5/25 Actual  : out3   = 0x1c239e5e61, valid_out3   = 1
+[DEBUG] Cycle 5/25 Expected: out3   = 0x1c239e5e61, valid_out3   = 1
+[PASS] Cycle 5: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5d82b05f45 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 6/25 Actual  : out2   = 0x1d82b05f45, valid_out2   = 1
+[DEBUG] Cycle 6/25 Expected: out2   = 0x1d82b05f45, valid_out2   = 1
+[PASS] Cycle 6: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3eb16f7254 to in3 with dest id = 1
+Assigned value 0x2bf38e674a to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 7/25 Actual  : out1   = 0xbf38e674a, valid_out1   = 1
+[DEBUG] Cycle 7/25 Expected: out1   = 0xbf38e674a, valid_out1   = 1
+[PASS] Cycle 7: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5733c40347 to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 8/25 Actual  : out2   = 0x1733c40347, valid_out2   = 1
+[DEBUG] Cycle 8/25 Expected: out2   = 0x1733c40347, valid_out2   = 1
+[PASS] Cycle 8: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x35306dfd58 to in3 with dest id = 1
+Assigned value 0x72a0c9b7d6 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 9/25 Actual  : out3   = 0x12a0c9b7d6, valid_out3   = 1
+[DEBUG] Cycle 9/25 Expected: out3   = 0x12a0c9b7d6, valid_out3   = 1
+[PASS] Cycle 9: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xec5cd1d8d to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 10/25 Actual  : out0   = 0xec5cd1d8d, valid_out0   = 1
+[DEBUG] Cycle 10/25 Expected: out0   = 0xec5cd1d8d, valid_out0   = 1
+[PASS] Cycle 10: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x17cd9161db to in1 with dest id = 0
+Assigned value 0x7f368ce110 to in2 with dest id = 3
+[1, 0, 0, 0]
+[DEBUG] Cycle 11/25 Actual  : out0   = 0x17cd9161db, valid_out0   = 1
+[DEBUG] Cycle 11/25 Expected: out0   = 0x17cd9161db, valid_out0   = 1
+[PASS] Cycle 11: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x672d4b3b96 to in0 with dest id = 3
+Assigned value 0x397b18ec89 to in1 with dest id = 1
+[0, 0, 0, 1]
+[DEBUG] Cycle 12/25 Actual  : out3   = 0x72d4b3b96, valid_out3   = 1
+[DEBUG] Cycle 12/25 Expected: out3   = 0x72d4b3b96, valid_out3   = 1
+[PASS] Cycle 12: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1aeb262673 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 13/25 Actual  : out0   = 0x1aeb262673, valid_out0   = 1
+[DEBUG] Cycle 13/25 Expected: out0   = 0x1aeb262673, valid_out0   = 1
+[PASS] Cycle 13: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x34da5851d1 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 14/25 Actual  : out1   = 0x14da5851d1, valid_out1   = 1
+[DEBUG] Cycle 14/25 Expected: out1   = 0x14da5851d1, valid_out1   = 1
+[PASS] Cycle 14: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4a84ef91e7 to in1 with dest id = 2
+Assigned value 0x27620aa11a to in2 with dest id = 1
+[0, 0, 1, 0]
+[DEBUG] Cycle 15/25 Actual  : out2   = 0xa84ef91e7, valid_out2   = 1
+[DEBUG] Cycle 15/25 Expected: out2   = 0xa84ef91e7, valid_out2   = 1
+[PASS] Cycle 15: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4b211b5f8e to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 16/25 Actual  : out2   = 0xb211b5f8e, valid_out2   = 1
+[DEBUG] Cycle 16/25 Expected: out2   = 0xb211b5f8e, valid_out2   = 1
+[PASS] Cycle 16: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x10f81ef397 to in2 with dest id = 0
+Assigned value 0x3b3e6716b0 to in3 with dest id = 1
+[1, 0, 0, 0]
+[DEBUG] Cycle 17/25 Actual  : out0   = 0x10f81ef397, valid_out0   = 1
+[DEBUG] Cycle 17/25 Expected: out0   = 0x10f81ef397, valid_out0   = 1
+[PASS] Cycle 17: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x307237df15 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 18/25 Actual  : out1   = 0x107237df15, valid_out1   = 1
+[DEBUG] Cycle 18/25 Expected: out1   = 0x107237df15, valid_out1   = 1
+[PASS] Cycle 18: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4f8d6474d0 to in2 with dest id = 2
+Assigned value 0x5f4b1e7768 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 19/25 Actual  : out2   = 0x1f4b1e7768, valid_out2   = 1
+[DEBUG] Cycle 19/25 Expected: out2   = 0x1f4b1e7768, valid_out2   = 1
+[PASS] Cycle 19: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x220bae932e to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 20/25 Actual  : out1   = 0x20bae932e, valid_out1   = 1
+[DEBUG] Cycle 20/25 Expected: out1   = 0x20bae932e, valid_out1   = 1
+[PASS] Cycle 20: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x695d35c094 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 21/25 Actual  : out3   = 0x95d35c094, valid_out3   = 1
+[DEBUG] Cycle 21/25 Expected: out3   = 0x95d35c094, valid_out3   = 1
+[PASS] Cycle 21: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x29bbc3a830 to in2 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 22/25 Actual  : out1   = 0x9bbc3a830, valid_out1   = 1
+[DEBUG] Cycle 22/25 Expected: out1   = 0x9bbc3a830, valid_out1   = 1
+[PASS] Cycle 22: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x33969c406d to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 23/25 Actual  : out1   = 0x13969c406d, valid_out1   = 1
+[DEBUG] Cycle 23/25 Expected: out1   = 0x13969c406d, valid_out1   = 1
+[PASS] Cycle 23: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7616fe0957 to in2 with dest id = 3
+Assigned value 0x1017713070 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 24/25 Actual  : out0   = 0x1017713070, valid_out0   = 1
+[DEBUG] Cycle 24/25 Expected: out0   = 0x1017713070, valid_out0   = 1
+[PASS] Cycle 24: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x712ada3e0f to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 25/25 Actual  : out3   = 0x112ada3e0f, valid_out3   = 1
+[DEBUG] Cycle 25/25 Expected: out3   = 0x112ada3e0f, valid_out3   = 1
+[PASS] Cycle 25: Expected result matches actual output, and all other outputs are low.
+
+
+  1040.00ns INFO     cocotb.regression                  test_crossbar_switch.test_crossbar_switch passed
+  1040.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_crossbar_switch.test_crossbar_switch   PASS        1040.00           0.00     317727.16  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            1040.00           0.00     221966.02  **
+                                                        ***************************************************************************************************
+[DEBUG] Running simulation with DATA_WIDTH=37
+[DEBUG] Parameters: {'DATA_WIDTH': 37}
+PASSED
+../../src/test_runner.py::test_crossbar_switch[0-44]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258518
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_crossbar_switch' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_crossbar_switch.test_crossbar_switch (1/1)
+[INFO] Clock started.
+DATA_WIDTH = 44
+NUM_PORTS = 4
+Assigned value 0x3f673a0226b8 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 1/91 Actual  : out3   = 0xf673a0226b8, valid_out3   = 1
+[DEBUG] Cycle 1/91 Expected: out3   = 0xf673a0226b8, valid_out3   = 1
+[PASS] Cycle 1: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1cb6e899b17b to in2 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 2/91 Actual  : out1   = 0xcb6e899b17b, valid_out1   = 1
+[DEBUG] Cycle 2/91 Expected: out1   = 0xcb6e899b17b, valid_out1   = 1
+[PASS] Cycle 2: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1886e208b5bc to in2 with dest id = 1
+Assigned value 0x10c088fad405 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 3/91 Actual  : out1   = 0xc088fad405, valid_out1   = 1
+[DEBUG] Cycle 3/91 Expected: out1   = 0xc088fad405, valid_out1   = 1
+[PASS] Cycle 3: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xa6cc2103c0 to in3 with dest id = 0
+Assigned value 0x188c7b00adf7 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 4/91 Actual  : out1   = 0x88c7b00adf7, valid_out1   = 1
+[DEBUG] Cycle 4/91 Expected: out1   = 0x88c7b00adf7, valid_out1   = 1
+[PASS] Cycle 4: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x113d98408d5a to in3 with dest id = 1
+Assigned value 0x203208b10866 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 5/91 Actual  : out2   = 0x3208b10866, valid_out2   = 1
+[DEBUG] Cycle 5/91 Expected: out2   = 0x3208b10866, valid_out2   = 1
+[PASS] Cycle 5: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2db9409f29 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 6/91 Actual  : out0   = 0x2db9409f29, valid_out0   = 1
+[DEBUG] Cycle 6/91 Expected: out0   = 0x2db9409f29, valid_out0   = 1
+[PASS] Cycle 6: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x18726779ad51 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 7/91 Actual  : out1   = 0x8726779ad51, valid_out1   = 1
+[DEBUG] Cycle 7/91 Expected: out1   = 0x8726779ad51, valid_out1   = 1
+[PASS] Cycle 7: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3e7d57b419fc to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 8/91 Actual  : out3   = 0xe7d57b419fc, valid_out3   = 1
+[DEBUG] Cycle 8/91 Expected: out3   = 0xe7d57b419fc, valid_out3   = 1
+[PASS] Cycle 8: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x35cab77301da to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 9/91 Actual  : out3   = 0x5cab77301da, valid_out3   = 1
+[DEBUG] Cycle 9/91 Expected: out3   = 0x5cab77301da, valid_out3   = 1
+[PASS] Cycle 9: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1bb9f3494072 to in2 with dest id = 1
+Assigned value 0x3a75f4dd4af7 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 10/91 Actual  : out3   = 0xa75f4dd4af7, valid_out3   = 1
+[DEBUG] Cycle 10/91 Expected: out3   = 0xa75f4dd4af7, valid_out3   = 1
+[PASS] Cycle 10: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x35f78f5e0a62 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 11/91 Actual  : out3   = 0x5f78f5e0a62, valid_out3   = 1
+[DEBUG] Cycle 11/91 Expected: out3   = 0x5f78f5e0a62, valid_out3   = 1
+[PASS] Cycle 11: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x313c72519161 to in3 with dest id = 3
+Assigned value 0x179a5777fadb to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 12/91 Actual  : out1   = 0x79a5777fadb, valid_out1   = 1
+[DEBUG] Cycle 12/91 Expected: out1   = 0x79a5777fadb, valid_out1   = 1
+[PASS] Cycle 12: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4d03b7a395a to in2 with dest id = 0
+Assigned value 0x10f5ecdf1e97 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 13/91 Actual  : out1   = 0xf5ecdf1e97, valid_out1   = 1
+[DEBUG] Cycle 13/91 Expected: out1   = 0xf5ecdf1e97, valid_out1   = 1
+[PASS] Cycle 13: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x35f91de3d616 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 14/91 Actual  : out3   = 0x5f91de3d616, valid_out3   = 1
+[DEBUG] Cycle 14/91 Expected: out3   = 0x5f91de3d616, valid_out3   = 1
+[PASS] Cycle 14: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x51c3a81899c to in1 with dest id = 0
+Assigned value 0x3c0aa3009f17 to in2 with dest id = 3
+[1, 0, 0, 0]
+[DEBUG] Cycle 15/91 Actual  : out0   = 0x51c3a81899c, valid_out0   = 1
+[DEBUG] Cycle 15/91 Expected: out0   = 0x51c3a81899c, valid_out0   = 1
+[PASS] Cycle 15: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x52ea3ec8fcf to in2 with dest id = 0
+Assigned value 0x6cb664a941c to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 16/91 Actual  : out0   = 0x6cb664a941c, valid_out0   = 1
+[DEBUG] Cycle 16/91 Expected: out0   = 0x6cb664a941c, valid_out0   = 1
+[PASS] Cycle 16: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x304dd51d4519 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 17/91 Actual  : out3   = 0x4dd51d4519, valid_out3   = 1
+[DEBUG] Cycle 17/91 Expected: out3   = 0x4dd51d4519, valid_out3   = 1
+[PASS] Cycle 17: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2cd6b39a8ba2 to in2 with dest id = 2
+Assigned value 0x11dc7cd69116 to in3 with dest id = 1
+[0, 0, 1, 0]
+[DEBUG] Cycle 18/91 Actual  : out2   = 0xcd6b39a8ba2, valid_out2   = 1
+[DEBUG] Cycle 18/91 Expected: out2   = 0xcd6b39a8ba2, valid_out2   = 1
+[PASS] Cycle 18: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4865339056f to in3 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 19/91 Actual  : out0   = 0x4865339056f, valid_out0   = 1
+[DEBUG] Cycle 19/91 Expected: out0   = 0x4865339056f, valid_out0   = 1
+[PASS] Cycle 19: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x37e45c5c245c to in2 with dest id = 3
+Assigned value 0x2534cbec477d to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 20/91 Actual  : out2   = 0x534cbec477d, valid_out2   = 1
+[DEBUG] Cycle 20/91 Expected: out2   = 0x534cbec477d, valid_out2   = 1
+[PASS] Cycle 20: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x288ff73cfb10 to in1 with dest id = 2
+Assigned value 0x3d35093f732f to in3 with dest id = 3
+[0, 0, 1, 0]
+[DEBUG] Cycle 21/91 Actual  : out2   = 0x88ff73cfb10, valid_out2   = 1
+[DEBUG] Cycle 21/91 Expected: out2   = 0x88ff73cfb10, valid_out2   = 1
+[PASS] Cycle 21: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x30d35075b287 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 22/91 Actual  : out3   = 0xd35075b287, valid_out3   = 1
+[DEBUG] Cycle 22/91 Expected: out3   = 0xd35075b287, valid_out3   = 1
+[PASS] Cycle 22: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x178a9ae7aef to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 23/91 Actual  : out0   = 0x178a9ae7aef, valid_out0   = 1
+[DEBUG] Cycle 23/91 Expected: out0   = 0x178a9ae7aef, valid_out0   = 1
+[PASS] Cycle 23: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x17b03358e32d to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 24/91 Actual  : out1   = 0x7b03358e32d, valid_out1   = 1
+[DEBUG] Cycle 24/91 Expected: out1   = 0x7b03358e32d, valid_out1   = 1
+[PASS] Cycle 24: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x8e73f233eca to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 25/91 Actual  : out0   = 0x8e73f233eca, valid_out0   = 1
+[DEBUG] Cycle 25/91 Expected: out0   = 0x8e73f233eca, valid_out0   = 1
+[PASS] Cycle 25: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xa7bf328d0b2 to in3 with dest id = 0
+Assigned value 0x2044cdc74db7 to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 26/91 Actual  : out2   = 0x44cdc74db7, valid_out2   = 1
+[DEBUG] Cycle 26/91 Expected: out2   = 0x44cdc74db7, valid_out2   = 1
+[PASS] Cycle 26: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x37626d5d8fd3 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 27/91 Actual  : out3   = 0x7626d5d8fd3, valid_out3   = 1
+[DEBUG] Cycle 27/91 Expected: out3   = 0x7626d5d8fd3, valid_out3   = 1
+[PASS] Cycle 27: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xa896bf3b4b3 to in3 with dest id = 0
+Assigned value 0x3a6987f07ec7 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 28/91 Actual  : out3   = 0xa6987f07ec7, valid_out3   = 1
+[DEBUG] Cycle 28/91 Expected: out3   = 0xa6987f07ec7, valid_out3   = 1
+[PASS] Cycle 28: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3e319baad294 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 29/91 Actual  : out3   = 0xe319baad294, valid_out3   = 1
+[DEBUG] Cycle 29/91 Expected: out3   = 0xe319baad294, valid_out3   = 1
+[PASS] Cycle 29: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x34c967b29645 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 30/91 Actual  : out3   = 0x4c967b29645, valid_out3   = 1
+[DEBUG] Cycle 30/91 Expected: out3   = 0x4c967b29645, valid_out3   = 1
+[PASS] Cycle 30: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xe514492c50a to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 31/91 Actual  : out0   = 0xe514492c50a, valid_out0   = 1
+[DEBUG] Cycle 31/91 Expected: out0   = 0xe514492c50a, valid_out0   = 1
+[PASS] Cycle 31: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x33eff9d99159 to in3 with dest id = 3
+Assigned value 0x3f65989e0ac5 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 32/91 Actual  : out3   = 0xf65989e0ac5, valid_out3   = 1
+[DEBUG] Cycle 32/91 Expected: out3   = 0xf65989e0ac5, valid_out3   = 1
+[PASS] Cycle 32: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x78b4e55df77 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 33/91 Actual  : out0   = 0x78b4e55df77, valid_out0   = 1
+[DEBUG] Cycle 33/91 Expected: out0   = 0x78b4e55df77, valid_out0   = 1
+[PASS] Cycle 33: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2b8c055e7b30 to in0 with dest id = 2
+Assigned value 0x51d282502fe to in2 with dest id = 0
+[0, 0, 1, 0]
+[DEBUG] Cycle 34/91 Actual  : out2   = 0xb8c055e7b30, valid_out2   = 1
+[DEBUG] Cycle 34/91 Expected: out2   = 0xb8c055e7b30, valid_out2   = 1
+[PASS] Cycle 34: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xd5fbaaf83f3 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 35/91 Actual  : out0   = 0xd5fbaaf83f3, valid_out0   = 1
+[DEBUG] Cycle 35/91 Expected: out0   = 0xd5fbaaf83f3, valid_out0   = 1
+[PASS] Cycle 35: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x395f57bfef03 to in0 with dest id = 3
+Assigned value 0x2811a9eb6b92 to in2 with dest id = 2
+[0, 0, 0, 1]
+[DEBUG] Cycle 36/91 Actual  : out3   = 0x95f57bfef03, valid_out3   = 1
+[DEBUG] Cycle 36/91 Expected: out3   = 0x95f57bfef03, valid_out3   = 1
+[PASS] Cycle 36: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1b4e6dbee20f to in0 with dest id = 1
+Assigned value 0x2e0f7cd2aa5 to in1 with dest id = 0
+[0, 1, 0, 0]
+[DEBUG] Cycle 37/91 Actual  : out1   = 0xb4e6dbee20f, valid_out1   = 1
+[DEBUG] Cycle 37/91 Expected: out1   = 0xb4e6dbee20f, valid_out1   = 1
+[PASS] Cycle 37: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xc48c1595b4f to in0 with dest id = 0
+Assigned value 0x2afbbef80ea9 to in3 with dest id = 2
+[1, 0, 0, 0]
+[DEBUG] Cycle 38/91 Actual  : out0   = 0xc48c1595b4f, valid_out0   = 1
+[DEBUG] Cycle 38/91 Expected: out0   = 0xc48c1595b4f, valid_out0   = 1
+[PASS] Cycle 38: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x24fb93351cad to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 39/91 Actual  : out2   = 0x4fb93351cad, valid_out2   = 1
+[DEBUG] Cycle 39/91 Expected: out2   = 0x4fb93351cad, valid_out2   = 1
+[PASS] Cycle 39: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x22eae8b05a39 to in3 with dest id = 2
+Assigned value 0x3e26adca6607 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 40/91 Actual  : out3   = 0xe26adca6607, valid_out3   = 1
+[DEBUG] Cycle 40/91 Expected: out3   = 0xe26adca6607, valid_out3   = 1
+[PASS] Cycle 40: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xb6e6a83405 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 41/91 Actual  : out0   = 0xb6e6a83405, valid_out0   = 1
+[DEBUG] Cycle 41/91 Expected: out0   = 0xb6e6a83405, valid_out0   = 1
+[PASS] Cycle 41: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1e84dc10f178 to in2 with dest id = 1
+Assigned value 0x3469466d2ab4 to in3 with dest id = 3
+[0, 1, 0, 0]
+[DEBUG] Cycle 42/91 Actual  : out1   = 0xe84dc10f178, valid_out1   = 1
+[DEBUG] Cycle 42/91 Expected: out1   = 0xe84dc10f178, valid_out1   = 1
+[PASS] Cycle 42: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x126b6d866a01 to in2 with dest id = 1
+Assigned value 0x2736b7d03065 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 43/91 Actual  : out2   = 0x736b7d03065, valid_out2   = 1
+[DEBUG] Cycle 43/91 Expected: out2   = 0x736b7d03065, valid_out2   = 1
+[PASS] Cycle 43: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x21dd01681556 to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 44/91 Actual  : out2   = 0x1dd01681556, valid_out2   = 1
+[DEBUG] Cycle 44/91 Expected: out2   = 0x1dd01681556, valid_out2   = 1
+[PASS] Cycle 44: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xa16c4bb8f03 to in3 with dest id = 0
+Assigned value 0x2ccd6519276e to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 45/91 Actual  : out2   = 0xccd6519276e, valid_out2   = 1
+[DEBUG] Cycle 45/91 Expected: out2   = 0xccd6519276e, valid_out2   = 1
+[PASS] Cycle 45: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x310436b7a219 to in0 with dest id = 3
+Assigned value 0x349a8a50f3b to in2 with dest id = 0
+[0, 0, 0, 1]
+[DEBUG] Cycle 46/91 Actual  : out3   = 0x10436b7a219, valid_out3   = 1
+[DEBUG] Cycle 46/91 Expected: out3   = 0x10436b7a219, valid_out3   = 1
+[PASS] Cycle 46: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1c41f881ee17 to in2 with dest id = 1
+Assigned value 0x1d4ed9dac00d to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 47/91 Actual  : out1   = 0xd4ed9dac00d, valid_out1   = 1
+[DEBUG] Cycle 47/91 Expected: out1   = 0xd4ed9dac00d, valid_out1   = 1
+[PASS] Cycle 47: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x14caa6b541c8 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 48/91 Actual  : out1   = 0x4caa6b541c8, valid_out1   = 1
+[DEBUG] Cycle 48/91 Expected: out1   = 0x4caa6b541c8, valid_out1   = 1
+[PASS] Cycle 48: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x304be38b85fc to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 49/91 Actual  : out3   = 0x4be38b85fc, valid_out3   = 1
+[DEBUG] Cycle 49/91 Expected: out3   = 0x4be38b85fc, valid_out3   = 1
+[PASS] Cycle 49: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1332eff65c8f to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 50/91 Actual  : out1   = 0x332eff65c8f, valid_out1   = 1
+[DEBUG] Cycle 50/91 Expected: out1   = 0x332eff65c8f, valid_out1   = 1
+[PASS] Cycle 50: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x6e7a5cc26fe to in1 with dest id = 0
+Assigned value 0xe10dfb0d1d1 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 51/91 Actual  : out0   = 0xe10dfb0d1d1, valid_out0   = 1
+[DEBUG] Cycle 51/91 Expected: out0   = 0xe10dfb0d1d1, valid_out0   = 1
+[PASS] Cycle 51: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x293afad6f970 to in1 with dest id = 2
+Assigned value 0x2f01846b95be to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 52/91 Actual  : out2   = 0xf01846b95be, valid_out2   = 1
+[DEBUG] Cycle 52/91 Expected: out2   = 0xf01846b95be, valid_out2   = 1
+[PASS] Cycle 52: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3cf14fc780d3 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 53/91 Actual  : out3   = 0xcf14fc780d3, valid_out3   = 1
+[DEBUG] Cycle 53/91 Expected: out3   = 0xcf14fc780d3, valid_out3   = 1
+[PASS] Cycle 53: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x38d523229ce3 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 54/91 Actual  : out3   = 0x8d523229ce3, valid_out3   = 1
+[DEBUG] Cycle 54/91 Expected: out3   = 0x8d523229ce3, valid_out3   = 1
+[PASS] Cycle 54: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3ece0fde45bd to in2 with dest id = 3
+Assigned value 0x2aa7c40be144 to in3 with dest id = 2
+[0, 0, 0, 1]
+[DEBUG] Cycle 55/91 Actual  : out3   = 0xece0fde45bd, valid_out3   = 1
+[DEBUG] Cycle 55/91 Expected: out3   = 0xece0fde45bd, valid_out3   = 1
+[PASS] Cycle 55: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x21236db58fe9 to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 56/91 Actual  : out2   = 0x1236db58fe9, valid_out2   = 1
+[DEBUG] Cycle 56/91 Expected: out2   = 0x1236db58fe9, valid_out2   = 1
+[PASS] Cycle 56: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xa72b71d6eb4 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 57/91 Actual  : out0   = 0xa72b71d6eb4, valid_out0   = 1
+[DEBUG] Cycle 57/91 Expected: out0   = 0xa72b71d6eb4, valid_out0   = 1
+[PASS] Cycle 57: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3e80c7c09ae2 to in3 with dest id = 3
+Assigned value 0x8a1c27e6f94 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 58/91 Actual  : out0   = 0x8a1c27e6f94, valid_out0   = 1
+[DEBUG] Cycle 58/91 Expected: out0   = 0x8a1c27e6f94, valid_out0   = 1
+[PASS] Cycle 58: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x13557e444225 to in2 with dest id = 1
+Assigned value 0x32937b96dba1 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 59/91 Actual  : out3   = 0x2937b96dba1, valid_out3   = 1
+[DEBUG] Cycle 59/91 Expected: out3   = 0x2937b96dba1, valid_out3   = 1
+[PASS] Cycle 59: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1965568f91e1 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 60/91 Actual  : out1   = 0x965568f91e1, valid_out1   = 1
+[DEBUG] Cycle 60/91 Expected: out1   = 0x965568f91e1, valid_out1   = 1
+[PASS] Cycle 60: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1bdd0f3d85d to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 61/91 Actual  : out0   = 0x1bdd0f3d85d, valid_out0   = 1
+[DEBUG] Cycle 61/91 Expected: out0   = 0x1bdd0f3d85d, valid_out0   = 1
+[PASS] Cycle 61: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x30269d11fb9a to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 62/91 Actual  : out3   = 0x269d11fb9a, valid_out3   = 1
+[DEBUG] Cycle 62/91 Expected: out3   = 0x269d11fb9a, valid_out3   = 1
+[PASS] Cycle 62: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x73e1fa5723c to in1 with dest id = 0
+Assigned value 0xe7202fb90bc to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 63/91 Actual  : out0   = 0x73e1fa5723c, valid_out0   = 1
+[DEBUG] Cycle 63/91 Expected: out0   = 0x73e1fa5723c, valid_out0   = 1
+[PASS] Cycle 63: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x140674eb37ea to in1 with dest id = 1
+Assigned value 0x2d797b6d55b6 to in3 with dest id = 2
+[0, 1, 0, 0]
+[DEBUG] Cycle 64/91 Actual  : out1   = 0x40674eb37ea, valid_out1   = 1
+[DEBUG] Cycle 64/91 Expected: out1   = 0x40674eb37ea, valid_out1   = 1
+[PASS] Cycle 64: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x9b546e528a3 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 65/91 Actual  : out0   = 0x9b546e528a3, valid_out0   = 1
+[DEBUG] Cycle 65/91 Expected: out0   = 0x9b546e528a3, valid_out0   = 1
+[PASS] Cycle 65: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xc4ba8a200c2 to in3 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 66/91 Actual  : out0   = 0xc4ba8a200c2, valid_out0   = 1
+[DEBUG] Cycle 66/91 Expected: out0   = 0xc4ba8a200c2, valid_out0   = 1
+[PASS] Cycle 66: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x396f7b299e12 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 67/91 Actual  : out3   = 0x96f7b299e12, valid_out3   = 1
+[DEBUG] Cycle 67/91 Expected: out3   = 0x96f7b299e12, valid_out3   = 1
+[PASS] Cycle 67: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x197603002d56 to in3 with dest id = 1
+Assigned value 0x8deaad81f5c to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 68/91 Actual  : out0   = 0x8deaad81f5c, valid_out0   = 1
+[DEBUG] Cycle 68/91 Expected: out0   = 0x8deaad81f5c, valid_out0   = 1
+[PASS] Cycle 68: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x79de995c751 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 69/91 Actual  : out0   = 0x79de995c751, valid_out0   = 1
+[DEBUG] Cycle 69/91 Expected: out0   = 0x79de995c751, valid_out0   = 1
+[PASS] Cycle 69: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1c525e782b3a to in0 with dest id = 1
+Assigned value 0x3f9e9f81e82 to in2 with dest id = 0
+[0, 1, 0, 0]
+[DEBUG] Cycle 70/91 Actual  : out1   = 0xc525e782b3a, valid_out1   = 1
+[DEBUG] Cycle 70/91 Expected: out1   = 0xc525e782b3a, valid_out1   = 1
+[PASS] Cycle 70: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x29b2eaa154d2 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 71/91 Actual  : out2   = 0x9b2eaa154d2, valid_out2   = 1
+[DEBUG] Cycle 71/91 Expected: out2   = 0x9b2eaa154d2, valid_out2   = 1
+[PASS] Cycle 71: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x116597d35581 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 72/91 Actual  : out1   = 0x16597d35581, valid_out1   = 1
+[DEBUG] Cycle 72/91 Expected: out1   = 0x16597d35581, valid_out1   = 1
+[PASS] Cycle 72: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xc4b4b3790e3 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 73/91 Actual  : out0   = 0xc4b4b3790e3, valid_out0   = 1
+[DEBUG] Cycle 73/91 Expected: out0   = 0xc4b4b3790e3, valid_out0   = 1
+[PASS] Cycle 73: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xaa9943b061 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 74/91 Actual  : out0   = 0xaa9943b061, valid_out0   = 1
+[DEBUG] Cycle 74/91 Expected: out0   = 0xaa9943b061, valid_out0   = 1
+[PASS] Cycle 74: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1b1308ddc530 to in2 with dest id = 1
+Assigned value 0x5e0c2ffc132 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 75/91 Actual  : out0   = 0x5e0c2ffc132, valid_out0   = 1
+[DEBUG] Cycle 75/91 Expected: out0   = 0x5e0c2ffc132, valid_out0   = 1
+[PASS] Cycle 75: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2d062c8070a7 to in1 with dest id = 2
+Assigned value 0x383031d2c289 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 76/91 Actual  : out3   = 0x83031d2c289, valid_out3   = 1
+[DEBUG] Cycle 76/91 Expected: out3   = 0x83031d2c289, valid_out3   = 1
+[PASS] Cycle 76: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3840098ea9a3 to in1 with dest id = 3
+Assigned value 0x1d0e8082aca2 to in3 with dest id = 1
+[0, 0, 0, 1]
+[DEBUG] Cycle 77/91 Actual  : out3   = 0x840098ea9a3, valid_out3   = 1
+[DEBUG] Cycle 77/91 Expected: out3   = 0x840098ea9a3, valid_out3   = 1
+[PASS] Cycle 77: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x311720207bed to in2 with dest id = 3
+Assigned value 0x59db30f5930 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 78/91 Actual  : out0   = 0x59db30f5930, valid_out0   = 1
+[DEBUG] Cycle 78/91 Expected: out0   = 0x59db30f5930, valid_out0   = 1
+[PASS] Cycle 78: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x251a8d19216b to in1 with dest id = 2
+Assigned value 0x2561e995b25d to in3 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 79/91 Actual  : out2   = 0x51a8d19216b, valid_out2   = 1
+[DEBUG] Cycle 79/91 Expected: out2   = 0x51a8d19216b, valid_out2   = 1
+[PASS] Cycle 79: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x15c7e1af6098 to in1 with dest id = 1
+Assigned value 0x329d2335771c to in3 with dest id = 3
+[0, 1, 0, 0]
+[DEBUG] Cycle 80/91 Actual  : out1   = 0x5c7e1af6098, valid_out1   = 1
+[DEBUG] Cycle 80/91 Expected: out1   = 0x5c7e1af6098, valid_out1   = 1
+[PASS] Cycle 80: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3aabacdb3d40 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 81/91 Actual  : out3   = 0xaabacdb3d40, valid_out3   = 1
+[DEBUG] Cycle 81/91 Expected: out3   = 0xaabacdb3d40, valid_out3   = 1
+[PASS] Cycle 81: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x251fa441eef0 to in3 with dest id = 2
+Assigned value 0x3caf0f0bd0f9 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 82/91 Actual  : out3   = 0xcaf0f0bd0f9, valid_out3   = 1
+[DEBUG] Cycle 82/91 Expected: out3   = 0xcaf0f0bd0f9, valid_out3   = 1
+[PASS] Cycle 82: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1b1e697a0691 to in1 with dest id = 1
+Assigned value 0x2e0089cd6b33 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 83/91 Actual  : out2   = 0xe0089cd6b33, valid_out2   = 1
+[DEBUG] Cycle 83/91 Expected: out2   = 0xe0089cd6b33, valid_out2   = 1
+[PASS] Cycle 83: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x26ca7e80ab5d to in3 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 84/91 Actual  : out2   = 0x6ca7e80ab5d, valid_out2   = 1
+[DEBUG] Cycle 84/91 Expected: out2   = 0x6ca7e80ab5d, valid_out2   = 1
+[PASS] Cycle 84: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x9cbff0582cd to in1 with dest id = 0
+Assigned value 0x2e381e62bc06 to in3 with dest id = 2
+[1, 0, 0, 0]
+[DEBUG] Cycle 85/91 Actual  : out0   = 0x9cbff0582cd, valid_out0   = 1
+[DEBUG] Cycle 85/91 Expected: out0   = 0x9cbff0582cd, valid_out0   = 1
+[PASS] Cycle 85: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1e0e7d5335b2 to in1 with dest id = 1
+Assigned value 0x3b753296c14d to in3 with dest id = 3
+[0, 1, 0, 0]
+[DEBUG] Cycle 86/91 Actual  : out1   = 0xe0e7d5335b2, valid_out1   = 1
+[DEBUG] Cycle 86/91 Expected: out1   = 0xe0e7d5335b2, valid_out1   = 1
+[PASS] Cycle 86: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3dc2d1f09e96 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 87/91 Actual  : out3   = 0xdc2d1f09e96, valid_out3   = 1
+[DEBUG] Cycle 87/91 Expected: out3   = 0xdc2d1f09e96, valid_out3   = 1
+[PASS] Cycle 87: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1ce472672c29 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 88/91 Actual  : out1   = 0xce472672c29, valid_out1   = 1
+[DEBUG] Cycle 88/91 Expected: out1   = 0xce472672c29, valid_out1   = 1
+[PASS] Cycle 88: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x67816b917d to in2 with dest id = 0
+Assigned value 0x3bff7b12ce40 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 89/91 Actual  : out3   = 0xbff7b12ce40, valid_out3   = 1
+[DEBUG] Cycle 89/91 Expected: out3   = 0xbff7b12ce40, valid_out3   = 1
+[PASS] Cycle 89: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1a1d96dbc8de to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 90/91 Actual  : out1   = 0xa1d96dbc8de, valid_out1   = 1
+[DEBUG] Cycle 90/91 Expected: out1   = 0xa1d96dbc8de, valid_out1   = 1
+[PASS] Cycle 90: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x20ac648668d1 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 91/91 Actual  : out2   = 0xac648668d1, valid_out2   = 1
+[DEBUG] Cycle 91/91 Expected: out2   = 0xac648668d1, valid_out2   = 1
+[PASS] Cycle 91: Expected result matches actual output, and all other outputs are low.
+
+
+  3680.00ns INFO     cocotb.regression                  test_crossbar_switch.test_crossbar_switch passed
+  3680.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_crossbar_switch.test_crossbar_switch   PASS        3680.00           0.01     338398.64  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            3680.00           0.01     302043.73  **
+                                                        ***************************************************************************************************
+[DEBUG] Running simulation with DATA_WIDTH=44
+[DEBUG] Parameters: {'DATA_WIDTH': 44}
+PASSED
+../../src/test_runner.py::test_crossbar_switch[0-57]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258518
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+[INFO] Test 'test_crossbar_switch' completed successfully.
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_crossbar_switch.test_crossbar_switch (1/1)
+[INFO] Clock started.
+DATA_WIDTH = 57
+NUM_PORTS = 4
+Assigned value 0x7ece2da3a0226b8 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 1/91 Actual  : out3   = 0x1ece2da3a0226b8, valid_out3   = 1
+[DEBUG] Cycle 1/91 Expected: out3   = 0x1ece2da3a0226b8, valid_out3   = 1
+[PASS] Cycle 1: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x396d030e899b17b to in2 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 2/91 Actual  : out1   = 0x196d030e899b17b, valid_out1   = 1
+[DEBUG] Cycle 2/91 Expected: out1   = 0x196d030e899b17b, valid_out1   = 1
+[PASS] Cycle 2: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x310ce8ce208b5bc to in2 with dest id = 1
+Assigned value 0x2181a4e88fad405 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 3/91 Actual  : out1   = 0x181a4e88fad405, valid_out1   = 1
+[DEBUG] Cycle 3/91 Expected: out1   = 0x181a4e88fad405, valid_out1   = 1
+[PASS] Cycle 3: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x14d90ccc2103c0 to in3 with dest id = 0
+Assigned value 0x31188ee7b00adf7 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 4/91 Actual  : out1   = 0x11188ee7b00adf7, valid_out1   = 1
+[DEBUG] Cycle 4/91 Expected: out1   = 0x11188ee7b00adf7, valid_out1   = 1
+[PASS] Cycle 4: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x227b5c198408d5a to in3 with dest id = 1
+Assigned value 0x4065d0008b10866 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 5/91 Actual  : out2   = 0x65d0008b10866, valid_out2   = 1
+[DEBUG] Cycle 5/91 Expected: out2   = 0x65d0008b10866, valid_out2   = 1
+[PASS] Cycle 5: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5a240b9409f29 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 6/91 Actual  : out0   = 0x5a240b9409f29, valid_out0   = 1
+[DEBUG] Cycle 6/91 Expected: out0   = 0x5a240b9409f29, valid_out0   = 1
+[PASS] Cycle 6: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x30e520d6779ad51 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 7/91 Actual  : out1   = 0x10e520d6779ad51, valid_out1   = 1
+[DEBUG] Cycle 7/91 Expected: out1   = 0x10e520d6779ad51, valid_out1   = 1
+[PASS] Cycle 7: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7cfa40557b419fc to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 8/91 Actual  : out3   = 0x1cfa40557b419fc, valid_out3   = 1
+[DEBUG] Cycle 8/91 Expected: out3   = 0x1cfa40557b419fc, valid_out3   = 1
+[PASS] Cycle 8: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x6b9485fb77301da to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 9/91 Actual  : out3   = 0xb9485fb77301da, valid_out3   = 1
+[DEBUG] Cycle 9/91 Expected: out3   = 0xb9485fb77301da, valid_out3   = 1
+[PASS] Cycle 9: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x37737d5f3494072 to in2 with dest id = 1
+Assigned value 0x74eb445f4dd4af7 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 10/91 Actual  : out3   = 0x14eb445f4dd4af7, valid_out3   = 1
+[DEBUG] Cycle 10/91 Expected: out3   = 0x14eb445f4dd4af7, valid_out3   = 1
+[PASS] Cycle 10: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x6bef8b68f5e0a62 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 11/91 Actual  : out3   = 0xbef8b68f5e0a62, valid_out3   = 1
+[DEBUG] Cycle 11/91 Expected: out3   = 0xbef8b68f5e0a62, valid_out3   = 1
+[PASS] Cycle 11: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x62780b072519161 to in3 with dest id = 3
+Assigned value 0x2f3444e5777fadb to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 12/91 Actual  : out1   = 0xf3444e5777fadb, valid_out1   = 1
+[DEBUG] Cycle 12/91 Expected: out1   = 0xf3444e5777fadb, valid_out1   = 1
+[PASS] Cycle 12: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x9a1c4e3b7a395a to in2 with dest id = 0
+Assigned value 0x21eaba5ecdf1e97 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 13/91 Actual  : out1   = 0x1eaba5ecdf1e97, valid_out1   = 1
+[DEBUG] Cycle 13/91 Expected: out1   = 0x1eaba5ecdf1e97, valid_out1   = 1
+[PASS] Cycle 13: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x6bf32b21de3d616 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 14/91 Actual  : out3   = 0xbf32b21de3d616, valid_out3   = 1
+[DEBUG] Cycle 14/91 Expected: out3   = 0xbf32b21de3d616, valid_out3   = 1
+[PASS] Cycle 14: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xa381693a81899c to in1 with dest id = 0
+Assigned value 0x7814d0ea3009f17 to in2 with dest id = 3
+[1, 0, 0, 0]
+[DEBUG] Cycle 15/91 Actual  : out0   = 0xa381693a81899c, valid_out0   = 1
+[DEBUG] Cycle 15/91 Expected: out0   = 0xa381693a81899c, valid_out0   = 1
+[PASS] Cycle 15: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xa5d1dca3ec8fcf to in2 with dest id = 0
+Assigned value 0xd96a58664a941c to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 16/91 Actual  : out0   = 0xd96a58664a941c, valid_out0   = 1
+[DEBUG] Cycle 16/91 Expected: out0   = 0xd96a58664a941c, valid_out0   = 1
+[PASS] Cycle 16: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x609b80ed51d4519 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 17/91 Actual  : out3   = 0x9b80ed51d4519, valid_out3   = 1
+[DEBUG] Cycle 17/91 Expected: out3   = 0x9b80ed51d4519, valid_out3   = 1
+[PASS] Cycle 17: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x59ad1cfb39a8ba2 to in2 with dest id = 2
+Assigned value 0x23b87bb7cd69116 to in3 with dest id = 1
+[0, 0, 1, 0]
+[DEBUG] Cycle 18/91 Actual  : out2   = 0x19ad1cfb39a8ba2, valid_out2   = 1
+[DEBUG] Cycle 18/91 Expected: out2   = 0x19ad1cfb39a8ba2, valid_out2   = 1
+[PASS] Cycle 18: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x90dfc45339056f to in3 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 19/91 Actual  : out0   = 0x90dfc45339056f, valid_out0   = 1
+[DEBUG] Cycle 19/91 Expected: out0   = 0x90dfc45339056f, valid_out0   = 1
+[PASS] Cycle 19: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x6fc91225c5c245c to in2 with dest id = 3
+Assigned value 0x4a6985dcbec477d to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 20/91 Actual  : out2   = 0xa6985dcbec477d, valid_out2   = 1
+[DEBUG] Cycle 20/91 Expected: out2   = 0xa6985dcbec477d, valid_out2   = 1
+[PASS] Cycle 20: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x511e8a3f73cfb10 to in1 with dest id = 2
+Assigned value 0x7a6a1a1093f732f to in3 with dest id = 3
+[0, 0, 1, 0]
+[DEBUG] Cycle 21/91 Actual  : out2   = 0x111e8a3f73cfb10, valid_out2   = 1
+[DEBUG] Cycle 21/91 Expected: out2   = 0x111e8a3f73cfb10, valid_out2   = 1
+[PASS] Cycle 21: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x61a63f65075b287 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 22/91 Actual  : out3   = 0x1a63f65075b287, valid_out3   = 1
+[DEBUG] Cycle 22/91 Expected: out3   = 0x1a63f65075b287, valid_out3   = 1
+[PASS] Cycle 22: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2f0593a9ae7aef to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 23/91 Actual  : out0   = 0x2f0593a9ae7aef, valid_out0   = 1
+[DEBUG] Cycle 23/91 Expected: out0   = 0x2f0593a9ae7aef, valid_out0   = 1
+[PASS] Cycle 23: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2f60d903358e32d to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 24/91 Actual  : out1   = 0xf60d903358e32d, valid_out1   = 1
+[DEBUG] Cycle 24/91 Expected: out1   = 0xf60d903358e32d, valid_out1   = 1
+[PASS] Cycle 24: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x11cf1b53f233eca to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 25/91 Actual  : out0   = 0x11cf1b53f233eca, valid_out0   = 1
+[DEBUG] Cycle 25/91 Expected: out0   = 0x11cf1b53f233eca, valid_out0   = 1
+[PASS] Cycle 25: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x14f6589f328d0b2 to in3 with dest id = 0
+Assigned value 0x4088213cdc74db7 to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 26/91 Actual  : out2   = 0x88213cdc74db7, valid_out2   = 1
+[DEBUG] Cycle 26/91 Expected: out2   = 0x88213cdc74db7, valid_out2   = 1
+[PASS] Cycle 26: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x6ec564a6d5d8fd3 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 27/91 Actual  : out3   = 0xec564a6d5d8fd3, valid_out3   = 1
+[DEBUG] Cycle 27/91 Expected: out3   = 0xec564a6d5d8fd3, valid_out3   = 1
+[PASS] Cycle 27: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x151367e6bf3b4b3 to in3 with dest id = 0
+Assigned value 0x74d207887f07ec7 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 28/91 Actual  : out3   = 0x14d207887f07ec7, valid_out3   = 1
+[DEBUG] Cycle 28/91 Expected: out3   = 0x14d207887f07ec7, valid_out3   = 1
+[PASS] Cycle 28: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7c62ea29baad294 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 29/91 Actual  : out3   = 0x1c62ea29baad294, valid_out3   = 1
+[DEBUG] Cycle 29/91 Expected: out3   = 0x1c62ea29baad294, valid_out3   = 1
+[PASS] Cycle 29: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x699267b67b29645 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 30/91 Actual  : out3   = 0x99267b67b29645, valid_out3   = 1
+[DEBUG] Cycle 30/91 Expected: out3   = 0x99267b67b29645, valid_out3   = 1
+[PASS] Cycle 30: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1ca20994492c50a to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 31/91 Actual  : out0   = 0x1ca20994492c50a, valid_out0   = 1
+[DEBUG] Cycle 31/91 Expected: out0   = 0x1ca20994492c50a, valid_out0   = 1
+[PASS] Cycle 31: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x67df9c9f9d99159 to in3 with dest id = 3
+Assigned value 0x7eca82f989e0ac5 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 32/91 Actual  : out3   = 0x1eca82f989e0ac5, valid_out3   = 1
+[DEBUG] Cycle 32/91 Expected: out3   = 0x1eca82f989e0ac5, valid_out3   = 1
+[PASS] Cycle 32: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xf168f44e55df77 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 33/91 Actual  : out0   = 0xf168f44e55df77, valid_out0   = 1
+[DEBUG] Cycle 33/91 Expected: out0   = 0xf168f44e55df77, valid_out0   = 1
+[PASS] Cycle 33: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5719b7a055e7b30 to in0 with dest id = 2
+Assigned value 0xa3b5cf282502fe to in2 with dest id = 0
+[0, 0, 1, 0]
+[DEBUG] Cycle 34/91 Actual  : out2   = 0x1719b7a055e7b30, valid_out2   = 1
+[DEBUG] Cycle 34/91 Expected: out2   = 0x1719b7a055e7b30, valid_out2   = 1
+[PASS] Cycle 34: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1abe5e7baaf83f3 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 35/91 Actual  : out0   = 0x1abe5e7baaf83f3, valid_out0   = 1
+[DEBUG] Cycle 35/91 Expected: out0   = 0x1abe5e7baaf83f3, valid_out0   = 1
+[PASS] Cycle 35: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x72bf20d57bfef03 to in0 with dest id = 3
+Assigned value 0x5023a4ba9eb6b92 to in2 with dest id = 2
+[0, 0, 0, 1]
+[DEBUG] Cycle 36/91 Actual  : out3   = 0x12bf20d57bfef03, valid_out3   = 1
+[DEBUG] Cycle 36/91 Expected: out3   = 0x12bf20d57bfef03, valid_out3   = 1
+[PASS] Cycle 36: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x369d8e26dbee20f to in0 with dest id = 1
+Assigned value 0x5c1a68f7cd2aa5 to in1 with dest id = 0
+[0, 1, 0, 0]
+[DEBUG] Cycle 37/91 Actual  : out1   = 0x169d8e26dbee20f, valid_out1   = 1
+[DEBUG] Cycle 37/91 Expected: out1   = 0x169d8e26dbee20f, valid_out1   = 1
+[PASS] Cycle 37: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x189197fc1595b4f to in0 with dest id = 0
+Assigned value 0x55f7d05bef80ea9 to in3 with dest id = 2
+[1, 0, 0, 0]
+[DEBUG] Cycle 38/91 Actual  : out0   = 0x189197fc1595b4f, valid_out0   = 1
+[DEBUG] Cycle 38/91 Expected: out0   = 0x189197fc1595b4f, valid_out0   = 1
+[PASS] Cycle 38: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x49f77ac93351cad to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 39/91 Actual  : out2   = 0x9f77ac93351cad, valid_out2   = 1
+[DEBUG] Cycle 39/91 Expected: out2   = 0x9f77ac93351cad, valid_out2   = 1
+[PASS] Cycle 39: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x45d5525e8b05a39 to in3 with dest id = 2
+Assigned value 0x7c4c108adca6607 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 40/91 Actual  : out3   = 0x1c4c108adca6607, valid_out3   = 1
+[DEBUG] Cycle 40/91 Expected: out3   = 0x1c4c108adca6607, valid_out3   = 1
+[PASS] Cycle 40: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x16c7ebe6a83405 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 41/91 Actual  : out0   = 0x16c7ebe6a83405, valid_out0   = 1
+[DEBUG] Cycle 41/91 Expected: out0   = 0x16c7ebe6a83405, valid_out0   = 1
+[PASS] Cycle 41: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3d08ceddc10f178 to in2 with dest id = 1
+Assigned value 0x68d2ce9466d2ab4 to in3 with dest id = 3
+[0, 1, 0, 0]
+[DEBUG] Cycle 42/91 Actual  : out1   = 0x1d08ceddc10f178, valid_out1   = 1
+[DEBUG] Cycle 42/91 Expected: out1   = 0x1d08ceddc10f178, valid_out1   = 1
+[PASS] Cycle 42: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x24d730e6d866a01 to in2 with dest id = 1
+Assigned value 0x4e6ccf7b7d03065 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 43/91 Actual  : out2   = 0xe6ccf7b7d03065, valid_out2   = 1
+[DEBUG] Cycle 43/91 Expected: out2   = 0xe6ccf7b7d03065, valid_out2   = 1
+[PASS] Cycle 43: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x43ba33d01681556 to in2 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 44/91 Actual  : out2   = 0x3ba33d01681556, valid_out2   = 1
+[DEBUG] Cycle 44/91 Expected: out2   = 0x3ba33d01681556, valid_out2   = 1
+[PASS] Cycle 44: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x142c661c4bb8f03 to in3 with dest id = 0
+Assigned value 0x599b3e26519276e to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 45/91 Actual  : out2   = 0x199b3e26519276e, valid_out2   = 1
+[DEBUG] Cycle 45/91 Expected: out2   = 0x199b3e26519276e, valid_out2   = 1
+[PASS] Cycle 45: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x620816d36b7a219 to in0 with dest id = 3
+Assigned value 0x6930a4a8a50f3b to in2 with dest id = 0
+[0, 0, 0, 1]
+[DEBUG] Cycle 46/91 Actual  : out3   = 0x20816d36b7a219, valid_out3   = 1
+[DEBUG] Cycle 46/91 Expected: out3   = 0x20816d36b7a219, valid_out3   = 1
+[PASS] Cycle 46: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3883b5df881ee17 to in2 with dest id = 1
+Assigned value 0x3a9c989d9dac00d to in1 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 47/91 Actual  : out1   = 0x1a9c989d9dac00d, valid_out1   = 1
+[DEBUG] Cycle 47/91 Expected: out1   = 0x1a9c989d9dac00d, valid_out1   = 1
+[PASS] Cycle 47: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x29958e0a6b541c8 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 48/91 Actual  : out1   = 0x9958e0a6b541c8, valid_out1   = 1
+[DEBUG] Cycle 48/91 Expected: out1   = 0x9958e0a6b541c8, valid_out1   = 1
+[PASS] Cycle 48: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x60967ede38b85fc to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 49/91 Actual  : out3   = 0x967ede38b85fc, valid_out3   = 1
+[DEBUG] Cycle 49/91 Expected: out3   = 0x967ede38b85fc, valid_out3   = 1
+[PASS] Cycle 49: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2665ed5eff65c8f to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 50/91 Actual  : out1   = 0x665ed5eff65c8f, valid_out1   = 1
+[DEBUG] Cycle 50/91 Expected: out1   = 0x665ed5eff65c8f, valid_out1   = 1
+[PASS] Cycle 50: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xdcf0d5a5cc26fe to in1 with dest id = 0
+Assigned value 0x1c2062cdfb0d1d1 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 51/91 Actual  : out0   = 0x1c2062cdfb0d1d1, valid_out0   = 1
+[DEBUG] Cycle 51/91 Expected: out0   = 0x1c2062cdfb0d1d1, valid_out0   = 1
+[PASS] Cycle 51: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x52750b1fad6f970 to in1 with dest id = 2
+Assigned value 0x5e036a8846b95be to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 52/91 Actual  : out2   = 0x1e036a8846b95be, valid_out2   = 1
+[DEBUG] Cycle 52/91 Expected: out2   = 0x1e036a8846b95be, valid_out2   = 1
+[PASS] Cycle 52: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x79e34394fc780d3 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 53/91 Actual  : out3   = 0x19e34394fc780d3, valid_out3   = 1
+[DEBUG] Cycle 53/91 Expected: out3   = 0x19e34394fc780d3, valid_out3   = 1
+[PASS] Cycle 53: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x71ab53f23229ce3 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 54/91 Actual  : out3   = 0x11ab53f23229ce3, valid_out3   = 1
+[DEBUG] Cycle 54/91 Expected: out3   = 0x11ab53f23229ce3, valid_out3   = 1
+[PASS] Cycle 54: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7d9d8c10fde45bd to in2 with dest id = 3
+Assigned value 0x554f9e3c40be144 to in3 with dest id = 2
+[0, 0, 0, 1]
+[DEBUG] Cycle 55/91 Actual  : out3   = 0x1d9d8c10fde45bd, valid_out3   = 1
+[DEBUG] Cycle 55/91 Expected: out3   = 0x1d9d8c10fde45bd, valid_out3   = 1
+[PASS] Cycle 55: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4246e5c6db58fe9 to in1 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 56/91 Actual  : out2   = 0x246e5c6db58fe9, valid_out2   = 1
+[DEBUG] Cycle 56/91 Expected: out2   = 0x246e5c6db58fe9, valid_out2   = 1
+[PASS] Cycle 56: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x14e5a42b71d6eb4 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 57/91 Actual  : out0   = 0x14e5a42b71d6eb4, valid_out0   = 1
+[DEBUG] Cycle 57/91 Expected: out0   = 0x14e5a42b71d6eb4, valid_out0   = 1
+[PASS] Cycle 57: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7d01c03c7c09ae2 to in3 with dest id = 3
+Assigned value 0x1143ae5c27e6f94 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 58/91 Actual  : out0   = 0x1143ae5c27e6f94, valid_out0   = 1
+[DEBUG] Cycle 58/91 Expected: out0   = 0x1143ae5c27e6f94, valid_out0   = 1
+[PASS] Cycle 58: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x26ab0067e444225 to in2 with dest id = 1
+Assigned value 0x65278f07b96dba1 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 59/91 Actual  : out3   = 0x5278f07b96dba1, valid_out3   = 1
+[DEBUG] Cycle 59/91 Expected: out3   = 0x5278f07b96dba1, valid_out3   = 1
+[PASS] Cycle 59: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x32cb0a3568f91e1 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 60/91 Actual  : out1   = 0x12cb0a3568f91e1, valid_out1   = 1
+[DEBUG] Cycle 60/91 Expected: out1   = 0x12cb0a3568f91e1, valid_out1   = 1
+[PASS] Cycle 60: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x37b926d0f3d85d to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 61/91 Actual  : out0   = 0x37b926d0f3d85d, valid_out0   = 1
+[DEBUG] Cycle 61/91 Expected: out0   = 0x37b926d0f3d85d, valid_out0   = 1
+[PASS] Cycle 61: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x604c96d9d11fb9a to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 62/91 Actual  : out3   = 0x4c96d9d11fb9a, valid_out3   = 1
+[DEBUG] Cycle 62/91 Expected: out3   = 0x4c96d9d11fb9a, valid_out3   = 1
+[PASS] Cycle 62: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xe7c7b61fa5723c to in1 with dest id = 0
+Assigned value 0x1ce5c1d02fb90bc to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 63/91 Actual  : out0   = 0xe7c7b61fa5723c, valid_out0   = 1
+[DEBUG] Cycle 63/91 Expected: out0   = 0xe7c7b61fa5723c, valid_out0   = 1
+[PASS] Cycle 63: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x280c70174eb37ea to in1 with dest id = 1
+Assigned value 0x5af38067b6d55b6 to in3 with dest id = 2
+[0, 1, 0, 0]
+[DEBUG] Cycle 64/91 Actual  : out1   = 0x80c70174eb37ea, valid_out1   = 1
+[DEBUG] Cycle 64/91 Expected: out1   = 0x80c70174eb37ea, valid_out1   = 1
+[PASS] Cycle 64: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x136b02746e528a3 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 65/91 Actual  : out0   = 0x136b02746e528a3, valid_out0   = 1
+[DEBUG] Cycle 65/91 Expected: out0   = 0x136b02746e528a3, valid_out0   = 1
+[PASS] Cycle 65: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1897a74a8a200c2 to in3 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 66/91 Actual  : out0   = 0x1897a74a8a200c2, valid_out0   = 1
+[DEBUG] Cycle 66/91 Expected: out0   = 0x1897a74a8a200c2, valid_out0   = 1
+[PASS] Cycle 66: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x72de7657b299e12 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 67/91 Actual  : out3   = 0x12de7657b299e12, valid_out3   = 1
+[DEBUG] Cycle 67/91 Expected: out3   = 0x12de7657b299e12, valid_out3   = 1
+[PASS] Cycle 67: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x32ec6fd03002d56 to in3 with dest id = 1
+Assigned value 0x11bc749aad81f5c to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 68/91 Actual  : out0   = 0x11bc749aad81f5c, valid_out0   = 1
+[DEBUG] Cycle 68/91 Expected: out0   = 0x11bc749aad81f5c, valid_out0   = 1
+[PASS] Cycle 68: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xf3b732e995c751 to in2 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 69/91 Actual  : out0   = 0xf3b732e995c751, valid_out0   = 1
+[DEBUG] Cycle 69/91 Expected: out0   = 0xf3b732e995c751, valid_out0   = 1
+[PASS] Cycle 69: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x38a4f715e782b3a to in0 with dest id = 1
+Assigned value 0x7f33dce9f81e82 to in2 with dest id = 0
+[0, 1, 0, 0]
+[DEBUG] Cycle 70/91 Actual  : out1   = 0x18a4f715e782b3a, valid_out1   = 1
+[DEBUG] Cycle 70/91 Expected: out1   = 0x18a4f715e782b3a, valid_out1   = 1
+[PASS] Cycle 70: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5364e92eaa154d2 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 71/91 Actual  : out2   = 0x1364e92eaa154d2, valid_out2   = 1
+[DEBUG] Cycle 71/91 Expected: out2   = 0x1364e92eaa154d2, valid_out2   = 1
+[PASS] Cycle 71: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x22cb69697d35581 to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 72/91 Actual  : out1   = 0x2cb69697d35581, valid_out1   = 1
+[DEBUG] Cycle 72/91 Expected: out1   = 0x2cb69697d35581, valid_out1   = 1
+[PASS] Cycle 72: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x18969044b3790e3 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 73/91 Actual  : out0   = 0x18969044b3790e3, valid_out0   = 1
+[DEBUG] Cycle 73/91 Expected: out0   = 0x18969044b3790e3, valid_out0   = 1
+[PASS] Cycle 73: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x155f639943b061 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 74/91 Actual  : out0   = 0x155f639943b061, valid_out0   = 1
+[DEBUG] Cycle 74/91 Expected: out0   = 0x155f639943b061, valid_out0   = 1
+[PASS] Cycle 74: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x36279d308ddc530 to in2 with dest id = 1
+Assigned value 0xbc0bc7c2ffc132 to in1 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 75/91 Actual  : out0   = 0xbc0bc7c2ffc132, valid_out0   = 1
+[DEBUG] Cycle 75/91 Expected: out0   = 0xbc0bc7c2ffc132, valid_out0   = 1
+[PASS] Cycle 75: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x5a0c61d2c8070a7 to in1 with dest id = 2
+Assigned value 0x706133631d2c289 to in0 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 76/91 Actual  : out3   = 0x106133631d2c289, valid_out3   = 1
+[DEBUG] Cycle 76/91 Expected: out3   = 0x106133631d2c289, valid_out3   = 1
+[PASS] Cycle 76: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7081c59098ea9a3 to in1 with dest id = 3
+Assigned value 0x3a1cdb98082aca2 to in3 with dest id = 1
+[0, 0, 0, 1]
+[DEBUG] Cycle 77/91 Actual  : out3   = 0x1081c59098ea9a3, valid_out3   = 1
+[DEBUG] Cycle 77/91 Expected: out3   = 0x1081c59098ea9a3, valid_out3   = 1
+[PASS] Cycle 77: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x622f15120207bed to in2 with dest id = 3
+Assigned value 0xb3a618b30f5930 to in0 with dest id = 0
+[1, 0, 0, 0]
+[DEBUG] Cycle 78/91 Actual  : out0   = 0xb3a618b30f5930, valid_out0   = 1
+[DEBUG] Cycle 78/91 Expected: out0   = 0xb3a618b30f5930, valid_out0   = 1
+[PASS] Cycle 78: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4a342bb8d19216b to in1 with dest id = 2
+Assigned value 0x4ac36c7e995b25d to in3 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 79/91 Actual  : out2   = 0xa342bb8d19216b, valid_out2   = 1
+[DEBUG] Cycle 79/91 Expected: out2   = 0xa342bb8d19216b, valid_out2   = 1
+[PASS] Cycle 79: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x2b8e0f7e1af6098 to in1 with dest id = 1
+Assigned value 0x653a76c2335771c to in3 with dest id = 3
+[0, 1, 0, 0]
+[DEBUG] Cycle 80/91 Actual  : out1   = 0xb8e0f7e1af6098, valid_out1   = 1
+[DEBUG] Cycle 80/91 Expected: out1   = 0xb8e0f7e1af6098, valid_out1   = 1
+[PASS] Cycle 80: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x75563d2acdb3d40 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 81/91 Actual  : out3   = 0x15563d2acdb3d40, valid_out3   = 1
+[DEBUG] Cycle 81/91 Expected: out3   = 0x15563d2acdb3d40, valid_out3   = 1
+[PASS] Cycle 81: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4a3e2f6a441eef0 to in3 with dest id = 2
+Assigned value 0x795f3670f0bd0f9 to in2 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 82/91 Actual  : out3   = 0x195f3670f0bd0f9, valid_out3   = 1
+[DEBUG] Cycle 82/91 Expected: out3   = 0x195f3670f0bd0f9, valid_out3   = 1
+[PASS] Cycle 82: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x363ddde697a0691 to in1 with dest id = 1
+Assigned value 0x5c0121a89cd6b33 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 83/91 Actual  : out2   = 0x1c0121a89cd6b33, valid_out2   = 1
+[DEBUG] Cycle 83/91 Expected: out2   = 0x1c0121a89cd6b33, valid_out2   = 1
+[PASS] Cycle 83: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4d94c637e80ab5d to in3 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 84/91 Actual  : out2   = 0xd94c637e80ab5d, valid_out2   = 1
+[DEBUG] Cycle 84/91 Expected: out2   = 0xd94c637e80ab5d, valid_out2   = 1
+[PASS] Cycle 84: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x1397df1ff0582cd to in1 with dest id = 0
+Assigned value 0x5c707231e62bc06 to in3 with dest id = 2
+[1, 0, 0, 0]
+[DEBUG] Cycle 85/91 Actual  : out0   = 0x1397df1ff0582cd, valid_out0   = 1
+[DEBUG] Cycle 85/91 Expected: out0   = 0x1397df1ff0582cd, valid_out0   = 1
+[PASS] Cycle 85: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x3c1db8f7d5335b2 to in1 with dest id = 1
+Assigned value 0x76ea3f83296c14d to in3 with dest id = 3
+[0, 1, 0, 0]
+[DEBUG] Cycle 86/91 Actual  : out1   = 0x1c1db8f7d5335b2, valid_out1   = 1
+[DEBUG] Cycle 86/91 Expected: out1   = 0x1c1db8f7d5335b2, valid_out1   = 1
+[PASS] Cycle 86: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x7b845a6d1f09e96 to in3 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 87/91 Actual  : out3   = 0x1b845a6d1f09e96, valid_out3   = 1
+[DEBUG] Cycle 87/91 Expected: out3   = 0x1b845a6d1f09e96, valid_out3   = 1
+[PASS] Cycle 87: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x39c971072672c29 to in3 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 88/91 Actual  : out1   = 0x19c971072672c29, valid_out1   = 1
+[DEBUG] Cycle 88/91 Expected: out1   = 0x19c971072672c29, valid_out1   = 1
+[PASS] Cycle 88: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0xce18a816b917d to in2 with dest id = 0
+Assigned value 0x77ffe387b12ce40 to in1 with dest id = 3
+[0, 0, 0, 1]
+[DEBUG] Cycle 89/91 Actual  : out3   = 0x17ffe387b12ce40, valid_out3   = 1
+[DEBUG] Cycle 89/91 Expected: out3   = 0x17ffe387b12ce40, valid_out3   = 1
+[PASS] Cycle 89: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x343bfb796dbc8de to in0 with dest id = 1
+[0, 1, 0, 0]
+[DEBUG] Cycle 90/91 Actual  : out1   = 0x143bfb796dbc8de, valid_out1   = 1
+[DEBUG] Cycle 90/91 Expected: out1   = 0x143bfb796dbc8de, valid_out1   = 1
+[PASS] Cycle 90: Expected result matches actual output, and all other outputs are low.
+
+
+Assigned value 0x4158979648668d1 to in0 with dest id = 2
+[0, 0, 1, 0]
+[DEBUG] Cycle 91/91 Actual  : out2   = 0x158979648668d1, valid_out2   = 1
+[DEBUG] Cycle 91/91 Expected: out2   = 0x158979648668d1, valid_out2   = 1
+[PASS] Cycle 91: Expected result matches actual output, and all other outputs are low.
+
+
+  3680.00ns INFO     cocotb.regression                  test_crossbar_switch.test_crossbar_switch passed
+  3680.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_crossbar_switch.test_crossbar_switch   PASS        3680.00           0.01     355933.10  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            3680.00           0.01     313847.88  **
+                                                        ***************************************************************************************************
+[DEBUG] Running simulation with DATA_WIDTH=57
+[DEBUG] Parameters: {'DATA_WIDTH': 57}
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-4t39exy0'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-yhfz96ne'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 3 passed, 2 warnings in 0.76s =========================
+Cleaning up Docker resources...

@@ -1,0 +1,610 @@
+Running harness with project name: cvdp_copilot_axi_register_1_1790201817
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 12 items
+
+../../src/test_runner.py::test_axi_reg[8-12-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201818
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x9a, strb=0b1
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0x9a from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x42, strb=0b1
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0x42 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xb4, strb=0b1
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0xb4 from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xac, strb=0b1
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0xac from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xdd, strb=0b1
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0xdd from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbe, strb=0b1
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0xbe from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1f, strb=0b1
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x1f from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbc, strb=0b1
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0xbc from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x88, strb=0b1
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x88 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe4, strb=0b1
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xe4 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b1
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b1
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b1
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x1, got=0x1
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xcd, strb=0b0
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=228
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     285326.80  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     242614.96  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 12, 'DATA_WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_axi_reg[8-16-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201818
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x9a, strb=0b1
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0x9a from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x42, strb=0b1
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0x42 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xb4, strb=0b1
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0xb4 from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xac, strb=0b1
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0xac from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xdd, strb=0b1
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0xdd from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbe, strb=0b1
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0xbe from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1f, strb=0b1
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x1f from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbc, strb=0b1
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0xbc from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x88, strb=0b1
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x88 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe4, strb=0b1
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xe4 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b1
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b1
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b1
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x1, got=0x1
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xcd, strb=0b0
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=228
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     272671.54  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     230875.70  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 16, 'DATA_WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_axi_reg[8-32-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201818
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x9a, strb=0b1
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0x9a from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x42, strb=0b1
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0x42 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xb4, strb=0b1
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0xb4 from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xac, strb=0b1
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0xac from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xdd, strb=0b1
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0xdd from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbe, strb=0b1
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0xbe from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1f, strb=0b1
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x1f from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbc, strb=0b1
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0xbc from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x88, strb=0b1
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x88 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe4, strb=0b1
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xe4 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b1
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b1
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b1
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x1, got=0x1
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xcd, strb=0b0
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=228
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     268518.61  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     230068.87  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_axi_reg[16-12-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201819
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x5e6d, strb=0b11
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0x5e6d from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd5b1, strb=0b11
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0xd5b1 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xabaa, strb=0b11
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0xabaa from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x3077, strb=0b11
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x3077 from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xc3df, strb=0b11
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0xc3df from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x260b, strb=0b11
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x260b from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xea86, strb=0b11
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0xea86 from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x986e, strb=0b11
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x986e from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x2907, strb=0b11
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x2907 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xada5, strb=0b11
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xada5 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b11
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b11
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b11
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x1, got=0x1
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x2782, strb=0b10
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=44453
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     267304.16  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     228011.27  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 12, 'DATA_WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_axi_reg[16-16-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201819
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x5e6d, strb=0b11
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0x5e6d from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd5b1, strb=0b11
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0xd5b1 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xabaa, strb=0b11
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0xabaa from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x3077, strb=0b11
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x3077 from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xc3df, strb=0b11
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0xc3df from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x260b, strb=0b11
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x260b from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xea86, strb=0b11
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0xea86 from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x986e, strb=0b11
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x986e from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x2907, strb=0b11
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x2907 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xada5, strb=0b11
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xada5 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b11
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b11
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b11
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x1, got=0x1
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x2782, strb=0b10
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=44453
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     289745.79  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     242422.72  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 16, 'DATA_WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_axi_reg[16-32-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201819
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x5e6d, strb=0b11
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0x5e6d from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd5b1, strb=0b11
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0xd5b1 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xabaa, strb=0b11
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0xabaa from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x3077, strb=0b11
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x3077 from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xc3df, strb=0b11
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0xc3df from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x260b, strb=0b11
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x260b from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xea86, strb=0b11
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0xea86 from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x986e, strb=0b11
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x986e from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x2907, strb=0b11
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x2907 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xada5, strb=0b11
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xada5 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b11
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b11
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b11
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x1, got=0x1
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x2782, strb=0b10
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=44453
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     269171.77  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     228552.34  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 16}
+PASSED
+../../src/test_runner.py::test_axi_reg[32-12-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201819
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x2f36f01e, strb=0b1111
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0x6f01e from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x55d5052e, strb=0b1111
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0x5052e from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xde9b1527, strb=0b1111
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0xb1527 from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x92d4050f, strb=0b1111
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x4050f from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe5f8f9bf, strb=0b1111
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0x8f9bf from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x148384f6, strb=0b1111
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x384f6 from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x50f59380, strb=0b1111
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x59380 from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe02e8021, strb=0b1111
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0xe8021 from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xf4dc7cd3, strb=0b1111
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0xc7cd3 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x5d2bcb3b, strb=0b1111
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xbcb3b from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b1111
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b1111
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b1111
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x10001, got=0x10001
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd14ffe9c, strb=0b10
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=772923
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     287328.71  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     241566.97  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 12, 'DATA_WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_axi_reg[32-16-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201820
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xb80a8487, strb=0b1111
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0xa8487 from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7acaad66, strb=0b1111
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0xaad66 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xf268182c, strb=0b1111
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0x8182c from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xc9e65640, strb=0b1111
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x65640 from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7c069ff9, strb=0b1111
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0x69ff9 from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x72e98e1e, strb=0b1111
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x98e1e from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd7e8b256, strb=0b1111
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x8b256 from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbdc3b879, strb=0b1111
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x3b879 from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7a9b274b, strb=0b1111
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0xb274b from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x623a9a25, strb=0b1111
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xa9a25 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b1111
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b1111
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b1111
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x10001, got=0x10001
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x58cb9e7, strb=0b1101
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=694821
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     276719.18  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     230824.47  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 16, 'DATA_WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_axi_reg[32-32-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201820
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xb80a8487, strb=0b1111
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0xa8487 from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7acaad66, strb=0b1111
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0xaad66 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xf268182c, strb=0b1111
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0x8182c from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xc9e65640, strb=0b1111
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x65640 from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7c069ff9, strb=0b1111
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0x69ff9 from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x72e98e1e, strb=0b1111
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x98e1e from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd7e8b256, strb=0b1111
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x8b256 from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xbdc3b879, strb=0b1111
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x3b879 from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7a9b274b, strb=0b1111
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0xb274b from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x623a9a25, strb=0b1111
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xa9a25 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b1111
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b1111
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b1111
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x10001, got=0x10001
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x58cb9e7, strb=0b1101
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=694821
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     298355.72  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     246946.34  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 32}
+PASSED
+../../src/test_runner.py::test_axi_reg[64-12-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201820
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7666fd1eb80a8487, strb=0b11111111
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0xa8487 from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7acaad6683f5eea3, strb=0b11111111
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0x5eea3 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1ba2fa47c9e65640, strb=0b11111111
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0x65640 from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1dec51e972e98e1e, strb=0b11111111
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x98e1e from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7a9b274b4214df05, strb=0b11111111
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0x4df05 from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xdffb242492121aaf, strb=0b11111111
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x21aaf from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x58cb9e7f3f89bcf, strb=0b11111111
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x89bcf from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd47fd536d8f32f43, strb=0b11111111
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x32f43 from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x261973908b921430, strb=0b11111111
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x21430 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x3dd39f86ad8ab691, strb=0b11111111
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xab691 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b11111111
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b11111111
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b11111111
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x10001, got=0x10001
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe4df70e592545212, strb=0b1111010
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=702097
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     288076.71  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     243136.69  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 12, 'DATA_WIDTH': 64}
+PASSED
+../../src/test_runner.py::test_axi_reg[64-16-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201820
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7666fd1eb80a8487, strb=0b11111111
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0xa8487 from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7acaad6683f5eea3, strb=0b11111111
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0x5eea3 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1ba2fa47c9e65640, strb=0b11111111
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0x65640 from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1dec51e972e98e1e, strb=0b11111111
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x98e1e from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7a9b274b4214df05, strb=0b11111111
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0x4df05 from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xdffb242492121aaf, strb=0b11111111
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x21aaf from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x58cb9e7f3f89bcf, strb=0b11111111
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x89bcf from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd47fd536d8f32f43, strb=0b11111111
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x32f43 from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x261973908b921430, strb=0b11111111
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x21430 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x3dd39f86ad8ab691, strb=0b11111111
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xab691 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b11111111
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b11111111
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b11111111
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x10001, got=0x10001
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe4df70e592545212, strb=0b1111010
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=702097
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     288668.31  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     240172.57  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 16, 'DATA_WIDTH': 64}
+PASSED
+../../src/test_runner.py::test_axi_reg[64-32-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790201820
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_axi_register.test_axi_register (1/1)
+    40.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7666fd1eb80a8487, strb=0b11111111
+   110.00ns INFO     cocotb.axi_register                Test 0: Read Data: 0xa8487 from Address: 0x100
+   130.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7acaad6683f5eea3, strb=0b11111111
+   200.00ns INFO     cocotb.axi_register                Test 1: Read Data: 0x5eea3 from Address: 0x100
+   220.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1ba2fa47c9e65640, strb=0b11111111
+   290.00ns INFO     cocotb.axi_register                Test 2: Read Data: 0x65640 from Address: 0x100
+   310.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x1dec51e972e98e1e, strb=0b11111111
+   380.00ns INFO     cocotb.axi_register                Test 3: Read Data: 0x98e1e from Address: 0x100
+   400.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x7a9b274b4214df05, strb=0b11111111
+   470.00ns INFO     cocotb.axi_register                Test 4: Read Data: 0x4df05 from Address: 0x100
+   490.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xdffb242492121aaf, strb=0b11111111
+   560.00ns INFO     cocotb.axi_register                Test 5: Read Data: 0x21aaf from Address: 0x100
+   580.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x58cb9e7f3f89bcf, strb=0b11111111
+   650.00ns INFO     cocotb.axi_register                Test 6: Read Data: 0x89bcf from Address: 0x100
+   670.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xd47fd536d8f32f43, strb=0b11111111
+   740.00ns INFO     cocotb.axi_register                Test 7: Read Data: 0x32f43 from Address: 0x100
+   760.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x261973908b921430, strb=0b11111111
+   830.00ns INFO     cocotb.axi_register                Test 8: Read Data: 0x21430 from Address: 0x100
+   850.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0x3dd39f86ad8ab691, strb=0b11111111
+   920.00ns INFO     cocotb.axi_register                Test 9: Read Data: 0xab691 from Address: 0x100
+   920.00ns INFO     cocotb.axi_register                Randomized AXI register tests with all-ones wstrb passed successfully!
+   950.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x200, data=0x1, strb=0b11111111
+   950.00ns INFO     cocotb.axi_register                CTRL_START write succeeded (pulse verified via bresp)
+   950.00ns INFO     cocotb.axi_register                CTRL_START test passed: start_value=1
+   990.00ns INFO     cocotb.axi_register                CTRL_DONE set test passed: expected=1, got=1
+  1010.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x300, data=0x1, strb=0b11111111
+  1080.00ns INFO     cocotb.axi_register                CTRL_DONE clear test passed: expected=0, got=0
+  1110.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x400, data=0x1, strb=0b11111111
+  1110.00ns INFO     cocotb.axi_register                CTRL_WRITEBACK write succeeded (pulse verified via bresp): expected=1
+  1140.00ns INFO     cocotb.axi_register                CTRL_ID test passed: expected=0x10001, got=0x10001
+  1200.00ns INFO     cocotb.axi_register                Write operation succeeded: addr=0x100, data=0xe4df70e592545212, strb=0b1111010
+  1210.00ns INFO     cocotb.axi_register                Partial write response is OK (AXI_RESP_OK).
+  1230.00ns INFO     cocotb.axi_register                Partial write did not affect the register: read_data=702097
+  1240.00ns INFO     cocotb.regression                  test_axi_register.test_axi_register passed
+  1240.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_axi_register.test_axi_register   PASS        1240.00           0.00     277398.10  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                      1240.00           0.01     234879.51  **
+                                                        *********************************************************************************************
+[DEBUG] Parameters: {'ADDR_WIDTH': 32, 'DATA_WIDTH': 64}
+PASSED
+
+============================== 12 passed in 2.73s ==============================
+Cleaning up Docker resources...

@@ -1,0 +1,122 @@
+Running harness with project name: cvdp_copilot_static_branch_predict_1_1790258238
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.2, pluggy-1.6.0 -- /venv/bin/python
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 2 items
+
+../../src/test_runner.py::test_runner 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:632 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s static_branch_predict -g2012 -f /code/rundir/sim_build/cmds.f /code/rtl/static_branch_predict.sv in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:632 Running command vvp -M /venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -none in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1790258239
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_static_branch_predict.test_static_branch_predict (1/1)
+                                                            Test Static Branch Predictor for different branch and jump scenarios.
+    10.00ns INFO     cocotb.static_branch_predict       Running test case: Branch taken, PC offset negative (B-type), [BEQ]
+    10.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 8C218363, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+    10.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+    10.00ns INFO     cocotb.static_branch_predict       Expected PC: 000000C6, Actual PC: 000000C6
+    30.00ns INFO     cocotb.static_branch_predict       Running test case: Branch taken, PC offset positive (B-type), [BEQ]
+    30.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 6C2183E3, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+    30.00ns INFO     cocotb.static_branch_predict       Expected Taken: 0, Actual Taken: 0
+    30.00ns INFO     cocotb.static_branch_predict       Expected PC: 00001EC6, Actual PC: 00001EC6
+    50.00ns INFO     cocotb.static_branch_predict       Running test case: Jump taken (J-type) with negative offset, [JAL]
+    50.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 926CF16F, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+    50.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+    50.00ns INFO     cocotb.static_branch_predict       Expected PC: FFFD0126, Actual PC: FFFD0126
+    70.00ns INFO     cocotb.static_branch_predict       Running test case: Jump taken (J-type) with positive offset, [JAL]
+    70.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 126CF16F, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+    70.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+    70.00ns INFO     cocotb.static_branch_predict       Expected PC: 000D0126, Actual PC: 000D0126
+    90.00ns INFO     cocotb.static_branch_predict       Running test case: Jump taken (JALR) with negative offset, [JALR]
+    90.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: F63101E7, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+    90.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+    90.00ns INFO     cocotb.static_branch_predict       Expected PC: 00000F63, Actual PC: 00000F63
+   110.00ns INFO     cocotb.static_branch_predict       Running test case: Jump taken (JALR) with positive offset, [JALR]
+   110.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 763101E7, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+   110.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+   110.00ns INFO     cocotb.static_branch_predict       Expected PC: 00001763, Actual PC: 00001763
+   130.00ns INFO     cocotb.static_branch_predict       Running test case: Compressed Jump taken (J-type) with positive offset, [C.J]
+   130.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 4840006F, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+   130.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+   130.00ns INFO     cocotb.static_branch_predict       Expected PC: 00001484, Actual PC: 00001484
+   150.00ns INFO     cocotb.static_branch_predict       Running test case: Compressed Jump taken (J-type) with positive offset, [C.JAL]
+   150.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 484000EF, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+   150.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+   150.00ns INFO     cocotb.static_branch_predict       Expected PC: 00001484, Actual PC: 00001484
+   170.00ns INFO     cocotb.static_branch_predict       Running test case: Compressed Branch Taken, PC offset positive (B-type), [C.BEQZ]
+   170.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 08040A63, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+   170.00ns INFO     cocotb.static_branch_predict       Expected Taken: 0, Actual Taken: 0
+   170.00ns INFO     cocotb.static_branch_predict       Expected PC: 00001094, Actual PC: 00001094
+   190.00ns INFO     cocotb.static_branch_predict       Running test case: Invalid fetch (not valid)
+   190.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 00000001, fetch_pc_i: 00002000, Register Operand: 00000000, Valid: 0
+   190.00ns INFO     cocotb.static_branch_predict       Expected Taken: 0, Actual Taken: 0
+   190.00ns INFO     cocotb.static_branch_predict       Expected PC: 00002000, Actual PC: 00002000
+   210.00ns INFO     cocotb.static_branch_predict       Running test case: No branch or jump
+   210.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 00000000, fetch_pc_i: 00002000, Register Operand: 00000000, Valid: 1
+   210.00ns INFO     cocotb.static_branch_predict       Expected Taken: 0, Actual Taken: 0
+   210.00ns INFO     cocotb.static_branch_predict       Expected PC: 00002000, Actual PC: 00002000
+   230.00ns INFO     cocotb.static_branch_predict       Running test case: Improper Instruction Encoding
+   230.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: FE000E63, fetch_pc_i: 00001000, Register Operand: 00000000, Valid: 1
+   230.00ns INFO     cocotb.static_branch_predict       Expected Taken: 1, Actual Taken: 1
+   230.00ns INFO     cocotb.static_branch_predict       Expected PC: 000007FC, Actual PC: 000007FC
+   250.00ns INFO     cocotb.static_branch_predict       Random Test Case 1
+   250.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 4E271817, fetch_pc_i: B23BCC65, Register Operand: 7059D156, Valid: 1
+   250.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: B23BCC65
+   270.00ns INFO     cocotb.static_branch_predict       Random Test Case 2
+   270.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 30C1B072, fetch_pc_i: BD0F43DF, Register Operand: B833EF88, Valid: 1
+   270.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: BD0F43DF
+   290.00ns INFO     cocotb.static_branch_predict       Random Test Case 3
+   290.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 87C53EC3, fetch_pc_i: 1ADE11BB, Register Operand: 191136B0, Valid: 0
+   290.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: 1ADE11BB
+   310.00ns INFO     cocotb.static_branch_predict       Random Test Case 4
+   310.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 5E1935A4, fetch_pc_i: A2832642, Register Operand: B0A272D4, Valid: 0
+   310.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: A2832642
+   330.00ns INFO     cocotb.static_branch_predict       Random Test Case 5
+   330.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 65BB058D, fetch_pc_i: 1C065BA8, Register Operand: 7EA63825, Valid: 0
+   330.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: 1C065BA8
+   350.00ns INFO     cocotb.static_branch_predict       Random Test Case 6
+   350.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: DEB53988, fetch_pc_i: 384C1B8C, Register Operand: 589A7F89, Valid: 0
+   350.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: 384C1B8C
+   370.00ns INFO     cocotb.static_branch_predict       Random Test Case 7
+   370.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 789F58E9, fetch_pc_i: FFAD7B72, Register Operand: 39070633, Valid: 1
+   370.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: FFAD7B72
+   390.00ns INFO     cocotb.static_branch_predict       Random Test Case 8
+   390.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 0A748569, fetch_pc_i: 037B3327, Register Operand: 02DFB8CF, Valid: 0
+   390.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: 037B3327
+   410.00ns INFO     cocotb.static_branch_predict       Random Test Case 9
+   410.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 2C148D8C, fetch_pc_i: F1FC8FA1, Register Operand: 65265F0E, Valid: 0
+   410.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: F1FC8FA1
+   430.00ns INFO     cocotb.static_branch_predict       Random Test Case 10
+   430.00ns INFO     cocotb.static_branch_predict       fetch_rdata_i: 2DCBBE84, fetch_pc_i: 428ED315, Register Operand: 4A72879B, Valid: 0
+   430.00ns INFO     cocotb.static_branch_predict       Predict Branch Taken: 0, Predict Branch PC: 428ED315
+   440.00ns INFO     cocotb.regression                  test_static_branch_predict.test_static_branch_predict passed
+   440.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_static_branch_predict.test_static_branch_predict   PASS         440.00           0.00     273974.73  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         440.00           0.00     164761.52  **
+                                                        ***************************************************************************************************************
+INFO     Icarus:runner.py:602 Results file: /code/rundir/sim_build/test_runner.result.xml
+PASSED
+../../src/test_runner.py::test_static_branch_predict Running static branch predictor testbench...
+PASSED
+
+=============================== warnings summary ===============================
+../../venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477
+  /venv/lib/python3.12/site-packages/_pytest/cacheprovider.py:477: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/nodeids: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-1c4huskk'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+../../venv/lib/python3.12/site-packages/_pytest/stepwise.py:51
+  /venv/lib/python3.12/site-packages/_pytest/stepwise.py:51: PytestCacheWarning: could not create cache path /rundir/harness/.cache/v/cache/stepwise: [Errno 13] Permission denied: '/rundir/harness/pytest-cache-files-v50dh6js'
+    session.config.cache.set(STEPWISE_CACHE_DIR, [])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 2 passed, 2 warnings in 0.29s =========================
+Cleaning up Docker resources...

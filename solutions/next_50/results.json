@@ -1,0 +1,1160 @@
+{
+  "attempted": 50,
+  "first_official_pass": 23,
+  "final_official_pass": 43,
+  "final_official_fail": 7,
+  "independent_diagnostic_pass": 7,
+  "subjective_score": null,
+  "official_result": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/raw_result.json",
+  "problems": [
+    {
+      "order": 1,
+      "id": "cvdp_copilot_bcd_adder_0001",
+      "title_ko": "BCD 가산기",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_bcd_adder_0001.sv",
+      "rtl_sha256": "1c1d1ae0ca1942c05990cb0cfea42765b262cb061e0f0862d552e7cd7970602e",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_bcd_adder/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.8250830173492432,
+          "pid": 42360
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 2,
+      "id": "cvdp_copilot_rounding_0001",
+      "title_ko": "매개변수화 반올림 회로",
+      "batch": 1,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r1",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_rounding_0001.sv",
+      "rtl_sha256": "766eca3cdca8f5f740b5148c7477c721b70bf53741975233900a75fe0e82f326",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_rounding/reports/1.txt",
+          "error_msg": null,
+          "execution": 2.4185631275177,
+          "pid": 42390
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 3,
+      "id": "cvdp_copilot_dot_product_0002",
+      "title_ko": "벡터 내적 계산기",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_dot_product_0002.sv",
+      "rtl_sha256": "e1c7eda60b240972d7a2e1502178c187063462a0f1083d77358009087e673784",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_dot_product/reports/2.txt",
+          "error_msg": null,
+          "execution": 1.244330883026123,
+          "pid": 42423
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 4,
+      "id": "cvdp_copilot_modified_booth_mul_0002",
+      "title_ko": "순차 Booth 곱셈기 수정",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_modified_booth_mul_0002.sv",
+      "rtl_sha256": "16057edb80d324c98ac6a87803547cd99616e30294de916b6d64f86945641ec2",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_modified_booth_mul/reports/2.txt",
+          "error_msg": null,
+          "execution": 1.935925006866455,
+          "pid": 42451
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 5,
+      "id": "cvdp_copilot_montgomery_0001",
+      "title_ko": "Montgomery reduction 수정",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_montgomery_0001.sv",
+      "rtl_sha256": "fd44b89141705affbe9d6ddd0460a4ddc71619311b31e9f29b0edef2d2c17513",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_montgomery/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.8733549118041992,
+          "pid": 42471
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 6,
+      "id": "cvdp_copilot_square_root_0003",
+      "title_ko": "제곱근 회로 순차화",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_square_root_0003.sv",
+      "rtl_sha256": "a7b116c7c734da943ba11accd3c27b49753cdb0d4ed22af5db87497b473ba742",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_square_root/reports/3.txt",
+          "error_msg": null,
+          "execution": 1.6687610149383545,
+          "pid": 42482
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 7,
+      "id": "cvdp_copilot_matrix_multiplier_0007",
+      "title_ko": "행렬 곱셈기 순차화",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_matrix_multiplier_0007.sv",
+      "rtl_sha256": "2159b06663e762ef19d0b9010152908007d6c62d3d8304a654983d146d0f6c7d",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_matrix_multiplier/reports/7.txt",
+          "error_msg": null,
+          "execution": 8.968438148498535,
+          "pid": 42502
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 8,
+      "id": "cvdp_copilot_kogge_stone_adder_0007",
+      "title_ko": "Kogge–Stone 가산기 수정",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_kogge_stone_adder_0007.sv",
+      "rtl_sha256": "1742a92f0c7b530af5b33d01c3a742cfe0dbc0ef63bc03f3317fe505bbfab208",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_kogge_stone_adder/reports/7.txt",
+          "error_msg": null,
+          "execution": 1.3910977840423584,
+          "pid": 42520
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 9,
+      "id": "cvdp_copilot_signed_adder_0001",
+      "title_ko": "부호 있는 가감산기",
+      "batch": 1,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_signed_adder_0001.sv",
+      "rtl_sha256": "9c4bfae6020e566b8ad94290b3a172c7a107137d2c94cad2e3e207af8361afc2",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_signed_adder/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.0220527648925781,
+          "pid": 42533
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 10,
+      "id": "cvdp_copilot_cascaded_adder_0025",
+      "title_ko": "병렬 가산 트리",
+      "batch": 1,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r3",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_cascaded_adder_0025.sv",
+      "rtl_sha256": "4560f388e7c1e722d43d05ff85d4f460b4e8976153ab10328a0bc2efb14594b5",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_cascaded_adder/reports/25.txt",
+          "error_msg": null,
+          "execution": 1.928758144378662,
+          "pid": 42544
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 11,
+      "id": "cvdp_copilot_64b66b_encoder_0001",
+      "title_ko": "64b/66b 인코더",
+      "batch": 2,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_64b66b_encoder_0001.sv",
+      "rtl_sha256": "fd3362176aebc4d1b43a6289d294fd1c9d6afab751838fd33a8e3e3af111353b",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_64b66b_encoder/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.0236718654632568,
+          "pid": 42557
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 12,
+      "id": "cvdp_copilot_64b66b_decoder_0011",
+      "title_ko": "64b/66b 복합 모드 디코더",
+      "batch": 2,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r5",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_64b66b_decoder_0011.sv",
+      "rtl_sha256": "d91ac299679d72f3e072c975d2fe5d7f23a0aac5a49983caf6f6f1bf8225190f",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_64b66b_decoder/reports/11.txt",
+          "error_msg": null,
+          "execution": 1.0199129581451416,
+          "pid": 42570
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 13,
+      "id": "cvdp_copilot_convolutional_encoder_0001",
+      "title_ko": "컨볼루션 인코더",
+      "batch": 2,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r1",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_convolutional_encoder_0001.sv",
+      "rtl_sha256": "99ecc09313a55bb8a059a1c072c583baadfc4a66a19a41f79f6e77ca24af89c0",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_convolutional_encoder/reports/1.txt",
+          "error_msg": null,
+          "execution": 0.988422155380249,
+          "pid": 42585
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 14,
+      "id": "cvdp_copilot_reed_solomon_encoder_and_decoder_0005",
+      "title_ko": "Reed–Solomon 인코더",
+      "batch": 2,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r1",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_reed_solomon_encoder_and_decoder_0005.sv",
+      "rtl_sha256": "e175510af12badf61b4ef222cc085af2e4f9b0bd6e07b0953b4ae1d4bcd45e8d",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_reed_solomon_encoder_and_decoder/reports/5.txt",
+          "error_msg": null,
+          "execution": 3.405714273452759,
+          "pid": 42597
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 15,
+      "id": "cvdp_copilot_huffman_0001",
+      "title_ko": "Huffman 인코더",
+      "batch": 2,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r5",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_huffman_0001.sv",
+      "rtl_sha256": "8d438ea5ec540e9b5d9f3b0aeb4350da4cfe684c5da4d3e82f6badc7206521df",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_huffman/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.1787409782409668,
+          "pid": 42659
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 16,
+      "id": "cvdp_copilot_prbs_gen_0003",
+      "title_ko": "PRBS 생성기·검사기",
+      "batch": 2,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r1",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_prbs_gen_0003.sv",
+      "rtl_sha256": "7d6bc257239736d6f8d9df3b5855ab6e4e875cfd7b1828c7824a87b590d9beab",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_prbs_gen/reports/3.txt",
+          "error_msg": null,
+          "execution": 12.863873958587646,
+          "pid": 42694
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 17,
+      "id": "cvdp_copilot_serial_in_parallel_out_0014",
+      "title_ko": "SIPO에 CRC 추가",
+      "batch": 2,
+      "first_pass": false,
+      "final_pass": false,
+      "status": "official_fail",
+      "source_revision": "revised_r1",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_serial_in_parallel_out_0014.sv",
+      "rtl_sha256": "86b811372eae995332533b06babb73a040e111914adb5325a2637fbc70e68877",
+      "official_tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_serial_in_parallel_out/reports/14.txt",
+          "error_msg": null,
+          "execution": 5.055052042007446,
+          "pid": 42798
+        }
+      ],
+      "diagnostic": {
+        "check": "crc_reference",
+        "id": "cvdp_copilot_serial_in_parallel_out_0014",
+        "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_serial_in_parallel_out_0014.sv",
+        "passed": true,
+        "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/crc_reference.sv:5: $finish called at 1016 (1s)\n"
+      }
+    },
+    {
+      "order": 18,
+      "id": "cvdp_copilot_ir_receiver_0005",
+      "title_ko": "Sony IR 수신기",
+      "batch": 2,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r2",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_ir_receiver_0005.sv",
+      "rtl_sha256": "d1e9a45d52c52598bb2be97d0437a53caf98717bd55057271a80dc4423b4208c",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_ir_receiver/reports/5.txt",
+          "error_msg": null,
+          "execution": 1.9098570346832275,
+          "pid": 42809
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 19,
+      "id": "cvdp_copilot_dbi_0001",
+      "title_ko": "Data Bus Inversion 인코더",
+      "batch": 2,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_dbi_0001.sv",
+      "rtl_sha256": "06b81104595973918c26f87879700f33c969a791419eb1b5442f3561bcae4e29",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_dbi/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.1232059001922607,
+          "pid": 42820
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 20,
+      "id": "cvdp_copilot_packet_controller_0001",
+      "title_ko": "패킷 송수신 제어기",
+      "batch": 2,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_packet_controller_0001.sv",
+      "rtl_sha256": "055ef1c2c0607f0c572fecb34ff4009bbfe432a5064d2e96418f57a740a571e8",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_packet_controller/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.7501029968261719,
+          "pid": 42833
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 21,
+      "id": "cvdp_copilot_data_width_converter_0003",
+      "title_ko": "32→128비트 폭 변환기",
+      "batch": 3,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_data_width_converter_0003.sv",
+      "rtl_sha256": "af22daa3dc919152059918b138961f6b927fbcada6c8e5d18c3c2b5c5fce6f0b",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_data_width_converter/reports/3.txt",
+          "error_msg": null,
+          "execution": 1.281275749206543,
+          "pid": 42868
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 22,
+      "id": "cvdp_copilot_ping_pong_buffer_0001",
+      "title_ko": "핑퐁 버퍼",
+      "batch": 3,
+      "first_pass": false,
+      "final_pass": false,
+      "status": "official_fail",
+      "source_revision": "revised_r5",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_ping_pong_buffer_0001.sv",
+      "rtl_sha256": "187101586e089274b2f706515d0ba0e0341eb59906eea6d1a4be7293aa3eb0fd",
+      "official_tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_ping_pong_buffer/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.038409948348999,
+          "pid": 42879
+        }
+      ],
+      "diagnostic": {
+        "check": "ping_pong_capacity_order_reset",
+        "id": "cvdp_copilot_ping_pong_buffer_0001",
+        "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_ping_pong_buffer_0001.sv",
+        "passed": true,
+        "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/ping_pong_capacity_order_reset.sv:12: $finish called at 10296 (1s)\n"
+      }
+    },
+    {
+      "order": 23,
+      "id": "cvdp_copilot_bit_synchronizer_0001",
+      "title_ko": "다단 비트 동기화기",
+      "batch": 3,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_bit_synchronizer_0001.sv",
+      "rtl_sha256": "643f2b4e2764651d419be7c66a267e93948595133fdc4d140e5af3627efaf7f0",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_bit_synchronizer/reports/1.txt",
+          "error_msg": null,
+          "execution": 10.580924987792969,
+          "pid": 42892
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 24,
+      "id": "cvdp_copilot_mux_synch_0011",
+      "title_ko": "MUX 기반 CDC 수정",
+      "batch": 3,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_mux_synch_0011.sv",
+      "rtl_sha256": "ea45a608a4a3e3994a79fee4af606ce4d4253e5e4aa5c22223d5b9e43aad4b0f",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_mux_synch/reports/11.txt",
+          "error_msg": null,
+          "execution": 1.0281989574432373,
+          "pid": 43073
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 25,
+      "id": "cvdp_copilot_sync_lifo_0001",
+      "title_ko": "동기 LIFO",
+      "batch": 3,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_sync_lifo_0001.sv",
+      "rtl_sha256": "636c080f39f6c4a8ae44707b52407b18e0e54c8a61ea2855e7265da5615b3da5",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_sync_lifo/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.875175952911377,
+          "pid": 43126
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 26,
+      "id": "cvdp_copilot_crossbar_switch_0001",
+      "title_ko": "4×4 크로스바 스위치",
+      "batch": 3,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_crossbar_switch_0001.sv",
+      "rtl_sha256": "ac73dff8de9d559f248546e8a56372855e7c840f140e4feb5d5e74e1127ac451",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_crossbar_switch/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.4450559616088867,
+          "pid": 43141
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 27,
+      "id": "cvdp_copilot_axis_mux_0001",
+      "title_ko": "AXI Stream 멀티플렉서",
+      "batch": 3,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_axis_mux_0001.sv",
+      "rtl_sha256": "643f97a8872467aea1a97ab80fe1c86db3b88358b9e907f1eb080ff9b26ffaca",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_axis_mux/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.70933198928833,
+          "pid": 43160
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 28,
+      "id": "cvdp_copilot_axis_joiner_0001",
+      "title_ko": "AXI Stream 결합기",
+      "batch": 3,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r2",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_axis_joiner_0001.sv",
+      "rtl_sha256": "b86bec236869cf3779cb21871496cd0a4342fabee5909c6fe15dc3dcdde4576c",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_axis_joiner/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.084090232849121,
+          "pid": 43176
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 29,
+      "id": "cvdp_copilot_axi_tap_0001",
+      "title_ko": "AXI4-Lite TAP",
+      "batch": 3,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r6",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_axi_tap_0001.sv",
+      "rtl_sha256": "0fd5cf4d50d14dae0b675acad87e1af0f263dadec4c633dafb9d753fccb01c62",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_axi_tap/reports/1.txt",
+          "error_msg": null,
+          "execution": 5.3554368019104,
+          "pid": 43187
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 30,
+      "id": "cvdp_copilot_wb2ahb_0001",
+      "title_ko": "Wishbone→AHB 브리지",
+      "batch": 3,
+      "first_pass": false,
+      "final_pass": false,
+      "status": "official_fail",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_wb2ahb_0001.sv",
+      "rtl_sha256": "71037f3ae1f5c236d3cfda0c45a7fa1f8c51906d77f3e3accecb38908d8d7471",
+      "official_tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_wb2ahb/reports/1.txt",
+          "error_msg": null,
+          "execution": 0.9699029922485352,
+          "pid": 43198
+        }
+      ],
+      "diagnostic": {
+        "check": "wishbone_cdc_endian_wait",
+        "id": "cvdp_copilot_wb2ahb_0001",
+        "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_wb2ahb_0001.sv",
+        "passed": true,
+        "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/wishbone_cdc_endian_wait.sv:8: $finish called at 180 (1s)\n"
+      }
+    },
+    {
+      "order": 31,
+      "id": "cvdp_copilot_perf_counters_0001",
+      "title_ko": "CPU 성능 카운터",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r3",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_perf_counters_0001.sv",
+      "rtl_sha256": "0cbbdd5a56c03b93b3a37b5958d3f7a78e14229c07d8d69aabfddd0af374f122",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_perf_counters/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.6866512298583984,
+          "pid": 43213
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 32,
+      "id": "cvdp_copilot_write_buffer_merge_0001",
+      "title_ko": "쓰기 병합 버퍼",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r1",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_write_buffer_merge_0001.sv",
+      "rtl_sha256": "6314ae1f88978d64c4de5387954ecd5012b5397908b6d396902b6caad84c1663",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_write_buffer_merge/reports/1.txt",
+          "error_msg": null,
+          "execution": 4.4213080406188965,
+          "pid": 43232
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 33,
+      "id": "cvdp_copilot_cache_lru_0008",
+      "title_ko": "엄격한 LRU 교체 정책",
+      "batch": 4,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_cache_lru_0008.sv",
+      "rtl_sha256": "dfa0fc64862b76f8e9464944690fa7fe2f72efefb22f715d31b7dc5bdde10bd3",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_cache_lru/reports/8.txt",
+          "error_msg": null,
+          "execution": 1.9119060039520264,
+          "pid": 43245
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 34,
+      "id": "cvdp_copilot_virtual2physical_tlb_0001",
+      "title_ko": "가상→물리 주소 TLB",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r2",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_virtual2physical_tlb_0001.sv",
+      "rtl_sha256": "8930913dc05822832d9461e43d8d17b0d021e2621ba96e02998b551f1fe1148e",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_virtual2physical_tlb/reports/1.txt",
+          "error_msg": null,
+          "execution": 3.070819139480591,
+          "pid": 43256
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 35,
+      "id": "cvdp_copilot_icache_controller_0001",
+      "title_ko": "명령어 캐시 제어기",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r4",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_icache_controller_0001.sv",
+      "rtl_sha256": "35f14a2e35bad459f5148650b456315889fa6bc0b8ceef6a7020dfe8dd08f2a4",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_icache_controller/reports/1.txt",
+          "error_msg": null,
+          "execution": 2.3046209812164307,
+          "pid": 43292
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 36,
+      "id": "cvdp_copilot_static_branch_predict_0001",
+      "title_ko": "RISC-V 정적 분기 예측기",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r4",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_static_branch_predict_0001.sv",
+      "rtl_sha256": "2e3839a4ab7e269b6b84a1cbb66bd8b1b1e1f6d06191ca0996875897f992e8e3",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_static_branch_predict/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.400130033493042,
+          "pid": 43364
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 37,
+      "id": "cvdp_copilot_mem_allocator_0001",
+      "title_ko": "자원 할당기",
+      "batch": 4,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_mem_allocator_0001.sv",
+      "rtl_sha256": "6a673d34886f1df707d3bbf5898394b16b6b64ed30db209e864bd97436e86a8d",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_mem_allocator/reports/1.txt",
+          "error_msg": null,
+          "execution": 3.707810163497925,
+          "pid": 43393
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 38,
+      "id": "cvdp_copilot_microcode_sequencer_0001",
+      "title_ko": "마이크로코드 시퀀서",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": false,
+      "status": "official_fail",
+      "source_revision": "revised_r5",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_microcode_sequencer_0001.sv",
+      "rtl_sha256": "4d76f6c5f8d45539354354a0b3d3d82763c4fb42ca7cdb951069eeb610937f41",
+      "official_tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_microcode_sequencer/reports/1.txt",
+          "error_msg": null,
+          "execution": 0.9676547050476074,
+          "pid": 43495
+        }
+      ],
+      "diagnostic": {
+        "check": "microcode_pop_three_cycles",
+        "id": "cvdp_copilot_microcode_sequencer_0001",
+        "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/revised_r5/cvdp_copilot_microcode_sequencer_0001.sv",
+        "passed": true,
+        "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/microcode_pop_three_cycles.sv:5: $finish called at 130 (1s)\n"
+      }
+    },
+    {
+      "order": 39,
+      "id": "cvdp_copilot_register_file_2R1W_0006",
+      "title_ko": "레지스터 파일 BIST 확장",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r2",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_register_file_2R1W_0006.sv",
+      "rtl_sha256": "c2f020e95fea6a8a332760a748dc3492723dda1a200fb41b99761e53e41ed5e3",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_register_file_2R1W/reports/6.txt",
+          "error_msg": null,
+          "execution": 1.612757921218872,
+          "pid": 43506
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 40,
+      "id": "cvdp_copilot_apb_history_shift_register_0001",
+      "title_ko": "APB 분기 이력 레지스터",
+      "batch": 4,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r2",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_apb_history_shift_register_0001.sv",
+      "rtl_sha256": "a3b14e61634d50c7f23411afa7771552b4de2e92f7ea72f3a8c5c289a3f33ed7",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_apb_history_shift_register/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.0313668251037598,
+          "pid": 43525
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 41,
+      "id": "cvdp_copilot_configurable_digital_low_pass_filter_0001",
+      "title_ko": "설정 가능한 저역통과 필터",
+      "batch": 5,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_configurable_digital_low_pass_filter_0001.sv",
+      "rtl_sha256": "1675de0c6516105a7fe592e56564e3ec8dcaf083caa8b3c4052e927ad7217616",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_configurable_digital_low_pass_filter/reports/1.txt",
+          "error_msg": null,
+          "execution": 48.73084211349487,
+          "pid": 43538
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 42,
+      "id": "cvdp_copilot_configurable_digital_low_pass_filter_0004",
+      "title_ko": "데시메이터·적응형 피크 검출",
+      "batch": 5,
+      "first_pass": false,
+      "final_pass": false,
+      "status": "official_fail",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_configurable_digital_low_pass_filter_0004.sv",
+      "rtl_sha256": "9d5d5a9479741a9bccd8a5bb9cbbe316ab83f62df37d3fd7c3891acc9b2fc064",
+      "official_tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_configurable_digital_low_pass_filter/reports/4.txt",
+          "error_msg": null,
+          "execution": 8.573511838912964,
+          "pid": 44169
+        }
+      ],
+      "diagnostic": {
+        "check": "decimator_msb_example",
+        "id": "cvdp_copilot_configurable_digital_low_pass_filter_0004",
+        "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_configurable_digital_low_pass_filter_0004.sv",
+        "passed": true,
+        "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/decimator_msb_example.sv:7: $finish called at 26 (1s)\n"
+      }
+    },
+    {
+      "order": 43,
+      "id": "cvdp_copilot_neuromorphic_array_0001",
+      "title_ko": "뉴로모픽 배열",
+      "batch": 5,
+      "first_pass": false,
+      "final_pass": false,
+      "status": "official_fail",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_neuromorphic_array_0001.sv",
+      "rtl_sha256": "1da0c5e07dd2e48c3f556767dd5aa8584bca701d3fa3c04bff63d7792b2aa227",
+      "official_tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_neuromorphic_array/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.3242008686065674,
+          "pid": 44186
+        }
+      ],
+      "diagnostic": {
+        "check": "neuron_cascade_and_hold",
+        "id": "cvdp_copilot_neuromorphic_array_0001",
+        "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_neuromorphic_array_0001.sv",
+        "passed": true,
+        "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/neuron_cascade_and_hold.sv:6: $finish called at 416 (1s)\n"
+      }
+    },
+    {
+      "order": 44,
+      "id": "cvdp_copilot_sobel_filter_0011",
+      "title_ko": "Sobel 필터 수정",
+      "batch": 5,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_sobel_filter_0011.sv",
+      "rtl_sha256": "ee2a1e4637a755cdc602e0baff5fa7dace3c050b33d70f64f951367b18d13285",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_sobel_filter/reports/11.txt",
+          "error_msg": null,
+          "execution": 0.9776039123535156,
+          "pid": 44197
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 45,
+      "id": "cvdp_copilot_line_buffer_0003",
+      "title_ko": "영상 라인 버퍼 수정",
+      "batch": 5,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_line_buffer_0003.sv",
+      "rtl_sha256": "e0de41ca4df863fff6dd1f01bcbb70fb8951870c363af263edec3fe97fca6227",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_line_buffer/reports/3.txt",
+          "error_msg": null,
+          "execution": 27.17266607284546,
+          "pid": 44211
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 46,
+      "id": "cvdp_copilot_clock_jitter_detection_module_0003",
+      "title_ko": "클록 지터 검출기",
+      "batch": 5,
+      "first_pass": false,
+      "final_pass": false,
+      "status": "official_fail",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_clock_jitter_detection_module_0003.sv",
+      "rtl_sha256": "b5260b2471d852ce0269b1c298f439fb0399c0c481449444a27a9eb5d8f90091",
+      "official_tests": [
+        {
+          "result": 1,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_clock_jitter_detection_module/reports/3.txt",
+          "error_msg": null,
+          "execution": 2.3220889568328857,
+          "pid": 44247
+        }
+      ],
+      "diagnostic": {
+        "check": "jitter_tolerance_and_pulse",
+        "id": "cvdp_copilot_clock_jitter_detection_module_0003",
+        "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/first/cvdp_copilot_clock_jitter_detection_module_0003.sv",
+        "passed": true,
+        "output": "PASS\n/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/diagnostics/jitter_tolerance_and_pulse.sv:6: $finish called at 226 (1s)\n"
+      }
+    },
+    {
+      "order": 47,
+      "id": "cvdp_copilot_thermostat_0001",
+      "title_ko": "온도 제어 FSM",
+      "batch": 5,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r3",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_thermostat_0001.sv",
+      "rtl_sha256": "b234a283b4ea3f8ce42740cbbfb54711aac76b5f03c691ce0e0c590671d50914",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_thermostat/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.1236121654510498,
+          "pid": 44265
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 48,
+      "id": "cvdp_copilot_ttc_lite_0001",
+      "title_ko": "경량 타이머·카운터",
+      "batch": 5,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r3",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_ttc_lite_0001.sv",
+      "rtl_sha256": "b9f291bdb4f8cb8508376abe43c7b104a869fb8a49837853c5618647a7834b74",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_ttc_lite/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.1384100914001465,
+          "pid": 44276
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 49,
+      "id": "cvdp_copilot_axi_alu_0001",
+      "title_ko": "AXI 제어 ALU 수정",
+      "batch": 5,
+      "first_pass": false,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "revised_r6",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_axi_alu_0001.sv",
+      "rtl_sha256": "25c441bc33c0dbd352963591fdcfbe97dc7a011e2ad0d789ffd40b5688ea61d3",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_axi_alu/reports/1.txt",
+          "error_msg": null,
+          "execution": 1.607208251953125,
+          "pid": 44287
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "order": 50,
+      "id": "cvdp_copilot_alphablending_0003",
+      "title_ko": "알파 블렌딩 RTL Lint 수정",
+      "batch": 5,
+      "first_pass": true,
+      "final_pass": true,
+      "status": "official_pass",
+      "source_revision": "first",
+      "rtl": "/Users/bagjunbeom/Downloads/CVDP/solutions/next_50/final/cvdp_copilot_alphablending_0003.sv",
+      "rtl_sha256": "4794d2795ec7f9de774c073fa1e9bd691126985bd7bc8012052439efeb9927b0",
+      "official_tests": [
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_alphablending/reports/3_lint.txt",
+          "error_msg": null,
+          "execution": 0.87211012840271,
+          "pid": 44299
+        },
+        {
+          "result": 0,
+          "log": "/Users/bagjunbeom/Downloads/CVDP/work_next50_final/cvdp_copilot_alphablending/reports/3_sanity.txt",
+          "error_msg": null,
+          "execution": 1.7209532260894775,
+          "pid": 44312
+        }
+      ],
+      "diagnostic": null
+    }
+  ]
+}
